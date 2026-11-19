@@ -1,0 +1,243 @@
+{
+ "tool": "p1_drift_diagnostic",
+ "generated_at": "2026-11-19T13:59:18+00:00",
+ "method": "Offline comparison of v1.0 (node4 batch v6 cached) vs v1.1 (p1.dev.v1) assessments on the 3 dev decision-mismatch cases. Zero model calls.",
+ "finding": "General menu-anchoring effect: v1.1 evidence menus pull severity toward moderate bands — mild defects escalated (false_alarm on appetite cases) and severe defects softened (severe_miss on blurb-reorder structure 1/critical->3/minor). Not per-case; a general side effect of menu prominence.",
+ "cases": [
+  {
+   "case_id": "cal-appetite-missing_paragraph",
+   "human_decision": "uncertain",
+   "v1_0_decision": "uncertain",
+   "v1_1_decision": "fail",
+   "dimensions": {
+    "completeness": {
+     "human": [
+      3,
+      "minor"
+     ],
+     "v1_0": [
+      3,
+      "minor"
+     ],
+     "v1_1": [
+      2,
+      "major"
+     ]
+    },
+    "cleanliness": {
+     "human": [
+      4,
+      "none"
+     ],
+     "v1_0": [
+      4,
+      "none"
+     ],
+     "v1_1": [
+      4,
+      "none"
+     ]
+    },
+    "structure": {
+     "human": [
+      4,
+      "none"
+     ],
+     "v1_0": [
+      4,
+      "none"
+     ],
+     "v1_1": [
+      3,
+      "minor"
+     ]
+    },
+    "title": {
+     "human": [
+      4,
+      "none"
+     ],
+     "v1_0": [
+      4,
+      "none"
+     ],
+     "v1_1": [
+      4,
+      "none"
+     ]
+    },
+    "format": {
+     "human": [
+      null,
+      "none"
+     ],
+     "v1_0": [
+      null,
+      "none"
+     ],
+     "v1_1": [
+      null,
+      "none"
+     ]
+    }
+   }
+  },
+  {
+   "case_id": "cal-appetite-duplicate",
+   "human_decision": "uncertain",
+   "v1_0_decision": null,
+   "v1_1_decision": "fail",
+   "dimensions": {
+    "completeness": {
+     "human": [
+      4,
+      "none"
+     ],
+     "v1_0": [
+      null,
+      null
+     ],
+     "v1_1": [
+      4,
+      "none"
+     ]
+    },
+    "cleanliness": {
+     "human": [
+      3,
+      "minor"
+     ],
+     "v1_0": [
+      null,
+      null
+     ],
+     "v1_1": [
+      2,
+      "major"
+     ]
+    },
+    "structure": {
+     "human": [
+      4,
+      "none"
+     ],
+     "v1_0": [
+      null,
+      null
+     ],
+     "v1_1": [
+      3,
+      "minor"
+     ]
+    },
+    "title": {
+     "human": [
+      4,
+      "none"
+     ],
+     "v1_0": [
+      null,
+      null
+     ],
+     "v1_1": [
+      4,
+      "none"
+     ]
+    },
+    "format": {
+     "human": [
+      null,
+      "none"
+     ],
+     "v1_0": [
+      null,
+      null
+     ],
+     "v1_1": [
+      null,
+      "none"
+     ]
+    }
+   }
+  },
+  {
+   "case_id": "cal-blurb-reorder",
+   "human_decision": "fail",
+   "v1_0_decision": "fail",
+   "v1_1_decision": "uncertain",
+   "dimensions": {
+    "completeness": {
+     "human": [
+      4,
+      "none"
+     ],
+     "v1_0": [
+      4,
+      "none"
+     ],
+     "v1_1": [
+      4,
+      "none"
+     ]
+    },
+    "cleanliness": {
+     "human": [
+      4,
+      "none"
+     ],
+     "v1_0": [
+      4,
+      "none"
+     ],
+     "v1_1": [
+      4,
+      "none"
+     ]
+    },
+    "structure": {
+     "human": [
+      1,
+      "critical"
+     ],
+     "v1_0": [
+      2,
+      "major"
+     ],
+     "v1_1": [
+      3,
+      "minor"
+     ]
+    },
+    "title": {
+     "human": [
+      4,
+      "none"
+     ],
+     "v1_0": [
+      3,
+      "minor"
+     ],
+     "v1_1": [
+      4,
+      "none"
+     ]
+    },
+    "format": {
+     "human": [
+      null,
+      "none"
+     ],
+     "v1_0": [
+      null,
+      "none"
+     ],
+     "v1_1": [
+      null,
+      "none"
+     ]
+    }
+   }
+  }
+ ],
+ "implication_for_p1_5": "General fix: decouple scoring from evidence-menu convenience (score strictly per severity anchors; menus are citation aids only). Must remain general, not keyed to human labels per case."
+}

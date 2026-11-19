@@ -58,7 +58,7 @@ def mkgold(cid, decision, sev, score):
 
 class JudgeV11Tests(unittest.TestCase):
     def test_version_bumped(self):
-        self.assertEqual(JUDGE_VERSION, '1.1.0')
+        self.assertEqual(JUDGE_VERSION, '1.2.0')
 
     def test_menus_present_and_deterministic(self):
         p1, reg, _ = build_prompt(SOURCE, DOC, DOC)
@@ -176,14 +176,14 @@ class JudgeV11Tests(unittest.TestCase):
     def test_run_judge_production_accepted(self):
         rep = run_judge(SOURCE, DOC, Provider(), gold=DOC)
         self.assertEqual(rep['status'], 'accepted')
-        self.assertEqual(rep['judge_version'], '1.1.0')
+        self.assertEqual(rep['judge_version'], '1.2.0')
 
 
 class RunnerP1Tests(unittest.TestCase):
     def test_signature_keys_unchanged(self):
         sig = config_signature('qwen3.8-27b', 2200, 20000, 90.0)
         self.assertEqual(set(sig), {'model', 'max_output_tokens', 'max_source_chars', 'timeout_seconds', 'judge_version', 'rubrics_version'})
-        self.assertEqual(sig['judge_version'], '1.1.0')
+        self.assertEqual(sig['judge_version'], '1.2.0')
 
     def _manifest(self, tmp, cases):
         (tmp / 'page.html').write_text(SOURCE, encoding='utf-8')

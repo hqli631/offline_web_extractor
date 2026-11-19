@@ -10,7 +10,7 @@ from lxml import html
 from .qwen_provider import QwenProvider
 from .rubrics_v2 import DIMENSIONS, VERSION, _document, score
 
-JUDGE_VERSION = '1.1.0'
+JUDGE_VERSION = '1.2.0'
 
 BOILERPLATE_KEYWORDS = ('nav', 'sidebar', 'footer', 'header', 'menu', 'advertisement',
                         'subscribe', 'newsletter', 'feedback', 'recommend', 'copyright',
@@ -94,10 +94,11 @@ def build_prompt(source, predicted, gold=None, *, max_source_chars=40000, max_pr
             'evidence':[{'ref':'p:N|p:title|g:N|g:title|s:N|s:html','quote':'verbatim nonempty substring (whitespace runs folded for matching), max 400 chars'}]} for name in DIMENSIONS}},
         'constraints':['Exactly schema_version and dimensions at top level; exactly the five dimensions and their five keys.',
             'Scored/partial require integer score and 1..8 citations. Null for unscored/not_applicable.',
+            'SCORING INDEPENDENCE: Determine each score and severity SOLELY from the actual defect magnitude observed by comparing the candidate against source/gold, strictly per the anchors (4=no material defect, 3=small local defect, 2=clear moderate loss or contamination, 1=large defect, 0=empty or fundamentally incorrect). Severity follows the defect itself: none=no material defect, minor=small local defect, major=clear moderate loss/contamination or wrong order/attributes, critical=empty/fundamentally wrong or severe order loss. evidence_menus is a CITATION APPENDIX placed after the data for convenience ONLY; the presence, absence, wording or quantity of suggested evidence MUST NOT raise or lower any score or severity. Never infer defect severity from which evidence is suggested.',
             'not_applicable is allowed only for format and requires severity none, score null, evidence []. unscored requires severity unknown, score null, evidence [].',
             'EVERY scored/partial dimension MUST cite at least one s: or g: reference. Candidate-only p: evidence is rejected for every dimension, including cleanliness and structure. Scores below 4 need concrete defect evidence.',
             'For cleanliness cite the source regions that must be excluded (s:N navigation/ads/footer) or g:N blocks proving noise absence; for structure cite s:N or g:N blocks showing expected order, levels and list attributes.',
-            'Quotes must be short (<=120 chars) verbatim substrings of the cited evidence. Whitespace runs (including U+00A0 non-breaking spaces, tabs, newlines and repeated spaces) are folded to single spaces for matching; every non-whitespace character must still appear verbatim and in order. Never paraphrase or reorder words. evidence_menus lists ready-to-cite {ref, quote} pairs copied exactly from the supplied evidence; you may use them directly or cite any other listed ref with your own verbatim quote. Menus are suggestions, not restrictions; the s:/g: citation rule still applies. Empty candidate has no p-block to cite; source evidence suffices.',
+            'Quotes must be short (<=120 chars) verbatim substrings of the cited evidence. Whitespace runs (including U+00A0 non-breaking spaces, tabs, newlines and repeated spaces) are folded to single spaces for matching; every non-whitespace character must still appear verbatim and in order. Never paraphrase or reorder words. evidence_menus is a citation appendix listed after the data; it provides ready-to-cite {ref, quote} pairs copied exactly from the supplied evidence. You may use them directly or cite any other listed ref with your own verbatim quote. The appendix is for citation convenience only and must not influence scoring; the s:/g: citation rule still applies. Empty candidate has no p-block to cite; source evidence suffices.',
             'p:N and g:N are zero-based indices into the supplied candidate.blocks and gold.blocks arrays; block_count gives the array length. Cite only refs present in the supplied lists; never cite an index at or beyond block_count or invent refs.',
             'When source.truncated is true, prefer s:N node citations over s:html and mark every scored dimension partial.',
             'Use partial if source HTML is truncated. Source-only scores are provisional, not gold-validated.',
@@ -110,8 +111,9 @@ def build_prompt(source, predicted, gold=None, *, max_source_chars=40000, max_pr
         instruction['dimensions'] = dict(PHRASING_VARIANTS[dimension_phrasing])
     source_section={'html_ref':'s:html','html':raw,'nodes':source_nodes,'truncated':clipped}
     def _assemble(m):
-        pr={'protocol':instruction,'evidence_menus':m,'source':source_section,'candidate':candidate}
+        pr={'protocol':instruction,'source':source_section,'candidate':candidate}
         if reference is not None: pr['gold']=reference
+        pr['evidence_menus']=m
         return pr
     # Budget-aware deterministic menus: largest quote prefix in {120,60,30} that
     # fits max_prompt_chars; if none fit, menus are empty (base prompt still fits).

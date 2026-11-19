@@ -164,3 +164,18 @@
 - 离线归因 H2 得证（blurb 模式2 在 v1.1 校验器下接受）。
 - 交付 **docs/P1_DELIVERY_REPORT.md**（命令+哈希+台账+如实局限）。**验收为有条件达标：目标硬指标（severe_miss≤1、拒绝<10%）达标，预注册一致率护栏破。**
 - **F2 决策点待用户**：(a) 接受 v1.1 带告警（豁免护栏）/ (b) 履行 F2 回滚 v1.0（拒绝率回 16.7% 反不达硬指标）/ (c) P1.5 预注册迭代同时恢复一致率（需新预算）。助手建议 (c)>(a)>(b)。frozen_test 未重跑未调参；judge 分数仍不作训练奖励。
+
+
+## GitHub 同步 + P1.5 启动（2026-11-19）
+
+- **GitHub 同步完成**：项目三首次推送至 https://github.com/hqli631/offline_web_extractor （main 分支，commit d2ad75c0be1da40b312bccdb64f5f100180eca19，687 文件）。git init→密钥扫描（687 文件零泄露，env.local 经 .gitignore 排除）→commit→push。schannel TLS 握手失败改用 **openssl SSL 后端**（已固化 git config http.sslBackend openssl）；GCM 认证通过；远程 refs/heads/main 与本地 HEAD 一致。
+- **P1.5 启动（路径 c）**：零调用漂移诊断 outputs/p1_drift_diagnostic.v1.json 揭示一般性**菜单锚定效应**（v1.1 菜单把严重度拉向中间档：轻缺陷抬高→false_alarm，重缺陷压低→severe_miss）。预注册 docs/P1_5_META_EVAL_PLAN.md：judge v1.2.0 一般性解耦评分与证据菜单（菜单降级为引文附录+严重度锚点强化），目标恢复 dev 护栏（分歧≤1）同时保持拒绝<10%、severe_miss≤1；严禁逐例拟合人类标签；frozen_test 仍封存。预算基础 16 次/上限≤40，待批准。下一步：零调用工程实现+测试→freeze v4→报预算→批准→dev 重评→验收→报告。
+
+
+## P1.5 工程就绪（2026-11-19，零调用，待预算批准）
+
+- judge **v1.2.0**（仅改 rubrics_judge.py，新 sha256 edd841efb52961f07891160ccae7fabcc72da65734854da9a86e02bf622ff891）：证据菜单移至 prompt 末位（引文附录）+ 新增 SCORING INDEPENDENCE 强约束（评分/严重度仅依实际缺陷幅度按锚点判定，菜单不得抬高/压低任何分数或严重度）+ 严重度锚点强化。一般性原则，无案例特异分支（测试断言 prompt 不含 cal-/盲码）。菜单内容/空白折叠/s:/g: 规则/探针参数不变。
+- 新工具 tools/amend_freeze_v4.py（幂等，证明 silver 标签仅 prompt_chars 漂移）；freeze **v4** 修正完成：代码仅 rubrics_judge.py，23 标签诊断刷新（评分内容证明不变），候选/gold/manifest/源页/协议文档/rubrics_v2/构建器/batch_config 不变。build_calibration_set --verify v4 = **MATCH**；check_freeze 历史 batch v6 对 v4 = **NONE**；协议文档哈希 ab0887b5… 不变。
+- 测试：P1.5 定向 10 项（tests/test_p1_5_judge_v12.py）+ P1/judge 定向共 82 项 OK；全量回归 **361 项 OK**（outputs/rubrics_judge.p1_5.engineering.tests.v1.log，21.140s）。
+- 预注册 docs/P1_5_META_EVAL_PLAN.md（H1 解耦消除菜单锚定；验收 dev 分歧≤1 且拒绝<10% 且 severe_miss≤1；回退 F1/F2 两阶段）。
+- 状态：**工程就绪，零调用，等待用户批准 P1.5 预算**（基础 16 次：冒烟 2+dev 重评 12+稳定性 2，~240k tokens；回退两阶段上限≤40 次/~600k）。批准后 dev 重评→验收（恢复护栏）→交付 P1.5 报告→同步 GitHub→停止。frozen_test 仍封存；judge 分数仍不作训练奖励。

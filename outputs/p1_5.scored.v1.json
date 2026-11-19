@@ -1,0 +1,97 @@
+{
+ "tool": "score_p1_results.py",
+ "scope": "development_only",
+ "acceptance": {
+  "n_cases": 12,
+  "accepted": 12,
+  "rejected": 0,
+  "reject_rate": 0.0,
+  "severe_miss_count": 0,
+  "severe_miss_cases": [],
+  "false_alarm_cases": [
+   "cal-appetite-reorder"
+  ],
+  "accepted_decision_mismatches": 1,
+  "thresholds": {
+   "reject_rate_lt": 0.1,
+   "severe_miss_le": 1,
+   "decision_mismatch_le": 1
+  },
+  "checks": {
+   "reject_rate_lt_0.10": true,
+   "severe_miss_le_1": true,
+   "decision_mismatch_le_1": true
+  },
+  "verdict": "ACCEPT"
+ },
+ "dev_metrics": {
+  "n_cases": 12,
+  "accepted": 12,
+  "rejected": 0,
+  "decision_match_rate": 0.9167,
+  "decision_cohen_kappa": 0.8554,
+  "n_comparable_dim_pairs": 48,
+  "dim_exact_rate": 0.8333,
+  "dim_within1_rate": 1.0,
+  "severity_sign_rate": 0.875,
+  "severe_miss_cases": [],
+  "false_alarm_cases": [
+   "cal-appetite-reorder"
+  ],
+  "rejected_cases": []
+ },
+ "cross_judge": null,
+ "probes": {
+  "position": null,
+  "phrasing": null,
+  "stability": {
+   "probe_key": "stability",
+   "n_comparable_cases": 2,
+   "decision_flip_rate": 0.0,
+   "dim_exact_rate": 1.0,
+   "severity_sign_rate": 1.0,
+   "per_case": [
+    {
+     "case_id": "cal-appetite-clean",
+     "comparable": true,
+     "decision_flip": false,
+     "base_decision": "pass",
+     "probe_decision": "pass",
+     "dim_exact": 1.0
+    },
+    {
+     "case_id": "cal-blurb-noise",
+     "comparable": true,
+     "decision_flip": false,
+     "base_decision": "fail",
+     "probe_decision": "fail",
+     "dim_exact": 1.0
+    }
+   ],
+   "note": "descriptive stability vs production baseline; not acceptance."
+  }
+ },
+ "freeze_check": "NONE",
+ "inputs": {
+  "batch_manifest_sha256": "a3ef652c55ef9a015f12a83b18befef9076ae352f005985fa2682823b15b5d28",
+  "batch_signature": {
+   "model": "qwen3.8-27b",
+   "max_output_tokens": 2200,
+   "max_source_chars": 20000,
+   "timeout_seconds": 90.0,
+   "judge_version": "1.2.0",
+   "rubrics_version": "2.0.0"
+  },
+  "gold_sha256": "23f5f491cdfecd4d2a14d1454dcd8e897a2f0f02c092552326baaa908968f70c",
+  "freeze_version": 4,
+  "freeze_judge_sha256": "edd841efb52961f07891160ccae7fabcc72da65734854da9a86e02bf622ff891"
+ },
+ "limitations": [
+  "single annotator, no IAA",
+  "agreement is not accuracy",
+  "dev only; frozen_test sealed and not re-run",
+  "post-adjudication human gold; independent anchor is P0 blind 0.75/kappa0.5077",
+  "cross-judge is same-family second model; self-preference coverage limited",
+  "probes descriptive only; judge scores are not training reward"
+ ]
+}

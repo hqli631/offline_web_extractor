@@ -63,3 +63,14 @@ P0 交付后启动 P1 judge 元评估。预注册方案 docs/P1_META_EVAL_PLAN.m
 - 测试：P1.5 定向 10 项（tests/test_p1_5_judge_v12.py）+ P1/judge 定向共 82 项 OK；全量回归 **361 项 OK**（outputs/rubrics_judge.p1_5.engineering.tests.v1.log，21.140s）。
 - 预注册 docs/P1_5_META_EVAL_PLAN.md（H1 解耦消除菜单锚定；验收 dev 分歧≤1 且拒绝<10% 且 severe_miss≤1；回退 F1/F2 两阶段）。
 - 状态：**工程就绪，零调用，等待用户批准 P1.5 预算**（基础 16 次：冒烟 2+dev 重评 12+稳定性 2，~240k tokens；回退两阶段上限≤40 次/~600k）。批准后 dev 重评→验收（恢复护栏）→交付 P1.5 报告→同步 GitHub→停止。frozen_test 仍封存；judge 分数仍不作训练奖励。
+
+
+## P1.5 验收 ACCEPT（2026-11-19，批准后执行）
+
+- 用户批准 P1.5 预算后执行：冒烟 2 + W1 dev 重评 10（前 2 缓存）+ W2 稳定性 2 = **14 次新调用 ≤16**，tokens **201,975**（低于估算）。回退 F1/F2 未触发。
+- **验收 ACCEPT，护栏恢复**：dev 拒绝率 **0%**（0/12）、severe_miss **0**、接受例决策分歧 **1**（≤1）——三项预注册阈值全达标。freeze_check NONE。
+- dev 决策一致率 **0.9167 / κ0.8554**（v1.1 0.7273/0.5286 大幅恢复）；逐维 exact 0.8333、±1 1.0、严重度符号 0.875。一般性解耦假设 **H1 得证**（菜单锚定消除）。
+- 修复案例：appetite-missing_paragraph、appetite-duplicate（v1.1 fail→uncertain 匹配）、blurb-reorder（v1.1 severe_miss→fail 匹配）、blurb-missing_paragraph（v1.1 被拒→接受且匹配）。残留 1 处 false_alarm：appetite-reorder（judge fail vs 人类 uncertain，护栏内，留 P2 检验）。
+- 稳定性 temp=0 复跑 2 例完全一致（翻转 0、exact 1.0）。
+- 交付 **docs/P1_5_DELIVERY_REPORT.md**（命令+哈希+台账+三版对比+如实局限）。frozen_test 未重跑未调参、永久封存至 P2；judge 分数仍不作训练奖励。
+- P1 系列完成：v1.0（拒绝 16.7%）→ v1.1（8.3% 护栏破）→ **v1.2（0% 护栏恢复 ACCEPT）**。后续 P2 扩规模/IAA/新 frozen_test v2 检验泛化（需批准）。

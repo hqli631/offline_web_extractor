@@ -130,3 +130,14 @@ P0 验收：human_gold.final.json 生成；AGREEMENT_REPORT.md 含决策一致�
 - W1 dev：拒绝 8.3% ✓、severe_miss 1 ✓、决策分歧 3 ✗（护栏破）；一致率 1.0→0.7273/κ0.529 回归，false_alarm 2。verdict REJECT（护栏）。
 - W2 cross-judge qwen-plus：拒绝 50%，双接受 6 例一致 0.8333/κ0.6667。W3 位置翻转 1/6、改写 2 拒绝；W4 temp0 稳定。
 - 交付 docs/P1_DELIVERY_REPORT.md。F2 决策待用户（a 接受带告警 / b 回滚 / c P1.5 迭代）。
+
+
+## P1.5 验收 ACCEPT（2026-11-19，批准后执行）
+
+- 用户批准 P1.5 预算后执行：冒烟 2 + W1 dev 重评 10（前 2 缓存）+ W2 稳定性 2 = **14 次新调用 ≤16**，tokens **201,975**（低于估算）。回退 F1/F2 未触发。
+- **验收 ACCEPT，护栏恢复**：dev 拒绝率 **0%**（0/12）、severe_miss **0**、接受例决策分歧 **1**（≤1）——三项预注册阈值全达标。freeze_check NONE。
+- dev 决策一致率 **0.9167 / κ0.8554**（v1.1 0.7273/0.5286 大幅恢复）；逐维 exact 0.8333、±1 1.0、严重度符号 0.875。一般性解耦假设 **H1 得证**（菜单锚定消除）。
+- 修复案例：appetite-missing_paragraph、appetite-duplicate（v1.1 fail→uncertain 匹配）、blurb-reorder（v1.1 severe_miss→fail 匹配）、blurb-missing_paragraph（v1.1 被拒→接受且匹配）。残留 1 处 false_alarm：appetite-reorder（judge fail vs 人类 uncertain，护栏内，留 P2 检验）。
+- 稳定性 temp=0 复跑 2 例完全一致（翻转 0、exact 1.0）。
+- 交付 **docs/P1_5_DELIVERY_REPORT.md**（命令+哈希+台账+三版对比+如实局限）。frozen_test 未重跑未调参、永久封存至 P2；judge 分数仍不作训练奖励。
+- P1 系列完成：v1.0（拒绝 16.7%）→ v1.1（8.3% 护栏破）→ **v1.2（0% 护栏恢复 ACCEPT）**。后续 P2 扩规模/IAA/新 frozen_test v2 检验泛化（需批准）。

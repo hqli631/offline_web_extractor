@@ -1,0 +1,248 @@
+{
+ "label_version": 1,
+ "case_id": "cal-interpreter-missing_paragraph",
+ "split": "development",
+ "template": "python_interpreter_zh",
+ "label_origin": "assistant_silver",
+ "human_reviewed": false,
+ "derivation": "frozen_rubrics_v2_program_on_controlled_mutation",
+ "mutation": {
+  "type": "missing_paragraph",
+  "index": 1,
+  "removed_excerpt": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+ },
+ "noise_terms": [],
+ "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+ "gold_sha256": "a63567d6f7f477798a6998b89c88d784d2dbc304d91f63fd8d10d2451130fcda",
+ "candidate_sha256": "5a6a00d11a1618e6a3f1aa86a1843b03a8877091bd602d34940860a43feb8353",
+ "batch_config": {
+  "max_source_chars": 20000
+ },
+ "source_truncated": true,
+ "prompt_chars": 56388,
+ "expected": {
+  "dimensions": {
+   "completeness": {
+    "score": 3,
+    "status": "partial",
+    "severity": "minor"
+   },
+   "cleanliness": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "title": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "format": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   }
+  },
+  "decision": "uncertain",
+  "needs_human_review": true
+ },
+ "program_reference": {
+  "rubrics_version": "2.0.0",
+  "method": "deterministic-reference",
+  "dimensions": {
+   "completeness": {
+    "score": 3,
+    "status": "partial",
+    "recall": 0.9617314930991218,
+    "missing_tokens": 61
+   },
+   "cleanliness": {
+    "score": 4,
+    "status": "partial",
+    "precision": 1.0,
+    "clean_ratio": 1.0,
+    "extra_tokens": 0,
+    "noise_hits": {}
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "attribute_ratio": 1.0,
+    "order_ratio": 1.0,
+    "alignment_coverage": 0.9841269841269841,
+    "aligned_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      10,
+      11
+     ],
+     [
+      11,
+      12
+     ],
+     [
+      12,
+      13
+     ],
+     [
+      13,
+      14
+     ],
+     [
+      14,
+      15
+     ],
+     [
+      15,
+      16
+     ],
+     [
+      16,
+      17
+     ],
+     [
+      17,
+      18
+     ],
+     [
+      18,
+      19
+     ],
+     [
+      19,
+      20
+     ],
+     [
+      20,
+      21
+     ],
+     [
+      21,
+      22
+     ],
+     [
+      22,
+      23
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      24,
+      25
+     ],
+     [
+      25,
+      26
+     ],
+     [
+      26,
+      27
+     ],
+     [
+      27,
+      28
+     ],
+     [
+      28,
+      29
+     ],
+     [
+      29,
+      30
+     ],
+     [
+      30,
+      31
+     ]
+    ],
+    "reason": "Only text-aligned blocks are scored"
+   },
+   "title": {
+    "score": 4,
+    "status": "partial",
+    "exact": true
+   },
+   "format": {
+    "score": 4,
+    "status": "partial",
+    "code_exact_ratio": 1.0,
+    "code_pairs_checked": 6,
+    "scope": "Aligned code blocks only; Markdown render and links are unassessed"
+   }
+  },
+  "issues": [
+   {
+    "dimension": "completeness",
+    "code": "unaligned_gold_block",
+    "severity": "minor",
+    "predicted_ref": null,
+    "gold_ref": "g:1",
+    "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+    "gold_excerpt": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+   },
+   {
+    "dimension": "completeness",
+    "code": "partial_source_evidence",
+    "severity": "unknown",
+    "predicted_ref": null,
+    "gold_ref": null,
+    "detail": "Scores cover supplied evidence only"
+   }
+  ],
+  "decision": "uncertain",
+  "needs_human_review": true,
+  "overall": null,
+  "evidence_complete": false,
+  "note": "Uncalibrated diagnostics; no model/human judgement or reward claim. Source attribution, links and Markdown rendering are unassessed."
+ },
+ "notes": [
+  "Silver label (assistant-derived), not human gold; disagreement goes to the review queue.",
+  "clean means no injected mutation; the extractor output may still differ from gold."
+ ]
+}

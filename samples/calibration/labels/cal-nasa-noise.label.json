@@ -1,0 +1,263 @@
+{
+ "label_version": 1,
+ "case_id": "cal-nasa-noise",
+ "split": "frozen_test",
+ "template": "nasa-voyager-news.candidate",
+ "label_origin": "assistant_silver",
+ "human_reviewed": false,
+ "derivation": "frozen_rubrics_v2_program_on_controlled_mutation",
+ "mutation": {
+  "type": "noise",
+  "index": 1,
+  "injected_text": "Share this article on Facebook and Twitter. Subscribe to our newsletter! Advertisement: buy now related content."
+ },
+ "noise_terms": [
+  "advertisement",
+  "subscribe to our newsletter"
+ ],
+ "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+ "gold_sha256": "f3b7d0450c531bb38884b79aebe0d28f2b4bbeccdb8982d2d23924fc2f5abbb5",
+ "candidate_sha256": "9a7e4b6e3604f54f848a8fd7d1a87ac15d67edf67b746a04b9f5244a70046bf4",
+ "batch_config": {
+  "max_source_chars": 20000
+ },
+ "source_truncated": true,
+ "prompt_chars": 75652,
+ "expected": {
+  "dimensions": {
+   "completeness": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "cleanliness": {
+    "score": 1,
+    "status": "partial",
+    "severity": "major"
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "title": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "severity": "none"
+   }
+  },
+  "decision": "fail",
+  "needs_human_review": true
+ },
+ "program_reference": {
+  "rubrics_version": "2.0.0",
+  "method": "deterministic-reference",
+  "dimensions": {
+   "completeness": {
+    "score": 4,
+    "status": "partial",
+    "recall": 1.0,
+    "missing_tokens": 0
+   },
+   "cleanliness": {
+    "score": 1,
+    "status": "partial",
+    "precision": 0.9033942558746736,
+    "clean_ratio": 0.4033942558746736,
+    "extra_tokens": 74,
+    "noise_hits": {
+     "advertisement": 1,
+     "subscribe to our newsletter": 1
+    }
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "attribute_ratio": 1.0,
+    "order_ratio": 1.0,
+    "alignment_coverage": 0.9090909090909091,
+    "aligned_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      10,
+      9
+     ],
+     [
+      11,
+      10
+     ],
+     [
+      12,
+      11
+     ],
+     [
+      13,
+      12
+     ],
+     [
+      14,
+      13
+     ],
+     [
+      15,
+      14
+     ],
+     [
+      16,
+      15
+     ],
+     [
+      17,
+      16
+     ],
+     [
+      18,
+      17
+     ],
+     [
+      19,
+      18
+     ],
+     [
+      20,
+      19
+     ]
+    ],
+    "reason": "Only text-aligned blocks are scored"
+   },
+   "title": {
+    "score": 4,
+    "status": "partial",
+    "exact": true
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "reason": "No code blocks to compare"
+   }
+  },
+  "issues": [
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:1",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "Share this article on Facebook and Twitter. Subscribe to our newsletter! Advertisement: buy now related content."
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:21",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "-end-"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:22",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "Abbey Interrante / Karen FoxHeadquarters, Washington202-358-1600abbey.a.interrante@nasa.gov / karen.c.fox@nasa.gov"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:23",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "Josh SmoohaJet Propulsion Laboratory, Pasadena, Calif.626-298-4414josh.smooha@jpl.nasa.gov"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "explicit_noise_term",
+    "severity": "major",
+    "predicted_ref": null,
+    "gold_ref": null,
+    "detail": {
+     "term": "advertisement",
+     "excess_count": 1,
+     "candidate_refs": [
+      "p:1"
+     ]
+    }
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "explicit_noise_term",
+    "severity": "major",
+    "predicted_ref": null,
+    "gold_ref": null,
+    "detail": {
+     "term": "subscribe to our newsletter",
+     "excess_count": 1,
+     "candidate_refs": [
+      "p:1"
+     ]
+    }
+   },
+   {
+    "dimension": "completeness",
+    "code": "partial_source_evidence",
+    "severity": "unknown",
+    "predicted_ref": null,
+    "gold_ref": null,
+    "detail": "Scores cover supplied evidence only"
+   }
+  ],
+  "decision": "fail",
+  "needs_human_review": true,
+  "overall": null,
+  "evidence_complete": false,
+  "note": "Uncalibrated diagnostics; no model/human judgement or reward claim. Source attribution, links and Markdown rendering are unassessed."
+ },
+ "notes": [
+  "Silver label (assistant-derived), not human gold; disagreement goes to the review queue.",
+  "clean means no injected mutation; the extractor output may still differ from gold."
+ ]
+}

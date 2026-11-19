@@ -190,3 +190,11 @@
 - 稳定性 temp=0 复跑 2 例完全一致（翻转 0、exact 1.0）。
 - 交付 **docs/P1_5_DELIVERY_REPORT.md**（命令+哈希+台账+三版对比+如实局限）。frozen_test 未重跑未调参、永久封存至 P2；judge 分数仍不作训练奖励。
 - P1 系列完成：v1.0（拒绝 16.7%）→ v1.1（8.3% 护栏破）→ **v1.2（0% 护栏恢复 ACCEPT）**。后续 P2 扩规模/IAA/新 frozen_test v2 检验泛化（需批准）。
+
+
+## P2 启动 + WP1 统计强化（2026-11-19，零调用）
+
+- 预注册 docs/P2_META_EVAL_PLAN.md（drafted）：扩样 ~45–55 例（新模板 python_interpreter_zh/nasa-voyager-news/w3c_accessibility_intro_zh，预算检验可行；webdev-learn-html 封存禁用）、分层、新 frozen_test v2 预注册封存（v1 永久封存）、第二标注者 IAA ≥12 例、跨家族 cross-judge（gpt-5.6-sol）、bootstrap CI、泛化验收阈值。需用户配合：第二标注者、新案例人类 gold、源页确认、预算批准。
+- **WP1 完成**：tools/bootstrap_stats.py（案例级 bootstrap 95% CI，B=10000 种子 20261119 + 配对 McNemar）；tests/test_bootstrap_stats.py 8 项；全量回归 **369 项 OK**（outputs/rubrics_judge.p2.wp1.tests.v1.log；本次耗时 637s 异常偏慢，疑系统负载，测试全绿）。
+- 现有 dev 三版 bootstrap（outputs/p2.bootstrap.dev.v1.json、P2_BOOTSTRAP_DEV.md）：v1.2 决策一致 0.9167 CI[0.75,1.0]、κ0.8554 CI[0.5,1.0]、拒绝 0；**关键洞察：n=12 小样本 CI 极宽，v1.2 vs v1.1 改善统计不显著（McNemar p=0.625，差值 CI[-0.55,0.18] 含 0），v1.1 κ CI 含 0** → 量化了 P2 扩样必要性。v1.0 一致率 CI[1,1] 为边界退化（全匹配），如实注明。
+- 下一步：WP2 扩样工程（零调用构建新 silver 案例）→ WP3 frozen_test v2 封存 → WP4 人类 gold/IAA（需用户）→ WP5 跨家族（需预算）→ WP6 泛化验收+报告。

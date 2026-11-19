@@ -1,0 +1,237 @@
+{
+ "tool": "bootstrap_stats.py",
+ "B": 10000,
+ "seed": 20261119,
+ "scope": "development_only",
+ "gold_sha256": "23f5f491cdfecd4d2a14d1454dcd8e897a2f0f02c092552326baaa908968f70c",
+ "batches": {
+  "v1.0": {
+   "n_dev": 12,
+   "metrics": {
+    "decision_match_rate": {
+     "point": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "decision_cohen_kappa": {
+     "point": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "dim_exact_rate": {
+     "point": 0.875,
+     "ci95": [
+      0.7708,
+      0.9722
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "severity_sign_rate": {
+     "point": 0.9,
+     "ci95": [
+      0.825,
+      0.975
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "severe_miss_rate": {
+     "point": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "false_alarm_rate": {
+     "point": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "reject_rate": {
+     "point": 0.1667,
+     "ci95": [
+      0.0,
+      0.4167
+     ],
+     "n": 12,
+     "B": 10000
+    }
+   }
+  },
+  "v1.1": {
+   "n_dev": 12,
+   "metrics": {
+    "decision_match_rate": {
+     "point": 0.7273,
+     "ci95": [
+      0.4545,
+      1.0
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "decision_cohen_kappa": {
+     "point": 0.5286,
+     "ci95": [
+      -0.0633,
+      1.0
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "dim_exact_rate": {
+     "point": 0.8182,
+     "ci95": [
+      0.7,
+      0.925
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "severity_sign_rate": {
+     "point": 0.8864,
+     "ci95": [
+      0.8125,
+      0.9583
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "severe_miss_rate": {
+     "point": 0.0909,
+     "ci95": [
+      0.0,
+      0.2727
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "false_alarm_rate": {
+     "point": 0.1818,
+     "ci95": [
+      0.0,
+      0.4444
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "reject_rate": {
+     "point": 0.0833,
+     "ci95": [
+      0.0,
+      0.25
+     ],
+     "n": 12,
+     "B": 10000
+    }
+   }
+  },
+  "v1.2": {
+   "n_dev": 12,
+   "metrics": {
+    "decision_match_rate": {
+     "point": 0.9167,
+     "ci95": [
+      0.75,
+      1.0
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "decision_cohen_kappa": {
+     "point": 0.8554,
+     "ci95": [
+      0.5,
+      1.0
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "dim_exact_rate": {
+     "point": 0.8333,
+     "ci95": [
+      0.7708,
+      0.8958
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "severity_sign_rate": {
+     "point": 0.875,
+     "ci95": [
+      0.8125,
+      0.9375
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "severe_miss_rate": {
+     "point": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "false_alarm_rate": {
+     "point": 0.0833,
+     "ci95": [
+      0.0,
+      0.25
+     ],
+     "n": 12,
+     "B": 10000
+    },
+    "reject_rate": {
+     "point": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "n": 12,
+     "B": 10000
+    }
+   }
+  }
+ },
+ "paired": {
+  "v1.0_vs_v1.1": {
+   "common_accepted": 10,
+   "A_correct_B_wrong": 2,
+   "A_wrong_B_correct": 0,
+   "mcnemar_exact_p": 0.5,
+   "match_diff_A_minus_B": 0.2,
+   "diff_ci95": [
+    0.0,
+    0.5
+   ]
+  },
+  "v1.1_vs_v1.2": {
+   "common_accepted": 11,
+   "A_correct_B_wrong": 1,
+   "A_wrong_B_correct": 3,
+   "mcnemar_exact_p": 0.625,
+   "match_diff_A_minus_B": -0.1818,
+   "diff_ci95": [
+    -0.5455,
+    0.1818
+   ]
+  }
+ }
+}

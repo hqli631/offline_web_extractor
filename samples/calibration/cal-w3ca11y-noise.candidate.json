@@ -1,0 +1,452 @@
+{
+ "title": "Web无障碍简介",
+ "blocks": [
+  {
+   "kind": "heading",
+   "text": "总结",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "分享到：微信 微博 QQ空间 推荐阅读：广告推广内容 上一篇：没有了 下一篇：Python 简介",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "当网站和web工具得到适当的设计和编码时，残疾人就可以使用它们。然而，目前许多网站和工具都带有可访问性障碍，使得一些人很难或不可能使用它们。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "使web无障碍对个人、企业和社会都有好处。国际web标准定义了无障碍所需的内容。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "无障碍的概念",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "quote",
+   "text": "Web的力量在于它的普遍性。 每个人不论残疾与否都能访问是一个最基本的方面。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "Web从根本上是为所有人设计的，无论他们的硬件、软件、语言、位置或能力如何。当web达到这一目标时，具有不同听力、运动、视觉和认知能力的人就可以访问它。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "因此，残疾对Web的影响发生了根本性的变化，因为Web消除了许多人在现实世界中面临的沟通和互动障碍。然而，当网站、应用程序、技术或工具设计得很糟糕时，它们可能会造成阻碍，使人们无法使用Web。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "对于想要创建高质量网站和web工具的开发人员和组织来说，无障碍是必不可少的，这就不会让一些人在使用他们的产品和服务的时候被排除在外。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "什么是Web无障碍",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "Web无障碍是指设计和开发网站、工具和技术，使残疾人能够使用它们。更具体地说，人们可以:",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "感知、理解、导航和与Web交互",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "为Web做贡献",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "Web无障碍包括所有影响浏览网页的障碍，包括:",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "听觉",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "认知能力",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "神经损伤",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "身体上的",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "语言",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "视觉",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "Web无障碍对无残疾人士亦有好处，例如:",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "人们使用手机、智能手表、智能电视等具有小屏幕、不同输入模式的设备等",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "随着年龄的增长能力发生变化的老年人",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "有“暂时性残疾”的人，如手臂骨折或眼镜丢失",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "有“情境限制”的人，例如在明亮的阳光下或在无法听音频的环境中",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "使用慢速互联网连接，或带宽有限或昂贵的人",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "有关无障碍设施对残疾人士的重要性及在不同情况下对每个人的重要性的例子，请参阅: Web无障碍愿景视频 (YouTube)",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "无障碍对个人、企业和社会的重要性",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "在教育、就业、政府、商业、医疗、娱乐等生活的许多方面，Web都是越来越重要的资源。为了给具有不同能力的人提供平等的访问和平等的机会，网络的可访问性是至关重要的。《联合国残疾人权利公约》(UN CRPD)将获得包括网络在内的信息和通信技术定义为一项基本人权 .",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "Web为许多残疾人提供了前所未有的获取信息和互动的可能性。也就是说，通过web技术可以更容易地克服打印、音频和可视媒体的可访问性障碍。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "无障碍设施为残疾人士及其他人士提供社会包容服务，例如:",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "老年人",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "农村人口",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "发展中国家的人们",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "对于无障碍，还有一个强有力的业务案例。如前一节所示，无障碍设计改善了总体用户体验和满意度，特别是在各种情况下，跨不同的设备，并为老年用户。无障碍可以增强您的品牌，推动创新，并扩大您的市场范围。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "在许多情况下，法律要求Web无障碍。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "使Web无障碍",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "Web无障碍依赖于几个共同工作的组件，包括Web技术、Web浏览器和其他“用户代理”、创作工具和网站。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "W3C Web无障碍推进 (WAI (英文))开发描述无障碍解决方案的技术规范、指南、技术和支持资源。这些被认为是无障碍网页的国际标准;例如, WCAG 2.0 也是 ISO标准: ISO/IEC 40500。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "让你的网站更无障碍",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 3
+  },
+  {
+   "kind": "paragraph",
+   "text": "无障碍的许多方面都非常容易理解和实现。一些无障碍解决方案会比较复杂，需要更多的知识来实现。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "从项目一开始就包含无障碍是最有效的方式，这样您就不需要返回并重新做工作。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "无障碍评测",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "在开发或重新设计网站时，尽早评测无障碍性，并贯穿整个开发过程，以便尽早发现无障碍问题，以便更容易地解决这些问题。简单的步骤，例如在浏览器中更改设置，可以帮助您评估无障碍的某些方面。综合评估，以确定一个网站是否符合所有无障碍指南需要更多的努力。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "有一些评估工具可以帮助进行评测。但是，没有任何工具可以单独确定站点是否符合无障碍指南。需要有知识的人工评测来确定站点是否无障碍。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "例子",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "heading",
+   "text": "图片的替代文本",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 3
+  },
+  {
+   "kind": "paragraph",
+   "text": "图像应包括等效替代文本 (alt文本) 在标记语言或者代码中.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "如果没有为图像提供alt文本，则图像信息是不可访问的，例如，对于无法看到和使用屏幕阅读器的人来说，屏幕阅读器会大声读出页面上的信息，包括可视图像的alt文本。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "当提供相同的alt文本时，盲人和关闭图像的人(例如，在带宽昂贵或较低的地区)都可以获得这些信息。它也适用于无法看到图像的技术，比如搜索引擎。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "键盘输入",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 3
+  },
+  {
+   "kind": "paragraph",
+   "text": "有些人不能使用鼠标，包括许多老年人，他们的精细运动控制能力有限。一个无障碍的网站不依赖鼠标；它使所有功能都可以从键盘上获得. 然后残疾人可以使用辅助技术 (英文) 模仿键盘，如语音输入。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "为音频提供文本",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 3
+  },
+  {
+   "kind": "paragraph",
+   "text": "就像图像对看不见的人不可用一样，音频文件对听不见的人也不可用。提供文本文本使聋人或重听人以及搜索引擎和其他听不见的技术可以访问音频信息。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "Web提供文字记录既简单又相对便宜。还有文本记录服务 来创建HTML格式的文本。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "更多例子",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 3
+  },
+  {
+   "kind": "list_item",
+   "text": "开始行动的小贴士 (英文)",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "轻松评测-第一次检查 (英文)",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "Web无障碍愿景 — 视频和描述",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "更多信息",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "W3C WAI提供了不同方面的广泛资源，关于web无障碍标准, 教育 (英文), 评测 (英文), 项目管理, 及政策 (英文). 我们鼓励您浏览本网站，或浏览WAI参考资料 (英文).",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "数字化无障碍基础 - 免费的在线课程 (英文) 为您提供所需的基础，使您的数字化技术便于使用。",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  }
+ ]
+}

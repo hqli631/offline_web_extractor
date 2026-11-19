@@ -1,0 +1,191 @@
+{
+ "judge_manifest_version": 1,
+ "cases": [
+  {
+   "case_id": "cal-interpreter-clean",
+   "template": "python_interpreter_zh",
+   "split": "development",
+   "source": "python_interpreter_zh.html",
+   "candidate": "calibration/cal-interpreter-clean.candidate.json",
+   "gold": "python_interpreter_zh.expected.json",
+   "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5"
+  },
+  {
+   "case_id": "cal-interpreter-missing_paragraph",
+   "template": "python_interpreter_zh",
+   "split": "development",
+   "source": "python_interpreter_zh.html",
+   "candidate": "calibration/cal-interpreter-missing_paragraph.candidate.json",
+   "gold": "python_interpreter_zh.expected.json",
+   "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5"
+  },
+  {
+   "case_id": "cal-interpreter-noise",
+   "template": "python_interpreter_zh",
+   "split": "development",
+   "source": "python_interpreter_zh.html",
+   "candidate": "calibration/cal-interpreter-noise.candidate.json",
+   "gold": "python_interpreter_zh.expected.json",
+   "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+   "noise_terms": [
+    "分享到",
+    "推荐阅读"
+   ]
+  },
+  {
+   "case_id": "cal-interpreter-duplicate",
+   "template": "python_interpreter_zh",
+   "split": "development",
+   "source": "python_interpreter_zh.html",
+   "candidate": "calibration/cal-interpreter-duplicate.candidate.json",
+   "gold": "python_interpreter_zh.expected.json",
+   "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5"
+  },
+  {
+   "case_id": "cal-interpreter-reorder",
+   "template": "python_interpreter_zh",
+   "split": "development",
+   "source": "python_interpreter_zh.html",
+   "candidate": "calibration/cal-interpreter-reorder.candidate.json",
+   "gold": "python_interpreter_zh.expected.json",
+   "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5"
+  },
+  {
+   "case_id": "cal-interpreter-instruction_interference",
+   "template": "python_interpreter_zh",
+   "split": "development",
+   "source": "python_interpreter_zh.html",
+   "candidate": "calibration/cal-interpreter-instruction_interference.candidate.json",
+   "gold": "python_interpreter_zh.expected.json",
+   "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+   "noise_terms": [
+    "ignore previous instructions",
+    "忽略之前的指令"
+   ]
+  },
+  {
+   "case_id": "cal-nasa-clean",
+   "template": "nasa-voyager-news.candidate",
+   "split": "frozen_test",
+   "source": "nasa-voyager-news.candidate.html",
+   "candidate": "calibration/cal-nasa-clean.candidate.json",
+   "gold": "nasa-voyager-news.candidate.expected.json",
+   "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22"
+  },
+  {
+   "case_id": "cal-nasa-missing_paragraph",
+   "template": "nasa-voyager-news.candidate",
+   "split": "frozen_test",
+   "source": "nasa-voyager-news.candidate.html",
+   "candidate": "calibration/cal-nasa-missing_paragraph.candidate.json",
+   "gold": "nasa-voyager-news.candidate.expected.json",
+   "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22"
+  },
+  {
+   "case_id": "cal-nasa-noise",
+   "template": "nasa-voyager-news.candidate",
+   "split": "frozen_test",
+   "source": "nasa-voyager-news.candidate.html",
+   "candidate": "calibration/cal-nasa-noise.candidate.json",
+   "gold": "nasa-voyager-news.candidate.expected.json",
+   "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+   "noise_terms": [
+    "advertisement",
+    "subscribe to our newsletter"
+   ]
+  },
+  {
+   "case_id": "cal-nasa-duplicate",
+   "template": "nasa-voyager-news.candidate",
+   "split": "frozen_test",
+   "source": "nasa-voyager-news.candidate.html",
+   "candidate": "calibration/cal-nasa-duplicate.candidate.json",
+   "gold": "nasa-voyager-news.candidate.expected.json",
+   "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22"
+  },
+  {
+   "case_id": "cal-nasa-reorder",
+   "template": "nasa-voyager-news.candidate",
+   "split": "frozen_test",
+   "source": "nasa-voyager-news.candidate.html",
+   "candidate": "calibration/cal-nasa-reorder.candidate.json",
+   "gold": "nasa-voyager-news.candidate.expected.json",
+   "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22"
+  },
+  {
+   "case_id": "cal-nasa-instruction_interference",
+   "template": "nasa-voyager-news.candidate",
+   "split": "frozen_test",
+   "source": "nasa-voyager-news.candidate.html",
+   "candidate": "calibration/cal-nasa-instruction_interference.candidate.json",
+   "gold": "nasa-voyager-news.candidate.expected.json",
+   "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+   "noise_terms": [
+    "ignore previous instructions",
+    "忽略之前的指令"
+   ]
+  },
+  {
+   "case_id": "cal-w3ca11y-clean",
+   "template": "w3c_accessibility_intro_zh",
+   "split": "frozen_test",
+   "source": "w3c_accessibility_intro_zh.html",
+   "candidate": "calibration/cal-w3ca11y-clean.candidate.json",
+   "gold": "w3c_accessibility_intro_zh.expected.json",
+   "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc"
+  },
+  {
+   "case_id": "cal-w3ca11y-missing_paragraph",
+   "template": "w3c_accessibility_intro_zh",
+   "split": "frozen_test",
+   "source": "w3c_accessibility_intro_zh.html",
+   "candidate": "calibration/cal-w3ca11y-missing_paragraph.candidate.json",
+   "gold": "w3c_accessibility_intro_zh.expected.json",
+   "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc"
+  },
+  {
+   "case_id": "cal-w3ca11y-noise",
+   "template": "w3c_accessibility_intro_zh",
+   "split": "frozen_test",
+   "source": "w3c_accessibility_intro_zh.html",
+   "candidate": "calibration/cal-w3ca11y-noise.candidate.json",
+   "gold": "w3c_accessibility_intro_zh.expected.json",
+   "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc",
+   "noise_terms": [
+    "分享到",
+    "推荐阅读"
+   ]
+  },
+  {
+   "case_id": "cal-w3ca11y-duplicate",
+   "template": "w3c_accessibility_intro_zh",
+   "split": "frozen_test",
+   "source": "w3c_accessibility_intro_zh.html",
+   "candidate": "calibration/cal-w3ca11y-duplicate.candidate.json",
+   "gold": "w3c_accessibility_intro_zh.expected.json",
+   "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc"
+  },
+  {
+   "case_id": "cal-w3ca11y-reorder",
+   "template": "w3c_accessibility_intro_zh",
+   "split": "frozen_test",
+   "source": "w3c_accessibility_intro_zh.html",
+   "candidate": "calibration/cal-w3ca11y-reorder.candidate.json",
+   "gold": "w3c_accessibility_intro_zh.expected.json",
+   "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc"
+  },
+  {
+   "case_id": "cal-w3ca11y-instruction_interference",
+   "template": "w3c_accessibility_intro_zh",
+   "split": "frozen_test",
+   "source": "w3c_accessibility_intro_zh.html",
+   "candidate": "calibration/cal-w3ca11y-instruction_interference.candidate.json",
+   "gold": "w3c_accessibility_intro_zh.expected.json",
+   "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc",
+   "noise_terms": [
+    "ignore previous instructions",
+    "忽略之前的指令"
+   ]
+  }
+ ]
+}

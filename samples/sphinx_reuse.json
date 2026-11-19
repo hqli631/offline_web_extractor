@@ -1,0 +1,22 @@
+{
+  "rule": {
+    "id": "sphinx-main-v1",
+    "container_xpath": "//div[@role='main']",
+    "frozen_from": "appetite-reference",
+    "note": "Fixed from the previously inspected reference snapshot; not adjusted to interpreter-transfer."
+  },
+  "pages": [
+    {
+      "id": "appetite-reference",
+      "role": "reference",
+      "html": "python_appetite_zh.html",
+      "sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea"
+    },
+    {
+      "id": "interpreter-transfer",
+      "role": "transfer",
+      "html": "python_interpreter_zh.html",
+      "sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5"
+    }
+  ]
+}

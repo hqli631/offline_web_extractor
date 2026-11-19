@@ -1,0 +1,298 @@
+test_applied_output_uses_legal_enums (tests.test_repair_human_labels.ApplyTest.test_applied_output_uses_legal_enums) ... ok
+test_original_document_is_not_mutated (tests.test_repair_human_labels.ApplyTest.test_original_document_is_not_mutated) ... ok
+test_repair_metadata_is_recorded (tests.test_repair_human_labels.ApplyTest.test_repair_metadata_is_recorded) ... ok
+test_score_decision_and_notes_are_preserved (tests.test_repair_human_labels.ApplyTest.test_score_decision_and_notes_are_preserved) ... ok
+test_untouched_dimension_keeps_user_severity (tests.test_repair_human_labels.ApplyTest.test_untouched_dimension_keeps_user_severity) ... ok
+test_code_map_hides_case_ids (tests.test_repair_human_labels.BlindCodeErrorReportingTest.test_code_map_hides_case_ids) ... ok
+test_missing_entry_is_reported_with_blind_code (tests.test_repair_human_labels.BlindCodeErrorReportingTest.test_missing_entry_is_reported_with_blind_code) ... ok
+test_unmapped_case_is_masked (tests.test_repair_human_labels.BlindCodeErrorReportingTest.test_unmapped_case_is_masked) ... ok
+test_without_code_map_case_ids_are_used (tests.test_repair_human_labels.BlindCodeErrorReportingTest.test_without_code_map_case_ids_are_used) ... ok
+test_apply_writes_repaired_labels (tests.test_repair_human_labels.CliTest.test_apply_writes_repaired_labels) ... ok
+test_dry_run_reports_only (tests.test_repair_human_labels.CliTest.test_dry_run_reports_only) ... ok
+test_refuses_existing_output_dir (tests.test_repair_human_labels.CliTest.test_refuses_existing_output_dir) ... Output exists; choose a new directory.
+ok
+test_refuses_labels_that_contain_case_id (tests.test_repair_human_labels.CliTest.test_refuses_labels_that_contain_case_id) ... ok
+test_refuses_non_blind_stage (tests.test_repair_human_labels.CliTest.test_refuses_non_blind_stage) ... ok
+test_repair_diff_is_deterministic (tests.test_repair_human_labels.CliTest.test_repair_diff_is_deterministic) ... ok
+test_reports_contain_no_real_case_id_or_mutation_type (tests.test_repair_human_labels.CliTest.test_reports_contain_no_real_case_id_or_mutation_type) ... ok
+test_source_file_is_never_modified (tests.test_repair_human_labels.CliTest.test_source_file_is_never_modified) ... ok
+test_consistent_case_has_no_warning (tests.test_repair_human_labels.ConsistencyWarningTest.test_consistent_case_has_no_warning) ... ok
+test_fail_without_severe_is_flagged (tests.test_repair_human_labels.ConsistencyWarningTest.test_fail_without_severe_is_flagged) ... ok
+test_pass_with_defect_is_flagged (tests.test_repair_human_labels.ConsistencyWarningTest.test_pass_with_defect_is_flagged) ... ok
+test_pass_with_partial_status_is_flagged (tests.test_repair_human_labels.ConsistencyWarningTest.test_pass_with_partial_status_is_flagged) ... ok
+test_repaired_severity_is_used_for_warnings (tests.test_repair_human_labels.ConsistencyWarningTest.test_repaired_severity_is_used_for_warnings) ... ok
+test_severe_but_not_fail_is_flagged (tests.test_repair_human_labels.ConsistencyWarningTest.test_severe_but_not_fail_is_flagged) ... ok
+test_dim_rules_are_scoped (tests.test_repair_human_labels.DeriveSeverityTest.test_dim_rules_are_scoped) ... ok
+test_duplicate_keyword_is_major (tests.test_repair_human_labels.DeriveSeverityTest.test_duplicate_keyword_is_major) ... ok
+test_format_has_no_rules (tests.test_repair_human_labels.DeriveSeverityTest.test_format_has_no_rules) ... ok
+test_major_beats_minor_in_same_dim (tests.test_repair_human_labels.DeriveSeverityTest.test_major_beats_minor_in_same_dim) ... ok
+test_missing_keyword_is_major (tests.test_repair_human_labels.DeriveSeverityTest.test_missing_keyword_is_major) ... ok
+test_no_keyword_is_none (tests.test_repair_human_labels.DeriveSeverityTest.test_no_keyword_is_none) ... ok
+test_noise_keyword_is_major (tests.test_repair_human_labels.DeriveSeverityTest.test_noise_keyword_is_major) ... ok
+test_reorder_keyword_is_major (tests.test_repair_human_labels.DeriveSeverityTest.test_reorder_keyword_is_major) ... ok
+test_split_only_is_minor (tests.test_repair_human_labels.DeriveSeverityTest.test_split_only_is_minor) ... ok
+test_tag_leak_keyword_is_major (tests.test_repair_human_labels.DeriveSeverityTest.test_tag_leak_keyword_is_major) ... ok
+test_acknowledged_gap_moves_out_of_pending (tests.test_repair_human_labels.GapAcknowledgementTest.test_acknowledged_gap_moves_out_of_pending) ... ok
+test_decision_override_clears_the_warning (tests.test_repair_human_labels.GapAcknowledgementTest.test_decision_override_clears_the_warning) ... ok
+test_partially_acknowledged (tests.test_repair_human_labels.GapAcknowledgementTest.test_partially_acknowledged) ... ok
+test_unacknowledged_gap_stays_pending (tests.test_repair_human_labels.GapAcknowledgementTest.test_unacknowledged_gap_stays_pending) ... ok
+test_uncertain_with_defect_is_not_a_gap (tests.test_repair_human_labels.GapAcknowledgementTest.test_uncertain_with_defect_is_not_a_gap) ... ok
+test_uncertain_without_defect_is_reported_as_gap (tests.test_repair_human_labels.GapAcknowledgementTest.test_uncertain_without_defect_is_reported_as_gap) ... ok
+test_decision_override_on_untouched_case (tests.test_repair_human_labels.OverrideApplicationTest.test_decision_override_on_untouched_case) ... ok
+test_input_documents_are_not_mutated (tests.test_repair_human_labels.OverrideApplicationTest.test_input_documents_are_not_mutated) ... ok
+test_override_metadata_is_recorded (tests.test_repair_human_labels.OverrideApplicationTest.test_override_metadata_is_recorded) ... ok
+test_override_never_touches_score_or_notes (tests.test_repair_human_labels.OverrideApplicationTest.test_override_never_touches_score_or_notes) ... ok
+test_severity_override_reaches_the_output_document (tests.test_repair_human_labels.OverrideApplicationTest.test_severity_override_reaches_the_output_document) ... ok
+test_severity_override_updates_change_record_provenance (tests.test_repair_human_labels.OverrideApplicationTest.test_severity_override_updates_change_record_provenance) ... ok
+test_status_override_reaches_the_output_document (tests.test_repair_human_labels.OverrideApplicationTest.test_status_override_reaches_the_output_document) ... ok
+test_apply_writes_overridden_values (tests.test_repair_human_labels.OverrideCliTest.test_apply_writes_overridden_values) ... ok
+test_audit_records_approval_and_warning_split (tests.test_repair_human_labels.OverrideCliTest.test_audit_records_approval_and_warning_split) ... ok
+test_invalid_override_spec_aborts_without_output (tests.test_repair_human_labels.OverrideCliTest.test_invalid_override_spec_aborts_without_output) ... ok
+test_no_real_case_id_leaks_with_overrides (tests.test_repair_human_labels.OverrideCliTest.test_no_real_case_id_leaks_with_overrides) ... ok
+test_override_run_is_deterministic (tests.test_repair_human_labels.OverrideCliTest.test_override_run_is_deterministic) ... ok
+test_unacknowledged_case_stays_pending (tests.test_repair_human_labels.OverrideCliTest.test_unacknowledged_case_stays_pending) ... ok
+test_warnings_doc_separates_pending_and_acknowledged (tests.test_repair_human_labels.OverrideCliTest.test_warnings_doc_separates_pending_and_acknowledged) ... ok
+test_without_overrides_flag_no_override_section_data (tests.test_repair_human_labels.OverrideCliTest.test_without_overrides_flag_no_override_section_data) ... ok
+test_acknowledged_gap_needs_known_kind_and_reason (tests.test_repair_human_labels.OverrideValidationTest.test_acknowledged_gap_needs_known_kind_and_reason) ... ok
+test_bad_version_rejected (tests.test_repair_human_labels.OverrideValidationTest.test_bad_version_rejected) ... ok
+test_dim_forbidden_for_decision (tests.test_repair_human_labels.OverrideValidationTest.test_dim_forbidden_for_decision) ... ok
+test_dim_required_for_severity (tests.test_repair_human_labels.OverrideValidationTest.test_dim_required_for_severity) ... ok
+test_illegal_value_rejected (tests.test_repair_human_labels.OverrideValidationTest.test_illegal_value_rejected) ... ok
+test_missing_approval_rejected (tests.test_repair_human_labels.OverrideValidationTest.test_missing_approval_rejected) ... ok
+test_missing_reason_rejected (tests.test_repair_human_labels.OverrideValidationTest.test_missing_reason_rejected) ... ok
+test_note_is_never_overridable (tests.test_repair_human_labels.OverrideValidationTest.test_note_is_never_overridable) ... ok
+test_score_is_never_overridable (tests.test_repair_human_labels.OverrideValidationTest.test_score_is_never_overridable) ... ok
+test_unknown_blind_code (tests.test_repair_human_labels.OverrideValidationTest.test_unknown_blind_code) ... ok
+test_valid_spec (tests.test_repair_human_labels.OverrideValidationTest.test_valid_spec) ... ok
+test_critical_with_high_score_is_flagged_not_changed (tests.test_repair_human_labels.RepairTest.test_critical_with_high_score_is_flagged_not_changed) ... ok
+test_critical_with_low_score_is_not_flagged (tests.test_repair_human_labels.RepairTest.test_critical_with_low_score_is_not_flagged) ... ok
+test_legal_severity_is_never_touched (tests.test_repair_human_labels.RepairTest.test_legal_severity_is_never_touched) ... ok
+test_misplaced_partial_becomes_status_on_truncated_case (tests.test_repair_human_labels.RepairTest.test_misplaced_partial_becomes_status_on_truncated_case) ... ok
+test_misplaced_partial_uses_annotator_keyword (tests.test_repair_human_labels.RepairTest.test_misplaced_partial_uses_annotator_keyword) ... ok
+test_misplaced_partial_without_low_confidence_keeps_scored (tests.test_repair_human_labels.RepairTest.test_misplaced_partial_without_low_confidence_keeps_scored) ... ok
+test_note_text_collects_all_notes (tests.test_repair_human_labels.RepairTest.test_note_text_collects_all_notes) ... ok
+test_per_dimension_note_is_also_considered (tests.test_repair_human_labels.RepairTest.test_per_dimension_note_is_also_considered) ... ok
+test_unknown_severity_is_flagged_unrepairable (tests.test_repair_human_labels.RepairTest.test_unknown_severity_is_flagged_unrepairable) ... ok
+
+----------------------------------------------------------------------
+Ran 74 tests in 0.237s
+
+OK
+{
+ "tool_version": "2.0.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpnx8tp_tu\\prep2"
+}
+{
+ "tool_version": "2.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp65x5e2mg\\prep"
+}
+{
+ "tool_version": "2.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp8t08o4k9\\prep4"
+}
+{"error": "labels file must stay blind (found case_id key)"}
+{"error": "labels stage must be blind"}
+{
+ "tool_version": "2.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpxqw2ghy5\\det1"
+}
+{
+ "tool_version": "2.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpxqw2ghy5\\det2"
+}
+{
+ "tool_version": "2.0.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpg808r11g\\prep7"
+}
+{
+ "tool_version": "2.0.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmppafe898n\\prep3"
+}
+{
+ "tool_version": "2.0.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 1,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp7wdsf7k0\\ok"
+}
+{
+ "tool_version": "2.0.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 1,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpye1hi3ys\\audit"
+}
+{
+ "error": "overrides_validation",
+ "problems": [
+  "entries[0](B01): field must be one of ('decision', 'status', 'severity') (score and notes are never overridable)"
+ ]
+}
+{
+ "tool_version": "2.0.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 1,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpr6pr_dmc\\leak"
+}
+{
+ "tool_version": "2.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 1,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp9ozw6j1z\\d1"
+}
+{
+ "tool_version": "2.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 1,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp9ozw6j1z\\d2"
+}
+{
+ "tool_version": "2.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 1,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpxxdxgzfb\\pend"
+}
+{
+ "tool_version": "2.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 1,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpbzf8tdi6\\warn"
+}
+{
+ "tool_version": "2.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 3,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpwbnanvu4\\plain"
+}

@@ -1,0 +1,15 @@
+{
+  "protocol": "Historical initial validation record. The page subsequently informed rule tuning and is now development. HTML hash transcription corrected against unchanged bytes.",
+  "case": {
+    "id": "w3c-accessibility-intro-zh",
+    "split": "initial_validation",
+    "source_kind": "real",
+    "html": "w3c_accessibility_intro_zh.html",
+    "expected": "w3c_accessibility_intro_zh.expected.json",
+    "html_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc",
+    "expected_sha256": "2f856d9f6805dd186bbcc9af969d62f82d1f1fba0affeab0bee2800f8ee26fd4",
+    "first_report": "outputs/w3c_accessibility_intro_zh.first_evaluation.json",
+    "annotation": "w3c_accessibility_intro_zh.annotation.md",
+    "current_split": "development"
+  }
+}

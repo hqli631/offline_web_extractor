@@ -1,0 +1,40 @@
+{
+  "protocol": "Development only. Reference interpreter is Sphinx; appetite tests same-template transfer. Blurb and IANA are cross-template stress cases. Historical gold; no independent validation claim. Test/gold are loaded after generation.",
+  "references": [
+    {
+      "id": "reference-interpreter",
+      "html": "python_interpreter_zh.html",
+      "sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+      "split": "reference"
+    }
+  ],
+  "tests": [
+    {
+      "id": "same-template-appetite",
+      "html": "python_appetite_zh.html",
+      "sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+      "split": "test",
+      "expected": "python_appetite_zh.expected.json",
+      "expected_sha256": "353ed7d39fd736bf4badb59d85ce0f1343646d19eafd950b35707f85d0f0f92f",
+      "expected_status": "ok"
+    },
+    {
+      "id": "cross-template-blurb",
+      "html": "python_blurb.html",
+      "sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+      "split": "test",
+      "expected": "python_blurb.expected.json",
+      "expected_sha256": "47661979fc40801a89fe8cd20f422a288b3fe19e0f82ea96854ca1788c78c49c",
+      "expected_status": "ok"
+    },
+    {
+      "id": "cross-template-iana",
+      "html": "iana_example_domains.html",
+      "sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+      "split": "test",
+      "expected": "iana_example_domains.expected.json",
+      "expected_sha256": "00b01640a0da207c69304ccb24d7a6a3b37ecadd31b36d81daed70967600fe3c",
+      "expected_status": "ok"
+    }
+  ]
+}

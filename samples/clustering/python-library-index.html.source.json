@@ -1,0 +1,17 @@
+{
+  "requested_url": "https://docs.python.org/zh-cn/3/library/index.html",
+  "final_url": "https://docs.python.org/zh-cn/3/library/index.html",
+  "fetched_at": "2026-11-13T13:57:37.087190+00:00",
+  "http_status": 200,
+  "content_type": "text/html",
+  "sha256": "9cb748bbfd547a80922467dbbbe58816d0d80500818b19ec18a72ae02fb9d152",
+  "bytes": 73782,
+  "source_kind": "real",
+  "split": "clustering-development",
+  "proposed_manual_group": "sphinx-library-index",
+  "page_title": "Python 标准库 — Python 3.15.2 文档",
+  "h1_texts": [
+    "Python 标准库¶"
+  ],
+  "note": "Complete HTTP response, no truncation or production extraction. Group labels require source-structure review; not a gold extraction label."
+}

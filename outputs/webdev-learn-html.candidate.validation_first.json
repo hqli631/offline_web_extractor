@@ -1,0 +1,793 @@
+{
+  "status": "ok",
+  "title_exact": true,
+  "block_text_precision": 0.9361702127659575,
+  "block_text_recall": 0.9777777777777777,
+  "body_exact": false,
+  "blocks_exact": false,
+  "rendered_body_exact": null,
+  "evaluation_note": "body_exact compares legacy p paragraphs only; null structure metrics mean no structure annotation was supplied.",
+  "body_char_recall_rough": 1.0,
+  "body_char_precision_rough": 0.9515,
+  "predicted": {
+    "status": "ok",
+    "title": "Learn HTML",
+    "paragraphs": [
+      "This HTML course for web developers provides a solid overview for developers, from novice to expert level HTML. Go back",
+      "This HTML course for web developers provides a solid overview for developers, from novice to expert level HTML.",
+      "A brief introduction to the key concepts in HTML.",
+      "Learn how to structure your HTML documents with a solid foundation.",
+      "How to use meta tags to provide information about your documents.",
+      "Using the correct HTML elements to describe your document content.",
+      "How to correctly use sectioning elements to give meaning to your content.",
+      "Learn about the different global attributes along with attributes specific to particular HTML elements.",
+      "How to format text using HTML.",
+      "Everything you need to know about links.",
+      "Lists and other ways of grouping your content.",
+      "Navigation is a key element of any site of application, and it starts with HTML.",
+      "Understanding how to use tables to mark up tabular data.",
+      "An overview of forms in HTML.",
+      "An overview of images in HTML.",
+      "Discover how to work with HTML media such as audio and video.",
+      "An explanation of template, slot, and shadow.",
+      "Learn how HTML information can be exposed and manipulated using JavaScript.",
+      "How to manage focus order in your HTML documents.",
+      "An introduction to the range of elements used to mark-up text.",
+      "Discover how the very useful details and summary elements work, and where to use them.",
+      "The <dialog> element is useful for representing any kind of dialog in HTML. Find out how it works.",
+      "Wrapping up with some further resources.",
+      "Confirm you've completed the Learn HTML course to claim your badge."
+    ],
+    "body": "This HTML course for web developers provides a solid overview for developers, from novice to expert level HTML. Go back\n\n## Welcome to Learn HTML!\n\nThis HTML course for web developers provides a solid overview for developers, from novice to expert level HTML.\n\n## Overview of HTML\n\nA brief introduction to the key concepts in HTML.\n\n## Document structure\n\nLearn how to structure your HTML documents with a solid foundation.\n\n## Metadata\n\nHow to use meta tags to provide information about your documents.\n\n## Semantic HTML\n\nUsing the correct HTML elements to describe your document content.\n\n## Headings and sections\n\nHow to correctly use sectioning elements to give meaning to your content.\n\n## Attributes\n\nLearn about the different global attributes along with attributes specific to particular HTML elements.\n\n## Text basics\n\nHow to format text using HTML.\n\n## Links\n\nEverything you need to know about links.\n\n## Lists\n\nLists and other ways of grouping your content.\n\n## Navigation\n\nNavigation is a key element of any site of application, and it starts with HTML.\n\n## Tables\n\nUnderstanding how to use tables to mark up tabular data.\n\n## Forms\n\nAn overview of forms in HTML.\n\n## Images\n\nAn overview of images in HTML.\n\n## Audio and Video\n\nDiscover how to work with HTML media such as audio and video.\n\n## Template, slot, and shadow\n\nAn explanation of template, slot, and shadow.\n\n## HTML APIs\n\nLearn how HTML information can be exposed and manipulated using JavaScript.\n\n## Focus\n\nHow to manage focus order in your HTML documents.\n\n## Other inline text elements\n\nAn introduction to the range of elements used to mark-up text.\n\n## Details and summary\n\nDiscover how the very useful details and summary elements work, and where to use them.\n\n## Dialog\n\nThe <dialog> element is useful for representing any kind of dialog in HTML. Find out how it works.\n\n## Conclusion and next steps\n\nWrapping up with some further resources.\n\n## Quiz\n\nConfirm you've completed the Learn HTML course to claim your badge.",
+    "selected_candidate": {
+      "tag": "main",
+      "identifier": "main class=devsite-main-content id=main-content",
+      "xpath": "/html/body/section/section/main",
+      "text_length": 3892,
+      "paragraph_count": 24,
+      "link_ratio": 0.0784,
+      "score": 50.0
+    },
+    "candidates": [
+      {
+        "tag": "main",
+        "identifier": "main class=devsite-main-content id=main-content",
+        "xpath": "/html/body/section/section/main",
+        "text_length": 3892,
+        "paragraph_count": 24,
+        "link_ratio": 0.0784,
+        "score": 50.0
+      },
+      {
+        "tag": "article",
+        "identifier": "article class=devsite-article id=",
+        "xpath": "/html/body/section/section/main/devsite-content/article",
+        "text_length": 3892,
+        "paragraph_count": 24,
+        "link_ratio": 0.0784,
+        "score": 50.0
+      }
+    ],
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "text": "This HTML course for web developers provides a solid overview for developers, from novice to expert level HTML. Go back",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Welcome to Learn HTML!",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "This HTML course for web developers provides a solid overview for developers, from novice to expert level HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Overview of HTML",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "A brief introduction to the key concepts in HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Document structure",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Learn how to structure your HTML documents with a solid foundation.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Metadata",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "How to use meta tags to provide information about your documents.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Semantic HTML",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Using the correct HTML elements to describe your document content.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Headings and sections",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "How to correctly use sectioning elements to give meaning to your content.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Attributes",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Learn about the different global attributes along with attributes specific to particular HTML elements.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Text basics",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "How to format text using HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Links",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Everything you need to know about links.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Lists",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Lists and other ways of grouping your content.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Navigation",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Navigation is a key element of any site of application, and it starts with HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Tables",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Understanding how to use tables to mark up tabular data.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Forms",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "An overview of forms in HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Images",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "An overview of images in HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Audio and Video",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Discover how to work with HTML media such as audio and video.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Template, slot, and shadow",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "An explanation of template, slot, and shadow.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "HTML APIs",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Learn how HTML information can be exposed and manipulated using JavaScript.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Focus",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "How to manage focus order in your HTML documents.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Other inline text elements",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "An introduction to the range of elements used to mark-up text.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Details and summary",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Discover how the very useful details and summary elements work, and where to use them.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Dialog",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "The <dialog> element is useful for representing any kind of dialog in HTML. Find out how it works.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Conclusion and next steps",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Wrapping up with some further resources.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Quiz",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Confirm you've completed the Learn HTML course to claim your badge.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      }
+    ]
+  },
+  "expected": {
+    "title": "Learn HTML",
+    "paragraphs": [
+      "This HTML course for web developers provides a solid overview for developers, from novice to expert level HTML.",
+      "This HTML course for web developers provides a solid overview for developers, from novice to expert level HTML.",
+      "A brief introduction to the key concepts in HTML.",
+      "Learn how to structure your HTML documents with a solid foundation.",
+      "How to use meta tags to provide information about your documents.",
+      "Using the correct HTML elements to describe your document content.",
+      "How to correctly use sectioning elements to give meaning to your content.",
+      "Learn about the different global attributes along with attributes specific to particular HTML elements.",
+      "How to format text using HTML.",
+      "Everything you need to know about links.",
+      "Lists and other ways of grouping your content.",
+      "Navigation is a key element of any site of application, and it starts with HTML.",
+      "Understanding how to use tables to mark up tabular data.",
+      "An overview of forms in HTML.",
+      "An overview of images in HTML.",
+      "Discover how to work with HTML media such as audio and video.",
+      "An explanation of template, slot, and shadow.",
+      "Learn how HTML information can be exposed and manipulated using JavaScript.",
+      "How to manage focus order in your HTML documents.",
+      "An introduction to the range of elements used to mark-up text.",
+      "Discover how the very useful details and summary elements work, and where to use them.",
+      "The <dialog> element is useful for representing any kind of dialog in HTML. Find out how it works.",
+      "Wrapping up with some further resources."
+    ],
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "text": "This HTML course for web developers provides a solid overview for developers, from novice to expert level HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Welcome to Learn HTML!",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "This HTML course for web developers provides a solid overview for developers, from novice to expert level HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Overview of HTML",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "A brief introduction to the key concepts in HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Document structure",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Learn how to structure your HTML documents with a solid foundation.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Metadata",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "How to use meta tags to provide information about your documents.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Semantic HTML",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Using the correct HTML elements to describe your document content.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Headings and sections",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "How to correctly use sectioning elements to give meaning to your content.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Attributes",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Learn about the different global attributes along with attributes specific to particular HTML elements.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Text basics",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "How to format text using HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Links",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Everything you need to know about links.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Lists",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Lists and other ways of grouping your content.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Navigation",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Navigation is a key element of any site of application, and it starts with HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Tables",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Understanding how to use tables to mark up tabular data.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Forms",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "An overview of forms in HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Images",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "An overview of images in HTML.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Audio and Video",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Discover how to work with HTML media such as audio and video.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Template, slot, and shadow",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "An explanation of template, slot, and shadow.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "HTML APIs",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Learn how HTML information can be exposed and manipulated using JavaScript.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Focus",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "How to manage focus order in your HTML documents.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Other inline text elements",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "An introduction to the range of elements used to mark-up text.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Details and summary",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Discover how the very useful details and summary elements work, and where to use them.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Dialog",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "The <dialog> element is useful for representing any kind of dialog in HTML. Find out how it works.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Conclusion and next steps",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Wrapping up with some further resources.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      }
+    ]
+  }
+}

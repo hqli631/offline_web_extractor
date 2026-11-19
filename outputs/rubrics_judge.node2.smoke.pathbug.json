@@ -1,0 +1,82 @@
+{
+ "tool": "run_rubrics_judge.py",
+ "tool_sha256": "8aff085f9edda8bc38cb9d692349dc5979d561b475133821c7ab2eaef252b2f3",
+ "manifest": "samples\\judge_smoke.node2.json",
+ "manifest_sha256": "48e42e569a711c81c9171393db7b28def946fdb1d3da601f6d9fcd3e6862de73",
+ "signature": {
+  "model": "qwen3.8-27b",
+  "max_output_tokens": 2200,
+  "max_source_chars": 40000,
+  "timeout_seconds": 90.0,
+  "judge_version": "1.0.0",
+  "rubrics_version": "2.0.0"
+ },
+ "provider": "qwen-rubrics-judge",
+ "ignore_cache": false,
+ "max_calls": 4,
+ "new_api_calls": 0,
+ "cache_hits": 0,
+ "skipped_budget": 0,
+ "usage_total_all_cases": null,
+ "usage_new_calls_only": null,
+ "generated_at": "2026-11-17T11:33:07+00:00",
+ "cases": [
+  {
+   "case_id": "smoke-appetite-zh",
+   "template": "python-org-zh-tutorial",
+   "split": "smoke",
+   "status": "error",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": null,
+   "report": null,
+   "error": {
+    "type": "FileNotFoundError",
+    "detail": "[Errno 2] No such file or directory: 'D:\\\\codex project\\\\offline_web_extractor\\\\samples\\\\samples\\\\python_appetite_zh.html'"
+   }
+  },
+  {
+   "case_id": "smoke-gnu",
+   "template": "gnu-manual",
+   "split": "smoke",
+   "status": "error",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": null,
+   "report": null,
+   "error": {
+    "type": "FileNotFoundError",
+    "detail": "[Errno 2] No such file or directory: 'D:\\\\codex project\\\\offline_web_extractor\\\\samples\\\\samples\\\\gnu.candidate.html'"
+   }
+  },
+  {
+   "case_id": "smoke-w3c-zh",
+   "template": "w3c-zh-accessibility",
+   "split": "smoke",
+   "status": "error",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": null,
+   "report": null,
+   "error": {
+    "type": "FileNotFoundError",
+    "detail": "[Errno 2] No such file or directory: 'D:\\\\codex project\\\\offline_web_extractor\\\\samples\\\\samples\\\\w3c_accessibility_intro_zh.html'"
+   }
+  },
+  {
+   "case_id": "smoke-iana",
+   "template": "iana-example-domains",
+   "split": "smoke",
+   "status": "error",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": null,
+   "report": null,
+   "error": {
+    "type": "FileNotFoundError",
+    "detail": "[Errno 2] No such file or directory: 'D:\\\\codex project\\\\offline_web_extractor\\\\samples\\\\samples\\\\iana_example_domains.html'"
+   }
+  }
+ ],
+ "note": "Judge scores are uncalibrated model judgements with checked evidence; not human labels, accuracy estimates, or training reward. Resume: rerun the same manifest with a new output filename; cached cases cost zero new calls."
+}

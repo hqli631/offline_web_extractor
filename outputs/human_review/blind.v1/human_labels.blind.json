@@ -1,0 +1,906 @@
+{
+  "label_version": 1,
+  "stage": "blind",
+  "annotator": "",
+  "annotation_date": "",
+  "instructions": "逐案填写：decision 取 pass/uncertain/fail；score 为 0-4 整数或 null；status/severity 规则见案卷速查；source_only 不得 pass。全部案例填完后运行 ingest --stage blind。",
+  "cases": [
+    {
+      "case_id": "cal-appetite-clean",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-appetite-duplicate",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-appetite-missing_paragraph",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-appetite-noise",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-appetite-reorder",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-appetite-title_number",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-blurb-clean",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-blurb-missing_paragraph",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-blurb-noise",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-blurb-reorder",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-iana-clean",
+      "split": "development",
+      "mode": "source_only",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-iana-noise",
+      "split": "development",
+      "mode": "source_only",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-github-clean",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-github-duplicate",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-github-missing_paragraph",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-github-noise",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-mdn-clean",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-mdn-code_indent",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-mdn-instruction_interference",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-mdn-missing_paragraph",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-mdn-reorder",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-w3clink-clean",
+      "split": "frozen_test",
+      "mode": "source_only",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-w3clink-instruction_interference",
+      "split": "frozen_test",
+      "mode": "source_only",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    }
+  ]
+}

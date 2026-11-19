@@ -1,0 +1,37 @@
+{
+  "protocol": "Freeze extractor for initial validation. Includes editorial references and subheadings, excludes breadcrumbs/navigation/revision metadata. Development and synthetic are reported separately.",
+  "cases": [
+    {
+      "id": "python-blurb",
+      "split": "development",
+      "source_kind": "real",
+      "html": "python_blurb.html",
+      "expected": "python_blurb.expected.json",
+      "sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992"
+    },
+    {
+      "id": "python-appetite-zh",
+      "split": "development",
+      "source_kind": "real",
+      "html": "python_appetite_zh.html",
+      "expected": "python_appetite_zh.expected.json",
+      "sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea"
+    },
+    {
+      "id": "list-lab",
+      "split": "development",
+      "source_kind": "synthetic",
+      "html": "list_lab.html",
+      "expected": "list_lab.expected.json",
+      "sha256": "c7fc8d1fb93c7d03efe698425c3cc20b0aac32c155ca612eddec10d5e474e880"
+    },
+    {
+      "id": "iana-example-domains",
+      "split": "validation",
+      "source_kind": "real",
+      "html": "iana_example_domains.html",
+      "expected": "iana_example_domains.expected.json",
+      "sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "protocol": "Authored synthetic control-flow references only. No model-generation or held-out quality claim.",
+  "references": [
+    {
+      "id": "reference",
+      "html": "../drift_lab/reference.html",
+      "sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428",
+      "split": "reference"
+    },
+    {
+      "id": "class-drift",
+      "html": "../drift_lab/class-drift.html",
+      "sha256": "ef76358f0a4ac9bb4c5999df8a09df191e6882f41236af760b590ad17a89b76f",
+      "split": "reference"
+    }
+  ]
+}

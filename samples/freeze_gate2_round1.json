@@ -1,0 +1,26 @@
+{
+  "frozen_at": "2026-11-13T12:54:34.705082+00:00",
+  "extractor_snapshot": "baselines/rules-gate2-first-pass/manifest.json",
+  "protocol_sha256": "493c9d793096ad8bd73edb77bfe24e794fe3ac740d65820bd4a15d00f3160216",
+  "annotation_method": "Independent DOM-assisted source review by assistant agents; not user-verified. No production imports or prediction used to select gold.",
+  "cases": [
+    {
+      "id": "gnu.candidate",
+      "html": "gnu.candidate.html",
+      "expected": "gnu.candidate.expected.json",
+      "html_sha256": "b050aa1bcbf73c225c0bcabd377e1015a4c602556eb6d9f13f0eb2d5ba8973d6",
+      "expected_sha256": "a3d2e3c0d84b06a28b1e45894cc2faa37209310728c9cf0b17bad35aeef6dbd0",
+      "expected_blocks": 133,
+      "first_report": "outputs/gnu.candidate.first_evaluation.json"
+    },
+    {
+      "id": "nasa-voyager-news.candidate",
+      "html": "nasa-voyager-news.candidate.html",
+      "expected": "nasa-voyager-news.candidate.expected.json",
+      "html_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+      "expected_sha256": "9d5e38d2394800e9652bc09d15d8b875da9c19acba7fba93aa2f5769e801ea08",
+      "expected_blocks": 20,
+      "first_report": "outputs/nasa-voyager-news.candidate.first_evaluation.json"
+    }
+  ]
+}

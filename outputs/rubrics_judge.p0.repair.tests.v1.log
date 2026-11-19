@@ -1,0 +1,215 @@
+test_applied_output_uses_legal_enums (tests.test_repair_human_labels.ApplyTest.test_applied_output_uses_legal_enums) ... ok
+test_original_document_is_not_mutated (tests.test_repair_human_labels.ApplyTest.test_original_document_is_not_mutated) ... ok
+test_repair_metadata_is_recorded (tests.test_repair_human_labels.ApplyTest.test_repair_metadata_is_recorded) ... ok
+test_score_decision_and_notes_are_preserved (tests.test_repair_human_labels.ApplyTest.test_score_decision_and_notes_are_preserved) ... ok
+test_untouched_dimension_keeps_user_severity (tests.test_repair_human_labels.ApplyTest.test_untouched_dimension_keeps_user_severity) ... ok
+test_code_map_hides_case_ids (tests.test_repair_human_labels.BlindCodeErrorReportingTest.test_code_map_hides_case_ids) ... ok
+test_missing_entry_is_reported_with_blind_code (tests.test_repair_human_labels.BlindCodeErrorReportingTest.test_missing_entry_is_reported_with_blind_code) ... ok
+test_unmapped_case_is_masked (tests.test_repair_human_labels.BlindCodeErrorReportingTest.test_unmapped_case_is_masked) ... ok
+test_without_code_map_case_ids_are_used (tests.test_repair_human_labels.BlindCodeErrorReportingTest.test_without_code_map_case_ids_are_used) ... ok
+test_apply_writes_repaired_labels (tests.test_repair_human_labels.CliTest.test_apply_writes_repaired_labels) ... ok
+test_dry_run_reports_only (tests.test_repair_human_labels.CliTest.test_dry_run_reports_only) ... ok
+test_refuses_existing_output_dir (tests.test_repair_human_labels.CliTest.test_refuses_existing_output_dir) ... Output exists; choose a new directory.
+ok
+test_refuses_labels_that_contain_case_id (tests.test_repair_human_labels.CliTest.test_refuses_labels_that_contain_case_id) ... ok
+test_refuses_non_blind_stage (tests.test_repair_human_labels.CliTest.test_refuses_non_blind_stage) ... ok
+test_repair_diff_is_deterministic (tests.test_repair_human_labels.CliTest.test_repair_diff_is_deterministic) ... ok
+test_reports_contain_no_real_case_id_or_mutation_type (tests.test_repair_human_labels.CliTest.test_reports_contain_no_real_case_id_or_mutation_type) ... ok
+test_source_file_is_never_modified (tests.test_repair_human_labels.CliTest.test_source_file_is_never_modified) ... ok
+test_consistent_case_has_no_warning (tests.test_repair_human_labels.ConsistencyWarningTest.test_consistent_case_has_no_warning) ... ok
+test_fail_without_severe_is_flagged (tests.test_repair_human_labels.ConsistencyWarningTest.test_fail_without_severe_is_flagged) ... ok
+test_pass_with_defect_is_flagged (tests.test_repair_human_labels.ConsistencyWarningTest.test_pass_with_defect_is_flagged) ... ok
+test_pass_with_partial_status_is_flagged (tests.test_repair_human_labels.ConsistencyWarningTest.test_pass_with_partial_status_is_flagged) ... ok
+test_repaired_severity_is_used_for_warnings (tests.test_repair_human_labels.ConsistencyWarningTest.test_repaired_severity_is_used_for_warnings) ... ok
+test_severe_but_not_fail_is_flagged (tests.test_repair_human_labels.ConsistencyWarningTest.test_severe_but_not_fail_is_flagged) ... ok
+test_dim_rules_are_scoped (tests.test_repair_human_labels.DeriveSeverityTest.test_dim_rules_are_scoped) ... ok
+test_duplicate_keyword_is_major (tests.test_repair_human_labels.DeriveSeverityTest.test_duplicate_keyword_is_major) ... ok
+test_format_has_no_rules (tests.test_repair_human_labels.DeriveSeverityTest.test_format_has_no_rules) ... ok
+test_major_beats_minor_in_same_dim (tests.test_repair_human_labels.DeriveSeverityTest.test_major_beats_minor_in_same_dim) ... ok
+test_missing_keyword_is_major (tests.test_repair_human_labels.DeriveSeverityTest.test_missing_keyword_is_major) ... ok
+test_no_keyword_is_none (tests.test_repair_human_labels.DeriveSeverityTest.test_no_keyword_is_none) ... ok
+test_noise_keyword_is_major (tests.test_repair_human_labels.DeriveSeverityTest.test_noise_keyword_is_major) ... ok
+test_reorder_keyword_is_major (tests.test_repair_human_labels.DeriveSeverityTest.test_reorder_keyword_is_major) ... ok
+test_split_only_is_minor (tests.test_repair_human_labels.DeriveSeverityTest.test_split_only_is_minor) ... ok
+test_tag_leak_keyword_is_major (tests.test_repair_human_labels.DeriveSeverityTest.test_tag_leak_keyword_is_major) ... ok
+test_critical_with_high_score_is_flagged_not_changed (tests.test_repair_human_labels.RepairTest.test_critical_with_high_score_is_flagged_not_changed) ... ok
+test_critical_with_low_score_is_not_flagged (tests.test_repair_human_labels.RepairTest.test_critical_with_low_score_is_not_flagged) ... ok
+test_legal_severity_is_never_touched (tests.test_repair_human_labels.RepairTest.test_legal_severity_is_never_touched) ... ok
+test_misplaced_partial_becomes_status_on_truncated_case (tests.test_repair_human_labels.RepairTest.test_misplaced_partial_becomes_status_on_truncated_case) ... FAIL
+test_misplaced_partial_uses_annotator_keyword (tests.test_repair_human_labels.RepairTest.test_misplaced_partial_uses_annotator_keyword) ... ok
+test_misplaced_partial_without_low_confidence_keeps_scored (tests.test_repair_human_labels.RepairTest.test_misplaced_partial_without_low_confidence_keeps_scored) ... ok
+test_note_text_collects_all_notes (tests.test_repair_human_labels.RepairTest.test_note_text_collects_all_notes) ... ok
+test_per_dimension_note_is_also_considered (tests.test_repair_human_labels.RepairTest.test_per_dimension_note_is_also_considered) ... ok
+test_unknown_severity_is_flagged_unrepairable (tests.test_repair_human_labels.RepairTest.test_unknown_severity_is_flagged_unrepairable) ... ok
+test_blind_flow (tests.test_ingest_human_labels.BlindFinalFlowTest.test_blind_flow) ... ok
+test_blind_validation_failure_creates_nothing (tests.test_ingest_human_labels.BlindFinalFlowTest.test_blind_validation_failure_creates_nothing) ... ok
+test_final_flow (tests.test_ingest_human_labels.BlindFinalFlowTest.test_final_flow) ... ok
+test_final_unconfirmed_rejected (tests.test_ingest_human_labels.BlindFinalFlowTest.test_final_unconfirmed_rejected) ... ok
+test_empty (tests.test_ingest_human_labels.CohenKappaTest.test_empty) ... ok
+test_known_value (tests.test_ingest_human_labels.CohenKappaTest.test_known_value) ... ok
+test_perfect (tests.test_ingest_human_labels.CohenKappaTest.test_perfect) ... ok
+test_single_category (tests.test_ingest_human_labels.CohenKappaTest.test_single_category) ... ok
+test_bad_decision (tests.test_ingest_human_labels.ValidationTest.test_bad_decision) ... ok
+test_final_requires_confirmed (tests.test_ingest_human_labels.ValidationTest.test_final_requires_confirmed) ... ok
+test_injection_field_required (tests.test_ingest_human_labels.ValidationTest.test_injection_field_required) ... ok
+test_missing_case (tests.test_ingest_human_labels.ValidationTest.test_missing_case) ... ok
+test_score_range_and_type (tests.test_ingest_human_labels.ValidationTest.test_score_range_and_type) ... ok
+test_score_status_consistency (tests.test_ingest_human_labels.ValidationTest.test_score_status_consistency) ... ok
+test_source_only_pass_forbidden (tests.test_ingest_human_labels.ValidationTest.test_source_only_pass_forbidden) ... ok
+test_valid_blind_doc (tests.test_ingest_human_labels.ValidationTest.test_valid_blind_doc) ... ok
+test_blind_packets_do_not_leak (tests.test_human_review_kit.BuildHumanReviewKitTest.test_blind_packets_do_not_leak) ... ok
+test_deterministic_bytes (tests.test_human_review_kit.BuildHumanReviewKitTest.test_deterministic_bytes) ... ok
+test_freeze_tamper_rejected (tests.test_human_review_kit.BuildHumanReviewKitTest.test_freeze_tamper_rejected) ... ok
+test_overwrite_refused (tests.test_human_review_kit.BuildHumanReviewKitTest.test_overwrite_refused) ... Output exists; choose a new directory.
+ok
+test_template_coverage (tests.test_human_review_kit.BuildHumanReviewKitTest.test_template_coverage) ... ok
+
+======================================================================
+FAIL: test_misplaced_partial_becomes_status_on_truncated_case (tests.test_repair_human_labels.RepairTest.test_misplaced_partial_becomes_status_on_truncated_case)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\codex project\offline_web_extractor\tests\test_repair_human_labels.py", line 87, in test_misplaced_partial_becomes_status_on_truncated_case
+    self.assertEqual(kept, [])
+AssertionError: Lists differ: [{'blind_code': 'B01', 'dim': 'cleanliness[339 chars]ne'}] != []
+
+First list contains 4 additional elements.
+First extra element 0:
+{'blind_code': 'B01', 'dim': 'cleanliness', 'score': 4, 'status': 'scored', 'severity': 'none'}
+
++ []
+- [{'blind_code': 'B01',
+-   'dim': 'cleanliness',
+-   'score': 4,
+-   'severity': 'none',
+-   'status': 'scored'},
+-  {'blind_code': 'B01',
+-   'dim': 'structure',
+-   'score': 4,
+-   'severity': 'none',
+-   'status': 'scored'},
+-  {'blind_code': 'B01',
+-   'dim': 'title',
+-   'score': 4,
+-   'severity': 'none',
+-   'status': 'scored'},
+-  {'blind_code': 'B01',
+-   'dim': 'format',
+-   'score': None,
+-   'severity': 'none',
+-   'status': 'not_applicable'}]
+
+----------------------------------------------------------------------
+Ran 63 tests in 0.440s
+
+FAILED (failures=1)
+{
+ "tool_version": "1.0.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpc1kpc9w1\\prep2"
+}
+{
+ "tool_version": "1.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp0xcmksb4\\prep"
+}
+{
+ "tool_version": "1.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpxszeh60m\\prep4"
+}
+{"error": "labels file must stay blind (found case_id key)"}
+{"error": "labels stage must be blind"}
+{
+ "tool_version": "1.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpsr2ig3f_\\det1"
+}
+{
+ "tool_version": "1.0.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpsr2ig3f_\\det2"
+}
+{
+ "tool_version": "1.0.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmptv5rjofe\\prep7"
+}
+{
+ "tool_version": "1.0.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpsmmk65e3\\prep3"
+}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp57vbsr3k\\round1", "adjudication_packets": 2, "decision_match_rate": 0.0, "decision_cohen_kappa": 0.0, "severe_miss_cases": ["c1"]}
+{
+ "error": "validation",
+ "stage": "blind",
+ "note": "problem ids are blind codes; see the kit INDEX",
+ "problems": [
+  "B01: decision must be one of ('pass', 'uncertain', 'fail')"
+ ]
+}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp2ohuh14s\\round1", "adjudication_packets": 2, "decision_match_rate": 0.0, "decision_cohen_kappa": 0.0, "severe_miss_cases": ["c1"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp2ohuh14s\\final", "decision_match_rate": 0.0, "decision_cohen_kappa": 0.0, "persistent_disagreements": 2}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpd_2dpjzb\\round1", "adjudication_packets": 2, "decision_match_rate": 0.0, "decision_cohen_kappa": 0.0, "severe_miss_cases": ["c1"]}
+{
+ "error": "validation",
+ "problems": [
+  "c1: confirmed must be true",
+  "c2: confirmed must be true"
+ ]
+}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpf1azdd_g\\o", "n_cases": 2, "development": 1, "frozen_test": 1}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpjgbhjm2r\\o1", "n_cases": 2, "development": 1, "frozen_test": 1}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpjgbhjm2r\\o2", "n_cases": 2, "development": 1, "frozen_test": 1}
+{"error": "freeze_integrity", "problems": ["candidate_sha256 drift c1"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp_wqajtoe\\o", "n_cases": 2, "development": 1, "frozen_test": 1}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpcqg6fzs1\\o", "n_cases": 2, "development": 1, "frozen_test": 1}

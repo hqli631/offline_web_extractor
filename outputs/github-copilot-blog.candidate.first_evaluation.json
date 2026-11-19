@@ -1,0 +1,513 @@
+{
+  "status": "ok",
+  "title_exact": true,
+  "block_text_precision": 0.5,
+  "block_text_recall": 0.8,
+  "body_exact": false,
+  "blocks_exact": false,
+  "rendered_body_exact": null,
+  "evaluation_note": "body_exact compares legacy p paragraphs only; null structure metrics mean no structure annotation was supplied.",
+  "body_char_recall_rough": 1.0,
+  "body_char_precision_rough": 0.793,
+  "predicted": {
+    "status": "ok",
+    "title": "GitHub Copilot is generally available to all developers",
+    "paragraphs": [
+      "We’re making GitHub Copilot, an AI pair programmer that suggests code in your editor, generally available to all developers for $10 USD/month or $100 USD/year. It will also be free to use for verified students and maintainers of popular open source projects.",
+      "At GitHub, it’s part of our mission to build technology that makes developers happy. Since the launch of GitHub Copilot technical preview last year, it’s become abundantly clear that AI is one of the best tools to empower the next generation of developers.",
+      "Already, AI is acting as a copilot in our daily lives. It’s helping us write emails and essays, automatically generate photo albums of our loved ones, and even acts as a digital assistant to help us order groceries. But until now, AI has stopped short of improving code, leaving the process of developing software almost completely manual.",
+      "That’s changing now. Today, I am thrilled to announce that we are making GitHub Copilot generally available to individual developers. Your AI pair programmer is here.",
+      "With GitHub Copilot, for the first time in the history of software, AI can be broadly harnessed by developers to write and complete code. Just like the rise of compilers and open source, we believe AI-assisted coding will fundamentally change the nature of software development, giving developers a new tool to write code easier and faster so they can be happier in their lives.",
+      "Do you want to start using GitHub Copilot today? Get started with a free trial, and check out our pricing plans. It’s free to use for verified students and maintainers of popular open source software.",
+      "We specifically designed GitHub Copilot as an editor extension to make sure nothing gets in the way of what you’re doing. GitHub Copilot distills the collective knowledge of the world’s developers into an editor extension that suggests code in real time, to help you stay focused on what matters most: building great software.",
+      "When you type code or comments, GitHub Copilot suggests the next line of code. But it’s not only a single word or line of code. GitHub Copilot can suggest complete methods, boilerplate code, whole unit tests, and even complex algorithms.",
+      "With more than 1.2 million developers in our technical preview over the last 12 months, people who started using GitHub Copilot quickly told us it became an indispensable part of their daily workflows. In files where it’s enabled, nearly 40% of code is being written by GitHub Copilot in popular coding languages, like Python—and we expect that to increase. That’s creating more time and space for developers to focus on solving bigger problems and building even better software.",
+      "And now, you can put the power of GitHub Copilot to work in your preferred environment with a free trial. Try GitHub Copilot for yourself.",
+      "GitHub Copilot wouldn’t be possible without GitHub’s vibrant community of students and creators. To support and give back to those communities, we’re making GitHub Copilot available for free to verified students and maintainers of popular open source projects.",
+      "If you’re a student and want to participate in the program, apply for the GitHub Student Pack to get started. And if you’re an open source maintainer, check out our FAQ to see if you qualify to start using GitHub Copilot at no cost.",
+      "GitHub Copilot is our first step toward empowering developers with AI. Starting today, it’s now available to all developers, and we’ll begin offering it to companies later this year. 🚀",
+      "@ashtom",
+      "Fascinated by software development since his childhood in Germany, Thomas Dohmke has built a career building tools to accelerate developer happiness. Previously, Thomas was the Chief Executive Officer of GitHub (2021-2025) where he oversaw the rise of the world’s most widely adopted AI developer tools—including the launches of GitHub Copilot, Copilot Workspace, and GitHub Models. Thomas has also been a celebrated TED speaker and holds a PhD in mechanical engineering from University of Glasgow, UK.",
+      "In October, we experienced eight incidents that resulted in degraded performance across GitHub services.",
+      "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world.",
+      "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.",
+      "Discover tips, technical guides, and best practices in our biweekly newsletter just for devs."
+    ],
+    "body": "We’re making GitHub Copilot, an AI pair programmer that suggests code in your editor, generally available to all developers for $10 USD/month or $100 USD/year. It will also be free to use for verified students and maintainers of popular open source projects.\n\n- Share:\n\nAt GitHub, it’s part of our mission to build technology that makes developers happy. Since the launch of GitHub Copilot technical preview last year, it’s become abundantly clear that AI is one of the best tools to empower the next generation of developers.\n\nAlready, AI is acting as a copilot in our daily lives. It’s helping us write emails and essays, automatically generate photo albums of our loved ones, and even acts as a digital assistant to help us order groceries. But until now, AI has stopped short of improving code, leaving the process of developing software almost completely manual.\n\nThat’s changing now. Today, I am thrilled to announce that we are making GitHub Copilot generally available to individual developers. Your AI pair programmer is here.\n\nWith GitHub Copilot, for the first time in the history of software, AI can be broadly harnessed by developers to write and complete code. Just like the rise of compilers and open source, we believe AI-assisted coding will fundamentally change the nature of software development, giving developers a new tool to write code easier and faster so they can be happier in their lives.\n\nDo you want to start using GitHub Copilot today? Get started with a free trial, and check out our pricing plans. It’s free to use for verified students and maintainers of popular open source software.\n\n## The wait is over\n\nWe specifically designed GitHub Copilot as an editor extension to make sure nothing gets in the way of what you’re doing. GitHub Copilot distills the collective knowledge of the world’s developers into an editor extension that suggests code in real time, to help you stay focused on what matters most: building great software.\n\nWhen you type code or comments, GitHub Copilot suggests the next line of code. But it’s not only a single word or line of code. GitHub Copilot can suggest complete methods, boilerplate code, whole unit tests, and even complex algorithms.\n\nWith more than 1.2 million developers in our technical preview over the last 12 months, people who started using GitHub Copilot quickly told us it became an indispensable part of their daily workflows. In files where it’s enabled, nearly 40% of code is being written by GitHub Copilot in popular coding languages, like Python—and we expect that to increase. That’s creating more time and space for developers to focus on solving bigger problems and building even better software.\n\nAnd now, you can put the power of GitHub Copilot to work in your preferred environment with a free trial. Try GitHub Copilot for yourself.\n\n## Free for verified students and maintainers of popular open source projects\n\nGitHub Copilot wouldn’t be possible without GitHub’s vibrant community of students and creators. To support and give back to those communities, we’re making GitHub Copilot available for free to verified students and maintainers of popular open source projects.\n\nIf you’re a student and want to participate in the program, apply for the GitHub Student Pack to get started. And if you’re an open source maintainer, check out our FAQ to see if you qualify to start using GitHub Copilot at no cost.\n\n## Coming to companies later this year\n\nGitHub Copilot is our first step toward empowering developers with AI. Starting today, it’s now available to all developers, and we’ll begin offering it to companies later this year. 🚀\n\n## Tags:\n\n- GitHub Copilot\n\n## Written by\n\n### Thomas Dohmke\n\n@ashtom\n\nFascinated by software development since his childhood in Germany, Thomas Dohmke has built a career building tools to accelerate developer happiness. Previously, Thomas was the Chief Executive Officer of GitHub (2021-2025) where he oversaw the rise of the world’s most widely adopted AI developer tools—including the launches of GitHub Copilot, Copilot Workspace, and GitHub Models. Thomas has also been a celebrated TED speaker and holds a PhD in mechanical engineering from University of Glasgow, UK.\n\n## Related posts\n\n### GitHub availability report: October 2026\n\nIn October, we experienced eight incidents that resulted in degraded performance across GitHub services.\n\n### GitHub Universe 2026: Evolving every layer of the stack\n\nToday, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world.\n\n### Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents\n\nSee how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.\n\n## We do newsletters, too\n\nDiscover tips, technical guides, and best practices in our biweekly newsletter just for devs.",
+    "selected_candidate": {
+      "tag": "main",
+      "identifier": "main class= id=start-of-content",
+      "xpath": "/html/body/main",
+      "text_length": 5276,
+      "paragraph_count": 20,
+      "link_ratio": 0.1022,
+      "score": 50.0
+    },
+    "candidates": [
+      {
+        "tag": "main",
+        "identifier": "main class= id=start-of-content",
+        "xpath": "/html/body/main",
+        "text_length": 5276,
+        "paragraph_count": 20,
+        "link_ratio": 0.1022,
+        "score": 50.0
+      },
+      {
+        "tag": "article",
+        "identifier": "article class=author-bio mb-5 mb-md-4 id=",
+        "xpath": "/html/body/main/div[1]/div/section/div/article",
+        "text_length": 524,
+        "paragraph_count": 2,
+        "link_ratio": 0.0382,
+        "score": 9.24
+      },
+      {
+        "tag": "article",
+        "identifier": "article class=py-4 d-flex flex-column id=",
+        "xpath": "/html/body/main/div[1]/div/aside/div/section/article[1]",
+        "text_length": 255,
+        "paragraph_count": 1,
+        "link_ratio": 0.3098,
+        "score": -3.45
+      },
+      {
+        "tag": "article",
+        "identifier": "article class=py-4 d-flex flex-column border-top id=",
+        "xpath": "/html/body/main/div[1]/div/aside/div/section/article[2]",
+        "text_length": 293,
+        "paragraph_count": 1,
+        "link_ratio": 0.314,
+        "score": -3.07
+      },
+      {
+        "tag": "article",
+        "identifier": "article class=color-border-muted post-card id=",
+        "xpath": "/html/body/main/section[2]/div/article[1]",
+        "text_length": 158,
+        "paragraph_count": 1,
+        "link_ratio": 0.3291,
+        "score": 0.58
+      },
+      {
+        "tag": "article",
+        "identifier": "article class=color-border-muted post-card id=",
+        "xpath": "/html/body/main/section[2]/div/article[2]",
+        "text_length": 186,
+        "paragraph_count": 1,
+        "link_ratio": 0.3602,
+        "score": 0.86
+      },
+      {
+        "tag": "article",
+        "identifier": "article class=color-border-muted post-card id=",
+        "xpath": "/html/body/main/section[2]/div/article[3]",
+        "text_length": 224,
+        "paragraph_count": 1,
+        "link_ratio": 0.4375,
+        "score": 1.24
+      }
+    ],
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "text": "We’re making GitHub Copilot, an AI pair programmer that suggests code in your editor, generally available to all developers for $10 USD/month or $100 USD/year. It will also be free to use for verified students and maintainers of popular open source projects.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Share:",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "At GitHub, it’s part of our mission to build technology that makes developers happy. Since the launch of GitHub Copilot technical preview last year, it’s become abundantly clear that AI is one of the best tools to empower the next generation of developers.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Already, AI is acting as a copilot in our daily lives. It’s helping us write emails and essays, automatically generate photo albums of our loved ones, and even acts as a digital assistant to help us order groceries. But until now, AI has stopped short of improving code, leaving the process of developing software almost completely manual.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "That’s changing now. Today, I am thrilled to announce that we are making GitHub Copilot generally available to individual developers. Your AI pair programmer is here.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "With GitHub Copilot, for the first time in the history of software, AI can be broadly harnessed by developers to write and complete code. Just like the rise of compilers and open source, we believe AI-assisted coding will fundamentally change the nature of software development, giving developers a new tool to write code easier and faster so they can be happier in their lives.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Do you want to start using GitHub Copilot today? Get started with a free trial, and check out our pricing plans. It’s free to use for verified students and maintainers of popular open source software.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "The wait is over",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "We specifically designed GitHub Copilot as an editor extension to make sure nothing gets in the way of what you’re doing. GitHub Copilot distills the collective knowledge of the world’s developers into an editor extension that suggests code in real time, to help you stay focused on what matters most: building great software.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "When you type code or comments, GitHub Copilot suggests the next line of code. But it’s not only a single word or line of code. GitHub Copilot can suggest complete methods, boilerplate code, whole unit tests, and even complex algorithms.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "With more than 1.2 million developers in our technical preview over the last 12 months, people who started using GitHub Copilot quickly told us it became an indispensable part of their daily workflows. In files where it’s enabled, nearly 40% of code is being written by GitHub Copilot in popular coding languages, like Python—and we expect that to increase. That’s creating more time and space for developers to focus on solving bigger problems and building even better software.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "And now, you can put the power of GitHub Copilot to work in your preferred environment with a free trial. Try GitHub Copilot for yourself.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Free for verified students and maintainers of popular open source projects",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "GitHub Copilot wouldn’t be possible without GitHub’s vibrant community of students and creators. To support and give back to those communities, we’re making GitHub Copilot available for free to verified students and maintainers of popular open source projects.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "If you’re a student and want to participate in the program, apply for the GitHub Student Pack to get started. And if you’re an open source maintainer, check out our FAQ to see if you qualify to start using GitHub Copilot at no cost.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Coming to companies later this year",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "GitHub Copilot is our first step toward empowering developers with AI. Starting today, it’s now available to all developers, and we’ll begin offering it to companies later this year. 🚀",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Tags:",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "list_item",
+        "text": "GitHub Copilot",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Written by",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "heading",
+        "text": "Thomas Dohmke",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 3
+      },
+      {
+        "kind": "paragraph",
+        "text": "@ashtom",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Fascinated by software development since his childhood in Germany, Thomas Dohmke has built a career building tools to accelerate developer happiness. Previously, Thomas was the Chief Executive Officer of GitHub (2021-2025) where he oversaw the rise of the world’s most widely adopted AI developer tools—including the launches of GitHub Copilot, Copilot Workspace, and GitHub Models. Thomas has also been a celebrated TED speaker and holds a PhD in mechanical engineering from University of Glasgow, UK.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Related posts",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "heading",
+        "text": "GitHub availability report: October 2026",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 3
+      },
+      {
+        "kind": "paragraph",
+        "text": "In October, we experienced eight incidents that resulted in degraded performance across GitHub services.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "GitHub Universe 2026: Evolving every layer of the stack",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 3
+      },
+      {
+        "kind": "paragraph",
+        "text": "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 3
+      },
+      {
+        "kind": "paragraph",
+        "text": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "We do newsletters, too",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      }
+    ]
+  },
+  "expected": {
+    "title": "GitHub Copilot is generally available to all developers",
+    "paragraphs": [
+      "We’re making GitHub Copilot, an AI pair programmer that suggests code in your editor, generally available to all developers for $10 USD/month or $100 USD/year. It will also be free to use for verified students and maintainers of popular open source projects.",
+      "At GitHub, it’s part of our mission to build technology that makes developers happy. Since the launch of GitHub Copilot technical preview last year, it’s become abundantly clear that AI is one of the best tools to empower the next generation of developers.",
+      "Already, AI is acting as a copilot in our daily lives. It’s helping us write emails and essays, automatically generate photo albums of our loved ones, and even acts as a digital assistant to help us order groceries. But until now, AI has stopped short of improving code, leaving the process of developing software almost completely manual.",
+      "That’s changing now. Today, I am thrilled to announce that we are making GitHub Copilot generally available to individual developers. Your AI pair programmer is here.",
+      "With GitHub Copilot, for the first time in the history of software, AI can be broadly harnessed by developers to write and complete code. Just like the rise of compilers and open source, we believe AI-assisted coding will fundamentally change the nature of software development, giving developers a new tool to write code easier and faster so they can be happier in their lives.",
+      "Do you want to start using GitHub Copilot today? Get started with a free trial, and check out our pricing plans. It’s free to use for verified students and maintainers of popular open source software.",
+      "We specifically designed GitHub Copilot as an editor extension to make sure nothing gets in the way of what you’re doing. GitHub Copilot distills the collective knowledge of the world’s developers into an editor extension that suggests code in real time, to help you stay focused on what matters most: building great software.",
+      "When you type code or comments, GitHub Copilot suggests the next line of code. But it’s not only a single word or line of code. GitHub Copilot can suggest complete methods, boilerplate code, whole unit tests, and even complex algorithms.",
+      "GitHub Copilot enables developers to",
+      "With more than 1.2 million developers in our technical preview over the last 12 months, people who started using GitHub Copilot quickly told us it became an indispensable part of their daily workflows. In files where it’s enabled, nearly 40% of code is being written by GitHub Copilot in popular coding languages, like Python—and we expect that to increase. That’s creating more time and space for developers to focus on solving bigger problems and building even better software.",
+      "And now, you can put the power of GitHub Copilot to work in your preferred environment with a free trial. Try GitHub Copilot for yourself.",
+      "GitHub Copilot wouldn’t be possible without GitHub’s vibrant community of students and creators. To support and give back to those communities, we’re making GitHub Copilot available for free to verified students and maintainers of popular open source projects.",
+      "If you’re a student and want to participate in the program, apply for the GitHub Student Pack to get started. And if you’re an open source maintainer, check out our FAQ to see if you qualify to start using GitHub Copilot at no cost.",
+      "GitHub Copilot is our first step toward empowering developers with AI. Starting today, it’s now available to all developers, and we’ll begin offering it to companies later this year. 🚀"
+    ],
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "text": "We’re making GitHub Copilot, an AI pair programmer that suggests code in your editor, generally available to all developers for $10 USD/month or $100 USD/year. It will also be free to use for verified students and maintainers of popular open source projects.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "At GitHub, it’s part of our mission to build technology that makes developers happy. Since the launch of GitHub Copilot technical preview last year, it’s become abundantly clear that AI is one of the best tools to empower the next generation of developers.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Already, AI is acting as a copilot in our daily lives. It’s helping us write emails and essays, automatically generate photo albums of our loved ones, and even acts as a digital assistant to help us order groceries. But until now, AI has stopped short of improving code, leaving the process of developing software almost completely manual.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "That’s changing now. Today, I am thrilled to announce that we are making GitHub Copilot generally available to individual developers. Your AI pair programmer is here.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "With GitHub Copilot, for the first time in the history of software, AI can be broadly harnessed by developers to write and complete code. Just like the rise of compilers and open source, we believe AI-assisted coding will fundamentally change the nature of software development, giving developers a new tool to write code easier and faster so they can be happier in their lives.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "quote",
+        "text": "Do you want to start using GitHub Copilot today? Get started with a free trial, and check out our pricing plans. It’s free to use for verified students and maintainers of popular open source software.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "The wait is over",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "We specifically designed GitHub Copilot as an editor extension to make sure nothing gets in the way of what you’re doing. GitHub Copilot distills the collective knowledge of the world’s developers into an editor extension that suggests code in real time, to help you stay focused on what matters most: building great software.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "When you type code or comments, GitHub Copilot suggests the next line of code. But it’s not only a single word or line of code. GitHub Copilot can suggest complete methods, boilerplate code, whole unit tests, and even complex algorithms.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "GitHub Copilot enables developers to",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Get AI-based coding suggestions: Get code suggestions that match a project’s context and style conventions, and cycle through different options to decide what to accept, reject, or edit.",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Use your preferred environment: Integrate GitHub Copilot with popular editors, including Neovim, JetBrains IDEs, Visual Studio, and Visual Studio Code as an unobtrusive extension.",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Code confidently in unfamiliar territory: Code in new languages or try something new, and let GitHub Copilot suggest syntax and code in dozens of languages—so you can spend more time learning by doing.",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "With more than 1.2 million developers in our technical preview over the last 12 months, people who started using GitHub Copilot quickly told us it became an indispensable part of their daily workflows. In files where it’s enabled, nearly 40% of code is being written by GitHub Copilot in popular coding languages, like Python—and we expect that to increase. That’s creating more time and space for developers to focus on solving bigger problems and building even better software.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "And now, you can put the power of GitHub Copilot to work in your preferred environment with a free trial. Try GitHub Copilot for yourself.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Free for verified students and maintainers of popular open source projects",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "GitHub Copilot wouldn’t be possible without GitHub’s vibrant community of students and creators. To support and give back to those communities, we’re making GitHub Copilot available for free to verified students and maintainers of popular open source projects.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "If you’re a student and want to participate in the program, apply for the GitHub Student Pack to get started. And if you’re an open source maintainer, check out our FAQ to see if you qualify to start using GitHub Copilot at no cost.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Coming to companies later this year",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "paragraph",
+        "text": "GitHub Copilot is our first step toward empowering developers with AI. Starting today, it’s now available to all developers, and we’ll begin offering it to companies later this year. 🚀",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      }
+    ]
+  }
+}

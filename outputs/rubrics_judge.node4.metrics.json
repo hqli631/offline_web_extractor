@@ -1,0 +1,1882 @@
+{
+ "tool": "score_judge_results",
+ "generated_at": "2026-11-17T12:31:09+00:00",
+ "inputs": {
+  "outputs\\rubrics_judge.node4.batch.v6.json": "dbfb7466837cf28fb721fba8f5737fb3c8eb5624d79578f74a199809ac23fe24",
+  "outputs\\rubrics_judge.node4.stability.v1.json": "8c4d771a0dc51e8baae90184f10f292702ef3d4c6adc3ef5e0619489d7202e89",
+  "outputs\\rubrics_judge.node3.freeze.v2.json": "00158e2707054f4027548fe336744d3610a414dcadf7d92d0903e215797ef732"
+ },
+ "freeze_integrity": "MATCH",
+ "overall": {
+  "n_cases": 23,
+  "accepted": 16,
+  "errors": 7,
+  "failure_rate": 0.3043,
+  "dim_exact_rate": 0.8,
+  "dim_within1_rate": 0.9375,
+  "severity_sign_rate": 0.8125,
+  "decision_match_rate": 0.8125,
+  "severe_miss_cases": [
+   "cal-appetite-reorder",
+   "cal-mdn-code_indent",
+   "cal-mdn-reorder"
+  ],
+  "false_alarm_cases": [],
+  "judge_vs_program_exact_rate": 0.7692,
+  "elapsed_seconds_sum": 0.047,
+  "elapsed_seconds_mean": 0.003
+ },
+ "by_split": {
+  "development": {
+   "n_cases": 12,
+   "accepted": 10,
+   "errors": 2,
+   "failure_rate": 0.1667,
+   "dim_exact_rate": 0.86,
+   "dim_within1_rate": 1.0,
+   "severity_sign_rate": 0.92,
+   "decision_match_rate": 0.9,
+   "severe_miss_cases": [
+    "cal-appetite-reorder"
+   ],
+   "false_alarm_cases": [],
+   "judge_vs_program_exact_rate": 0.85,
+   "elapsed_seconds_sum": 0.031,
+   "elapsed_seconds_mean": 0.003
+  },
+  "frozen_test": {
+   "n_cases": 11,
+   "accepted": 6,
+   "errors": 5,
+   "failure_rate": 0.4545,
+   "dim_exact_rate": 0.7,
+   "dim_within1_rate": 0.8333,
+   "severity_sign_rate": 0.6333,
+   "decision_match_rate": 0.6667,
+   "severe_miss_cases": [
+    "cal-mdn-code_indent",
+    "cal-mdn-reorder"
+   ],
+   "false_alarm_cases": [],
+   "judge_vs_program_exact_rate": 0.64,
+   "elapsed_seconds_sum": 0.016,
+   "elapsed_seconds_mean": 0.003
+  }
+ },
+ "stability": {
+  "n_cases": 6,
+  "identical": 5,
+  "identity_rate": 0.8333,
+  "cases": [
+   {
+    "case_id": "cal-appetite-clean",
+    "batch_status": "accepted",
+    "rerun_status": "accepted",
+    "identical": true,
+    "diffs": [],
+    "rerun_elapsed_seconds": 14.219,
+    "rerun_usage": {
+     "input_tokens": 12209,
+     "output_tokens": 644,
+     "total_tokens": 12853
+    }
+   },
+   {
+    "case_id": "cal-appetite-noise",
+    "batch_status": "accepted",
+    "rerun_status": "accepted",
+    "identical": true,
+    "diffs": [],
+    "rerun_elapsed_seconds": 12.344,
+    "rerun_usage": {
+     "input_tokens": 12259,
+     "output_tokens": 654,
+     "total_tokens": 12913
+    }
+   },
+   {
+    "case_id": "cal-iana-clean",
+    "batch_status": "accepted",
+    "rerun_status": "accepted",
+    "identical": true,
+    "diffs": [],
+    "rerun_elapsed_seconds": 9.906,
+    "rerun_usage": {
+     "input_tokens": 4901,
+     "output_tokens": 615,
+     "total_tokens": 5516
+    }
+   },
+   {
+    "case_id": "cal-mdn-clean",
+    "batch_status": "accepted",
+    "rerun_status": "accepted",
+    "identical": true,
+    "diffs": [],
+    "rerun_elapsed_seconds": 9.843,
+    "rerun_usage": {
+     "input_tokens": 32019,
+     "output_tokens": 600,
+     "total_tokens": 32619
+    }
+   },
+   {
+    "case_id": "cal-mdn-code_indent",
+    "batch_status": "accepted",
+    "rerun_status": "accepted",
+    "identical": true,
+    "diffs": [],
+    "rerun_elapsed_seconds": 8.969,
+    "rerun_usage": {
+     "input_tokens": 32020,
+     "output_tokens": 672,
+     "total_tokens": 32692
+    }
+   },
+   {
+    "case_id": "cal-github-noise",
+    "batch_status": "error",
+    "rerun_status": "error",
+    "identical": false,
+    "reason": "missing_or_error"
+   }
+  ]
+ },
+ "budget": {
+  "batch_new_api_calls": 0,
+  "batch_usage_new_calls_only": null,
+  "batch_cache_hits": 23,
+  "stability_new_api_calls": 6,
+  "stability_usage_new_calls_only": {
+   "input_tokens": 114958,
+   "output_tokens": 3994,
+   "total_tokens": 118952
+  },
+  "node4_new_api_calls_total": 6,
+  "node4_new_call_tokens_total": 118952
+ },
+ "review_queue": [
+  {
+   "case_id": "cal-appetite-missing_paragraph",
+   "split": "development",
+   "reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-appetite-noise",
+   "split": "development",
+   "reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-appetite-duplicate",
+   "split": "development",
+   "reasons": [
+    "judge_error"
+   ]
+  },
+  {
+   "case_id": "cal-appetite-reorder",
+   "split": "development",
+   "reasons": [
+    "severe_miss",
+    "decision_mismatch",
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-appetite-title_number",
+   "split": "development",
+   "reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-blurb-clean",
+   "split": "development",
+   "reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-blurb-missing_paragraph",
+   "split": "development",
+   "reasons": [
+    "judge_error"
+   ]
+  },
+  {
+   "case_id": "cal-blurb-noise",
+   "split": "development",
+   "reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-blurb-reorder",
+   "split": "development",
+   "reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-iana-clean",
+   "split": "development",
+   "reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-iana-noise",
+   "split": "development",
+   "reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-mdn-clean",
+   "split": "frozen_test",
+   "reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-mdn-missing_paragraph",
+   "split": "frozen_test",
+   "reasons": [
+    "judge_error"
+   ]
+  },
+  {
+   "case_id": "cal-mdn-code_indent",
+   "split": "frozen_test",
+   "reasons": [
+    "severe_miss",
+    "decision_mismatch",
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-mdn-reorder",
+   "split": "frozen_test",
+   "reasons": [
+    "severe_miss",
+    "decision_mismatch",
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-mdn-instruction_interference",
+   "split": "frozen_test",
+   "reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-github-clean",
+   "split": "frozen_test",
+   "reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-github-noise",
+   "split": "frozen_test",
+   "reasons": [
+    "judge_error"
+   ]
+  },
+  {
+   "case_id": "cal-github-duplicate",
+   "split": "frozen_test",
+   "reasons": [
+    "judge_error"
+   ]
+  },
+  {
+   "case_id": "cal-github-missing_paragraph",
+   "split": "frozen_test",
+   "reasons": [
+    "judge_error"
+   ]
+  },
+  {
+   "case_id": "cal-w3clink-clean",
+   "split": "frozen_test",
+   "reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-w3clink-instruction_interference",
+   "split": "frozen_test",
+   "reasons": [
+    "judge_error"
+   ]
+  }
+ ],
+ "per_case": [
+  {
+   "case_id": "cal-appetite-clean",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "mutation": "clean",
+   "source_truncated": false,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 12209,
+    "output_tokens": 632,
+    "total_tokens": 12841
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "cleanliness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": null,
+     "exact": true,
+     "within1": true,
+     "judge_status": "not_applicable",
+     "silver_status": "not_applicable",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "pass",
+   "silver_decision": "pass",
+   "decision_match": true,
+   "judge_needs_human_review": false,
+   "severe_miss": false,
+   "false_alarm": false,
+   "judge_vs_program_exact": {
+    "completeness": true,
+    "cleanliness": true,
+    "structure": true,
+    "title": true,
+    "format": true
+   },
+   "review_reasons": []
+  },
+  {
+   "case_id": "cal-appetite-missing_paragraph",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "mutation": "missing_paragraph",
+   "source_truncated": false,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 12121,
+    "output_tokens": 581,
+    "total_tokens": 12702
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 3,
+     "silver_score": 3,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "minor",
+     "silver_severity": "minor",
+     "severity_sign_match": true
+    },
+    "cleanliness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": null,
+     "exact": true,
+     "within1": true,
+     "judge_status": "not_applicable",
+     "silver_status": "not_applicable",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "uncertain",
+   "silver_decision": "uncertain",
+   "decision_match": true,
+   "judge_needs_human_review": true,
+   "severe_miss": false,
+   "false_alarm": false,
+   "judge_vs_program_exact": {
+    "completeness": true,
+    "cleanliness": true,
+    "structure": true,
+    "title": true,
+    "format": true
+   },
+   "review_reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-appetite-noise",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "mutation": "noise",
+   "source_truncated": false,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 12259,
+    "output_tokens": 654,
+    "total_tokens": 12913
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "cleanliness": {
+     "judge_score": 2,
+     "silver_score": 1,
+     "exact": false,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "major",
+     "silver_severity": "major",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": null,
+     "exact": true,
+     "within1": true,
+     "judge_status": "not_applicable",
+     "silver_status": "not_applicable",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "fail",
+   "silver_decision": "fail",
+   "decision_match": true,
+   "judge_needs_human_review": true,
+   "severe_miss": false,
+   "false_alarm": false,
+   "judge_vs_program_exact": {
+    "completeness": true,
+    "cleanliness": false,
+    "structure": true,
+    "title": true,
+    "format": true
+   },
+   "review_reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-appetite-duplicate",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "mutation": "duplicate",
+   "source_truncated": false,
+   "judge_status": "error",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 12297,
+    "output_tokens": 512,
+    "total_tokens": 12809
+   },
+   "error": {
+    "type": "ValueError",
+    "stage": "validation",
+    "detail": "Scoring needs source/reference evidence"
+   },
+   "review_reasons": [
+    "judge_error"
+   ]
+  },
+  {
+   "case_id": "cal-appetite-reorder",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "mutation": "reorder",
+   "source_truncated": false,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 12209,
+    "output_tokens": 524,
+    "total_tokens": 12733
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "cleanliness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 3,
+     "silver_score": 3,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "minor",
+     "silver_severity": "major",
+     "severity_sign_match": true
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": null,
+     "exact": true,
+     "within1": true,
+     "judge_status": "not_applicable",
+     "silver_status": "not_applicable",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "uncertain",
+   "silver_decision": "fail",
+   "decision_match": false,
+   "judge_needs_human_review": true,
+   "severe_miss": true,
+   "false_alarm": false,
+   "judge_vs_program_exact": {
+    "completeness": true,
+    "cleanliness": true,
+    "structure": true,
+    "title": true,
+    "format": true
+   },
+   "review_reasons": [
+    "severe_miss",
+    "decision_mismatch",
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-appetite-title_number",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "mutation": "title_number",
+   "source_truncated": false,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 12206,
+    "output_tokens": 617,
+    "total_tokens": 12823
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "cleanliness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "title": {
+     "judge_score": 3,
+     "silver_score": 3,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "minor",
+     "silver_severity": "minor",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": null,
+     "exact": true,
+     "within1": true,
+     "judge_status": "not_applicable",
+     "silver_status": "not_applicable",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "uncertain",
+   "silver_decision": "uncertain",
+   "decision_match": true,
+   "judge_needs_human_review": true,
+   "severe_miss": false,
+   "false_alarm": false,
+   "judge_vs_program_exact": {
+    "completeness": true,
+    "cleanliness": true,
+    "structure": true,
+    "title": true,
+    "format": true
+   },
+   "review_reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-blurb-clean",
+   "split": "development",
+   "template": "python_blurb",
+   "mutation": "clean",
+   "source_truncated": true,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.016,
+   "usage": {
+    "input_tokens": 15022,
+    "output_tokens": 616,
+    "total_tokens": 15638
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "cleanliness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "title": {
+     "judge_score": 3,
+     "silver_score": 4,
+     "exact": false,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "minor",
+     "silver_severity": "none",
+     "severity_sign_match": false
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": null,
+     "exact": true,
+     "within1": true,
+     "judge_status": "not_applicable",
+     "silver_status": "not_applicable",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "uncertain",
+   "silver_decision": "uncertain",
+   "decision_match": true,
+   "judge_needs_human_review": true,
+   "severe_miss": false,
+   "false_alarm": false,
+   "judge_vs_program_exact": {
+    "completeness": true,
+    "cleanliness": true,
+    "structure": true,
+    "title": false,
+    "format": true
+   },
+   "review_reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-blurb-missing_paragraph",
+   "split": "development",
+   "template": "python_blurb",
+   "mutation": "missing_paragraph",
+   "source_truncated": true,
+   "judge_status": "error",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 14877,
+    "output_tokens": 546,
+    "total_tokens": 15423
+   },
+   "error": {
+    "type": "ValueError",
+    "stage": "validation",
+    "detail": "Evidence quote is not supported"
+   },
+   "review_reasons": [
+    "judge_error"
+   ]
+  },
+  {
+   "case_id": "cal-blurb-noise",
+   "split": "development",
+   "template": "python_blurb",
+   "mutation": "noise",
+   "source_truncated": true,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 15067,
+    "output_tokens": 687,
+    "total_tokens": 15754
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "cleanliness": {
+     "judge_score": 2,
+     "silver_score": 1,
+     "exact": false,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "major",
+     "silver_severity": "major",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 3,
+     "silver_score": 4,
+     "exact": false,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "minor",
+     "silver_severity": "none",
+     "severity_sign_match": false
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": null,
+     "exact": true,
+     "within1": true,
+     "judge_status": "not_applicable",
+     "silver_status": "not_applicable",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "fail",
+   "silver_decision": "fail",
+   "decision_match": true,
+   "judge_needs_human_review": true,
+   "severe_miss": false,
+   "false_alarm": false,
+   "judge_vs_program_exact": {
+    "completeness": true,
+    "cleanliness": false,
+    "structure": false,
+    "title": true,
+    "format": true
+   },
+   "review_reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-blurb-reorder",
+   "split": "development",
+   "template": "python_blurb",
+   "mutation": "reorder",
+   "source_truncated": true,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.015,
+   "usage": {
+    "input_tokens": 15022,
+    "output_tokens": 647,
+    "total_tokens": 15669
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "cleanliness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 2,
+     "silver_score": 1,
+     "exact": false,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "major",
+     "silver_severity": "major",
+     "severity_sign_match": true
+    },
+    "title": {
+     "judge_score": 3,
+     "silver_score": 4,
+     "exact": false,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "minor",
+     "silver_severity": "none",
+     "severity_sign_match": false
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": null,
+     "exact": true,
+     "within1": true,
+     "judge_status": "not_applicable",
+     "silver_status": "not_applicable",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "fail",
+   "silver_decision": "fail",
+   "decision_match": true,
+   "judge_needs_human_review": true,
+   "severe_miss": false,
+   "false_alarm": false,
+   "judge_vs_program_exact": {
+    "completeness": true,
+    "cleanliness": true,
+    "structure": false,
+    "title": false,
+    "format": true
+   },
+   "review_reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-iana-clean",
+   "split": "development",
+   "template": "iana_example_domains",
+   "mutation": "clean",
+   "source_truncated": false,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 4901,
+    "output_tokens": 692,
+    "total_tokens": 5593
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "cleanliness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": null,
+     "exact": true,
+     "within1": true,
+     "judge_status": "not_applicable",
+     "silver_status": "not_applicable",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "uncertain",
+   "silver_decision": "uncertain",
+   "decision_match": true,
+   "judge_needs_human_review": true,
+   "severe_miss": false,
+   "false_alarm": false,
+   "review_reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-iana-noise",
+   "split": "development",
+   "template": "iana_example_domains",
+   "mutation": "noise",
+   "source_truncated": false,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 4946,
+    "output_tokens": 571,
+    "total_tokens": 5517
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "cleanliness": {
+     "judge_score": 2,
+     "silver_score": 2,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "major",
+     "silver_severity": "major",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 3,
+     "silver_score": 4,
+     "exact": false,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "minor",
+     "silver_severity": "none",
+     "severity_sign_match": false
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": null,
+     "exact": true,
+     "within1": true,
+     "judge_status": "not_applicable",
+     "silver_status": "not_applicable",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "fail",
+   "silver_decision": "fail",
+   "decision_match": true,
+   "judge_needs_human_review": true,
+   "severe_miss": false,
+   "false_alarm": false,
+   "review_reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-mdn-clean",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "mutation": "clean",
+   "source_truncated": true,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 32019,
+    "output_tokens": 579,
+    "total_tokens": 32598
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "minor",
+     "severity_sign_match": false
+    },
+    "cleanliness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "minor",
+     "severity_sign_match": false
+    },
+    "structure": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": 4,
+     "exact": false,
+     "within1": false,
+     "judge_status": "not_applicable",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "uncertain",
+   "silver_decision": "uncertain",
+   "decision_match": true,
+   "judge_needs_human_review": true,
+   "severe_miss": false,
+   "false_alarm": false,
+   "judge_vs_program_exact": {
+    "completeness": true,
+    "cleanliness": true,
+    "structure": true,
+    "title": true,
+    "format": false
+   },
+   "review_reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-mdn-missing_paragraph",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "mutation": "missing_paragraph",
+   "source_truncated": true,
+   "judge_status": "error",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 31924,
+    "output_tokens": 626,
+    "total_tokens": 32550
+   },
+   "error": {
+    "type": "ValueError",
+    "stage": "validation",
+    "detail": "Scoring needs source/reference evidence"
+   },
+   "review_reasons": [
+    "judge_error"
+   ]
+  },
+  {
+   "case_id": "cal-mdn-code_indent",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "mutation": "code_indent",
+   "source_truncated": true,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 32020,
+    "output_tokens": 664,
+    "total_tokens": 32684
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "minor",
+     "severity_sign_match": false
+    },
+    "cleanliness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "minor",
+     "severity_sign_match": false
+    },
+    "structure": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": 3,
+     "exact": false,
+     "within1": false,
+     "judge_status": "not_applicable",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "major",
+     "severity_sign_match": false
+    }
+   },
+   "judge_decision": "uncertain",
+   "silver_decision": "fail",
+   "decision_match": false,
+   "judge_needs_human_review": true,
+   "severe_miss": true,
+   "false_alarm": false,
+   "judge_vs_program_exact": {
+    "completeness": true,
+    "cleanliness": true,
+    "structure": true,
+    "title": true,
+    "format": false
+   },
+   "review_reasons": [
+    "severe_miss",
+    "decision_mismatch",
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-mdn-reorder",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "mutation": "reorder",
+   "source_truncated": true,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.016,
+   "usage": {
+    "input_tokens": 32019,
+    "output_tokens": 622,
+    "total_tokens": 32641
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "minor",
+     "severity_sign_match": false
+    },
+    "cleanliness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "minor",
+     "severity_sign_match": false
+    },
+    "structure": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "major",
+     "severity_sign_match": false
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": 4,
+     "exact": false,
+     "within1": false,
+     "judge_status": "not_applicable",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "uncertain",
+   "silver_decision": "fail",
+   "decision_match": false,
+   "judge_needs_human_review": true,
+   "severe_miss": true,
+   "false_alarm": false,
+   "judge_vs_program_exact": {
+    "completeness": true,
+    "cleanliness": true,
+    "structure": true,
+    "title": true,
+    "format": false
+   },
+   "review_reasons": [
+    "severe_miss",
+    "decision_mismatch",
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-mdn-instruction_interference",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "mutation": "instruction_interference",
+   "source_truncated": true,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 32071,
+    "output_tokens": 637,
+    "total_tokens": 32708
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 2,
+     "silver_score": 4,
+     "exact": false,
+     "within1": false,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "major",
+     "silver_severity": "minor",
+     "severity_sign_match": true
+    },
+    "cleanliness": {
+     "judge_score": 1,
+     "silver_score": 1,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "critical",
+     "silver_severity": "major",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 3,
+     "silver_score": 4,
+     "exact": false,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "minor",
+     "silver_severity": "none",
+     "severity_sign_match": false
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": 4,
+     "exact": false,
+     "within1": false,
+     "judge_status": "not_applicable",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "fail",
+   "silver_decision": "fail",
+   "decision_match": true,
+   "judge_needs_human_review": true,
+   "severe_miss": false,
+   "false_alarm": false,
+   "injection_complied": false,
+   "judge_vs_program_exact": {
+    "completeness": false,
+    "cleanliness": true,
+    "structure": false,
+    "title": true,
+    "format": false
+   },
+   "review_reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-github-clean",
+   "split": "frozen_test",
+   "template": "github-copilot-blog.candidate",
+   "mutation": "clean",
+   "source_truncated": true,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 21504,
+    "output_tokens": 627,
+    "total_tokens": 22131
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 3,
+     "silver_score": 4,
+     "exact": false,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "minor",
+     "silver_severity": "none",
+     "severity_sign_match": false
+    },
+    "cleanliness": {
+     "judge_score": 3,
+     "silver_score": 4,
+     "exact": false,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "minor",
+     "silver_severity": "minor",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 3,
+     "silver_score": 4,
+     "exact": false,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "minor",
+     "silver_severity": "none",
+     "severity_sign_match": false
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "partial",
+     "silver_status": "partial",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": null,
+     "exact": true,
+     "within1": true,
+     "judge_status": "not_applicable",
+     "silver_status": "not_applicable",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "uncertain",
+   "silver_decision": "uncertain",
+   "decision_match": true,
+   "judge_needs_human_review": true,
+   "severe_miss": false,
+   "false_alarm": false,
+   "judge_vs_program_exact": {
+    "completeness": false,
+    "cleanliness": false,
+    "structure": false,
+    "title": true,
+    "format": true
+   },
+   "review_reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-github-noise",
+   "split": "frozen_test",
+   "template": "github-copilot-blog.candidate",
+   "mutation": "noise",
+   "source_truncated": true,
+   "judge_status": "error",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 21550,
+    "output_tokens": 677,
+    "total_tokens": 22227
+   },
+   "error": {
+    "type": "ValueError",
+    "stage": "validation",
+    "detail": "Scoring needs source/reference evidence"
+   },
+   "review_reasons": [
+    "judge_error"
+   ]
+  },
+  {
+   "case_id": "cal-github-duplicate",
+   "split": "frozen_test",
+   "template": "github-copilot-blog.candidate",
+   "mutation": "duplicate",
+   "source_truncated": true,
+   "judge_status": "error",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 21586,
+    "output_tokens": 801,
+    "total_tokens": 22387
+   },
+   "error": {
+    "type": "ValueError",
+    "stage": "validation",
+    "detail": "Scoring needs source/reference evidence"
+   },
+   "review_reasons": [
+    "judge_error"
+   ]
+  },
+  {
+   "case_id": "cal-github-missing_paragraph",
+   "split": "frozen_test",
+   "template": "github-copilot-blog.candidate",
+   "mutation": "missing_paragraph",
+   "source_truncated": true,
+   "judge_status": "error",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 21422,
+    "output_tokens": 637,
+    "total_tokens": 22059
+   },
+   "error": {
+    "type": "ValueError",
+    "stage": "validation",
+    "detail": "Scoring needs source/reference evidence"
+   },
+   "review_reasons": [
+    "judge_error"
+   ]
+  },
+  {
+   "case_id": "cal-w3clink-clean",
+   "split": "frozen_test",
+   "template": "w3c-link-text.candidate",
+   "mutation": "clean",
+   "source_truncated": false,
+   "judge_status": "accepted",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 6321,
+    "output_tokens": 561,
+    "total_tokens": 6882
+   },
+   "dimensions": {
+    "completeness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "cleanliness": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "structure": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "title": {
+     "judge_score": 4,
+     "silver_score": 4,
+     "exact": true,
+     "within1": true,
+     "judge_status": "scored",
+     "silver_status": "scored",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    },
+    "format": {
+     "judge_score": null,
+     "silver_score": null,
+     "exact": true,
+     "within1": true,
+     "judge_status": "not_applicable",
+     "silver_status": "not_applicable",
+     "judge_severity": "none",
+     "silver_severity": "none",
+     "severity_sign_match": true
+    }
+   },
+   "judge_decision": "uncertain",
+   "silver_decision": "uncertain",
+   "decision_match": true,
+   "judge_needs_human_review": true,
+   "severe_miss": false,
+   "false_alarm": false,
+   "review_reasons": [
+    "judge_flagged_review"
+   ]
+  },
+  {
+   "case_id": "cal-w3clink-instruction_interference",
+   "split": "frozen_test",
+   "template": "w3c-link-text.candidate",
+   "mutation": "instruction_interference",
+   "source_truncated": false,
+   "judge_status": "error",
+   "cache_hit": true,
+   "elapsed_seconds": 0.0,
+   "usage": {
+    "input_tokens": 6372,
+    "output_tokens": 607,
+    "total_tokens": 6979
+   },
+   "error": {
+    "type": "ValueError",
+    "stage": "validation",
+    "detail": "Scoring needs source/reference evidence"
+   },
+   "review_reasons": [
+    "judge_error"
+   ]
+  }
+ ],
+ "notes": [
+  "Silver labels are assistant-derived, not human gold; rates are agreement with silver, not human accuracy.",
+  "No threshold tuning was performed; frozen_test is reported once as measured.",
+  "Judge scores are uncalibrated and must not be used as training reward.",
+  "Program and judge scores are reported separately and never averaged.",
+  "source_only expectations are provisional assistant expectations."
+ ]
+}

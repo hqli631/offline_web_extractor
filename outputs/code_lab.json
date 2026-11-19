@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "title": "代码缩进实验",
+  "paragraphs": [
+    "下面的代码只作为网页文字提取，不执行。",
+    "上方代码的四空格、八空格和内部空行都应保留。"
+  ],
+  "body": "下面的代码只作为网页文字提取，不执行。\n\n```\ndef greet(name):\n    if name:\n        print(\"hello\", name)\n\n    return name != \"\"\n```\n\n上方代码的四空格、八空格和内部空行都应保留。",
+  "selected_candidate": {
+    "tag": "article",
+    "identifier": "article class= id=",
+    "xpath": "/html/body/article",
+    "text_length": 114,
+    "paragraph_count": 2,
+    "link_ratio": 0.0,
+    "score": 5.14
+  },
+  "candidates": [
+    {
+      "tag": "article",
+      "identifier": "article class= id=",
+      "xpath": "/html/body/article",
+      "text_length": 114,
+      "paragraph_count": 2,
+      "link_ratio": 0.0,
+      "score": 5.14
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "paragraph",
+      "text": "下面的代码只作为网页文字提取，不执行。",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "code",
+      "text": "def greet(name):\n    if name:\n        print(\"hello\", name)\n\n    return name != \"\"\n",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "paragraph",
+      "text": "上方代码的四空格、八空格和内部空行都应保留。",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    }
+  ]
+}

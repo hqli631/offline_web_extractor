@@ -1,0 +1,107 @@
+[
+  {
+    "id": "python-introduction",
+    "status": "saved",
+    "source": {
+      "requested_url": "https://docs.python.org/zh-cn/3/tutorial/introduction.html",
+      "final_url": "https://docs.python.org/zh-cn/3/tutorial/introduction.html",
+      "fetched_at": "2026-11-13T13:57:37.813007+00:00",
+      "http_status": 200,
+      "content_type": "text/html",
+      "sha256": "f59c9271286fda8e11785148a1d11d753c96bb622eb21a34768babefac5d53c7",
+      "bytes": 73054,
+      "source_kind": "real",
+      "split": "clustering-development",
+      "proposed_manual_group": "sphinx-tutorial",
+      "page_title": "3. Python 速览 — Python 3.15.2 文档",
+      "h1_texts": [
+        "3. Python 速览¶"
+      ],
+      "note": "Complete HTTP response, no truncation or production extraction. Group labels require source-structure review; not a gold extraction label."
+    }
+  },
+  {
+    "id": "python-controlflow",
+    "status": "saved",
+    "source": {
+      "requested_url": "https://docs.python.org/zh-cn/3/tutorial/controlflow.html",
+      "final_url": "https://docs.python.org/zh-cn/3/tutorial/controlflow.html",
+      "fetched_at": "2026-11-13T13:57:41.182891+00:00",
+      "http_status": 200,
+      "content_type": "text/html",
+      "sha256": "d02eef35346d0344e101a66c2466ae9755a4bf45f6f6c1d94574f1ab8a43f8ce",
+      "bytes": 140066,
+      "source_kind": "real",
+      "split": "clustering-development",
+      "proposed_manual_group": "sphinx-tutorial",
+      "page_title": "4. 更多控制流工具 — Python 3.15.2 文档",
+      "h1_texts": [
+        "4. 更多控制流工具¶"
+      ],
+      "note": "Complete HTTP response, no truncation or production extraction. Group labels require source-structure review; not a gold extraction label."
+    }
+  },
+  {
+    "id": "python-library-index",
+    "status": "saved",
+    "source": {
+      "requested_url": "https://docs.python.org/zh-cn/3/library/index.html",
+      "final_url": "https://docs.python.org/zh-cn/3/library/index.html",
+      "fetched_at": "2026-11-13T13:57:37.087190+00:00",
+      "http_status": 200,
+      "content_type": "text/html",
+      "sha256": "9cb748bbfd547a80922467dbbbe58816d0d80500818b19ec18a72ae02fb9d152",
+      "bytes": 73782,
+      "source_kind": "real",
+      "split": "clustering-development",
+      "proposed_manual_group": "sphinx-library-index",
+      "page_title": "Python 标准库 — Python 3.15.2 文档",
+      "h1_texts": [
+        "Python 标准库¶"
+      ],
+      "note": "Complete HTTP response, no truncation or production extraction. Group labels require source-structure review; not a gold extraction label."
+    }
+  },
+  {
+    "id": "iana-abuse",
+    "status": "saved",
+    "source": {
+      "requested_url": "https://www.iana.org/help/abuse",
+      "final_url": "https://www.iana.org/help/abuse",
+      "fetched_at": "2026-11-13T13:58:25.439336+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "8b0b6c2b0a3d8d5d887b24b3da0fda754d399aa3ab51449e2b21a3e2a581084d",
+      "bytes": 8550,
+      "source_kind": "real",
+      "split": "clustering-development",
+      "proposed_manual_group": "iana-help",
+      "page_title": "Network Abuse Information",
+      "h1_texts": [
+        "Does it look like we're attacking you?"
+      ],
+      "note": "Complete HTTP response, no truncation or production extraction. Group labels require source-structure review; not a gold extraction label."
+    }
+  },
+  {
+    "id": "iana-whois",
+    "status": "saved",
+    "source": {
+      "requested_url": "https://www.iana.org/help/whois",
+      "final_url": "https://www.iana.org/help/whois",
+      "fetched_at": "2026-11-13T13:58:22.180088+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "7f42a1d6e553ee5d4ae1bdc6562f60a3bf826d7864065d4835185fea58b78ddd",
+      "bytes": 8717,
+      "source_kind": "real",
+      "split": "clustering-development",
+      "proposed_manual_group": "iana-help",
+      "page_title": "Using our WHOIS Server",
+      "h1_texts": [
+        "Using our WHOIS Server"
+      ],
+      "note": "Complete HTTP response, no truncation or production extraction. Group labels require source-structure review; not a gold extraction label."
+    }
+  }
+]

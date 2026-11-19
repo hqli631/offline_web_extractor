@@ -1,0 +1,109 @@
+{
+  "protocol": "Expanded clustering development set. Groups frozen by source-container review before scoring; documentation and content length variants share a group. Python search is a same-site non-document negative. No held-out validation or extraction gold included. See clustering/README.md.",
+  "pages": [
+    {
+      "id": "python-appetite",
+      "html": "python_appetite_zh.html",
+      "sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real",
+      "split": "development"
+    },
+    {
+      "id": "python-interpreter",
+      "html": "python_interpreter_zh.html",
+      "sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real",
+      "split": "development"
+    },
+    {
+      "id": "iana",
+      "html": "iana_example_domains.html",
+      "sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+      "manual_group": "iana-help",
+      "source_kind": "real",
+      "split": "development"
+    },
+    {
+      "id": "gnu",
+      "html": "gnu.candidate.html",
+      "sha256": "b050aa1bcbf73c225c0bcabd377e1015a4c602556eb6d9f13f0eb2d5ba8973d6",
+      "manual_group": "gnu-essay",
+      "source_kind": "real",
+      "split": "development"
+    },
+    {
+      "id": "github",
+      "html": "github-copilot-blog.candidate.html",
+      "sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+      "manual_group": "github-blog",
+      "source_kind": "real",
+      "split": "development"
+    },
+    {
+      "id": "nasa",
+      "html": "nasa-voyager-news.candidate.html",
+      "sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+      "manual_group": "nasa-news",
+      "source_kind": "real",
+      "split": "development"
+    },
+    {
+      "id": "mdn",
+      "html": "mdn.candidate.html",
+      "sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+      "manual_group": "mdn-doc",
+      "source_kind": "real",
+      "split": "development"
+    },
+    {
+      "id": "python-introduction",
+      "html": "clustering/python-introduction.html",
+      "sha256": "f59c9271286fda8e11785148a1d11d753c96bb622eb21a34768babefac5d53c7",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real",
+      "split": "development"
+    },
+    {
+      "id": "python-controlflow",
+      "html": "clustering/python-controlflow.html",
+      "sha256": "d02eef35346d0344e101a66c2466ae9755a4bf45f6f6c1d94574f1ab8a43f8ce",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real",
+      "split": "development"
+    },
+    {
+      "id": "python-library-index",
+      "html": "clustering/python-library-index.html",
+      "sha256": "9cb748bbfd547a80922467dbbbe58816d0d80500818b19ec18a72ae02fb9d152",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real",
+      "split": "development"
+    },
+    {
+      "id": "python-search",
+      "html": "clustering/python-search.html",
+      "sha256": "23a461b1a695e86d4fbee39f59b00e2ccbfd581ee2a03370fe407058871b8793",
+      "manual_group": "sphinx-search",
+      "source_kind": "real",
+      "split": "development"
+    },
+    {
+      "id": "iana-abuse",
+      "html": "clustering/iana-abuse.html",
+      "sha256": "8b0b6c2b0a3d8d5d887b24b3da0fda754d399aa3ab51449e2b21a3e2a581084d",
+      "manual_group": "iana-help",
+      "source_kind": "real",
+      "split": "development"
+    },
+    {
+      "id": "iana-whois",
+      "html": "clustering/iana-whois.html",
+      "sha256": "7f42a1d6e553ee5d4ae1bdc6562f60a3bf826d7864065d4835185fea58b78ddd",
+      "manual_group": "iana-help",
+      "source_kind": "real",
+      "split": "development"
+    }
+  ]
+}

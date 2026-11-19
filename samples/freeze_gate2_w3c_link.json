@@ -1,0 +1,14 @@
+{
+  "frozen_at": "2026-11-13T12:58:26.823912+00:00",
+  "extractor_snapshot": "baselines/rules-gate2-first-pass/manifest.json",
+  "case": {
+    "id": "w3c-link-text.candidate",
+    "html": "w3c-link-text.candidate.html",
+    "expected": "w3c-link-text.candidate.expected.json",
+    "html_sha256": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5",
+    "expected_sha256": "ebaae88d7af06eeabd4bef5ef752c42ef45eae01e3b12a5716e6f26c19b40d16",
+    "expected_blocks": 22,
+    "first_report": "outputs/w3c-link-text.candidate.first_evaluation.json"
+  },
+  "annotation_method": "Independent assistant DOM-assisted review, not user-verified. Paragraph-level blockquote representation declared before prediction."
+}

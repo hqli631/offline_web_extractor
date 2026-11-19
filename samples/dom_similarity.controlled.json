@@ -1,0 +1,45 @@
+{
+  "protocol": "Controlled structural family labels, not rule compatibility labels. role-drift shares tag layout with reference although frozen XPath fails. Two altered layouts labelled separately to inspect over-merging. Threshold fixed at 0.7 before run.",
+  "pages": [
+    {
+      "id": "reference",
+      "html": "drift_lab/reference.html",
+      "sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428",
+      "manual_group": "reference-layout",
+      "source_kind": "synthetic",
+      "split": "development"
+    },
+    {
+      "id": "class-drift",
+      "html": "drift_lab/class-drift.html",
+      "sha256": "ef76358f0a4ac9bb4c5999df8a09df191e6882f41236af760b590ad17a89b76f",
+      "manual_group": "reference-layout",
+      "source_kind": "synthetic",
+      "split": "development"
+    },
+    {
+      "id": "role-drift",
+      "html": "drift_lab/role-drift.html",
+      "sha256": "e2f7ffd72f087a12361e7ecba2c8293c86433070ddbe6b0b951e55558aac1269",
+      "manual_group": "reference-layout",
+      "source_kind": "synthetic",
+      "split": "development"
+    },
+    {
+      "id": "duplicate-main",
+      "html": "drift_lab/duplicate-main.html",
+      "sha256": "661b8dd40eeaafc65a9b29582e5f6790b07a8bb6580e2e2401a3741d314476e6",
+      "manual_group": "duplicate-main",
+      "source_kind": "synthetic",
+      "split": "development"
+    },
+    {
+      "id": "content-moved",
+      "html": "drift_lab/content-moved.html",
+      "sha256": "8e60aa8f73b032b204d731f7d4e959f6d2383fd2656190af03c1217bbdbfdcda",
+      "manual_group": "content-moved",
+      "source_kind": "synthetic",
+      "split": "development"
+    }
+  ]
+}

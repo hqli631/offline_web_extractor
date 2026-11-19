@@ -1,0 +1,236 @@
+{
+ "judge_manifest_version": 1,
+ "cases": [
+  {
+   "case_id": "cal-appetite-clean",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "source": "python_appetite_zh.html",
+   "candidate": "calibration/cal-appetite-clean.candidate.json",
+   "gold": "python_appetite_zh.expected.json",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea"
+  },
+  {
+   "case_id": "cal-appetite-missing_paragraph",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "source": "python_appetite_zh.html",
+   "candidate": "calibration/cal-appetite-missing_paragraph.candidate.json",
+   "gold": "python_appetite_zh.expected.json",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea"
+  },
+  {
+   "case_id": "cal-appetite-noise",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "source": "python_appetite_zh.html",
+   "candidate": "calibration/cal-appetite-noise.candidate.json",
+   "gold": "python_appetite_zh.expected.json",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "noise_terms": [
+    "分享到",
+    "推荐阅读"
+   ]
+  },
+  {
+   "case_id": "cal-appetite-duplicate",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "source": "python_appetite_zh.html",
+   "candidate": "calibration/cal-appetite-duplicate.candidate.json",
+   "gold": "python_appetite_zh.expected.json",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea"
+  },
+  {
+   "case_id": "cal-appetite-reorder",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "source": "python_appetite_zh.html",
+   "candidate": "calibration/cal-appetite-reorder.candidate.json",
+   "gold": "python_appetite_zh.expected.json",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea"
+  },
+  {
+   "case_id": "cal-appetite-title_number",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "source": "python_appetite_zh.html",
+   "candidate": "calibration/cal-appetite-title_number.candidate.json",
+   "gold": "python_appetite_zh.expected.json",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea"
+  },
+  {
+   "case_id": "cal-blurb-clean",
+   "template": "python_blurb",
+   "split": "development",
+   "source": "python_blurb.html",
+   "candidate": "calibration/cal-blurb-clean.candidate.json",
+   "gold": "python_blurb.expected.json",
+   "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992"
+  },
+  {
+   "case_id": "cal-blurb-missing_paragraph",
+   "template": "python_blurb",
+   "split": "development",
+   "source": "python_blurb.html",
+   "candidate": "calibration/cal-blurb-missing_paragraph.candidate.json",
+   "gold": "python_blurb.expected.json",
+   "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992"
+  },
+  {
+   "case_id": "cal-blurb-noise",
+   "template": "python_blurb",
+   "split": "development",
+   "source": "python_blurb.html",
+   "candidate": "calibration/cal-blurb-noise.candidate.json",
+   "gold": "python_blurb.expected.json",
+   "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+   "noise_terms": [
+    "advertisement",
+    "subscribe to our newsletter"
+   ]
+  },
+  {
+   "case_id": "cal-blurb-reorder",
+   "template": "python_blurb",
+   "split": "development",
+   "source": "python_blurb.html",
+   "candidate": "calibration/cal-blurb-reorder.candidate.json",
+   "gold": "python_blurb.expected.json",
+   "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992"
+  },
+  {
+   "case_id": "cal-iana-clean",
+   "template": "iana_example_domains",
+   "split": "development",
+   "source": "iana_example_domains.html",
+   "candidate": "calibration/cal-iana-clean.candidate.json",
+   "gold": null,
+   "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f"
+  },
+  {
+   "case_id": "cal-iana-noise",
+   "template": "iana_example_domains",
+   "split": "development",
+   "source": "iana_example_domains.html",
+   "candidate": "calibration/cal-iana-noise.candidate.json",
+   "gold": null,
+   "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+   "noise_terms": [
+    "advertisement",
+    "subscribe to our newsletter"
+   ]
+  },
+  {
+   "case_id": "cal-mdn-clean",
+   "template": "mdn.candidate",
+   "split": "frozen_test",
+   "source": "mdn.candidate.html",
+   "candidate": "calibration/cal-mdn-clean.candidate.json",
+   "gold": "mdn.candidate.expected.json",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293"
+  },
+  {
+   "case_id": "cal-mdn-missing_paragraph",
+   "template": "mdn.candidate",
+   "split": "frozen_test",
+   "source": "mdn.candidate.html",
+   "candidate": "calibration/cal-mdn-missing_paragraph.candidate.json",
+   "gold": "mdn.candidate.expected.json",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293"
+  },
+  {
+   "case_id": "cal-mdn-code_indent",
+   "template": "mdn.candidate",
+   "split": "frozen_test",
+   "source": "mdn.candidate.html",
+   "candidate": "calibration/cal-mdn-code_indent.candidate.json",
+   "gold": "mdn.candidate.expected.json",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293"
+  },
+  {
+   "case_id": "cal-mdn-reorder",
+   "template": "mdn.candidate",
+   "split": "frozen_test",
+   "source": "mdn.candidate.html",
+   "candidate": "calibration/cal-mdn-reorder.candidate.json",
+   "gold": "mdn.candidate.expected.json",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293"
+  },
+  {
+   "case_id": "cal-mdn-instruction_interference",
+   "template": "mdn.candidate",
+   "split": "frozen_test",
+   "source": "mdn.candidate.html",
+   "candidate": "calibration/cal-mdn-instruction_interference.candidate.json",
+   "gold": "mdn.candidate.expected.json",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+   "noise_terms": [
+    "ignore previous instructions",
+    "忽略之前的指令"
+   ]
+  },
+  {
+   "case_id": "cal-github-clean",
+   "template": "github-copilot-blog.candidate",
+   "split": "frozen_test",
+   "source": "github-copilot-blog.candidate.html",
+   "candidate": "calibration/cal-github-clean.candidate.json",
+   "gold": "github-copilot-blog.candidate.expected.json",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c"
+  },
+  {
+   "case_id": "cal-github-noise",
+   "template": "github-copilot-blog.candidate",
+   "split": "frozen_test",
+   "source": "github-copilot-blog.candidate.html",
+   "candidate": "calibration/cal-github-noise.candidate.json",
+   "gold": "github-copilot-blog.candidate.expected.json",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+   "noise_terms": [
+    "advertisement",
+    "subscribe to our newsletter"
+   ]
+  },
+  {
+   "case_id": "cal-github-duplicate",
+   "template": "github-copilot-blog.candidate",
+   "split": "frozen_test",
+   "source": "github-copilot-blog.candidate.html",
+   "candidate": "calibration/cal-github-duplicate.candidate.json",
+   "gold": "github-copilot-blog.candidate.expected.json",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c"
+  },
+  {
+   "case_id": "cal-github-missing_paragraph",
+   "template": "github-copilot-blog.candidate",
+   "split": "frozen_test",
+   "source": "github-copilot-blog.candidate.html",
+   "candidate": "calibration/cal-github-missing_paragraph.candidate.json",
+   "gold": "github-copilot-blog.candidate.expected.json",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c"
+  },
+  {
+   "case_id": "cal-w3clink-clean",
+   "template": "w3c-link-text.candidate",
+   "split": "frozen_test",
+   "source": "w3c-link-text.candidate.html",
+   "candidate": "calibration/cal-w3clink-clean.candidate.json",
+   "gold": null,
+   "source_sha256": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5"
+  },
+  {
+   "case_id": "cal-w3clink-instruction_interference",
+   "template": "w3c-link-text.candidate",
+   "split": "frozen_test",
+   "source": "w3c-link-text.candidate.html",
+   "candidate": "calibration/cal-w3clink-instruction_interference.candidate.json",
+   "gold": null,
+   "source_sha256": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5",
+   "noise_terms": [
+    "ignore previous instructions",
+    "忽略之前的指令"
+   ]
+  }
+ ]
+}

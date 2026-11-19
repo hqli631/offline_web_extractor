@@ -1,0 +1,18 @@
+# Isolated evaluation environment only; production run.cmd is unchanged.
+trafilatura==2.0.0
+babel==2.18.0
+certifi==2026.10.23
+charset-normalizer==3.5.2
+courlan==1.4.0
+dateparser==1.5.0
+htmldate==1.11.0
+jusText==3.0.2
+lxml==6.1.3
+lxml_html_clean==0.4.6
+python-dateutil==4.0.0
+pytz==2026.6
+regex==2026.11.9
+tld==0.13.2
+tzdata==2026.6
+tzlocal==5.4.5
+urllib3==2.8.0

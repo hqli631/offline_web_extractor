@@ -1,0 +1,16 @@
+{
+  "protocol": "Historical initial validation. Boundaries confirmed by user after first prediction with no expected changes. Current use is development after rule tuning. This is a provenance record, not a batch manifest.",
+  "case": {
+    "id": "mdn-getting-started",
+    "split": "initial_validation",
+    "current_split": "development",
+    "source_kind": "real",
+    "html": "mdn.candidate.html",
+    "expected": "mdn.candidate.expected.json",
+    "html_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+    "expected_sha256": "a2e13751b3bf4657cf0995bef9f78fe160328df885e7a90c1550269528eadd89",
+    "annotation": "mdn.candidate.annotation.md",
+    "first_report": "outputs/mdn.candidate.first_evaluation.json",
+    "after_report": "outputs/mdn.candidate.after_boundary_evaluation.json"
+  }
+}

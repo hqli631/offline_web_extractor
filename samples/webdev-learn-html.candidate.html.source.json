@@ -1,0 +1,10 @@
+{
+  "requested_url": "https://web.dev/learn/html/",
+  "fetched_at": "2026-11-13T12:08:32.400432+00:00",
+  "http_status": 200,
+  "sha256": "921c15fafe14485c9891ea1ad6bac7f42779fd57ed71fabd34c82b66c9664cee",
+  "template": "course-overview",
+  "split": "validation",
+  "note": "Course-overview validation scored once after source freeze, never used for tuning. Report separately; single-page evidence not population accuracy.",
+  "expected_sha256": "77b2e873fbfacba5538064dddd3ad0ea6117647fe4a6564cbed4de95bf3961a7"
+}

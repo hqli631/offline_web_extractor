@@ -1,0 +1,7 @@
+.venv/
+.baseline-venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+env.local

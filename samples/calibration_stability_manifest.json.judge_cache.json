@@ -1,0 +1,598 @@
+{
+ "4683d3abbf3180cff41b52ffb1e072f7c5c53603ab2c197bd19361a896fddbd9": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and list items are present in the correct order.",
+      "evidence": [
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:21",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "s:39",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, sidebar, and footer content are excluded from the extraction.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "上一主题"
+       },
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Paragraphs and lists maintain the source document's order and hierarchy.",
+      "evidence": [
+       {
+        "ref": "s:28",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "s:29",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "s:35",
+        "quote": "Python “可以扩展”：会开发 C 语言程序，就能快速上手为解释器增加新的内置函数或模块"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title matches the source heading including the chapter number.",
+      "evidence": [
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 12209,
+    "output_tokens": 644,
+    "total_tokens": 12853
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T12:25:45+00:00"
+ },
+ "9a8ad0f095f77bde4edc27ab041cf190e6e6f6963c8ffea2196874ec5ab16b7f": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and list items from the source are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "s:21",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "s:39",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "Candidate contains a noise block with social sharing and ad text not present in the source article body.",
+      "evidence": [
+       {
+        "ref": "p:1",
+        "quote": "分享到：微信 微博 QQ空间 推荐阅读：广告推广内容"
+       },
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Article content order and list structure match the source; the noise block is an insertion but does not disrupt the relative order of valid article blocks.",
+      "evidence": [
+       {
+        "ref": "s:28",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "s:29",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the source heading including the chapter number.",
+      "evidence": [
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       },
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements for this article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 12259,
+    "output_tokens": 654,
+    "total_tokens": 12913
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T12:25:58+00:00"
+ },
+ "f65394fd3576d1f32b5bb0f23f4bdc5ccefab8978e866be8a8a2da2423af8792": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and the Further Reading list are captured.",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation and footer content are excluded from the candidate blocks.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Domains"
+       },
+       {
+        "ref": "s:12",
+        "quote": "Domain Names"
+       },
+       {
+        "ref": "s:35",
+        "quote": "Privacy Policy"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Paragraphs precede the heading and list items in correct order.",
+      "evidence": [
+       {
+        "ref": "s:8",
+        "quote": "Further Reading"
+       },
+       {
+        "ref": "s:10",
+        "quote": "Special-Use Domain Names (RFC 6761)"
+       },
+       {
+        "ref": "s:11",
+        "quote": "Reserved Top Level DNS Names (RFC 2606)"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the source H1 exactly.",
+      "evidence": [
+       {
+        "ref": "s:5",
+        "quote": "Example Domains"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or special block formatting requirements.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 4901,
+    "output_tokens": 615,
+    "total_tokens": 5516
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T12:26:08+00:00"
+ },
+ "939e2a19986e0f86969b3bfe9903cfbd3526014884ade45f9ff59956ce5bd1ee": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate covers the entire article content from introduction to conclusion and references, matching the gold standard blocks.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "在本文中，我们将介绍最基础的 HTML 知识。"
+       },
+       {
+        "ref": "g:139",
+        "quote": "参见"
+       },
+       {
+        "ref": "s:html",
+        "quote": "<title>HTML 基础语法 - 学习 Web 开发 | MDN</title>"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation menus, accessibility links, and other non-article elements present in the source are correctly excluded from the candidate output.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "跳转到主要内容"
+       },
+       {
+        "ref": "s:2",
+        "quote": "HTML: Markup language"
+       },
+       {
+        "ref": "g:0",
+        "quote": "在本文中，我们将介绍最基础的 HTML 知识。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Headings, lists, and code blocks maintain the correct order and hierarchy as defined in the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "g:2",
+        "quote": "什么是 HTML？"
+       },
+       {
+        "ref": "g:10",
+        "quote": "剖析一个 HTML 元素"
+       },
+       {
+        "ref": "g:13",
+        "quote": "开始标签（opening tag）：由元素的名称"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The extracted title is faithful to the article's main heading without including site-specific suffixes or permalink controls.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "HTML 基础语法"
+       },
+       {
+        "ref": "p:title",
+        "quote": "HTML 基础语法"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 32019,
+    "output_tokens": 600,
+    "total_tokens": 32619
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T12:26:18+00:00"
+ },
+ "d5725b74e6140dba7df5ff1342cef2beae4b777f05bdc8ceacf98a3e7cbb888e": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate covers the entire article content from introduction to conclusion and references, matching the gold standard in terms of meaningful coverage.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "在本文中，我们将介绍最基础的 HTML 知识。"
+       },
+       {
+        "ref": "g:2",
+        "quote": "什么是 HTML？"
+       },
+       {
+        "ref": "g:86",
+        "quote": "剖析 HTML 文档"
+       },
+       {
+        "ref": "g:135",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:139",
+        "quote": "参见"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation menus, accessibility links, and other non-article elements present in the source are correctly excluded from the candidate output.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "跳转到主要内容"
+       },
+       {
+        "ref": "s:2",
+        "quote": "HTML: Markup language"
+       },
+       {
+        "ref": "s:121",
+        "quote": "学习 Web 开发"
+       },
+       {
+        "ref": "g:0",
+        "quote": "在本文中，我们将介绍最基础的 HTML 知识。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Heading levels, list types (ordered/unordered), and document order are preserved accurately relative to the gold standard.",
+      "evidence": [
+       {
+        "ref": "g:2",
+        "quote": "什么是 HTML？"
+       },
+       {
+        "ref": "g:18",
+        "quote": "创建你的第一个 HTML 元素"
+       },
+       {
+        "ref": "g:20",
+        "quote": "点击下面代码块中的“Play”在 MDN 代码演练场中编辑示例。"
+       },
+       {
+        "ref": "g:13",
+        "quote": "开始标签（opening tag）：由元素的名称（本例中为段落的 p）包裹在开、闭角括号中组成。"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The extracted title matches the gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "HTML 基础语法"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 32020,
+    "output_tokens": 672,
+    "total_tokens": 32692
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T12:26:27+00:00"
+ },
+ "06ee28dcce1839f94047baf6662ddb42dbdfd6d6998ca5afb30256c05cee4d06": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The candidate includes all main article content and headings from the gold standard. However, it contains extra non-article blocks at the end (Tags, Written by) which are not part of the core article body in the gold annotation.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "We’re making GitHub Copilot, an AI pair programmer that suggests code in your editor"
+       },
+       {
+        "ref": "p:25",
+        "quote": "Written by"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The candidate contains significant noise. Block p:1 is a clear advertisement/social share block ('Share this article... Advertisement'). Blocks p:11 and p:12 contain raw HTML tags ('<', 'ul>') as text, indicating poor extraction of list markup. The trailing 'Tags' and 'Written by' sections are also extraneous to the article body.",
+      "evidence": [
+       {
+        "ref": "p:1",
+        "quote": "Share this article on Facebook and Twitter. Subscribe to our newsletter! Advertisement: buy now related content."
+       },
+       {
+        "ref": "p:11",
+        "quote": "<"
+       },
+       {
+        "ref": "p:12",
+        "quote": "ul>"
+       }
+      ]
+     },
+     "structure": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The structure is compromised by the presence of raw HTML tag fragments (p:11, p:12) appearing as paragraphs between the introductory sentence and the list items. This breaks the logical flow expected for a list introduction. Additionally, the inclusion of 'Tags' and 'Written by' as H2 headings at the end disrupts the article's structural integrity compared to the clean gold standard.",
+      "evidence": [
+       {
+        "ref": "p:10",
+        "quote": "GitHub Copilot enables developers to"
+       },
+       {
+        "ref": "p:11",
+        "quote": "<"
+       },
+       {
+        "ref": "p:12",
+        "quote": "ul>"
+       },
+       {
+        "ref": "p:13",
+        "quote": "Get AI-based coding suggestions:"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title matches the source and gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "GitHub Copilot is generally available to all developers"
+       },
+       {
+        "ref": "g:title",
+        "quote": "GitHub Copilot is generally available to all developers"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 21550,
+    "output_tokens": 809,
+    "total_tokens": 22359
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T12:26:45+00:00"
+ }
+}

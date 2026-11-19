@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://www.w3.org/QA/Tips/noClickHere",
+  "final_url": "https://www.w3.org/QA/Tips/noClickHere",
+  "fetched_at": "2026-11-13T12:52:41.477330+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5",
+  "template": "web-guidance",
+  "split": "development",
+  "note": "Independent DOM-assisted annotation frozen before first prediction. First result no_candidate: candidate selector does not cover this layout. Shortness is not an implemented threshold. Historical v1 kept; quote v2 used for unified comparison.",
+  "expected_sha256": "ebaae88d7af06eeabd4bef5ef752c42ef45eae01e3b12a5716e6f26c19b40d16"
+}

@@ -1,0 +1,748 @@
+{
+ "label_version": 1,
+ "case_id": "cal-mdn-missing_paragraph",
+ "split": "frozen_test",
+ "template": "mdn.candidate",
+ "label_origin": "assistant_silver",
+ "human_reviewed": false,
+ "derivation": "frozen_rubrics_v2_program_on_controlled_mutation",
+ "mutation": {
+  "type": "missing_paragraph",
+  "index": 0,
+  "removed_excerpt": "在本文中，我们将介绍最基础的 HTML 知识。为了让你快速入门，本文将定义元素、属性以及你可能听过的所有其他重要术语，并解释它们在 HTML 中的作用。你将学习 HTML 元素的结构、一个典型 HTML 页面的结构，以及其他重要的基本语言特"
+ },
+ "noise_terms": [],
+ "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+ "gold_sha256": "32c2a4904e969788b7e618ae456a15be4a51812f5b57b7d08219886952f93b13",
+ "candidate_sha256": "78ad958c89db2188cfab12f4cdb59a25cdd01c028e5514be95b5510630d6285b",
+ "batch_config": {
+  "max_source_chars": 20000
+ },
+ "source_truncated": true,
+ "prompt_chars": 109828,
+ "expected": {
+  "dimensions": {
+   "completeness": {
+    "score": 4,
+    "status": "partial",
+    "severity": "minor"
+   },
+   "cleanliness": {
+    "score": 4,
+    "status": "partial",
+    "severity": "minor"
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "title": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "format": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   }
+  },
+  "decision": "uncertain",
+  "needs_human_review": true
+ },
+ "program_reference": {
+  "rubrics_version": "2.0.0",
+  "method": "deterministic-reference",
+  "dimensions": {
+   "completeness": {
+    "score": 4,
+    "status": "partial",
+    "recall": 0.9812704854065866,
+    "missing_tokens": 120
+   },
+   "cleanliness": {
+    "score": 4,
+    "status": "partial",
+    "precision": 1.0,
+    "clean_ratio": 1.0,
+    "extra_tokens": 0,
+    "noise_hits": {}
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "attribute_ratio": 1.0,
+    "order_ratio": 1.0,
+    "alignment_coverage": 0.968421052631579,
+    "aligned_pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      10,
+      11
+     ],
+     [
+      11,
+      12
+     ],
+     [
+      12,
+      13
+     ],
+     [
+      13,
+      14
+     ],
+     [
+      14,
+      15
+     ],
+     [
+      15,
+      16
+     ],
+     [
+      16,
+      17
+     ],
+     [
+      17,
+      18
+     ],
+     [
+      18,
+      19
+     ],
+     [
+      19,
+      20
+     ],
+     [
+      20,
+      21
+     ],
+     [
+      21,
+      22
+     ],
+     [
+      22,
+      23
+     ],
+     [
+      23,
+      24
+     ],
+     [
+      24,
+      25
+     ],
+     [
+      25,
+      26
+     ],
+     [
+      26,
+      27
+     ],
+     [
+      27,
+      28
+     ],
+     [
+      28,
+      29
+     ],
+     [
+      29,
+      30
+     ],
+     [
+      30,
+      31
+     ],
+     [
+      31,
+      32
+     ],
+     [
+      32,
+      33
+     ],
+     [
+      33,
+      34
+     ],
+     [
+      34,
+      35
+     ],
+     [
+      35,
+      36
+     ],
+     [
+      36,
+      37
+     ],
+     [
+      37,
+      38
+     ],
+     [
+      38,
+      39
+     ],
+     [
+      39,
+      40
+     ],
+     [
+      40,
+      41
+     ],
+     [
+      41,
+      42
+     ],
+     [
+      42,
+      43
+     ],
+     [
+      43,
+      44
+     ],
+     [
+      44,
+      45
+     ],
+     [
+      45,
+      46
+     ],
+     [
+      46,
+      47
+     ],
+     [
+      47,
+      48
+     ],
+     [
+      48,
+      49
+     ],
+     [
+      49,
+      50
+     ],
+     [
+      50,
+      51
+     ],
+     [
+      51,
+      52
+     ],
+     [
+      52,
+      53
+     ],
+     [
+      53,
+      54
+     ],
+     [
+      54,
+      55
+     ],
+     [
+      55,
+      56
+     ],
+     [
+      56,
+      57
+     ],
+     [
+      57,
+      58
+     ],
+     [
+      58,
+      59
+     ],
+     [
+      59,
+      60
+     ],
+     [
+      60,
+      61
+     ],
+     [
+      61,
+      62
+     ],
+     [
+      62,
+      63
+     ],
+     [
+      63,
+      64
+     ],
+     [
+      64,
+      65
+     ],
+     [
+      65,
+      66
+     ],
+     [
+      66,
+      67
+     ],
+     [
+      67,
+      68
+     ],
+     [
+      68,
+      69
+     ],
+     [
+      69,
+      70
+     ],
+     [
+      70,
+      71
+     ],
+     [
+      71,
+      72
+     ],
+     [
+      72,
+      73
+     ],
+     [
+      73,
+      74
+     ],
+     [
+      74,
+      75
+     ],
+     [
+      75,
+      76
+     ],
+     [
+      76,
+      77
+     ],
+     [
+      77,
+      78
+     ],
+     [
+      78,
+      79
+     ],
+     [
+      79,
+      80
+     ],
+     [
+      80,
+      81
+     ],
+     [
+      81,
+      82
+     ],
+     [
+      82,
+      83
+     ],
+     [
+      83,
+      84
+     ],
+     [
+      84,
+      85
+     ],
+     [
+      85,
+      86
+     ],
+     [
+      86,
+      87
+     ],
+     [
+      87,
+      88
+     ],
+     [
+      88,
+      89
+     ],
+     [
+      93,
+      91
+     ],
+     [
+      94,
+      92
+     ],
+     [
+      95,
+      93
+     ],
+     [
+      96,
+      94
+     ],
+     [
+      97,
+      95
+     ],
+     [
+      98,
+      96
+     ],
+     [
+      99,
+      97
+     ],
+     [
+      101,
+      99
+     ],
+     [
+      102,
+      100
+     ],
+     [
+      103,
+      101
+     ],
+     [
+      105,
+      102
+     ],
+     [
+      106,
+      103
+     ],
+     [
+      107,
+      104
+     ],
+     [
+      108,
+      105
+     ],
+     [
+      109,
+      106
+     ],
+     [
+      110,
+      107
+     ],
+     [
+      111,
+      108
+     ],
+     [
+      112,
+      109
+     ],
+     [
+      113,
+      110
+     ],
+     [
+      114,
+      111
+     ],
+     [
+      115,
+      112
+     ],
+     [
+      116,
+      113
+     ],
+     [
+      117,
+      114
+     ],
+     [
+      118,
+      115
+     ],
+     [
+      119,
+      116
+     ],
+     [
+      120,
+      117
+     ],
+     [
+      121,
+      118
+     ],
+     [
+      122,
+      119
+     ],
+     [
+      123,
+      120
+     ],
+     [
+      124,
+      121
+     ],
+     [
+      125,
+      122
+     ],
+     [
+      126,
+      123
+     ],
+     [
+      127,
+      124
+     ],
+     [
+      128,
+      125
+     ],
+     [
+      129,
+      126
+     ],
+     [
+      130,
+      127
+     ],
+     [
+      131,
+      128
+     ],
+     [
+      132,
+      129
+     ],
+     [
+      133,
+      130
+     ],
+     [
+      134,
+      131
+     ],
+     [
+      135,
+      132
+     ],
+     [
+      136,
+      133
+     ],
+     [
+      137,
+      134
+     ],
+     [
+      138,
+      135
+     ],
+     [
+      139,
+      136
+     ],
+     [
+      140,
+      137
+     ],
+     [
+      141,
+      138
+     ],
+     [
+      142,
+      139
+     ],
+     [
+      143,
+      140
+     ]
+    ],
+    "reason": "Only text-aligned blocks are scored"
+   },
+   "title": {
+    "score": 4,
+    "status": "partial",
+    "exact": true
+   },
+   "format": {
+    "score": 4,
+    "status": "partial",
+    "code_exact_ratio": 1.0,
+    "code_pairs_checked": 25,
+    "scope": "Aligned code blocks only; Markdown render and links are unassessed"
+   }
+  },
+  "issues": [
+   {
+    "dimension": "completeness",
+    "code": "unaligned_gold_block",
+    "severity": "minor",
+    "predicted_ref": null,
+    "gold_ref": "g:0",
+    "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+    "gold_excerpt": "在本文中，我们将介绍最基础的 HTML 知识。为了让你快速入门，本文将定义元素、属性以及你可能听过的所有其他重要术语，并解释它们在 HTML 中的作用。你将学习 HTML 元素的结构、一个典型 HTML 页面的结构，以及其他重要的基本语言特性。在此过程中，你也将有机会动手玩转 HTML！"
+   },
+   {
+    "dimension": "completeness",
+    "code": "unaligned_gold_block",
+    "severity": "minor",
+    "predicted_ref": null,
+    "gold_ref": "g:90",
+    "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+    "gold_excerpt": "<!doctype html>：文档类型声明（doctype）。在 HTML 早期（1991-1992 年），doctype 旨在作为一套规则的链接，HTML 页面必须遵循这些规则才能被认为是好的 HTML。过去的 doctype 看起来像这样： html<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://w"
+   },
+   {
+    "dimension": "completeness",
+    "code": "unaligned_gold_block",
+    "severity": "minor",
+    "predicted_ref": null,
+    "gold_ref": "g:98",
+    "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+    "gold_excerpt": "在本地计算机上操作： 备注：你也可以在我们的 GitHub 仓库中找到这个基础 HTML 模板。你可以复制这个文件，而不是自己创建。"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:89",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "<!doctype html>：文档类型声明（doctype）。在 HTML 早期（1991-1992 年），doctype 旨在作为一套规则的链接，HTML 页面必须遵循这些规则才能被认为是好的 HTML。过去的 doctype 看起来像这样："
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:90",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "html"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:91",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:92",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "最近，doctype 成为了一个历史遗留物，为了让其他一切正常工作而必须包含它。<!doctype html> 是算作有效 doctype 的最短字符序列。你只需要知道这些！"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:100",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "在本地计算机上操作："
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:104",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "备注：你也可以在我们的 GitHub 仓库中找到这个基础 HTML 模板。你可以复制这个文件，而不是自己创建。"
+   },
+   {
+    "dimension": "completeness",
+    "code": "partial_source_evidence",
+    "severity": "unknown",
+    "predicted_ref": null,
+    "gold_ref": null,
+    "detail": "Scores cover supplied evidence only"
+   }
+  ],
+  "decision": "uncertain",
+  "needs_human_review": true,
+  "overall": null,
+  "evidence_complete": false,
+  "note": "Uncalibrated diagnostics; no model/human judgement or reward claim. Source attribution, links and Markdown rendering are unassessed."
+ },
+ "notes": [
+  "Silver label (assistant-derived), not human gold; disagreement goes to the review queue.",
+  "clean means no injected mutation; the extractor output may still differ from gold."
+ ]
+}

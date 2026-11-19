@@ -1,0 +1,40 @@
+{
+  "tool_version": "2.1.0",
+  "map_version": 1,
+  "overrides_version": 1,
+  "overrides_approved_by": "hqli631",
+  "overrides_approved_at": "2026-11-18",
+  "generated_at": "2026-11-18T06:20:22+00:00",
+  "labels_sha256": "8859e7cc85fcd4aa219f6751e51227ea15b1b6b4b3dd51efd0e1d47486cdb5d7",
+  "labels_path": "outputs\\human_review\\blind.v2\\human_labels.blind.json",
+  "n_cases": 23,
+  "n_changes": 58,
+  "n_overrides": 4,
+  "n_kept_legal": 57,
+  "n_flags": 17,
+  "n_consistency_warnings_pending": 0,
+  "n_consistency_warnings_acknowledged": 1,
+  "acknowledged_gaps": [
+    [
+      "B19",
+      "uncertain_without_defect_or_low_confidence"
+    ],
+    [
+      "B23",
+      "uncertain_without_defect_or_low_confidence"
+    ]
+  ],
+  "applied": true,
+  "reads": [
+    "labels file",
+    "keyword map config",
+    "overrides config"
+  ],
+  "does_not_read": [
+    "batch report",
+    "judge output",
+    "metrics",
+    "silver labels",
+    "sealed_mapping.json"
+  ]
+}

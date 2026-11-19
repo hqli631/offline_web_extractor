@@ -1,0 +1,66 @@
+{
+  "rule": {
+    "id": "controlled-role-main-v1",
+    "container_xpath": "//div[@role='main']",
+    "frozen_from": "reference",
+    "note": "One frozen rule, no fallback or per-page adaptation. All pages are authored synthetic controlled mutations."
+  },
+  "pages": [
+    {
+      "id": "reference",
+      "role": "reference",
+      "html": "reference.html",
+      "sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428",
+      "expected": "reference.expected.json",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+      "source_kind": "synthetic",
+      "expected_status": "ok",
+      "expected_blocks_exact": true
+    },
+    {
+      "id": "class-drift",
+      "role": "transfer",
+      "html": "class-drift.html",
+      "sha256": "ef76358f0a4ac9bb4c5999df8a09df191e6882f41236af760b590ad17a89b76f",
+      "expected": "class-drift.expected.json",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+      "source_kind": "synthetic",
+      "expected_status": "ok",
+      "expected_blocks_exact": true
+    },
+    {
+      "id": "role-drift",
+      "role": "transfer",
+      "html": "role-drift.html",
+      "sha256": "e2f7ffd72f087a12361e7ecba2c8293c86433070ddbe6b0b951e55558aac1269",
+      "expected": "role-drift.expected.json",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+      "source_kind": "synthetic",
+      "expected_status": "rule_no_match",
+      "expected_blocks_exact": null
+    },
+    {
+      "id": "duplicate-main",
+      "role": "transfer",
+      "html": "duplicate-main.html",
+      "sha256": "661b8dd40eeaafc65a9b29582e5f6790b07a8bb6580e2e2401a3741d314476e6",
+      "expected": "duplicate-main.expected.json",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+      "source_kind": "synthetic",
+      "expected_status": "rule_ambiguous",
+      "expected_blocks_exact": null
+    },
+    {
+      "id": "content-moved",
+      "role": "transfer",
+      "html": "content-moved.html",
+      "sha256": "8e60aa8f73b032b204d731f7d4e959f6d2383fd2656190af03c1217bbdbfdcda",
+      "expected": "content-moved.expected.json",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+      "source_kind": "synthetic",
+      "expected_status": "ok",
+      "expected_blocks_exact": false
+    }
+  ],
+  "protocol": "Expected status and quality fields are experiment assertions; the current reuse runner may ignore them. Full-page gold is distinct from container match applicability."
+}

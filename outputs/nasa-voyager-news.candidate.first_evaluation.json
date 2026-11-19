@@ -1,0 +1,481 @@
+{
+  "status": "ok",
+  "title_exact": true,
+  "block_text_precision": 0.5714285714285714,
+  "block_text_recall": 1.0,
+  "body_exact": false,
+  "blocks_exact": false,
+  "rendered_body_exact": null,
+  "evaluation_note": "body_exact compares legacy p paragraphs only; null structure metrics mean no structure annotation was supplied.",
+  "body_char_recall_rough": 1.0,
+  "body_char_precision_rough": 0.9272,
+  "predicted": {
+    "status": "ok",
+    "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities",
+    "paragraphs": [
+      "3 min read",
+      "Gerelle Q. Dodson",
+      "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth, which is more than 16 billion miles (25.9 billion kilometers). Voyager 1 is the most distant human-made object, and any light from Earth would take 24 hours to reach the spacecraft. NASA will highlight this historic milestone with two events.",
+      "On Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day” by creating a symbolic wave of golden light encircling the planet after sunset. NASA has created a website that enables smart phones and tablets to flash “VGR”, Voyager’s call sign, in morse code.",
+      "For more information about how to participate in “Shine Bright for Voyager Light-Day,” visit:",
+      "go.nasa.gov/shinebright",
+      "Everyone is encouraged to capture photos or videos of their light-day signal and share it on social platforms, tagging @NASA.",
+      "On Thursday, Nov. 19 at 12 p.m. EST (9 a.m. PST), NASA’s Jet Propulsion Laboratory (JPL) in Southern California will host a moderated discussion with mission members and NASA leadership about the status of Voyager 1 and 2, the unique science the twin probes continue to gather in interstellar space, and the challenges of keeping the spacecraft operating for so long over such vast distances. A Q&A with media and other audience members will follow. In addition, there also will be a preview of the upcoming NASA+ Voyager documentary, planned for release in 2027 for the mission’s 50th anniversary.",
+      "The event will take place in NASA JPL’s von Kármán Auditorium, where JPL hosted Voyager briefings during the spacecraft’s grand tour of the outer planets.",
+      "The participants will be:",
+      "Learn where to watch online at:",
+      "https://www.nasa.gov/live",
+      "U.S. media interested in attending the event in person must RSVP by Monday, Nov. 16 to Josh Smooha at: josh.smooha@jpl.nasa.gov. To be considered for onsite credentials, foreign national media must RSVP no later than Thursday, Nov. 12. Media interested in participating virtually must RSVP no later than two hours before the event. NASA’s media accreditation policy is available online.",
+      "For almost half a century, the agency’s Voyager mission has blazed a trail through space. Voyager 1 and Voyager 2 were designed to explore the outer planets by taking advantage of a planetary alignment that occurs once every 176 years. Voyager 1 entered interstellar space in 2012. Following a different trajectory, Voyager 2 entered in 2018. Both spacecraft continue to provide unique scientific observations of the environment beyond the heliosphere, the protective bubble created by the Sun.",
+      "Managed by Caltech in Pasadena, California, NASA JPL built and operates the Voyager spacecraft. NASA’s Deep Space Network, also managed by NASA JPL, enables communication with the distant probes. The Voyager mission is funded by NASA’s Heliophysics Division at NASA Headquarters in Washington.",
+      "For more information about NASA’s Voyager mission, visit:",
+      "https://science.nasa.gov/mission/voyager/",
+      "-end-",
+      "Abbey Interrante / Karen FoxHeadquarters, Washington202-358-1600abbey.a.interrante@nasa.gov / karen.c.fox@nasa.gov",
+      "Josh SmoohaJet Propulsion Laboratory, Pasadena, Calif.626-298-4414josh.smooha@jpl.nasa.gov"
+    ],
+    "body": "3 min read\n\nGerelle Q. Dodson\n\n### NASA Headquarters\n\nLaunched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth, which is more than 16 billion miles (25.9 billion kilometers). Voyager 1 is the most distant human-made object, and any light from Earth would take 24 hours to reach the spacecraft. NASA will highlight this historic milestone with two events.\n\nOn Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day” by creating a symbolic wave of golden light encircling the planet after sunset. NASA has created a website that enables smart phones and tablets to flash “VGR”, Voyager’s call sign, in morse code.\n\nFor more information about how to participate in “Shine Bright for Voyager Light-Day,” visit:\n\ngo.nasa.gov/shinebright\n\nEveryone is encouraged to capture photos or videos of their light-day signal and share it on social platforms, tagging @NASA.\n\nOn Thursday, Nov. 19 at 12 p.m. EST (9 a.m. PST), NASA’s Jet Propulsion Laboratory (JPL) in Southern California will host a moderated discussion with mission members and NASA leadership about the status of Voyager 1 and 2, the unique science the twin probes continue to gather in interstellar space, and the challenges of keeping the spacecraft operating for so long over such vast distances. A Q&A with media and other audience members will follow. In addition, there also will be a preview of the upcoming NASA+ Voyager documentary, planned for release in 2027 for the mission’s 50th anniversary.\n\nThe event will take place in NASA JPL’s von Kármán Auditorium, where JPL hosted Voyager briefings during the spacecraft’s grand tour of the outer planets.\n\nThe participants will be:\n\n- Nicky Fox, associate administrator, Science Mission Directorate, Washington\n- Jonathan Lunine, chief scientist, NASA’s Jet Propulsion Laboratory, Southern California, and professor of planetary science, Caltech\n- Suzanne Dodd, Voyager project manager, NASA JPL\n- Kareem Badaruddin, Voyager mission manager, NASA JPL\n- Jamie Rankin, Voyager deputy project scientist, Princeton University\n\nLearn where to watch online at:\n\nhttps://www.nasa.gov/live\n\nU.S. media interested in attending the event in person must RSVP by Monday, Nov. 16 to Josh Smooha at: josh.smooha@jpl.nasa.gov. To be considered for onsite credentials, foreign national media must RSVP no later than Thursday, Nov. 12. Media interested in participating virtually must RSVP no later than two hours before the event. NASA’s media accreditation policy is available online.\n\nFor almost half a century, the agency’s Voyager mission has blazed a trail through space. Voyager 1 and Voyager 2 were designed to explore the outer planets by taking advantage of a planetary alignment that occurs once every 176 years. Voyager 1 entered interstellar space in 2012. Following a different trajectory, Voyager 2 entered in 2018. Both spacecraft continue to provide unique scientific observations of the environment beyond the heliosphere, the protective bubble created by the Sun.\n\nManaged by Caltech in Pasadena, California, NASA JPL built and operates the Voyager spacecraft. NASA’s Deep Space Network, also managed by NASA JPL, enables communication with the distant probes. The Voyager mission is funded by NASA’s Heliophysics Division at NASA Headquarters in Washington.\n\nFor more information about NASA’s Voyager mission, visit:\n\nhttps://science.nasa.gov/mission/voyager/\n\n-end-\n\nAbbey Interrante / Karen FoxHeadquarters, Washington202-358-1600abbey.a.interrante@nasa.gov / karen.c.fox@nasa.gov\n\nJosh SmoohaJet Propulsion Laboratory, Pasadena, Calif.626-298-4414josh.smooha@jpl.nasa.gov\n\n## Share\n\n## Details\n\n## Related Terms\n\n- Voyager 1\n- Heliophysics\n- Heliophysics Division\n- Jet Propulsion Laboratory\n- NASA Headquarters\n- Voyager 2",
+    "selected_candidate": {
+      "tag": "article",
+      "identifier": "article class=post-1064501 press-release type-press-release status-publish has-post-thumbnail hentry category-voyager-1 category-heliophysics category-heliophysics-division category-jpl category-hq category-voyager-2 id=post-1064501",
+      "xpath": "/html/body/main/article",
+      "text_length": 4002,
+      "paragraph_count": 20,
+      "link_ratio": 0.0912,
+      "score": 50.0
+    },
+    "candidates": [
+      {
+        "tag": "main",
+        "identifier": "main class=site-main id=primary",
+        "xpath": "/html/body/main",
+        "text_length": 4002,
+        "paragraph_count": 20,
+        "link_ratio": 0.0912,
+        "score": 45.0
+      },
+      {
+        "tag": "article",
+        "identifier": "article class=post-1064501 press-release type-press-release status-publish has-post-thumbnail hentry category-voyager-1 category-heliophysics category-heliophysics-division category-jpl category-hq category-voyager-2 id=post-1064501",
+        "xpath": "/html/body/main/article",
+        "text_length": 4002,
+        "paragraph_count": 20,
+        "link_ratio": 0.0912,
+        "score": 50.0
+      }
+    ],
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "text": "3 min read",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Gerelle Q. Dodson",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "NASA Headquarters",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 3
+      },
+      {
+        "kind": "paragraph",
+        "text": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth, which is more than 16 billion miles (25.9 billion kilometers). Voyager 1 is the most distant human-made object, and any light from Earth would take 24 hours to reach the spacecraft. NASA will highlight this historic milestone with two events.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "On Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day” by creating a symbolic wave of golden light encircling the planet after sunset. NASA has created a website that enables smart phones and tablets to flash “VGR”, Voyager’s call sign, in morse code.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "For more information about how to participate in “Shine Bright for Voyager Light-Day,” visit:",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "go.nasa.gov/shinebright",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Everyone is encouraged to capture photos or videos of their light-day signal and share it on social platforms, tagging @NASA.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "On Thursday, Nov. 19 at 12 p.m. EST (9 a.m. PST), NASA’s Jet Propulsion Laboratory (JPL) in Southern California will host a moderated discussion with mission members and NASA leadership about the status of Voyager 1 and 2, the unique science the twin probes continue to gather in interstellar space, and the challenges of keeping the spacecraft operating for so long over such vast distances. A Q&A with media and other audience members will follow. In addition, there also will be a preview of the upcoming NASA+ Voyager documentary, planned for release in 2027 for the mission’s 50th anniversary.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "The event will take place in NASA JPL’s von Kármán Auditorium, where JPL hosted Voyager briefings during the spacecraft’s grand tour of the outer planets.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "The participants will be:",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Nicky Fox, associate administrator, Science Mission Directorate, Washington",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Jonathan Lunine, chief scientist, NASA’s Jet Propulsion Laboratory, Southern California, and professor of planetary science, Caltech",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Suzanne Dodd, Voyager project manager, NASA JPL",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Kareem Badaruddin, Voyager mission manager, NASA JPL",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Jamie Rankin, Voyager deputy project scientist, Princeton University",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Learn where to watch online at:",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "https://www.nasa.gov/live",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "U.S. media interested in attending the event in person must RSVP by Monday, Nov. 16 to Josh Smooha at: josh.smooha@jpl.nasa.gov. To be considered for onsite credentials, foreign national media must RSVP no later than Thursday, Nov. 12. Media interested in participating virtually must RSVP no later than two hours before the event. NASA’s media accreditation policy is available online.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "For almost half a century, the agency’s Voyager mission has blazed a trail through space. Voyager 1 and Voyager 2 were designed to explore the outer planets by taking advantage of a planetary alignment that occurs once every 176 years. Voyager 1 entered interstellar space in 2012. Following a different trajectory, Voyager 2 entered in 2018. Both spacecraft continue to provide unique scientific observations of the environment beyond the heliosphere, the protective bubble created by the Sun.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Managed by Caltech in Pasadena, California, NASA JPL built and operates the Voyager spacecraft. NASA’s Deep Space Network, also managed by NASA JPL, enables communication with the distant probes. The Voyager mission is funded by NASA’s Heliophysics Division at NASA Headquarters in Washington.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "For more information about NASA’s Voyager mission, visit:",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "https://science.nasa.gov/mission/voyager/",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "-end-",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Abbey Interrante / Karen FoxHeadquarters, Washington202-358-1600abbey.a.interrante@nasa.gov / karen.c.fox@nasa.gov",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Josh SmoohaJet Propulsion Laboratory, Pasadena, Calif.626-298-4414josh.smooha@jpl.nasa.gov",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "heading",
+        "text": "Share",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "heading",
+        "text": "Details",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "heading",
+        "text": "Related Terms",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+      },
+      {
+        "kind": "list_item",
+        "text": "Voyager 1",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Heliophysics",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Heliophysics Division",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Jet Propulsion Laboratory",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "NASA Headquarters",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Voyager 2",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      }
+    ]
+  },
+  "expected": {
+    "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities",
+    "paragraphs": [
+      "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth, which is more than 16 billion miles (25.9 billion kilometers). Voyager 1 is the most distant human-made object, and any light from Earth would take 24 hours to reach the spacecraft. NASA will highlight this historic milestone with two events.",
+      "On Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day” by creating a symbolic wave of golden light encircling the planet after sunset. NASA has created a website that enables smart phones and tablets to flash “VGR”, Voyager’s call sign, in morse code.",
+      "For more information about how to participate in “Shine Bright for Voyager Light-Day,” visit:",
+      "go.nasa.gov/shinebright",
+      "Everyone is encouraged to capture photos or videos of their light-day signal and share it on social platforms, tagging @NASA.",
+      "On Thursday, Nov. 19 at 12 p.m. EST (9 a.m. PST), NASA’s Jet Propulsion Laboratory (JPL) in Southern California will host a moderated discussion with mission members and NASA leadership about the status of Voyager 1 and 2, the unique science the twin probes continue to gather in interstellar space, and the challenges of keeping the spacecraft operating for so long over such vast distances. A Q&A with media and other audience members will follow. In addition, there also will be a preview of the upcoming NASA+ Voyager documentary, planned for release in 2027 for the mission’s 50th anniversary.",
+      "The event will take place in NASA JPL’s von Kármán Auditorium, where JPL hosted Voyager briefings during the spacecraft’s grand tour of the outer planets.",
+      "The participants will be:",
+      "Learn where to watch online at:",
+      "https://www.nasa.gov/live",
+      "U.S. media interested in attending the event in person must RSVP by Monday, Nov. 16 to Josh Smooha at: josh.smooha@jpl.nasa.gov. To be considered for onsite credentials, foreign national media must RSVP no later than Thursday, Nov. 12. Media interested in participating virtually must RSVP no later than two hours before the event. NASA’s media accreditation policy is available online.",
+      "For almost half a century, the agency’s Voyager mission has blazed a trail through space. Voyager 1 and Voyager 2 were designed to explore the outer planets by taking advantage of a planetary alignment that occurs once every 176 years. Voyager 1 entered interstellar space in 2012. Following a different trajectory, Voyager 2 entered in 2018. Both spacecraft continue to provide unique scientific observations of the environment beyond the heliosphere, the protective bubble created by the Sun.",
+      "Managed by Caltech in Pasadena, California, NASA JPL built and operates the Voyager spacecraft. NASA’s Deep Space Network, also managed by NASA JPL, enables communication with the distant probes. The Voyager mission is funded by NASA’s Heliophysics Division at NASA Headquarters in Washington.",
+      "For more information about NASA’s Voyager mission, visit:",
+      "https://science.nasa.gov/mission/voyager/"
+    ],
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "text": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth, which is more than 16 billion miles (25.9 billion kilometers). Voyager 1 is the most distant human-made object, and any light from Earth would take 24 hours to reach the spacecraft. NASA will highlight this historic milestone with two events.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "On Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day” by creating a symbolic wave of golden light encircling the planet after sunset. NASA has created a website that enables smart phones and tablets to flash “VGR”, Voyager’s call sign, in morse code.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "For more information about how to participate in “Shine Bright for Voyager Light-Day,” visit:",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "go.nasa.gov/shinebright",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Everyone is encouraged to capture photos or videos of their light-day signal and share it on social platforms, tagging @NASA.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "On Thursday, Nov. 19 at 12 p.m. EST (9 a.m. PST), NASA’s Jet Propulsion Laboratory (JPL) in Southern California will host a moderated discussion with mission members and NASA leadership about the status of Voyager 1 and 2, the unique science the twin probes continue to gather in interstellar space, and the challenges of keeping the spacecraft operating for so long over such vast distances. A Q&A with media and other audience members will follow. In addition, there also will be a preview of the upcoming NASA+ Voyager documentary, planned for release in 2027 for the mission’s 50th anniversary.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "The event will take place in NASA JPL’s von Kármán Auditorium, where JPL hosted Voyager briefings during the spacecraft’s grand tour of the outer planets.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "The participants will be:",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Nicky Fox, associate administrator, Science Mission Directorate, Washington",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Jonathan Lunine, chief scientist, NASA’s Jet Propulsion Laboratory, Southern California, and professor of planetary science, Caltech",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Suzanne Dodd, Voyager project manager, NASA JPL",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Kareem Badaruddin, Voyager mission manager, NASA JPL",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "Jamie Rankin, Voyager deputy project scientist, Princeton University",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Learn where to watch online at:",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "https://www.nasa.gov/live",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "U.S. media interested in attending the event in person must RSVP by Monday, Nov. 16 to Josh Smooha at: josh.smooha@jpl.nasa.gov. To be considered for onsite credentials, foreign national media must RSVP no later than Thursday, Nov. 12. Media interested in participating virtually must RSVP no later than two hours before the event. NASA’s media accreditation policy is available online.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "For almost half a century, the agency’s Voyager mission has blazed a trail through space. Voyager 1 and Voyager 2 were designed to explore the outer planets by taking advantage of a planetary alignment that occurs once every 176 years. Voyager 1 entered interstellar space in 2012. Following a different trajectory, Voyager 2 entered in 2018. Both spacecraft continue to provide unique scientific observations of the environment beyond the heliosphere, the protective bubble created by the Sun.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "Managed by Caltech in Pasadena, California, NASA JPL built and operates the Voyager spacecraft. NASA’s Deep Space Network, also managed by NASA JPL, enables communication with the distant probes. The Voyager mission is funded by NASA’s Heliophysics Division at NASA Headquarters in Washington.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "For more information about NASA’s Voyager mission, visit:",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "https://science.nasa.gov/mission/voyager/",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      }
+    ]
+  }
+}

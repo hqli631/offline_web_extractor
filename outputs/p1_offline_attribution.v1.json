@@ -1,0 +1,60 @@
+{
+ "tool": "p1_offline_attribution",
+ "generated_at": "2026-11-18T13:00:20+00:00",
+ "validator_version": "1.1.0",
+ "source_batch": "outputs/rubrics_judge.node4.batch.v6.json",
+ "method": "Offline revalidation of cached v1.0 judge responses under the v1.1 validator. Zero model calls. Registry refs/texts unchanged by menus; only the quote-matching rule (ws-fold) differs.",
+ "results": [
+  {
+   "case_id": "cal-appetite-duplicate",
+   "split": "development",
+   "accepted_under_v1_1": false,
+   "error": "Scoring needs source/reference evidence",
+   "failure_mode": "mode1_missing_source_evidence"
+  },
+  {
+   "case_id": "cal-blurb-missing_paragraph",
+   "split": "development",
+   "accepted_under_v1_1": true,
+   "error": null,
+   "failure_mode": "mode2_whitespace"
+  },
+  {
+   "case_id": "cal-mdn-missing_paragraph",
+   "split": "frozen_test",
+   "accepted_under_v1_1": false,
+   "error": "Scoring needs source/reference evidence",
+   "failure_mode": "mode1_missing_source_evidence"
+  },
+  {
+   "case_id": "cal-github-noise",
+   "split": "frozen_test",
+   "accepted_under_v1_1": false,
+   "error": "Scoring needs source/reference evidence",
+   "failure_mode": "mode1_missing_source_evidence"
+  },
+  {
+   "case_id": "cal-github-duplicate",
+   "split": "frozen_test",
+   "accepted_under_v1_1": false,
+   "error": "Scoring needs source/reference evidence",
+   "failure_mode": "mode1_missing_source_evidence"
+  },
+  {
+   "case_id": "cal-github-missing_paragraph",
+   "split": "frozen_test",
+   "accepted_under_v1_1": false,
+   "error": "Scoring needs source/reference evidence",
+   "failure_mode": "mode1_missing_source_evidence"
+  },
+  {
+   "case_id": "cal-w3clink-instruction_interference",
+   "split": "frozen_test",
+   "accepted_under_v1_1": false,
+   "error": "Scoring needs source/reference evidence",
+   "failure_mode": "mode1_missing_source_evidence"
+  }
+ ],
+ "conclusion": "H2 proven: cal-blurb-missing_paragraph (mode2, development) accepted under ws-fold. The 6 mode1 cases still lack s:/g: citations in their OLD responses; H1 (evidence menus) changes the prompt so the model can produce compliant citations — to be verified in the post-approval development re-run.",
+ "note": "Descriptive engineering evidence; not an acceptance result. frozen_test cases listed only to document failure modes; not re-run or tuned."
+}

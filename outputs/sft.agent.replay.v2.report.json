@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "source_trace_sha256": "e78acc382996e02a86defe5ff34dbb9fe946dfdd5882c8ce8015864ff769b79a",
+  "split_manifest_sha256": "31b3966ff9acf7f3fe9b7f99e6d59da684aca5b82d3fff3114c0e2737d2e6cf7",
+  "output_sha256": "4873e4d1923770fa7eeaf615996b4a11866d3632935352a23f88f941de131273",
+  "examples_written": 1,
+  "duplicates_removed": 0,
+  "attempts_seen": 2,
+  "split": "train",
+  "template_id": "drift-role-main-v1",
+  "include_failed": false,
+  "note": "Prepared SFT examples only; no gold answers or held-out pages accepted. No training was run."
+}

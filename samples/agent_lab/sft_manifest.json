@@ -1,0 +1,7 @@
+{
+  "protocol": "Gate 9 SFT preparation split; authored replay development only.",
+  "pages": [
+    {"id": "reference", "split": "train", "template_id": "drift-role-main-v1"},
+    {"id": "class-drift", "split": "train", "template_id": "drift-role-main-v1"}
+  ]
+}

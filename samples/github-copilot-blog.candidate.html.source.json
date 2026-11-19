@@ -1,0 +1,13 @@
+{
+  "requested_url": "https://github.blog/news-insights/product-news/github-copilot-is-generally-available-to-all-developers/",
+  "final_url": "https://github.blog/news-insights/product-news/github-copilot-is-generally-available-to-all-developers/",
+  "fetched_at": "2026-11-13T12:45:07.909017+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+  "template": "blog",
+  "split": "development",
+  "note": "Assistant independent DOM-assisted reference, not user-verified; frozen before first prediction. First report retained; no rule fixes from this page yet.",
+  "page_title": "GitHub Copilot is generally available to all developers - The GitHub Blog",
+  "expected_sha256": "c8526595a786e3867e3cd6ae57293b66e44a2b31626cf1179d096e8df47eca92"
+}

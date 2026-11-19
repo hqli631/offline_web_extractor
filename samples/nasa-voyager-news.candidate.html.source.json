@@ -1,0 +1,13 @@
+{
+  "requested_url": "https://www.nasa.gov/news-release/nasa-invites-media-public-to-join-voyager-1-one-light-day-activities/",
+  "final_url": "https://www.nasa.gov/news-release/nasa-invites-media-public-to-join-voyager-1-one-light-day-activities/",
+  "fetched_at": "2026-11-13T12:45:07.507834+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+  "template": "news",
+  "split": "development",
+  "note": "Assistant independent DOM-assisted reference, not user-verified; frozen before first prediction. First report retained; no rule fixes from this page yet.",
+  "page_title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities - NASA",
+  "expected_sha256": "9d5e38d2394800e9652bc09d15d8b875da9c19acba7fba93aa2f5769e801ea08"
+}

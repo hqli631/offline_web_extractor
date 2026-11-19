@@ -1,0 +1,285 @@
+{
+  "rule": {
+    "id": "controlled-role-main-v1",
+    "container_xpath": "//div[@role='main']",
+    "frozen_from": "reference",
+    "note": "One frozen rule, no fallback or per-page adaptation. All pages are authored synthetic controlled mutations."
+  },
+  "rule_sha256": "d0c753d9f1fd4852ef6240925cd508739211c43710d30bb59cb09100bbc95cdd",
+  "pages": [
+    {
+      "id": "reference",
+      "role": "reference",
+      "match_count": 1,
+      "extraction": {
+        "status": "ok",
+        "title": "Template drift laboratory",
+        "paragraphs": [
+          "The reference article begins here.",
+          "The second paragraph explains why a reusable rule needs stable structure.",
+          "The closing paragraph is required even when its container changes."
+        ],
+        "body": "The reference article begins here.\n\nThe second paragraph explains why a reusable rule needs stable structure.\n\nThe closing paragraph is required even when its container changes.",
+        "selected_candidate": {
+          "tag": "div",
+          "identifier": "div class=article-shell id=",
+          "xpath": "/html/body/div",
+          "text_length": 198,
+          "paragraph_count": 3,
+          "link_ratio": 0.0,
+          "score": 12.98
+        },
+        "candidates": [
+          {
+            "tag": "div",
+            "identifier": "div class=article-shell id=",
+            "xpath": "/html/body/div",
+            "text_length": 198,
+            "paragraph_count": 3,
+            "link_ratio": 0.0,
+            "score": 12.98
+          }
+        ],
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "text": "The reference article begins here.",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "The second paragraph explains why a reusable rule needs stable structure.",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "The closing paragraph is required even when its container changes.",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          }
+        ]
+      },
+      "error": null,
+      "coverage_notes": {
+        "raw_review_element_counts": {},
+        "raw_subheading_count": 0,
+        "extracted_heading_count": 0,
+        "extracted_footnote_count": 0,
+        "raw_pre_count": 0,
+        "extracted_code_count": 0,
+        "raw_aside_count": 0,
+        "note": "Raw counts identify review targets, not quality scores. Basic tables, semantic/referenced notes and selected content asides are supported; image OCR is not. Quality is null if no complete reference was supplied."
+      },
+      "quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0,
+        "missing_text_blocks": [],
+        "extra_text_blocks": [],
+        "note": "Text counters ignore order and structure; blocks_exact checks full ordered blocks. Runtime status stays separate from quality."
+      },
+      "snapshot_sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+      "status": "ok"
+    },
+    {
+      "id": "class-drift",
+      "role": "transfer",
+      "match_count": 1,
+      "extraction": {
+        "status": "ok",
+        "title": "Template drift laboratory",
+        "paragraphs": [
+          "The reference article begins here.",
+          "The second paragraph explains why a reusable rule needs stable structure.",
+          "The closing paragraph is required even when its container changes."
+        ],
+        "body": "The reference article begins here.\n\nThe second paragraph explains why a reusable rule needs stable structure.\n\nThe closing paragraph is required even when its container changes.",
+        "selected_candidate": {
+          "tag": "div",
+          "identifier": "div class=new-layout article-shell-v2 id=",
+          "xpath": "/html/body/div",
+          "text_length": 198,
+          "paragraph_count": 3,
+          "link_ratio": 0.0,
+          "score": 12.98
+        },
+        "candidates": [
+          {
+            "tag": "div",
+            "identifier": "div class=new-layout article-shell-v2 id=",
+            "xpath": "/html/body/div",
+            "text_length": 198,
+            "paragraph_count": 3,
+            "link_ratio": 0.0,
+            "score": 12.98
+          }
+        ],
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "text": "The reference article begins here.",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "The second paragraph explains why a reusable rule needs stable structure.",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "The closing paragraph is required even when its container changes.",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          }
+        ]
+      },
+      "error": null,
+      "coverage_notes": {
+        "raw_review_element_counts": {},
+        "raw_subheading_count": 0,
+        "extracted_heading_count": 0,
+        "extracted_footnote_count": 0,
+        "raw_pre_count": 0,
+        "extracted_code_count": 0,
+        "raw_aside_count": 0,
+        "note": "Raw counts identify review targets, not quality scores. Basic tables, semantic/referenced notes and selected content asides are supported; image OCR is not. Quality is null if no complete reference was supplied."
+      },
+      "quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0,
+        "missing_text_blocks": [],
+        "extra_text_blocks": [],
+        "note": "Text counters ignore order and structure; blocks_exact checks full ordered blocks. Runtime status stays separate from quality."
+      },
+      "snapshot_sha256": "ef76358f0a4ac9bb4c5999df8a09df191e6882f41236af760b590ad17a89b76f",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+      "status": "ok"
+    },
+    {
+      "id": "role-drift",
+      "role": "transfer",
+      "match_count": 0,
+      "extraction": null,
+      "error": null,
+      "coverage_notes": {},
+      "quality": null,
+      "snapshot_sha256": "e2f7ffd72f087a12361e7ecba2c8293c86433070ddbe6b0b951e55558aac1269",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+      "status": "rule_no_match"
+    },
+    {
+      "id": "duplicate-main",
+      "role": "transfer",
+      "match_count": 2,
+      "extraction": null,
+      "error": null,
+      "coverage_notes": {},
+      "quality": null,
+      "snapshot_sha256": "661b8dd40eeaafc65a9b29582e5f6790b07a8bb6580e2e2401a3741d314476e6",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+      "status": "rule_ambiguous"
+    },
+    {
+      "id": "content-moved",
+      "role": "transfer",
+      "match_count": 1,
+      "extraction": {
+        "status": "ok",
+        "title": "Template drift laboratory",
+        "paragraphs": [
+          "The reference article begins here.",
+          "The second paragraph explains why a reusable rule needs stable structure."
+        ],
+        "body": "The reference article begins here.\n\nThe second paragraph explains why a reusable rule needs stable structure.",
+        "selected_candidate": {
+          "tag": "div",
+          "identifier": "div class=article-shell id=",
+          "xpath": "/html/body/div",
+          "text_length": 132,
+          "paragraph_count": 2,
+          "link_ratio": 0.0,
+          "score": 10.32
+        },
+        "candidates": [
+          {
+            "tag": "div",
+            "identifier": "div class=article-shell id=",
+            "xpath": "/html/body/div",
+            "text_length": 132,
+            "paragraph_count": 2,
+            "link_ratio": 0.0,
+            "score": 10.32
+          }
+        ],
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "text": "The reference article begins here.",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "The second paragraph explains why a reusable rule needs stable structure.",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          }
+        ]
+      },
+      "error": null,
+      "coverage_notes": {
+        "raw_review_element_counts": {},
+        "raw_subheading_count": 0,
+        "extracted_heading_count": 0,
+        "extracted_footnote_count": 0,
+        "raw_pre_count": 0,
+        "extracted_code_count": 0,
+        "raw_aside_count": 0,
+        "note": "Raw counts identify review targets, not quality scores. Basic tables, semantic/referenced notes and selected content asides are supported; image OCR is not. Quality is null if no complete reference was supplied."
+      },
+      "quality": {
+        "title_exact": true,
+        "blocks_exact": false,
+        "block_text_precision": 1.0,
+        "block_text_recall": 0.6666666666666666,
+        "missing_text_blocks": [
+          "The closing paragraph is required even when its container changes."
+        ],
+        "extra_text_blocks": [],
+        "note": "Text counters ignore order and structure; blocks_exact checks full ordered blocks. Runtime status stays separate from quality."
+      },
+      "snapshot_sha256": "8e60aa8f73b032b204d731f7d4e959f6d2383fd2656190af03c1217bbdbfdcda",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+      "status": "ok"
+    }
+  ],
+  "config_sha256": "7d930ff372f563ad87d18fc954dc57994861df05de3abaa870bb7e6b5a309bfb",
+  "source_sha256": {
+    "__init__.py": "6fee382e64e4e6e2a339254c09c9de99636f063659ab6e199764e9da000103b1",
+    "batch_evaluate.py": "ca2a0ee47f79c3d19d74e8aa0ae1d1f5bc1daa951c2892779cdfb3a868573811",
+    "cli.py": "30051f764cbd68a4e12bb3b86b0f3611383c765b834fa333cbbf65ef30b7a0a8",
+    "content_blocks.py": "37eb59e9ff8944e8a8074a8b7397fd82a3d40a59f90a0867577bc4df067d107d",
+    "dom_similarity.py": "b76fcdce2ed6d3bd09991e16536353081d0ed542d98e9a4952b25dcbdb73e37e",
+    "evaluate.py": "d2dabe702aa3f3d7ac21e35c15485dcc92f1ab1a523a1bafe51dfcde454dad6d",
+    "extractor.py": "199798c098aaf4ab3fe6884ba178984b288e3d93f51e5b73336af3def14cf9f8",
+    "inspect_dom.py": "2cd10b72cdee31a67db880195fa16a9cd8c026e99b71730ecab64fb338798fe6",
+    "rule_reuse.py": "366fe0d4bab4d46a28e98e3a3e552f41d691fa15376c7e4d7c0e556ac46a2788"
+  },
+  "note": "A unique container match proves only XPath applicability. It is not extraction accuracy, content completeness, or automatic clustering. No fallback or per-page rule repair is used."
+}

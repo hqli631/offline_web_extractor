@@ -1,0 +1,791 @@
+{
+  "map_version": 1,
+  "tool_version": "1.0.0",
+  "changes": [
+    {
+      "blind_code": "B07",
+      "dim": "completeness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B07",
+      "dim": "cleanliness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B07",
+      "dim": "structure",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B07",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B08",
+      "dim": "cleanliness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B08",
+      "dim": "structure",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B08",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B09",
+      "dim": "completeness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B09",
+      "dim": "structure",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B09",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B10",
+      "dim": "completeness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B10",
+      "dim": "cleanliness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B10",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B11",
+      "dim": "completeness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B11",
+      "dim": "cleanliness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B11",
+      "dim": "structure",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B11",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B12",
+      "dim": "completeness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B12",
+      "dim": "cleanliness",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "major",
+      "rationale": "非正文内容混入 = 噪声超额混入",
+      "keyword_hit": "非正文",
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B12",
+      "dim": "structure",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B12",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B13",
+      "dim": "completeness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B13",
+      "dim": "cleanliness",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "major",
+      "rationale": "非正文内容混入 = 噪声超额混入",
+      "keyword_hit": "非正文",
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B13",
+      "dim": "structure",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "major",
+      "rationale": "结构标记泄漏进正文 = 结构属性不符 = major",
+      "keyword_hit": "结构符号",
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B13",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B14",
+      "dim": "completeness",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B14",
+      "dim": "cleanliness",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "major",
+      "rationale": "重复段落混入 = 噪声超额混入",
+      "keyword_hit": "重复",
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B14",
+      "dim": "structure",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "major",
+      "rationale": "结构标记泄漏进正文 = 结构属性不符 = major",
+      "keyword_hit": "结构符号",
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B14",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B15",
+      "dim": "completeness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B15",
+      "dim": "cleanliness",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "major",
+      "rationale": "非正文内容混入 = 噪声超额混入",
+      "keyword_hit": "非正文",
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B15",
+      "dim": "structure",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "major",
+      "rationale": "段落乱序 = 结构属性不符 = major",
+      "keyword_hit": "颠倒",
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B15",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B16",
+      "dim": "completeness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B16",
+      "dim": "cleanliness",
+      "score": 2,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "major",
+      "rationale": "非正文内容混入 = 噪声超额混入",
+      "keyword_hit": "非正文",
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B16",
+      "dim": "structure",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "major",
+      "rationale": "结构标记泄漏进正文 = 结构属性不符 = major",
+      "keyword_hit": "结构符号",
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B16",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B17",
+      "dim": "completeness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B17",
+      "dim": "cleanliness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B17",
+      "dim": "structure",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "minor",
+      "rationale": "文本齐全但分块粒度不同 = minor（待标注者确认）",
+      "keyword_hit": "分成多段",
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B17",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B17",
+      "dim": "format",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B18",
+      "dim": "completeness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B18",
+      "dim": "cleanliness",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "major",
+      "rationale": "非正文内容混入 = 噪声超额混入",
+      "keyword_hit": "非正文",
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B18",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B19",
+      "dim": "completeness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "scored",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B19",
+      "dim": "cleanliness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "scored",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B19",
+      "dim": "structure",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "scored",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B19",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "scored",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B19",
+      "dim": "format",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "scored",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B20",
+      "dim": "completeness",
+      "score": 3,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "major",
+      "rationale": "大段缺失 = major",
+      "keyword_hit": "未被提取",
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B20",
+      "dim": "cleanliness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B20",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B20",
+      "dim": "format",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B21",
+      "dim": "completeness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B21",
+      "dim": "cleanliness",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B21",
+      "dim": "title",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    },
+    {
+      "blind_code": "B21",
+      "dim": "format",
+      "score": 4,
+      "status_before": "scored",
+      "status_after": "partial",
+      "severity_before": "partial",
+      "severity_after": "none",
+      "rationale": "no defect keyword in your note -> none",
+      "keyword_hit": null,
+      "kind": "misplaced_partial"
+    }
+  ],
+  "flags": [
+    {
+      "blind_code": "B07",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B08",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B08",
+      "dim": "completeness",
+      "flag": "critical_with_nonzero_score",
+      "detail": "Rubrics v2 anchors critical to an empty candidate; score=2 with severity=critical needs your confirmation"
+    },
+    {
+      "blind_code": "B09",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B09",
+      "dim": "cleanliness",
+      "flag": "critical_with_nonzero_score",
+      "detail": "Rubrics v2 anchors critical to an empty candidate; score=3 with severity=critical needs your confirmation"
+    },
+    {
+      "blind_code": "B10",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B11",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B12",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B13",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B14",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B15",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B16",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B17",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B18",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B20",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B21",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    },
+    {
+      "blind_code": "B22",
+      "flag": "low_confidence_case",
+      "detail": "note mentions one of ['源截断', '截断', '无参考答案', 'source_only'] -> scored dims may use status=partial"
+    }
+  ]
+}

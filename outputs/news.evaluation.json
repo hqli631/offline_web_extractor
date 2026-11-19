@@ -1,0 +1,63 @@
+{
+  "status": "ok",
+  "title_exact": true,
+  "body_exact": true,
+  "body_char_recall_rough": 1.0,
+  "body_char_precision_rough": 1.0,
+  "predicted": {
+    "status": "ok",
+    "title": "离线网页正文提取实践",
+    "paragraphs": [
+      "网页正文提取的第一步是确定内容边界。",
+      "第二步是清理广告、导航和推荐内容，同时保留嵌套标签中的文字。",
+      "最后要用人工标准答案评估完整性和纯净度。"
+    ],
+    "body": "网页正文提取的第一步是确定内容边界。\n第二步是清理广告、导航和推荐内容，同时保留嵌套标签中的文字。\n最后要用人工标准答案评估完整性和纯净度。",
+    "selected_candidate": {
+      "tag": "div",
+      "identifier": "div class=content article-body id=",
+      "xpath": "/html/body/main/article/div",
+      "text_length": 70,
+      "paragraph_count": 3,
+      "link_ratio": 0.0,
+      "score": 21.7
+    },
+    "candidates": [
+      {
+        "tag": "main",
+        "identifier": "main class= id=",
+        "xpath": "/html/body/main",
+        "text_length": 81,
+        "paragraph_count": 3,
+        "link_ratio": 0.0,
+        "score": 6.81
+      },
+      {
+        "tag": "article",
+        "identifier": "article class=post id=",
+        "xpath": "/html/body/main/article",
+        "text_length": 81,
+        "paragraph_count": 3,
+        "link_ratio": 0.0,
+        "score": 11.81
+      },
+      {
+        "tag": "div",
+        "identifier": "div class=content article-body id=",
+        "xpath": "/html/body/main/article/div",
+        "text_length": 70,
+        "paragraph_count": 3,
+        "link_ratio": 0.0,
+        "score": 21.7
+      }
+    ]
+  },
+  "expected": {
+    "title": "离线网页正文提取实践",
+    "paragraphs": [
+      "网页正文提取的第一步是确定内容边界。",
+      "第二步是清理广告、导航和推荐内容，同时保留嵌套标签中的文字。",
+      "最后要用人工标准答案评估完整性和纯净度。"
+    ]
+  }
+}

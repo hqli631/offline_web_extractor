@@ -1,0 +1,281 @@
+{
+ "label_version": 1,
+ "case_id": "cal-github-noise",
+ "split": "frozen_test",
+ "template": "github-copilot-blog.candidate",
+ "label_origin": "assistant_silver",
+ "human_reviewed": false,
+ "derivation": "frozen_rubrics_v2_program_on_controlled_mutation",
+ "mutation": {
+  "type": "noise",
+  "index": 1,
+  "injected_text": "Share this article on Facebook and Twitter. Subscribe to our newsletter! Advertisement: buy now related content."
+ },
+ "noise_terms": [
+  "advertisement",
+  "subscribe to our newsletter"
+ ],
+ "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+ "gold_sha256": "bb98dad09c1b31c36a0ee100b24699d9b44390c7b4a49c3d4e5378e925f5507e",
+ "candidate_sha256": "ff4f3a827e0dbe0b62bf0d2ade1724886137c599f3a8f24704d3329ba28623c1",
+ "batch_config": {
+  "max_source_chars": 20000
+ },
+ "source_truncated": true,
+ "prompt_chars": 83459,
+ "expected": {
+  "dimensions": {
+   "completeness": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "cleanliness": {
+    "score": 1,
+    "status": "partial",
+    "severity": "major"
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "title": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "severity": "none"
+   }
+  },
+  "decision": "fail",
+  "needs_human_review": true
+ },
+ "program_reference": {
+  "rubrics_version": "2.0.0",
+  "method": "deterministic-reference",
+  "dimensions": {
+   "completeness": {
+    "score": 4,
+    "status": "partial",
+    "recall": 1.0,
+    "missing_tokens": 0
+   },
+   "cleanliness": {
+    "score": 1,
+    "status": "partial",
+    "precision": 0.9656804733727811,
+    "clean_ratio": 0.46568047337278107,
+    "extra_tokens": 29,
+    "noise_hits": {
+     "advertisement": 1,
+     "subscribe to our newsletter": 1
+    }
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "attribute_ratio": 1.0,
+    "order_ratio": 1.0,
+    "alignment_coverage": 0.8695652173913043,
+    "aligned_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      10,
+      9
+     ],
+     [
+      13,
+      10
+     ],
+     [
+      14,
+      11
+     ],
+     [
+      15,
+      12
+     ],
+     [
+      16,
+      13
+     ],
+     [
+      17,
+      14
+     ],
+     [
+      18,
+      15
+     ],
+     [
+      19,
+      16
+     ],
+     [
+      20,
+      17
+     ],
+     [
+      21,
+      18
+     ],
+     [
+      22,
+      19
+     ]
+    ],
+    "reason": "Only text-aligned blocks are scored"
+   },
+   "title": {
+    "score": 4,
+    "status": "partial",
+    "exact": true
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "reason": "No code blocks to compare"
+   }
+  },
+  "issues": [
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:1",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "Share this article on Facebook and Twitter. Subscribe to our newsletter! Advertisement: buy now related content."
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:11",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "<"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:12",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "ul>"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:23",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "Tags:"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:24",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "GitHub Copilot"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:25",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "Written by"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "explicit_noise_term",
+    "severity": "major",
+    "predicted_ref": null,
+    "gold_ref": null,
+    "detail": {
+     "term": "advertisement",
+     "excess_count": 1,
+     "candidate_refs": [
+      "p:1"
+     ]
+    }
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "explicit_noise_term",
+    "severity": "major",
+    "predicted_ref": null,
+    "gold_ref": null,
+    "detail": {
+     "term": "subscribe to our newsletter",
+     "excess_count": 1,
+     "candidate_refs": [
+      "p:1"
+     ]
+    }
+   },
+   {
+    "dimension": "completeness",
+    "code": "partial_source_evidence",
+    "severity": "unknown",
+    "predicted_ref": null,
+    "gold_ref": null,
+    "detail": "Scores cover supplied evidence only"
+   }
+  ],
+  "decision": "fail",
+  "needs_human_review": true,
+  "overall": null,
+  "evidence_complete": false,
+  "note": "Uncalibrated diagnostics; no model/human judgement or reward claim. Source attribution, links and Markdown rendering are unassessed."
+ },
+ "notes": [
+  "Silver label (assistant-derived), not human gold; disagreement goes to the review queue.",
+  "clean means no injected mutation; the extractor output may still differ from gold."
+ ]
+}

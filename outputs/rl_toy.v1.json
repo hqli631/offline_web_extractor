@@ -1,0 +1,642 @@
+{
+  "protocol": "finite one-step rule search; fixed seed; no external model",
+  "seed": 7,
+  "candidates": [
+    "exact",
+    "long-noise",
+    "partial",
+    "empty"
+  ],
+  "rankings": [
+    {
+      "action": "exact",
+      "proxy": 1.0,
+      "corrected": 1.0,
+      "sparse": 1.0,
+      "f1": 1.0
+    },
+    {
+      "action": "long-noise",
+      "proxy": 2.5,
+      "corrected": 0.63,
+      "sparse": 0.0,
+      "f1": 0.5714285714285715
+    },
+    {
+      "action": "partial",
+      "proxy": 0.5,
+      "corrected": 0.675,
+      "sparse": 0.0,
+      "f1": 0.6666666666666666
+    },
+    {
+      "action": "empty",
+      "proxy": 0.0,
+      "corrected": 0.0,
+      "sparse": 0.0,
+      "f1": 0.0
+    }
+  ],
+  "runs": [
+    {
+      "algorithm": "reinforce",
+      "reward": "sparse",
+      "seed": 7,
+      "episodes": 300,
+      "learning_rate": 0.25,
+      "final_probabilities": {
+        "exact": 0.9889843830273471,
+        "long-noise": 0.0036718723242176003,
+        "partial": 0.0036718723242176003,
+        "empty": 0.0036718723242176003
+      },
+      "greedy_action": "exact",
+      "greedy_exact": true,
+      "greedy_f1": 1.0,
+      "history": [
+        {
+          "episode": 1,
+          "action": "long-noise",
+          "reward": 0.0,
+          "done": true,
+          "probabilities": [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "xpath": "//article"
+        },
+        {
+          "episode": 2,
+          "action": "exact",
+          "reward": 1.0,
+          "done": true,
+          "probabilities": [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "xpath": "//article[@id='post']/div[@class='content']"
+        },
+        {
+          "episode": 3,
+          "action": "partial",
+          "reward": 0.0,
+          "done": true,
+          "probabilities": [
+            0.2997240426459713,
+            0.2334253191180096,
+            0.2334253191180096,
+            0.2334253191180096
+          ],
+          "xpath": "//article[@id='post']/p[1]"
+        },
+        {
+          "episode": 4,
+          "action": "exact",
+          "reward": 1.0,
+          "done": true,
+          "probabilities": [
+            0.2997240426459713,
+            0.2334253191180096,
+            0.2334253191180096,
+            0.2334253191180096
+          ],
+          "xpath": "//article[@id='post']/div[@class='content']"
+        },
+        {
+          "episode": 5,
+          "action": "long-noise",
+          "reward": 0.0,
+          "done": true,
+          "probabilities": [
+            0.3508768899537993,
+            0.21637437001540022,
+            0.21637437001540022,
+            0.21637437001540022
+          ],
+          "xpath": "//article"
+        },
+        {
+          "episode": 300,
+          "action": "exact",
+          "reward": 1.0,
+          "done": true,
+          "probabilities": [
+            0.9889441621539317,
+            0.003685279282022767,
+            0.003685279282022767,
+            0.003685279282022767
+          ],
+          "xpath": "//article[@id='post']/div[@class='content']"
+        }
+      ]
+    },
+    {
+      "algorithm": "reinforce",
+      "reward": "proxy",
+      "seed": 7,
+      "episodes": 300,
+      "learning_rate": 0.25,
+      "final_probabilities": {
+        "exact": 0.002511524225876507,
+        "long-noise": 0.9944614226490174,
+        "partial": 0.001694796811260777,
+        "empty": 0.0013322563138454069
+      },
+      "greedy_action": "long-noise",
+      "greedy_exact": false,
+      "greedy_f1": 0.5714285714285715,
+      "history": [
+        {
+          "episode": 1,
+          "action": "long-noise",
+          "reward": 2.5,
+          "done": true,
+          "probabilities": [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "xpath": "//article"
+        },
+        {
+          "episode": 2,
+          "action": "exact",
+          "reward": 1.0,
+          "done": true,
+          "probabilities": [
+            0.2054127931793024,
+            0.38376162046209283,
+            0.2054127931793024,
+            0.2054127931793024
+          ],
+          "xpath": "//article[@id='post']/div[@class='content']"
+        },
+        {
+          "episode": 3,
+          "action": "partial",
+          "reward": 0.5,
+          "done": true,
+          "probabilities": [
+            0.25321943215874654,
+            0.352365583732997,
+            0.19720749205412827,
+            0.19720749205412827
+          ],
+          "xpath": "//article[@id='post']/p[1]"
+        },
+        {
+          "episode": 4,
+          "action": "exact",
+          "reward": 1.0,
+          "done": true,
+          "probabilities": [
+            0.24707383303993288,
+            0.33957904085601603,
+            0.21957386784357602,
+            0.19377325826047512
+          ],
+          "xpath": "//article[@id='post']/div[@class='content']"
+        },
+        {
+          "episode": 5,
+          "action": "long-noise",
+          "reward": 2.5,
+          "done": true,
+          "probabilities": [
+            0.29746016928462254,
+            0.311118401997128,
+            0.20729788464596607,
+            0.1841235440722834
+          ],
+          "xpath": "//article"
+        },
+        {
+          "episode": 300,
+          "action": "long-noise",
+          "reward": 2.5,
+          "done": true,
+          "probabilities": [
+            0.002524187277505847,
+            0.994435364147864,
+            0.0017024673715296313,
+            0.0013379812031003874
+          ],
+          "xpath": "//article"
+        }
+      ]
+    },
+    {
+      "algorithm": "reinforce",
+      "reward": "corrected",
+      "seed": 7,
+      "episodes": 300,
+      "learning_rate": 0.25,
+      "final_probabilities": {
+        "exact": 0.9770151990853015,
+        "long-noise": 0.011603299118232963,
+        "partial": 0.006907872147984014,
+        "empty": 0.004473629648481408
+      },
+      "greedy_action": "exact",
+      "greedy_exact": true,
+      "greedy_f1": 1.0,
+      "history": [
+        {
+          "episode": 1,
+          "action": "long-noise",
+          "reward": 0.63,
+          "done": true,
+          "probabilities": [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "xpath": "//article"
+        },
+        {
+          "episode": 2,
+          "action": "exact",
+          "reward": 1.0,
+          "done": true,
+          "probabilities": [
+            0.239774759926706,
+            0.28067572021988213,
+            0.239774759926706,
+            0.239774759926706
+          ],
+          "xpath": "//article[@id='post']/div[@class='content']"
+        },
+        {
+          "episode": 3,
+          "action": "partial",
+          "reward": 0.675,
+          "done": true,
+          "probabilities": [
+            0.28901930887598126,
+            0.2608037629732778,
+            0.22508846407537045,
+            0.22508846407537045
+          ],
+          "xpath": "//article[@id='post']/p[1]"
+        },
+        {
+          "episode": 4,
+          "action": "exact",
+          "reward": 1.0,
+          "done": true,
+          "probabilities": [
+            0.27579410161527934,
+            0.2500574551285431,
+            0.2570300254803901,
+            0.21711841777578747
+          ],
+          "xpath": "//article[@id='post']/div[@class='content']"
+        },
+        {
+          "episode": 5,
+          "action": "long-noise",
+          "reward": 0.63,
+          "done": true,
+          "probabilities": [
+            0.3265755582167126,
+            0.23209148726579046,
+            0.23814760958719358,
+            0.20318534493030335
+          ],
+          "xpath": "//article"
+        },
+        {
+          "episode": 300,
+          "action": "exact",
+          "reward": 1.0,
+          "done": true,
+          "probabilities": [
+            0.9768346204295049,
+            0.011702724130846194,
+            0.006958805629382433,
+            0.004503849810266446
+          ],
+          "xpath": "//article[@id='post']/div[@class='content']"
+        }
+      ]
+    },
+    {
+      "algorithm": "grpo-like",
+      "reward": "sparse",
+      "seed": 7,
+      "updates": 100,
+      "group_size": 4,
+      "learning_rate": 0.25,
+      "final_probabilities": {
+        "exact": 0.9825945915866438,
+        "long-noise": 0.004388231663994999,
+        "partial": 0.0057446207625286355,
+        "empty": 0.007272555986832759
+      },
+      "greedy_action": "exact",
+      "greedy_exact": true,
+      "greedy_f1": 1.0,
+      "history": [
+        {
+          "update": 1,
+          "actions": [
+            "long-noise",
+            "exact",
+            "partial",
+            "exact"
+          ],
+          "rewards": [
+            0.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          "advantages": [
+            -0.9999999800000003,
+            0.9999999800000003,
+            -0.9999999800000003,
+            0.9999999800000003
+          ]
+        },
+        {
+          "update": 2,
+          "actions": [
+            "partial",
+            "long-noise",
+            "exact",
+            "long-noise"
+          ],
+          "rewards": [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          "advantages": [
+            -0.5773502558562927,
+            -0.5773502558562927,
+            1.7320507675688783,
+            -0.5773502558562927
+          ]
+        },
+        {
+          "update": 3,
+          "actions": [
+            "exact",
+            "long-noise",
+            "exact",
+            "exact"
+          ],
+          "rewards": [
+            1.0,
+            0.0,
+            1.0,
+            1.0
+          ],
+          "advantages": [
+            0.5773502558562927,
+            -1.7320507675688783,
+            0.5773502558562927,
+            0.5773502558562927
+          ]
+        },
+        {
+          "update": 100,
+          "actions": [
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "rewards": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "advantages": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "algorithm": "grpo-like",
+      "reward": "proxy",
+      "seed": 7,
+      "updates": 100,
+      "group_size": 4,
+      "learning_rate": 0.25,
+      "final_probabilities": {
+        "exact": 0.00800534448156239,
+        "long-noise": 0.9769406242875033,
+        "partial": 0.007084313525258313,
+        "empty": 0.007969717705676017
+      },
+      "greedy_action": "long-noise",
+      "greedy_exact": false,
+      "greedy_f1": 0.5714285714285715,
+      "history": [
+        {
+          "update": 1,
+          "actions": [
+            "long-noise",
+            "exact",
+            "partial",
+            "exact"
+          ],
+          "rewards": [
+            2.5,
+            1.0,
+            0.5,
+            1.0
+          ],
+          "advantages": [
+            1.6666666444444447,
+            -0.33333332888888895,
+            -0.9999999866666668,
+            -0.33333332888888895
+          ]
+        },
+        {
+          "update": 2,
+          "actions": [
+            "partial",
+            "long-noise",
+            "exact",
+            "long-noise"
+          ],
+          "rewards": [
+            0.5,
+            2.5,
+            1.0,
+            2.5
+          ],
+          "advantages": [
+            -1.2602520615075619,
+            0.9801960478392148,
+            -0.7001400341708677,
+            0.9801960478392148
+          ]
+        },
+        {
+          "update": 3,
+          "actions": [
+            "exact",
+            "long-noise",
+            "exact",
+            "exact"
+          ],
+          "rewards": [
+            1.0,
+            2.5,
+            1.0,
+            1.0
+          ],
+          "advantages": [
+            -0.577350260300737,
+            1.7320507809022108,
+            -0.577350260300737,
+            -0.577350260300737
+          ]
+        },
+        {
+          "update": 100,
+          "actions": [
+            "long-noise",
+            "long-noise",
+            "long-noise",
+            "long-noise"
+          ],
+          "rewards": [
+            2.5,
+            2.5,
+            2.5,
+            2.5
+          ],
+          "advantages": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "algorithm": "grpo-like",
+      "reward": "corrected",
+      "seed": 7,
+      "updates": 100,
+      "group_size": 4,
+      "learning_rate": 0.25,
+      "final_probabilities": {
+        "exact": 0.9824900387763306,
+        "long-noise": 0.005339871579382252,
+        "partial": 0.006283716385858272,
+        "empty": 0.005886373258429026
+      },
+      "greedy_action": "exact",
+      "greedy_exact": true,
+      "greedy_f1": 1.0,
+      "history": [
+        {
+          "update": 1,
+          "actions": [
+            "long-noise",
+            "exact",
+            "partial",
+            "exact"
+          ],
+          "rewards": [
+            0.63,
+            1.0,
+            0.675,
+            1.0
+          ],
+          "advantages": [
+            -1.1247906880858383,
+            0.9958337939103914,
+            -0.8668768997349452,
+            0.9958337939103914
+          ]
+        },
+        {
+          "update": 2,
+          "actions": [
+            "partial",
+            "long-noise",
+            "exact",
+            "long-noise"
+          ],
+          "rewards": [
+            0.675,
+            0.63,
+            1.0,
+            0.63
+          ],
+          "advantages": [
+            -0.37948909992550034,
+            -0.6701616019960968,
+            1.719812303917694,
+            -0.6701616019960968
+          ]
+        },
+        {
+          "update": 3,
+          "actions": [
+            "exact",
+            "long-noise",
+            "exact",
+            "exact"
+          ],
+          "rewards": [
+            1.0,
+            0.63,
+            1.0,
+            1.0
+          ],
+          "advantages": [
+            0.5773502331535921,
+            -1.7320506994607758,
+            0.5773502331535921,
+            0.5773502331535921
+          ]
+        },
+        {
+          "update": 100,
+          "actions": [
+            "exact",
+            "exact",
+            "exact",
+            "exact"
+          ],
+          "rewards": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "advantages": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "reward_hacking_observed": true,
+  "source_sha256": "4d10f1817a82bd58e27bbfb4b4e8b3a26e784b3d95ae75a9d698297092378390",
+  "note": "Toy evidence only; no PPO/GRPO training or industrial conclusion."
+}

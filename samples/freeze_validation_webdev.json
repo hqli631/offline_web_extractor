@@ -1,0 +1,17 @@
+{
+  "frozen_at": "2026-11-13T13:05:05.841752+00:00",
+  "case": {
+    "id": "webdev-learn-html.candidate",
+    "html": "webdev-learn-html.candidate.html",
+    "source": "webdev-learn-html.candidate.html.source.json",
+    "annotation": "webdev-learn-html.candidate.annotation.md",
+    "html_sha256": "921c15fafe14485c9891ea1ad6bac7f42779fd57ed71fabd34c82b66c9664cee",
+    "template": "course-overview",
+    "current_role": "validation_reserved",
+    "expected": "webdev-learn-html.candidate.expected.json",
+    "expected_sha256": "77b2e873fbfacba5538064dddd3ad0ea6117647fe4a6564cbed4de95bf3961a7",
+    "prediction_started": false,
+    "annotation_frozen": true
+  },
+  "release_condition": "No prediction until development fixes, protocol and extractor version freeze; report course-overview separately. Annotation alone is not final evaluation."
+}

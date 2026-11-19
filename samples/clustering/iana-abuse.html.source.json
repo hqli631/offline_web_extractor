@@ -1,0 +1,17 @@
+{
+  "requested_url": "https://www.iana.org/help/abuse",
+  "final_url": "https://www.iana.org/help/abuse",
+  "fetched_at": "2026-11-13T13:58:25.439336+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "8b0b6c2b0a3d8d5d887b24b3da0fda754d399aa3ab51449e2b21a3e2a581084d",
+  "bytes": 8550,
+  "source_kind": "real",
+  "split": "clustering-development",
+  "proposed_manual_group": "iana-help",
+  "page_title": "Network Abuse Information",
+  "h1_texts": [
+    "Does it look like we're attacking you?"
+  ],
+  "note": "Complete HTTP response, no truncation or production extraction. Group labels require source-structure review; not a gold extraction label."
+}

@@ -1,0 +1,165 @@
+{
+  "note": "持续分歧属校准发现，供 P1 元评估使用；不自动修改协议/阈值/judge。",
+  "findings": [
+    {
+      "case_id": "cal-appetite-duplicate",
+      "split": "development",
+      "reasons": [
+        "judge_error"
+      ],
+      "judge_decision": null,
+      "human_decision": "uncertain"
+    },
+    {
+      "case_id": "cal-blurb-clean",
+      "split": "development",
+      "reasons": [
+        "dim_score_mismatch:title",
+        "severity_sign_mismatch:title"
+      ],
+      "judge_decision": "uncertain",
+      "human_decision": "uncertain"
+    },
+    {
+      "case_id": "cal-blurb-missing_paragraph",
+      "split": "development",
+      "reasons": [
+        "judge_error"
+      ],
+      "judge_decision": null,
+      "human_decision": "fail"
+    },
+    {
+      "case_id": "cal-blurb-noise",
+      "split": "development",
+      "reasons": [
+        "dim_score_mismatch:structure",
+        "severity_sign_mismatch:structure"
+      ],
+      "judge_decision": "fail",
+      "human_decision": "fail"
+    },
+    {
+      "case_id": "cal-blurb-reorder",
+      "split": "development",
+      "reasons": [
+        "dim_score_mismatch:structure",
+        "dim_score_mismatch:title",
+        "severity_sign_mismatch:title"
+      ],
+      "judge_decision": "fail",
+      "human_decision": "fail"
+    },
+    {
+      "case_id": "cal-iana-noise",
+      "split": "development",
+      "reasons": [
+        "dim_score_mismatch:structure",
+        "severity_sign_mismatch:structure"
+      ],
+      "judge_decision": "fail",
+      "human_decision": "fail"
+    },
+    {
+      "case_id": "cal-mdn-clean",
+      "split": "frozen_test",
+      "reasons": [
+        "dim_score_mismatch:structure",
+        "severity_sign_mismatch:structure"
+      ],
+      "judge_decision": "uncertain",
+      "human_decision": "uncertain"
+    },
+    {
+      "case_id": "cal-mdn-missing_paragraph",
+      "split": "frozen_test",
+      "reasons": [
+        "judge_error"
+      ],
+      "judge_decision": null,
+      "human_decision": "fail"
+    },
+    {
+      "case_id": "cal-mdn-code_indent",
+      "split": "frozen_test",
+      "reasons": [
+        "severity_sign_mismatch:cleanliness",
+        "severity_sign_mismatch:format"
+      ],
+      "judge_decision": "uncertain",
+      "human_decision": "uncertain"
+    },
+    {
+      "case_id": "cal-mdn-reorder",
+      "split": "frozen_test",
+      "reasons": [
+        "dim_score_mismatch:structure",
+        "severity_sign_mismatch:structure"
+      ],
+      "judge_decision": "uncertain",
+      "human_decision": "uncertain"
+    },
+    {
+      "case_id": "cal-mdn-instruction_interference",
+      "split": "frozen_test",
+      "reasons": [
+        "dim_score_mismatch:completeness",
+        "severity_sign_mismatch:completeness",
+        "dim_score_mismatch:cleanliness",
+        "severity_sign_mismatch:cleanliness",
+        "dim_score_mismatch:structure",
+        "severity_sign_mismatch:structure",
+        "decision_mismatch",
+        "false_alarm"
+      ],
+      "judge_decision": "fail",
+      "human_decision": "uncertain"
+    },
+    {
+      "case_id": "cal-github-clean",
+      "split": "frozen_test",
+      "reasons": [
+        "dim_score_mismatch:completeness",
+        "severity_sign_mismatch:completeness"
+      ],
+      "judge_decision": "uncertain",
+      "human_decision": "uncertain"
+    },
+    {
+      "case_id": "cal-github-noise",
+      "split": "frozen_test",
+      "reasons": [
+        "judge_error"
+      ],
+      "judge_decision": null,
+      "human_decision": "fail"
+    },
+    {
+      "case_id": "cal-github-duplicate",
+      "split": "frozen_test",
+      "reasons": [
+        "judge_error"
+      ],
+      "judge_decision": null,
+      "human_decision": "fail"
+    },
+    {
+      "case_id": "cal-github-missing_paragraph",
+      "split": "frozen_test",
+      "reasons": [
+        "judge_error"
+      ],
+      "judge_decision": null,
+      "human_decision": "fail"
+    },
+    {
+      "case_id": "cal-w3clink-instruction_interference",
+      "split": "frozen_test",
+      "reasons": [
+        "judge_error"
+      ],
+      "judge_decision": null,
+      "human_decision": "uncertain"
+    }
+  ]
+}

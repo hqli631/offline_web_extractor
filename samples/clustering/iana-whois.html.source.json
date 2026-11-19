@@ -1,0 +1,17 @@
+{
+  "requested_url": "https://www.iana.org/help/whois",
+  "final_url": "https://www.iana.org/help/whois",
+  "fetched_at": "2026-11-13T13:58:22.180088+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "7f42a1d6e553ee5d4ae1bdc6562f60a3bf826d7864065d4835185fea58b78ddd",
+  "bytes": 8717,
+  "source_kind": "real",
+  "split": "clustering-development",
+  "proposed_manual_group": "iana-help",
+  "page_title": "Using our WHOIS Server",
+  "h1_texts": [
+    "Using our WHOIS Server"
+  ],
+  "note": "Complete HTTP response, no truncation or production extraction. Group labels require source-structure review; not a gold extraction label."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "content-moved",
+  "source_kind": "synthetic",
+  "split": "controlled_drift",
+  "generator": "build_fixtures.py",
+  "html": "content-moved.html",
+  "sha256": "8e60aa8f73b032b204d731f7d4e959f6d2383fd2656190af03c1217bbdbfdcda",
+  "expected": "content-moved.expected.json",
+  "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+  "reference_html": "reference.html",
+  "reference_sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428",
+  "mutation": "The closing paragraph moves into a sibling section outside the main div. Frozen XPath still matches exactly once, but extraction is incomplete.",
+  "expected_status": "ok",
+  "expected_blocks_exact": false,
+  "annotation_method": "Authored three-sentence gold before extraction; no production imports or predictions used."
+}

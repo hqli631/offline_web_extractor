@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-13T12:53:08.275030+00:00",
+  "purpose": "Frozen extractor before GNU/NASA/GitHub first predictions. Source snapshot includes table rendering but no fixes based on those pages.",
+  "source_sha256": {
+    "src/webextractor/__init__.py": "6fee382e64e4e6e2a339254c09c9de99636f063659ab6e199764e9da000103b1",
+    "src/webextractor/batch_evaluate.py": "ca2a0ee47f79c3d19d74e8aa0ae1d1f5bc1daa951c2892779cdfb3a868573811",
+    "src/webextractor/cli.py": "30051f764cbd68a4e12bb3b86b0f3611383c765b834fa333cbbf65ef30b7a0a8",
+    "src/webextractor/content_blocks.py": "948adecfb34eec2a0c0ada62e15510c12632c45b73501605600bdcecf8c2f1e6",
+    "src/webextractor/evaluate.py": "d2dabe702aa3f3d7ac21e35c15485dcc92f1ab1a523a1bafe51dfcde454dad6d",
+    "src/webextractor/extractor.py": "5652093809828b0d27c233e6c8450f4268fdf34f875d2c4ecc15b19cfc242490",
+    "src/webextractor/inspect_dom.py": "2cd10b72cdee31a67db880195fa16a9cd8c026e99b71730ecab64fb338798fe6",
+    "src/webextractor/rule_reuse.py": "97a86684de000a27e231fba04631cbf3f3d959d117e1018838266f299a203419"
+  },
+  "annotation_protocol_sha256": "493c9d793096ad8bd73edb77bfe24e794fe3ac740d65820bd4a15d00f3160216"
+}

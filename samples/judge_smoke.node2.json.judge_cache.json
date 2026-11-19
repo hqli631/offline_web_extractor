@@ -1,0 +1,1146 @@
+{
+ "6b0a272881e87152e11a756eeff6829717ace3746edd5b001cce2ada1489ea36": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The candidate includes all paragraphs and list items from the source article in the correct order.",
+      "evidence": [
+       {
+        "ref": "s:21",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "s:39",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, sidebar, and footer content are excluded; only the main article body is present.",
+      "evidence": [
+       {
+        "ref": "p:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "p:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Paragraphs and the unordered list are preserved with correct types and ordering.",
+      "evidence": [
+       {
+        "ref": "p:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "p:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title matches the source heading including the chapter number.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "unknown",
+      "reason": "No code blocks or specific formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 11933,
+    "output_tokens": 648,
+    "total_tokens": 12581
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T11:33:58+00:00"
+ },
+ "206377fb69d886c3f7638047d12ddabeed9ba676ecf135a5387cf34e233be391": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The candidate covers all main article sections and content blocks present in the source HTML, matching the gold annotation exactly.",
+      "evidence": [
+       {
+        "ref": "s:html",
+        "quote": "<h2 id=\"context\">无障碍的概念</h2>"
+       },
+       {
+        "ref": "s:html",
+        "quote": "<h2 id=\"what\">什么是Web无障碍</h2>"
+       },
+       {
+        "ref": "s:html",
+        "quote": "<h2 id=\"important\">无障碍对个人、企业和社会的重要性</h2>"
+       },
+       {
+        "ref": "s:html",
+        "quote": "<h2 id=\"making\">使Web无障碍</h2>"
+       },
+       {
+        "ref": "s:html",
+        "quote": "<h2 id=\"evaluate\">无障碍评测</h2>"
+       },
+       {
+        "ref": "s:html",
+        "quote": "<h2>例子</h2>"
+       },
+       {
+        "ref": "s:html",
+        "quote": "<h2 id=\"more-info\">更多信息</h2>"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, headers, footers, and sidebars are excluded. Only legitimate editorial content is included.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "p:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "p:58",
+        "quote": "更多信息"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Heading levels, list types, and document order match the source structure and gold annotation.",
+      "evidence": [
+       {
+        "ref": "p:3",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "p:8",
+        "quote": "什么是Web无障碍"
+       },
+       {
+        "ref": "p:10",
+        "quote": "感知、理解、导航和与Web交互"
+       },
+       {
+        "ref": "p:38",
+        "quote": "让你的网站更无障碍"
+       },
+       {
+        "ref": "p:44",
+        "quote": "例子"
+       },
+       {
+        "ref": "p:45",
+        "quote": "图片的替代文本"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title matches the source H1 and gold annotation exactly.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "g:title",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "unknown",
+      "reason": "No code or specific block formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 39762,
+    "output_tokens": 773,
+    "total_tokens": 40535
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T11:34:14+00:00"
+ },
+ "b98bec7cab0fa8ab96e92c1665315989d9534cae30054e1ca2dec49e2cda37af": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs, the 'Further Reading' heading, and its three list items are present.",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts to provide basic"
+       },
+       {
+        "ref": "s:8",
+        "quote": "Further Reading"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       },
+       {
+        "ref": "s:10",
+        "quote": "Special-Use Domain Names (RFC 6761)"
+       },
+       {
+        "ref": "s:11",
+        "quote": "Reserved Top Level DNS Names (RFC 2606)"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, footer, and breadcrumb elements were correctly excluded from the extraction.",
+      "evidence": [
+       {
+        "ref": "p:0",
+        "quote": "A number of domains such as example.com and example.org are maintained for documentation purposes."
+       },
+       {
+        "ref": "p:5",
+        "quote": "Reserved Top Level DNS Names (RFC 2606)"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The order of paragraphs, headings, and list items matches the source document structure.",
+      "evidence": [
+       {
+        "ref": "p:0",
+        "quote": "A number of domains such as example.com and example.org are maintained for documentation purposes."
+       },
+       {
+        "ref": "p:1",
+        "quote": "We provide a web service on the example domain hosts to provide basic information on the purpose of the domain."
+       },
+       {
+        "ref": "p:2",
+        "quote": "Further Reading"
+       },
+       {
+        "ref": "p:3",
+        "quote": "IANA-managed Reserved Domains"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The extracted title exactly matches the H1 heading in the source.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "Example Domains"
+       },
+       {
+        "ref": "s:5",
+        "quote": "Example Domains"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "unknown",
+      "reason": "No code blocks or complex formatting requirements identified in the source.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 4632,
+    "output_tokens": 805,
+    "total_tokens": 5437
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T11:34:31+00:00"
+ },
+ "dfee3246b21ceb128a784b1d51547ed001de17d799c22b8ed3cc2cf735f94c67": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The candidate includes all paragraphs and list items from the source article in the correct order.",
+      "evidence": [
+       {
+        "ref": "s:21",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "s:39",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, sidebar, and footer content are excluded; only the main article body is present.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "上一主题"
+       },
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Paragraphs and the unordered list are preserved in the correct sequence with appropriate types.",
+      "evidence": [
+       {
+        "ref": "s:28",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "s:29",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title matches the source heading including the chapter number.",
+      "evidence": [
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "unknown",
+      "reason": "No code blocks or specific formatting requirements observed in the source.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 12082,
+    "output_tokens": 592,
+    "total_tokens": 12674
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T11:37:54+00:00"
+ },
+ "43a3539848bf1e1a79231c6412b620d740028fcdc3876c8bd115d695a7927077": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Candidate covers all article content blocks present in the gold annotation.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977"
+       },
+       {
+        "ref": "g:23",
+        "quote": "https://science.nasa.gov/mission/voyager/"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Candidate excludes navigation and footer noise found in source nodes.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Explore"
+       },
+       {
+        "ref": "s:28",
+        "quote": "Suggested Searches"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Paragraph and list order matches the gold structure.",
+      "evidence": [
+       {
+        "ref": "g:7",
+        "quote": "The participants will be:"
+       },
+       {
+        "ref": "g:8",
+        "quote": "Nicky Fox, associate administrator"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Title is faithful to the source and gold annotation.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "unknown",
+      "reason": "No code or complex block formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 28186,
+    "output_tokens": 535,
+    "total_tokens": 28721
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T11:38:11+00:00"
+ },
+ "53bfea18546a2b4fadb7e2e635c9ee984ce78833c2bd0de5d6fd8548075863cc": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate covers all main article sections and content blocks present in the source HTML.",
+      "evidence": [
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "s:100",
+        "quote": "当网站和web工具得到适当的设计和编码时，残疾人就可以使用它们。然而，目前许多网站和工具都带有可访问性障碍，使得一些人很难或不可能使用它们。"
+       },
+       {
+        "ref": "s:186",
+        "quote": "W3C WAI提供了不同方面的广泛资源，关于web无障碍标准, 教育 (英文), 评测 (英文), 项目管理, 及政策 (英文). 我们鼓励您浏览本网站，或浏览WAI参考资料 (英文)."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation, language selectors, and footer elements are excluded from the extraction.",
+      "evidence": [
+       {
+        "ref": "s:2",
+        "quote": "当前语言为："
+       },
+       {
+        "ref": "s:21",
+        "quote": "Accessibility Fundamentals"
+       },
+       {
+        "ref": "s:197",
+        "quote": "首页"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Heading levels and list structures match the source document order and hierarchy.",
+      "evidence": [
+       {
+        "ref": "s:110",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "s:117",
+        "quote": "感知、理解、导航和与Web交互"
+       },
+       {
+        "ref": "s:155",
+        "quote": "让你的网站更无障碍"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The extracted title matches the source H1 element exactly.",
+      "evidence": [
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "unknown",
+      "reason": "No code or specific block formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 39911,
+    "output_tokens": 623,
+    "total_tokens": 40534
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T11:38:22+00:00"
+ },
+ "190164de5005fe76f1aaaecf4d2c4c164e50f454c9942d5de41c1a7badafbe04": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and the Further Reading list are captured.",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation and footer content are excluded from the candidate blocks.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Domains"
+       },
+       {
+        "ref": "s:12",
+        "quote": "Domain Names"
+       },
+       {
+        "ref": "s:35",
+        "quote": "Privacy Policy"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Paragraphs, heading level, and unordered list order match the source.",
+      "evidence": [
+       {
+        "ref": "s:8",
+        "quote": "Further Reading"
+       },
+       {
+        "ref": "s:10",
+        "quote": "Special-Use Domain Names (RFC 6761)"
+       },
+       {
+        "ref": "s:11",
+        "quote": "Reserved Top Level DNS Names (RFC 2606)"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the H1 exactly.",
+      "evidence": [
+       {
+        "ref": "s:5",
+        "quote": "Example Domains"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "unknown",
+      "reason": "No code or special block formatting is present in the article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 4781,
+    "output_tokens": 619,
+    "total_tokens": 5400
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T11:38:32+00:00"
+ },
+ "a00764d22bb3cfd4bcd6651e2fab1ab99e2dc4e95433b2e3e4b544fbd4c47302": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The candidate contains all paragraphs and list items from the source article in the correct order.",
+      "evidence": [
+       {
+        "ref": "s:21",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "s:39",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, sidebar, and footer content are excluded; only the main article body is present.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "上一主题"
+       },
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Paragraphs and the unordered list are preserved in the correct sequence with appropriate types.",
+      "evidence": [
+       {
+        "ref": "s:28",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "s:29",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title matches the source heading including the chapter number.",
+      "evidence": [
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code blocks or specific formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 12209,
+    "output_tokens": 594,
+    "total_tokens": 12803
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T11:44:04+00:00"
+ },
+ "15e05ed48f1fb59a363ffc1a67cad0cfddfbf431579ae652bad1704f4dfe52ff": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Candidate covers all article content including the participant list and contact information.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977"
+       },
+       {
+        "ref": "g:8",
+        "quote": "Nicky Fox, associate administrator"
+       },
+       {
+        "ref": "g:19",
+        "quote": "https://science.nasa.gov/mission/voyager/"
+       },
+       {
+        "ref": "p:21",
+        "quote": "Abbey Interrante / Karen Fox"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation and footer elements from the source are excluded from the candidate.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Explore"
+       },
+       {
+        "ref": "s:36",
+        "quote": "Home"
+       },
+       {
+        "ref": "s:184",
+        "quote": "Featured"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Paragraphs and lists follow the correct order and hierarchy as seen in the gold standard.",
+      "evidence": [
+       {
+        "ref": "g:7",
+        "quote": "The participants will be:"
+       },
+       {
+        "ref": "g:8",
+        "quote": "Nicky Fox, associate administrator"
+       },
+       {
+        "ref": "g:13",
+        "quote": "Learn where to watch online at:"
+       },
+       {
+        "ref": "p:7",
+        "quote": "The participants will be:"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Title matches the source and gold annotation exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities"
+       },
+       {
+        "ref": "p:title",
+        "quote": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based news release.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 28313,
+    "output_tokens": 664,
+    "total_tokens": 28977
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T11:44:22+00:00"
+ },
+ "1eae6728c5d912f8090f7c94539d974f1f1602587d90559f2890697c824d754d": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate covers all main article sections and content blocks present in the source, matching the gold annotation.",
+      "evidence": [
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "s:100",
+        "quote": "当网站和web工具得到适当的设计和编码时，残疾人就可以使用它们。"
+       },
+       {
+        "ref": "s:110",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "s:115",
+        "quote": "什么是Web无障碍"
+       },
+       {
+        "ref": "s:136",
+        "quote": "无障碍对个人、企业和社会的重要性"
+       },
+       {
+        "ref": "s:148",
+        "quote": "使Web无障碍"
+       },
+       {
+        "ref": "s:166",
+        "quote": "无障碍评测"
+       },
+       {
+        "ref": "s:171",
+        "quote": "例子"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation, language selectors, and footer elements are excluded from the extraction.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "跳到内容"
+       },
+       {
+        "ref": "s:2",
+        "quote": "当前语言为："
+       },
+       {
+        "ref": "s:21",
+        "quote": "Accessibility Fundamentals"
+       },
+       {
+        "ref": "s:27",
+        "quote": "Home"
+       },
+       {
+        "ref": "s:30",
+        "quote": "Accessibility Fundamentals"
+       },
+       {
+        "ref": "s:79",
+        "quote": "English (original)"
+       },
+       {
+        "ref": "s:190",
+        "quote": "英文版本更新： 2024-03-07."
+       },
+       {
+        "ref": "s:197",
+        "quote": "首页"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Heading levels and list structures match the source document order and hierarchy.",
+      "evidence": [
+       {
+        "ref": "s:99",
+        "quote": "总结"
+       },
+       {
+        "ref": "s:110",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "s:117",
+        "quote": "感知、理解、导航和与Web交互"
+       },
+       {
+        "ref": "s:120",
+        "quote": "听觉"
+       },
+       {
+        "ref": "s:127",
+        "quote": "人们使用手机、智能手表、智能电视等具有小屏幕、不同输入模式的设备等"
+       },
+       {
+        "ref": "s:140",
+        "quote": "老年人"
+       },
+       {
+        "ref": "s:155",
+        "quote": "让你的网站更无障碍"
+       },
+       {
+        "ref": "s:172",
+        "quote": "图片的替代文本"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The extracted title is faithful to the source H1 element.",
+      "evidence": [
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "g:title",
+        "quote": "Web无障碍简介"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 40038,
+    "output_tokens": 890,
+    "total_tokens": 40928
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T11:44:45+00:00"
+ },
+ "101374a647653d59ac5c9c77f65337ad81fef41c87c6bf570b4c739247903aab": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and the Further Reading list are captured.",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation and footer content are excluded from the candidate blocks.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Domains"
+       },
+       {
+        "ref": "s:12",
+        "quote": "Domain Names"
+       },
+       {
+        "ref": "s:35",
+        "quote": "Privacy Policy"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Paragraphs precede the heading and list items in correct order.",
+      "evidence": [
+       {
+        "ref": "s:8",
+        "quote": "Further Reading"
+       },
+       {
+        "ref": "s:10",
+        "quote": "Special-Use Domain Names (RFC 6761)"
+       },
+       {
+        "ref": "s:11",
+        "quote": "Reserved Top Level DNS Names (RFC 2606)"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the source H1 exactly.",
+      "evidence": [
+       {
+        "ref": "s:5",
+        "quote": "Example Domains"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or special formatting requirements.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 4901,
+    "output_tokens": 614,
+    "total_tokens": 5515
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-17T11:44:55+00:00"
+ }
+}

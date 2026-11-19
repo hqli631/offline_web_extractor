@@ -1,0 +1,16 @@
+{
+  "id": "reference",
+  "source_kind": "synthetic",
+  "split": "controlled_drift",
+  "generator": "build_fixtures.py",
+  "html": "reference.html",
+  "sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428",
+  "expected": "reference.expected.json",
+  "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+  "reference_html": "reference.html",
+  "reference_sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428",
+  "mutation": "Authored synthetic reference, no mutation.",
+  "expected_status": "ok",
+  "expected_blocks_exact": true,
+  "annotation_method": "Authored three-sentence gold before extraction; no production imports or predictions used."
+}

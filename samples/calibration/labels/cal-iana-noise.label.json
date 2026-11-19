@@ -1,0 +1,63 @@
+{
+ "label_version": 1,
+ "case_id": "cal-iana-noise",
+ "split": "development",
+ "template": "iana_example_domains",
+ "label_origin": "assistant_silver",
+ "human_reviewed": false,
+ "derivation": "assistant_expectation_no_gold",
+ "mutation": {
+  "type": "noise",
+  "index": 1,
+  "injected_text": "Share this article on Facebook and Twitter. Subscribe to our newsletter! Advertisement: buy now related content."
+ },
+ "noise_terms": [
+  "advertisement",
+  "subscribe to our newsletter"
+ ],
+ "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+ "gold_sha256": null,
+ "candidate_sha256": "8e905ea75067f5c86b5bab93f6d7b40b27ff00c68f905efea8e5f292cae74cb6",
+ "batch_config": {
+  "max_source_chars": 20000
+ },
+ "source_truncated": false,
+ "prompt_chars": 21732,
+ "expected": {
+  "dimensions": {
+   "completeness": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "cleanliness": {
+    "score": 2,
+    "status": "scored",
+    "severity": "major"
+   },
+   "structure": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "title": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "severity": "none"
+   }
+  },
+  "decision": "fail",
+  "needs_human_review": true
+ },
+ "program_reference": null,
+ "notes": [
+  "Silver label (assistant-derived), not human gold; disagreement goes to the review queue.",
+  "clean means no injected mutation; the extractor output may still differ from gold.",
+  "No gold supplied: expected scores are provisional assistant expectations; judge decision cannot be pass."
+ ]
+}

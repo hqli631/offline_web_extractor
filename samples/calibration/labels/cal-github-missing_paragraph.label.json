@@ -1,0 +1,243 @@
+{
+ "label_version": 1,
+ "case_id": "cal-github-missing_paragraph",
+ "split": "frozen_test",
+ "template": "github-copilot-blog.candidate",
+ "label_origin": "assistant_silver",
+ "human_reviewed": false,
+ "derivation": "frozen_rubrics_v2_program_on_controlled_mutation",
+ "mutation": {
+  "type": "missing_paragraph",
+  "index": 0,
+  "removed_excerpt": "We’re making GitHub Copilot, an AI pair programmer that suggests code in your editor, generally available to all develop"
+ },
+ "noise_terms": [],
+ "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+ "gold_sha256": "bb98dad09c1b31c36a0ee100b24699d9b44390c7b4a49c3d4e5378e925f5507e",
+ "candidate_sha256": "57e8cfa7a6f51c35048c0bd559c9d9fc8e8b79602f7bec0e93e45c78c537e0f3",
+ "batch_config": {
+  "max_source_chars": 20000
+ },
+ "source_truncated": true,
+ "prompt_chars": 82893,
+ "expected": {
+  "dimensions": {
+   "completeness": {
+    "score": 3,
+    "status": "partial",
+    "severity": "minor"
+   },
+   "cleanliness": {
+    "score": 4,
+    "status": "partial",
+    "severity": "minor"
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "title": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "severity": "none"
+   }
+  },
+  "decision": "uncertain",
+  "needs_human_review": true
+ },
+ "program_reference": {
+  "rubrics_version": "2.0.0",
+  "method": "deterministic-reference",
+  "dimensions": {
+   "completeness": {
+    "score": 3,
+    "status": "partial",
+    "recall": 0.9362745098039216,
+    "missing_tokens": 52
+   },
+   "cleanliness": {
+    "score": 4,
+    "status": "partial",
+    "precision": 0.9909208819714657,
+    "clean_ratio": 0.9909208819714657,
+    "extra_tokens": 7,
+    "noise_hits": {}
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "attribute_ratio": 1.0,
+    "order_ratio": 1.0,
+    "alignment_coverage": 0.8636363636363636,
+    "aligned_pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      11,
+      10
+     ],
+     [
+      12,
+      11
+     ],
+     [
+      13,
+      12
+     ],
+     [
+      14,
+      13
+     ],
+     [
+      15,
+      14
+     ],
+     [
+      16,
+      15
+     ],
+     [
+      17,
+      16
+     ],
+     [
+      18,
+      17
+     ],
+     [
+      19,
+      18
+     ],
+     [
+      20,
+      19
+     ]
+    ],
+    "reason": "Only text-aligned blocks are scored"
+   },
+   "title": {
+    "score": 4,
+    "status": "partial",
+    "exact": true
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "reason": "No code blocks to compare"
+   }
+  },
+  "issues": [
+   {
+    "dimension": "completeness",
+    "code": "unaligned_gold_block",
+    "severity": "minor",
+    "predicted_ref": null,
+    "gold_ref": "g:0",
+    "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+    "gold_excerpt": "We’re making GitHub Copilot, an AI pair programmer that suggests code in your editor, generally available to all developers for $10 USD/month or $100 USD/year. It will also be free to use for verified"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:9",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "<"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:10",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "ul>"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:21",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "Tags:"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:22",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "GitHub Copilot"
+   },
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:23",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "Written by"
+   },
+   {
+    "dimension": "completeness",
+    "code": "partial_source_evidence",
+    "severity": "unknown",
+    "predicted_ref": null,
+    "gold_ref": null,
+    "detail": "Scores cover supplied evidence only"
+   }
+  ],
+  "decision": "uncertain",
+  "needs_human_review": true,
+  "overall": null,
+  "evidence_complete": false,
+  "note": "Uncalibrated diagnostics; no model/human judgement or reward claim. Source attribution, links and Markdown rendering are unassessed."
+ },
+ "notes": [
+  "Silver label (assistant-derived), not human gold; disagreement goes to the review queue.",
+  "clean means no injected mutation; the extractor output may still differ from gold."
+ ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "rules-v1-before-w3c",
+  "created_at": "2026-11-13T10:41:46.4762911Z",
+  "note": "Source copy and hashes before the first W3C prediction. No extractor run on W3C yet.",
+  "files": [
+    {
+      "path": "src\\webextractor\\__init__.py",
+      "sha256": "6fee382e64e4e6e2a339254c09c9de99636f063659ab6e199764e9da000103b1"
+    },
+    {
+      "path": "src\\webextractor\\batch_evaluate.py",
+      "sha256": "ca2a0ee47f79c3d19d74e8aa0ae1d1f5bc1daa951c2892779cdfb3a868573811"
+    },
+    {
+      "path": "src\\webextractor\\cli.py",
+      "sha256": "30051f764cbd68a4e12bb3b86b0f3611383c765b834fa333cbbf65ef30b7a0a8"
+    },
+    {
+      "path": "src\\webextractor\\content_blocks.py",
+      "sha256": "f4de17707fe604442b0acd371430f227f272df69d05e087c797cb16084ed40b0"
+    },
+    {
+      "path": "src\\webextractor\\evaluate.py",
+      "sha256": "d2dabe702aa3f3d7ac21e35c15485dcc92f1ab1a523a1bafe51dfcde454dad6d"
+    },
+    {
+      "path": "src\\webextractor\\extractor.py",
+      "sha256": "879b3d96d0795d4120ff78516fb1103393e250e99599a1f4e4ff1d32c060aa82"
+    },
+    {
+      "path": "src\\webextractor\\inspect_dom.py",
+      "sha256": "2cd10b72cdee31a67db880195fa16a9cd8c026e99b71730ecab64fb338798fe6"
+    },
+    {
+      "path": "src\\webextractor\\rule_reuse.py",
+      "sha256": "97a86684de000a27e231fba04631cbf3f3d959d117e1018838266f299a203419"
+    },
+    {
+      "path": "run.py",
+      "sha256": "8a89e9f05e41baa608a857556ca75f6a133dde7e2898cefbbcec2d0608af8454"
+    },
+    {
+      "path": "run.cmd",
+      "sha256": "94d9db1b57486098134bd6ccdb83739d6224ff3b954df52d28407f19129f6a2c"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "bd5194c22cfb2e4d5e84cf7a3163948413f21219bd8cb940e324bcd6bd5e0d96"
+    }
+  ]
+}

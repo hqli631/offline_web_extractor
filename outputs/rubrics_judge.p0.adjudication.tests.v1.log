@@ -1,0 +1,125 @@
+test_annotator_mismatch_fails (tests.test_apply_adjudication.CoverageTest.test_annotator_mismatch_fails) ... ok
+test_duplicate_fails (tests.test_apply_adjudication.CoverageTest.test_duplicate_fails) ... ok
+test_duplicate_spec_keys_fail (tests.test_apply_adjudication.CoverageTest.test_duplicate_spec_keys_fail) ... ok
+test_empty_default_note_fails (tests.test_apply_adjudication.CoverageTest.test_empty_default_note_fails) ... ok
+test_missing_case_fails (tests.test_apply_adjudication.CoverageTest.test_missing_case_fails) ... ok
+test_output_exists_fails (tests.test_apply_adjudication.CoverageTest.test_output_exists_fails) ... Output exists; choose a new directory.
+ok
+test_unknown_blind_code_fails (tests.test_apply_adjudication.CoverageTest.test_unknown_blind_code_fails) ... ok
+test_flag_on_non_injection_fails (tests.test_apply_adjudication.InjectionTest.test_flag_on_non_injection_fails) ... ok
+test_missing_flag_fails (tests.test_apply_adjudication.InjectionTest.test_missing_flag_fails) ... ok
+test_non_bool_flag_fails (tests.test_apply_adjudication.InjectionTest.test_non_bool_flag_fails) ... ok
+test_true_flag_ok (tests.test_apply_adjudication.InjectionTest.test_true_flag_ok) ... ok
+test_case_id_identifier_ok (tests.test_apply_adjudication.KeepAllTest.test_case_id_identifier_ok) ... ok
+test_keep_all_confirms_and_preserves (tests.test_apply_adjudication.KeepAllTest.test_keep_all_confirms_and_preserves) ... ok
+test_bad_score_status_combo_fails (tests.test_apply_adjudication.ReviseTest.test_bad_score_status_combo_fails) ... ok
+test_keep_with_changes_fails (tests.test_apply_adjudication.ReviseTest.test_keep_with_changes_fails) ... ok
+test_protected_field_fails (tests.test_apply_adjudication.ReviseTest.test_protected_field_fails) ... ok
+test_revise_applies_named_fields_only (tests.test_apply_adjudication.ReviseTest.test_revise_applies_named_fields_only) ... ok
+test_revise_without_changes_fails (tests.test_apply_adjudication.ReviseTest.test_revise_without_changes_fails) ... ok
+test_revise_without_note_fails (tests.test_apply_adjudication.ReviseTest.test_revise_without_note_fails) ... ok
+test_source_only_pass_fails (tests.test_apply_adjudication.ReviseTest.test_source_only_pass_fails) ... ok
+test_unknown_dimension_fails (tests.test_apply_adjudication.ReviseTest.test_unknown_dimension_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.104s
+
+OK
+{
+ "error": "validation",
+ "problems": [
+  "spec annotator 'someone-else' differs from labels annotator 'tester'"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B01: duplicate decision"
+ ]
+}
+{"error": "spec_parse", "problems": ["duplicate key 'spec_version'"]}
+{
+ "error": "validation",
+ "problems": [
+  "B01: adjudication note required (keep may fall back to default_keep_note)",
+  "B02: adjudication note required (keep may fall back to default_keep_note)",
+  "B03: adjudication note required (keep may fall back to default_keep_note)",
+  "B04: adjudication note required (keep may fall back to default_keep_note)"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B04: missing decision (every case must be adjudicated)"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "decisions[4]: unknown blind_code 'B99'"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B01: injection_complied only allowed on injection cases"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B04: injection case requires injection_complied true/false"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B04: injection_complied must be true/false"
+ ]
+}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpcgoc4gmc\\out", "confirmed": 4, "kept": 4, "revised": 0, "changed_cases": ["B04"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpo295ezyt\\out", "confirmed": 4, "kept": 4, "revised": 0, "changed_cases": ["B04"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmplyulp72u\\out", "confirmed": 4, "kept": 4, "revised": 0, "changed_cases": ["B04"]}
+{
+ "error": "validation",
+ "problems": [
+  "B02/cleanliness: integer score requires status scored/partial"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B01: keep must not carry changes"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B01: changes field 'overall_note' not allowed (only decision/dimensions)"
+ ]
+}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmppq95i0en\\out", "confirmed": 4, "kept": 3, "revised": 1, "changed_cases": ["B02", "B04"]}
+{
+ "error": "validation",
+ "problems": [
+  "B02: revise requires non-empty changes"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B02: adjudication note required (keep may fall back to default_keep_note)"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B03: source_only decision must not be pass"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B02: unknown dimension 'readability'"
+ ]
+}

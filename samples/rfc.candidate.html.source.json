@@ -1,0 +1,9 @@
+{
+  "requested_url": "https://www.rfc-editor.org/rfc/rfc2616",
+  "fetched_at": "2026-11-13T12:06:23.533158+00:00",
+  "http_status": 200,
+  "sha256": "84534bb2fd2a7252335cb3e26f9d6bb1e31bca30265fbf66d85b744dbba48a58",
+  "template": "specification",
+  "split": "pending_annotation",
+  "note": "Candidate snapshot. Do not run extraction until annotation and expected JSON are frozen."
+}

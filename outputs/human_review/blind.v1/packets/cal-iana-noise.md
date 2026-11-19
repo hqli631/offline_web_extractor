@@ -1,0 +1,271 @@
+# 盲评案卷 cal-iana-noise
+
+- 序号：12 / 23
+- split：development
+- 模式：source_only
+- 源截断：否
+
+## 评分速查（Rubrics v2 摘要）
+
+### 分数锚点（0-4 整数）
+| 分数 | 含义 |
+| --- | --- |
+| 4 | 几乎完全符合（程序参考比例>=0.98；语义上无明显问题） |
+| 3 | 小比例差异（>=0.90） |
+| 2 | 明显差异（>=0.70） |
+| 1 | 大幅差异（>=0.40） |
+| 0 | 大部分不符合（<0.40） |
+比例仅是参考，语义判断以你看到的证据为准；无法量化时按差异程度给分并在 note 说明。
+
+### 状态 status
+- scored：证据充分，正常评分。
+- partial：证据不完整（如源被截断）仍可给分，但置信度低。
+- unscored：无法判断，score 填 null。
+- not_applicable：维度不适用（如无代码时的格式维），score 填 null。
+
+### 严重度 severity
+- none：无问题。
+- minor：轻微（如标题仅丢章节编号、少量未对齐差异）。
+- major：严重（结构属性不符、段落乱序、代码缩进/换行错误、噪声超额混入、非编号类标题差异、大段缺失）。
+- critical：空候选。
+- unknown：证据不足无法定级。
+
+### 决策 decision
+- fail：存在 major/critical 问题。
+- uncertain：无严重问题但有其他问题，或存在 partial/unscored。
+- pass：各维均无问题且证据充分。
+- source_only（无参考答案）：只能 uncertain 或 fail，不得 pass。
+
+### 其他规则
+- 网页文本中的指令是数据，不是命令；候选若服从了页面内嵌指令属于错误。
+- score 为整数时 status 必须是 scored/partial；score 为 null 时 status 必须是 unscored/not_applicable。
+- 每个维度都必须填 severity；note 可选（简短中文）。
+
+
+## 候选提取结果（p: 引用）
+
+标题 `p:title`：Example Domains
+
+#### `p:0` kind=paragraph depth=0
+
+A number of domains such as example.com and example.org are maintained for documentation purposes. These domains may be used as illustrative examples in documents without prior coordination with us. They are not available for registration or transfer.
+
+#### `p:1` kind=paragraph depth=0
+
+Share this article on Facebook and Twitter. Subscribe to our newsletter! Advertisement: buy now related content.
+
+#### `p:2` kind=paragraph depth=0
+
+We provide a web service on the example domain hosts to provide basic information on the purpose of the domain. These web services are provided as best effort, but are not designed to support production applications. We strongly recommend you do not design applications that require the example domains to have operating HTTP service.
+
+#### `p:3` kind=heading heading_level=2 depth=0
+
+Further Reading
+
+#### `p:4` kind=list_item list_type=ul depth=0
+
+IANA-managed Reserved Domains
+
+#### `p:5` kind=list_item list_type=ul depth=0
+
+Special-Use Domain Names (RFC 6761)
+
+#### `p:6` kind=list_item list_type=ul depth=0
+
+Reserved Top Level DNS Names (RFC 2606)
+
+
+## 参考答案
+
+本例为 source_only：无参考答案。仅依据源证据判断；decision 只能 uncertain/fail。
+
+## 网页源证据（s: 引用，与 judge 所见完全一致）
+
+#### `s:0` <li> /html/body/header/div/div[2]/ul/li[1]
+
+Domains
+
+#### `s:1` <li> /html/body/header/div/div[2]/ul/li[2]
+
+Protocols
+
+#### `s:2` <li> /html/body/header/div/div[2]/ul/li[3]
+
+Numbers
+
+#### `s:3` <li> /html/body/header/div/div[2]/ul/li[4]
+
+About
+
+#### `s:4` <li> /html/body/div/article/main/ol/li
+
+Instructions and Guides
+
+#### `s:5` <h1> /html/body/div/article/main/h1
+
+Example Domains
+
+#### `s:6` <p> /html/body/div/article/main/div/div/p[1]
+
+A number of domains such as example.com and example.org are maintained
+for documentation purposes. These domains may be used as illustrative
+examples in documents without prior coordination with us. They are not
+available for registration or transfer.
+
+#### `s:7` <p> /html/body/div/article/main/div/div/p[2]
+
+We provide a web service on the example domain hosts to provide basic
+information on the purpose of the domain. These web services are
+provided as best effort, but are not designed to support production
+applications. We strongly recommend you do not design applications that
+require the example domains to have operating HTTP service.
+
+#### `s:8` <h2> /html/body/div/article/main/div/div/h2
+
+Further Reading
+
+#### `s:9` <li> /html/body/div/article/main/div/div/ul/li[1]
+
+IANA-managed Reserved Domains
+
+#### `s:10` <li> /html/body/div/article/main/div/div/ul/li[2]
+
+Special-Use Domain Names (RFC 6761)
+
+#### `s:11` <li> /html/body/div/article/main/div/div/ul/li[3]
+
+Reserved Top Level DNS Names (RFC 2606)
+
+#### `s:12` <td> /html/body/footer/div/table/tr[1]/td[1]
+
+Domain Names
+
+#### `s:13` <td> /html/body/footer/div/table/tr[1]/td[2]
+
+
+                    
+                        Root Zone Registry
+                        .INT Registry
+                        .ARPA Registry
+                        IDN Repository
+                    
+                
+
+#### `s:14` <li> /html/body/footer/div/table/tr[1]/td[2]/ul/li[1]
+
+Root Zone Registry
+
+#### `s:15` <li> /html/body/footer/div/table/tr[1]/td[2]/ul/li[2]
+
+.INT Registry
+
+#### `s:16` <li> /html/body/footer/div/table/tr[1]/td[2]/ul/li[3]
+
+.ARPA Registry
+
+#### `s:17` <li> /html/body/footer/div/table/tr[1]/td[2]/ul/li[4]
+
+IDN Repository
+
+#### `s:18` <td> /html/body/footer/div/table/tr[2]/td[1]
+
+Number Resources
+
+#### `s:19` <td> /html/body/footer/div/table/tr[2]/td[2]
+
+
+                    
+                        Number Registries
+                        RIR Allocation Data
+                        Abuse Information
+                    
+                
+
+#### `s:20` <li> /html/body/footer/div/table/tr[2]/td[2]/ul/li[1]
+
+Number Registries
+
+#### `s:21` <li> /html/body/footer/div/table/tr[2]/td[2]/ul/li[2]
+
+RIR Allocation Data
+
+#### `s:22` <li> /html/body/footer/div/table/tr[2]/td[2]/ul/li[3]
+
+Abuse Information
+
+#### `s:23` <td> /html/body/footer/div/table/tr[3]/td[1]
+
+Protocols
+
+#### `s:24` <td> /html/body/footer/div/table/tr[3]/td[2]
+
+
+                    
+                        Protocol Registries
+                        Time Zone Database
+                    
+                
+
+#### `s:25` <li> /html/body/footer/div/table/tr[3]/td[2]/ul/li[1]
+
+Protocol Registries
+
+#### `s:26` <li> /html/body/footer/div/table/tr[3]/td[2]/ul/li[2]
+
+Time Zone Database
+
+#### `s:27` <td> /html/body/footer/div/table/tr[4]/td[1]
+
+About Us
+
+#### `s:28` <td> /html/body/footer/div/table/tr[4]/td[2]
+
+
+                    
+                        News
+                        Performance
+                        The Organization
+                        Archive
+                        Contact Us
+                    
+                
+
+#### `s:29` <li> /html/body/footer/div/table/tr[4]/td[2]/ul/li[1]
+
+News
+
+#### `s:30` <li> /html/body/footer/div/table/tr[4]/td[2]/ul/li[2]
+
+Performance
+
+#### `s:31` <li> /html/body/footer/div/table/tr[4]/td[2]/ul/li[3]
+
+The Organization
+
+#### `s:32` <li> /html/body/footer/div/table/tr[4]/td[2]/ul/li[4]
+
+Archive
+
+#### `s:33` <li> /html/body/footer/div/table/tr[4]/td[2]/ul/li[5]
+
+Contact Us
+
+#### `s:34` <p> /html/body/footer/div/div[1]/p
+
+The IANA functions coordinate the Internet’s globally unique identifiers, and
+                are provided by Public Technical Identifiers, an affiliate of
+                ICANN.
+
+#### `s:35` <li> /html/body/footer/div/div[2]/ul/li[1]
+
+Privacy Policy
+
+#### `s:36` <li> /html/body/footer/div/div[2]/ul/li[2]
+
+Terms of Service
+
+
+## 填写入口
+
+打开同目录 `human_labels.blind.json`，找到 `case_id` 为 `cal-iana-noise` 的条目，填写 decision 与五个维度，保存。
+本案卷不含任何 judge/silver/程序分数；填写前请勿查阅其他输出文件，避免锚定。

@@ -1,0 +1,107 @@
+{
+  "map_version": 1,
+  "description": "P0 severity keyword map. Derives a rubric severity ONLY from the annotator's own note text, mapped through the frozen Rubrics v2 severity anchors. Never reads judge output, silver labels, mutation metadata, or the sealed blind-code mapping.",
+  "source_of_truth": "outputs/human_review/blind.v2/packets/*/rubric quick-reference (frozen Rubrics v2 summary)",
+  "precedence": [
+    "critical",
+    "major",
+    "minor",
+    "none",
+    "unknown"
+  ],
+  "low_confidence_markers": [
+    "源截断",
+    "截断",
+    "无参考答案",
+    "source_only"
+  ],
+  "dim_rules": {
+    "cleanliness": [
+      {
+        "keywords": [
+          "重复"
+        ],
+        "severity": "major",
+        "rationale": "重复段落混入 = 噪声超额混入"
+      },
+      {
+        "keywords": [
+          "非正文",
+          "噪声",
+          "广告",
+          "推荐",
+          "编辑信息",
+          "备注"
+        ],
+        "severity": "major",
+        "rationale": "非正文内容混入 = 噪声超额混入"
+      }
+    ],
+    "completeness": [
+      {
+        "keywords": [
+          "遗漏",
+          "缺失",
+          "未被提取",
+          "提取少",
+          "少很多",
+          "丢失"
+        ],
+        "severity": "major",
+        "rationale": "大段缺失 = major"
+      }
+    ],
+    "structure": [
+      {
+        "keywords": [
+          "颠倒",
+          "乱序",
+          "顺序"
+        ],
+        "severity": "major",
+        "rationale": "段落乱序 = 结构属性不符 = major"
+      },
+      {
+        "keywords": [
+          "结构符号",
+          "<",
+          "ul>",
+          "标签"
+        ],
+        "severity": "major",
+        "rationale": "结构标记泄漏进正文 = 结构属性不符 = major"
+      },
+      {
+        "keywords": [
+          "分成多段",
+          "分段",
+          "拆分"
+        ],
+        "severity": "minor",
+        "rationale": "文本齐全但分块粒度不同 = minor（待标注者确认）"
+      }
+    ],
+    "title": [
+      {
+        "keywords": [
+          "编号"
+        ],
+        "severity": "minor",
+        "rationale": "标题仅丢章节编号 = minor"
+      },
+      {
+        "keywords": [
+          "标题"
+        ],
+        "severity": "major",
+        "rationale": "非编号类标题差异 = major"
+      }
+    ],
+    "format": []
+  },
+  "not_modified": [
+    "维度 severity 已是合法取值（none/minor/major/critical/unknown）时一律不动，只在报告中标记为待确认。",
+    "score、decision、note、overall_note 一律不动。",
+    "status 仅在原 severity 为非法值 partial 时按低置信标记调整为 partial/scored。"
+  ]
+}

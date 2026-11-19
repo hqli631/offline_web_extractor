@@ -1,0 +1,37 @@
+{
+  "kit_version": "1.0.0",
+  "inputs": {
+    "batch": "dbfb7466837cf28fb721fba8f5737fb3c8eb5624d79578f74a199809ac23fe24",
+    "stability": "8c4d771a0dc51e8baae90184f10f292702ef3d4c6adc3ef5e0619489d7202e89",
+    "freeze": "00158e2707054f4027548fe336744d3610a414dcadf7d92d0903e215797ef732",
+    "manifest": "a3ef652c55ef9a015f12a83b18befef9076ae352f005985fa2682823b15b5d28"
+  },
+  "n_cases": 23,
+  "files": {
+    "INDEX.md": "565fd0bb15af5614621dc405ab5cdeee821db5779639686ee0ef06fb71c8a6d9",
+    "human_labels.blind.json": "e1d5f6bf7997ca434b305fa140692f4e92a15559f6f7048d0f25c9990b35ee4e",
+    "packets/cal-appetite-clean.md": "5286d4e302fb1879fba56f2a909f5f1ccabce241fc69eb1f8c6fda99b4e091b4",
+    "packets/cal-appetite-duplicate.md": "a0412dedbcbc3daed3d27245b8e2d014c6fa2b4b33956798b0489ed9193dba2b",
+    "packets/cal-appetite-missing_paragraph.md": "8ec84925ad7217d665eb53bcda081e96691017e889ebe854852130f19a1a1f40",
+    "packets/cal-appetite-noise.md": "b61a93169663e1f335eaeea6e9cd4126b2305ac9e7f723523afbd499107fd917",
+    "packets/cal-appetite-reorder.md": "a325614e81429178d51f1cb49f6bc8485887a67083f55028fc64c9b2475491cf",
+    "packets/cal-appetite-title_number.md": "71fc9cd73e99a4d1064b68470f0098e8e905218f6e96cec211bd24c1618d8e25",
+    "packets/cal-blurb-clean.md": "b74c487d1770d62fdad53c677eb38646ed3ca0ef38df06bc1249795686c2a0fc",
+    "packets/cal-blurb-missing_paragraph.md": "3e6bba4b5ba7cf457bd8c46de4718e20ec309821d2607df1e0b81a39813492f3",
+    "packets/cal-blurb-noise.md": "63ed0a42fb5c91defedafd0289fd56855ac4cf35e3b2383e52bf7742a0d4359f",
+    "packets/cal-blurb-reorder.md": "34b7cbcc4a04b0d10a8d39f7b652fd35d50e5b960dbbb656c2a92dd5513afa6b",
+    "packets/cal-github-clean.md": "d32964be1633b9677771ae7541070f2c90b41649973f24a53c3aec2f4a02ade0",
+    "packets/cal-github-duplicate.md": "73333d7d9512b6fd016189b362e3ac18a45d3e11ac5507cdfa7a1fb78e2fdb61",
+    "packets/cal-github-missing_paragraph.md": "d0051db74fc996d3b4b87c11bc56070ab426a51b5f2ffee381779898986962ce",
+    "packets/cal-github-noise.md": "fc2bdd6faacf9f5e1efbd1c30024e29d7e691fb42e1cbc36071aca4758df91cd",
+    "packets/cal-iana-clean.md": "4e873af05d51e81d989e81a27b984e4f6dc0610dc691f2b12eb70ce847d30baf",
+    "packets/cal-iana-noise.md": "fad270329abf5c8e7ba2ca0a958986a60cfd19c4d2e80c47f0c90e8b028617a3",
+    "packets/cal-mdn-clean.md": "1015c9015389f199194fdcef58a6f6ef6ab575079f89035e377d7aef7cd0bffb",
+    "packets/cal-mdn-code_indent.md": "9b96a2d122650fa774cc1634d8ef0cb7fc5a94013122090387fd2b6b4e1aace5",
+    "packets/cal-mdn-instruction_interference.md": "6cb41ba83cd2f1510329c10121f29951fe6655045ee938215e8071a190e53402",
+    "packets/cal-mdn-missing_paragraph.md": "f688209721bd973ad0e691d28b7856453a2cf1494fea59fbe98d12a42a4f567a",
+    "packets/cal-mdn-reorder.md": "1ee01262d69b81252b1f5f9136418a20ed76193eabfb4f23bfdac1c2039bdc3b",
+    "packets/cal-w3clink-clean.md": "0651840609985475942a0d6cf133c856c12947ca9c7c605ed8cfc0ad0475cd56",
+    "packets/cal-w3clink-instruction_interference.md": "f3b9c25dd3ab9d8b01fc9a27b86d929b415cf3ef44146d95fb71e704b555c561"
+  }
+}

@@ -1,0 +1,178 @@
+{
+ "label_version": 1,
+ "case_id": "cal-appetite-duplicate",
+ "split": "development",
+ "template": "python_appetite_zh",
+ "label_origin": "assistant_silver",
+ "human_reviewed": false,
+ "derivation": "frozen_rubrics_v2_program_on_controlled_mutation",
+ "mutation": {
+  "type": "duplicate",
+  "index": 0,
+  "duplicated_excerpt": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。比如，对大量文本文件执行查找、替换操作；利用复杂的规则重命名、重排序一堆照片文件；也可能您想编写一个小型数据库、或开发专用的图形界面应用，甚至是开发一个简单的游戏。"
+ },
+ "noise_terms": [],
+ "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+ "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+ "candidate_sha256": "1f2efda4adf4228b289d4c5fe4213b0f214b8b6aa674241032ed17fa9bf5c230",
+ "batch_config": {
+  "max_source_chars": 20000
+ },
+ "source_truncated": false,
+ "prompt_chars": 40993,
+ "expected": {
+  "dimensions": {
+   "completeness": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "cleanliness": {
+    "score": 3,
+    "status": "scored",
+    "severity": "minor"
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "title": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "severity": "none"
+   }
+  },
+  "decision": "uncertain",
+  "needs_human_review": true
+ },
+ "program_reference": {
+  "rubrics_version": "2.0.0",
+  "method": "deterministic-reference",
+  "dimensions": {
+   "completeness": {
+    "score": 4,
+    "status": "scored",
+    "recall": 1.0,
+    "missing_tokens": 0
+   },
+   "cleanliness": {
+    "score": 3,
+    "status": "scored",
+    "precision": 0.9114307342922029,
+    "clean_ratio": 0.9114307342922029,
+    "extra_tokens": 117,
+    "noise_hits": {}
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "attribute_ratio": 1.0,
+    "order_ratio": 1.0,
+    "alignment_coverage": 0.9696969696969697,
+    "aligned_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      2,
+      1
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      6,
+      5
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      8,
+      7
+     ],
+     [
+      9,
+      8
+     ],
+     [
+      10,
+      9
+     ],
+     [
+      11,
+      10
+     ],
+     [
+      12,
+      11
+     ],
+     [
+      13,
+      12
+     ],
+     [
+      14,
+      13
+     ],
+     [
+      15,
+      14
+     ],
+     [
+      16,
+      15
+     ]
+    ],
+    "reason": "Only text-aligned blocks are scored"
+   },
+   "title": {
+    "score": 4,
+    "status": "scored",
+    "exact": true
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "reason": "No code blocks to compare"
+   }
+  },
+  "issues": [
+   {
+    "dimension": "cleanliness",
+    "code": "unaligned_candidate_block",
+    "severity": "minor",
+    "predicted_ref": "p:1",
+    "gold_ref": null,
+    "detail": "Exact normalized text not aligned; may be extra text, edit or split/merge",
+    "predicted_excerpt": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。比如，对大量文本文件执行查找、替换操作；利用复杂的规则重命名、重排序一堆照片文件；也可能您想编写一个小型数据库、或开发专用的图形界面应用，甚至是开发一个简单的游戏。"
+   }
+  ],
+  "decision": "uncertain",
+  "needs_human_review": true,
+  "overall": null,
+  "evidence_complete": true,
+  "note": "Uncalibrated diagnostics; no model/human judgement or reward claim. Source attribution, links and Markdown rendering are unassessed."
+ },
+ "notes": [
+  "Silver label (assistant-derived), not human gold; disagreement goes to the review queue.",
+  "clean means no injected mutation; the extractor output may still differ from gold."
+ ]
+}

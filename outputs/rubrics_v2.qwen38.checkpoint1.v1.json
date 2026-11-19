@@ -1,0 +1,354 @@
+{
+  "rubrics_version": "2.0.0",
+  "method": "offline-recorded-evaluation",
+  "evaluation_sha256": "cad5fbc07c74ba645af2fbbee17cda2fc918cc28c41d21606c5cef46e040e09a",
+  "manifest_sha256": "fdb8ac6ce5842d3183cae8d33fa8b4c57f55b6fefcb3dfb4ae1afa9824a9575d",
+  "implementation_sha256": "4fa60e024758e67d8c831b7a34e267bf2ce9a143dd6ae70cdbc94da036560364",
+  "cases": [
+    {
+      "id": "same-template-appetite",
+      "html_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+      "gold_sha256": "353ed7d39fd736bf4badb59d85ce0f1343646d19eafd950b35707f85d0f0f92f",
+      "execution_status": "ok",
+      "assessment": {
+        "rubrics_version": "2.0.0",
+        "method": "deterministic-reference",
+        "dimensions": {
+          "completeness": {
+            "score": 4,
+            "status": "scored",
+            "recall": 1.0,
+            "missing_tokens": 0
+          },
+          "cleanliness": {
+            "score": 4,
+            "status": "scored",
+            "precision": 1.0,
+            "clean_ratio": 1.0,
+            "extra_tokens": 0,
+            "noise_hits": {}
+          },
+          "structure": {
+            "score": 4,
+            "status": "scored",
+            "attribute_ratio": 1.0,
+            "order_ratio": 1.0,
+            "alignment_coverage": 1.0,
+            "aligned_pairs": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                6,
+                6
+              ],
+              [
+                7,
+                7
+              ],
+              [
+                8,
+                8
+              ],
+              [
+                9,
+                9
+              ],
+              [
+                10,
+                10
+              ],
+              [
+                11,
+                11
+              ],
+              [
+                12,
+                12
+              ],
+              [
+                13,
+                13
+              ],
+              [
+                14,
+                14
+              ],
+              [
+                15,
+                15
+              ]
+            ],
+            "reason": null
+          },
+          "title": {
+            "score": 3,
+            "status": "scored",
+            "exact": false
+          },
+          "format": {
+            "score": null,
+            "status": "not_applicable",
+            "reason": "No code blocks to compare"
+          }
+        },
+        "issues": [
+          {
+            "dimension": "title",
+            "code": "title_mismatch",
+            "severity": "minor",
+            "predicted_ref": null,
+            "gold_ref": null,
+            "detail": {
+              "predicted": "课前甜点",
+              "gold": "1. 课前甜点"
+            }
+          }
+        ],
+        "decision": "uncertain",
+        "needs_human_review": true,
+        "overall": null,
+        "evidence_complete": true,
+        "note": "Uncalibrated diagnostics; no model/human judgement or reward claim. Source attribution, links and Markdown rendering are unassessed."
+      }
+    },
+    {
+      "id": "cross-template-blurb",
+      "html_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+      "gold_sha256": "47661979fc40801a89fe8cd20f422a288b3fe19e0f82ea96854ca1788c78c49c",
+      "execution_status": "rule_no_match",
+      "assessment": {
+        "rubrics_version": "2.0.0",
+        "method": "deterministic-reference",
+        "dimensions": {
+          "completeness": {
+            "score": 0,
+            "status": "scored",
+            "recall": 0.0,
+            "missing_tokens": 305
+          },
+          "cleanliness": {
+            "score": 0,
+            "status": "scored",
+            "precision": 0.0,
+            "clean_ratio": 0.0,
+            "extra_tokens": 0,
+            "noise_hits": {}
+          },
+          "structure": {
+            "score": null,
+            "status": "unscored",
+            "reason": "No aligned blocks; structural quality is unknown"
+          },
+          "title": {
+            "score": 0,
+            "status": "scored",
+            "exact": false
+          },
+          "format": {
+            "score": null,
+            "status": "not_applicable",
+            "reason": "No code blocks to compare"
+          }
+        },
+        "issues": [
+          {
+            "dimension": "completeness",
+            "code": "empty_candidate",
+            "severity": "critical",
+            "predicted_ref": null,
+            "gold_ref": null,
+            "detail": null
+          },
+          {
+            "dimension": "completeness",
+            "code": "unaligned_gold_block",
+            "severity": "major",
+            "predicted_ref": null,
+            "gold_ref": "g:0",
+            "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+            "gold_excerpt": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it ve"
+          },
+          {
+            "dimension": "completeness",
+            "code": "unaligned_gold_block",
+            "severity": "major",
+            "predicted_ref": null,
+            "gold_ref": "g:1",
+            "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+            "gold_excerpt": "Often, programmers fall in love with Python because of the increased productivity it provides. Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python progra"
+          },
+          {
+            "dimension": "completeness",
+            "code": "unaligned_gold_block",
+            "severity": "major",
+            "predicted_ref": null,
+            "gold_ref": "g:2",
+            "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+            "gold_excerpt": "See also some comparisons between Python and other languages."
+          },
+          {
+            "dimension": "title",
+            "code": "title_mismatch",
+            "severity": "major",
+            "predicted_ref": null,
+            "gold_ref": null,
+            "detail": {
+              "predicted": "",
+              "gold": "What is Python? Executive Summary"
+            }
+          }
+        ],
+        "decision": "fail",
+        "needs_human_review": true,
+        "overall": null,
+        "evidence_complete": true,
+        "note": "Uncalibrated diagnostics; no model/human judgement or reward claim. Source attribution, links and Markdown rendering are unassessed."
+      }
+    },
+    {
+      "id": "cross-template-iana",
+      "html_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+      "gold_sha256": "00b01640a0da207c69304ccb24d7a6a3b37ecadd31b36d81daed70967600fe3c",
+      "execution_status": "rule_no_match",
+      "assessment": {
+        "rubrics_version": "2.0.0",
+        "method": "deterministic-reference",
+        "dimensions": {
+          "completeness": {
+            "score": 0,
+            "status": "scored",
+            "recall": 0.0,
+            "missing_tokens": 127
+          },
+          "cleanliness": {
+            "score": 0,
+            "status": "scored",
+            "precision": 0.0,
+            "clean_ratio": 0.0,
+            "extra_tokens": 0,
+            "noise_hits": {}
+          },
+          "structure": {
+            "score": null,
+            "status": "unscored",
+            "reason": "No aligned blocks; structural quality is unknown"
+          },
+          "title": {
+            "score": 0,
+            "status": "scored",
+            "exact": false
+          },
+          "format": {
+            "score": null,
+            "status": "not_applicable",
+            "reason": "No code blocks to compare"
+          }
+        },
+        "issues": [
+          {
+            "dimension": "completeness",
+            "code": "empty_candidate",
+            "severity": "critical",
+            "predicted_ref": null,
+            "gold_ref": null,
+            "detail": null
+          },
+          {
+            "dimension": "completeness",
+            "code": "unaligned_gold_block",
+            "severity": "major",
+            "predicted_ref": null,
+            "gold_ref": "g:0",
+            "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+            "gold_excerpt": "A number of domains such as example.com and example.org are maintained for documentation purposes. These domains may be used as illustrative examples in documents without prior coordination with us. T"
+          },
+          {
+            "dimension": "completeness",
+            "code": "unaligned_gold_block",
+            "severity": "major",
+            "predicted_ref": null,
+            "gold_ref": "g:1",
+            "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+            "gold_excerpt": "We provide a web service on the example domain hosts to provide basic information on the purpose of the domain. These web services are provided as best effort, but are not designed to support producti"
+          },
+          {
+            "dimension": "completeness",
+            "code": "unaligned_gold_block",
+            "severity": "major",
+            "predicted_ref": null,
+            "gold_ref": "g:2",
+            "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+            "gold_excerpt": "Further Reading"
+          },
+          {
+            "dimension": "completeness",
+            "code": "unaligned_gold_block",
+            "severity": "major",
+            "predicted_ref": null,
+            "gold_ref": "g:3",
+            "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+            "gold_excerpt": "IANA-managed Reserved Domains"
+          },
+          {
+            "dimension": "completeness",
+            "code": "unaligned_gold_block",
+            "severity": "major",
+            "predicted_ref": null,
+            "gold_ref": "g:4",
+            "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+            "gold_excerpt": "Special-Use Domain Names (RFC 6761)"
+          },
+          {
+            "dimension": "completeness",
+            "code": "unaligned_gold_block",
+            "severity": "major",
+            "predicted_ref": null,
+            "gold_ref": "g:5",
+            "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+            "gold_excerpt": "Reserved Top Level DNS Names (RFC 2606)"
+          },
+          {
+            "dimension": "title",
+            "code": "title_mismatch",
+            "severity": "major",
+            "predicted_ref": null,
+            "gold_ref": null,
+            "detail": {
+              "predicted": "",
+              "gold": "Example Domains"
+            }
+          }
+        ],
+        "decision": "fail",
+        "needs_human_review": true,
+        "overall": null,
+        "evidence_complete": true,
+        "note": "Uncalibrated diagnostics; no model/human judgement or reward claim. Source attribution, links and Markdown rendering are unassessed."
+      }
+    }
+  ],
+  "new_api_calls": 0,
+  "note": "Reference-based diagnostics; not a calibrated Qwen Judge or human label."
+}

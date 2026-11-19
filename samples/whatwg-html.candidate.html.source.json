@@ -1,0 +1,9 @@
+{
+  "requested_url": "https://html.spec.whatwg.org/",
+  "fetched_at": "2026-11-13T12:08:32.400432+00:00",
+  "http_status": 200,
+  "sha256": "6dc776759735200bdc2263bf85cc9364cfd271d5542c105e3eb01e6f79e81da2",
+  "template": "living-standard",
+  "split": "pending_annotation",
+  "note": "Candidate snapshot; annotation and expected JSON pending."
+}

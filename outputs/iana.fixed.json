@@ -1,0 +1,82 @@
+{
+  "status": "ok",
+  "title": "Example Domains",
+  "paragraphs": [
+    "A number of domains such as example.com and example.org are maintained for documentation purposes. These domains may be used as illustrative examples in documents without prior coordination with us. They are not available for registration or transfer.",
+    "We provide a web service on the example domain hosts to provide basic information on the purpose of the domain. These web services are provided as best effort, but are not designed to support production applications. We strongly recommend you do not design applications that require the example domains to have operating HTTP service."
+  ],
+  "body": "A number of domains such as example.com and example.org are maintained for documentation purposes. These domains may be used as illustrative examples in documents without prior coordination with us. They are not available for registration or transfer.\n\nWe provide a web service on the example domain hosts to provide basic information on the purpose of the domain. These web services are provided as best effort, but are not designed to support production applications. We strongly recommend you do not design applications that require the example domains to have operating HTTP service.\n\n## Further Reading\n\n- IANA-managed Reserved Domains\n- Special-Use Domain Names (RFC 6761)\n- Reserved Top Level DNS Names (RFC 2606)",
+  "selected_candidate": {
+    "tag": "article",
+    "identifier": "article class=hemmed sidenav id=",
+    "xpath": "/html/body/div/article",
+    "text_length": 749,
+    "paragraph_count": 2,
+    "link_ratio": 0.1081,
+    "score": 11.49
+  },
+  "candidates": [
+    {
+      "tag": "article",
+      "identifier": "article class=hemmed sidenav id=",
+      "xpath": "/html/body/div/article",
+      "text_length": 749,
+      "paragraph_count": 2,
+      "link_ratio": 0.1081,
+      "score": 11.49
+    },
+    {
+      "tag": "main",
+      "identifier": "main class= id=",
+      "xpath": "/html/body/div/article/main",
+      "text_length": 749,
+      "paragraph_count": 2,
+      "link_ratio": 0.1081,
+      "score": 11.49
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "paragraph",
+      "text": "A number of domains such as example.com and example.org are maintained for documentation purposes. These domains may be used as illustrative examples in documents without prior coordination with us. They are not available for registration or transfer.",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "paragraph",
+      "text": "We provide a web service on the example domain hosts to provide basic information on the purpose of the domain. These web services are provided as best effort, but are not designed to support production applications. We strongly recommend you do not design applications that require the example domains to have operating HTTP service.",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "heading",
+      "text": "Further Reading",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "IANA-managed Reserved Domains",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "Special-Use Domain Names (RFC 6761)",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "Reserved Top Level DNS Names (RFC 2606)",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    }
+  ]
+}

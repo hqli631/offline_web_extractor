@@ -1,0 +1,20 @@
+{
+  "frozen_at": "2026-11-13T13:21:48.807556+00:00",
+  "source_sha256": {
+    "src/webextractor/__init__.py": "6fee382e64e4e6e2a339254c09c9de99636f063659ab6e199764e9da000103b1",
+    "src/webextractor/batch_evaluate.py": "ca2a0ee47f79c3d19d74e8aa0ae1d1f5bc1daa951c2892779cdfb3a868573811",
+    "src/webextractor/cli.py": "30051f764cbd68a4e12bb3b86b0f3611383c765b834fa333cbbf65ef30b7a0a8",
+    "src/webextractor/content_blocks.py": "37eb59e9ff8944e8a8074a8b7397fd82a3d40a59f90a0867577bc4df067d107d",
+    "src/webextractor/evaluate.py": "d2dabe702aa3f3d7ac21e35c15485dcc92f1ab1a523a1bafe51dfcde454dad6d",
+    "src/webextractor/extractor.py": "199798c098aaf4ab3fe6884ba178984b288e3d93f51e5b73336af3def14cf9f8",
+    "src/webextractor/inspect_dom.py": "2cd10b72cdee31a67db880195fa16a9cd8c026e99b71730ecab64fb338798fe6",
+    "src/webextractor/rule_reuse.py": "97a86684de000a27e231fba04631cbf3f3d959d117e1018838266f299a203419"
+  },
+  "tests": 64,
+  "development_report": "outputs/expanded_development.after_review.json",
+  "baseline_report": "outputs/baseline.development.v2.json",
+  "validation_html_sha256": "921c15fafe14485c9891ea1ad6bac7f42779fd57ed71fabd34c82b66c9664cee",
+  "validation_expected_sha256": "77b2e873fbfacba5538064dddd3ad0ea6117647fe4a6564cbed4de95bf3961a7",
+  "release_reason": "Development source freeze with documented remaining errors; evaluate course overview once, no fixes based on validation. Single page evidence only.",
+  "first_report": "outputs/webdev-learn-html.candidate.validation_first.json"
+}

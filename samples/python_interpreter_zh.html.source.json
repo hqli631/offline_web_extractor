@@ -1,0 +1,6 @@
+{
+  "requested_url": "https://docs.python.org/zh-cn/3/tutorial/interpreter.html",
+  "fetched_at": "2026-11-13T09:34:44.4303598Z",
+  "sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+  "note": "Same-template transfer snapshot. Fixed container rule only, no complete extraction gold standard."
+}

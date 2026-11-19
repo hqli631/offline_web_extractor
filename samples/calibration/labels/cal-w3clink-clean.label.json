@@ -1,0 +1,58 @@
+{
+ "label_version": 1,
+ "case_id": "cal-w3clink-clean",
+ "split": "frozen_test",
+ "template": "w3c-link-text.candidate",
+ "label_origin": "assistant_silver",
+ "human_reviewed": false,
+ "derivation": "assistant_expectation_no_gold",
+ "mutation": {
+  "type": "clean"
+ },
+ "noise_terms": [],
+ "source_sha256": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5",
+ "gold_sha256": null,
+ "candidate_sha256": "22e39cd73ad033d3ea742f69cf9aafa63b35125ddcc4f33173e9788ef1d6d05e",
+ "batch_config": {
+  "max_source_chars": 20000
+ },
+ "source_truncated": false,
+ "prompt_chars": 24481,
+ "expected": {
+  "dimensions": {
+   "completeness": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "cleanliness": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "structure": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "title": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "severity": "none"
+   }
+  },
+  "decision": "uncertain",
+  "needs_human_review": true
+ },
+ "program_reference": null,
+ "notes": [
+  "Silver label (assistant-derived), not human gold; disagreement goes to the review queue.",
+  "clean means no injected mutation; the extractor output may still differ from gold.",
+  "No gold supplied: expected scores are provisional assistant expectations; judge decision cannot be pass."
+ ]
+}

@@ -1,0 +1,9 @@
+{
+  "requested_url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/zh-hans",
+  "fetched_at": "2026-11-13T10:41:46.5011064Z",
+  "sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc",
+  "http_status": 200,
+  "note": "Initial prediction preserved. Used for rule tuning; current role is development regression, not untouched validation.",
+  "split": "development",
+  "expected_sha256": "2f856d9f6805dd186bbcc9af969d62f82d1f1fba0affeab0bee2800f8ee26fd4"
+}

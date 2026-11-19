@@ -1,0 +1,110 @@
+{
+  "status": "ok",
+  "title_exact": true,
+  "body_exact": true,
+  "blocks_exact": true,
+  "rendered_body_exact": true,
+  "evaluation_note": "body_exact compares legacy p paragraphs only; null structure metrics mean no structure annotation was supplied.",
+  "body_char_recall_rough": 1.0,
+  "body_char_precision_rough": 1.0,
+  "predicted": {
+    "status": "ok",
+    "title": "列表实验",
+    "paragraphs": [
+      "先读说明。",
+      "第一项包含重点。",
+      "最后检查输出。"
+    ],
+    "body": "先读说明。\n\n- 第一项包含重点。\n- 第二项没有 p 标签。\n\n最后检查输出。",
+    "selected_candidate": {
+      "tag": "article",
+      "identifier": "article class= id=",
+      "xpath": "/html/body/article",
+      "text_length": 39,
+      "paragraph_count": 3,
+      "link_ratio": 0.0,
+      "score": 6.39
+    },
+    "candidates": [
+      {
+        "tag": "article",
+        "identifier": "article class= id=",
+        "xpath": "/html/body/article",
+        "text_length": 39,
+        "paragraph_count": 3,
+        "link_ratio": 0.0,
+        "score": 6.39
+      }
+    ],
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "text": "先读说明。",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "第一项包含重点。",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "第二项没有 p 标签。",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "最后检查输出。",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      }
+    ]
+  },
+  "expected": {
+    "title": "列表实验",
+    "paragraphs": [
+      "先读说明。",
+      "第一项包含重点。",
+      "最后检查输出。"
+    ],
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "text": "先读说明。",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "第一项包含重点。",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "list_item",
+        "text": "第二项没有 p 标签。",
+        "list_type": "ul",
+        "depth": 0,
+        "ordinal": null
+      },
+      {
+        "kind": "paragraph",
+        "text": "最后检查输出。",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+      }
+    ],
+    "body": "先读说明。\n\n- 第一项包含重点。\n- 第二项没有 p 标签。\n\n最后检查输出。",
+    "annotation_note": "Synthetic development fixture, not a real website. paragraphs is a legacy p-only view: the direct-text second li appears only in blocks/body."
+  }
+}

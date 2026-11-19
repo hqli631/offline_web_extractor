@@ -1,0 +1,10 @@
+{
+  "requested_url": "https://www.gnu.org/philosophy/free-sw.html",
+  "fetched_at": "2026-11-13T12:06:23.533158+00:00",
+  "http_status": 200,
+  "sha256": "b050aa1bcbf73c225c0bcabd377e1015a4c602556eb6d9f13f0eb2d5ba8973d6",
+  "template": "organization-essay",
+  "split": "development",
+  "note": "Assistant independent DOM-assisted reference, not user-verified; frozen before first prediction. First report retained; no rule fixes from this page yet.",
+  "expected_sha256": "a3d2e3c0d84b06a28b1e45894cc2faa37209310728c9cf0b17bad35aeef6dbd0"
+}

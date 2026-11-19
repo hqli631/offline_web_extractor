@@ -1,0 +1,41 @@
+{
+  "judge_manifest_version": 1,
+  "cases": [
+    {
+      "case_id": "smoke-appetite-zh",
+      "template": "python-org-zh-tutorial",
+      "split": "smoke",
+      "source": "python_appetite_zh.html",
+      "candidate": "extract",
+      "gold": "python_appetite_zh.expected.json",
+      "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea"
+    },
+    {
+      "case_id": "smoke-nasa",
+      "template": "nasa-voyager-news",
+      "split": "smoke",
+      "source": "nasa-voyager-news.candidate.html",
+      "candidate": "extract",
+      "gold": "nasa-voyager-news.candidate.expected.json",
+      "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22"
+    },
+    {
+      "case_id": "smoke-w3c-zh",
+      "template": "w3c-zh-accessibility",
+      "split": "smoke",
+      "source": "w3c_accessibility_intro_zh.html",
+      "candidate": "extract",
+      "gold": "w3c_accessibility_intro_zh.expected.json",
+      "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc"
+    },
+    {
+      "case_id": "smoke-iana",
+      "template": "iana-example-domains",
+      "split": "smoke",
+      "source": "iana_example_domains.html",
+      "candidate": "extract",
+      "gold": null,
+      "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "kit_version": "1.0.0",
+  "inputs": {
+    "batch": "dbfb7466837cf28fb721fba8f5737fb3c8eb5624d79578f74a199809ac23fe24",
+    "stability": "8c4d771a0dc51e8baae90184f10f292702ef3d4c6adc3ef5e0619489d7202e89",
+    "freeze": "00158e2707054f4027548fe336744d3610a414dcadf7d92d0903e215797ef732",
+    "manifest": "a3ef652c55ef9a015f12a83b18befef9076ae352f005985fa2682823b15b5d28"
+  },
+  "n_cases": 23,
+  "files": {
+    "INDEX.md": "0292e09c0517de19db85597ef3d967b2cad7d89979a389f013cb6ba6427876d9",
+    "human_labels.blind.json": "cdd9a0aef3cb3f673596295e0f53652febf7c2a7d6e905c55e209c1518d4861a",
+    "packets/B01.md": "42adbaec412ef883b47b5e795b91a695978746b9a7465d7bc80516ff15f53847",
+    "packets/B02.md": "f18bb904c0b577926490e16e7b587a2f8bd8bb4e7086c169629b582e989074f1",
+    "packets/B03.md": "1616c40a3ae8f815684ca527b7a7449e26588011459f80836720c446f3ac79f4",
+    "packets/B04.md": "5af2b689c64822d00885ba0e953ca0afc919ba985ef4b1e3b449dbbacae062f4",
+    "packets/B05.md": "efbb9c7abccc049955505c33eff3a2c0d516705e2d78d59b85ea4e5aa063690b",
+    "packets/B06.md": "34544dadf22a0f45d36c774dcc9d797bfa888fdfee3c5cf3e365c0d6b8c1bf35",
+    "packets/B07.md": "25d0bb5be2d81850c6cf8d10a4f7cd1d39037da8b102fd955c1f33ee7ca368eb",
+    "packets/B08.md": "b456fa5124c40e65b64111657b521314b35bee6b26f5fe0d4beb313f633dd599",
+    "packets/B09.md": "68e2968db5f75e06035cf26cfaaa99059429e80c9bab2a21b852412da3cde956",
+    "packets/B10.md": "085460f1cc3aca559b21e808492bdc492fa4ddd5efa3ac9ed768ecf5ee77a178",
+    "packets/B11.md": "752be27a520c17a2e0a8857afde53017aa2352f2cb5c8fa92a80b388ff54ebd0",
+    "packets/B12.md": "f1afe08d9efcd031252390ad381085b42b9fd339982ca620247bb9012c81ad90",
+    "packets/B13.md": "8fffcfa98b069c8e080c5b6df0de2319ac23e885f388c810886c13c2250c176f",
+    "packets/B14.md": "c7a2b37b7e20d0b7394ee2c53ea0ba8c247adc34aa30d8152a980df8916da105",
+    "packets/B15.md": "c8cdc63fb0f3ba5fb587d837eed6afe9ed7997cb9b1c53560b780b94d9da99c6",
+    "packets/B16.md": "9433543ddc6b08ba2befae5d61b6caa81e8bc22a2fcea0fb5c4f828ac50a7bb5",
+    "packets/B17.md": "c865bf1bc17211c0faa4a2940ab6914435449aaa06c18b359945cf58ead59852",
+    "packets/B18.md": "e8738d212fd2fab9b5f6cefc2f26b805dcbddb256acc11cae8e221013137765f",
+    "packets/B19.md": "d1e6e2cc9c27e190257f526197f405c7c43daea870627a8d84ff74b8d3f491a5",
+    "packets/B20.md": "ea411269f8cc324e00ab8ebf6097a4ea498b2319c90d38dc3767a09033e19cf1",
+    "packets/B21.md": "873cee5206219fa0aec878090b99f99b827f9aab9d825815bf92c319e3641da7",
+    "packets/B22.md": "b70ef1a5f10ddd155d516ca84534bc340cf9d5a33d365de9d6d42111a2f5baff",
+    "packets/B23.md": "634fad2c8c76b39f0d1754de79e90ead43e4e9b25a61bf922d0fe4278eb5dcf8",
+    "sealed_mapping.json": "99c5e5ddbe2b0a8cc933e9211988b68b7b64fcb44acc74365a18a4ae269d6e8c"
+  }
+}

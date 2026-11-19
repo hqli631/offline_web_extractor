@@ -1,0 +1,45 @@
+{
+  "protocol": "Development comparison on frozen gate2 source, quote v1.2 for W3C short/GitHub; MDN list serialization mismatch retained and documented. Historical first reports remain separate. Reserved web.dev intentionally absent.",
+  "cases": [
+    {
+      "id": "mdn.candidate",
+      "split": "development",
+      "source_kind": "real",
+      "html": "mdn.candidate.html",
+      "expected": "mdn.candidate.expected.json",
+      "sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293"
+    },
+    {
+      "id": "gnu.candidate",
+      "split": "development",
+      "source_kind": "real",
+      "html": "gnu.candidate.html",
+      "expected": "gnu.candidate.expected.json",
+      "sha256": "b050aa1bcbf73c225c0bcabd377e1015a4c602556eb6d9f13f0eb2d5ba8973d6"
+    },
+    {
+      "id": "nasa-voyager-news.candidate",
+      "split": "development",
+      "source_kind": "real",
+      "html": "nasa-voyager-news.candidate.html",
+      "expected": "nasa-voyager-news.candidate.expected.json",
+      "sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22"
+    },
+    {
+      "id": "github-copilot-blog.candidate",
+      "split": "development",
+      "source_kind": "real",
+      "html": "github-copilot-blog.candidate.html",
+      "expected": "github-copilot-blog.candidate.expected.json",
+      "sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c"
+    },
+    {
+      "id": "w3c-link-text.candidate",
+      "split": "development",
+      "source_kind": "real",
+      "html": "w3c-link-text.candidate.html",
+      "expected": "w3c-link-text.candidate.expected.v2.json",
+      "sha256": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5"
+    }
+  ]
+}

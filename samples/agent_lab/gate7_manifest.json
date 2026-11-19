@@ -1,0 +1,12 @@
+{
+  "protocol": "Synthetic Gate 7 split: reference is the only Agent input; tests are loaded by the evaluator after generation. No validation claim.",
+  "references": [
+    {"id": "reference", "html": "../drift_lab/reference.html", "sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428", "split": "reference"}
+  ],
+  "tests": [
+    {"id": "class-drift", "html": "../drift_lab/class-drift.html", "sha256": "ef76358f0a4ac9bb4c5999df8a09df191e6882f41236af760b590ad17a89b76f", "expected": "../drift_lab/class-drift.expected.json", "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc", "expected_status": "ok", "split": "test"},
+    {"id": "role-drift", "html": "../drift_lab/role-drift.html", "sha256": "e2f7ffd72f087a12361e7ecba2c8293c86433070ddbe6b0b951e55558aac1269", "expected": "../drift_lab/role-drift.expected.json", "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc", "expected_status": "rule_no_match", "split": "test"},
+    {"id": "duplicate-main", "html": "../drift_lab/duplicate-main.html", "sha256": "661b8dd40eeaafc65a9b29582e5f6790b07a8bb6580e2e2401a3741d314476e6", "expected": "../drift_lab/duplicate-main.expected.json", "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc", "expected_status": "rule_ambiguous", "split": "test"},
+    {"id": "content-moved", "html": "../drift_lab/content-moved.html", "sha256": "8e60aa8f73b032b204d731f7d4e959f6d2383fd2656190af03c1217bbdbfdcda", "expected": "../drift_lab/content-moved.expected.json", "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc", "expected_status": "ok", "split": "test"}
+  ]
+}

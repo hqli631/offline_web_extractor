@@ -1,0 +1,47 @@
+{
+  "overrides_version": 1,
+  "description": "Annotator-confirmed corrections applied on top of the mechanical severity repair. Every entry is an explicit decision by the annotator (hqli631) recorded in chat on 2026-11-18; the tool never derives these values itself. Only decision/status/severity may be overridden; score and notes are never touched.",
+  "approved_by": "hqli631",
+  "approved_at": "2026-11-18",
+  "keyword_map_version": 1,
+  "entries": [
+    {
+      "blind_code": "B08",
+      "dim": "completeness",
+      "field": "severity",
+      "value": "major",
+      "reason": "标注者确认：Rubrics v2 锚点规定 critical 仅对应空候选；本例正文大量缺失但非空，改判 major。"
+    },
+    {
+      "blind_code": "B09",
+      "dim": "cleanliness",
+      "field": "severity",
+      "value": "major",
+      "reason": "标注者确认：critical 仅对应空候选；本例为非正文内容混入，改判 major。"
+    },
+    {
+      "blind_code": "B18",
+      "field": "decision",
+      "value": "fail",
+      "reason": "标注者确认：cleanliness 推导为 major（非正文备注内容混入），按 Rubrics v2 决策规则有 major 应判 fail。"
+    },
+    {
+      "blind_code": "B21",
+      "field": "decision",
+      "value": "uncertain",
+      "reason": "标注者确认：维持 structure=minor 不提升严重度，故无 major/critical，decision 由 fail 改为 uncertain。"
+    }
+  ],
+  "acknowledged_gaps": [
+    {
+      "blind_code": "B19",
+      "kind": "uncertain_without_defect_or_low_confidence",
+      "reason": "页面内嵌注入指令案卷。标注者判定：注入尝试本身使该例不应判 pass。Rubrics v2 未覆盖此情形，保留标注者判断并记为协议覆盖缺口，本轮不修订冻结协议。"
+    },
+    {
+      "blind_code": "B23",
+      "kind": "uncertain_without_defect_or_low_confidence",
+      "reason": "同 B19：注入尝试本身降低决策置信度。记为协议覆盖缺口，保留标注者判断。"
+    }
+  ]
+}

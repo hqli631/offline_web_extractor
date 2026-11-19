@@ -1,0 +1,50 @@
+# 项目三：网页正文提取与 Rubrics 自动评估
+
+更新日期：2026-11-18。按用户指定，当前工程记为“项目三”，目录保持 offline_web_extractor。
+
+当前为正文提取与规则生成 MVP：结构化提取、受限 XPath Agent、GPT/Qwen API、隔离评测、确定性 Rubrics 均有实现。最新全量129项测试通过。Qwen3.8-27b真实调用已验证：一个同模板开发测试页16块文本与结构匹配，章节编号被排除导致标题不全匹配；两个跨模板测试零匹配。只代表小样本开发结果。
+
+Rubrics目标为：输入原始网页证据、候选提取结果及评分标准，输出可审计的分项分数、证据、错误位置和人工复核建议；结合程序指标完成批量评估。当前rubrics.py仍是依赖gold的确定性诊断，尚无真实LLM Critic、人类一致性校准或质量驱动Agent修复。
+
+## 后续顺序（待实施，不表示已完成）
+
+1. 冻结评分协议：完整性、纯净度、结构、标题/来源忠实性，定义0—4分锚点、关键错误与无法判断状态；修正现有协议与代码差异（结构签名实际含文本和source_id），分开文本对齐与结构属性评分。
+2. 实现Qwen Judge：程序检测加模型语义判断，输出严格JSON和可校验block/DOM证据；完整内容未覆盖时标记部分评估，不能将缺失证据当作正确。保留有gold对照和无gold辅助判断两种模式。
+3. 建校准集与冻结测试：多个模板和真实/受控错误，包含漏段、混噪、重复、乱序、标题编号、代码缩进及网页指令干扰。先做小规模20—30例的人工审阅试点，按源页面/模板拆分，避免同页变体跨split泄漏；该规模是建议，非已完成。
+4. 验证与批处理：报告逐维人机误差、严重错误漏检、正常结果误报、重复评分稳定性、失败率、耗时和token成本；阈值先在校准组确定，冻结后在test验收。支持缓存、版本和哈希、断点续跑及待复核清单。
+5. 可选质量修复闭环：只使用reference或专门修复开发集上的Critic反馈，限定修复次数，并与无修复对照；test/gold不得回传。未验证Judge可靠性前，不将其分数作为训练奖励。
+
+Rubrics小项目的交付条件为评分协议、真实Qwen Judge、批量结果、人工校准/冻结test报告和可查看的错误证据。多Agent、SFT/LoRA及工业RL属于此后的可选扩展，不是Rubrics交付前置条件。
+
+## 当前改进节点（2026-11-17）
+
+目标模式已开启。节点1：Rubrics v2协议冻结并复验（哈希MATCH）。节点2：Qwen Judge已实现并通过工程验收——严格schema与证据校验、gold/source_only分离、缓存/断点/预算工具、真实冒烟4/4接受（累计11次调用/234,105 tokens），全量166项测试通过；详见RUBRICS_CHECKPOINTS.md。Judge未经校准，分数不作为训练奖励。节点3校准集已构建并冻结验证MATCH：23例（dev12/frozen_test11）、6基础页按split隔离、7类受控错误全覆盖、silver标签（assistant_silver，非人类gold）；rfc因候选超提示词预算排除，T6改为w3c-link-text（source_only）。全量177项测试通过。节点4批量/稳定性评测已完成：最终batch v6 23例16接受/7拒绝（拒绝全部为fail-closed模型不合规），overall决策一致0.8125（dev 0.900 / frozen_test 0.6667），severe_miss 3例（judge严重度偏宽）、误报0，稳定性5/6完全一致，注入干扰mdn例未服从；全量187项测试通过，冻结v2 verify MATCH。可复现报告见docs/RUBRICS_JUDGE_REPORT.md（含完整预算台账：累计65次调用、已计量776,210 tokens、12次usage未知）。按用户指令节点5修复闭环未进入，本轮goal已停止。人工独立审阅仍未完成，不能以助手标签替代；Judge分数仍不作为训练奖励。
+
+## P0 人工校准启动（2026-11-17）
+
+节点4交付后按推进计划（docs/HUMAN_CALIBRATION_PLAN.md）启动P0：盲评工具包outputs/human_review/blind.v2（23份中性编号案卷+标签模板+密封映射）与两阶段接收器tools/ingest_human_labels.py已建成，定向21项+全量208项测试通过，零模型调用。blind.v1因案例名泄漏变异类型废弃。当前等待用户独立盲评与裁决；human gold产生前，judge可信度结论仍不成立，judge分数仍不作训练奖励。P1元评估、P2扩规模、P3训练集成按门槛顺序排队，均需用户批准后推进。
+
+
+## P0 第一轮回收与机械修复（2026-11-18）
+
+用户已独立完成 23/23 盲评。ingest 校验 fail-closed 拒绝：58 个维度把 status 值 partial 误填进 severity 列，故本轮未产生 human gold，judge–human 一致率仍不存在。修复过程同时暴露并修好一处盲评泄漏：原校验报错串使用真实 case_id，首次运行使 15 个案例名在控制台可见；已改为 blind 阶段一律以盲码渲染（code_map），复验 0 泄漏。该偏差记为 D1，将在最终报告中如实披露——标签在泄漏前已填写完毕，无回填通道，但标注者已知晓 B07–B21 的案例名，裁决须以其本人 note 证据为准。新增 tools/repair_human_labels.py 与 configs/severity_keyword_map.v1.json，只从标注者本人 note 文本按冻结严重度锚点推导 severity，不读 judge/silver/密封映射，不改 score/decision/note，已合法值一律不动，原文件不覆盖并留 sha256 审计。dry-run：修复 58 条、保留 57 条、提示 17 条、一致性待确认 2 条（B18/B21）+ critical 锚点待确认 2 条（B08/B09）。新增 42 项定向测试，全量 250 项通过。等待标注者确认关键词映射与 4 项待确认点后 --apply 并重跑 ingest blind；仍为零模型调用，P1 需用户批准调用预算，节点5 未进入。
+
+
+## P0 第一轮结果（2026-11-18）
+
+标注者确认的 4 项修改与 2 项缺口保留已落盘为 configs/human_label_overrides.v1.json，由 tools/repair_human_labels.py v2.1.0 以两段式（机械修复 + 标注者确认覆盖）应用到 human_labels.blind.r2.json，原盲评文件未改动，全程只读标签与两份配置、不读 judge/silver/密封映射，输出无真实 case 名。全量 285 项测试通过。首次真实 judge–human 一致性：全量 16 接受例决策一致率 0.75、Cohen κ=0.5077、逐维 exact 0.75 / ±1 0.9688、严重度符号 0.8125；development κ=0.8246（10 接受例）、frozen_test κ=-0.2857（仅 6 接受例，统计上不可解释，仅描述性且不得据此调参）。severe_miss 2 例（judge 对代码缩进与"干净"案卷偏宽）、false_alarm 2 例（偏严）；fail-closed 拒绝率 30.4%（frozen_test 45%）是可比样本不足的主因。此前对外出现的 0.8125 属 judge 对 silver 的一致率，不能当准确率使用。已生成 17 份裁决案卷与预填 final 模板，等待标注者裁决；P0 全程零模型调用，judge 分数仍不作为训练奖励，节点5 未进入。
+
+
+## P0 最终裁决与交付（2026-11-18）
+
+标注者以聊天回复完成全部 23 例裁决（18 keep / 5 revise：B04/B09/B12/B13/B18；B19/B23 injection_complied=false；B18 decision 经第二条回复澄清为 uncertain——降分后无 major/critical，按冻结决策规则⇒uncertain）。逐字规格 configs/adjudication_decisions.v1.json；tools/apply_adjudication.py v1.0.0 落盘 → outputs/human_review/final.prep.v1/（sha256 审计 + 字段级差异，post-apply 一致性扫描干净、仅 B19 豁免）；ingest --stage final → outputs/human_review/final.v1/。最终（裁决后）一致性：决策 0.9375 / κ 0.872（dev 1.0/1.0；frozen_test 0.8333/0.0，仅 6 接受例、只作描述），逐维 exact 0.8281 / ±1 0.9688，严重度符号 0.8281，severe_miss 0，false_alarm 1（cal-mdn-instruction_interference）；独立锚点仍是第一轮盲评 0.75/κ0.5077，两轮必须并列呈现。指标变化全部来自人类侧裁决修订，judge 零模型调用、零变化；severe_miss 清零是标注者复核证据后下调 B13/B18，judge 偏宽倾向（代码缩进/格式类）与 30.4% fail-closed 拒绝率仍是 P1 目标。16 条持续分歧留痕（7 judge_error + 9 维度级，structure 最集中），不自动调参。验证：全量回归 306 项 OK（outputs/rubrics_judge.p0.final.tests.v2.log，19.873s）、check_freeze NONE。偏差 D0/D1/D2 与 B19 协议覆盖缺口如实披露，不做事后清洗。可复现交付报告：docs/P0_DELIVERY_REPORT.md。**P0 已交付并停止**；P1 元评估 / P2 扩规模 / P3 reward 化 / 节点5 修复闭环均需用户明确批准（P1 起须先批调用预算）；judge 分数仍不作训练奖励。
+
+
+## P1 工程就绪（2026-11-18，零调用，待预算批准）
+
+P0 交付后启动 P1 judge 元评估。预注册方案 docs/P1_META_EVAL_PLAN.md（含 R1 修订）已在调用前固定。工程实现完成并验证：judge v1.1.0（证据菜单 + 引文空白折叠匹配 + 探针扰动参数，仅改 rubrics_judge.py，幻觉防护不放松）；运行器 --split dev-only 过滤 + probe 透传；新工具 amend_freeze_v3 / run_p1_probes / score_p1_results。freeze v3 修正完成（代码仅 rubrics_judge.py 变更，23 silver 标签仅刷新 prompt_chars 诊断且证明评分内容逐字段不变，候选/gold/manifest/协议文档/rubrics_v2/构建器/batch_config 不变），build_calibration_set --verify v3 = MATCH，check_freeze 历史 batch v6 对 v3 = NONE。离线归因（零调用）证明空白折叠修复 blurb 模式2 拒绝；6 例模式1 需菜单 prompt 变更待 dev 重评验证。定向 45 项 + 全量回归 351 项测试 OK（outputs/rubrics_judge.p1.engineering.tests.v2.log）；验收评分管线 score_p1_results.main() 已端到端验证。**当前等待用户批准模型调用预算**（基础 41 次、上限 ≤53 次，~615k–800k tokens）；批准后执行 dev 重评 / 第二模型 cross-judge / 偏差探针 / 稳定性，验收 dev 拒绝率 <10% 且 severe_miss ≤1。frozen_test 全程不重跑、不调参、永久封存至 P2；judge 分数仍不作训练奖励。
+
+
+## P1 实验结果（2026-11-18，有条件达标，F2 待用户决策）
+
+用户批准 41 次预算后执行 P1 实验（密钥 401 阻塞经用户更新 env.local 解除）。实际成功调用 40 次（≤41），tokens 541,303；第二模型 qwen-plus（qwen-max 403 不可用）。W1 dev 验收：拒绝率 8.3%<10% ✓、severe_miss 1≤1 ✓（目标硬指标达标），但接受例决策分歧 3>护栏 1 ✗，dev 决策一致率从 P0 最终 1.0/κ1.0 回归到 0.7273/κ0.5286（false_alarm 2）→ 预注册 verdict REJECT（护栏破）。拒绝率修复有效（16.7%→8.3%）但菜单/折叠扰动使部分接受例评分漂移。W2 cross-judge qwen-plus 拒绝 50%、双接受 6 例一致 0.8333/κ0.6667（模型特异性偏差显著）；W3 位置扰动翻转 1/6、中性改写 2 拒绝；W4 temp0 复跑稳定。freeze NONE。交付 docs/P1_DELIVERY_REPORT.md。**F2 决策点待用户**：(a) 接受 v1.1 带告警 / (b) 回滚 v1.0（拒绝率反不达）/ (c) P1.5 迭代恢复一致率（需新预算）；助手建议 c>a>b。frozen_test 全程未重跑未调参、永久封存至 P2；judge 分数仍不作训练奖励。

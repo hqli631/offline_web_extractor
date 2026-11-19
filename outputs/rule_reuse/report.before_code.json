@@ -1,0 +1,401 @@
+{
+  "rule": {
+    "id": "sphinx-main-v1",
+    "container_xpath": "//div[@role='main']",
+    "frozen_from": "appetite-reference",
+    "note": "Fixed from the previously inspected reference snapshot; not adjusted to interpreter-transfer."
+  },
+  "rule_sha256": "2befe90e5d3f3fe904ca8135d0e7dba26f511230eb6e53c864a7ceee11f52446",
+  "pages": [
+    {
+      "id": "appetite-reference",
+      "role": "reference",
+      "match_count": 1,
+      "extraction": {
+        "status": "ok",
+        "title": "1. 课前甜点",
+        "paragraphs": [
+          "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。比如，对大量文本文件执行查找、替换操作；利用复杂的规则重命名、重排序一堆照片文件；也可能您想编写一个小型数据库、或开发专用的图形界面应用，甚至是开发一个简单的游戏。",
+          "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库，但编码、编译、测试、再编译这些开发流程太慢了；也许您正在给这些库开发测试套件，但总觉得这项工作真是枯燥乏味。又或许，您开发了个使用扩展语言的软件，却不想为这个软件专门设计一种新语言。",
+          "那么，Python 正好能满足您的需要。",
+          "你可以针对这些任务编写 Unix shell 脚本或 Windows 批处理文件，但 shell 脚本擅长的是移动文件和改变文本数据，而不适合编写 GUI 应用或游戏。 你可以编写 C/C++/Java 程序，但即使只完成一个初始版程序也需要耗费很长的开发时间。 Python 则更为简单易用，同时支持 Windows, macOS 和 Unix 操作系统，并能帮助你更快速地完成工作。",
+          "Python 虽然简单易用，但它可是真正的编程语言，提供了大量的数据结构，也支持开发大型程序，远超 shell 脚本或批处理文件；Python 提供的错误检查比 C 还多；作为一种“非常高级的语言”，它内置了灵活的数组与字典等高级数据类型。正因为配备了更通用的数据类型，Python 比 Awk，甚至 Perl 能解决更多问题，而且，很多时候，Python 比这些语言更简单。",
+          "Python 支持把程序分割为模块，以便在其他 Python 程序中复用。它还内置了大量标准模块，作为开发程序的基础 —— 您还可以把这些模块当作学习 Python 编程的实例。这些模块包括 I/O、系统调用、套接字，甚至还包括 Tk 图形用户界面工作套件。",
+          "Python 是一种解释型语言，不需要编译和链接，可以节省大量开发时间。它的解释器实现了交互式操作，轻而易举地就能试用各种语言功能，编写临时程序，或在自底向上的程序开发中测试功能。同时，它还是一个超好用的计算器。",
+          "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下：",
+          "高级数据类型允许在单一语句中表述复杂操作；",
+          "使用缩进，而不是括号实现代码块分组；",
+          "无需预声明变量或参数。",
+          "Python “可以扩展”：会开发 C 语言程序，就能快速上手为解释器增加新的内置函数或模块，不论是让核心程序以最高速度运行，还是把 Python 程序链接到只提供预编译程序的库（比如，硬件图形库）。只要下点功夫，就能把 Python 解释器和用 C 开发的应用链接在一起，用它来扩展和控制该应用。",
+          "顺便提一句，本语言的命名源自 BBC 的 “Monty Python 飞行马戏团”，与爬行动物无关（Python 原义为“蟒蛇”）。欢迎大家在文档中引用 Monty Python 小品短篇集，多多益善！",
+          "现在，您已经对 Python 跃跃欲试，想深入了解一些细节了吧。要知道，学习语言的最佳方式是上手实践，建议您边阅读本教程，边在 Python 解释器中练习。",
+          "下一章介绍解释器的用法。这部分内容有些单调乏味，但对上手实践后面的例子来说却至关重要。",
+          "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能，开始只是简单的表达式、语句和数据类型，然后是函数、模块，最后，介绍一些高级概念，如，异常、用户定义的类等功能。"
+        ],
+        "body": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。比如，对大量文本文件执行查找、替换操作；利用复杂的规则重命名、重排序一堆照片文件；也可能您想编写一个小型数据库、或开发专用的图形界面应用，甚至是开发一个简单的游戏。\n\n作为一名专业软件开发人员，您可能要处理 C/C++/Java 库，但编码、编译、测试、再编译这些开发流程太慢了；也许您正在给这些库开发测试套件，但总觉得这项工作真是枯燥乏味。又或许，您开发了个使用扩展语言的软件，却不想为这个软件专门设计一种新语言。\n\n那么，Python 正好能满足您的需要。\n\n你可以针对这些任务编写 Unix shell 脚本或 Windows 批处理文件，但 shell 脚本擅长的是移动文件和改变文本数据，而不适合编写 GUI 应用或游戏。 你可以编写 C/C++/Java 程序，但即使只完成一个初始版程序也需要耗费很长的开发时间。 Python 则更为简单易用，同时支持 Windows, macOS 和 Unix 操作系统，并能帮助你更快速地完成工作。\n\nPython 虽然简单易用，但它可是真正的编程语言，提供了大量的数据结构，也支持开发大型程序，远超 shell 脚本或批处理文件；Python 提供的错误检查比 C 还多；作为一种“非常高级的语言”，它内置了灵活的数组与字典等高级数据类型。正因为配备了更通用的数据类型，Python 比 Awk，甚至 Perl 能解决更多问题，而且，很多时候，Python 比这些语言更简单。\n\nPython 支持把程序分割为模块，以便在其他 Python 程序中复用。它还内置了大量标准模块，作为开发程序的基础 —— 您还可以把这些模块当作学习 Python 编程的实例。这些模块包括 I/O、系统调用、套接字，甚至还包括 Tk 图形用户界面工作套件。\n\nPython 是一种解释型语言，不需要编译和链接，可以节省大量开发时间。它的解释器实现了交互式操作，轻而易举地就能试用各种语言功能，编写临时程序，或在自底向上的程序开发中测试功能。同时，它还是一个超好用的计算器。\n\nPython 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下：\n\n- 高级数据类型允许在单一语句中表述复杂操作；\n- 使用缩进，而不是括号实现代码块分组；\n- 无需预声明变量或参数。\n\nPython “可以扩展”：会开发 C 语言程序，就能快速上手为解释器增加新的内置函数或模块，不论是让核心程序以最高速度运行，还是把 Python 程序链接到只提供预编译程序的库（比如，硬件图形库）。只要下点功夫，就能把 Python 解释器和用 C 开发的应用链接在一起，用它来扩展和控制该应用。\n\n顺便提一句，本语言的命名源自 BBC 的 “Monty Python 飞行马戏团”，与爬行动物无关（Python 原义为“蟒蛇”）。欢迎大家在文档中引用 Monty Python 小品短篇集，多多益善！\n\n现在，您已经对 Python 跃跃欲试，想深入了解一些细节了吧。要知道，学习语言的最佳方式是上手实践，建议您边阅读本教程，边在 Python 解释器中练习。\n\n下一章介绍解释器的用法。这部分内容有些单调乏味，但对上手实践后面的例子来说却至关重要。\n\n本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能，开始只是简单的表达式、语句和数据类型，然后是函数、模块，最后，介绍一些高级概念，如，异常、用户定义的类等功能。",
+        "selected_candidate": {
+          "tag": "div",
+          "identifier": "div class=body id=",
+          "xpath": "/html/body/div[3]/div[1]/div/div",
+          "text_length": 1460,
+          "paragraph_count": 16,
+          "link_ratio": 0.0007,
+          "score": 34.6
+        },
+        "candidates": [
+          {
+            "tag": "div",
+            "identifier": "div class=body id=",
+            "xpath": "/html/body/div[3]/div[1]/div/div",
+            "text_length": 1460,
+            "paragraph_count": 16,
+            "link_ratio": 0.0007,
+            "score": 34.6
+          }
+        ],
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "text": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。比如，对大量文本文件执行查找、替换操作；利用复杂的规则重命名、重排序一堆照片文件；也可能您想编写一个小型数据库、或开发专用的图形界面应用，甚至是开发一个简单的游戏。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库，但编码、编译、测试、再编译这些开发流程太慢了；也许您正在给这些库开发测试套件，但总觉得这项工作真是枯燥乏味。又或许，您开发了个使用扩展语言的软件，却不想为这个软件专门设计一种新语言。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "那么，Python 正好能满足您的需要。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "你可以针对这些任务编写 Unix shell 脚本或 Windows 批处理文件，但 shell 脚本擅长的是移动文件和改变文本数据，而不适合编写 GUI 应用或游戏。 你可以编写 C/C++/Java 程序，但即使只完成一个初始版程序也需要耗费很长的开发时间。 Python 则更为简单易用，同时支持 Windows, macOS 和 Unix 操作系统，并能帮助你更快速地完成工作。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "Python 虽然简单易用，但它可是真正的编程语言，提供了大量的数据结构，也支持开发大型程序，远超 shell 脚本或批处理文件；Python 提供的错误检查比 C 还多；作为一种“非常高级的语言”，它内置了灵活的数组与字典等高级数据类型。正因为配备了更通用的数据类型，Python 比 Awk，甚至 Perl 能解决更多问题，而且，很多时候，Python 比这些语言更简单。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "Python 支持把程序分割为模块，以便在其他 Python 程序中复用。它还内置了大量标准模块，作为开发程序的基础 —— 您还可以把这些模块当作学习 Python 编程的实例。这些模块包括 I/O、系统调用、套接字，甚至还包括 Tk 图形用户界面工作套件。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "Python 是一种解释型语言，不需要编译和链接，可以节省大量开发时间。它的解释器实现了交互式操作，轻而易举地就能试用各种语言功能，编写临时程序，或在自底向上的程序开发中测试功能。同时，它还是一个超好用的计算器。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下：",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "list_item",
+            "text": "高级数据类型允许在单一语句中表述复杂操作；",
+            "list_type": "ul",
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "list_item",
+            "text": "使用缩进，而不是括号实现代码块分组；",
+            "list_type": "ul",
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "list_item",
+            "text": "无需预声明变量或参数。",
+            "list_type": "ul",
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "Python “可以扩展”：会开发 C 语言程序，就能快速上手为解释器增加新的内置函数或模块，不论是让核心程序以最高速度运行，还是把 Python 程序链接到只提供预编译程序的库（比如，硬件图形库）。只要下点功夫，就能把 Python 解释器和用 C 开发的应用链接在一起，用它来扩展和控制该应用。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "顺便提一句，本语言的命名源自 BBC 的 “Monty Python 飞行马戏团”，与爬行动物无关（Python 原义为“蟒蛇”）。欢迎大家在文档中引用 Monty Python 小品短篇集，多多益善！",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "现在，您已经对 Python 跃跃欲试，想深入了解一些细节了吧。要知道，学习语言的最佳方式是上手实践，建议您边阅读本教程，边在 Python 解释器中练习。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "下一章介绍解释器的用法。这部分内容有些单调乏味，但对上手实践后面的例子来说却至关重要。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能，开始只是简单的表达式、语句和数据类型，然后是函数、模块，最后，介绍一些高级概念，如，异常、用户定义的类等功能。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          }
+        ]
+      },
+      "error": null,
+      "coverage_notes": {
+        "raw_unsupported_element_counts": {},
+        "raw_aside_count": 0,
+        "note": "Raw counts identify review targets, not missing-block scores. Current remove_noise drops aside including possible footnotes; inline code formatting is flattened. No complete gold annotation is supplied for this experiment."
+      },
+      "snapshot_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+      "status": "ok"
+    },
+    {
+      "id": "interpreter-transfer",
+      "role": "transfer",
+      "match_count": 1,
+      "extraction": {
+        "status": "ok",
+        "title": "2. 使用 Python 的解释器",
+        "paragraphs": [
+          "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它：",
+          "这样，就可以在 shell 中运行 Python 了 [1] 。因为可以选择安装目录，解释器也有可能安装在别的位置；如果还不明白，就去问问身边的 Python 大神或系统管理员。（例如，常见备选路径还有 /usr/local/python。）",
+          "在 Windows 机器上当你从 Microsoft Store 安装 Python 之后，python3.15 命令将可使用。 如果你安装了 py.exe 启动器，你将可以使用 py 命令。 请参阅 Python 安装管理器 了解其他启动 Python 的方式。",
+          "在主提示符中，输入文件结束符 (Unix 里是 Control-D，Windows 里是 Control-Z)，就会退出解释器，退出状态码为 0。 如果不能退出，还可以输入这个命令: quit()。",
+          "在大多数系统上解释器的行编辑特性包括交互式编辑、历史替换和代码补全等。 检测命令行编辑是否受支持的最快速的方式是在 Python 提示符下键入一个单词，然后按左方向键 (或 Control-b)。 如果光标移动了，说明你可进行命令行编辑；请参阅附录 交互式编辑和编辑历史 了解相关功能键的介绍。 如果没有任何反应，或者显示 ^[[D 或 ^B 之类的字符序列，则说明命令行编辑不可用；你只能使用退格键删除当前行的字符。",
+          "解释器的操作方式类似 Unix Shell：用与 tty 设备关联的标准输入调用时，可以交互式地读取和执行命令；以文件名参数，或标准输入文件调用时，则读取并执行文件中的 脚本。",
+          "另一种启动解释器的方式是 python -c command [arg] ...，这将执行 command 中的语句，相当于 shell 的 -c 选项。 由于 Python 语句经常包含空格或其他会被 shell 特殊对待的字符，通常建议用引号将整个 command 括起来。",
+          "Python 模块也可以当作脚本使用。输入：python -m module [arg] ...，会执行 module 的源文件，这跟在命令行把路径写全了一样。",
+          "在交互模式下运行脚本文件，只要在脚本名称参数前，加上选项 -i 就可以了。",
+          "命令行的所有选项详见 命令行与环境。",
+          "解释器读取命令行参数，把脚本名与其他参数转化为字符串列表存到 sys 模块的 argv 变量里。执行 import sys，可以导入这个模块，并访问该列表。该列表最少有一个元素；未给定输入参数时，sys.argv[0] 是空字符串。给定脚本名是 '-' （标准输入）时，sys.argv[0] 是 '-'。使用 -c command 时，sys.argv[0] 是 '-c'。如果使用选项 -m module，sys.argv[0] 就是包含目录的模块全名。解释器不处理 -c command 或 -m module 之后的选项，而是直接留在 sys.argv 中由命令或模块来处理。",
+          "在终端输入并执行指令时，解释器在 交互模式 中运行。在这种模式中，会显示 主提示符，提示输入下一条指令，主提示符通常用三个大于号 (>>>) 表示；输入连续行时，显示 次要提示符，默认是三个点 (...)。 进入解释器时，首先显示欢迎信息、版本信息、版权声明，然后才是提示符：",
+          "输入多行结构的语句时，要用连续行。以 if 为例：",
+          "交互模式的内容详见 交互模式。",
+          "默认情况下，Python 源码文件的编码是 UTF-8。这种编码支持世界上大多数语言的字符，可以用于字符串字面值、变量、函数名及注释 —— 尽管标准库只用常规的 ASCII 字符作为变量名或函数名，可移植代码都应遵守此约定。要正确显示这些字符，编辑器必须能识别 UTF-8 编码，而且必须使用支持文件中所有字符的字体。",
+          "如果不使用默认编码，则要声明文件的编码，文件的 第一 行要写成特殊注释。句法如下：",
+          "其中，encoding 可以是 Python 支持的任意一种 codecs。",
+          "比如，声明使用 Windows-1252 编码，源码文件要写成：",
+          "第一行 的规则也有一种例外情况，源码以 UNIX \"shebang\" 行 开头。此时，编码声明要写在文件的第二行。例如：",
+          "备注"
+        ],
+        "body": "## 2.1. 唤出解释器\n\n在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它：\n\n这样，就可以在 shell 中运行 Python 了 [1] 。因为可以选择安装目录，解释器也有可能安装在别的位置；如果还不明白，就去问问身边的 Python 大神或系统管理员。（例如，常见备选路径还有 /usr/local/python。）\n\n在 Windows 机器上当你从 Microsoft Store 安装 Python 之后，python3.15 命令将可使用。 如果你安装了 py.exe 启动器，你将可以使用 py 命令。 请参阅 Python 安装管理器 了解其他启动 Python 的方式。\n\n在主提示符中，输入文件结束符 (Unix 里是 Control-D，Windows 里是 Control-Z)，就会退出解释器，退出状态码为 0。 如果不能退出，还可以输入这个命令: quit()。\n\n在大多数系统上解释器的行编辑特性包括交互式编辑、历史替换和代码补全等。 检测命令行编辑是否受支持的最快速的方式是在 Python 提示符下键入一个单词，然后按左方向键 (或 Control-b)。 如果光标移动了，说明你可进行命令行编辑；请参阅附录 交互式编辑和编辑历史 了解相关功能键的介绍。 如果没有任何反应，或者显示 ^[[D 或 ^B 之类的字符序列，则说明命令行编辑不可用；你只能使用退格键删除当前行的字符。\n\n解释器的操作方式类似 Unix Shell：用与 tty 设备关联的标准输入调用时，可以交互式地读取和执行命令；以文件名参数，或标准输入文件调用时，则读取并执行文件中的 脚本。\n\n另一种启动解释器的方式是 python -c command [arg] ...，这将执行 command 中的语句，相当于 shell 的 -c 选项。 由于 Python 语句经常包含空格或其他会被 shell 特殊对待的字符，通常建议用引号将整个 command 括起来。\n\nPython 模块也可以当作脚本使用。输入：python -m module [arg] ...，会执行 module 的源文件，这跟在命令行把路径写全了一样。\n\n在交互模式下运行脚本文件，只要在脚本名称参数前，加上选项 -i 就可以了。\n\n命令行的所有选项详见 命令行与环境。\n\n解释器读取命令行参数，把脚本名与其他参数转化为字符串列表存到 sys 模块的 argv 变量里。执行 import sys，可以导入这个模块，并访问该列表。该列表最少有一个元素；未给定输入参数时，sys.argv[0] 是空字符串。给定脚本名是 '-' （标准输入）时，sys.argv[0] 是 '-'。使用 -c command 时，sys.argv[0] 是 '-c'。如果使用选项 -m module，sys.argv[0] 就是包含目录的模块全名。解释器不处理 -c command 或 -m module 之后的选项，而是直接留在 sys.argv 中由命令或模块来处理。\n\n在终端输入并执行指令时，解释器在 交互模式 中运行。在这种模式中，会显示 主提示符，提示输入下一条指令，主提示符通常用三个大于号 (>>>) 表示；输入连续行时，显示 次要提示符，默认是三个点 (...)。 进入解释器时，首先显示欢迎信息、版本信息、版权声明，然后才是提示符：\n\n输入多行结构的语句时，要用连续行。以 if 为例：\n\n交互模式的内容详见 交互模式。\n\n## 2.2. 解释器的运行环境\n\n默认情况下，Python 源码文件的编码是 UTF-8。这种编码支持世界上大多数语言的字符，可以用于字符串字面值、变量、函数名及注释 —— 尽管标准库只用常规的 ASCII 字符作为变量名或函数名，可移植代码都应遵守此约定。要正确显示这些字符，编辑器必须能识别 UTF-8 编码，而且必须使用支持文件中所有字符的字体。\n\n如果不使用默认编码，则要声明文件的编码，文件的 第一 行要写成特殊注释。句法如下：\n\n其中，encoding 可以是 Python 支持的任意一种 codecs。\n\n比如，声明使用 Windows-1252 编码，源码文件要写成：\n\n第一行 的规则也有一种例外情况，源码以 UNIX \"shebang\" 行 开头。此时，编码声明要写在文件的第二行。例如：\n\n备注",
+        "selected_candidate": {
+          "tag": "div",
+          "identifier": "div class=body id=",
+          "xpath": "/html/body/div[3]/div[1]/div/div",
+          "text_length": 2330,
+          "paragraph_count": 20,
+          "link_ratio": 0.0421,
+          "score": 43.3
+        },
+        "candidates": [
+          {
+            "tag": "div",
+            "identifier": "div class=body id=",
+            "xpath": "/html/body/div[3]/div[1]/div/div",
+            "text_length": 2330,
+            "paragraph_count": 20,
+            "link_ratio": 0.0421,
+            "score": 43.3
+          }
+        ],
+        "blocks": [
+          {
+            "kind": "heading",
+            "text": "2.1. 唤出解释器",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它：",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "这样，就可以在 shell 中运行 Python 了 [1] 。因为可以选择安装目录，解释器也有可能安装在别的位置；如果还不明白，就去问问身边的 Python 大神或系统管理员。（例如，常见备选路径还有 /usr/local/python。）",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "在 Windows 机器上当你从 Microsoft Store 安装 Python 之后，python3.15 命令将可使用。 如果你安装了 py.exe 启动器，你将可以使用 py 命令。 请参阅 Python 安装管理器 了解其他启动 Python 的方式。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "在主提示符中，输入文件结束符 (Unix 里是 Control-D，Windows 里是 Control-Z)，就会退出解释器，退出状态码为 0。 如果不能退出，还可以输入这个命令: quit()。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "在大多数系统上解释器的行编辑特性包括交互式编辑、历史替换和代码补全等。 检测命令行编辑是否受支持的最快速的方式是在 Python 提示符下键入一个单词，然后按左方向键 (或 Control-b)。 如果光标移动了，说明你可进行命令行编辑；请参阅附录 交互式编辑和编辑历史 了解相关功能键的介绍。 如果没有任何反应，或者显示 ^[[D 或 ^B 之类的字符序列，则说明命令行编辑不可用；你只能使用退格键删除当前行的字符。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "解释器的操作方式类似 Unix Shell：用与 tty 设备关联的标准输入调用时，可以交互式地读取和执行命令；以文件名参数，或标准输入文件调用时，则读取并执行文件中的 脚本。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "另一种启动解释器的方式是 python -c command [arg] ...，这将执行 command 中的语句，相当于 shell 的 -c 选项。 由于 Python 语句经常包含空格或其他会被 shell 特殊对待的字符，通常建议用引号将整个 command 括起来。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "Python 模块也可以当作脚本使用。输入：python -m module [arg] ...，会执行 module 的源文件，这跟在命令行把路径写全了一样。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "在交互模式下运行脚本文件，只要在脚本名称参数前，加上选项 -i 就可以了。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "命令行的所有选项详见 命令行与环境。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "解释器读取命令行参数，把脚本名与其他参数转化为字符串列表存到 sys 模块的 argv 变量里。执行 import sys，可以导入这个模块，并访问该列表。该列表最少有一个元素；未给定输入参数时，sys.argv[0] 是空字符串。给定脚本名是 '-' （标准输入）时，sys.argv[0] 是 '-'。使用 -c command 时，sys.argv[0] 是 '-c'。如果使用选项 -m module，sys.argv[0] 就是包含目录的模块全名。解释器不处理 -c command 或 -m module 之后的选项，而是直接留在 sys.argv 中由命令或模块来处理。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "在终端输入并执行指令时，解释器在 交互模式 中运行。在这种模式中，会显示 主提示符，提示输入下一条指令，主提示符通常用三个大于号 (>>>) 表示；输入连续行时，显示 次要提示符，默认是三个点 (...)。 进入解释器时，首先显示欢迎信息、版本信息、版权声明，然后才是提示符：",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "输入多行结构的语句时，要用连续行。以 if 为例：",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "交互模式的内容详见 交互模式。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "heading",
+            "text": "2.2. 解释器的运行环境",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "默认情况下，Python 源码文件的编码是 UTF-8。这种编码支持世界上大多数语言的字符，可以用于字符串字面值、变量、函数名及注释 —— 尽管标准库只用常规的 ASCII 字符作为变量名或函数名，可移植代码都应遵守此约定。要正确显示这些字符，编辑器必须能识别 UTF-8 编码，而且必须使用支持文件中所有字符的字体。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "如果不使用默认编码，则要声明文件的编码，文件的 第一 行要写成特殊注释。句法如下：",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "其中，encoding 可以是 Python 支持的任意一种 codecs。",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "比如，声明使用 Windows-1252 编码，源码文件要写成：",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "第一行 的规则也有一种例外情况，源码以 UNIX \"shebang\" 行 开头。此时，编码声明要写在文件的第二行。例如：",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          },
+          {
+            "kind": "paragraph",
+            "text": "备注",
+            "list_type": null,
+            "depth": 0,
+            "ordinal": null
+          }
+        ]
+      },
+      "error": null,
+      "coverage_notes": {
+        "raw_unsupported_element_counts": {
+          "pre": 6,
+          "h3": 3
+        },
+        "raw_aside_count": 2,
+        "note": "Raw counts identify review targets, not missing-block scores. Current remove_noise drops aside including possible footnotes; inline code formatting is flattened. No complete gold annotation is supplied for this experiment."
+      },
+      "snapshot_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+      "status": "ok"
+    }
+  ],
+  "note": "A unique container match proves only XPath applicability. It is not extraction accuracy, content completeness, or automatic clustering. No fallback or per-page rule repair is used."
+}

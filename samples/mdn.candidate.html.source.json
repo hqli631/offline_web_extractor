@@ -1,0 +1,10 @@
+{
+  "requested_url": "https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Getting_started",
+  "fetched_at": "2026-11-13T12:06:23.528886+00:00",
+  "http_status": 200,
+  "sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+  "template": "documentation",
+  "split": "development",
+  "note": "Initial prediction preserved. Used for rule tuning; current role is development regression, not untouched validation.",
+  "expected_sha256": "a2e13751b3bf4657cf0995bef9f78fe160328df885e7a90c1550269528eadd89"
+}

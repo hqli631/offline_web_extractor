@@ -1,0 +1,27 @@
+{
+  "status": "NOT_RUN_EXAMPLE",
+  "purpose": "Illustrative ms-swift SFT parameters; verify installed CLI/version and model license before use.",
+  "command": "swift sft",
+  "parameters": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "train_type": "lora",
+    "torch_dtype": "bfloat16",
+    "dataset": "outputs/sft.agent.replay.v2.jsonl",
+    "split_dataset_ratio": 0.0,
+    "target_modules": "all-linear",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 4,
+    "num_train_epochs": 1,
+    "learning_rate": 0.0001,
+    "max_length": 4096,
+    "output_dir": "outputs/lora_example_not_run"
+  },
+  "limitations": [
+    "Not an executable ms-swift config file; parameters are a reviewable command plan.",
+    "One authored-replay training example is insufficient to train or evaluate extraction skill.",
+    "No validation dataset is currently available for SFT; do not randomly split this template.",
+    "No GPU check, dependency installation, model download or training was performed."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Example Domains",
+  "paragraphs": [
+    "A number of domains such as example.com and example.org are maintained for documentation purposes. These domains may be used as illustrative examples in documents without prior coordination with us. They are not available for registration or transfer.",
+    "We provide a web service on the example domain hosts to provide basic information on the purpose of the domain. These web services are provided as best effort, but are not designed to support production applications. We strongly recommend you do not design applications that require the example domains to have operating HTTP service."
+  ],
+  "blocks": [
+    {"kind":"paragraph","text":"A number of domains such as example.com and example.org are maintained for documentation purposes. These domains may be used as illustrative examples in documents without prior coordination with us. They are not available for registration or transfer.","list_type":null,"depth":0,"ordinal":null},
+    {"kind":"paragraph","text":"We provide a web service on the example domain hosts to provide basic information on the purpose of the domain. These web services are provided as best effort, but are not designed to support production applications. We strongly recommend you do not design applications that require the example domains to have operating HTTP service.","list_type":null,"depth":0,"ordinal":null},
+    {"kind":"heading","text":"Further Reading","list_type":null,"depth":0,"ordinal":null,"heading_level":2},
+    {"kind":"list_item","text":"IANA-managed Reserved Domains","list_type":"ul","depth":0,"ordinal":null},
+    {"kind":"list_item","text":"Special-Use Domain Names (RFC 6761)","list_type":"ul","depth":0,"ordinal":null},
+    {"kind":"list_item","text":"Reserved Top Level DNS Names (RFC 2606)","list_type":"ul","depth":0,"ordinal":null}
+  ],
+  "annotation_note": "Manually transcribed from saved HTML before running this case. Include the article's Further Reading subheading and three editorial references. Exclude breadcrumb Instructions and Guides, top/side navigation, revision metadata, footer. heading is required by the task even though the current extractor does not support it. Split: one initial validation observation with rules frozen; once used to tune rules, move to development."
+}

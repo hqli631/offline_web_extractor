@@ -1,0 +1,175 @@
+{
+  "title": "Don't use \"click here\" as link text",
+  "paragraphs": [
+    "When calling the user to action, use brief but meaningful link text that:",
+    "For instance, avoid the following sentence on your page:",
+    "To download W3C's editor/browser Amaya, click here.",
+    "or:",
+    "To download Amaya, go to the Amaya Website and get the necessary software.",
+    "Both of these sentences divulge too much of the mechanics of getting the Amaya software. If you want to call your reader to action, use something like:",
+    "Get Amaya!",
+    "Note that \"get\" is left out of the hypertext; we do not recommend putting verb phrases in link text. Thus, rather than:",
+    "Tell me more about Amaya.",
+    "You should write:",
+    "Tell me more about Amaya: W3C's free editor/browser that lets you create HTML, SVG, and MathML documents."
+  ],
+  "blocks": [
+    {
+      "kind": "heading",
+      "text": "What a link means",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null,
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "text": "When calling the user to action, use brief but meaningful link text that:",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "provides some information when read out of context",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "explains what the link offers",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "doesn't talk about mechanics",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "is not a verb phrase",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "heading",
+      "text": "An example",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null,
+      "heading_level": 3
+    },
+    {
+      "kind": "paragraph",
+      "text": "For instance, avoid the following sentence on your page:",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "quote",
+      "text": "To download W3C's editor/browser Amaya, click here.",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "paragraph",
+      "text": "or:",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "quote",
+      "text": "To download Amaya, go to the Amaya Website and get the necessary software.",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "paragraph",
+      "text": "Both of these sentences divulge too much of the mechanics of getting the Amaya software. If you want to call your reader to action, use something like:",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "quote",
+      "text": "Get Amaya!",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "paragraph",
+      "text": "Note that \"get\" is left out of the hypertext; we do not recommend putting verb phrases in link text. Thus, rather than:",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "quote",
+      "text": "Tell me more about Amaya.",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "paragraph",
+      "text": "You should write:",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "quote",
+      "text": "Tell me more about Amaya: W3C's free editor/browser that lets you create HTML, SVG, and MathML documents.",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "heading",
+      "text": "Further Reading",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null,
+      "heading_level": 3
+    },
+    {
+      "kind": "list_item",
+      "text": "section 6.1 Link text in the W3C HTML Techniques for Web Content Accessibility Guidelines 1.0, November 2000",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "Avoid talking about mechanics and Make your (hyper)text readable in the Style Guide for online hypertext, by Tim Berners-Lee, 1992.",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "Writing hypertext copy in What is good hypertext writing?, by Jutta Degener, April 1998. (See also: Dangerous words)",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "Mail thread on the www-qa list, suggesting this tip.",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    }
+  ]
+}

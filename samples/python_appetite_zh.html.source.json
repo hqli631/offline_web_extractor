@@ -1,0 +1,6 @@
+{
+  "requested_url": "https://docs.python.org/zh-cn/3/tutorial/appetite.html",
+  "fetched_at": "2026-11-13T07:54:00.5943922Z",
+  "sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+  "note": "Raw HTML snapshot, no JavaScript execution. Development case: automatic candidate generation returned no_candidate."
+}

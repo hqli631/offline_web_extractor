@@ -1,0 +1,16 @@
+{
+  "checkpoint": 1,
+  "rubrics_version": "2.0.0",
+  "date": "2026-11-17",
+  "status": "passed",
+  "tests_passed": 142,
+  "new_api_calls": 0,
+  "sha256": {
+    "docs/RUBRICS_V2_PROTOCOL.md": "ab0887b53098c37b1cf56176fe99975ab934fb7e1915ae90d174ed77b366322a",
+    "src/webextractor/rubrics_v2.py": "4fa60e024758e67d8c831b7a34e267bf2ce9a143dd6ae70cdbc94da036560364",
+    "tests/test_rubrics_v2.py": "aa58ad97e5cceac34351c104c3dc398c166bf20c2169805fadc81f01908ffeaf",
+    "tools/run_rubrics_v2.py": "653ddeaa1f3bdd5c47d039ddffefaba76f0424659ca1787b7bcb750070e7a459",
+    "outputs/rubrics_v2.qwen38.checkpoint1.v1.json": "8c2a33a2b4d373c7acd6eaf27e5f40e484b9dd9612550b9be416a8e7625f0061",
+    "outputs/rubrics_v2.checkpoint1.tests.v2.log": "61a2f6f6b82b8c2d8b933a8dd8b76baa3cd5e6c83a3c21a21feae854bfebc06a"
+  }
+}

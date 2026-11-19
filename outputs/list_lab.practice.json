@@ -1,0 +1,60 @@
+{
+  "status": "ok",
+  "title": "列表实验",
+  "paragraphs": [
+    "先读说明。",
+    "第一项包含重点。",
+    "最后检查输出。"
+  ],
+  "body": "先读说明。\n\n3. 第一项包含重点。\n4. 第二项没有 p 标签。\n\n最后检查输出。",
+  "selected_candidate": {
+    "tag": "article",
+    "identifier": "article class= id=",
+    "xpath": "/html/body/article",
+    "text_length": 39,
+    "paragraph_count": 3,
+    "link_ratio": 0.0,
+    "score": 6.39
+  },
+  "candidates": [
+    {
+      "tag": "article",
+      "identifier": "article class= id=",
+      "xpath": "/html/body/article",
+      "text_length": 39,
+      "paragraph_count": 3,
+      "link_ratio": 0.0,
+      "score": 6.39
+    }
+  ],
+  "blocks": [
+    {
+      "kind": "paragraph",
+      "text": "先读说明。",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "第一项包含重点。",
+      "list_type": "ol",
+      "depth": 0,
+      "ordinal": 3
+    },
+    {
+      "kind": "list_item",
+      "text": "第二项没有 p 标签。",
+      "list_type": "ol",
+      "depth": 0,
+      "ordinal": 4
+    },
+    {
+      "kind": "paragraph",
+      "text": "最后检查输出。",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    }
+  ]
+}

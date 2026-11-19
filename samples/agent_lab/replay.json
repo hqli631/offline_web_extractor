@@ -1,0 +1,8 @@
+{
+  "provider_kind": "authored-replay",
+  "note": "Deliberately authored control-flow fixture. First response selects no container; second uses a shared role. No LLM/API call or quality claim. Use drift_lab/reference.html and class-drift.html as reference inputs only.",
+  "responses": [
+    {"version": 1, "container_xpath": "//article[@id='missing']", "exclude_xpaths": []},
+    {"version": 1, "container_xpath": "//div[@role='main']", "exclude_xpaths": []}
+  ]
+}

@@ -1,0 +1,67 @@
+{
+ "judge_manifest_version": 1,
+ "cases": [
+  {
+   "case_id": "cal-appetite-clean",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "source": "python_appetite_zh.html",
+   "candidate": "calibration/cal-appetite-clean.candidate.json",
+   "gold": "python_appetite_zh.expected.json",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea"
+  },
+  {
+   "case_id": "cal-appetite-noise",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "source": "python_appetite_zh.html",
+   "candidate": "calibration/cal-appetite-noise.candidate.json",
+   "gold": "python_appetite_zh.expected.json",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "noise_terms": [
+    "分享到",
+    "推荐阅读"
+   ]
+  },
+  {
+   "case_id": "cal-iana-clean",
+   "template": "iana_example_domains",
+   "split": "development",
+   "source": "iana_example_domains.html",
+   "candidate": "calibration/cal-iana-clean.candidate.json",
+   "gold": null,
+   "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f"
+  },
+  {
+   "case_id": "cal-mdn-clean",
+   "template": "mdn.candidate",
+   "split": "frozen_test",
+   "source": "mdn.candidate.html",
+   "candidate": "calibration/cal-mdn-clean.candidate.json",
+   "gold": "mdn.candidate.expected.json",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293"
+  },
+  {
+   "case_id": "cal-mdn-code_indent",
+   "template": "mdn.candidate",
+   "split": "frozen_test",
+   "source": "mdn.candidate.html",
+   "candidate": "calibration/cal-mdn-code_indent.candidate.json",
+   "gold": "mdn.candidate.expected.json",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293"
+  },
+  {
+   "case_id": "cal-github-noise",
+   "template": "github-copilot-blog.candidate",
+   "split": "frozen_test",
+   "source": "github-copilot-blog.candidate.html",
+   "candidate": "calibration/cal-github-noise.candidate.json",
+   "gold": "github-copilot-blog.candidate.expected.json",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+   "noise_terms": [
+    "advertisement",
+    "subscribe to our newsletter"
+   ]
+  }
+ ]
+}

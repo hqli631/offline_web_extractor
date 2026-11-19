@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-11-13T12:55:42.793051+00:00",
+  "extractor_snapshot": "baselines/rules-gate2-first-pass/manifest.json",
+  "protocol": "docs/ANNOTATION_PROTOCOL.md",
+  "case": {
+    "id": "github-copilot-blog.candidate",
+    "html": "github-copilot-blog.candidate.html",
+    "expected": "github-copilot-blog.candidate.expected.json",
+    "expected_sha256": "c8526595a786e3867e3cd6ae57293b66e44a2b31626cf1179d096e8df47eca92",
+    "expected_blocks": 20,
+    "html_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+    "first_report": "outputs/github-copilot-blog.candidate.first_evaluation.json"
+  },
+  "note": "Source-reviewed semantic repair for malformed list and explicit UTF-8 annotation; includes quote kind as documented in page annotation. No production changes before first prediction."
+}

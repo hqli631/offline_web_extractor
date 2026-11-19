@@ -1,0 +1,708 @@
+{
+  "protocol": "actual local DOM XPath execution; two-step finite environment",
+  "seed": 3,
+  "runs": [
+    {
+      "algorithm": "reinforce",
+      "reward": "sparse",
+      "seed": 3,
+      "episodes": 240,
+      "greedy": {
+        "first": "content",
+        "second": "stop",
+        "done": true,
+        "metrics": {
+          "reward": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact": true,
+          "predicted_blocks": [
+            "Introduction",
+            "Main result"
+          ],
+          "status": "ok"
+        },
+        "execution": {
+          "status": "ok",
+          "match_count": 1,
+          "cache_key": [
+            "content",
+            []
+          ]
+        }
+      },
+      "first_probabilities": {
+        "content": 0.9828173817979974,
+        "article": 0.007278044412375403,
+        "partial": 0.004952286894813595,
+        "missing": 0.004952286894813595
+      },
+      "second_probabilities": {
+        "stop": 0.9653952722397845,
+        "remove-noise": 0.03460472776021556
+      },
+      "history": [
+        {
+          "episode": 1,
+          "samples": [
+            [
+              0,
+              1,
+              1.0
+            ]
+          ]
+        },
+        {
+          "episode": 2,
+          "samples": [
+            [
+              1,
+              1,
+              1.0
+            ]
+          ]
+        },
+        {
+          "episode": 3,
+          "samples": [
+            [
+              2,
+              0,
+              0.0
+            ]
+          ]
+        },
+        {
+          "episode": 240,
+          "samples": [
+            [
+              0,
+              0,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "cache_entries": 8
+    },
+    {
+      "algorithm": "reinforce",
+      "reward": "proxy",
+      "seed": 3,
+      "episodes": 240,
+      "greedy": {
+        "first": "article",
+        "second": "stop",
+        "done": true,
+        "metrics": {
+          "reward": 2.0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "exact": false,
+          "predicted_blocks": [
+            "Introduction",
+            "Main result",
+            "Recommended",
+            "Comments"
+          ],
+          "status": "ok"
+        },
+        "execution": {
+          "status": "ok",
+          "match_count": 1,
+          "cache_key": [
+            "article",
+            []
+          ]
+        }
+      },
+      "first_probabilities": {
+        "content": 0.007844460000681022,
+        "article": 0.9858575215753819,
+        "partial": 0.0037814217859128865,
+        "missing": 0.002516596638024177
+      },
+      "second_probabilities": {
+        "stop": 0.9939867771157467,
+        "remove-noise": 0.006013222884253444
+      },
+      "history": [
+        {
+          "episode": 1,
+          "samples": [
+            [
+              0,
+              1,
+              1.0
+            ]
+          ]
+        },
+        {
+          "episode": 2,
+          "samples": [
+            [
+              1,
+              1,
+              1.0
+            ]
+          ]
+        },
+        {
+          "episode": 3,
+          "samples": [
+            [
+              2,
+              0,
+              0.5
+            ]
+          ]
+        },
+        {
+          "episode": 240,
+          "samples": [
+            [
+              1,
+              0,
+              2.0
+            ]
+          ]
+        }
+      ],
+      "cache_entries": 8
+    },
+    {
+      "algorithm": "reinforce",
+      "reward": "corrected",
+      "seed": 3,
+      "episodes": 240,
+      "greedy": {
+        "first": "article",
+        "second": "remove-noise",
+        "done": true,
+        "metrics": {
+          "reward": 0.9999999999999999,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact": true,
+          "predicted_blocks": [
+            "Introduction",
+            "Main result"
+          ],
+          "status": "ok"
+        },
+        "execution": {
+          "status": "ok",
+          "match_count": 1,
+          "cache_key": [
+            "article",
+            [
+              ".//nav",
+              ".//*[contains(concat(' ', normalize-space(@class), ' '), ' promo ')]",
+              ".//*[contains(concat(' ', normalize-space(@class), ' '), ' discussion ')]"
+            ]
+          ]
+        }
+      },
+      "first_probabilities": {
+        "content": 0.018973392512232134,
+        "article": 0.9628556978827639,
+        "partial": 0.012542382103336561,
+        "missing": 0.005628527501667304
+      },
+      "second_probabilities": {
+        "stop": 0.03196484404315355,
+        "remove-noise": 0.9680351559568464
+      },
+      "history": [
+        {
+          "episode": 1,
+          "samples": [
+            [
+              0,
+              1,
+              0.9999999999999999
+            ]
+          ]
+        },
+        {
+          "episode": 2,
+          "samples": [
+            [
+              1,
+              1,
+              0.9999999999999999
+            ]
+          ]
+        },
+        {
+          "episode": 3,
+          "samples": [
+            [
+              2,
+              0,
+              0.6
+            ]
+          ]
+        },
+        {
+          "episode": 240,
+          "samples": [
+            [
+              1,
+              1,
+              0.9999999999999999
+            ]
+          ]
+        }
+      ],
+      "cache_entries": 8
+    },
+    {
+      "algorithm": "grpo-like",
+      "reward": "sparse",
+      "seed": 3,
+      "episodes": 240,
+      "greedy": {
+        "first": "content",
+        "second": "remove-noise",
+        "done": true,
+        "metrics": {
+          "reward": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact": true,
+          "predicted_blocks": [
+            "Introduction",
+            "Main result"
+          ],
+          "status": "ok"
+        },
+        "execution": {
+          "status": "ok",
+          "match_count": 1,
+          "cache_key": [
+            "content",
+            [
+              ".//nav",
+              ".//*[contains(concat(' ', normalize-space(@class), ' '), ' promo ')]",
+              ".//*[contains(concat(' ', normalize-space(@class), ' '), ' discussion ')]"
+            ]
+          ]
+        }
+      },
+      "first_probabilities": {
+        "content": 0.9042141764429763,
+        "article": 0.060426703209908714,
+        "partial": 0.012928977163667112,
+        "missing": 0.022430143183447906
+      },
+      "second_probabilities": {
+        "stop": 0.08499101642670666,
+        "remove-noise": 0.9150089835732934
+      },
+      "history": [
+        {
+          "episode": 1,
+          "samples": [
+            [
+              0,
+              1,
+              0.5773502558562927
+            ],
+            [
+              1,
+              1,
+              0.5773502558562927
+            ],
+            [
+              2,
+              0,
+              -1.7320507675688783
+            ],
+            [
+              0,
+              1,
+              0.5773502558562927
+            ]
+          ]
+        },
+        {
+          "episode": 2,
+          "samples": [
+            [
+              0,
+              0,
+              1.7320507675688783
+            ],
+            [
+              3,
+              1,
+              -0.5773502558562927
+            ],
+            [
+              3,
+              1,
+              -0.5773502558562927
+            ],
+            [
+              2,
+              0,
+              -0.5773502558562927
+            ]
+          ]
+        },
+        {
+          "episode": 3,
+          "samples": [
+            [
+              2,
+              1,
+              -0.5773502558562927
+            ],
+            [
+              1,
+              1,
+              1.7320507675688783
+            ],
+            [
+              2,
+              0,
+              -0.5773502558562927
+            ],
+            [
+              2,
+              1,
+              -0.5773502558562927
+            ]
+          ]
+        },
+        {
+          "episode": 80,
+          "samples": [
+            [
+              0,
+              1,
+              0.0
+            ],
+            [
+              0,
+              1,
+              0.0
+            ],
+            [
+              0,
+              1,
+              0.0
+            ],
+            [
+              0,
+              0,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "cache_entries": 8
+    },
+    {
+      "algorithm": "grpo-like",
+      "reward": "proxy",
+      "seed": 3,
+      "episodes": 240,
+      "greedy": {
+        "first": "article",
+        "second": "stop",
+        "done": true,
+        "metrics": {
+          "reward": 2.0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "exact": false,
+          "predicted_blocks": [
+            "Introduction",
+            "Main result",
+            "Recommended",
+            "Comments"
+          ],
+          "status": "ok"
+        },
+        "execution": {
+          "status": "ok",
+          "match_count": 1,
+          "cache_key": [
+            "article",
+            []
+          ]
+        }
+      },
+      "first_probabilities": {
+        "content": 0.015408985516676382,
+        "article": 0.9573516999706664,
+        "partial": 0.012526825374036906,
+        "missing": 0.014712489138620336
+      },
+      "second_probabilities": {
+        "stop": 0.9699598558937984,
+        "remove-noise": 0.030040144106201573
+      },
+      "history": [
+        {
+          "episode": 1,
+          "samples": [
+            [
+              0,
+              1,
+              0.5773502425229604
+            ],
+            [
+              1,
+              1,
+              0.5773502425229604
+            ],
+            [
+              2,
+              0,
+              -1.7320507275688812
+            ],
+            [
+              0,
+              1,
+              0.5773502425229604
+            ]
+          ]
+        },
+        {
+          "episode": 2,
+          "samples": [
+            [
+              0,
+              0,
+              1.5075566865251826
+            ],
+            [
+              3,
+              1,
+              -0.9045340119151096
+            ],
+            [
+              3,
+              1,
+              -0.9045340119151096
+            ],
+            [
+              2,
+              0,
+              0.30151133730503654
+            ]
+          ]
+        },
+        {
+          "episode": 3,
+          "samples": [
+            [
+              2,
+              1,
+              -0.5773502425229604
+            ],
+            [
+              1,
+              1,
+              1.7320507275688812
+            ],
+            [
+              2,
+              0,
+              -0.5773502425229604
+            ],
+            [
+              2,
+              1,
+              -0.5773502425229604
+            ]
+          ]
+        },
+        {
+          "episode": 80,
+          "samples": [
+            [
+              1,
+              0,
+              0.0
+            ],
+            [
+              1,
+              0,
+              0.0
+            ],
+            [
+              1,
+              0,
+              0.0
+            ],
+            [
+              1,
+              0,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "cache_entries": 8
+    },
+    {
+      "algorithm": "grpo-like",
+      "reward": "corrected",
+      "seed": 3,
+      "episodes": 240,
+      "greedy": {
+        "first": "content",
+        "second": "remove-noise",
+        "done": true,
+        "metrics": {
+          "reward": 0.9999999999999999,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact": true,
+          "predicted_blocks": [
+            "Introduction",
+            "Main result"
+          ],
+          "status": "ok"
+        },
+        "execution": {
+          "status": "ok",
+          "match_count": 1,
+          "cache_key": [
+            "content",
+            [
+              ".//nav",
+              ".//*[contains(concat(' ', normalize-space(@class), ' '), ' promo ')]",
+              ".//*[contains(concat(' ', normalize-space(@class), ' '), ' discussion ')]"
+            ]
+          ]
+        }
+      },
+      "first_probabilities": {
+        "content": 0.875148333667309,
+        "article": 0.08879584247113399,
+        "partial": 0.01469267907054917,
+        "missing": 0.021363144791007753
+      },
+      "second_probabilities": {
+        "stop": 0.11031572519415471,
+        "remove-noise": 0.8896842748058453
+      },
+      "history": [
+        {
+          "episode": 1,
+          "samples": [
+            [
+              0,
+              1,
+              0.5773502358562944
+            ],
+            [
+              1,
+              1,
+              0.5773502358562944
+            ],
+            [
+              2,
+              0,
+              -1.7320507075688834
+            ],
+            [
+              0,
+              1,
+              0.5773502358562944
+            ]
+          ]
+        },
+        {
+          "episode": 2,
+          "samples": [
+            [
+              0,
+              0,
+              1.4142135290397624
+            ],
+            [
+              3,
+              1,
+              -0.9428090193598417
+            ],
+            [
+              3,
+              1,
+              -0.9428090193598417
+            ],
+            [
+              2,
+              0,
+              0.4714045096799209
+            ]
+          ]
+        },
+        {
+          "episode": 3,
+          "samples": [
+            [
+              2,
+              1,
+              -0.5773502358562944
+            ],
+            [
+              1,
+              1,
+              1.7320507075688834
+            ],
+            [
+              2,
+              0,
+              -0.5773502358562944
+            ],
+            [
+              2,
+              1,
+              -0.5773502358562944
+            ]
+          ]
+        },
+        {
+          "episode": 80,
+          "samples": [
+            [
+              0,
+              1,
+              0.0
+            ],
+            [
+              0,
+              0,
+              0.0
+            ],
+            [
+              0,
+              1,
+              0.0
+            ],
+            [
+              0,
+              0,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "cache_entries": 8
+    }
+  ],
+  "source_sha256": "3eef1774a0c13093ab6dbfd225b53f260cdfde12294ce8978526a9a9679f0666",
+  "note": "Toy evidence only; gold is reward-side state and never an observation; not industrial PPO/GRPO."
+}

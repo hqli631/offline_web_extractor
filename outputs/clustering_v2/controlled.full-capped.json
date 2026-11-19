@@ -1,0 +1,349 @@
+{
+  "manifest": "D:\\codex project\\offline_web_extractor\\samples\\dom_similarity.controlled.json",
+  "manifest_sha256": "efe7a25465ecc068f2e75b3b2c9e573acd828ab3bd0db8df338181315bea4b10",
+  "implementation_sha256": "5302595ac2d71142be82dffb50121d5f713caa33168c1306b6e808a79e731e48",
+  "settings": {
+    "mode": "full-capped",
+    "path_scope": "body-relative full tag path",
+    "multiplicity": "capped counts",
+    "ignored": "all text, attributes, sibling indexes and head",
+    "count_cap": 3,
+    "feature": "full-capped",
+    "skipped_tags": [
+      "noscript",
+      "script",
+      "style",
+      "template"
+    ],
+    "metric": "multiset Jaccard",
+    "threshold": 0.7,
+    "clustering": "threshold-edge connected components"
+  },
+  "pages": [
+    {
+      "id": "reference",
+      "manual_group": "reference-layout",
+      "source_kind": "synthetic",
+      "html_sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428",
+      "features": {
+        "nav": 1,
+        "nav/p": 1,
+        "div": 1,
+        "div/h1": 1,
+        "div/p": 3,
+        "footer": 1,
+        "footer/p": 1
+      },
+      "distinct_paths": 7,
+      "total_paths": 9
+    },
+    {
+      "id": "class-drift",
+      "manual_group": "reference-layout",
+      "source_kind": "synthetic",
+      "html_sha256": "ef76358f0a4ac9bb4c5999df8a09df191e6882f41236af760b590ad17a89b76f",
+      "features": {
+        "nav": 1,
+        "nav/p": 1,
+        "div": 1,
+        "div/h1": 1,
+        "div/p": 3,
+        "footer": 1,
+        "footer/p": 1
+      },
+      "distinct_paths": 7,
+      "total_paths": 9
+    },
+    {
+      "id": "role-drift",
+      "manual_group": "reference-layout",
+      "source_kind": "synthetic",
+      "html_sha256": "e2f7ffd72f087a12361e7ecba2c8293c86433070ddbe6b0b951e55558aac1269",
+      "features": {
+        "nav": 1,
+        "nav/p": 1,
+        "div": 1,
+        "div/h1": 1,
+        "div/p": 3,
+        "footer": 1,
+        "footer/p": 1
+      },
+      "distinct_paths": 7,
+      "total_paths": 9
+    },
+    {
+      "id": "duplicate-main",
+      "manual_group": "duplicate-main",
+      "source_kind": "synthetic",
+      "html_sha256": "661b8dd40eeaafc65a9b29582e5f6790b07a8bb6580e2e2401a3741d314476e6",
+      "features": {
+        "nav": 1,
+        "nav/p": 1,
+        "div": 2,
+        "div/h1": 2,
+        "div/p": 3,
+        "footer": 1,
+        "footer/p": 1
+      },
+      "distinct_paths": 7,
+      "total_paths": 11
+    },
+    {
+      "id": "content-moved",
+      "manual_group": "content-moved",
+      "source_kind": "synthetic",
+      "html_sha256": "8e60aa8f73b032b204d731f7d4e959f6d2383fd2656190af03c1217bbdbfdcda",
+      "features": {
+        "nav": 1,
+        "nav/p": 1,
+        "div": 1,
+        "div/h1": 1,
+        "div/p": 2,
+        "section": 1,
+        "section/p": 1,
+        "footer": 1,
+        "footer/p": 1
+      },
+      "distinct_paths": 9,
+      "total_paths": 10
+    }
+  ],
+  "pairs": [
+    {
+      "left": "reference",
+      "right": "class-drift",
+      "score": 1.0,
+      "same_manual_group": true,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "reference",
+      "right": "role-drift",
+      "score": 1.0,
+      "same_manual_group": true,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "reference",
+      "right": "duplicate-main",
+      "score": 0.8181818181818182,
+      "same_manual_group": false,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "reference",
+      "right": "content-moved",
+      "score": 0.7272727272727273,
+      "same_manual_group": false,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "class-drift",
+      "right": "role-drift",
+      "score": 1.0,
+      "same_manual_group": true,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "class-drift",
+      "right": "duplicate-main",
+      "score": 0.8181818181818182,
+      "same_manual_group": false,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "class-drift",
+      "right": "content-moved",
+      "score": 0.7272727272727273,
+      "same_manual_group": false,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "role-drift",
+      "right": "duplicate-main",
+      "score": 0.8181818181818182,
+      "same_manual_group": false,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "role-drift",
+      "right": "content-moved",
+      "score": 0.7272727272727273,
+      "same_manual_group": false,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "duplicate-main",
+      "right": "content-moved",
+      "score": 0.6153846153846154,
+      "same_manual_group": false,
+      "threshold_edge": false,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    }
+  ],
+  "components": [
+    [
+      "class-drift",
+      "content-moved",
+      "duplicate-main",
+      "reference",
+      "role-drift"
+    ]
+  ],
+  "chaining_warnings": [
+    {
+      "component": [
+        "class-drift",
+        "content-moved",
+        "duplicate-main",
+        "reference",
+        "role-drift"
+      ],
+      "below_threshold_pairs": [
+        {
+          "left": "content-moved",
+          "right": "duplicate-main",
+          "score": 0.6153846153846154
+        }
+      ]
+    }
+  ],
+  "false_merge_pairs": [
+    {
+      "left": "reference",
+      "right": "duplicate-main",
+      "score": 0.8181818181818182,
+      "same_manual_group": false,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "reference",
+      "right": "content-moved",
+      "score": 0.7272727272727273,
+      "same_manual_group": false,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "class-drift",
+      "right": "duplicate-main",
+      "score": 0.8181818181818182,
+      "same_manual_group": false,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "class-drift",
+      "right": "content-moved",
+      "score": 0.7272727272727273,
+      "same_manual_group": false,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "role-drift",
+      "right": "duplicate-main",
+      "score": 0.8181818181818182,
+      "same_manual_group": false,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "role-drift",
+      "right": "content-moved",
+      "score": 0.7272727272727273,
+      "same_manual_group": false,
+      "threshold_edge": true,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    },
+    {
+      "left": "duplicate-main",
+      "right": "content-moved",
+      "score": 0.6153846153846154,
+      "same_manual_group": false,
+      "threshold_edge": false,
+      "source_kinds": [
+        "synthetic",
+        "synthetic"
+      ],
+      "same_predicted_component": true
+    }
+  ],
+  "false_split_pairs": [],
+  "errors": [],
+  "note": "Manual groups are source-reviewed template hypotheses, not extractor-quality labels. Synthetic and real pairs are labelled separately; do not aggregate as real-site accuracy. Connected components can chain below-threshold pairs. No threshold is learned or tuned here."
+}

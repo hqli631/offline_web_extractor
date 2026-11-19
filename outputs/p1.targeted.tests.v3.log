@@ -1,0 +1,21 @@
+...Refusing to overwrite existing freeze v3.
+..............................FOutput exists; choose a new filename.
+........Batch contains non-development cases; P1 acceptance is dev-only.
+...
+======================================================================
+FAIL: test_main_accept_writes_report_and_md (tests.test_p1_judge_v11.ScoreP1MainTests.test_main_accept_writes_report_and_md)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\codex project\offline_web_extractor\tests\test_p1_judge_v11.py", line 411, in test_main_accept_writes_report_and_md
+    self.assertEqual(rc, 0)
+AssertionError: 2 != 0
+
+----------------------------------------------------------------------
+Ran 45 tests in 1.608s
+
+FAILED (failures=1)
+{"dry_run": true, "changed_files": ["samples/calibration/labels/cal-appetite-clean.label.json", "samples/calibration/labels/cal-appetite-missing_paragraph.label.json", "samples/calibration/labels/cal-appetite-noise.label.json", "samples/calibration/labels/cal-appetite-duplicate.label.json", "samples/calibration/labels/cal-appetite-reorder.label.json", "samples/calibration/labels/cal-appetite-title_number.label.json", "samples/calibration/labels/cal-blurb-clean.label.json", "samples/calibration/labels/cal-blurb-missing_paragraph.label.json", "samples/calibration/labels/cal-blurb-noise.label.json", "samples/calibration/labels/cal-blurb-reorder.label.json", "samples/calibration/labels/cal-iana-clean.label.json", "samples/calibration/labels/cal-iana-noise.label.json", "samples/calibration/labels/cal-mdn-clean.label.json", "samples/calibration/labels/cal-mdn-missing_paragraph.label.json", "samples/calibration/labels/cal-mdn-code_indent.label.json", "samples/calibration/labels/cal-mdn-reorder.label.json", "samples/calibration/labels/cal-mdn-instruction_interference.label.json", "samples/calibration/labels/cal-github-clean.label.json", "samples/calibration/labels/cal-github-noise.label.json", "samples/calibration/labels/cal-github-duplicate.label.json", "samples/calibration/labels/cal-github-missing_paragraph.label.json", "samples/calibration/labels/cal-w3clink-clean.label.json", "samples/calibration/labels/cal-w3clink-instruction_interference.label.json", "src/webextractor/rubrics_judge.py"], "code_changed": ["src/webextractor/rubrics_judge.py"], "labels_to_refresh": 0, "files": 61, "cases": 23, "new_judge_sha256": "cc649504b82832001c2f9a8c41f79e53a4006cec60914a22a5adc1cfb23a240e"}
+{"dry_run": true, "probe": "position", "config": {"probe": {"source_order_seed": 20261118}, "subset": ["cal-appetite-clean", "cal-appetite-noise", "cal-appetite-duplicate", "cal-blurb-clean", "cal-blurb-noise", "cal-iana-noise"], "ignore_cache": false}, "n_cases": 6, "max_calls": 6, "model": "qwen3.8-27b"}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpdn6yhfh_\\out.json", "verdict": "REJECT", "reject_rate": 0.0, "severe_miss": 2, "decision_mismatches": 0, "freeze_check": ["batch manifest file hash differs from freeze files entry", "case not frozen: c1", "case not frozen: c2", "batch config max_source_chars differs from freeze batch_config", "batch config max_output_tokens differs from freeze batch_config", "batch config timeout_seconds differs from freeze batch_config"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp0ib0d_v1\\out.json", "verdict": "REJECT", "reject_rate": 0.5, "severe_miss": 1, "decision_mismatches": 0, "freeze_check": ["batch manifest file hash differs from freeze files entry", "case not frozen: c1", "case not frozen: c2", "batch config max_source_chars differs from freeze batch_config", "batch config max_output_tokens differs from freeze batch_config", "batch config timeout_seconds differs from freeze batch_config"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmplc4ctusi\\out.json", "verdict": "ACCEPT", "reject_rate": 0.0, "severe_miss": 1, "decision_mismatches": 0, "freeze_check": ["batch manifest file hash differs from freeze files entry", "case not frozen: c1", "batch config max_source_chars differs from freeze batch_config", "batch config max_output_tokens differs from freeze batch_config", "batch config timeout_seconds differs from freeze batch_config"]}

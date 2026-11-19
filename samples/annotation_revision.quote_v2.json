@@ -1,0 +1,63 @@
+{
+  "created_at": "2026-11-13T13:06:21.478990+00:00",
+  "reason": "Unify blockquote paragraph structure across source-reviewed pages, not a content correction and not a change to fit production predictions.",
+  "protocol": "docs/ANNOTATION_PROTOCOL_v1.2.md",
+  "protocol_sha256": "b12e0a4852750095ec5f5e6baf577c9f63165d91f6d42ca27b31b447a1b983f9",
+  "source": "samples/w3c-link-text.candidate.html",
+  "source_sha256": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5",
+  "old_expected": "samples/w3c-link-text.candidate.expected.json",
+  "old_sha256": "ebaae88d7af06eeabd4bef5ef752c42ef45eae01e3b12a5716e6f26c19b40d16",
+  "new_expected": "samples/w3c-link-text.candidate.expected.v2.json",
+  "new_sha256": "41ff40e642728b47d317ad46d3bfbc0ab9a04ebc2fdb4d1f1c5e98333be48d50",
+  "first_report": "outputs/w3c-link-text.candidate.first_evaluation.json",
+  "preserved_first_report_sha256": "dad33d45f56ba547013e17e74768ea9309cc9d945446d3090f90eaf50847df3b",
+  "changes": [
+    {
+      "block_index": 8,
+      "source_xpath": "/html/body/div[3]/blockquote[1]/p",
+      "old_kind": "paragraph",
+      "new_kind": "quote",
+      "text": "To download W3C's editor/browser Amaya, click here."
+    },
+    {
+      "block_index": 10,
+      "source_xpath": "/html/body/div[3]/blockquote[2]/p",
+      "old_kind": "paragraph",
+      "new_kind": "quote",
+      "text": "To download Amaya, go to the Amaya Website and get the necessary software."
+    },
+    {
+      "block_index": 12,
+      "source_xpath": "/html/body/div[3]/blockquote[3]/p",
+      "old_kind": "paragraph",
+      "new_kind": "quote",
+      "text": "Get Amaya!"
+    },
+    {
+      "block_index": 14,
+      "source_xpath": "/html/body/div[3]/blockquote[4]/p",
+      "old_kind": "paragraph",
+      "new_kind": "quote",
+      "text": "Tell me more about Amaya."
+    },
+    {
+      "block_index": 16,
+      "source_xpath": "/html/body/div[3]/blockquote[5]/p",
+      "old_kind": "paragraph",
+      "new_kind": "quote",
+      "text": "Tell me more about Amaya: W3C's free editor/browser that lets you create HTML, SVG, and MathML documents."
+    }
+  ],
+  "invariants": {
+    "text_order_unchanged": true,
+    "paragraphs_unchanged": true,
+    "other_metadata_unchanged": true,
+    "old_files_preserved": true
+  },
+  "baseline_selection": {
+    "w3c_link_text": "samples/w3c-link-text.candidate.expected.v2.json",
+    "github_copilot": "samples/github-copilot-blog.candidate.expected.json",
+    "note": "GitHub existing quote already follows v1.2; no new prediction was run. Historical first metrics retain v1 references."
+  },
+  "review": "Assistant independent DOM review, not user-by-user verified; no production imports or prediction content read."
+}

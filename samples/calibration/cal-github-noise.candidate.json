@@ -1,0 +1,192 @@
+{
+ "title": "GitHub Copilot is generally available to all developers",
+ "blocks": [
+  {
+   "kind": "paragraph",
+   "text": "We’re making GitHub Copilot, an AI pair programmer that suggests code in your editor, generally available to all developers for $10 USD/month or $100 USD/year. It will also be free to use for verified students and maintainers of popular open source projects.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "Share this article on Facebook and Twitter. Subscribe to our newsletter! Advertisement: buy now related content.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "At GitHub, it’s part of our mission to build technology that makes developers happy. Since the launch of GitHub Copilot technical preview last year, it’s become abundantly clear that AI is one of the best tools to empower the next generation of developers.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "Already, AI is acting as a copilot in our daily lives. It’s helping us write emails and essays, automatically generate photo albums of our loved ones, and even acts as a digital assistant to help us order groceries. But until now, AI has stopped short of improving code, leaving the process of developing software almost completely manual.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "That’s changing now. Today, I am thrilled to announce that we are making GitHub Copilot generally available to individual developers. Your AI pair programmer is here.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "With GitHub Copilot, for the first time in the history of software, AI can be broadly harnessed by developers to write and complete code. Just like the rise of compilers and open source, we believe AI-assisted coding will fundamentally change the nature of software development, giving developers a new tool to write code easier and faster so they can be happier in their lives.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "quote",
+   "text": "Do you want to start using GitHub Copilot today? Get started with a free trial, and check out our pricing plans. It’s free to use for verified students and maintainers of popular open source software.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "The wait is over",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "We specifically designed GitHub Copilot as an editor extension to make sure nothing gets in the way of what you’re doing. GitHub Copilot distills the collective knowledge of the world’s developers into an editor extension that suggests code in real time, to help you stay focused on what matters most: building great software.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "When you type code or comments, GitHub Copilot suggests the next line of code. But it’s not only a single word or line of code. GitHub Copilot can suggest complete methods, boilerplate code, whole unit tests, and even complex algorithms.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "GitHub Copilot enables developers to",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "<",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "ul>",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "Get AI-based coding suggestions: Get code suggestions that match a project’s context and style conventions, and cycle through different options to decide what to accept, reject, or edit.",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "Use your preferred environment: Integrate GitHub Copilot with popular editors, including Neovim, JetBrains IDEs, Visual Studio, and Visual Studio Code as an unobtrusive extension.",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "list_item",
+   "text": "Code confidently in unfamiliar territory: Code in new languages or try something new, and let GitHub Copilot suggest syntax and code in dozens of languages—so you can spend more time learning by doing.",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "With more than 1.2 million developers in our technical preview over the last 12 months, people who started using GitHub Copilot quickly told us it became an indispensable part of their daily workflows. In files where it’s enabled, nearly 40% of code is being written by GitHub Copilot in popular coding languages, like Python—and we expect that to increase. That’s creating more time and space for developers to focus on solving bigger problems and building even better software.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "And now, you can put the power of GitHub Copilot to work in your preferred environment with a free trial. Try GitHub Copilot for yourself.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "Free for verified students and maintainers of popular open source projects",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "GitHub Copilot wouldn’t be possible without GitHub’s vibrant community of students and creators. To support and give back to those communities, we’re making GitHub Copilot available for free to verified students and maintainers of popular open source projects.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "If you’re a student and want to participate in the program, apply for the GitHub Student Pack to get started. And if you’re an open source maintainer, check out our FAQ to see if you qualify to start using GitHub Copilot at no cost.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "Coming to companies later this year",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "GitHub Copilot is our first step toward empowering developers with AI. Starting today, it’s now available to all developers, and we’ll begin offering it to companies later this year. 🚀",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "Tags:",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "list_item",
+   "text": "GitHub Copilot",
+   "list_type": "ul",
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "Written by",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  }
+ ]
+}

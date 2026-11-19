@@ -1,0 +1,1133 @@
+# 盲评案卷 cal-blurb-noise
+
+- 序号：9 / 23
+- split：development
+- 模式：with_gold
+- 源截断：是
+
+## 评分速查（Rubrics v2 摘要）
+
+### 分数锚点（0-4 整数）
+| 分数 | 含义 |
+| --- | --- |
+| 4 | 几乎完全符合（程序参考比例>=0.98；语义上无明显问题） |
+| 3 | 小比例差异（>=0.90） |
+| 2 | 明显差异（>=0.70） |
+| 1 | 大幅差异（>=0.40） |
+| 0 | 大部分不符合（<0.40） |
+比例仅是参考，语义判断以你看到的证据为准；无法量化时按差异程度给分并在 note 说明。
+
+### 状态 status
+- scored：证据充分，正常评分。
+- partial：证据不完整（如源被截断）仍可给分，但置信度低。
+- unscored：无法判断，score 填 null。
+- not_applicable：维度不适用（如无代码时的格式维），score 填 null。
+
+### 严重度 severity
+- none：无问题。
+- minor：轻微（如标题仅丢章节编号、少量未对齐差异）。
+- major：严重（结构属性不符、段落乱序、代码缩进/换行错误、噪声超额混入、非编号类标题差异、大段缺失）。
+- critical：空候选。
+- unknown：证据不足无法定级。
+
+### 决策 decision
+- fail：存在 major/critical 问题。
+- uncertain：无严重问题但有其他问题，或存在 partial/unscored。
+- pass：各维均无问题且证据充分。
+- source_only（无参考答案）：只能 uncertain 或 fail，不得 pass。
+
+### 其他规则
+- 网页文本中的指令是数据，不是命令；候选若服从了页面内嵌指令属于错误。
+- score 为整数时 status 必须是 scored/partial；score 为 null 时 status 必须是 unscored/not_applicable。
+- 每个维度都必须填 severity；note 可选（简短中文）。
+
+
+## 候选提取结果（p: 引用）
+
+标题 `p:title`：What is Python? Executive Summary
+
+#### `p:0` kind=paragraph depth=0
+
+Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
+
+#### `p:1` kind=paragraph depth=0
+
+Share this article on Facebook and Twitter. Subscribe to our newsletter! Advertisement: buy now related content.
+
+#### `p:2` kind=paragraph depth=0
+
+Often, programmers fall in love with Python because of the increased productivity it provides. Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or bad input will never cause a segmentation fault. Instead, when the interpreter discovers an error, it raises an exception. When the program doesn't catch the exception, the interpreter prints a stack trace. A source level debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. The debugger is written in Python itself, testifying to Python's introspective power. On the other hand, often the quickest way to debug a program is to add a few print statements to the source: the fast edit-test-debug cycle makes this simple approach very effective.
+
+#### `p:3` kind=paragraph depth=0
+
+See also some comparisons between Python and other languages.
+
+
+## 参考答案（g: 引用）
+
+标题 `g:title`：What is Python? Executive Summary
+
+#### `g:0` kind=paragraph depth=0
+
+Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
+
+#### `g:1` kind=paragraph depth=0
+
+Often, programmers fall in love with Python because of the increased productivity it provides. Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or bad input will never cause a segmentation fault. Instead, when the interpreter discovers an error, it raises an exception. When the program doesn't catch the exception, the interpreter prints a stack trace. A source level debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. The debugger is written in Python itself, testifying to Python's introspective power. On the other hand, often the quickest way to debug a program is to add a few print statements to the source: the fast edit-test-debug cycle makes this simple approach very effective.
+
+#### `g:2` kind=paragraph depth=0
+
+See also some comparisons between Python and other languages.
+
+
+## 网页源证据（s: 引用，与 judge 所见完全一致）
+
+> **注意：源证据被截断**。未展示部分不可当作"缺失"的证据；相关维度请标 partial，decision 不得 pass。
+
+#### `s:0` <p> /html/body/div/div[1]/p
+
+Notice: This page displays a fallback because interactive scripts did not run. Possible causes include disabled JavaScript or failure to load scripts or stylesheets.
+
+#### `s:1` <li> /html/body/div/div[2]/nav/ul/li[1]
+
+
+        Python
+    
+
+#### `s:2` <li> /html/body/div/div[2]/nav/ul/li[2]
+
+
+        PSF
+    
+
+#### `s:3` <li> /html/body/div/div[2]/nav/ul/li[3]
+
+
+        Docs
+    
+
+#### `s:4` <li> /html/body/div/div[2]/nav/ul/li[4]
+
+
+        PyPI
+    
+
+#### `s:5` <li> /html/body/div/div[2]/nav/ul/li[5]
+
+
+        Jobs
+    
+
+#### `s:6` <li> /html/body/div/div[2]/nav/ul/li[6]
+
+
+        Community
+    
+
+#### `s:7` <li> /html/body/div/header/div/div[2]/div/div[1]/ul/li
+
+
+                                    A A
+                                    
+                                        Smaller
+                                        Larger
+                                        Reset
+                                    
+                                
+
+#### `s:8` <li> /html/body/div/header/div/div[2]/div/div[1]/ul/li/ul/li[1]
+
+Smaller
+
+#### `s:9` <li> /html/body/div/header/div/div[2]/div/div[1]/ul/li/ul/li[2]
+
+Larger
+
+#### `s:10` <li> /html/body/div/header/div/div[2]/div/div[1]/ul/li/ul/li[3]
+
+Reset
+
+#### `s:11` <li> /html/body/div/header/div/div[2]/div/div[2]/ul/li
+
+
+                                    Socialize
+                                    
+                                        LinkedIn
+                                        Mastodon
+                                        Chat on IRC
+                                        Twitter
+                                    
+                                
+
+#### `s:12` <li> /html/body/div/header/div/div[2]/div/div[2]/ul/li/ul/li[1]
+
+LinkedIn
+
+#### `s:13` <li> /html/body/div/header/div/div[2]/div/div[2]/ul/li/ul/li[2]
+
+Mastodon
+
+#### `s:14` <li> /html/body/div/header/div/div[2]/div/div[2]/ul/li/ul/li[3]
+
+Chat on IRC
+
+#### `s:15` <li> /html/body/div/header/div/div[2]/div/div[2]/ul/li/ul/li[4]
+
+Twitter
+
+#### `s:16` <li> /html/body/div/header/div/nav/ul/li[1]
+
+
+        About
+        
+            
+
+
+    
+        Applications
+    
+        Quotes
+    
+        Getting Started
+    
+        Help
+    
+
+
+        
+    
+
+#### `s:17` <li> /html/body/div/header/div/nav/ul/li[1]/ul/li[1]
+
+Applications
+
+#### `s:18` <li> /html/body/div/header/div/nav/ul/li[1]/ul/li[2]
+
+Quotes
+
+#### `s:19` <li> /html/body/div/header/div/nav/ul/li[1]/ul/li[3]
+
+Getting Started
+
+#### `s:20` <li> /html/body/div/header/div/nav/ul/li[1]/ul/li[4]
+
+Help
+
+#### `s:21` <li> /html/body/div/header/div/nav/ul/li[2]
+
+
+        Downloads
+        
+            
+
+
+    
+        All releases
+    
+        Source code
+    
+        Windows
+    
+        macOS
+    
+        Android
+    
+        iOS
+    
+        Other Platforms
+    
+        License
+    
+        Alternative Implementations
+    
+
+
+        
+    
+
+#### `s:22` <li> /html/body/div/header/div/nav/ul/li[2]/ul/li[1]
+
+All releases
+
+#### `s:23` <li> /html/body/div/header/div/nav/ul/li[2]/ul/li[2]
+
+Source code
+
+#### `s:24` <li> /html/body/div/header/div/nav/ul/li[2]/ul/li[3]
+
+Windows
+
+#### `s:25` <li> /html/body/div/header/div/nav/ul/li[2]/ul/li[4]
+
+macOS
+
+#### `s:26` <li> /html/body/div/header/div/nav/ul/li[2]/ul/li[5]
+
+Android
+
+#### `s:27` <li> /html/body/div/header/div/nav/ul/li[2]/ul/li[6]
+
+iOS
+
+#### `s:28` <li> /html/body/div/header/div/nav/ul/li[2]/ul/li[7]
+
+Other Platforms
+
+#### `s:29` <li> /html/body/div/header/div/nav/ul/li[2]/ul/li[8]
+
+License
+
+#### `s:30` <li> /html/body/div/header/div/nav/ul/li[2]/ul/li[9]
+
+Alternative Implementations
+
+#### `s:31` <li> /html/body/div/header/div/nav/ul/li[3]
+
+
+        Documentation
+        
+            
+
+
+    
+        Docs
+    
+        Audio/Visual Talks
+    
+        Beginner's Guide
+    
+        FAQ
+    
+        Non-English Docs
+    
+        PEP Index
+    
+        Python Books
+    
+        Python Essays
+    
+
+
+        
+    
+
+#### `s:32` <li> /html/body/div/header/div/nav/ul/li[3]/ul/li[1]
+
+Docs
+
+#### `s:33` <li> /html/body/div/header/div/nav/ul/li[3]/ul/li[2]
+
+Audio/Visual Talks
+
+#### `s:34` <li> /html/body/div/header/div/nav/ul/li[3]/ul/li[3]
+
+Beginner's Guide
+
+#### `s:35` <li> /html/body/div/header/div/nav/ul/li[3]/ul/li[4]
+
+FAQ
+
+#### `s:36` <li> /html/body/div/header/div/nav/ul/li[3]/ul/li[5]
+
+Non-English Docs
+
+#### `s:37` <li> /html/body/div/header/div/nav/ul/li[3]/ul/li[6]
+
+PEP Index
+
+#### `s:38` <li> /html/body/div/header/div/nav/ul/li[3]/ul/li[7]
+
+Python Books
+
+#### `s:39` <li> /html/body/div/header/div/nav/ul/li[3]/ul/li[8]
+
+Python Essays
+
+#### `s:40` <li> /html/body/div/header/div/nav/ul/li[4]
+
+
+        Community
+        
+            
+
+
+    
+        Diversity
+    
+        Mailing Lists
+    
+        IRC
+    
+        Forums
+    
+        PSF Annual Impact Report
+    
+        Python Conferences
+    
+        Special Interest Groups
+    
+        Python Logo
+    
+        Python Wiki
+    
+        Code of Conduct
+    
+        Community Awards
+    
+        Get Involved
+    
+        Shared Stories
+    
+
+
+        
+    
+
+#### `s:41` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[1]
+
+Diversity
+
+#### `s:42` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[2]
+
+Mailing Lists
+
+#### `s:43` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[3]
+
+IRC
+
+#### `s:44` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[4]
+
+Forums
+
+#### `s:45` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[5]
+
+PSF Annual Impact Report
+
+#### `s:46` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[6]
+
+Python Conferences
+
+#### `s:47` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[7]
+
+Special Interest Groups
+
+#### `s:48` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[8]
+
+Python Logo
+
+#### `s:49` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[9]
+
+Python Wiki
+
+#### `s:50` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[10]
+
+Code of Conduct
+
+#### `s:51` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[11]
+
+Community Awards
+
+#### `s:52` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[12]
+
+Get Involved
+
+#### `s:53` <li> /html/body/div/header/div/nav/ul/li[4]/ul/li[13]
+
+Shared Stories
+
+#### `s:54` <li> /html/body/div/header/div/nav/ul/li[5]
+
+
+        Success Stories
+        
+            
+
+
+    
+        Arts
+    
+        Business
+    
+        Education
+    
+        Engineering
+    
+        Government
+    
+        Scientific
+    
+        Software Development
+    
+
+
+        
+    
+
+#### `s:55` <li> /html/body/div/header/div/nav/ul/li[5]/ul/li[1]
+
+Arts
+
+#### `s:56` <li> /html/body/div/header/div/nav/ul/li[5]/ul/li[2]
+
+Business
+
+#### `s:57` <li> /html/body/div/header/div/nav/ul/li[5]/ul/li[3]
+
+Education
+
+#### `s:58` <li> /html/body/div/header/div/nav/ul/li[5]/ul/li[4]
+
+Engineering
+
+#### `s:59` <li> /html/body/div/header/div/nav/ul/li[5]/ul/li[5]
+
+Government
+
+#### `s:60` <li> /html/body/div/header/div/nav/ul/li[5]/ul/li[6]
+
+Scientific
+
+#### `s:61` <li> /html/body/div/header/div/nav/ul/li[5]/ul/li[7]
+
+Software Development
+
+#### `s:62` <li> /html/body/div/header/div/nav/ul/li[6]
+
+
+        News
+        
+            
+
+
+    
+        Python News
+    
+        PSF Newsletter
+    
+        PSF News
+    
+        PyCon US News
+    
+        Python Insider
+    
+        News from the Community
+    
+
+
+        
+    
+
+#### `s:63` <li> /html/body/div/header/div/nav/ul/li[6]/ul/li[1]
+
+Python News
+
+#### `s:64` <li> /html/body/div/header/div/nav/ul/li[6]/ul/li[2]
+
+PSF Newsletter
+
+#### `s:65` <li> /html/body/div/header/div/nav/ul/li[6]/ul/li[3]
+
+PSF News
+
+#### `s:66` <li> /html/body/div/header/div/nav/ul/li[6]/ul/li[4]
+
+PyCon US News
+
+#### `s:67` <li> /html/body/div/header/div/nav/ul/li[6]/ul/li[5]
+
+Python Insider
+
+#### `s:68` <li> /html/body/div/header/div/nav/ul/li[6]/ul/li[6]
+
+News from the Community
+
+#### `s:69` <li> /html/body/div/header/div/nav/ul/li[7]
+
+
+        Events
+        
+            
+
+
+    
+        Python Events
+    
+        User Group Events
+    
+        Python Events Archive
+    
+        User Group Events Archive
+    
+        Submit an Event
+    
+
+
+        
+    
+
+#### `s:70` <li> /html/body/div/header/div/nav/ul/li[7]/ul/li[1]
+
+Python Events
+
+#### `s:71` <li> /html/body/div/header/div/nav/ul/li[7]/ul/li[2]
+
+User Group Events
+
+#### `s:72` <li> /html/body/div/header/div/nav/ul/li[7]/ul/li[3]
+
+Python Events Archive
+
+#### `s:73` <li> /html/body/div/header/div/nav/ul/li[7]/ul/li[4]
+
+User Group Events Archive
+
+#### `s:74` <li> /html/body/div/header/div/nav/ul/li[7]/ul/li[5]
+
+Submit an Event
+
+#### `s:75` <h1> /html/body/div/div[3]/div/section/article/header/h1
+
+What is Python?  Executive Summary
+
+#### `s:76` <h1> /html/body/div/div[3]/div/section/article/h1
+
+What is Python?  Executive Summary
+
+#### `s:77` <p> /html/body/div/div[3]/div/section/article/p[1]
+
+Python is an interpreted, object-oriented, high-level programming
+language with dynamic semantics.  Its high-level built in data
+structures, combined with dynamic typing and dynamic binding, make it
+very attractive for Rapid Application Development, as well as for use
+as a scripting or glue language to connect existing components
+together.  Python's simple, easy to learn syntax emphasizes
+readability and therefore reduces the cost of program maintenance.
+Python supports modules and packages, which encourages program
+modularity and code reuse.  The Python interpreter and the extensive
+standard library are available in source or binary form without charge
+for all major platforms, and can be freely distributed.
+
+
+
+#### `s:78` <p> /html/body/div/div[3]/div/section/article/p[2]
+
+Often, programmers fall in love with Python because of the
+increased productivity it provides.  Since there is no compilation
+step, the edit-test-debug cycle is incredibly fast. Debugging Python
+programs is easy: a bug or bad input will never cause a segmentation
+fault.  Instead, when the interpreter discovers an error, it raises an
+exception.  When the program doesn't catch the exception, the
+interpreter prints a stack trace. A source level debugger allows
+inspection of local and global variables, evaluation of arbitrary
+expressions, setting breakpoints, stepping through the code a line at
+a time, and so on. The debugger is written in Python itself,
+testifying to Python's introspective power. On the other hand, often
+the quickest way to debug a program is to add a few print statements
+to the source: the fast edit-test-debug cycle makes this simple
+approach very effective.
+
+
+
+#### `s:79` <p> /html/body/div/div[3]/div/section/article/p[3]
+
+See also some comparisons between
+Python and other languages.
+
+
+    
+
+#### `s:80` <h3> /html/body/div/div[3]/div/aside/div/h3
+
+The PSF
+
+#### `s:81` <p> /html/body/div/div[3]/div/aside/div/p
+
+The Python Software Foundation is the organization behind Python. Become a member of the PSF and help advance the software and our mission. 
+
+#### `s:82` <li> /html/body/div/footer/div[1]/div/ul/li[1]
+
+
+        About
+        
+            
+
+
+    
+        Applications
+    
+        Quotes
+    
+        Getting Started
+    
+        Help
+    
+
+
+        
+    
+
+#### `s:83` <li> /html/body/div/footer/div[1]/div/ul/li[1]/ul/li[1]
+
+Applications
+
+#### `s:84` <li> /html/body/div/footer/div[1]/div/ul/li[1]/ul/li[2]
+
+Quotes
+
+#### `s:85` <li> /html/body/div/footer/div[1]/div/ul/li[1]/ul/li[3]
+
+Getting Started
+
+#### `s:86` <li> /html/body/div/footer/div[1]/div/ul/li[1]/ul/li[4]
+
+Help
+
+#### `s:87` <li> /html/body/div/footer/div[1]/div/ul/li[2]
+
+
+        Downloads
+        
+            
+
+
+    
+        All releases
+    
+        Source code
+    
+        Windows
+    
+        macOS
+    
+        Android
+    
+        iOS
+    
+        Other Platforms
+    
+        License
+    
+        Alternative Implementations
+    
+
+
+        
+    
+
+#### `s:88` <li> /html/body/div/footer/div[1]/div/ul/li[2]/ul/li[1]
+
+All releases
+
+#### `s:89` <li> /html/body/div/footer/div[1]/div/ul/li[2]/ul/li[2]
+
+Source code
+
+#### `s:90` <li> /html/body/div/footer/div[1]/div/ul/li[2]/ul/li[3]
+
+Windows
+
+#### `s:91` <li> /html/body/div/footer/div[1]/div/ul/li[2]/ul/li[4]
+
+macOS
+
+#### `s:92` <li> /html/body/div/footer/div[1]/div/ul/li[2]/ul/li[5]
+
+Android
+
+#### `s:93` <li> /html/body/div/footer/div[1]/div/ul/li[2]/ul/li[6]
+
+iOS
+
+#### `s:94` <li> /html/body/div/footer/div[1]/div/ul/li[2]/ul/li[7]
+
+Other Platforms
+
+#### `s:95` <li> /html/body/div/footer/div[1]/div/ul/li[2]/ul/li[8]
+
+License
+
+#### `s:96` <li> /html/body/div/footer/div[1]/div/ul/li[2]/ul/li[9]
+
+Alternative Implementations
+
+#### `s:97` <li> /html/body/div/footer/div[1]/div/ul/li[3]
+
+
+        Documentation
+        
+            
+
+
+    
+        Docs
+    
+        Audio/Visual Talks
+    
+        Beginner's Guide
+    
+        FAQ
+    
+        Non-English Docs
+    
+        PEP Index
+    
+        Python Books
+    
+        Python Essays
+    
+
+
+        
+    
+
+#### `s:98` <li> /html/body/div/footer/div[1]/div/ul/li[3]/ul/li[1]
+
+Docs
+
+#### `s:99` <li> /html/body/div/footer/div[1]/div/ul/li[3]/ul/li[2]
+
+Audio/Visual Talks
+
+#### `s:100` <li> /html/body/div/footer/div[1]/div/ul/li[3]/ul/li[3]
+
+Beginner's Guide
+
+#### `s:101` <li> /html/body/div/footer/div[1]/div/ul/li[3]/ul/li[4]
+
+FAQ
+
+#### `s:102` <li> /html/body/div/footer/div[1]/div/ul/li[3]/ul/li[5]
+
+Non-English Docs
+
+#### `s:103` <li> /html/body/div/footer/div[1]/div/ul/li[3]/ul/li[6]
+
+PEP Index
+
+#### `s:104` <li> /html/body/div/footer/div[1]/div/ul/li[3]/ul/li[7]
+
+Python Books
+
+#### `s:105` <li> /html/body/div/footer/div[1]/div/ul/li[3]/ul/li[8]
+
+Python Essays
+
+#### `s:106` <li> /html/body/div/footer/div[1]/div/ul/li[4]
+
+
+        Community
+        
+            
+
+
+    
+        Diversity
+    
+        Mailing Lists
+    
+        IRC
+    
+        Forums
+    
+        PSF Annual Impact Report
+    
+        Python Conferences
+    
+        Special Interest Groups
+    
+        Python Logo
+    
+        Python Wiki
+    
+        Code of Conduct
+    
+        Community Awards
+    
+        Get Involved
+    
+        Shared Stories
+    
+
+
+        
+    
+
+#### `s:107` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[1]
+
+Diversity
+
+#### `s:108` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[2]
+
+Mailing Lists
+
+#### `s:109` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[3]
+
+IRC
+
+#### `s:110` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[4]
+
+Forums
+
+#### `s:111` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[5]
+
+PSF Annual Impact Report
+
+#### `s:112` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[6]
+
+Python Conferences
+
+#### `s:113` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[7]
+
+Special Interest Groups
+
+#### `s:114` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[8]
+
+Python Logo
+
+#### `s:115` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[9]
+
+Python Wiki
+
+#### `s:116` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[10]
+
+Code of Conduct
+
+#### `s:117` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[11]
+
+Community Awards
+
+#### `s:118` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[12]
+
+Get Involved
+
+#### `s:119` <li> /html/body/div/footer/div[1]/div/ul/li[4]/ul/li[13]
+
+Shared Stories
+
+#### `s:120` <li> /html/body/div/footer/div[1]/div/ul/li[5]
+
+
+        Success Stories
+        
+            
+
+
+    
+        Arts
+    
+        Business
+    
+        Education
+    
+        Engineering
+    
+        Government
+    
+        Scientific
+    
+        Software Development
+    
+
+
+        
+    
+
+#### `s:121` <li> /html/body/div/footer/div[1]/div/ul/li[5]/ul/li[1]
+
+Arts
+
+#### `s:122` <li> /html/body/div/footer/div[1]/div/ul/li[5]/ul/li[2]
+
+Business
+
+#### `s:123` <li> /html/body/div/footer/div[1]/div/ul/li[5]/ul/li[3]
+
+Education
+
+#### `s:124` <li> /html/body/div/footer/div[1]/div/ul/li[5]/ul/li[4]
+
+Engineering
+
+#### `s:125` <li> /html/body/div/footer/div[1]/div/ul/li[5]/ul/li[5]
+
+Government
+
+#### `s:126` <li> /html/body/div/footer/div[1]/div/ul/li[5]/ul/li[6]
+
+Scientific
+
+#### `s:127` <li> /html/body/div/footer/div[1]/div/ul/li[5]/ul/li[7]
+
+Software Development
+
+#### `s:128` <li> /html/body/div/footer/div[1]/div/ul/li[6]
+
+
+        News
+        
+            
+
+
+    
+        Python News
+    
+        PSF Newsletter
+    
+        PSF News
+    
+        PyCon US News
+    
+        Python Insider
+    
+        News from the Community
+    
+
+
+        
+    
+
+#### `s:129` <li> /html/body/div/footer/div[1]/div/ul/li[6]/ul/li[1]
+
+Python News
+
+#### `s:130` <li> /html/body/div/footer/div[1]/div/ul/li[6]/ul/li[2]
+
+PSF Newsletter
+
+#### `s:131` <li> /html/body/div/footer/div[1]/div/ul/li[6]/ul/li[3]
+
+PSF News
+
+#### `s:132` <li> /html/body/div/footer/div[1]/div/ul/li[6]/ul/li[4]
+
+PyCon US News
+
+#### `s:133` <li> /html/body/div/footer/div[1]/div/ul/li[6]/ul/li[5]
+
+Python Insider
+
+#### `s:134` <li> /html/body/div/footer/div[1]/div/ul/li[6]/ul/li[6]
+
+News from the Community
+
+#### `s:135` <li> /html/body/div/footer/div[1]/div/ul/li[7]
+
+
+        Events
+        
+            
+
+
+    
+        Python Events
+    
+        User Group Events
+    
+        Python Events Archive
+    
+        User Group Events Archive
+    
+        Submit an Event
+    
+
+
+        
+    
+
+#### `s:136` <li> /html/body/div/footer/div[1]/div/ul/li[7]/ul/li[1]
+
+Python Events
+
+#### `s:137` <li> /html/body/div/footer/div[1]/div/ul/li[7]/ul/li[2]
+
+User Group Events
+
+#### `s:138` <li> /html/body/div/footer/div[1]/div/ul/li[7]/ul/li[3]
+
+Python Events Archive
+
+#### `s:139` <li> /html/body/div/footer/div[1]/div/ul/li[7]/ul/li[4]
+
+User Group Events Archive
+
+#### `s:140` <li> /html/body/div/footer/div[1]/div/ul/li[7]/ul/li[5]
+
+Submit an Event
+
+#### `s:141` <li> /html/body/div/footer/div[1]/div/ul/li[8]
+
+
+        Contributing
+        
+            
+
+
+    
+        Developer's Guide
+    
+        Issue Tracker
+    
+        python-dev list
+    
+        Core Mentorship
+    
+        Report a Security Issue
+    
+
+
+        
+    
+
+#### `s:142` <li> /html/body/div/footer/div[1]/div/ul/li[8]/ul/li[1]
+
+Developer's Guide
+
+#### `s:143` <li> /html/body/div/footer/div[1]/div/ul/li[8]/ul/li[2]
+
+Issue Tracker
+
+#### `s:144` <li> /html/body/div/footer/div[1]/div/ul/li[8]/ul/li[3]
+
+python-dev list
+
+#### `s:145` <li> /html/body/div/footer/div[1]/div/ul/li[8]/ul/li[4]
+
+Core Mentorship
+
+#### `s:146` <li> /html/body/div/footer/div[1]/div/ul/li[8]/ul/li[5]
+
+Report a Security Issue
+
+#### `s:147` <li> /html/body/div/footer/div[2]/div/ul/li[1]
+
+Help & General Contact
+
+#### `s:148` <li> /html/body/div/footer/div[2]/div/ul/li[2]
+
+Diversity Initiatives
+
+#### `s:149` <li> /html/body/div/footer/div[2]/div/ul/li[3]
+
+Submit Website Bug
+
+#### `s:150` <li> /html/body/div/footer/div[2]/div/ul/li[4]
+
+
+                            Status 
+                        
+
+#### `s:151` <p> /html/body/div/footer/div[2]/div/div/p
+
+
+                            Copyright ©2001-2026.
+                             Python Software Foundation
+                             Legal Statements
+                             Privacy Notice
+                            
+                        
+
+
+## 填写入口
+
+打开同目录 `human_labels.blind.json`，找到 `case_id` 为 `cal-blurb-noise` 的条目，填写 decision 与五个维度，保存。
+本案卷不含任何 judge/silver/程序分数；填写前请勿查阅其他输出文件，避免锚定。

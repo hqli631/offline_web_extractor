@@ -208,3 +208,21 @@
 - 测试：P2 构建器 7 项 + bootstrap 8 项定向 OK；全量回归 **376 项 OK，23.9s**（上次 637s 确认为瞬态负载，已恢复正常）。
 - GitHub 同步至 097c3d5。
 - **剩余需用户配合/批准**：WP4 新案例人类 gold 盲评（用户）+ 第二标注者 IAA ≥12 例（用户安排）；WP5 跨家族 cross-judge（gpt-5.6-sol，需预算+ccswitch 确认）；WP6 frozen_test v2 泛化验收（需预算）+ P2 报告。零调用工程（WP1/2/3）已全部就绪。
+
+
+## P2 WP4 工具链就绪（2026-11-19，零调用）
+
+- **compute_iaa.py**：双标注者决策 Cohen κ + 一致率 + 逐维 exact/严重度符号 + bootstrap 95% CI（B=10000），按 case_id/blind_code 对齐；量化人类 gold 噪声（低 IAA 限制 judge–human 一致率上限）。
+- **build_p2_review_kit.py**：用 build_prompt 离线构造盲评案卷（**无需先跑 judge**），复用 render_blind_packet/build_template；中性编号 P01–P18 + 密封映射，案卷零 case_id 泄露、不含 judge/silver/程序分数。
+- **P2 盲评包已生成**：outputs/human_review/p2.blind.v1（18 案卷 dev6/test12 + human_labels.blind.json 模板 + sealed_mapping.json + INDEX.md + kit_manifest.json）。**供用户独立盲评标注新案例人类 gold；第二标注者用相同案卷独立填另一份标签做 IAA。**
+- 测试：compute_iaa 5 项 + kit 3 项定向 OK；全量回归 **384 项 OK，24.6s**。
+- GitHub：本地提交 11dead3（WP4 工具+盲评包），推送遇 github.com TLS 瞬断（3 次），**待网络恢复重试**；此前 WP1–WP3 已同步至 097c3d5。
+- **P2 零调用工程（WP1/2/3/4 工具）全部就绪**。剩余依赖用户：WP4 人类 gold 盲评（18 例）+ 第二标注者 IAA ≥12 例；WP5 跨家族 cross-judge + WP6 frozen_test v2 泛化验收需预算批准。
+
+
+## P2 WP5 跨家族接线就绪（2026-11-19，零调用）
+
+- **src/webextractor/judge_openai_provider.py**：JudgeOpenAIProvider（CC Switch OpenAI 兼容，默认 gpt-5.6-sol），用 judge 系统消息 + _parse_content（**不校验 rule**），接口兼容 run_judge；独立于生产 rule-agent provider 与 Qwen judge，零生产改动。
+- **tools/run_p2_cross_judge.py**：复用 run_batch（缓存/签名绑定 model，跨家族条目与 Qwen 分离），--split development 默认，--dry-run 免密钥。
+- 测试 4 项（mock opener：judge 系统消息、run_judge 接受 judge JSON 非 rule、需密钥、dry-run）；全量回归 **388 项 OK，23.8s**。
+- **P2 全部零调用工程就绪**（WP1 统计/WP2 扩样/WP3 封存/WP4 IAA+盲评包/WP5 跨家族接线）。剩余依赖用户：WP4 人类 gold 盲评 18 例 + 第二标注者 IAA ≥12 例；WP5/WP6 模型调用需预算批准 + ccswitch 可用确认。

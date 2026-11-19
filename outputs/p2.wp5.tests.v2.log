@@ -1,0 +1,6 @@
+{"dry_run": true, "model": "gpt-5.6-sol", "split": "development", "n_cases": 12, "max_calls": 12, "base_url": "(env/default)"}
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+OK

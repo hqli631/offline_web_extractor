@@ -1,0 +1,7 @@
+.......Output exists; choose a new directory.
+.
+----------------------------------------------------------------------
+Ran 8 tests in 0.162s
+
+OK
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpxoxg2ez2\\kit", "n_cases": 18, "development": 6, "frozen_test": 12}

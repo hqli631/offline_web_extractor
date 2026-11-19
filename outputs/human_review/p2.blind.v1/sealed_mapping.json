@@ -1,0 +1,20 @@
+{
+  "P01": "cal-interpreter-clean",
+  "P02": "cal-interpreter-duplicate",
+  "P03": "cal-interpreter-instruction_interference",
+  "P04": "cal-interpreter-missing_paragraph",
+  "P05": "cal-interpreter-noise",
+  "P06": "cal-interpreter-reorder",
+  "P07": "cal-nasa-clean",
+  "P08": "cal-nasa-duplicate",
+  "P09": "cal-nasa-instruction_interference",
+  "P10": "cal-nasa-missing_paragraph",
+  "P11": "cal-nasa-noise",
+  "P12": "cal-nasa-reorder",
+  "P13": "cal-w3ca11y-clean",
+  "P14": "cal-w3ca11y-duplicate",
+  "P15": "cal-w3ca11y-instruction_interference",
+  "P16": "cal-w3ca11y-missing_paragraph",
+  "P17": "cal-w3ca11y-noise",
+  "P18": "cal-w3ca11y-reorder"
+}

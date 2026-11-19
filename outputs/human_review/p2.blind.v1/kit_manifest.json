@@ -1,0 +1,31 @@
+{
+  "kit_version": "p2-1.0.0",
+  "inputs": {
+    "manifest": "f6a99ed5808a393cab9696d6fa9309fab248233a967a80df61b0be9a55c1e440",
+    "freeze": "87cb35879e1eef872f0e71e7bb8468d815dd372c0c0e739555426ba076f2fe07"
+  },
+  "n_cases": 18,
+  "files": {
+    "INDEX.md": "ec8fee32f71194d8bce0afaefd59c6291b8cbbf69239a2d57c1ea2aa87e3c723",
+    "human_labels.blind.json": "f49c7ddc9e25d68bc732ecfa949a201df047a9007a9165e9b781a887909be129",
+    "packets/P01.md": "e7e7b981f2b19aa6a0cad8c912f9db2387336c32e725c2508470b47d6427448e",
+    "packets/P02.md": "62ae97a0e70f7c301c99d2f268295cb678e250323d8364017ec13b07f97c54d7",
+    "packets/P03.md": "7d875bac2d48c5b0042011a82885196b21a50d84ff959ef5d1213dc5d7129052",
+    "packets/P04.md": "d04a411ccdb929d026509a9709e9d1c9036d31a225ea94753ee45587695c5e97",
+    "packets/P05.md": "de45297e7c681817e76fcf3aa3ae98e7e54aadba0833adf888df19e103404404",
+    "packets/P06.md": "df81ea889b45f3f04b18c5db81ab1848059adddeedeb3351efdca20ceae3bbde",
+    "packets/P07.md": "f7e2f071de7736c61d3510658eb6081842320fe817287fe80eb0339e5ff8dc6c",
+    "packets/P08.md": "2ee38edaf132031a9b1960162c328c490582ae6c80d4b1245568ba094415b2f8",
+    "packets/P09.md": "0a039a355d34e1d23e540f0658e00e9e9c02a1bd056eabbee26793f0db383d4a",
+    "packets/P10.md": "a662b513085e731f8d067362167f04b20b77e6b35242c17bf44425fadbd6050a",
+    "packets/P11.md": "040d10d89de18de420b268af4e90bdd4226efc89cb31631e5aef269be1a4ca99",
+    "packets/P12.md": "55deae0679ace836e215e66b99a4380a7c3cec239e97df3a3755197a227e8b31",
+    "packets/P13.md": "8b9d77310f0b506c123e11a1010a94d5e6655d19df8f0c2c6949b1f0c4d8abb5",
+    "packets/P14.md": "7f1c61ecb7272a56cb1768b56a7f219b42678d046d6364728a5c7a980d5ce487",
+    "packets/P15.md": "6976f0defed0dad6dfcbf6d8ece5022763a159a0f92c635bd1008afc28357308",
+    "packets/P16.md": "ccba18bec1aae5aff27456adddfe010bcaffa6cde201b4079d86f6bcd7b94c8c",
+    "packets/P17.md": "5bcde0cc84158976a2253d52a112c9484ad3175c7e26628f52822da974241c02",
+    "packets/P18.md": "bb4d673ff1cc694f8b9783554bf53f5e37d571cf01c2610a9f74cb49f500faa9",
+    "sealed_mapping.json": "59d5aaf7f6b93652069dc84831bfa3f5f18a7d0db424e02267269daa2f3f0dd6"
+  }
+}

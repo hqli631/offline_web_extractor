@@ -82,3 +82,13 @@ P0 交付后启动 P1 judge 元评估。预注册方案 docs/P1_META_EVAL_PLAN.m
 - **WP1 完成**：tools/bootstrap_stats.py（案例级 bootstrap 95% CI，B=10000 种子 20261119 + 配对 McNemar）；tests/test_bootstrap_stats.py 8 项；全量回归 **369 项 OK**（outputs/rubrics_judge.p2.wp1.tests.v1.log；本次耗时 637s 异常偏慢，疑系统负载，测试全绿）。
 - 现有 dev 三版 bootstrap（outputs/p2.bootstrap.dev.v1.json、P2_BOOTSTRAP_DEV.md）：v1.2 决策一致 0.9167 CI[0.75,1.0]、κ0.8554 CI[0.5,1.0]、拒绝 0；**关键洞察：n=12 小样本 CI 极宽，v1.2 vs v1.1 改善统计不显著（McNemar p=0.625，差值 CI[-0.55,0.18] 含 0），v1.1 κ CI 含 0** → 量化了 P2 扩样必要性。v1.0 一致率 CI[1,1] 为边界退化（全匹配），如实注明。
 - 下一步：WP2 扩样工程（零调用构建新 silver 案例）→ WP3 frozen_test v2 封存 → WP4 人类 gold/IAA（需用户）→ WP5 跨家族（需预算）→ WP6 泛化验收+报告。
+
+
+## P2 WP2 扩样 + WP3 封存（2026-11-19，零调用）
+
+- **WP2 扩样工程完成**：tools/build_p2_calibration.py 从已有本地源页构建 **18 新 with_gold silver 案例**（无新网络采集）：python_interpreter_zh（dev 扩展 6）、nasa-voyager-news.candidate + w3c_accessibility_intro_zh（frozen_test v2 各 6）；各 6 变异（clean/missing_paragraph/noise/duplicate/reorder/instruction_interference）。expected.json 参考=清洁提取（assistant_silver，待 WP4 人类核验）；interpreter 新建参考，nasa/w3ca11y 用已有参考。
+- 产出 samples/p2_manifest.json + outputs/p2.freeze.v5.json（freeze_version 5，48 文件，**重建零漂移**，manifest canonical 匹配）；原 23 例 manifest/freeze v1–v4 **未动**，frozen_test v1 永久封存。新案例 prompt 最大 75904<110000 全 fit。
+- **WP3 frozen_test v2 预注册封存**：docs/P2_FROZEN_TEST_V2_SEAL.md（12 例清单+哈希+纪律：一次性评估、不调参、与 dev 整页隔离）。
+- 测试：P2 构建器 7 项 + bootstrap 8 项定向 OK；全量回归 **376 项 OK，23.9s**（上次 637s 确认为瞬态负载，已恢复正常）。
+- GitHub 同步至 097c3d5。
+- **剩余需用户配合/批准**：WP4 新案例人类 gold 盲评（用户）+ 第二标注者 IAA ≥12 例（用户安排）；WP5 跨家族 cross-judge（gpt-5.6-sol，需预算+ccswitch 确认）；WP6 frozen_test v2 泛化验收（需预算）+ P2 报告。零调用工程（WP1/2/3）已全部就绪。

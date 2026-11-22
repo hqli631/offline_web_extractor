@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Node 5 scorer tests: frozen classification, bootstrap determinism, integrity
 fail-closed, verdict logic, CLI overwrite refusal. Zero model calls."""
+import json
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -224,6 +225,38 @@ class CliTests(unittest.TestCase):
             rc = sc.main(['--run', str(Path(td) / 'run.json'), '--output', str(out),
                           '--freeze-path', str(Path(td) / 'fz.json')])
             self.assertEqual(rc, 3)
+
+
+class FullPipelineCliTests(unittest.TestCase):
+    def test_run_then_score_cli_zero_call(self):
+        from unittest.mock import patch
+        import tools.run_rubrics_judge as rrj
+        freeze_path = n5.ROOT / n5.FREEZE_REL
+        fail = mk_report('fail', mk_dims(cleanliness={'score': 2, 'severity': 'major'}))
+        rejudge = mk_report('uncertain', mk_dims(cleanliness={'score': 3, 'severity': 'minor'}))
+        clean = mk_report('uncertain')
+        trace = mk_trace({'title': 'T', 'blocks': [{'kind': 'paragraph', 'text': 'hello'}]})
+        with TemporaryDirectory() as td:
+            run_path = Path(td) / 'run.json'
+            score_path = Path(td) / 'score.json'
+            with patch.object(n5, 'run_judge', side_effect=[fail, rejudge, clean]), \
+                    patch.object(n5, 'run_agent', return_value=trace), \
+                    patch.object(rrj, '_build_provider', return_value=object()):
+                rc = n5.main(['--run', '--output', str(run_path), '--freeze-path', str(freeze_path),
+                              '--max-cases', '2'])
+            self.assertEqual(rc, 0)
+            run = json.loads(run_path.read_text(encoding='utf-8'))
+            self.assertEqual(run['budget']['used'], 3500)
+            self.assertEqual([c['status'] for c in run['cases']], ['repaired', 'no_repair_needed'])
+            rc = sc.main(['--run', str(run_path), '--output', str(score_path),
+                          '--freeze-path', str(freeze_path)])
+            self.assertEqual(rc, 0)
+            rep = json.loads(score_path.read_text(encoding='utf-8'))
+            self.assertEqual(rep['verdict'], 'REPAIR_BENEFIT_SIGNAL')
+            self.assertEqual(rep['metrics']['paired_n'], 1)
+            self.assertEqual(rep['metrics']['repair_trigger_rate'], 0.5)
+            self.assertIn('side_check', rep['per_case'][0])
+            self.assertIn('after', rep['per_case'][0]['side_check'])
 
 
 if __name__ == '__main__':

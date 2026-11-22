@@ -340,6 +340,9 @@ def main(argv=None):
     if args.output.exists():
         print('Output exists; choose a new filename.', file=sys.stderr)
         return 3
+    if not args.freeze_path.exists():
+        print('Freeze not found; run --freeze first.', file=sys.stderr)
+        return 1
     freeze = load_json(args.freeze_path)
     problems = check_freeze(freeze)
     if problems:

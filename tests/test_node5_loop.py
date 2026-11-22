@@ -2,6 +2,8 @@
 """Node 5 loop tests: adapter, leakage audit, wrapper, budget guard, freeze,
 orchestration (mocked judge/agent), and one real-executor smoke. Zero model calls."""
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 from unittest.mock import patch
 
 from src.webextractor.extractor import extract_html
@@ -272,6 +274,39 @@ class RealExecutorSmokeTests(unittest.TestCase):
         result = trace['attempts'][-1]['executions'][0]['execution']['result']
         self.assertTrue(result['blocks'])
         self.assertNotIn('noise', ' '.join(b['text'] for b in result['blocks']))
+
+
+class CliTests(unittest.TestCase):
+    def test_freeze_overwrite_refused(self):
+        with TemporaryDirectory() as td:
+            fz = Path(td) / 'fz.json'
+            fz.write_text('{}', encoding='utf-8')
+            self.assertEqual(n5.main(['--freeze', '--freeze-path', str(fz)]), 3)
+
+    def test_run_output_overwrite_refused(self):
+        with TemporaryDirectory() as td:
+            out = Path(td) / 'out.json'
+            out.write_text('{}', encoding='utf-8')
+            self.assertEqual(n5.main(['--run', '--output', str(out),
+                                      '--freeze-path', str(Path(td) / 'missing.json')]), 3)
+
+    def test_run_missing_freeze_clean_error(self):
+        with TemporaryDirectory() as td:
+            self.assertEqual(n5.main(['--run', '--output', str(Path(td) / 'out.json'),
+                                      '--freeze-path', str(Path(td) / 'missing.json')]), 1)
+
+    def test_model_drift_refused(self):
+        with TemporaryDirectory() as td:
+            rc = n5.main(['--run', '--output', str(Path(td) / 'out.json'),
+                          '--freeze-path', str(n5.ROOT / n5.FREEZE_REL), '--model', 'other-model'])
+            self.assertEqual(rc, 1)
+
+    def test_token_cap_bounds_refused(self):
+        with TemporaryDirectory() as td:
+            for cap in ('300000', '0'):
+                rc = n5.main(['--run', '--output', str(Path(td) / ('out' + cap + '.json')),
+                              '--freeze-path', str(n5.ROOT / n5.FREEZE_REL), '--token-cap', cap])
+                self.assertEqual(rc, 1)
 
 
 if __name__ == '__main__':

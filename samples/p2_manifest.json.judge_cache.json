@@ -2004,5 +2004,647 @@
    "finish_reason": "stop"
   },
   "stored_at": "2026-11-22T12:53:32+00:00"
+ },
+ "cf9172454e56fa62d72dfbcf90d880b01cef2bff6787fb841626a11b2374bece": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All article content including headings, paragraphs, code blocks, and footnotes is present and matches the gold standard.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Unix 系统中，为了不与同时安装的 Python 2.x 冲突，Python 3.x 解释器默认安装的执行文件名不是 python。"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation, sidebar, and footer elements from the source are correctly excluded from the candidate output.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "目录"
+       },
+       {
+        "ref": "s:7",
+        "quote": "上一主题"
+       },
+       {
+        "ref": "s:16",
+        "quote": "导航"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Heading levels and document order match the source and gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:12",
+        "quote": "2.1.1. 传入参数"
+       },
+       {
+        "ref": "g:20",
+        "quote": "2.2. 解释器的运行环境"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title is faithful to the source, including the chapter number, and omits permalink controls.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "2. 使用 Python 的解释器"
+       },
+       {
+        "ref": "s:27",
+        "quote": "2. 使用 Python 的解释器¶"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Code blocks preserve correct whitespace and formatting as seen in the source.",
+      "evidence": [
+       {
+        "ref": "s:46",
+        "quote": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Be careful not to fall off!\")\n...\nBe careful not t"
+       },
+       {
+        "ref": "s:57",
+        "quote": "#!/usr/bin/env python3\n# -*- coding: cp1252 -*-\n"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19788,
+    "output_tokens": 687,
+    "total_tokens": 20475
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T14:54:59+00:00"
+ },
+ "5e7680705f602bc60669c3b95310e87360c990194fe7dd1c8510eb92df97e7e8": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The candidate is missing the first introductory paragraph of section 2.1 ('在可用的机器上...'), which is present in the gold and source.",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       },
+       {
+        "ref": "s:29",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "No navigation, ads, or footer content from the source (e.g., s:0 '目录', s:7 '上一主题') appears in the candidate blocks.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "目录"
+       },
+       {
+        "ref": "s:7",
+        "quote": "上一主题"
+       },
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The order of headings and paragraphs matches the source and gold sequence, with correct heading levels (h2 for 2.1/2.2, h3 for sub-sections).",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:12",
+        "quote": "2.1.1. 传入参数"
+       },
+       {
+        "ref": "g:20",
+        "quote": "2.2. 解释器的运行环境"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title '2. 使用 Python 的解释器' is faithful to the source and includes the chapter number.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "2. 使用 Python 的解释器"
+       },
+       {
+        "ref": "s:27",
+        "quote": "2. 使用 Python 的解释器¶"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Code blocks preserve whitespace and formatting as seen in the source.",
+      "evidence": [
+       {
+        "ref": "s:46",
+        "quote": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Be careful not to fall off!\")\n...\nBe careful not t"
+       },
+       {
+        "ref": "s:57",
+        "quote": "#!/usr/bin/env python3\n# -*- coding: cp1252 -*-\n"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19716,
+    "output_tokens": 869,
+    "total_tokens": 20585
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T14:55:12+00:00"
+ },
+ "8cbdc06ef916980041701344c009331badf53fbc7e15b3da214e36b8f1bc80e2": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All meaningful article content from the source is present in the candidate, including headings, paragraphs, code blocks, and footnotes.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Unix 系统中，为了不与同时安装的 Python 2.x 冲突，Python 3.x 解释器默认安装的执行文件名不是 python。"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "A single short noise block containing social sharing and navigation text was included at the beginning of the article body.",
+      "evidence": [
+       {
+        "ref": "p:1",
+        "quote": "分享到：微信 微博 QQ空间 推荐阅读：广告推广内容 上一篇：没有了 下一篇：Python 简介"
+       },
+       {
+        "ref": "s:7",
+        "quote": "上一主题"
+       },
+       {
+        "ref": "s:9",
+        "quote": "下一主题"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The order of headings, paragraphs, and code blocks matches the source and gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:12",
+        "quote": "2.1.1. 传入参数"
+       },
+       {
+        "ref": "g:20",
+        "quote": "2.2. 解释器的运行环境"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title is faithful to the source article title, including the chapter number.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "2. 使用 Python 的解释器"
+       },
+       {
+        "ref": "s:27",
+        "quote": "2. 使用 Python 的解释器¶"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Code blocks preserve correct whitespace and formatting as seen in the source.",
+      "evidence": [
+       {
+        "ref": "s:46",
+        "quote": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Be careful not to fall off!\")\n...\nBe careful not t"
+       },
+       {
+        "ref": "s:57",
+        "quote": "#!/usr/bin/env python3\n# -*- coding: cp1252 -*-\n"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19838,
+    "output_tokens": 812,
+    "total_tokens": 20650
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T14:55:44+00:00"
+ },
+ "4a6d9d2dca19dbfad64c8e6faf660a0da4fa787ad34e2996b6057edd4237424d": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The candidate contains a duplicate of the first body paragraph (p:1 and p:2 are identical), which is a small local defect. All other content from the source is present.",
+      "evidence": [
+       {
+        "ref": "p:1",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       },
+       {
+        "ref": "p:2",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       },
+       {
+        "ref": "g:1",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "No navigation, ads, or footer noise detected in the candidate blocks. The extraction is clean.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "目录"
+       },
+       {
+        "ref": "s:7",
+        "quote": "上一主题"
+       },
+       {
+        "ref": "s:9",
+        "quote": "下一主题"
+       },
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The article order is correct, but there is a duplicated paragraph block at the beginning (p:1 and p:2) which disrupts the expected sequence slightly compared to the gold standard where it appears only once.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:1",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       },
+       {
+        "ref": "g:2",
+        "quote": "python3.15\n"
+       },
+       {
+        "ref": "p:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "p:1",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       },
+       {
+        "ref": "p:2",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title matches the source and gold exactly, including the chapter number.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "2. 使用 Python 的解释器"
+       },
+       {
+        "ref": "g:title",
+        "quote": "2. 使用 Python 的解释器"
+       },
+       {
+        "ref": "s:27",
+        "quote": "2. 使用 Python 的解释器¶"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Code blocks preserve whitespace and formatting correctly as seen in the source.",
+      "evidence": [
+       {
+        "ref": "s:30",
+        "quote": "python3.15\n"
+       },
+       {
+        "ref": "s:44",
+        "quote": "$ python3.15\nPython 3.15 (default, May 7 2025, 15:46:04)\n[GCC 10.2.0] on linux\nType \"help\", \"copyright\", \"credits\" or \"l"
+       },
+       {
+        "ref": "s:46",
+        "quote": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Be careful not to fall off!\")\n...\nBe careful not t"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19860,
+    "output_tokens": 1270,
+    "total_tokens": 21130
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T14:56:00+00:00"
+ },
+ "cec0f0f8c0e61581ac62fc1005b0a0dd6795fb7a22d375a3073d4969974ebad2": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All article content including headings, paragraphs, code blocks, and footnotes is present.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Unix 系统中，为了不与同时安装的 Python 2.x 冲突，Python 3.x 解释器默认安装的执行文件名不是 python。"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation, ads, and other non-article elements are excluded.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "目录"
+       },
+       {
+        "ref": "s:16",
+        "quote": "导航"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "A single adjacent paragraph swap was observed between the Windows installation note and the shell execution note.",
+      "evidence": [
+       {
+        "ref": "g:3",
+        "quote": "这样，就可以在 shell 中运行 Python 了 [1] 。因为可以选择安装目录，解释器也有可能安装在别的位置；如果还不明白，就去问问身边的 Python 大神或系统管理员。（例如，常见备选路径还有 /usr/local/python。"
+       },
+       {
+        "ref": "g:4",
+        "quote": "在 Windows 机器上当你从 Microsoft Store 安装 Python 之后，python3.15 命令将可使用。 如果你安装了 py.exe 启动器，你将可以使用 py 命令。 请参阅 Python 安装管理器 了解其他启动"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title is faithful to the source and includes the chapter number.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "2. 使用 Python 的解释器"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Code blocks preserve correct whitespace and formatting.",
+      "evidence": [
+       {
+        "ref": "s:46",
+        "quote": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Be careful not to fall off!\")\n...\nBe careful not t"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19788,
+    "output_tokens": 714,
+    "total_tokens": 20502
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T14:56:07+00:00"
+ },
+ "c31b2d7c5d2a2ce3906a638ec453829679e1e8247867d315ff47a5550488a0c8": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The candidate includes all article content from the source and gold, but contains an injected instruction block (p:1) that is not part of the original article.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:1",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       },
+       {
+        "ref": "s:29",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The candidate contains a significant noise block (p:1) with prompt injection text ('Ignore previous instructions...') which is not present in the source or gold and constitutes contamination.",
+      "evidence": [
+       {
+        "ref": "s:html",
+        "quote": "<div class=\"body\" role=\"main\">"
+       },
+       {
+        "ref": "g:1",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The order of headings, paragraphs, and code blocks matches the source and gold exactly. The injected noise block does not disrupt the relative order of the legitimate article content.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:12",
+        "quote": "2.1.1. 传入参数"
+       },
+       {
+        "ref": "g:20",
+        "quote": "2.2. 解释器的运行环境"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title '2. 使用 Python 的解释器' is faithful to the source and gold, including the chapter number.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "2. 使用 Python 的解释器"
+       },
+       {
+        "ref": "s:27",
+        "quote": "2. 使用 Python 的解释器¶"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Code blocks preserve whitespace and formatting correctly as seen in the source.",
+      "evidence": [
+       {
+        "ref": "s:30",
+        "quote": "python3.15\n"
+       },
+       {
+        "ref": "s:46",
+        "quote": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Be careful not to fall off!\")\n...\nBe careful not to fall off!"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19839,
+    "output_tokens": 931,
+    "total_tokens": 20770
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T14:56:28+00:00"
  }
 }

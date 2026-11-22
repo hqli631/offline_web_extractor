@@ -55,7 +55,7 @@
 
 ## 6. 交付物
 
-tools/build_p3_review_kit.py（已建，10 测试）；p3_findings 汇总工具；freeze 修订提案（如需要）；v3 构建器 + 封存记录；gate 评分工具（复用 score_p2_results 模式）；docs/P3_GATE_REPORT.md（命令+哈希+测试日志+统计方法+如实局限）；GitHub 同步后停止。
+tools/build_p3_review_kit.py（已建，10 测试）；p3_findings 汇总工具；freeze 修订提案（如需要）；v3 构建器 + 封存记录；gate 评分工具 **已建**（tools/score_p3_gate.py，29 测试；配置驱动 fail-closed：拒绝 draft 配置、校验冻结 batch_config 含 judge_version、数据冻结哈希、κ 退化子集强制 FAIL、v3 无 human=pass 案例时 pass_recall 记 FAIL、输出拒绝覆盖；阈值只从批准后的 frozen gate-config 读取）；docs/P3_GATE_REPORT.md（命令+哈希+测试日志+统计方法+如实局限）；GitHub 同步后停止。
 
 ## 7. 批准记录
 

@@ -1,8 +1,8 @@
 {
   "findings_version": 1,
-  "reviewer": "",
-  "review_date": "",
-  "discipline_ack": false,
+  "reviewer": "hqli631",
+  "review_date": "2026-11-22",
+  "discipline_ack": true,
   "discipline": "不回改 P2 封存 gold；不重评 frozen_test v2；修订须预注册。",
   "verdicts": [
     "judge_correct",
@@ -19,7 +19,7 @@
         "decision_mismatch",
         "judge_severe_human_not:cleanliness"
       ],
-      "verdict": null,
+      "verdict": "judge_correct",
       "anchor_revision_suggestion": "",
       "note": ""
     },
@@ -36,7 +36,7 @@
         "judge_severe_human_not:completeness",
         "judge_severe_human_not:structure"
       ],
-      "verdict": null,
+      "verdict": "judge_correct",
       "anchor_revision_suggestion": "",
       "note": ""
     },
@@ -47,7 +47,7 @@
       "categories": [
         "judge_missed_defect:cleanliness"
       ],
-      "verdict": null,
+      "verdict": "human_correct",
       "anchor_revision_suggestion": "",
       "note": ""
     },
@@ -59,7 +59,7 @@
         "decision_mismatch",
         "judge_severe_human_not:completeness"
       ],
-      "verdict": null,
+      "verdict": "both_partially_correct",
       "anchor_revision_suggestion": "",
       "note": ""
     },
@@ -71,7 +71,7 @@
         "decision_mismatch",
         "judge_severe_human_not:cleanliness"
       ],
-      "verdict": null,
+      "verdict": "human_correct",
       "anchor_revision_suggestion": "",
       "note": ""
     },
@@ -82,7 +82,7 @@
       "categories": [
         "judge_missed_defect:cleanliness"
       ],
-      "verdict": null,
+      "verdict": "judge_correct",
       "anchor_revision_suggestion": "",
       "note": ""
     },
@@ -97,7 +97,7 @@
         "judge_severe_human_not:cleanliness",
         "judge_severe_human_not:completeness"
       ],
-      "verdict": null,
+      "verdict": "judge_correct",
       "anchor_revision_suggestion": "",
       "note": ""
     },
@@ -109,7 +109,7 @@
         "decision_mismatch",
         "judge_severe_human_not:cleanliness"
       ],
-      "verdict": null,
+      "verdict": "human_correct",
       "anchor_revision_suggestion": "",
       "note": ""
     },
@@ -120,7 +120,7 @@
       "categories": [
         "judge_missed_defect:structure"
       ],
-      "verdict": null,
+      "verdict": "human_correct",
       "anchor_revision_suggestion": "",
       "note": ""
     },
@@ -133,7 +133,7 @@
         "dim_gap_ge2:cleanliness",
         "judge_severe_human_not:cleanliness"
       ],
-      "verdict": null,
+      "verdict": "judge_correct",
       "anchor_revision_suggestion": "",
       "note": ""
     }

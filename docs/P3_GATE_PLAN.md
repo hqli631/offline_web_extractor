@@ -59,7 +59,7 @@ tools/build_p3_review_kit.py（已建，10 测试）；p3_findings 汇总工具�
 
 ## 7. 批准记录
 
-- 校准复审完成：________（待用户填 p3_findings.json）
+- 校准复审完成：**2026-11-22 hqli631，10 案 verdict 已接收封存（outputs/p3.findings.v1）；amendment_signal=true → 修订提案 docs/P3_AMENDMENT_PROPOSAL.md（待批准）**
 - 阈值批准：________（待填；批准前本文件仅为提案）
 - 预算批准：________（待填）
 - 预注册冻结时间：________（批准后记录）

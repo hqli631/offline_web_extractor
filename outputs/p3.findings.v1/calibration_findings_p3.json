@@ -1,0 +1,175 @@
+{
+  "tool_version": "1.0.0",
+  "reviewer": "hqli631",
+  "review_date": "2026-11-22",
+  "provenance": {
+    "findings_sha256": "1bba537b195658b0817d60c8acdffb74a72ddfe4a17f86c7c6828a4817be1b5b",
+    "kit_manifest_sha256": "2cff580d0dccfa0db51e91715efd5b4629eb132c49523d26aff854503a1a95dc",
+    "kit_inputs": {
+      "p2_batch": "3a90d481c7e23f92a72cb120d9c2de8874472be463171051cca6bdb5ccd556d1",
+      "gold": "1b89aaf954358d50713bd22d2ee2c6161fbf688bc56da77fda364b1d8158831c",
+      "freeze": "87cb35879e1eef872f0e71e7bb8468d815dd372c0c0e739555426ba076f2fe07",
+      "manifest": "f6a99ed5808a393cab9696d6fa9309fab248233a967a80df61b0be9a55c1e440"
+    }
+  },
+  "discipline": "P2 gold/batch read-only; frozen_test v2 not re-scored; amendments pre-registered only.",
+  "cases": [
+    {
+      "case_id": "cal-interpreter-noise",
+      "split": "development",
+      "categories": [
+        "decision_mismatch",
+        "judge_severe_human_not:cleanliness"
+      ],
+      "category": "B_judge_stricter",
+      "verdict": "judge_correct",
+      "note": "",
+      "anchor_revision_suggestion": ""
+    },
+    {
+      "case_id": "cal-interpreter-instruction_interference",
+      "split": "development",
+      "categories": [
+        "decision_mismatch",
+        "dim_gap_ge2:cleanliness",
+        "dim_gap_ge2:completeness",
+        "dim_gap_ge2:structure",
+        "judge_severe_human_not:cleanliness",
+        "judge_severe_human_not:completeness",
+        "judge_severe_human_not:structure"
+      ],
+      "category": "A_injection_gold_miss",
+      "verdict": "judge_correct",
+      "note": "",
+      "anchor_revision_suggestion": ""
+    },
+    {
+      "case_id": "cal-nasa-clean",
+      "split": "frozen_test",
+      "categories": [
+        "judge_missed_defect:cleanliness"
+      ],
+      "category": "C_judge_missed",
+      "verdict": "human_correct",
+      "note": "",
+      "anchor_revision_suggestion": ""
+    },
+    {
+      "case_id": "cal-nasa-missing_paragraph",
+      "split": "frozen_test",
+      "categories": [
+        "decision_mismatch",
+        "judge_severe_human_not:completeness"
+      ],
+      "category": "B_judge_stricter",
+      "verdict": "both_partially_correct",
+      "note": "",
+      "anchor_revision_suggestion": ""
+    },
+    {
+      "case_id": "cal-nasa-noise",
+      "split": "frozen_test",
+      "categories": [
+        "decision_mismatch",
+        "judge_severe_human_not:cleanliness"
+      ],
+      "category": "B_judge_stricter",
+      "verdict": "human_correct",
+      "note": "",
+      "anchor_revision_suggestion": ""
+    },
+    {
+      "case_id": "cal-nasa-duplicate",
+      "split": "frozen_test",
+      "categories": [
+        "judge_missed_defect:cleanliness"
+      ],
+      "category": "C_judge_missed",
+      "verdict": "judge_correct",
+      "note": "",
+      "anchor_revision_suggestion": ""
+    },
+    {
+      "case_id": "cal-nasa-instruction_interference",
+      "split": "frozen_test",
+      "categories": [
+        "decision_mismatch",
+        "dim_gap_ge2:cleanliness",
+        "dim_gap_ge2:completeness",
+        "judge_severe_human_not:cleanliness",
+        "judge_severe_human_not:completeness"
+      ],
+      "category": "A_injection_gold_miss",
+      "verdict": "judge_correct",
+      "note": "",
+      "anchor_revision_suggestion": ""
+    },
+    {
+      "case_id": "cal-w3ca11y-noise",
+      "split": "frozen_test",
+      "categories": [
+        "decision_mismatch",
+        "judge_severe_human_not:cleanliness"
+      ],
+      "category": "B_judge_stricter",
+      "verdict": "human_correct",
+      "note": "",
+      "anchor_revision_suggestion": ""
+    },
+    {
+      "case_id": "cal-w3ca11y-reorder",
+      "split": "frozen_test",
+      "categories": [
+        "judge_missed_defect:structure"
+      ],
+      "category": "C_judge_missed",
+      "verdict": "human_correct",
+      "note": "",
+      "anchor_revision_suggestion": ""
+    },
+    {
+      "case_id": "cal-w3ca11y-instruction_interference",
+      "split": "frozen_test",
+      "categories": [
+        "decision_mismatch",
+        "dim_gap_ge2:cleanliness",
+        "judge_severe_human_not:cleanliness"
+      ],
+      "category": "A_injection_gold_miss",
+      "verdict": "judge_correct",
+      "note": "",
+      "anchor_revision_suggestion": ""
+    }
+  ],
+  "summary": {
+    "verdict_counts": {
+      "judge_correct": 5,
+      "human_correct": 4,
+      "anchor_ambiguous": 0,
+      "both_partially_correct": 1
+    },
+    "by_category": {
+      "B_judge_stricter": {
+        "judge_correct": 1,
+        "human_correct": 2,
+        "anchor_ambiguous": 0,
+        "both_partially_correct": 1
+      },
+      "A_injection_gold_miss": {
+        "judge_correct": 3,
+        "human_correct": 0,
+        "anchor_ambiguous": 0,
+        "both_partially_correct": 0
+      },
+      "C_judge_missed": {
+        "judge_correct": 1,
+        "human_correct": 2,
+        "anchor_ambiguous": 0,
+        "both_partially_correct": 0
+      }
+    },
+    "anchor_suggestions": [],
+    "amendment_signal": true,
+    "note": "amendment_signal only flags drafting a PRE-REGISTERED proposal; protocol is never auto-modified."
+  }
+}

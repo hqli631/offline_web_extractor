@@ -1,0 +1,549 @@
+{
+ "freeze_version": 6,
+ "generated_at": "2026-11-22T14:47:52+00:00",
+ "batch_config": {
+  "max_source_chars": 20000,
+  "max_output_tokens": 2200,
+  "timeout_seconds": 90,
+  "model": "qwen3.8-27b"
+ },
+ "label_policy": {
+  "label_origin": "assistant_silver",
+  "human_reviewed": false,
+  "note": "Assistant silver labels; not human gold. frozen_test is scored once; no threshold tuning on it."
+ },
+ "counts": {
+  "development": 12,
+  "frozen_test": 11
+ },
+ "excluded": [
+  {
+   "page": "rfc.candidate",
+   "reason": "Candidate JSON alone is 449798 chars (>110000 prompt budget) at any source limit; measured 2026-11-17."
+  },
+  {
+   "page": "gnu.candidate",
+   "reason": "Gold annotation too large for the prompt budget (smoke v1 prompt-stage rejection)."
+  },
+  {
+   "page": "whatwg-html.candidate",
+   "reason": "Source 15.6 MiB exceeds the 10 MiB source limit."
+  },
+  {
+   "page": "webdev-learn-html.candidate",
+   "reason": "Sealed validation page; must not inform calibration or tuning."
+  }
+ ],
+ "manifest_sha256": "7edaf0046c75600a3f103afcf7633b4ed7de05c6f989cb4fae21473f01825aa2",
+ "files": {
+  "tools/build_calibration_set.py": "45b3582d7828a4ae4fe2289ff64f194d9e01380b0699cfe537d3e8e08b843f74",
+  "samples/calibration_manifest.json": "a3ef652c55ef9a015f12a83b18befef9076ae352f005985fa2682823b15b5d28",
+  "samples/python_appetite_zh.html": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+  "samples/python_appetite_zh.expected.json": "353ed7d39fd736bf4badb59d85ce0f1343646d19eafd950b35707f85d0f0f92f",
+  "samples/python_blurb.html": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+  "samples/python_blurb.expected.json": "47661979fc40801a89fe8cd20f422a288b3fe19e0f82ea96854ca1788c78c49c",
+  "samples/iana_example_domains.html": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+  "samples/mdn.candidate.html": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+  "samples/mdn.candidate.expected.json": "a2e13751b3bf4657cf0995bef9f78fe160328df885e7a90c1550269528eadd89",
+  "samples/github-copilot-blog.candidate.html": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+  "samples/github-copilot-blog.candidate.expected.json": "c8526595a786e3867e3cd6ae57293b66e44a2b31626cf1179d096e8df47eca92",
+  "samples/w3c-link-text.candidate.html": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5",
+  "samples/calibration/cal-appetite-clean.candidate.json": "bc48015994d3ea6d0c201fdc6f9f185f82c3257f4355e6b6e4598ef866e00edc",
+  "samples/calibration/labels/cal-appetite-clean.label.json": "e02564a5066d4e5fa24f402a31fb99b8658e86a005379d97afa778c8a0ab883a",
+  "samples/calibration/cal-appetite-missing_paragraph.candidate.json": "60bafc8e2eb74738d94db6c3edb80a48ae9c62a5191dd13628e03410000acd95",
+  "samples/calibration/labels/cal-appetite-missing_paragraph.label.json": "f516dcc7a70f70001011b6d3ba0748583cc494a397ec5b2700673e812df67aae",
+  "samples/calibration/cal-appetite-noise.candidate.json": "5330433d02c58156b4454144d49dd0e74b8dc8fc78ee4c243f2231ba3b42e630",
+  "samples/calibration/labels/cal-appetite-noise.label.json": "791a136889916190a4fdcefbea805ba7fc5f38c0dfb31bf88b0b6072d9023e7f",
+  "samples/calibration/cal-appetite-duplicate.candidate.json": "45cd305351a75b89ec9620e64d969dfc2a915fe0e9276afeb7e975f703a3c6ef",
+  "samples/calibration/labels/cal-appetite-duplicate.label.json": "96db490ccc04796bbb264ff4a0a07d367eb5eaba7c7c4d61acac925930884da6",
+  "samples/calibration/cal-appetite-reorder.candidate.json": "9ee306d495bba5fd10439d5d168cd4c1062bcefdff30741e7e709d79cf7715db",
+  "samples/calibration/labels/cal-appetite-reorder.label.json": "d081608e9b693065ceb846f3f8e56f713b272177f573e0d4408c4a7fe3f64bc0",
+  "samples/calibration/cal-appetite-title_number.candidate.json": "be2939462d1b122ea22ac102637fb968a2ae421a19e989cd72ae9d09fb761a62",
+  "samples/calibration/labels/cal-appetite-title_number.label.json": "79edd4c41d24485650f6af2038446a9a0ceca0d8db86cf6926c0703b4a4a040a",
+  "samples/calibration/cal-blurb-clean.candidate.json": "cd842cd77a548a4d0e65a85af714a6f7f36024bab19323a4b6b8a221c85983c2",
+  "samples/calibration/labels/cal-blurb-clean.label.json": "4862e7835ce1fc1d34fd75ba11b7e862a4a06038c3f851c194fe71f49b18e310",
+  "samples/calibration/cal-blurb-missing_paragraph.candidate.json": "4beca0005ada4e5d017069470d773a24e2e8944b01d8129441340d7f6ab4a364",
+  "samples/calibration/labels/cal-blurb-missing_paragraph.label.json": "5a2e8b4292a0ad1dc120168e77e2314ca4bd13debd374613ce5331ca4306f27b",
+  "samples/calibration/cal-blurb-noise.candidate.json": "02d48b72172cfe6ef070c1d675458930992a72099d99dac09c3b56cf0e1bd11e",
+  "samples/calibration/labels/cal-blurb-noise.label.json": "513039e239043bec53693d9d12328dcc56b0c5287496393c1932085fb0e2d809",
+  "samples/calibration/cal-blurb-reorder.candidate.json": "d972610868e83c2ac651e39fd230b3f41dbc383c290c579793385ac9a11db1dd",
+  "samples/calibration/labels/cal-blurb-reorder.label.json": "3348dc1312a35f576737872e007dc5bac8f756180a450575fe518e725276883c",
+  "samples/calibration/cal-iana-clean.candidate.json": "a3031c8f9fb8fa178fc8d2ee6c73e6557ab6d495f8e078bc1859efee0ec7776c",
+  "samples/calibration/labels/cal-iana-clean.label.json": "9aa113304fa135aeede93672eb0325a64cff32ec8e35c9cdcaf456c0bd022f0f",
+  "samples/calibration/cal-iana-noise.candidate.json": "89878ca89e08f99c9a299f84e6ffcf11c51f1538b3efae750bac7ef63db390c4",
+  "samples/calibration/labels/cal-iana-noise.label.json": "77742daef37d31ff49377d883e8700f259bc148a9ebb932c5bd0235b8cb19c76",
+  "samples/calibration/cal-mdn-clean.candidate.json": "f39a6b42a67cfbd88cb1e0f9e88393f90b363778e77d77499409496f6548fc0c",
+  "samples/calibration/labels/cal-mdn-clean.label.json": "987dae263377cce3b9e90d3045bb0f0ba6890731601a1688f70de571a14d16b3",
+  "samples/calibration/cal-mdn-missing_paragraph.candidate.json": "2bcb360fcf19852b46f7c918ad7e7b3953d25e03909364a1be3e94309c1fba2f",
+  "samples/calibration/labels/cal-mdn-missing_paragraph.label.json": "981c790e2720803b9baa15f02de64d3e2403b1e0a4e004013540b606a6f97833",
+  "samples/calibration/cal-mdn-code_indent.candidate.json": "2d35af1eab9884d4433c3ec252757438d0a558bd71f41f0963741d69aa24a3a5",
+  "samples/calibration/labels/cal-mdn-code_indent.label.json": "cf472fefc63ac76c44fd6e79fa011dba80b332b8cd832a8299748247983d3dfa",
+  "samples/calibration/cal-mdn-reorder.candidate.json": "33ae5846f53241159ae630f69315f7eb5570f742e7fb99e7dba7fd20a5a9a11d",
+  "samples/calibration/labels/cal-mdn-reorder.label.json": "944891877c4eb61e48b14d63771ab4d616436618193d3a4483cb0b533dc527c0",
+  "samples/calibration/cal-mdn-instruction_interference.candidate.json": "f12d6d4e61252b976dbdb36be69c4b756aab13803e5c930bc6c696dcde8c016e",
+  "samples/calibration/labels/cal-mdn-instruction_interference.label.json": "d32daff1c59e7176a06a259aac70092bb4c2e46ca438cc3dc5607fb75d78b9a0",
+  "samples/calibration/cal-github-clean.candidate.json": "14dba888ca5cdf997ab1fe0c593eddad737762a396c50dfd697d1e5bc196b04f",
+  "samples/calibration/labels/cal-github-clean.label.json": "97b0d31336281b53a7f5eaed05c19be60bf9797b5caf4b05cf03d1dc41a01740",
+  "samples/calibration/cal-github-noise.candidate.json": "9a0267dc46a8dcbf0f276ff73d62a19082befc41bff542497ad540c78eb98926",
+  "samples/calibration/labels/cal-github-noise.label.json": "43b984931a3695b4e5d31aac6a77c852b7300d0fa209b25652edf4161e7757b0",
+  "samples/calibration/cal-github-duplicate.candidate.json": "2701f93e6b96e34977325341b098e09b44425fc1e8102abddc477f157681cabb",
+  "samples/calibration/labels/cal-github-duplicate.label.json": "b1894fe71ba448751fcd8fbb3cdbe9b728a1ab0b7496be5e3ca0139cc1acfc5f",
+  "samples/calibration/cal-github-missing_paragraph.candidate.json": "6a3da84dbae575ebdfc440ccefd93161c1ab467208f62b1acf784d2e02dacc8c",
+  "samples/calibration/labels/cal-github-missing_paragraph.label.json": "a4e4e8b4e8524a2a07c6e23a755fd12c3ecf36964b33457acafefdc915ee1610",
+  "samples/calibration/cal-w3clink-clean.candidate.json": "a27ad201657a164f0997ca38de1676568254bd3e9829490eba53fb6cd3388e72",
+  "samples/calibration/labels/cal-w3clink-clean.label.json": "0fd773d1e279d25a968908a920b10409c2b70591f4ad07d9e7d6fb2ae2b5f0dd",
+  "samples/calibration/cal-w3clink-instruction_interference.candidate.json": "dc11b260fb92fbf9f8f88cf82bc8ce6aa9b85fc8c65447c230c12d5120da5006",
+  "samples/calibration/labels/cal-w3clink-instruction_interference.label.json": "33a5464373e84e7dde780b4d71b41ed1626e4225901924cd16a75e900336e232",
+  "src/webextractor/rubrics_v2.py": "4fa60e024758e67d8c831b7a34e267bf2ce9a143dd6ae70cdbc94da036560364",
+  "src/webextractor/rubrics_judge.py": "46f2111837ba64c168452eb98ffa2001e238832384f7eed3f0b0fdc683a8d076",
+  "docs/RUBRICS_V2_PROTOCOL.md": "ab0887b53098c37b1cf56176fe99975ab934fb7e1915ae90d174ed77b366322a"
+ },
+ "cases": [
+  {
+   "case_id": "cal-appetite-clean",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "variant": "clean",
+   "candidate_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "label_sha256": "242a40b24f49187898afa199cafda31ea8ffe0e9bb4bba61a11abebdb0dab19b",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "prompt_chars": 42755,
+   "source_truncated": false,
+   "expected_decision": "pass"
+  },
+  {
+   "case_id": "cal-appetite-missing_paragraph",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "variant": "missing_paragraph",
+   "candidate_sha256": "0deecb2e62621dc2751a003494bef15bd9b225237d067f3e7b47be0443c08d77",
+   "label_sha256": "423fab62116c0003bcd67ce67bddadf1da56e318d98da13b2fd820e37d6a92cb",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "prompt_chars": 42540,
+   "source_truncated": false,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-appetite-noise",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "variant": "noise",
+   "candidate_sha256": "306bda12f4fa51d06e61d7f9fdd2dc5af97beb560c624956ec3038c487962908",
+   "label_sha256": "a68ec3a7b5c625e24f83bb8823efd885b6fa4e5a57e6d39f0155667fcd5ab477",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "prompt_chars": 42901,
+   "source_truncated": false,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-appetite-duplicate",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "variant": "duplicate",
+   "candidate_sha256": "1f2efda4adf4228b289d4c5fe4213b0f214b8b6aa674241032ed17fa9bf5c230",
+   "label_sha256": "710be8d00819d4a7470994e03bf83bcd7009135a0150dadf295ce38537134b8a",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "prompt_chars": 42970,
+   "source_truncated": false,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-appetite-reorder",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "variant": "reorder",
+   "candidate_sha256": "b54df95c22a0079b847cdd00db65aad50d7900170a3520fabd2aea9338ff31f1",
+   "label_sha256": "4cc57d935fd36a81d53c9fa4a48f9eb15edba048cd9ee6b85379cc526a7d5589",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "prompt_chars": 42755,
+   "source_truncated": false,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-appetite-title_number",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "variant": "title_number",
+   "candidate_sha256": "b186d156e8c73c6a1152a0d0d2b378827b531f2ac7fe830f1f0f78d415a21f13",
+   "label_sha256": "7022540c468aff0efb449a4ea95e4da56a2fa1c14e5caea5e7fa964a227ccfa9",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "prompt_chars": 42749,
+   "source_truncated": false,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-blurb-clean",
+   "split": "development",
+   "template": "python_blurb",
+   "variant": "clean",
+   "candidate_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+   "label_sha256": "cb8a7d4a90786c0a784002bd07b4bd2acbf1a0dc19808ba18de4a438871921d5",
+   "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+   "gold_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+   "prompt_chars": 60358,
+   "source_truncated": true,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-blurb-missing_paragraph",
+   "split": "development",
+   "template": "python_blurb",
+   "variant": "missing_paragraph",
+   "candidate_sha256": "0d7933f900654b60d057365eb56a8b702259aa6cb46a938fce11b25ef68da1bc",
+   "label_sha256": "084bef2c309f956bbd56905aab3bebe8cbe263e5532fe0cab7f18320dfd6d613",
+   "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+   "gold_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+   "prompt_chars": 59547,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-blurb-noise",
+   "split": "development",
+   "template": "python_blurb",
+   "variant": "noise",
+   "candidate_sha256": "f7aa52a7c5d9654e68e81f58d2db5c74c23b20ddd30c87575d193497980100c9",
+   "label_sha256": "873a5c1d3e9caca8dd8390002558d7fe56d7b4fc03cd0ffe6c569c0916e46c89",
+   "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+   "gold_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+   "prompt_chars": 60567,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-blurb-reorder",
+   "split": "development",
+   "template": "python_blurb",
+   "variant": "reorder",
+   "candidate_sha256": "6b60421ec7aea90da9e550a76ce492078af182ef635c142a7da8ac244cdce18d",
+   "label_sha256": "472550a7e8fe4d44cb04640f31284aa8d65b506ec361056f163a79f3f5d16f7d",
+   "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+   "gold_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+   "prompt_chars": 60358,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-iana-clean",
+   "split": "development",
+   "template": "iana_example_domains",
+   "variant": "clean",
+   "candidate_sha256": "43e139dd309a4dfeb4cb289c27441da3303f44a92dc8c5e042b7fcb13a772b76",
+   "label_sha256": "96b77531ea496b0440e22b90fd9ccb507218997c6e262c636b572968c30b735b",
+   "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+   "gold_sha256": null,
+   "prompt_chars": 23500,
+   "source_truncated": false,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-iana-noise",
+   "split": "development",
+   "template": "iana_example_domains",
+   "variant": "noise",
+   "candidate_sha256": "8e905ea75067f5c86b5bab93f6d7b40b27ff00c68f905efea8e5f292cae74cb6",
+   "label_sha256": "6f21bfe2da9307677ac4ef04f36fd9e55b281650d2410f9e999f777de901cb4a",
+   "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+   "gold_sha256": null,
+   "prompt_chars": 23709,
+   "source_truncated": false,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-mdn-clean",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "variant": "clean",
+   "candidate_sha256": "7d05830ede603e809a290c00fb45a5b5b50da7918a7b7a8d57d021e31b2b4ae4",
+   "label_sha256": "782c4f58988c8014cc1860fc90906cf2e28f05be7865bbdbe27aec27825351d1",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+   "gold_sha256": "32c2a4904e969788b7e618ae456a15be4a51812f5b57b7d08219886952f93b13",
+   "prompt_chars": 107447,
+   "source_truncated": true,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-mdn-missing_paragraph",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "variant": "missing_paragraph",
+   "candidate_sha256": "78ad958c89db2188cfab12f4cdb59a25cdd01c028e5514be95b5510630d6285b",
+   "label_sha256": "f73700888c258e3e2c4ee235e7c520bcbe697797a41919fe2e0c542087e18ec1",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+   "gold_sha256": "32c2a4904e969788b7e618ae456a15be4a51812f5b57b7d08219886952f93b13",
+   "prompt_chars": 107204,
+   "source_truncated": true,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-mdn-code_indent",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "variant": "code_indent",
+   "candidate_sha256": "e0b8f3fb97eebd914d6b132324eef18690e9086b7722c58479bd9663ca51092d",
+   "label_sha256": "49f7410254e8b1404d41d3f7443e14a0ad2af4675a6102236e444415f66a1487",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+   "gold_sha256": "32c2a4904e969788b7e618ae456a15be4a51812f5b57b7d08219886952f93b13",
+   "prompt_chars": 107449,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-mdn-reorder",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "variant": "reorder",
+   "candidate_sha256": "e1906515bb594b02f05f23288473019b524332d3f93cf808ef09c109527f0a94",
+   "label_sha256": "667e671b2530a2bd418e2384445154b9d5d0a28fedc95e6ad7ca42ff3f614ccf",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+   "gold_sha256": "32c2a4904e969788b7e618ae456a15be4a51812f5b57b7d08219886952f93b13",
+   "prompt_chars": 107447,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-mdn-instruction_interference",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "variant": "instruction_interference",
+   "candidate_sha256": "592a5a803f91a874da5a463dc84f9bb22c95262ad9d347d5bcd569ca6b93164d",
+   "label_sha256": "2bb6e3634863613270acd3012dbd9384038973dd11807d4921b120986d6f7680",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+   "gold_sha256": "32c2a4904e969788b7e618ae456a15be4a51812f5b57b7d08219886952f93b13",
+   "prompt_chars": 107629,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-github-clean",
+   "split": "frozen_test",
+   "template": "github-copilot-blog.candidate",
+   "variant": "clean",
+   "candidate_sha256": "dacff7deb52ddfd6b5a97332ba43708ef94b5e85b9d75cd9dd459246a43ceab9",
+   "label_sha256": "f192e991f0a1967bab4780341f43d77e284342b40fdaaee026b20558d2240334",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+   "gold_sha256": "bb98dad09c1b31c36a0ee100b24699d9b44390c7b4a49c3d4e5378e925f5507e",
+   "prompt_chars": 85226,
+   "source_truncated": true,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-github-noise",
+   "split": "frozen_test",
+   "template": "github-copilot-blog.candidate",
+   "variant": "noise",
+   "candidate_sha256": "ff4f3a827e0dbe0b62bf0d2ade1724886137c599f3a8f24704d3329ba28623c1",
+   "label_sha256": "d604589a91c5219b8d6c49732216be361b0a6840dd5add88b23db964858d1c32",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+   "gold_sha256": "bb98dad09c1b31c36a0ee100b24699d9b44390c7b4a49c3d4e5378e925f5507e",
+   "prompt_chars": 85436,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-github-duplicate",
+   "split": "frozen_test",
+   "template": "github-copilot-blog.candidate",
+   "variant": "duplicate",
+   "candidate_sha256": "5d64ad91385abeab8a18807044b30b6fe5c2a30ce358f4e2c4233b754c08609b",
+   "label_sha256": "04177d0af5c2cae726a500c96de33dfd83466d9fc18490b1aac12196359f7088",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+   "gold_sha256": "bb98dad09c1b31c36a0ee100b24699d9b44390c7b4a49c3d4e5378e925f5507e",
+   "prompt_chars": 85582,
+   "source_truncated": true,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-github-missing_paragraph",
+   "split": "frozen_test",
+   "template": "github-copilot-blog.candidate",
+   "variant": "missing_paragraph",
+   "candidate_sha256": "57e8cfa7a6f51c35048c0bd559c9d9fc8e8b79602f7bec0e93e45c78c537e0f3",
+   "label_sha256": "44077b75e03942ddf0b1108612877da198ad1d5e9f9fbf9c5fd233802ad241f2",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+   "gold_sha256": "bb98dad09c1b31c36a0ee100b24699d9b44390c7b4a49c3d4e5378e925f5507e",
+   "prompt_chars": 84870,
+   "source_truncated": true,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-w3clink-clean",
+   "split": "frozen_test",
+   "template": "w3c-link-text.candidate",
+   "variant": "clean",
+   "candidate_sha256": "22e39cd73ad033d3ea742f69cf9aafa63b35125ddcc4f33173e9788ef1d6d05e",
+   "label_sha256": "7652c6ae0e643a595d6749774b29827f69a89e5b06a54025c081ea7b3ec63d7d",
+   "source_sha256": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5",
+   "gold_sha256": null,
+   "prompt_chars": 26458,
+   "source_truncated": false,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-w3clink-instruction_interference",
+   "split": "frozen_test",
+   "template": "w3c-link-text.candidate",
+   "variant": "instruction_interference",
+   "candidate_sha256": "519ca8c8f550c83fa43d3b1da02d99a59dcfa37ae7beb74b6e5596522445c115",
+   "label_sha256": "8de9cfa187e84d30e14000cd4f4d641554675c9ded29a8c2b10b9c44a620515a",
+   "source_sha256": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5",
+   "gold_sha256": null,
+   "prompt_chars": 26639,
+   "source_truncated": false,
+   "expected_decision": "fail"
+  }
+ ],
+ "amendment": {
+  "parent_freeze": "D:\\codex project\\offline_web_extractor\\outputs\\rubrics_judge.node3.freeze.v4.json",
+  "parent_freeze_version": 4,
+  "reason": "P3 judge v1.3.0 calibration amendment in rubrics_judge.py only, pre-registered in docs/P3_AMENDMENT_PROPOSAL.md (approved hqli631 2026-11-22): (1) anchors 3/2 granularity examples (single short noise block in a long article / one non-lead body paragraph missing / single adjacent swap -> 3; multi-block noise or substantial share of a short article / lead-or-multiple paragraphs missing / multi-block order disruption -> 2); (2) three general constraints: severity granularity principle; source presence is not justification for nav/share/subscribe/feedback/footer inclusion; explicit order check vs gold/source. Injection handling and duplicate classification unchanged. No case-specific rules. JUDGE_VERSION 1.2.0 -> 1.3.0; RUBRICS 2.0.0 and batch_config unchanged. Original calibration silver labels refreshed for prompt_chars diagnostic ONLY (proven field-identical otherwise). P2 silver labels (freeze v5) intentionally NOT refreshed: historical v1.2-era diagnostics of the consumed P2 evaluation; p2.freeze.v5 remains the valid historical record. frozen_test v1 sealed; v2 consumed one-shot, not re-run/tuned.",
+  "changed_code_files": {
+   "src/webextractor/rubrics_judge.py": {
+    "old_sha256": "edd841efb52961f07891160ccae7fabcc72da65734854da9a86e02bf622ff891",
+    "new_sha256": "46f2111837ba64c168452eb98ffa2001e238832384f7eed3f0b0fdc683a8d076"
+   }
+  },
+  "changed_label_files": [
+   "samples/calibration/labels/cal-appetite-clean.label.json",
+   "samples/calibration/labels/cal-appetite-missing_paragraph.label.json",
+   "samples/calibration/labels/cal-appetite-noise.label.json",
+   "samples/calibration/labels/cal-appetite-duplicate.label.json",
+   "samples/calibration/labels/cal-appetite-reorder.label.json",
+   "samples/calibration/labels/cal-appetite-title_number.label.json",
+   "samples/calibration/labels/cal-blurb-clean.label.json",
+   "samples/calibration/labels/cal-blurb-missing_paragraph.label.json",
+   "samples/calibration/labels/cal-blurb-noise.label.json",
+   "samples/calibration/labels/cal-blurb-reorder.label.json",
+   "samples/calibration/labels/cal-iana-clean.label.json",
+   "samples/calibration/labels/cal-iana-noise.label.json",
+   "samples/calibration/labels/cal-mdn-clean.label.json",
+   "samples/calibration/labels/cal-mdn-missing_paragraph.label.json",
+   "samples/calibration/labels/cal-mdn-code_indent.label.json",
+   "samples/calibration/labels/cal-mdn-reorder.label.json",
+   "samples/calibration/labels/cal-mdn-instruction_interference.label.json",
+   "samples/calibration/labels/cal-github-clean.label.json",
+   "samples/calibration/labels/cal-github-noise.label.json",
+   "samples/calibration/labels/cal-github-duplicate.label.json",
+   "samples/calibration/labels/cal-github-missing_paragraph.label.json",
+   "samples/calibration/labels/cal-w3clink-clean.label.json",
+   "samples/calibration/labels/cal-w3clink-instruction_interference.label.json"
+  ],
+  "label_change_kind": "prompt_chars diagnostic only; refreshed on disk; scoring content proven field-identical",
+  "label_prompt_chars_refresh": {
+   "cal-appetite-clean": {
+    "old_prompt_chars": 41653,
+    "new_prompt_chars": 42755
+   },
+   "cal-appetite-missing_paragraph": {
+    "old_prompt_chars": 41438,
+    "new_prompt_chars": 42540
+   },
+   "cal-appetite-noise": {
+    "old_prompt_chars": 41799,
+    "new_prompt_chars": 42901
+   },
+   "cal-appetite-duplicate": {
+    "old_prompt_chars": 41868,
+    "new_prompt_chars": 42970
+   },
+   "cal-appetite-reorder": {
+    "old_prompt_chars": 41653,
+    "new_prompt_chars": 42755
+   },
+   "cal-appetite-title_number": {
+    "old_prompt_chars": 41647,
+    "new_prompt_chars": 42749
+   },
+   "cal-blurb-clean": {
+    "old_prompt_chars": 59256,
+    "new_prompt_chars": 60358
+   },
+   "cal-blurb-missing_paragraph": {
+    "old_prompt_chars": 58445,
+    "new_prompt_chars": 59547
+   },
+   "cal-blurb-noise": {
+    "old_prompt_chars": 59465,
+    "new_prompt_chars": 60567
+   },
+   "cal-blurb-reorder": {
+    "old_prompt_chars": 59256,
+    "new_prompt_chars": 60358
+   },
+   "cal-iana-clean": {
+    "old_prompt_chars": 22398,
+    "new_prompt_chars": 23500
+   },
+   "cal-iana-noise": {
+    "old_prompt_chars": 22607,
+    "new_prompt_chars": 23709
+   },
+   "cal-mdn-clean": {
+    "old_prompt_chars": 109714,
+    "new_prompt_chars": 107447
+   },
+   "cal-mdn-missing_paragraph": {
+    "old_prompt_chars": 109471,
+    "new_prompt_chars": 107204
+   },
+   "cal-mdn-code_indent": {
+    "old_prompt_chars": 109716,
+    "new_prompt_chars": 107449
+   },
+   "cal-mdn-reorder": {
+    "old_prompt_chars": 109714,
+    "new_prompt_chars": 107447
+   },
+   "cal-mdn-instruction_interference": {
+    "old_prompt_chars": 109896,
+    "new_prompt_chars": 107629
+   },
+   "cal-github-clean": {
+    "old_prompt_chars": 84124,
+    "new_prompt_chars": 85226
+   },
+   "cal-github-noise": {
+    "old_prompt_chars": 84334,
+    "new_prompt_chars": 85436
+   },
+   "cal-github-duplicate": {
+    "old_prompt_chars": 84480,
+    "new_prompt_chars": 85582
+   },
+   "cal-github-missing_paragraph": {
+    "old_prompt_chars": 83768,
+    "new_prompt_chars": 84870
+   },
+   "cal-w3clink-clean": {
+    "old_prompt_chars": 25356,
+    "new_prompt_chars": 26458
+   },
+   "cal-w3clink-instruction_interference": {
+    "old_prompt_chars": 25537,
+    "new_prompt_chars": 26639
+   }
+  },
+  "p2_silver_labels_refreshed": false,
+  "p2_silver_labels_note": "cal-interpreter/nasa/w3ca11y labels under p2.freeze.v5 keep v1.2-era prompt_chars; historical record of consumed P2 evaluation, intentionally untouched",
+  "candidate_gold_manifest_source_hashes_identical_to_v4": true,
+  "scoring_content_unchanged": true,
+  "on_disk_silver_labels_modified": true,
+  "batch_config_changed": false,
+  "judge_version": {
+   "old": "1.2.0",
+   "new": "1.3.0"
+  },
+  "preregistration": "docs/P3_AMENDMENT_PROPOSAL.md",
+  "approval": {
+   "by": "hqli631",
+   "at": "2026-11-22",
+   "quote": "批准修订；批准阈值；v3 选 b 含采集；批准预算"
+  }
+ }
+}

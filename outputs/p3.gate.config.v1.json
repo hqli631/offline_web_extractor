@@ -1,0 +1,45 @@
+{
+  "config_version": "1.0.0",
+  "status": "frozen",
+  "approved_by": "hqli631",
+  "approved_at": "2026-11-22",
+  "approval_quote": "批准修订；批准阈值；v3 选 b 含采集；批准预算",
+  "preregistration": "docs/P3_GATE_PLAN.md",
+  "seed": 20261119,
+  "B": 10000,
+  "batch_config": {
+    "model": "qwen3.8-27b",
+    "judge_version": "1.3.0",
+    "rubrics_version": "2.0.0",
+    "max_source_chars": 20000,
+    "max_output_tokens": 2200,
+    "timeout_seconds": 90
+  },
+  "dev": {
+    "reject_rate_lt": 0.1,
+    "severe_miss_count_le": 1,
+    "false_alarm_rate_le": 0.15,
+    "decision_match_ge": 0.85,
+    "kappa_ge": 0.75,
+    "match_kappa_subset_label": "orig"
+  },
+  "v3": {
+    "reject_rate_lt": 0.1,
+    "severe_miss_count_le": 1,
+    "false_alarm_rate_le": 0.15,
+    "decision_match_ge": 0.8,
+    "pass_recall_ge": 0.8
+  },
+  "budget": {
+    "max_calls": 30,
+    "token_cap": 460000,
+    "note": "dev18 + v3 one-shot 12; smoke counted; approved 2026-11-22"
+  },
+  "discipline": [
+    "frozen_test v1 permanently sealed",
+    "frozen_test v2 consumed one-shot in P2; never re-scored",
+    "P2 sealed gold never rewritten",
+    "FAIL is final; no re-test or post-hoc tuning",
+    "judge scores not training rewards until gate PASS, and only within validated scope"
+  ]
+}

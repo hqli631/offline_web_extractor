@@ -1,0 +1,25 @@
+{
+  "kit_version": "p3-1.0.0",
+  "inputs": {
+    "p2_batch": "3a90d481c7e23f92a72cb120d9c2de8874472be463171051cca6bdb5ccd556d1",
+    "gold": "1b89aaf954358d50713bd22d2ee2c6161fbf688bc56da77fda364b1d8158831c",
+    "freeze": "87cb35879e1eef872f0e71e7bb8468d815dd372c0c0e739555426ba076f2fe07",
+    "manifest": "f6a99ed5808a393cab9696d6fa9309fab248233a967a80df61b0be9a55c1e440"
+  },
+  "n_cases": 10,
+  "criteria": "decision_mismatch|dim_gap_ge2|judge_missed_defect|judge_severe_human_not",
+  "files": {
+    "INDEX.md": "69047ee7ff339426d5cb7e2bef34b0857ed764267056dd9990b925fbe0f98c07",
+    "p3_findings.json": "e6e84e3a366f221774b9992a6c2b85db0ea9bafcc4586efcecb2fcaa3cfd4b3e",
+    "packets/C01.md": "4765323656f90e11712a7e6653a2129e3d638244dae6824571daa7a981215e4e",
+    "packets/C02.md": "a459c23ce75075c0a48be5c96b705519f8e4eda390d65699d6faab75b8c5a7ee",
+    "packets/C03.md": "3727bf78db27d876a9ead0ff317907f02f16ca9099345aaa535c559dab577962",
+    "packets/C04.md": "8ab6c6be0258a077fb4d0ad74351e193be0e54e899af6a52e44475df12441eb4",
+    "packets/C05.md": "23fe980e6a18ffbc163719ef1fe198c40eb1c4144656e834e0dd4be927f7099a",
+    "packets/C06.md": "40a14c415c447f0d38e04f169cf8d29b8317528afc96906e6524053de541fcee",
+    "packets/C07.md": "c185f682895307953672bbc860d7d7477544fad672080d1713fb70f03adb3ff6",
+    "packets/C08.md": "c5e022ae3f709ccd3bddc7df53476c49bd01946fe73e01ad68538d9952e4ce52",
+    "packets/C09.md": "6940f2e0113af47cd6a6751f0b6f3e336a900791c1957b5a9d68e0a33a1f75a2",
+    "packets/C10.md": "68579f361f7acf34b9c17b8dec7cfec87b5aa91f70597bdd477dfafd9194e2f5"
+  }
+}

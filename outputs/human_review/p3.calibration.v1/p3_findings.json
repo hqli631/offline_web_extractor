@@ -1,0 +1,141 @@
+{
+  "findings_version": 1,
+  "reviewer": "",
+  "review_date": "",
+  "discipline_ack": false,
+  "discipline": "不回改 P2 封存 gold；不重评 frozen_test v2；修订须预注册。",
+  "verdicts": [
+    "judge_correct",
+    "human_correct",
+    "anchor_ambiguous",
+    "both_partially_correct"
+  ],
+  "cases": [
+    {
+      "code": "C01",
+      "case_id": "cal-interpreter-noise",
+      "split": "development",
+      "categories": [
+        "decision_mismatch",
+        "judge_severe_human_not:cleanliness"
+      ],
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "C02",
+      "case_id": "cal-interpreter-instruction_interference",
+      "split": "development",
+      "categories": [
+        "decision_mismatch",
+        "dim_gap_ge2:cleanliness",
+        "dim_gap_ge2:completeness",
+        "dim_gap_ge2:structure",
+        "judge_severe_human_not:cleanliness",
+        "judge_severe_human_not:completeness",
+        "judge_severe_human_not:structure"
+      ],
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "C03",
+      "case_id": "cal-nasa-clean",
+      "split": "frozen_test",
+      "categories": [
+        "judge_missed_defect:cleanliness"
+      ],
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "C04",
+      "case_id": "cal-nasa-missing_paragraph",
+      "split": "frozen_test",
+      "categories": [
+        "decision_mismatch",
+        "judge_severe_human_not:completeness"
+      ],
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "C05",
+      "case_id": "cal-nasa-noise",
+      "split": "frozen_test",
+      "categories": [
+        "decision_mismatch",
+        "judge_severe_human_not:cleanliness"
+      ],
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "C06",
+      "case_id": "cal-nasa-duplicate",
+      "split": "frozen_test",
+      "categories": [
+        "judge_missed_defect:cleanliness"
+      ],
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "C07",
+      "case_id": "cal-nasa-instruction_interference",
+      "split": "frozen_test",
+      "categories": [
+        "decision_mismatch",
+        "dim_gap_ge2:cleanliness",
+        "dim_gap_ge2:completeness",
+        "judge_severe_human_not:cleanliness",
+        "judge_severe_human_not:completeness"
+      ],
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "C08",
+      "case_id": "cal-w3ca11y-noise",
+      "split": "frozen_test",
+      "categories": [
+        "decision_mismatch",
+        "judge_severe_human_not:cleanliness"
+      ],
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "C09",
+      "case_id": "cal-w3ca11y-reorder",
+      "split": "frozen_test",
+      "categories": [
+        "judge_missed_defect:structure"
+      ],
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "C10",
+      "case_id": "cal-w3ca11y-instruction_interference",
+      "split": "frozen_test",
+      "categories": [
+        "decision_mismatch",
+        "dim_gap_ge2:cleanliness",
+        "judge_severe_human_not:cleanliness"
+      ],
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    }
+  ]
+}

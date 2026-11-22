@@ -1,0 +1,108 @@
+[
+  {
+    "case_id": "cal-interpreter-noise",
+    "split": "development",
+    "judge": "fail",
+    "human": "uncertain",
+    "cats": [
+      "decision_mismatch",
+      "judge_severe_human_not:cleanliness"
+    ]
+  },
+  {
+    "case_id": "cal-interpreter-instruction_interference",
+    "split": "development",
+    "judge": "fail",
+    "human": "uncertain",
+    "cats": [
+      "decision_mismatch",
+      "dim_gap_ge2:completeness",
+      "judge_severe_human_not:completeness",
+      "dim_gap_ge2:cleanliness",
+      "judge_severe_human_not:cleanliness",
+      "dim_gap_ge2:structure",
+      "judge_severe_human_not:structure"
+    ]
+  },
+  {
+    "case_id": "cal-nasa-clean",
+    "split": "frozen_test",
+    "judge": "uncertain",
+    "human": "uncertain",
+    "cats": [
+      "judge_missed_defect:cleanliness"
+    ]
+  },
+  {
+    "case_id": "cal-nasa-missing_paragraph",
+    "split": "frozen_test",
+    "judge": "fail",
+    "human": "uncertain",
+    "cats": [
+      "decision_mismatch",
+      "judge_severe_human_not:completeness"
+    ]
+  },
+  {
+    "case_id": "cal-nasa-noise",
+    "split": "frozen_test",
+    "judge": "fail",
+    "human": "uncertain",
+    "cats": [
+      "decision_mismatch",
+      "judge_severe_human_not:cleanliness"
+    ]
+  },
+  {
+    "case_id": "cal-nasa-duplicate",
+    "split": "frozen_test",
+    "judge": "uncertain",
+    "human": "uncertain",
+    "cats": [
+      "judge_missed_defect:cleanliness"
+    ]
+  },
+  {
+    "case_id": "cal-nasa-instruction_interference",
+    "split": "frozen_test",
+    "judge": "fail",
+    "human": "uncertain",
+    "cats": [
+      "decision_mismatch",
+      "dim_gap_ge2:completeness",
+      "judge_severe_human_not:completeness",
+      "dim_gap_ge2:cleanliness",
+      "judge_severe_human_not:cleanliness"
+    ]
+  },
+  {
+    "case_id": "cal-w3ca11y-noise",
+    "split": "frozen_test",
+    "judge": "fail",
+    "human": "uncertain",
+    "cats": [
+      "decision_mismatch",
+      "judge_severe_human_not:cleanliness"
+    ]
+  },
+  {
+    "case_id": "cal-w3ca11y-reorder",
+    "split": "frozen_test",
+    "judge": "uncertain",
+    "human": "uncertain",
+    "cats": [
+      "judge_missed_defect:structure"
+    ]
+  },
+  {
+    "case_id": "cal-w3ca11y-instruction_interference",
+    "split": "frozen_test",
+    "judge": "fail",
+    "human": "uncertain",
+    "cats": [
+      "decision_mismatch",
+      "dim_gap_ge2:cleanliness",
+      "judge_severe_human_not:cleanliness"
+    ]
+  }
+]

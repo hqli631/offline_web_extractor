@@ -1,0 +1,326 @@
+{
+  "tool_version": "1.0.0",
+  "seed": 20261119,
+  "B": 10000,
+  "gate_config_sha256": "d70e0d3c38a553540d689ea49273f55450f8f303bd25ef07bd7a7a9e2a47c806",
+  "inputs": {
+    "orig_batch_sha256": "aab91514b9c493571a809617a038a43f04712e72fbf88d4134b9225e19784b06",
+    "p2_batch_sha256": "a3a88c2355e0a009aea7909d07784cfd8a2bdfbcc88874ce722ba9883b654710",
+    "orig_gold_sha256": "23f5f491cdfecd4d2a14d1454dcd8e897a2f0f02c092552326baaa908968f70c",
+    "p2_gold_sha256": "1b89aaf954358d50713bd22d2ee2c6161fbf688bc56da77fda364b1d8158831c"
+  },
+  "orig_dev12": {
+    "aggregate": {
+      "n_cases": 12,
+      "accepted": 12,
+      "rejected": 0,
+      "decision_match_rate": 0.75,
+      "decision_cohen_kappa": 0.5443,
+      "n_comparable_dim_pairs": 48,
+      "dim_exact_rate": 0.8542,
+      "dim_within1_rate": 0.9792,
+      "severity_sign_rate": 0.9167,
+      "severe_miss_cases": [
+        "cal-appetite-noise",
+        "cal-blurb-noise",
+        "cal-blurb-reorder"
+      ],
+      "false_alarm_cases": [],
+      "rejected_cases": []
+    },
+    "ci95": {
+      "decision_match": {
+        "point": 0.75,
+        "ci95": [
+          0.5,
+          1.0
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "kappa": {
+        "point": 0.5443,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "dim_exact": {
+        "point": 0.8542,
+        "ci95": [
+          0.75,
+          0.9375
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "severity_sign": {
+        "point": 0.9167,
+        "ci95": [
+          0.8542,
+          0.9792
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "severe_miss": {
+        "point": 0.25,
+        "ci95": [
+          0.0,
+          0.5
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "false_alarm": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "reject": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "pass_recall": {
+        "point": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "n": 12,
+        "B": 6501
+      }
+    }
+  },
+  "p2_dev6": {
+    "aggregate": {
+      "n_cases": 6,
+      "accepted": 6,
+      "rejected": 0,
+      "decision_match_rate": 0.8333,
+      "decision_cohen_kappa": 0.0,
+      "n_comparable_dim_pairs": 24,
+      "dim_exact_rate": 0.7917,
+      "dim_within1_rate": 0.9583,
+      "severity_sign_rate": 0.7917,
+      "severe_miss_cases": [],
+      "false_alarm_cases": [
+        "cal-interpreter-instruction_interference"
+      ],
+      "rejected_cases": []
+    },
+    "ci95": {
+      "decision_match": {
+        "point": 0.8333,
+        "ci95": [
+          0.5,
+          1.0
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "kappa": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "dim_exact": {
+        "point": 0.7917,
+        "ci95": [
+          0.5417,
+          1.0
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "severity_sign": {
+        "point": 0.7917,
+        "ci95": [
+          0.5417,
+          1.0
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "severe_miss": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "false_alarm": {
+        "point": 0.1667,
+        "ci95": [
+          0.0,
+          0.5
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "reject": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "pass_recall": {
+        "point": null,
+        "ci95": null,
+        "n": 6
+      }
+    }
+  },
+  "pooled_dev18": {
+    "aggregate": {
+      "n_cases": 18,
+      "accepted": 18,
+      "rejected": 0,
+      "decision_match_rate": 0.7778,
+      "decision_cohen_kappa": 0.4857,
+      "n_comparable_dim_pairs": 72,
+      "dim_exact_rate": 0.8333,
+      "dim_within1_rate": 0.9722,
+      "severity_sign_rate": 0.875,
+      "severe_miss_cases": [
+        "cal-appetite-noise",
+        "cal-blurb-noise",
+        "cal-blurb-reorder"
+      ],
+      "false_alarm_cases": [
+        "cal-interpreter-instruction_interference"
+      ],
+      "rejected_cases": []
+    },
+    "ci95": {
+      "decision_match": {
+        "point": 0.7778,
+        "ci95": [
+          0.5556,
+          0.9444
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "kappa": {
+        "point": 0.4857,
+        "ci95": [
+          -0.0909,
+          0.8776
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "dim_exact": {
+        "point": 0.8333,
+        "ci95": [
+          0.7222,
+          0.9306
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "severity_sign": {
+        "point": 0.875,
+        "ci95": [
+          0.7639,
+          0.9583
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "severe_miss": {
+        "point": 0.1667,
+        "ci95": [
+          0.0,
+          0.3333
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "false_alarm": {
+        "point": 0.0556,
+        "ci95": [
+          0.0,
+          0.1667
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "reject": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "pass_recall": {
+        "point": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "n": 18,
+        "B": 6401
+      }
+    }
+  },
+  "regression_guard": {
+    "verdict": "GUARD_FAIL",
+    "checks": [
+      {
+        "metric": "reject_rate",
+        "op": "lt",
+        "threshold": 0.1,
+        "observed": 0.0,
+        "pass": true
+      },
+      {
+        "metric": "severe_miss_count",
+        "op": "le",
+        "threshold": 1,
+        "observed": 3,
+        "pass": false
+      },
+      {
+        "metric": "false_alarm_rate",
+        "op": "le",
+        "threshold": 0.15,
+        "observed": 0.0556,
+        "pass": true
+      }
+    ],
+    "descriptive_subset": {
+      "decision_match_rate": 0.75,
+      "cohen_kappa": 0.5443
+    }
+  },
+  "limitations": [
+    "dev 池为可调参轮；护栏阈值来自冻结 gate-config（修订提案 §3 预注册）。",
+    "原 dev12 gold 经 P0 裁决（锚定局限）；P2 dev6 为盲评 gold（全 uncertain）。",
+    "一致率不是准确率；单一标注者。",
+    "GUARD_FAIL -> 回滚 v1.2 并如实报告，不刷分。"
+  ]
+}

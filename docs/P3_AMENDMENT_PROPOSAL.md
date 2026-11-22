@@ -48,3 +48,11 @@
 - 门槛阈值批准（P3_GATE_PLAN §4）：**2026-11-22 hqli631**（同上原话）
 - v3 路线选定 + 采集批准：**2026-11-22 hqli631，选 b，含 2 次 HTTP 采集批准**（同上原话）
 - 模型预算批准（~30 次 / ~400k / 上限 460k）：**2026-11-22 hqli631**（同上原话）
+
+## 6. 执行结果（2026-11-22，闭环记录）
+
+- 实施：judge v1.3.0（sha 46f21118…）+ freeze v6；dev18 真实评测 18/18 accepted。
+- **护栏 FAIL**：severe_miss=3>1（cal-appetite-noise / cal-blurb-noise / cal-blurb-reorder）；orig12 match 0.9167→0.75、κ 0.8554→0.5443；reject 0% 与 false_alarm 0.0556 通过。证据 outputs/p3.devguard.v1。
+- **按 §3 预注册后果回滚 v1.2.0**：judge 字节级恢复（sha edd841ef…==freeze v4）；freeze v8 回滚记录（文件哈希集==v4 已证明）；23 标签 prompt_chars 恢复；479 tests OK；commit 08e56c2。
+- 发现（如实）：粒度原则修复了 2 例 v1.2 误报（interpreter-noise/injection），但与 P0 时代 gold 严重度校准冲突致 3 例 severe_miss；根因为 gold 校准代际不一致。不刷分、不改 gold、不放宽阈值。
+- 详见 docs/P3_GATE_REPORT.md。

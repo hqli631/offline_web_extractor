@@ -64,3 +64,11 @@ tools/build_p3_review_kit.py（已建，10 测试）；p3_findings 汇总工具�
 - 预算批准：**2026-11-22 hqli631**（~30 次调用 / ~400k tokens / 上限 460k；同上原话）
 - v3 路线：**b（新采集 2 个真实短页，raw 5k–18k 字符；2 次 HTTP 抓取、零模型调用；采集已批准）**
 - 预注册冻结时间：**2026-11-22**（gate-config：outputs/p3.gate.config.v1.json，sha256 见该文件与 P3_GATE_REPORT）
+
+## 8. 执行记录（2026-11-22）
+
+- v1.3 实施 + freeze v6 + dev18 评测（18/18 accepted，296,722 tokens）→ 护栏 FAIL（severe_miss 3>1）→ 预注册回滚 v1.2（freeze v8）。
+- v1.2 dev 预览（零调用）：false_alarm 3/18=0.1667>0.15 FAIL（2/3 为 C01/C02 已裁决 gold 漏检）。
+- **gate FAIL 已定**（dev 侧两协议均失败；PASS 须全部硬检查通过）。v3 已构建封存（freeze v7，12/12 不截断），前 4 案属失败修订排除；是否补消耗待用户 A/B/C 决定。
+- 预算：22 次 / 379,457 tokens（上限 460k 内）；v3 估算偏差触发护栏暂停，600k 请求作废。
+- 交付：docs/P3_GATE_REPORT.md（命令+哈希+测试日志+局限）。479 tests OK。

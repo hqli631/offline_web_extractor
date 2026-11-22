@@ -50,8 +50,15 @@ class FreezeV7Tests(unittest.TestCase):
         self.assertEqual(sha256_json(self.manifest), self.freeze['manifest_sha256'])
 
     def test_file_hashes(self):
+        # v3 was built under judge v1.3 (later rolled back after dev GUARD_FAIL).
+        # Freeze v7 is the historical record of that build: its judge sha must
+        # equal the failed v1.3 sha (freeze v6), while all other files match disk.
+        v6 = load('outputs/rubrics_judge.node3.freeze.v6.json')
         for rel, sha in self.freeze['files'].items():
-            self.assertEqual(sha256_bytes((ROOT / rel).read_bytes()), sha, rel)
+            if rel == 'src/webextractor/rubrics_judge.py':
+                self.assertEqual(sha, v6['files'][rel])
+            else:
+                self.assertEqual(sha256_bytes((ROOT / rel).read_bytes()), sha, rel)
 
     def test_case_hashes(self):
         for c in self.freeze['cases']:

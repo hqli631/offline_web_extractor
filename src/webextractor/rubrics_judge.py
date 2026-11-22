@@ -10,7 +10,7 @@ from lxml import html
 from .qwen_provider import QwenProvider
 from .rubrics_v2 import DIMENSIONS, VERSION, _document, score
 
-JUDGE_VERSION = '1.3.0'
+JUDGE_VERSION = '1.2.0'
 
 BOILERPLATE_KEYWORDS = ('nav', 'sidebar', 'footer', 'header', 'menu', 'advertisement',
                         'subscribe', 'newsletter', 'feedback', 'recommend', 'copyright',
@@ -87,8 +87,8 @@ def build_prompt(source, predicted, gold=None, *, max_source_chars=40000, max_pr
             'structure':'Article order, heading levels, list type/depth/order, footnotes. DOM id is not quality. Cite s:N headings/list items or g:N blocks as evidence, never only p:N.',
             'title':'Faithful article title including chapter numbers; omit permalink controls.',
             'format':'Code whitespace and meaningful block formatting. No code/format requirement: not_applicable.'},
-        'anchors':{'4':'No material defect observed in supplied scope','3':'Small local defect (e.g. missing title number; a single short noise block in a long article; one non-lead body paragraph missing; a single adjacent paragraph swap with content intact)',
-                   '2':'Clear moderate loss or contamination (e.g. noise spanning multiple blocks or a substantial share of a short article; missing lead/abstract or multiple paragraphs; multi-block order disruption)','1':'Large defect','0':'Empty or fundamentally incorrect'},
+        'anchors':{'4':'No material defect observed in supplied scope','3':'Small local defect (e.g. missing title number)',
+                   '2':'Clear moderate loss or contamination','1':'Large defect','0':'Empty or fundamentally incorrect'},
         'output':{'schema_version':1,'dimensions':{name:{'score':'integer 0..4 or null','status':'scored|partial|unscored|not_applicable',
             'severity':'none|minor|major|critical|unknown','reason':'short explanation',
             'evidence':[{'ref':'p:N|p:title|g:N|g:title|s:N|s:html','quote':'verbatim nonempty substring (whitespace runs folded for matching), max 400 chars'}]} for name in DIMENSIONS}},
@@ -98,9 +98,6 @@ def build_prompt(source, predicted, gold=None, *, max_source_chars=40000, max_pr
             'not_applicable is allowed only for format and requires severity none, score null, evidence []. unscored requires severity unknown, score null, evidence [].',
             'EVERY scored/partial dimension MUST cite at least one s: or g: reference. Candidate-only p: evidence is rejected for every dimension, including cleanliness and structure. Scores below 4 need concrete defect evidence.',
             'For cleanliness cite the source regions that must be excluded (s:N navigation/ads/footer) or g:N blocks proving noise absence; for structure cite s:N or g:N blocks showing expected order, levels and list attributes.',
-             'Severity granularity: cleanliness major when noise is pervasive/multi-block or a substantial share of the article, minor for a single short residual block; completeness weighs toward major when the lead/abstract or multiple paragraphs are missing, minor for one non-lead body paragraph; structure minor for a single adjacent swap with content intact, major for multi-block/large-scale order loss.',
-             'Source presence is not justification: navigation/share/subscribe/feedback/footer text in the candidate is contamination even if present verbatim in the source; cite the s:N region. Legitimate editorial links remain allowed.',
-             'Order check: explicitly compare candidate narrative paragraph/heading order against the gold/source sequence; a local swap is a structure defect even when all content is present.',
             'Quotes must be short (<=120 chars) verbatim substrings of the cited evidence. Whitespace runs (including U+00A0 non-breaking spaces, tabs, newlines and repeated spaces) are folded to single spaces for matching; every non-whitespace character must still appear verbatim and in order. Never paraphrase or reorder words. evidence_menus is a citation appendix listed after the data; it provides ready-to-cite {ref, quote} pairs copied exactly from the supplied evidence. You may use them directly or cite any other listed ref with your own verbatim quote. The appendix is for citation convenience only and must not influence scoring; the s:/g: citation rule still applies. Empty candidate has no p-block to cite; source evidence suffices.',
             'p:N and g:N are zero-based indices into the supplied candidate.blocks and gold.blocks arrays; block_count gives the array length. Cite only refs present in the supplied lists; never cite an index at or beyond block_count or invent refs.',
             'When source.truncated is true, prefer s:N node citations over s:html and mark every scored dimension partial.',

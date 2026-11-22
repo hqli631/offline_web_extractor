@@ -1,0 +1,522 @@
+{
+ "freeze_version": 8,
+ "generated_at": "2026-11-22T15:11:39+00:00",
+ "batch_config": {
+  "max_source_chars": 20000,
+  "max_output_tokens": 2200,
+  "timeout_seconds": 90,
+  "model": "qwen3.8-27b"
+ },
+ "label_policy": {
+  "label_origin": "assistant_silver",
+  "human_reviewed": false,
+  "note": "Assistant silver labels; not human gold. frozen_test is scored once; no threshold tuning on it."
+ },
+ "counts": {
+  "development": 12,
+  "frozen_test": 11
+ },
+ "excluded": [
+  {
+   "page": "rfc.candidate",
+   "reason": "Candidate JSON alone is 449798 chars (>110000 prompt budget) at any source limit; measured 2026-11-17."
+  },
+  {
+   "page": "gnu.candidate",
+   "reason": "Gold annotation too large for the prompt budget (smoke v1 prompt-stage rejection)."
+  },
+  {
+   "page": "whatwg-html.candidate",
+   "reason": "Source 15.6 MiB exceeds the 10 MiB source limit."
+  },
+  {
+   "page": "webdev-learn-html.candidate",
+   "reason": "Sealed validation page; must not inform calibration or tuning."
+  }
+ ],
+ "manifest_sha256": "7edaf0046c75600a3f103afcf7633b4ed7de05c6f989cb4fae21473f01825aa2",
+ "files": {
+  "tools/build_calibration_set.py": "45b3582d7828a4ae4fe2289ff64f194d9e01380b0699cfe537d3e8e08b843f74",
+  "samples/calibration_manifest.json": "a3ef652c55ef9a015f12a83b18befef9076ae352f005985fa2682823b15b5d28",
+  "samples/python_appetite_zh.html": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+  "samples/python_appetite_zh.expected.json": "353ed7d39fd736bf4badb59d85ce0f1343646d19eafd950b35707f85d0f0f92f",
+  "samples/python_blurb.html": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+  "samples/python_blurb.expected.json": "47661979fc40801a89fe8cd20f422a288b3fe19e0f82ea96854ca1788c78c49c",
+  "samples/iana_example_domains.html": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+  "samples/mdn.candidate.html": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+  "samples/mdn.candidate.expected.json": "a2e13751b3bf4657cf0995bef9f78fe160328df885e7a90c1550269528eadd89",
+  "samples/github-copilot-blog.candidate.html": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+  "samples/github-copilot-blog.candidate.expected.json": "c8526595a786e3867e3cd6ae57293b66e44a2b31626cf1179d096e8df47eca92",
+  "samples/w3c-link-text.candidate.html": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5",
+  "samples/calibration/cal-appetite-clean.candidate.json": "bc48015994d3ea6d0c201fdc6f9f185f82c3257f4355e6b6e4598ef866e00edc",
+  "samples/calibration/labels/cal-appetite-clean.label.json": "a79edb2870b7a79b46ebea7db474c17c9eeec3bd94d0c73abbaf07bade2325ed",
+  "samples/calibration/cal-appetite-missing_paragraph.candidate.json": "60bafc8e2eb74738d94db6c3edb80a48ae9c62a5191dd13628e03410000acd95",
+  "samples/calibration/labels/cal-appetite-missing_paragraph.label.json": "1b946cd5101a47038f6056294a959734fcd2399b322f9e93da0a1ec7bb06b195",
+  "samples/calibration/cal-appetite-noise.candidate.json": "5330433d02c58156b4454144d49dd0e74b8dc8fc78ee4c243f2231ba3b42e630",
+  "samples/calibration/labels/cal-appetite-noise.label.json": "7fe1cb4802c39baeaa0f0adbe8f6a7de0b8d4ca8a3a032aaccfe83b50fbd8b7f",
+  "samples/calibration/cal-appetite-duplicate.candidate.json": "45cd305351a75b89ec9620e64d969dfc2a915fe0e9276afeb7e975f703a3c6ef",
+  "samples/calibration/labels/cal-appetite-duplicate.label.json": "b87a00abaeac1a823992047afa58b53e0961faed272fc2cef17ce91f3f4443cd",
+  "samples/calibration/cal-appetite-reorder.candidate.json": "9ee306d495bba5fd10439d5d168cd4c1062bcefdff30741e7e709d79cf7715db",
+  "samples/calibration/labels/cal-appetite-reorder.label.json": "b112090a32781676099e734a5578e6d7d632ec2e1e6894c4460f07caa70a92af",
+  "samples/calibration/cal-appetite-title_number.candidate.json": "be2939462d1b122ea22ac102637fb968a2ae421a19e989cd72ae9d09fb761a62",
+  "samples/calibration/labels/cal-appetite-title_number.label.json": "df482ffbb354323c864d4183fb79c08074e468dcf57bda940c59a54ebb5eb9e6",
+  "samples/calibration/cal-blurb-clean.candidate.json": "cd842cd77a548a4d0e65a85af714a6f7f36024bab19323a4b6b8a221c85983c2",
+  "samples/calibration/labels/cal-blurb-clean.label.json": "851de7eca9834f62758e73233b7edcdfe2edce981c7f60a66a1ca2245acc2e97",
+  "samples/calibration/cal-blurb-missing_paragraph.candidate.json": "4beca0005ada4e5d017069470d773a24e2e8944b01d8129441340d7f6ab4a364",
+  "samples/calibration/labels/cal-blurb-missing_paragraph.label.json": "afa8d76d3a669f034e8340d8e574f7bdb8ee97724e3a1ffee85d46f0171ef1cd",
+  "samples/calibration/cal-blurb-noise.candidate.json": "02d48b72172cfe6ef070c1d675458930992a72099d99dac09c3b56cf0e1bd11e",
+  "samples/calibration/labels/cal-blurb-noise.label.json": "0aa0ff4b12a6a2277b12924117dd56df34545fa2d0726807551bc26552dd42cf",
+  "samples/calibration/cal-blurb-reorder.candidate.json": "d972610868e83c2ac651e39fd230b3f41dbc383c290c579793385ac9a11db1dd",
+  "samples/calibration/labels/cal-blurb-reorder.label.json": "c37cde853ef50b5e880ef54485ef5793ec798cf5819ce5a494714b404e9bdaa7",
+  "samples/calibration/cal-iana-clean.candidate.json": "a3031c8f9fb8fa178fc8d2ee6c73e6557ab6d495f8e078bc1859efee0ec7776c",
+  "samples/calibration/labels/cal-iana-clean.label.json": "53cbd9059aecdcc1d1891c222132b0af277cb78e9712865ce6cc9abeed9f4981",
+  "samples/calibration/cal-iana-noise.candidate.json": "89878ca89e08f99c9a299f84e6ffcf11c51f1538b3efae750bac7ef63db390c4",
+  "samples/calibration/labels/cal-iana-noise.label.json": "748108c07b90f85c7f35fac6564472e3da200ed0a74473a873c4d81b27b00dd3",
+  "samples/calibration/cal-mdn-clean.candidate.json": "f39a6b42a67cfbd88cb1e0f9e88393f90b363778e77d77499409496f6548fc0c",
+  "samples/calibration/labels/cal-mdn-clean.label.json": "58cfe27e930093169ec41e4e0468bebf92131d7bfaf6e53bf2e525b9602c48d0",
+  "samples/calibration/cal-mdn-missing_paragraph.candidate.json": "2bcb360fcf19852b46f7c918ad7e7b3953d25e03909364a1be3e94309c1fba2f",
+  "samples/calibration/labels/cal-mdn-missing_paragraph.label.json": "a9adcb0718a3e3f24c2632f3178fa7582de006deb0550637e8c105365326b4c1",
+  "samples/calibration/cal-mdn-code_indent.candidate.json": "2d35af1eab9884d4433c3ec252757438d0a558bd71f41f0963741d69aa24a3a5",
+  "samples/calibration/labels/cal-mdn-code_indent.label.json": "7bb76a45281939fed707741bfce71ebbaf25ebf0ff345cabd32cbb4d6786c874",
+  "samples/calibration/cal-mdn-reorder.candidate.json": "33ae5846f53241159ae630f69315f7eb5570f742e7fb99e7dba7fd20a5a9a11d",
+  "samples/calibration/labels/cal-mdn-reorder.label.json": "d353e70c2f9d3673a2c35336f463dc824916980202f19ef13d2ef656e348f85d",
+  "samples/calibration/cal-mdn-instruction_interference.candidate.json": "f12d6d4e61252b976dbdb36be69c4b756aab13803e5c930bc6c696dcde8c016e",
+  "samples/calibration/labels/cal-mdn-instruction_interference.label.json": "ff3cef8c3fa9cf3425153eeb250d2dce2f210b40a8cbfdca794f59fd8a7a5979",
+  "samples/calibration/cal-github-clean.candidate.json": "14dba888ca5cdf997ab1fe0c593eddad737762a396c50dfd697d1e5bc196b04f",
+  "samples/calibration/labels/cal-github-clean.label.json": "54698b73167c4c3d556c492c03b9d0702ec6d7972d2e019c665da8db8ccac4ba",
+  "samples/calibration/cal-github-noise.candidate.json": "9a0267dc46a8dcbf0f276ff73d62a19082befc41bff542497ad540c78eb98926",
+  "samples/calibration/labels/cal-github-noise.label.json": "4df88dc25f17786eb6b3f3235869aec79e00011ada0f494ae7df8e9ed57f0aa8",
+  "samples/calibration/cal-github-duplicate.candidate.json": "2701f93e6b96e34977325341b098e09b44425fc1e8102abddc477f157681cabb",
+  "samples/calibration/labels/cal-github-duplicate.label.json": "8a55a98fa64d3470d85b061756fd3d5259c527c9b38731e5e2f67475664dd4aa",
+  "samples/calibration/cal-github-missing_paragraph.candidate.json": "6a3da84dbae575ebdfc440ccefd93161c1ab467208f62b1acf784d2e02dacc8c",
+  "samples/calibration/labels/cal-github-missing_paragraph.label.json": "c5988ca015754aea042aab2f39aa4f3a16c413745b3b3a5f9919c6c066e3bc5a",
+  "samples/calibration/cal-w3clink-clean.candidate.json": "a27ad201657a164f0997ca38de1676568254bd3e9829490eba53fb6cd3388e72",
+  "samples/calibration/labels/cal-w3clink-clean.label.json": "956aa34bc4bf177ad0b91f26387dc25905994cb8d66eaae417c08527a41faaa1",
+  "samples/calibration/cal-w3clink-instruction_interference.candidate.json": "dc11b260fb92fbf9f8f88cf82bc8ce6aa9b85fc8c65447c230c12d5120da5006",
+  "samples/calibration/labels/cal-w3clink-instruction_interference.label.json": "2413a975b5e553c010ea72a09118f9cee2b5ffec6002020f59109ee91ab2848a",
+  "src/webextractor/rubrics_v2.py": "4fa60e024758e67d8c831b7a34e267bf2ce9a143dd6ae70cdbc94da036560364",
+  "src/webextractor/rubrics_judge.py": "edd841efb52961f07891160ccae7fabcc72da65734854da9a86e02bf622ff891",
+  "docs/RUBRICS_V2_PROTOCOL.md": "ab0887b53098c37b1cf56176fe99975ab934fb7e1915ae90d174ed77b366322a"
+ },
+ "cases": [
+  {
+   "case_id": "cal-appetite-clean",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "variant": "clean",
+   "candidate_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "label_sha256": "d6961d9e4bf8a7a8421218123d8d6e68390c54a20233f322013cb43933e63853",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "prompt_chars": 41653,
+   "source_truncated": false,
+   "expected_decision": "pass"
+  },
+  {
+   "case_id": "cal-appetite-missing_paragraph",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "variant": "missing_paragraph",
+   "candidate_sha256": "0deecb2e62621dc2751a003494bef15bd9b225237d067f3e7b47be0443c08d77",
+   "label_sha256": "c3df5f869ab8befd5ea991f1066816f2c29851b78554d0c86adae98b789701ca",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "prompt_chars": 41438,
+   "source_truncated": false,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-appetite-noise",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "variant": "noise",
+   "candidate_sha256": "306bda12f4fa51d06e61d7f9fdd2dc5af97beb560c624956ec3038c487962908",
+   "label_sha256": "c1f0955a57392ea5f0ff65044b586ff292060c76f54a62493b2b232858b8ff03",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "prompt_chars": 41799,
+   "source_truncated": false,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-appetite-duplicate",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "variant": "duplicate",
+   "candidate_sha256": "1f2efda4adf4228b289d4c5fe4213b0f214b8b6aa674241032ed17fa9bf5c230",
+   "label_sha256": "18f37f836e03b7a582d3832a7dad85e8957c69dbc5f7260361aa6d14eb1200f3",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "prompt_chars": 41868,
+   "source_truncated": false,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-appetite-reorder",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "variant": "reorder",
+   "candidate_sha256": "b54df95c22a0079b847cdd00db65aad50d7900170a3520fabd2aea9338ff31f1",
+   "label_sha256": "baa1e5b4278e14f931308f5b19554738b7ed18c2e6f5391adab1b795dd67a63b",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "prompt_chars": 41653,
+   "source_truncated": false,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-appetite-title_number",
+   "split": "development",
+   "template": "python_appetite_zh",
+   "variant": "title_number",
+   "candidate_sha256": "b186d156e8c73c6a1152a0d0d2b378827b531f2ac7fe830f1f0f78d415a21f13",
+   "label_sha256": "c63a8606121c0a1306628cd61a640ba6d1807c46d3b677ed18d3e68cfb7361c7",
+   "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+   "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+   "prompt_chars": 41647,
+   "source_truncated": false,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-blurb-clean",
+   "split": "development",
+   "template": "python_blurb",
+   "variant": "clean",
+   "candidate_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+   "label_sha256": "e6dc40aeb09d5e9a0dd2ff560c2472c1b000550e5765e7fe668397b54b0eda19",
+   "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+   "gold_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+   "prompt_chars": 59256,
+   "source_truncated": true,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-blurb-missing_paragraph",
+   "split": "development",
+   "template": "python_blurb",
+   "variant": "missing_paragraph",
+   "candidate_sha256": "0d7933f900654b60d057365eb56a8b702259aa6cb46a938fce11b25ef68da1bc",
+   "label_sha256": "9fe15cfe158087a6c2bd2921a13051a524b749f35b8008c81fbf1c2eb22f6257",
+   "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+   "gold_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+   "prompt_chars": 58445,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-blurb-noise",
+   "split": "development",
+   "template": "python_blurb",
+   "variant": "noise",
+   "candidate_sha256": "f7aa52a7c5d9654e68e81f58d2db5c74c23b20ddd30c87575d193497980100c9",
+   "label_sha256": "806f25ba22d9a59e8fb705036b4d16fdb59c94e90a7b1f7126376301d23c36c7",
+   "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+   "gold_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+   "prompt_chars": 59465,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-blurb-reorder",
+   "split": "development",
+   "template": "python_blurb",
+   "variant": "reorder",
+   "candidate_sha256": "6b60421ec7aea90da9e550a76ce492078af182ef635c142a7da8ac244cdce18d",
+   "label_sha256": "c0e2d3a69ce1b9c5da2b9be7f4b76f92f279375d3266ff968d5760dc9f71b2e1",
+   "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+   "gold_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+   "prompt_chars": 59256,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-iana-clean",
+   "split": "development",
+   "template": "iana_example_domains",
+   "variant": "clean",
+   "candidate_sha256": "43e139dd309a4dfeb4cb289c27441da3303f44a92dc8c5e042b7fcb13a772b76",
+   "label_sha256": "4b99ce62a12d1a12bebd691707a125ec63b1050461a60e79c17a4720f9d52df3",
+   "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+   "gold_sha256": null,
+   "prompt_chars": 22398,
+   "source_truncated": false,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-iana-noise",
+   "split": "development",
+   "template": "iana_example_domains",
+   "variant": "noise",
+   "candidate_sha256": "8e905ea75067f5c86b5bab93f6d7b40b27ff00c68f905efea8e5f292cae74cb6",
+   "label_sha256": "28eaa06b68d0a19bd1bae3a56bec0e41f469140b37d6147dcb0493072bb65c55",
+   "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+   "gold_sha256": null,
+   "prompt_chars": 22607,
+   "source_truncated": false,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-mdn-clean",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "variant": "clean",
+   "candidate_sha256": "7d05830ede603e809a290c00fb45a5b5b50da7918a7b7a8d57d021e31b2b4ae4",
+   "label_sha256": "c804702411ef2bfae471e6c3a4af6de536b73c77c76da54b65eed44da78baca9",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+   "gold_sha256": "32c2a4904e969788b7e618ae456a15be4a51812f5b57b7d08219886952f93b13",
+   "prompt_chars": 109714,
+   "source_truncated": true,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-mdn-missing_paragraph",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "variant": "missing_paragraph",
+   "candidate_sha256": "78ad958c89db2188cfab12f4cdb59a25cdd01c028e5514be95b5510630d6285b",
+   "label_sha256": "e0cef4f14f905709cf9e5fc815e0ee30d3020674c8d1f25b56792c3636201cf6",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+   "gold_sha256": "32c2a4904e969788b7e618ae456a15be4a51812f5b57b7d08219886952f93b13",
+   "prompt_chars": 109471,
+   "source_truncated": true,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-mdn-code_indent",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "variant": "code_indent",
+   "candidate_sha256": "e0b8f3fb97eebd914d6b132324eef18690e9086b7722c58479bd9663ca51092d",
+   "label_sha256": "75cc8dea431de4cd6906330c61b272b0db8079823f793927e897f5bf4fd2269f",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+   "gold_sha256": "32c2a4904e969788b7e618ae456a15be4a51812f5b57b7d08219886952f93b13",
+   "prompt_chars": 109716,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-mdn-reorder",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "variant": "reorder",
+   "candidate_sha256": "e1906515bb594b02f05f23288473019b524332d3f93cf808ef09c109527f0a94",
+   "label_sha256": "df7fb3bdad5f086b3ca848129a1d2813c4145935c601e6b0886a6c9119d27010",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+   "gold_sha256": "32c2a4904e969788b7e618ae456a15be4a51812f5b57b7d08219886952f93b13",
+   "prompt_chars": 109714,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-mdn-instruction_interference",
+   "split": "frozen_test",
+   "template": "mdn.candidate",
+   "variant": "instruction_interference",
+   "candidate_sha256": "592a5a803f91a874da5a463dc84f9bb22c95262ad9d347d5bcd569ca6b93164d",
+   "label_sha256": "8f36e03d119fdf176cf5c4bbd84c244d92ccb89d0e1b6ec1a49b19975e52ad92",
+   "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+   "gold_sha256": "32c2a4904e969788b7e618ae456a15be4a51812f5b57b7d08219886952f93b13",
+   "prompt_chars": 109896,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-github-clean",
+   "split": "frozen_test",
+   "template": "github-copilot-blog.candidate",
+   "variant": "clean",
+   "candidate_sha256": "dacff7deb52ddfd6b5a97332ba43708ef94b5e85b9d75cd9dd459246a43ceab9",
+   "label_sha256": "bf82267915a4ce13d712a1bb52a0477a9a7f0b13613d9186873f5d2a9803be32",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+   "gold_sha256": "bb98dad09c1b31c36a0ee100b24699d9b44390c7b4a49c3d4e5378e925f5507e",
+   "prompt_chars": 84124,
+   "source_truncated": true,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-github-noise",
+   "split": "frozen_test",
+   "template": "github-copilot-blog.candidate",
+   "variant": "noise",
+   "candidate_sha256": "ff4f3a827e0dbe0b62bf0d2ade1724886137c599f3a8f24704d3329ba28623c1",
+   "label_sha256": "9e0c1ed648af789d23b5e0cdd8bb675e5b14de27b9afcfbb7dbe8669c6d64215",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+   "gold_sha256": "bb98dad09c1b31c36a0ee100b24699d9b44390c7b4a49c3d4e5378e925f5507e",
+   "prompt_chars": 84334,
+   "source_truncated": true,
+   "expected_decision": "fail"
+  },
+  {
+   "case_id": "cal-github-duplicate",
+   "split": "frozen_test",
+   "template": "github-copilot-blog.candidate",
+   "variant": "duplicate",
+   "candidate_sha256": "5d64ad91385abeab8a18807044b30b6fe5c2a30ce358f4e2c4233b754c08609b",
+   "label_sha256": "9662eb735323c0d9221a79087aed4538cebe9ce8ea748effbbb80ab4ef2b1f4e",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+   "gold_sha256": "bb98dad09c1b31c36a0ee100b24699d9b44390c7b4a49c3d4e5378e925f5507e",
+   "prompt_chars": 84480,
+   "source_truncated": true,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-github-missing_paragraph",
+   "split": "frozen_test",
+   "template": "github-copilot-blog.candidate",
+   "variant": "missing_paragraph",
+   "candidate_sha256": "57e8cfa7a6f51c35048c0bd559c9d9fc8e8b79602f7bec0e93e45c78c537e0f3",
+   "label_sha256": "91ba5c315e986aafb624dea93cb0c95fb405b0b17eff1a51d0dfc4b8a2044604",
+   "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+   "gold_sha256": "bb98dad09c1b31c36a0ee100b24699d9b44390c7b4a49c3d4e5378e925f5507e",
+   "prompt_chars": 83768,
+   "source_truncated": true,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-w3clink-clean",
+   "split": "frozen_test",
+   "template": "w3c-link-text.candidate",
+   "variant": "clean",
+   "candidate_sha256": "22e39cd73ad033d3ea742f69cf9aafa63b35125ddcc4f33173e9788ef1d6d05e",
+   "label_sha256": "a8b6f8d454578344a97075ce97a3e6caac2c7686547ff1306f4e67ccaefb8fc0",
+   "source_sha256": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5",
+   "gold_sha256": null,
+   "prompt_chars": 25356,
+   "source_truncated": false,
+   "expected_decision": "uncertain"
+  },
+  {
+   "case_id": "cal-w3clink-instruction_interference",
+   "split": "frozen_test",
+   "template": "w3c-link-text.candidate",
+   "variant": "instruction_interference",
+   "candidate_sha256": "519ca8c8f550c83fa43d3b1da02d99a59dcfa37ae7beb74b6e5596522445c115",
+   "label_sha256": "3241034f4a15ace3a6a7cfa93f0e720f759a7f517257b99c30ced201ec2c0415",
+   "source_sha256": "455f237d8b95ab058c974a660c10027fe65b79747beee872d4b6d987884527b5",
+   "gold_sha256": null,
+   "prompt_chars": 25537,
+   "source_truncated": false,
+   "expected_decision": "fail"
+  }
+ ],
+ "amendment": {
+  "type": "rollback",
+  "parent_freeze": "D:\\codex project\\offline_web_extractor\\outputs\\rubrics_judge.node3.freeze.v6.json",
+  "parent_freeze_version": 6,
+  "restored_from": "D:\\codex project\\offline_web_extractor\\outputs\\rubrics_judge.node3.freeze.v4.json",
+  "restored_from_version": 4,
+  "reason": "P3 rollback: judge v1.3.0 amendment FAILED the pre-registered dev regression guard (docs/P3_AMENDMENT_PROPOSAL.md section 3): severe_miss_count=3 > 1 (cal-appetite-noise, cal-blurb-noise, cal-blurb-reorder; granularity anchors downgraded severity below P0-adjudicated gold). reject_rate 0% and false_alarm 0.0556 passed; orig dev12 match dropped 0.9167 -> 0.75, kappa 0.8554 -> 0.5443. Evidence: outputs/p3.devguard.v1. Restored judge v1.2.0 byte-exact (sha edd841ef... == freeze v4). No gold rewrite, no score chasing. v1.3 artifacts archived (freeze v6, p3.dev.* batches); 4 v3 cases evaluated under v1.3 excluded from gate pending user path decision.",
+  "judge_version": {
+   "failed": "1.3.0",
+   "restored": "1.2.0"
+  },
+  "failed_judge_sha256": "46f2111837ba64c168452eb98ffa2001e238832384f7eed3f0b0fdc683a8d076",
+  "restored_judge_sha256": "edd841efb52961f07891160ccae7fabcc72da65734854da9a86e02bf622ff891",
+  "file_hashes_equal_freeze_v4": true,
+  "label_prompt_chars_restore": {
+   "cal-appetite-clean": {
+    "v13_prompt_chars": 42755,
+    "restored_prompt_chars": 41653
+   },
+   "cal-appetite-missing_paragraph": {
+    "v13_prompt_chars": 42540,
+    "restored_prompt_chars": 41438
+   },
+   "cal-appetite-noise": {
+    "v13_prompt_chars": 42901,
+    "restored_prompt_chars": 41799
+   },
+   "cal-appetite-duplicate": {
+    "v13_prompt_chars": 42970,
+    "restored_prompt_chars": 41868
+   },
+   "cal-appetite-reorder": {
+    "v13_prompt_chars": 42755,
+    "restored_prompt_chars": 41653
+   },
+   "cal-appetite-title_number": {
+    "v13_prompt_chars": 42749,
+    "restored_prompt_chars": 41647
+   },
+   "cal-blurb-clean": {
+    "v13_prompt_chars": 60358,
+    "restored_prompt_chars": 59256
+   },
+   "cal-blurb-missing_paragraph": {
+    "v13_prompt_chars": 59547,
+    "restored_prompt_chars": 58445
+   },
+   "cal-blurb-noise": {
+    "v13_prompt_chars": 60567,
+    "restored_prompt_chars": 59465
+   },
+   "cal-blurb-reorder": {
+    "v13_prompt_chars": 60358,
+    "restored_prompt_chars": 59256
+   },
+   "cal-iana-clean": {
+    "v13_prompt_chars": 23500,
+    "restored_prompt_chars": 22398
+   },
+   "cal-iana-noise": {
+    "v13_prompt_chars": 23709,
+    "restored_prompt_chars": 22607
+   },
+   "cal-mdn-clean": {
+    "v13_prompt_chars": 107447,
+    "restored_prompt_chars": 109714
+   },
+   "cal-mdn-missing_paragraph": {
+    "v13_prompt_chars": 107204,
+    "restored_prompt_chars": 109471
+   },
+   "cal-mdn-code_indent": {
+    "v13_prompt_chars": 107449,
+    "restored_prompt_chars": 109716
+   },
+   "cal-mdn-reorder": {
+    "v13_prompt_chars": 107447,
+    "restored_prompt_chars": 109714
+   },
+   "cal-mdn-instruction_interference": {
+    "v13_prompt_chars": 107629,
+    "restored_prompt_chars": 109896
+   },
+   "cal-github-clean": {
+    "v13_prompt_chars": 85226,
+    "restored_prompt_chars": 84124
+   },
+   "cal-github-noise": {
+    "v13_prompt_chars": 85436,
+    "restored_prompt_chars": 84334
+   },
+   "cal-github-duplicate": {
+    "v13_prompt_chars": 85582,
+    "restored_prompt_chars": 84480
+   },
+   "cal-github-missing_paragraph": {
+    "v13_prompt_chars": 84870,
+    "restored_prompt_chars": 83768
+   },
+   "cal-w3clink-clean": {
+    "v13_prompt_chars": 26458,
+    "restored_prompt_chars": 25356
+   },
+   "cal-w3clink-instruction_interference": {
+    "v13_prompt_chars": 26639,
+    "restored_prompt_chars": 25537
+   }
+  },
+  "scoring_content_unchanged": true,
+  "batch_config_changed": false,
+  "preregistration": "docs/P3_AMENDMENT_PROPOSAL.md#3",
+  "guard_evidence": "outputs/p3.devguard.v1/p3.dev.guard.json",
+  "v3_partial_consumption": "4 v3 cases evaluated under failed v1.3 (outputs/p3.judge.v1.json); archived, excluded from gate pending user path decision",
+  "approval": {
+   "by": "hqli631",
+   "at": "2026-11-22",
+   "quote": "批准修订；批准阈值；v3 选 b 含采集；批准预算",
+   "note": "rollback is the pre-registered consequence of GUARD_FAIL, not a new decision"
+  }
+ }
+}

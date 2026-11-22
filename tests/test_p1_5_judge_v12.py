@@ -30,7 +30,7 @@ class Provider:
 
 class JudgeV12Tests(unittest.TestCase):
     def test_version_1_2_0(self):
-        self.assertEqual(JUDGE_VERSION, '1.3.0')
+        self.assertEqual(JUDGE_VERSION, '1.2.0')
 
     def test_menus_are_appendix_last_key(self):
         p, _, _ = build_prompt(SOURCE, DOC, DOC)
@@ -89,7 +89,7 @@ class JudgeV12Tests(unittest.TestCase):
     def test_run_judge_accepted_v12(self):
         rep = run_judge(SOURCE, DOC, Provider(), gold=DOC)
         self.assertEqual(rep['status'], 'accepted')
-        self.assertEqual(rep['judge_version'], '1.3.0')
+        self.assertEqual(rep['judge_version'], '1.2.0')
         self.assertEqual(list(rep['prompt'].keys())[-1], 'evidence_menus')
 
 

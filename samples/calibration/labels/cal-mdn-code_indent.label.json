@@ -22,7 +22,7 @@
   "max_source_chars": 20000
  },
  "source_truncated": true,
- "prompt_chars": 107449,
+ "prompt_chars": 109716,
  "expected": {
   "dimensions": {
    "completeness": {

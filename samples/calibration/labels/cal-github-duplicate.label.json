@@ -19,7 +19,7 @@
   "max_source_chars": 20000
  },
  "source_truncated": true,
- "prompt_chars": 85582,
+ "prompt_chars": 84480,
  "expected": {
   "dimensions": {
    "completeness": {

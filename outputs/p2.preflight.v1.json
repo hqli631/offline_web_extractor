@@ -1,0 +1,333 @@
+{
+ "tool": "run_rubrics_judge.py",
+ "tool_sha256": "cae887c1234ded4cc008a94360ba7ae4ad15b572e190a8358b5ae20c8c3ba184",
+ "manifest": "samples\\p2_manifest.json",
+ "manifest_sha256": "f6a99ed5808a393cab9696d6fa9309fab248233a967a80df61b0be9a55c1e440",
+ "signature": {
+  "model": "qwen3.8-27b",
+  "max_output_tokens": 2200,
+  "max_source_chars": 20000,
+  "timeout_seconds": 90.0,
+  "judge_version": "1.2.0",
+  "rubrics_version": "2.0.0"
+ },
+ "provider": "qwen-rubrics-judge",
+ "split_filter": null,
+ "ignore_cache": false,
+ "max_calls": 0,
+ "new_api_calls": 0,
+ "cache_hits": 0,
+ "skipped_budget": 18,
+ "usage_total_all_cases": null,
+ "usage_new_calls_only": null,
+ "generated_at": "2026-11-22T12:44:00+00:00",
+ "cases": [
+  {
+   "case_id": "cal-interpreter-clean",
+   "template": "python_interpreter_zh",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "a63567d6f7f477798a6998b89c88d784d2dbc304d91f63fd8d10d2451130fcda",
+    "gold_sha256": "a63567d6f7f477798a6998b89c88d784d2dbc304d91f63fd8d10d2451130fcda",
+    "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-interpreter-missing_paragraph",
+   "template": "python_interpreter_zh",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "5a6a00d11a1618e6a3f1aa86a1843b03a8877091bd602d34940860a43feb8353",
+    "gold_sha256": "a63567d6f7f477798a6998b89c88d784d2dbc304d91f63fd8d10d2451130fcda",
+    "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-interpreter-noise",
+   "template": "python_interpreter_zh",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "0fb2284397089a3a2a81cbf8343748426356fad6dfc33ec5a4d2b357f59f3d2b",
+    "gold_sha256": "a63567d6f7f477798a6998b89c88d784d2dbc304d91f63fd8d10d2451130fcda",
+    "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-interpreter-duplicate",
+   "template": "python_interpreter_zh",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "6ae66eb01615d45d5450103dacf261d4a817b3d606fe3f52459c45168cc98b5f",
+    "gold_sha256": "a63567d6f7f477798a6998b89c88d784d2dbc304d91f63fd8d10d2451130fcda",
+    "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-interpreter-reorder",
+   "template": "python_interpreter_zh",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "ee504ce32e7e3a08afacd19f742f6e0357dfa94de21b63e509f82c43f10ebb96",
+    "gold_sha256": "a63567d6f7f477798a6998b89c88d784d2dbc304d91f63fd8d10d2451130fcda",
+    "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-interpreter-instruction_interference",
+   "template": "python_interpreter_zh",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "ae4a9bf002160456bdc428d5701cc03560d5ec07f568295e06eb80f8098293fd",
+    "gold_sha256": "a63567d6f7f477798a6998b89c88d784d2dbc304d91f63fd8d10d2451130fcda",
+    "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-nasa-clean",
+   "template": "nasa-voyager-news.candidate",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "afa0e768a77c2a9458e534ca4823c2978f0b43d90e9124be2a646fab3130ad65",
+    "gold_sha256": "f3b7d0450c531bb38884b79aebe0d28f2b4bbeccdb8982d2d23924fc2f5abbb5",
+    "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-nasa-missing_paragraph",
+   "template": "nasa-voyager-news.candidate",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "17aa8f9fd4461d510ba158d9a8a8a96840d6216592c9c91969b14e0d04c14289",
+    "gold_sha256": "f3b7d0450c531bb38884b79aebe0d28f2b4bbeccdb8982d2d23924fc2f5abbb5",
+    "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-nasa-noise",
+   "template": "nasa-voyager-news.candidate",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "9a7e4b6e3604f54f848a8fd7d1a87ac15d67edf67b746a04b9f5244a70046bf4",
+    "gold_sha256": "f3b7d0450c531bb38884b79aebe0d28f2b4bbeccdb8982d2d23924fc2f5abbb5",
+    "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-nasa-duplicate",
+   "template": "nasa-voyager-news.candidate",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "9861452157d5762b8de05a3429b8d3ea38efaaa03ac7995bda697077cf6f81f5",
+    "gold_sha256": "f3b7d0450c531bb38884b79aebe0d28f2b4bbeccdb8982d2d23924fc2f5abbb5",
+    "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-nasa-reorder",
+   "template": "nasa-voyager-news.candidate",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "02c2206f88e8d79986286bf8b44c381fe47a47281500846790db366fd09370c3",
+    "gold_sha256": "f3b7d0450c531bb38884b79aebe0d28f2b4bbeccdb8982d2d23924fc2f5abbb5",
+    "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-nasa-instruction_interference",
+   "template": "nasa-voyager-news.candidate",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "374bd01ab9cc500f8b3a05549e7e34dc4d9e03598ebf7d15f800aac95884061b",
+    "gold_sha256": "f3b7d0450c531bb38884b79aebe0d28f2b4bbeccdb8982d2d23924fc2f5abbb5",
+    "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-w3ca11y-clean",
+   "template": "w3c_accessibility_intro_zh",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "8caa1907361e7897ef05ed83cdc45b8882fca1e88e4d8307510929294bfbeeec",
+    "gold_sha256": "e214e4e38fd0d49fb00de3bcfc45b8f0f238ef039d3c3c6de1836d36ce4ceced",
+    "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-w3ca11y-missing_paragraph",
+   "template": "w3c_accessibility_intro_zh",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "245153f1c2d3aa40645c4093e3d7735956c88d73bad5bb14b71ca869dcfc8b9a",
+    "gold_sha256": "e214e4e38fd0d49fb00de3bcfc45b8f0f238ef039d3c3c6de1836d36ce4ceced",
+    "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-w3ca11y-noise",
+   "template": "w3c_accessibility_intro_zh",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "d70a5fbb7f88eb0ba544e73ca38742a13f554a9e1636ac47f2b366b2603c45bb",
+    "gold_sha256": "e214e4e38fd0d49fb00de3bcfc45b8f0f238ef039d3c3c6de1836d36ce4ceced",
+    "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-w3ca11y-duplicate",
+   "template": "w3c_accessibility_intro_zh",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "ea8853a708d3c4c47831de8e6238de90c7cd9a7e0f909668924a99175b0f16dc",
+    "gold_sha256": "e214e4e38fd0d49fb00de3bcfc45b8f0f238ef039d3c3c6de1836d36ce4ceced",
+    "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-w3ca11y-reorder",
+   "template": "w3c_accessibility_intro_zh",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "6419d9a3d45b0ca1bccf6d100b94eada77ff8c9f1b2529e666e9233a5dcd9a30",
+    "gold_sha256": "e214e4e38fd0d49fb00de3bcfc45b8f0f238ef039d3c3c6de1836d36ce4ceced",
+    "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-w3ca11y-instruction_interference",
+   "template": "w3c_accessibility_intro_zh",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "0a9fbfbb483b7433d94eaa24457b805f2ddea9eeca8dd44357e4892af6e63088",
+    "gold_sha256": "e214e4e38fd0d49fb00de3bcfc45b8f0f238ef039d3c3c6de1836d36ce4ceced",
+    "source_sha256": "0de81af8fa582694076469b16b198d43e32b27a62453ec7bdbef23c7db1607dc",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  }
+ ],
+ "note": "Judge scores are uncalibrated model judgements with checked evidence; not human labels, accuracy estimates, or training reward. Resume: rerun the same manifest with a new output filename; cached cases cost zero new calls."
+}

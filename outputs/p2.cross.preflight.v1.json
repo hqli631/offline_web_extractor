@@ -1,0 +1,231 @@
+{
+ "tool": "run_rubrics_judge.py",
+ "tool_sha256": "cae887c1234ded4cc008a94360ba7ae4ad15b572e190a8358b5ae20c8c3ba184",
+ "manifest": "samples\\calibration_manifest.json",
+ "manifest_sha256": "a3ef652c55ef9a015f12a83b18befef9076ae352f005985fa2682823b15b5d28",
+ "signature": {
+  "model": "qwen4-max",
+  "max_output_tokens": 2200,
+  "max_source_chars": 20000,
+  "timeout_seconds": 90.0,
+  "judge_version": "1.2.0",
+  "rubrics_version": "2.0.0"
+ },
+ "provider": "qwen-rubrics-judge",
+ "split_filter": "development",
+ "ignore_cache": false,
+ "max_calls": 0,
+ "new_api_calls": 0,
+ "cache_hits": 0,
+ "skipped_budget": 12,
+ "usage_total_all_cases": null,
+ "usage_new_calls_only": null,
+ "generated_at": "2026-11-22T12:44:00+00:00",
+ "cases": [
+  {
+   "case_id": "cal-appetite-clean",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+    "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+    "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-appetite-missing_paragraph",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "0deecb2e62621dc2751a003494bef15bd9b225237d067f3e7b47be0443c08d77",
+    "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+    "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-appetite-noise",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "306bda12f4fa51d06e61d7f9fdd2dc5af97beb560c624956ec3038c487962908",
+    "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+    "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-appetite-duplicate",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "1f2efda4adf4228b289d4c5fe4213b0f214b8b6aa674241032ed17fa9bf5c230",
+    "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+    "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-appetite-reorder",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "b54df95c22a0079b847cdd00db65aad50d7900170a3520fabd2aea9338ff31f1",
+    "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+    "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-appetite-title_number",
+   "template": "python_appetite_zh",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "b186d156e8c73c6a1152a0d0d2b378827b531f2ac7fe830f1f0f78d415a21f13",
+    "gold_sha256": "b92cf6c4d0d2b56924a419c229077fde606725966109b01ff32d7fffde8ef33d",
+    "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-blurb-clean",
+   "template": "python_blurb",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+    "gold_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+    "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-blurb-missing_paragraph",
+   "template": "python_blurb",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "0d7933f900654b60d057365eb56a8b702259aa6cb46a938fce11b25ef68da1bc",
+    "gold_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+    "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-blurb-noise",
+   "template": "python_blurb",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "f7aa52a7c5d9654e68e81f58d2db5c74c23b20ddd30c87575d193497980100c9",
+    "gold_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+    "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-blurb-reorder",
+   "template": "python_blurb",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "6b60421ec7aea90da9e550a76ce492078af182ef635c142a7da8ac244cdce18d",
+    "gold_sha256": "54844dac029fb6b24e535bec7268ccfd5d04ee307f291d736225048a8a7fa40f",
+    "source_sha256": "7499dcd325be2bf0f32ffae180f992b4446103a1213f4c00873f457fb4815992",
+    "mode": "with_gold",
+    "source_truncated": true
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-iana-clean",
+   "template": "iana_example_domains",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "43e139dd309a4dfeb4cb289c27441da3303f44a92dc8c5e042b7fcb13a772b76",
+    "gold_sha256": null,
+    "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+    "mode": "source_only",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-iana-noise",
+   "template": "iana_example_domains",
+   "split": "development",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "8e905ea75067f5c86b5bab93f6d7b40b27ff00c68f905efea8e5f292cae74cb6",
+    "gold_sha256": null,
+    "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+    "mode": "source_only",
+    "source_truncated": false
+   },
+   "report": null
+  }
+ ],
+ "note": "Judge scores are uncalibrated model judgements with checked evidence; not human labels, accuracy estimates, or training reward. Resume: rerun the same manifest with a new output filename; cached cases cost zero new calls."
+}

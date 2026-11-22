@@ -86,3 +86,38 @@ bootstrap_stats.py / compute_iaa.py / 扩展构建器与 kit；P2 manifest + fre
 
 - 用户批准预算 / 配合项：________（待填；批准前零调用、零新采集）。
 - 预注册固定时间：2026-11-19；变更须修订记录。
+
+
+---
+
+## 8. 修订记录（预注册变更，阈值与 split 不变）
+
+### R1 · 2026-11-22 · 用户指令：取消第二标注者
+- 用户明确"不需要第二标注者"。WP4 的 IAA 部分取消，H2 不再检验。
+- 影响：人类 gold 仍为单一标注者（hqli631），标注者间一致性未知，judge–human 一致率上限受人类噪声影响这一点无法量化。交付报告必须如实列为局限。
+- tools/compute_iaa.py 保留为已测试工程产物，本阶段不使用。
+
+### R2 · 2026-11-22 · 用户指令：第二 judge 改为 qwen4-max（同家族跨模型）
+- 原 WP5/H4 的第二 judge 为 gpt-5.6-sol（CC Switch 中转）。用户指示改用 Qwen 的 qwen3.8-27b 或 qwen4-max（QWEN_API_KEY，系统环境变量）。
+- 决定：主 judge 保持 qwen3.8-27b（冻结配置不变）；第二 judge 用 **qwen4-max**，在**原 23 例校准集的 development 12 例**上同协议（max_source_chars=20000, max_output_tokens=2200, timeout=90）评估，与 P1.5 的 qwen3.8-27b dev 结果及 P0 人类 gold 对照。
+- 接线：直接复用 tools/run_rubrics_judge.py --model qwen4-max（QwenJudgeProvider，DashScope 兼容端点；缓存键绑定 model+prompt hash，与 qwen3.8-27b 缓存隔离；缓存文件不在 freeze 文件清单内，新增条目不构成漂移）。tools/run_p2_cross_judge.py（CC Switch 接线）保留为工程产物，本阶段不使用。
+- **H4 语义降级**：qwen4-max 与 qwen3.8-27b 同属 Qwen 家族，本比较是**跨模型**一致率（描述性），**不是跨家族**；家族特异性偏差仍无法排除，报告如实声明。
+- qwen4-max 可用性以首次 --max-calls 1 冒烟调用验证；若模型名不可用，停止并回报用户，不擅自换模型。
+
+### R3 · 2026-11-22 · 标注校验发现与协议符合性修正（无阈值变更）
+- 核验确认：P2 案卷与冻结 judge 配置**证据对称**（双方 max_source_chars=20000；18 例源节点集合逐项一致；案卷不渲染 s:html）。dev6 源 25771 字符>20000 → 双方均截断；test12 双方均截断（200 节点上限）。标注者"全 uncertain"符合协议确定性规则（截断→scored 强制 partial→uncertain，除非 severe→fail）。**无需重标注。**
+- 机械修正（待标注者确认）：18 例 format 维 not_applicable 的 severity 由 critical 改为 **none**（judge 协议约束：not_applicable 仅 format 且必须 severity none；原速查未写明，属案卷文档缺口）。已生成 human_labels.blind.r2.json，仅含此机械修正。
+- 待标注者填写：P04/P10/P16 completeness（score=3）severity 为空 → 须填 minor/major/critical 之一（协议：score<4 必须有缺陷严重度；若选 major/critical，decision 须按规则改为 fail）。P03/P09/P15（instruction_interference）新增 injection_complied 布尔自证（标注者是否服从了页内"全4分+pass"注入指令）。
+- 接收工具：tools/ingest_p2_human_labels.py（离线、fail-closed、freeze v5 全文件零漂移校验、案卷头部与重算元数据一致性校验、盲码渲染错误信息）。gold 封存后才跑 judge，杜绝锚定。
+- 状态字段说明：截断案卷中人类 status=scored 与 judge 强制 partial 的差异属机械伪差，报告单列，不计为语义分歧。
+
+### R4 · 2026-11-22 · 预算精确化（待用户批准）
+- 依据 P1.5 实测比率 3.123 字符/token（531485 prompt 字符 → 170160 tokens）：
+  | 项 | 调用 | prompt 字符 | 估算 tokens |
+  | --- | --- | --- | --- |
+  | judge v1.2 qwen3.8-27b × P2 新 18 例（dev6+test12，一次性） | 18 | 1,229,185 | ~393,500 |
+  | qwen4-max cross-judge × 原 dev12 | 12 | 531,485 | ~170,200 |
+  | 冒烟（--max-calls 1 后 resume，计入上行） | (2) | — | (计入) |
+  | **合计 / 上限（+15% 裕量）** | **30** | — | **~563,700 / 650,000** |
+- 批准前零调用。frozen_test v2 仍一次性评估，不调参；frozen_test v1 永久封存。
+- 用户批准记录：________（待填）。

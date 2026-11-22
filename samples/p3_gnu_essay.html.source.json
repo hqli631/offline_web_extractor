@@ -1,0 +1,25 @@
+{
+  "page_id": "p3_gnu_essay",
+  "template": "gnu-philosophy",
+  "index_url": "(direct urls)",
+  "article_url": "https://www.gnu.org/philosophy/your-freedom-needs-free-software.html",
+  "final_url": "https://www.gnu.org/philosophy/your-freedom-needs-free-software.html",
+  "sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+  "raw_chars": 19271,
+  "paragraph_count": 23,
+  "size_window": [
+    5000,
+    20000
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.gnu.org/philosophy/your-freedom-needs-free-software.html",
+      "final_url": "https://www.gnu.org/philosophy/your-freedom-needs-free-software.html",
+      "sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+      "raw_chars": 19271,
+      "fetched_at": "2026-11-22T14:58:10+00:00"
+    }
+  ],
+  "rejected_attempts": [],
+  "approval": "hqli631 2026-11-22 route b (2 short real pages; zero model calls)"
+}

@@ -1,0 +1,34 @@
+{
+  "record": "P3 budget guard pause (v3 one-shot batch)",
+  "paused_at": "2026-11-22",
+  "reason": "Approved token cap 460000 would be exceeded: with_gold non-truncated v3 prompts average ~20.7k tokens/call vs ~9k estimated. Batch paused after 4/12 v3 cases; cache preserves completed cases; resume costs zero for them. No tuning, no re-scoring; one-shot discipline intact.",
+  "approved_budget": {
+    "max_calls": 30,
+    "token_cap": 460000,
+    "approved_by": "hqli631",
+    "approved_at": "2026-11-22"
+  },
+  "consumed": {
+    "dev_orig_smoke": 15263,
+    "dev_orig_full_new": 157347,
+    "dev_p2_new": 124112,
+    "v3_smoke": 20735,
+    "v3_partial_new": 62000,
+    "total": 379457,
+    "calls_made": 22
+  },
+  "v3_completed_cases": [
+    "cal-nprtext-clean",
+    "cal-nprtext-missing_paragraph",
+    "cal-nprtext-noise",
+    "cal-nprtext-duplicate"
+  ],
+  "v3_remaining_cases": 8,
+  "projection": {
+    "avg_v3_tokens_per_call": 20684,
+    "remaining_estimate": "170k-195k (GNU essay longer)",
+    "projected_total": "~550k-575k"
+  },
+  "request": "Extend token cap to 600000 (user approval required before resume)",
+  "estimate_error_note": "Original ~110k v3 estimate assumed truncated-size prompts; actual with_gold full-source prompts ~20k/call. Honest deviation recorded; call count (30) unchanged."
+}

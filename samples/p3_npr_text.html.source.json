@@ -1,0 +1,32 @@
+{
+  "page_id": "p3_npr_text",
+  "template": "npr-text",
+  "index_url": "https://text.npr.org/",
+  "article_url": "https://text.npr.org/nx-s1-6000601",
+  "final_url": "https://text.npr.org/nx-s1-6000601",
+  "sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+  "raw_chars": 14398,
+  "paragraph_count": 73,
+  "size_window": [
+    5000,
+    18000
+  ],
+  "fetch_log": [
+    {
+      "url": "https://text.npr.org/",
+      "final_url": "https://text.npr.org/",
+      "sha256": "ea245ebfc60ea525790368c40e0167831201334577758031b29b3bde4afe9af5",
+      "raw_chars": 6029,
+      "fetched_at": "2026-11-22T14:55:12+00:00"
+    },
+    {
+      "url": "https://text.npr.org/nx-s1-6000601",
+      "final_url": "https://text.npr.org/nx-s1-6000601",
+      "sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+      "raw_chars": 14398,
+      "fetched_at": "2026-11-22T14:55:13+00:00"
+    }
+  ],
+  "rejected_attempts": [],
+  "approval": "hqli631 2026-11-22 route b (2 short real pages; zero model calls)"
+}

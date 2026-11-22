@@ -1,0 +1,438 @@
+{
+ "d8852b57ad4545624e1cce6bad36fb7a3d871d62b4adff8c7cf99e8da5783e86": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The candidate includes all article content, headings, and the transcript section exactly as present in the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:4",
+        "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire avenue"
+       },
+       {
+        "ref": "g:15",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "g:71",
+        "quote": "(SOUNDBITE OF MUSIC)"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, footer, and header elements from the source (s:0, s:74-s:82) are correctly excluded from the candidate output.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Text-Only Version Go To Full Site"
+       },
+       {
+        "ref": "s:74",
+        "quote": "Topics"
+       },
+       {
+        "ref": "s:78",
+        "quote": "Contact Us"
+       },
+       {
+        "ref": "s:82",
+        "quote": "&copy NPR"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The order of paragraphs and headings matches the source and gold standard perfectly, including the H2 'Shared tactics' and H3 'Transcript'.",
+      "evidence": [
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "s:17",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "s:33",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "g:15",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Transcript"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title is faithful to the source and gold standard without any extraneous controls or missing numbers.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "g:title",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19972,
+    "output_tokens": 763,
+    "total_tokens": 20735
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T15:00:25+00:00"
+ },
+ "b4fd6c16ebc08105ba4840f65186cbe450735bd923967bba2fa7e9581116dd85": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The lead paragraph of the article is missing from the candidate extraction.",
+      "evidence": [
+       {
+        "ref": "g:4",
+        "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers"
+       },
+       {
+        "ref": "s:6",
+        "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, footer, and header noise are correctly excluded; only legitimate editorial content remains.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Text-Only Version Go To Full Site"
+       },
+       {
+        "ref": "s:74",
+        "quote": "Topics"
+       },
+       {
+        "ref": "s:78",
+        "quote": "Contact Us"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The remaining content follows the correct order and heading levels as per the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "g:15",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "s:17",
+        "quote": "Shared tactics, crowdfunding"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title is faithful to the source and matches the gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "g:title",
+        "quote": "How the movement against data centers has gone global"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19904,
+    "output_tokens": 661,
+    "total_tokens": 20565
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T15:01:05+00:00"
+ },
+ "1a772e64586d35e92b3ae1bcd0cfb8c08865ca64c1be3cc62866a7b707fc0c59": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article content including the lead, body paragraphs, and transcript is present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:4",
+        "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire avenue as they called to stop a Microsoft data center from being built beside a beloved local forest."
+       },
+       {
+        "ref": "g:31",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "g:71",
+        "quote": "(SOUNDBITE OF MUSIC)"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "The candidate contains a block of fabricated noise (p:1) that does not exist in the source or gold standard.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Text-Only Version Go To Full Site"
+       },
+       {
+        "ref": "s:74",
+        "quote": "Topics"
+       },
+       {
+        "ref": "s:78",
+        "quote": "Contact Us"
+       },
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The order of headings and paragraphs matches the source and gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "s:17",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "s:33",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "g:15",
+        "quote": "Shared tactics, crowdfunding"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title is faithful to the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "g:title",
+        "quote": "How the movement against data centers has gone global"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 20018,
+    "output_tokens": 686,
+    "total_tokens": 20704
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T15:01:15+00:00"
+ },
+ "76d149bd072101687e23b190038dadd737644c293178c9d1b183c6ea870bdc7b": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The candidate includes all meaningful article content from the source, including the byline, date, body paragraphs, subheadings, and the full transcript section.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:15",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "g:71",
+        "quote": "(SOUNDBITE OF MUSIC)"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The candidate contains a duplicate breadcrumb block (p:0 and p:1) which is a small local defect. Navigation and footer elements were correctly excluded.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "s:74",
+        "quote": "Topics"
+       },
+       {
+        "ref": "s:78",
+        "quote": "Contact Us"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The article order, heading levels, and paragraph sequence match the source and gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "s:17",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "s:33",
+        "quote": "Transcript"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title is faithful to the source article title.",
+      "evidence": [
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "g:title",
+        "quote": "How the movement against data centers has gone global"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 20006,
+    "output_tokens": 725,
+    "total_tokens": 20731
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T15:01:24+00:00"
+ }
+}

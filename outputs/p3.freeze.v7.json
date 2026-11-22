@@ -1,0 +1,196 @@
+{
+ "freeze_version": 7,
+ "generated_at": "2026-11-22T14:59:10+00:00",
+ "batch_config": {
+  "max_source_chars": 20000,
+  "max_output_tokens": 2200,
+  "timeout_seconds": 90,
+  "model": "qwen3.8-27b"
+ },
+ "label_policy": {
+  "label_origin": "assistant_silver",
+  "human_reviewed": false,
+  "note": "P3 v3 silver labels; not human gold. frozen_test v3 scored ONCE after user blind gold; no tuning. frozen_test v1 permanently sealed; v2 consumed in P2."
+ },
+ "counts": {
+  "cases": 12,
+  "splits": {
+   "frozen_test": 12
+  }
+ },
+ "manifest_sha256": "fe2131d6a3d235651f6c6c9d3a74932666bf250297dd772c05dc1f7a62854ed8",
+ "files": {
+  "samples/p3_manifest.json": "a30a9e574b1f8c7cb43d17713378fc1068e5b79ce374076bd0fe542bcfa2cb2e",
+  "samples/p3_npr_text.html": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+  "samples/p3_npr_text.html.source.json": "7bbc80720027fa2026b692524b08a3d8618de250cccbfa47e2d659f5bd258653",
+  "samples/p3_npr_text.expected.json": "2c4dc97651947bc8c810440a179f3dbb90f876ea6061735fd934e823282c4b88",
+  "samples/p3_gnu_essay.html": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+  "samples/p3_gnu_essay.html.source.json": "cee2888a878df37ff0824d2558ad9b0f7dcbaaf47f0155a467961333e09d529d",
+  "samples/p3_gnu_essay.expected.json": "010aff5420eea64a32abf7decc21ea5a49e6bf516e18694e9290c57a34af914e",
+  "samples/calibration/cal-nprtext-clean.candidate.json": "2c4dc97651947bc8c810440a179f3dbb90f876ea6061735fd934e823282c4b88",
+  "samples/calibration/labels/cal-nprtext-clean.label.json": "c8f3a24989b6df42a9522ea3509d9ae8d290581c35078f466dd7427cbd868fe5",
+  "samples/calibration/cal-nprtext-missing_paragraph.candidate.json": "6ca8e78e7625d4b9f7ff0fde40a3f22e58c67d8a9c25c363463aaa680f929d47",
+  "samples/calibration/labels/cal-nprtext-missing_paragraph.label.json": "573c7c63060217022e3a166fc5e5e53735ccc007f668d58f67fd732f4cc787f5",
+  "samples/calibration/cal-nprtext-noise.candidate.json": "397110dbefb567989e5a5894d8ef0210c21c59873f3abd9898aaeaa8660ea3fc",
+  "samples/calibration/labels/cal-nprtext-noise.label.json": "14329ec0f21af7b1c3a990a8fd86dd63e616779cf4d0759917bfe97f8c43a5a3",
+  "samples/calibration/cal-nprtext-duplicate.candidate.json": "b25c9c2e9747ffe04f36ef9afe9c24bd12955728585edcf79f0e0df85eb8cd8f",
+  "samples/calibration/labels/cal-nprtext-duplicate.label.json": "4bc9c108043d5f1efcc7502ff429d62ee59032dc286df762ad29fecd20efe12a",
+  "samples/calibration/cal-nprtext-reorder.candidate.json": "ecf29a985793f480dec85277fae589ddc64bebeaa8782ee6febaefca8dcabf29",
+  "samples/calibration/labels/cal-nprtext-reorder.label.json": "8a98d07ce95cf497333d944ca496055a100a6c60cc23fbaf9b0679a51609d331",
+  "samples/calibration/cal-nprtext-instruction_interference.candidate.json": "d454250bcd5612ac880fc67ef03081ec07b58c0e1385360c4292c7237aaa045b",
+  "samples/calibration/labels/cal-nprtext-instruction_interference.label.json": "d9072dc6d49b08e3f2daedaf7e7446277faa1c50493d4becfca5365143432331",
+  "samples/calibration/cal-gnuessay-clean.candidate.json": "010aff5420eea64a32abf7decc21ea5a49e6bf516e18694e9290c57a34af914e",
+  "samples/calibration/labels/cal-gnuessay-clean.label.json": "8d0ae1b0c9bc00cbe0da2f9397c8985d2fbe89a0f5889193feaea065a7da164e",
+  "samples/calibration/cal-gnuessay-missing_paragraph.candidate.json": "108cf75bc97a26d62e749944f1e32b34da3875feab81d2c8fcd0fa5e608194f8",
+  "samples/calibration/labels/cal-gnuessay-missing_paragraph.label.json": "a5dc0298222e875e37451a91710e33f34d0a1d0de3d8f9050e3091076d7aea60",
+  "samples/calibration/cal-gnuessay-noise.candidate.json": "8a5b93e0af08f81a062ff5520372bf1f731eff1d91f1a5ca8bf1f433fc811683",
+  "samples/calibration/labels/cal-gnuessay-noise.label.json": "da111f1fccb77ae769f4e42cb9584509a2baea10507bc01ce62821358ccd6cca",
+  "samples/calibration/cal-gnuessay-duplicate.candidate.json": "261eb45888fa9d610a7356182f63229ea9499ce1cfc1ad8b87557d0fb15d6680",
+  "samples/calibration/labels/cal-gnuessay-duplicate.label.json": "cf0670ca1ace36e8309cb4773c7c7342362c9405848fa6d64130596b469b780b",
+  "samples/calibration/cal-gnuessay-reorder.candidate.json": "9d300eb321e47dbf50cbaf2a9625895a88c4d4bb9f3849db7fd1d89afe170b0d",
+  "samples/calibration/labels/cal-gnuessay-reorder.label.json": "3312dcb1ff2538655214088b9187a9163bc9f64dddff07a97c92aa063ad486cc",
+  "samples/calibration/cal-gnuessay-instruction_interference.candidate.json": "72194a994a7ba7f4e128ecd67a66e7358e7884f1cdf08ad16b93f4ec1262d8b6",
+  "samples/calibration/labels/cal-gnuessay-instruction_interference.label.json": "407482cfeaf4bda7f4c1b2ef127a3a933544f468658a3f351265f4609aba6d3b",
+  "src/webextractor/rubrics_v2.py": "4fa60e024758e67d8c831b7a34e267bf2ce9a143dd6ae70cdbc94da036560364",
+  "src/webextractor/rubrics_judge.py": "46f2111837ba64c168452eb98ffa2001e238832384f7eed3f0b0fdc683a8d076",
+  "docs/RUBRICS_V2_PROTOCOL.md": "ab0887b53098c37b1cf56176fe99975ab934fb7e1915ae90d174ed77b366322a",
+  "tools/build_calibration_set.py": "45b3582d7828a4ae4fe2289ff64f194d9e01380b0699cfe537d3e8e08b843f74",
+  "tools/build_p3_calibration.py": "13a44f83929bbc8ed73f6e474dc8986fc707dd81a34885777e72d7d011572c99",
+  "tools/collect_p3_sources.py": "263e9d22558bd905960ea5bd7d83572d3a53c5accd57294e403d5428626f8c18"
+ },
+ "cases": [
+  {
+   "case_id": "cal-nprtext-clean",
+   "split": "frozen_test",
+   "template": "p3_npr_text",
+   "candidate_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+   "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+   "gold_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+   "label_sha256": "4b25f02e03688925277b01f1f59a7d7410c2cbe6c02c73d7f75226be598cb461",
+   "prompt_chars": 79782,
+   "source_truncated": false
+  },
+  {
+   "case_id": "cal-nprtext-missing_paragraph",
+   "split": "frozen_test",
+   "template": "p3_npr_text",
+   "candidate_sha256": "c179c16421f06ec8f3fc23d24ff05e8855df998fce7a93e272365d6bfbdb227a",
+   "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+   "gold_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+   "label_sha256": "83f7c94d4d23e0dfd7af9da5fd81cdbb37efda8034905615aecafec756d70f1f",
+   "prompt_chars": 79462,
+   "source_truncated": false
+  },
+  {
+   "case_id": "cal-nprtext-noise",
+   "split": "frozen_test",
+   "template": "p3_npr_text",
+   "candidate_sha256": "82fb11cb2dc29bfd720a3714ff198eeed964a1ab82b2dd05440e480da63f7300",
+   "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+   "gold_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+   "label_sha256": "669252d9d223c2605f88edd6effff55321e7b7e6742eea3891f16808e925fb73",
+   "prompt_chars": 79992,
+   "source_truncated": false
+  },
+  {
+   "case_id": "cal-nprtext-duplicate",
+   "split": "frozen_test",
+   "template": "p3_npr_text",
+   "candidate_sha256": "05fafdf5224cd72c903f21476bb50d2e1035f43a978c3c4926443aef31706380",
+   "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+   "gold_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+   "label_sha256": "53be28485e5d56d3c6200a57571b87cffbe64fe5aecbce909ba01806310404bf",
+   "prompt_chars": 79907,
+   "source_truncated": false
+  },
+  {
+   "case_id": "cal-nprtext-reorder",
+   "split": "frozen_test",
+   "template": "p3_npr_text",
+   "candidate_sha256": "289aced7646abf160d404eb6ab8332c4b5c2f0aac716860baeaf2cf582815c91",
+   "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+   "gold_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+   "label_sha256": "958a9e843311f4adcdb4d6e0f8b508406d51a3fd773214c9de3218f97b780e82",
+   "prompt_chars": 79782,
+   "source_truncated": false
+  },
+  {
+   "case_id": "cal-nprtext-instruction_interference",
+   "split": "frozen_test",
+   "template": "p3_npr_text",
+   "candidate_sha256": "3ec0fc93dc06a1ba74f5000641b267c1b4474230dc5b3d0934cd989e7d15a1a6",
+   "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+   "gold_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+   "label_sha256": "3766e76fd7e23aaa8c75a743dc63d3d152a6bfb0b1b85ea8c6f7127f6949ac3e",
+   "prompt_chars": 79963,
+   "source_truncated": false
+  },
+  {
+   "case_id": "cal-gnuessay-clean",
+   "split": "frozen_test",
+   "template": "p3_gnu_essay",
+   "candidate_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+   "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+   "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+   "label_sha256": "e06798f2ad1fd900cafc66a64f037337ff9d61ae6db1605cfd2562c9ee8ff056",
+   "prompt_chars": 51079,
+   "source_truncated": false
+  },
+  {
+   "case_id": "cal-gnuessay-missing_paragraph",
+   "split": "frozen_test",
+   "template": "p3_gnu_essay",
+   "candidate_sha256": "14228f60dfd8d9167963379f9e4f7c5ca57400ac890440478ab924c1bd91ad71",
+   "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+   "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+   "label_sha256": "39584fa86fa0b6527fb342c24187967f090173262025a096ef8543c0f83dd583",
+   "prompt_chars": 50625,
+   "source_truncated": false
+  },
+  {
+   "case_id": "cal-gnuessay-noise",
+   "split": "frozen_test",
+   "template": "p3_gnu_essay",
+   "candidate_sha256": "09ce8f9650058c0e7cd9ed7ae9252ecff8a87105db3ff9a476fb2cce69e376ac",
+   "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+   "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+   "label_sha256": "be6e8c166c4ba79149890fcb3809357a84bec71972ad952aee7dab024fd59435",
+   "prompt_chars": 51289,
+   "source_truncated": false
+  },
+  {
+   "case_id": "cal-gnuessay-duplicate",
+   "split": "frozen_test",
+   "template": "p3_gnu_essay",
+   "candidate_sha256": "8d29ce17c89424cd3e994a975d31bde1f448d4de58f7e1cacd363ed08a9278e5",
+   "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+   "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+   "label_sha256": "74ffe8ebff981badebba2552b87e0085a03269a18e96ca943d019e30a92356e1",
+   "prompt_chars": 51534,
+   "source_truncated": false
+  },
+  {
+   "case_id": "cal-gnuessay-reorder",
+   "split": "frozen_test",
+   "template": "p3_gnu_essay",
+   "candidate_sha256": "b1001028c34ef7dbe465b13794f8cb89e128625e0ba4f4060bd4f9ac5626a928",
+   "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+   "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+   "label_sha256": "5167f020e8dd69d494c265667b21f66e0f5c5dc57b519b99cba83e4abb79a79e",
+   "prompt_chars": 51079,
+   "source_truncated": false
+  },
+  {
+   "case_id": "cal-gnuessay-instruction_interference",
+   "split": "frozen_test",
+   "template": "p3_gnu_essay",
+   "candidate_sha256": "7091dc12b695220c668176bf1f8d93b1db31826e07d46ef1a9683c9c7394e218",
+   "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+   "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+   "label_sha256": "298ca884f2469ffb1cd3a0f2b0e3d1a0594fc036dc56854a720a4b329b670dfa",
+   "prompt_chars": 51260,
+   "source_truncated": false
+  }
+ ],
+ "p3_note": "P3 sealed test v3; pre-registered docs/P3_GATE_PLAN.md (approved hqli631 2026-11-22, route b). Sources collected via tools/collect_p3_sources.py with full fetch provenance; both <= 20000 chars (no truncation). Original freezes v1-v4/v6 and p2.freeze.v5 untouched."
+}

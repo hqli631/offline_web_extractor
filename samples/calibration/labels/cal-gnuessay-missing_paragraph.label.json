@@ -1,0 +1,146 @@
+{
+ "label_version": 1,
+ "case_id": "cal-gnuessay-missing_paragraph",
+ "split": "frozen_test",
+ "template": "p3_gnu_essay",
+ "label_origin": "assistant_silver",
+ "human_reviewed": false,
+ "derivation": "frozen_rubrics_v2_program_on_controlled_mutation",
+ "mutation": {
+  "type": "missing_paragraph",
+  "index": 0,
+  "removed_excerpt": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of "
+ },
+ "noise_terms": [],
+ "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+ "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+ "candidate_sha256": "14228f60dfd8d9167963379f9e4f7c5ca57400ac890440478ab924c1bd91ad71",
+ "batch_config": {
+  "max_source_chars": 20000
+ },
+ "source_truncated": false,
+ "prompt_chars": 50625,
+ "expected": {
+  "dimensions": {
+   "completeness": {
+    "score": 3,
+    "status": "scored",
+    "severity": "minor"
+   },
+   "cleanliness": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "title": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "severity": "none"
+   }
+  },
+  "decision": "uncertain",
+  "needs_human_review": true
+ },
+ "program_reference": {
+  "rubrics_version": "2.0.0",
+  "method": "deterministic-reference",
+  "dimensions": {
+   "completeness": {
+    "score": 3,
+    "status": "scored",
+    "recall": 0.9122807017543859,
+    "missing_tokens": 70
+   },
+   "cleanliness": {
+    "score": 4,
+    "status": "scored",
+    "precision": 1.0,
+    "clean_ratio": 1.0,
+    "extra_tokens": 0,
+    "noise_hits": {}
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "attribute_ratio": 1.0,
+    "order_ratio": 1.0,
+    "alignment_coverage": 0.9411764705882353,
+    "aligned_pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      8
+     ]
+    ],
+    "reason": "Only text-aligned blocks are scored"
+   },
+   "title": {
+    "score": 4,
+    "status": "scored",
+    "exact": true
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "reason": "No code blocks to compare"
+   }
+  },
+  "issues": [
+   {
+    "dimension": "completeness",
+    "code": "unaligned_gold_block",
+    "severity": "minor",
+    "predicted_ref": null,
+    "gold_ref": "g:0",
+    "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+    "gold_excerpt": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of the Internet. Many do not realize that the software they run on their home or wo"
+   }
+  ],
+  "decision": "uncertain",
+  "needs_human_review": true,
+  "overall": null,
+  "evidence_complete": true,
+  "note": "Uncalibrated diagnostics; no model/human judgement or reward claim. Source attribution, links and Markdown rendering are unassessed."
+ },
+ "notes": [
+  "Silver label (assistant-derived), not human gold; disagreement goes to the review queue.",
+  "clean means no injected mutation; the extractor output may still differ from gold."
+ ]
+}

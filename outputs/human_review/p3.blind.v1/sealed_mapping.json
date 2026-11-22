@@ -1,0 +1,14 @@
+{
+  "P01": "cal-gnuessay-clean",
+  "P02": "cal-gnuessay-duplicate",
+  "P03": "cal-gnuessay-instruction_interference",
+  "P04": "cal-gnuessay-missing_paragraph",
+  "P05": "cal-gnuessay-noise",
+  "P06": "cal-gnuessay-reorder",
+  "P07": "cal-nprtext-clean",
+  "P08": "cal-nprtext-duplicate",
+  "P09": "cal-nprtext-instruction_interference",
+  "P10": "cal-nprtext-missing_paragraph",
+  "P11": "cal-nprtext-noise",
+  "P12": "cal-nprtext-reorder"
+}

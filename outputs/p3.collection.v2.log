@@ -1,0 +1,1 @@
+{"collected": [{"page_id": "p3_npr_text", "status": "retained", "raw_chars": 14398, "fetches": 2}, {"page_id": "p3_gnu_essay", "status": "collected", "article_url": "https://www.gnu.org/philosophy/your-freedom-needs-free-software.html", "raw_chars": 19271, "paragraphs": 23, "fetches": 1}], "total_fetches": 3}

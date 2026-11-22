@@ -1,0 +1,25 @@
+{
+  "kit_version": "p2-1.0.0",
+  "inputs": {
+    "manifest": "a30a9e574b1f8c7cb43d17713378fc1068e5b79ce374076bd0fe542bcfa2cb2e",
+    "freeze": "b536ad193d41d5f468801e8c58c42d4193403ece67486780bb5dc854cbffcee5"
+  },
+  "n_cases": 12,
+  "files": {
+    "INDEX.md": "d234ddac554fe6c89b9a77bf116df496737442efac42b958038457bd440ba1fa",
+    "human_labels.blind.json": "4d8ebc395b654b2ebd2757fbb304c793dc1697ff7c13d6b09b66fc06be14ff71",
+    "packets/P01.md": "3bfdd0d0761f51e9570a0344f5891a67c2585832e8591aa5b6864c36184b2332",
+    "packets/P02.md": "009631d4d866b42716e6711ad13cd6376fe6b112a0880eaabc4bb9d19d8e7d35",
+    "packets/P03.md": "d9b2892f7c5c43a38f7d29903433c352dae47073b74c88589c8994f1fd0998f0",
+    "packets/P04.md": "b3e8b9e1f2fc7056dba59b68631bf82b877cc45e55b6abe7eccb6453bf073ae1",
+    "packets/P05.md": "18d8ba695877ca0da195e7a4e992f0bb419df80e0460e6282c54162ad0ac5faf",
+    "packets/P06.md": "6520c7b41c0e79db720ca5a3bf38f52c4cc0303a676bcdf688b9ac5f0f60dd1b",
+    "packets/P07.md": "6eeb5b934c49a24646075463c3242859eb6f3d5f601a269c2d04c4b3c93414b8",
+    "packets/P08.md": "2e124d467015264baef15be53afbc04b67e82af4a8a985c7c7df1138404c8f0e",
+    "packets/P09.md": "f40983e6e43b05cb82c9ace9b15143f69af75e15c7ef067cd30a88545e22e79e",
+    "packets/P10.md": "df1e353e09b583c115a345f7c7d5d94e6fd9a4f481e0cf82c219c3fb3c53ff58",
+    "packets/P11.md": "b984ba550605e32395fba7e1eaa1664dbe21f4b743941c9a307b472c47350848",
+    "packets/P12.md": "36732dee8bc28be049e4fd28d002017b00d91a78b80afd11abdfb5300f0bb6fc",
+    "sealed_mapping.json": "0d3c9808fd9ad590ef7e17d5e3b8e7fa13815fbbc99bd86454a262773f1be535"
+  }
+}

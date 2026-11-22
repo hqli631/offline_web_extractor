@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\codex project\offline_web_extractor\tools\collect_p3_sources.py", line 126, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\codex project\offline_web_extractor\tools\collect_p3_sources.py", line 120, in main
+    results.append(collect_one(src))
+                   ^^^^^^^^^^^^^^^^
+  File "D:\codex project\offline_web_extractor\tools\collect_p3_sources.py", line 114, in collect_one
+    raise RuntimeError('No suitable article for %s; attempts=%s' % (page_id, json.dumps(attempts)))
+RuntimeError: No suitable article for p3_gnu_essay; attempts=[{"url": "https://www.gnu.org/philosophy/why-gnu-linux.html", "error": "HTTP Error 404: Not Found"}, {"url": "https://www.gnu.org/philosophy/your-freedom-needs-free-software.html", "raw_chars": 19271, "paragraphs": 23, "reason": "outside size window or too few paragraphs"}, {"url": "https://www.gnu.org/philosophy/free-doc.html", "raw_chars": 23709, "paragraphs": 33, "reason": "outside size window or too few paragraphs"}, {"url": "https://www.gnu.org/philosophy/pragmatic.html", "raw_chars": 24705, "paragraphs": 36, "reason": "outside size window or too few paragraphs"}]

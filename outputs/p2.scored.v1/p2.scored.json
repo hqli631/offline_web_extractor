@@ -1,0 +1,266 @@
+{
+  "tool_version": "1.0.0",
+  "seed": 20261119,
+  "B": 10000,
+  "inputs": {
+    "p2_batch_sha256": "3a90d481c7e23f92a72cb120d9c2de8874472be463171051cca6bdb5ccd556d1",
+    "gold_sha256": "1b89aaf954358d50713bd22d2ee2c6161fbf688bc56da77fda364b1d8158831c",
+    "freeze_v5_sha256": "87cb35879e1eef872f0e71e7bb8468d815dd372c0c0e739555426ba076f2fe07",
+    "cross_batch_sha256": "629f2e2cc5f588871f79600577b8931d743e97b4e841d734bc923ec41b36beba"
+  },
+  "dev6": {
+    "aggregate": {
+      "n_cases": 6,
+      "accepted": 6,
+      "rejected": 0,
+      "decision_match_rate": 0.6667,
+      "decision_cohen_kappa": 0.0,
+      "n_comparable_dim_pairs": 24,
+      "dim_exact_rate": 0.75,
+      "dim_within1_rate": 0.875,
+      "severity_sign_rate": 0.7917,
+      "severe_miss_cases": [],
+      "false_alarm_cases": [
+        "cal-interpreter-noise",
+        "cal-interpreter-instruction_interference"
+      ],
+      "rejected_cases": []
+    },
+    "ci95": {
+      "decision_match": {
+        "point": 0.6667,
+        "ci95": [
+          0.3333,
+          1.0
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "kappa": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "dim_exact": {
+        "point": 0.75,
+        "ci95": [
+          0.5,
+          0.9583
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "severity_sign": {
+        "point": 0.7917,
+        "ci95": [
+          0.5417,
+          1.0
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "severe_miss": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "false_alarm": {
+        "point": 0.3333,
+        "ci95": [
+          0.0,
+          0.6667
+        ],
+        "n": 6,
+        "B": 10000
+      },
+      "reject": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 6,
+        "B": 10000
+      }
+    },
+    "status_artifact": {
+      "human_scored_judge_partial_dims": 20,
+      "note": "mechanical truncation downgrade (judge forces partial when source truncated); not a semantic disagreement."
+    }
+  },
+  "frozen_test_v2": {
+    "aggregate": {
+      "n_cases": 12,
+      "accepted": 12,
+      "rejected": 0,
+      "decision_match_rate": 0.5833,
+      "decision_cohen_kappa": 0.0,
+      "n_comparable_dim_pairs": 48,
+      "dim_exact_rate": 0.7292,
+      "dim_within1_rate": 0.9375,
+      "severity_sign_rate": 0.7917,
+      "severe_miss_cases": [],
+      "false_alarm_cases": [
+        "cal-nasa-missing_paragraph",
+        "cal-nasa-noise",
+        "cal-nasa-instruction_interference",
+        "cal-w3ca11y-noise",
+        "cal-w3ca11y-instruction_interference"
+      ],
+      "rejected_cases": []
+    },
+    "ci95": {
+      "decision_match": {
+        "point": 0.5833,
+        "ci95": [
+          0.3333,
+          0.8333
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "kappa": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "dim_exact": {
+        "point": 0.7292,
+        "ci95": [
+          0.5833,
+          0.875
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "severity_sign": {
+        "point": 0.7917,
+        "ci95": [
+          0.625,
+          0.9375
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "severe_miss": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "false_alarm": {
+        "point": 0.4167,
+        "ci95": [
+          0.1667,
+          0.6667
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "reject": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 12,
+        "B": 10000
+      }
+    },
+    "status_artifact": {
+      "human_scored_judge_partial_dims": 44,
+      "note": "mechanical truncation downgrade (judge forces partial when source truncated); not a semantic disagreement."
+    }
+  },
+  "generalization_acceptance": {
+    "n_test": 12,
+    "reject_rate": 0.0,
+    "severe_miss_count": 0,
+    "thresholds": {
+      "reject_rate_lt": 0.1,
+      "severe_miss_le": 1,
+      "overfit_drop_gt": 0.15
+    },
+    "checks": {
+      "reject_rate_lt_0.10": true,
+      "severe_miss_le_1": true
+    },
+    "verdict": "ACCEPT",
+    "dev_minus_test_match": {
+      "diff_A_minus_B": 0.0833,
+      "ci95": [
+        -0.4167,
+        0.5
+      ],
+      "excludes_zero": false,
+      "B_effective": 10000
+    },
+    "overfit_flag": false,
+    "note": "one-shot frozen_test v2; no tuning. Overfit flag is an honest risk marker, not a threshold rewrite."
+  },
+  "cross_model_descriptive": {
+    "model2": "qwen4-max",
+    "n_cases": 12,
+    "judge2_rejected": 0,
+    "judge1_vs_judge2": {
+      "both_accepted": 12,
+      "agreement": {
+        "n_cases": 12,
+        "accepted": 12,
+        "rejected": 0,
+        "decision_match_rate": 0.9167,
+        "decision_cohen_kappa": 0.8519,
+        "n_comparable_dim_pairs": 48,
+        "dim_exact_rate": 0.875,
+        "dim_within1_rate": 1.0,
+        "severity_sign_rate": 0.8958,
+        "severe_miss_cases": [
+          "cal-appetite-missing_paragraph"
+        ],
+        "false_alarm_cases": [],
+        "rejected_cases": []
+      }
+    },
+    "judge2_vs_p0_human": {
+      "n_cases": 12,
+      "accepted": 12,
+      "rejected": 0,
+      "decision_match_rate": 0.8333,
+      "decision_cohen_kappa": 0.7143,
+      "n_comparable_dim_pairs": 48,
+      "dim_exact_rate": 0.875,
+      "dim_within1_rate": 1.0,
+      "severity_sign_rate": 0.9375,
+      "severe_miss_cases": [],
+      "false_alarm_cases": [
+        "cal-appetite-missing_paragraph",
+        "cal-appetite-reorder"
+      ],
+      "rejected_cases": []
+    },
+    "note": "DESCRIPTIVE cross-model (same Qwen family) agreement; not cross-family, not accuracy."
+  },
+  "limitations": [
+    "单一标注者，IAA 未测（用户决定）。",
+    "人类 gold 决策若为单类（全 uncertain），Cohen κ 退化（pe=1）；决策一致率是首要指标，κ 仅作参考。",
+    "一致率不是准确率；dev 与泛化分开报告。",
+    "qwen4-max 为同家族跨模型比较，非跨家族。",
+    "frozen_test v2 一次性评估，未调参；frozen_test v1 永久封存。",
+    "Judge 分数仍不作为训练奖励。"
+  ]
+}

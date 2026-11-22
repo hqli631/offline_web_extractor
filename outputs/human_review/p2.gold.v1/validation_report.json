@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "tool_version": "1.0.0",
+  "n_cases": 18,
+  "errors": [],
+  "warnings": [],
+  "integrity": {
+    "freeze_files_checked": 48,
+    "kit_files_checked": 21,
+    "packet_headers_verified": 18
+  },
+  "splits": {
+    "development": 6,
+    "frozen_test": 12
+  },
+  "decisions": {
+    "pass": 0,
+    "uncertain": 18,
+    "fail": 0
+  }
+}

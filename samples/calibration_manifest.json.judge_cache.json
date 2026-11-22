@@ -6770,5 +6770,1499 @@
    "finish_reason": "stop"
   },
   "stored_at": "2026-11-19T14:29:43+00:00"
+ },
+ "cd58837d9662b6d874fd5ffa523cdb22081f222d493144a95cccd348b048196e": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All 13 article paragraphs and 3 list items present, matching gold's 16 blocks.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "s:39",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       },
+       {
+        "ref": "g:15",
+        "quote": "最后，介绍一些高级概念，如，异常、用户定义的类等功能。"
+       },
+       {
+        "ref": "p:10",
+        "quote": "无需预声明变量或参数。"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, sidebar, page-menu and footer regions excluded; only article text retained.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "s:5",
+        "quote": "报告代码错误"
+       },
+       {
+        "ref": "s:44",
+        "quote": "当前页"
+       },
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Paragraph order preserved and the three-item unordered list sits between the correct paragraphs at depth 0.",
+      "evidence": [
+       {
+        "ref": "s:28",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "s:29",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "g:10",
+        "quote": "无需预声明变量或参数。"
+       },
+       {
+        "ref": "p:11",
+        "quote": "Python “可以扩展”：会开发 C 语言程序"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title includes chapter number and omits the ¶ permalink, matching gold.",
+      "evidence": [
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       },
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No code blocks in source; paragraph and list block separation preserved as in gold.",
+      "evidence": [
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "p:9",
+        "quote": "使用缩进，而不是括号实现代码块分组；"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14449,
+    "output_tokens": 866,
+    "total_tokens": 15315
+   },
+   "model": "qwen4-max",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:54:27+00:00"
+ },
+ "adae46942ba3ec0432a1d024b8ffafe62a2f7476dc93a4728224b7aac446ac82": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "Article's opening lead paragraph (g:0 / s:21) is entirely absent; candidate begins at the second paragraph. Remaining 15 blocks match gold.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "s:21",
+        "quote": "也可能您想编写一个小型数据库、或开发专用的图形界面应用，甚至是开发一个简单的游戏。"
+       },
+       {
+        "ref": "p:0",
+        "quote": "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No navigation, sidebar, source-link or footer text included; all blocks are article body content.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "s:5",
+        "quote": "报告代码错误"
+       },
+       {
+        "ref": "s:44",
+        "quote": "当前页"
+       },
+       {
+        "ref": "g:1",
+        "quote": "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Paragraph order and the three-item unordered list (type ul, depth 0, same sequence) match source/gold; no reordering or level errors.",
+      "evidence": [
+       {
+        "ref": "s:29",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "g:10",
+        "quote": "无需预声明变量或参数。"
+       },
+       {
+        "ref": "p:9",
+        "quote": "无需预声明变量或参数。"
+       },
+       {
+        "ref": "g:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title keeps the chapter number and drops the ¶ permalink marker, matching gold exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       },
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No code blocks in source; paragraph separation and bullet list block formatting are preserved without stray whitespace or markers.",
+      "evidence": [
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:9",
+        "quote": "使用缩进，而不是括号实现代码块分组；"
+       },
+       {
+        "ref": "p:8",
+        "quote": "使用缩进，而不是括号实现代码块分组；"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14361,
+    "output_tokens": 1389,
+    "total_tokens": 15750
+   },
+   "model": "qwen4-max",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:55:21+00:00"
+ },
+ "db6ea3f7e3ec0a5caf92f9a93a52ba19ac8556655f95533b7199c9bf1ab81ebb": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All 16 gold article blocks (paragraphs and the three bullet items) are present in the candidate; no article text lost.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "g:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       },
+       {
+        "ref": "p:16",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "One injected non-article block with share links, ad promotion and prev/next navigation sits inside the article body; gold contains no such block.",
+      "evidence": [
+       {
+        "ref": "p:1",
+        "quote": "分享到：微信 微博 QQ空间 推荐阅读：广告推广内容 上一篇：没有了 下一篇：Python 简介"
+       },
+       {
+        "ref": "g:0",
+        "quote": "甚至是开发一个简单的游戏。"
+       },
+       {
+        "ref": "g:1",
+        "quote": "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库"
+       },
+       {
+        "ref": "s:12",
+        "quote": "下一页 |"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "Article order, ul list type and depth match gold, but a spurious paragraph is inserted between the first and second article paragraphs, locally breaking the block sequence.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "也可能您想编写一个小型数据库、或开发专用的图形界面应用，甚至是开发一个简单的游戏。"
+       },
+       {
+        "ref": "g:1",
+        "quote": "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库"
+       },
+       {
+        "ref": "p:1",
+        "quote": "上一篇：没有了 下一篇：Python 简介"
+       },
+       {
+        "ref": "g:9",
+        "quote": "使用缩进，而不是括号实现代码块分组；"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title keeps the chapter number and matches gold; permalink ¶ control omitted.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No code blocks in source; paragraph breaks and the three-item bullet list formatting are preserved as in gold.",
+      "evidence": [
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "p:9",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "g:10",
+        "quote": "无需预声明变量或参数。"
+       },
+       {
+        "ref": "p:11",
+        "quote": "无需预声明变量或参数。"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14499,
+    "output_tokens": 1250,
+    "total_tokens": 15749
+   },
+   "model": "qwen4-max",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:55:45+00:00"
+ },
+ "52c7494c0c3af416a44aadb28e9fcf2801507085e9d845835fc8b88135f83bb6": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All 16 gold paragraphs and the three list items are present, from opening paragraph to closing paragraph; no article text missing.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:10",
+        "quote": "无需预声明变量或参数。"
+       },
+       {
+        "ref": "g:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       },
+       {
+        "ref": "p:16",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "No navigation, sidebar or footer noise, but the opening paragraph is emitted twice (p:0 and p:1) while the source contains it once.",
+      "evidence": [
+       {
+        "ref": "s:21",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "p:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "p:1",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Block order matches the article; the three-item unordered list sits after the lead-in paragraph at depth 0 with correct ul type, and following paragraphs resume in order.",
+      "evidence": [
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "g:9",
+        "quote": "使用缩进，而不是括号实现代码块分组；"
+       },
+       {
+        "ref": "g:10",
+        "quote": "无需预声明变量或参数。"
+       },
+       {
+        "ref": "p:11",
+        "quote": "无需预声明变量或参数。"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title keeps the chapter number and drops the ¶ permalink marker, matching gold exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       },
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No code blocks in scope; paragraph and bulleted-list block separation and text whitespace are preserved as in source/gold.",
+      "evidence": [
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "g:11",
+        "quote": "Python “可以扩展”：会开发 C 语言程序，就能快速上手为解释器增加新的内置函数或模块"
+       },
+       {
+        "ref": "p:12",
+        "quote": "Python “可以扩展”：会开发 C 语言程序，就能快速上手为解释器增加新的内置函数或模块"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14537,
+    "output_tokens": 1321,
+    "total_tokens": 15858
+   },
+   "model": "qwen4-max",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:56:09+00:00"
+ },
+ "3fcee4de1d47744bc8e5aea10d203c642981df08dbba6d1be2e42c67be1fec60": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All 13 article paragraphs and 3 bullet items are present; nothing from the body section is missing.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "p:1",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       },
+       {
+        "ref": "s:33",
+        "quote": "无需预声明变量或参数。"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, page-source links, sidebar and footer noise are all excluded; only article text remains.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "s:5",
+        "quote": "报告代码错误"
+       },
+       {
+        "ref": "s:44",
+        "quote": "当前页"
+       },
+       {
+        "ref": "g:2",
+        "quote": "那么，Python 正好能满足您的需要。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "Opening two paragraphs are swapped: candidate starts with the second source paragraph, then the first; list type/depth and remaining order are correct.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:1",
+        "quote": "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库"
+       },
+       {
+        "ref": "p:0",
+        "quote": "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库"
+       },
+       {
+        "ref": "s:21",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches gold including chapter number, with permalink marker omitted.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       },
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code blocks or special whitespace formatting in this article; plain paragraphs and a simple bullet list only.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14449,
+    "output_tokens": 962,
+    "total_tokens": 15411
+   },
+   "model": "qwen4-max",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:56:29+00:00"
+ },
+ "5b36a85253fb5905b415dab26ffdb734dd4f845bdc4d4df7f2e645c70320c3ae": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All 13 article paragraphs and the 3 bullet items are present, matching gold coverage from opening to closing paragraph.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "g:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       },
+       {
+        "ref": "p:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, sidebar, page-menu and footer regions are all excluded; candidate contains only article text.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "s:5",
+        "quote": "报告代码错误"
+       },
+       {
+        "ref": "s:44",
+        "quote": "当前页"
+       },
+       {
+        "ref": "g:2",
+        "quote": "那么，Python 正好能满足您的需要。"
+       },
+       {
+        "ref": "p:2",
+        "quote": "那么，Python 正好能满足您的需要。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Block order matches source; the three-item unordered list sits between the same paragraphs with correct type and depth.",
+      "evidence": [
+       {
+        "ref": "s:28",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "g:10",
+        "quote": "无需预声明变量或参数。"
+       },
+       {
+        "ref": "p:10",
+        "quote": "无需预声明变量或参数。"
+       },
+       {
+        "ref": "g:11",
+        "quote": "Python “可以扩展”：会开发 C 语言程序"
+       }
+      ]
+     },
+     "title": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "Title text is correct and permalink mark omitted, but the chapter number \"1. \" is missing.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "p:title",
+        "quote": "课前甜点"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No code blocks in source; paragraph breaks and bullet list formatting are preserved as in gold.",
+      "evidence": [
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:9",
+        "quote": "使用缩进，而不是括号实现代码块分组；"
+       },
+       {
+        "ref": "p:9",
+        "quote": "使用缩进，而不是括号实现代码块分组；"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14443,
+    "output_tokens": 1044,
+    "total_tokens": 15487
+   },
+   "model": "qwen4-max",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:56:49+00:00"
+ },
+ "2094ee78afff9ecce631216cf25a490b2b96a960b6e7ccb956eb1cafa297c9f5": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All three article paragraphs, including the closing 'See also' note, are present and match gold; source HTML is truncated so coverage is provisional.",
+      "evidence": [
+       {
+        "ref": "s:77",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "s:78",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "s:79",
+        "quote": "See also some comparisons between Python and other languages."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "No navigation, sidebar, footer or notice text included; candidate contains only the article body as in gold.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "Python"
+       },
+       {
+        "ref": "s:81",
+        "quote": "The Python Software Foundation is the organization behind Python."
+       },
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Three paragraphs in source order at depth 0 with no lists, matching gold block sequence; heading is carried by the title.",
+      "evidence": [
+       {
+        "ref": "s:77",
+        "quote": "Python supports modules and packages, which encourages program modularity and code reuse."
+       },
+       {
+        "ref": "s:79",
+        "quote": "See also some comparisons between Python and other languages."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Title reproduces the article heading (double space normalized) and matches gold exactly, with no site suffix.",
+      "evidence": [
+       {
+        "ref": "s:75",
+        "quote": "What is Python? Executive Summary"
+       },
+       {
+        "ref": "g:title",
+        "quote": "What is Python? Executive Summary"
+       },
+       {
+        "ref": "p:title",
+        "quote": "What is Python? Executive Summary"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "No code or special blocks in scope; paragraph boundaries and line-wrap whitespace are normalized consistently with gold.",
+      "evidence": [
+       {
+        "ref": "s:78",
+        "quote": "the edit-test-debug cycle is incredibly fast."
+       },
+       {
+        "ref": "g:1",
+        "quote": "the edit-test-debug cycle is incredibly fast."
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 16065,
+    "output_tokens": 1153,
+    "total_tokens": 17218
+   },
+   "model": "qwen4-max",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:57:10+00:00"
+ },
+ "d85e6c2fe0e7f65a82aab8f9b844679442c7c113038e151479262bb3542e9ac5": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The opening defining paragraph of the article is entirely missing; only the second and third paragraphs were captured.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "s:77",
+        "quote": "Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance."
+       },
+       {
+        "ref": "p:0",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "No navigation, sidebar, footer or notice text included; captured blocks are article prose only.",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       },
+       {
+        "ref": "s:81",
+        "quote": "The Python Software Foundation is the organization behind Python."
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Captured paragraphs keep source order and flat paragraph structure; no lists or heading levels to misrender (omission scored under completeness).",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "the edit-test-debug cycle is incredibly fast"
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       },
+       {
+        "ref": "s:79",
+        "quote": "See also some comparisons between"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Title matches the article heading and gold title (only double space folded); no permalink or site suffix.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "What is Python? Executive Summary"
+       },
+       {
+        "ref": "s:75",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "p:title",
+        "quote": "What is Python? Executive Summary"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Plain prose paragraphs with source line breaks folded correctly; no code or special block formatting in scope.",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "the quickest way to debug a program is to add a few print statements to the source"
+       },
+       {
+        "ref": "p:1",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 15920,
+    "output_tokens": 1171,
+    "total_tokens": 17091
+   },
+   "model": "qwen4-max",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:57:29+00:00"
+ },
+ "29226c681823eebb752fad25c29610ceff37a56bdfe05a50201a48437594fade": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All three article paragraphs and the title are captured; no article text missing in supplied (truncated) scope.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "An injected share/subscribe/advertisement paragraph absent from source and gold is included mid-article.",
+      "evidence": [
+       {
+        "ref": "p:1",
+        "quote": "Share this article on Facebook and Twitter. Subscribe to our newsletter!"
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "Paragraph order matches source, but a spurious block is interleaved between the first and second article paragraphs.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "p:1",
+        "quote": "Advertisement: buy now related content."
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Title matches the article heading and gold exactly (whitespace folded), with no site suffix or controls.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "What is Python? Executive Summary"
+       },
+       {
+        "ref": "s:75",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "p:title",
+        "quote": "What is Python? Executive Summary"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Plain prose paragraphs retain block separation and wording; no code or special formatting in scope.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "The Python interpreter and the extensive standard library are available in source or binary form"
+       },
+       {
+        "ref": "p:0",
+        "quote": "The Python interpreter and the extensive standard library are available in source or binary form"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 16110,
+    "output_tokens": 1230,
+    "total_tokens": 17340
+   },
+   "model": "qwen4-max",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:57:52+00:00"
+ },
+ "2af28500aba0bf8aa768bf74c5da7b9d8bdf4ce909f3a4e46a3785da79e9eb40": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All three article paragraphs and the title are present; no article text lost (order issue scored under structure). Source truncated, so provisional.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       },
+       {
+        "ref": "p:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "No navigation, sidebar, footer or notice text included; only editorial paragraphs, matching gold.",
+      "evidence": [
+       {
+        "ref": "s:80",
+        "quote": "The PSF"
+       },
+       {
+        "ref": "s:147",
+        "quote": "Help & General Contact"
+       },
+       {
+        "ref": "s:0",
+        "quote": "Notice: This page displays a fallback because interactive scripts did not run."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "structure": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "First two paragraphs are reversed: candidate opens with the 'Often, programmers...' paragraph that follows the introductory paragraph in source and gold.",
+      "evidence": [
+       {
+        "ref": "s:77",
+        "quote": "Python is an interpreted, object-oriented, high-level programming"
+       },
+       {
+        "ref": "s:78",
+        "quote": "Often, programmers fall in love with Python because of the"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language"
+       },
+       {
+        "ref": "p:0",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Title matches the article heading and gold exactly (whitespace folded); no site suffix or permalink controls.",
+      "evidence": [
+       {
+        "ref": "s:75",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "g:title",
+        "quote": "What is Python? Executive Summary"
+       },
+       {
+        "ref": "p:title",
+        "quote": "What is Python? Executive Summary"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "Article is plain prose with no code, lists or other special block formatting requirements.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 16065,
+    "output_tokens": 1025,
+    "total_tokens": 17090
+   },
+   "model": "qwen4-max",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:58:13+00:00"
+ },
+ "cfecff52f71f2c2450bac6e04bd28f3831cdadedc7b528be3123f8e0bbf6a15b": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "Both body paragraphs, the Further Reading heading and all three list items are present; only the small 'Last revised' date note at the end of the article is omitted.",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts to provide basic"
+       },
+       {
+        "ref": "s:11",
+        "quote": "Reserved Top Level DNS Names (RFC 2606)"
+       },
+       {
+        "ref": "s:html",
+        "quote": "Last revised"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Header nav, breadcrumb and the entire footer link tables/legal notice are excluded; only editorial body text and legitimate reading links remain.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Domains"
+       },
+       {
+        "ref": "s:4",
+        "quote": "Instructions and Guides"
+       },
+       {
+        "ref": "s:14",
+        "quote": "Root Zone Registry"
+       },
+       {
+        "ref": "s:35",
+        "quote": "Privacy Policy"
+       },
+       {
+        "ref": "p:0",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Order matches source: paragraphs, then h2 'Further Reading' at level 2, then the three unordered list items in original sequence at depth 0.",
+      "evidence": [
+       {
+        "ref": "s:8",
+        "quote": "Further Reading"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       },
+       {
+        "ref": "s:10",
+        "quote": "Special-Use Domain Names (RFC 6761)"
+       },
+       {
+        "ref": "p:2",
+        "quote": "Further Reading"
+       },
+       {
+        "ref": "p:5",
+        "quote": "Reserved Top Level DNS Names (RFC 2606)"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title exactly matches the article h1 with no breadcrumb or permalink text.",
+      "evidence": [
+       {
+        "ref": "s:5",
+        "quote": "Example Domains"
+       },
+       {
+        "ref": "p:title",
+        "quote": "Example Domains"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No code blocks in source; paragraph boundaries and list block formatting are preserved, inline code terms retained as text.",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       },
+       {
+        "ref": "p:1",
+        "quote": "We provide a web service on the example domain hosts to provide basic information"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 5784,
+    "output_tokens": 1102,
+    "total_tokens": 6886
+   },
+   "model": "qwen4-max",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:58:42+00:00"
+ },
+ "86eb2ac8d3981cf137624c00f73523b281f4226f8eeb5d373713b8015387de91": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Both article paragraphs, the Further Reading heading and all three reference list items are present; only the revision timestamp line is absent, which is page metadata rather than article content.",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts to provide basic"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       },
+       {
+        "ref": "s:11",
+        "quote": "Reserved Top Level DNS Names (RFC 2606)"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "An invented share/newsletter/advertisement paragraph is inserted into the article body; no such text exists in the source, whose only non-article regions are header nav and footer links.",
+      "evidence": [
+       {
+        "ref": "p:1",
+        "quote": "Share this article on Facebook and Twitter. Subscribe to our newsletter! Advertisement: buy now related content."
+       },
+       {
+        "ref": "s:0",
+        "quote": "Domains"
+       },
+       {
+        "ref": "s:12",
+        "quote": "Domain Names"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts to provide basic"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Heading level 2 for Further Reading, paragraph-before-heading order and the unordered three-item list order/depth match the source article.",
+      "evidence": [
+       {
+        "ref": "s:5",
+        "quote": "Example Domains"
+       },
+       {
+        "ref": "s:8",
+        "quote": "Further Reading"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       },
+       {
+        "ref": "s:10",
+        "quote": "Special-Use Domain Names (RFC 6761)"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the article h1 exactly with no breadcrumb or permalink text.",
+      "evidence": [
+       {
+        "ref": "s:5",
+        "quote": "Example Domains"
+       },
+       {
+        "ref": "p:title",
+        "quote": "Example Domains"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No code blocks or special block formatting in source; paragraph and list blocks are preserved with normal whitespace (inline code terms retained as text).",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       },
+       {
+        "ref": "p:0",
+        "quote": "A number of domains such as example.com and example.org are maintained for documentation purposes."
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 5829,
+    "output_tokens": 1352,
+    "total_tokens": 7181
+   },
+   "model": "qwen4-max",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:59:10+00:00"
  }
 }

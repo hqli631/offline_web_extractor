@@ -222,7 +222,19 @@ def main(argv=None):
     if args.cross_batch is not None:
         cb = load_json(args.cross_batch)
         fz4 = load_json(args.freeze_v4)
-        cp = check_freeze(cb, {'cases': []}, fz4)
+        # Cross-model comparison (pre-reg R2): the second judge intentionally
+        # uses a different model under the SAME frozen protocol parameters.
+        # check_freeze enforces model identity (designed for same-model
+        # stability reruns), so validate against a freeze copy whose
+        # batch_config.model is substituted with the cross model; every hash
+        # and every other config parameter is still checked against freeze v4.
+        fz4_cross = json.loads(json.dumps(fz4))
+        cross_model = (cb.get('signature') or {}).get('model')
+        if not cross_model:
+            print('FREEZE(cross): cross batch has no model signature', file=sys.stderr)
+            return 1
+        fz4_cross.setdefault('batch_config', {})['model'] = cross_model
+        cp = check_freeze(cb, {'cases': []}, fz4_cross)
         sig = cb.get('signature') or {}
         for k, v in (fz4.get('batch_config') or {}).items():
             if k != 'model' and sig.get(k) != v:

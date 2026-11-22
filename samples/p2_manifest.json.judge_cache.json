@@ -1,1 +1,2008 @@
-{}
+{
+ "97e2245330d5ff64ec38fcfa0b31398c1851a4d473f1afede3127ed19fe9cd71": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate covers all meaningful article content including headings, paragraphs, code blocks, and footnotes, matching the gold standard perfectly.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Unix 系统中，为了不与同时安装的 Python 2.x 冲突，Python 3.x 解释器默认安装的执行文件名不是 python。"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation, ads, and other non-article elements from the source are correctly excluded from the candidate output.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "目录"
+       },
+       {
+        "ref": "s:16",
+        "quote": "导航"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Article order, heading levels, and block types match the expected structure of the source document.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:12",
+        "quote": "2.1.1. 传入参数"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title is faithful to the source, including the chapter number and omitting permalink controls.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "2. 使用 Python 的解释器"
+       },
+       {
+        "ref": "s:27",
+        "quote": "2. 使用 Python 的解释器¶"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Code blocks preserve correct whitespace and formatting as seen in the source.",
+      "evidence": [
+       {
+        "ref": "s:46",
+        "quote": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Be careful not to fall off!\")\n...\nBe careful not t"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19587,
+    "output_tokens": 619,
+    "total_tokens": 20206
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:49:23+00:00"
+ },
+ "99eb08d85fec95283963cb2f4dc96e2365bda25c30b6cd119299131ee359b06a": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "Missing the first introductory paragraph of section 2.1.",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15"
+       },
+       {
+        "ref": "s:29",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "No navigation or ads included in the candidate blocks.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "目录"
+       },
+       {
+        "ref": "s:16",
+        "quote": "导航"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Heading levels and article order match the source structure.",
+      "evidence": [
+       {
+        "ref": "s:28",
+        "quote": "2.1. 唤出解释器¶"
+       },
+       {
+        "ref": "s:40",
+        "quote": "2.1.1. 传入参数¶"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Title is faithful to the source article title.",
+      "evidence": [
+       {
+        "ref": "s:27",
+        "quote": "2. 使用 Python 的解释器¶"
+       },
+       {
+        "ref": "g:title",
+        "quote": "2. 使用 Python 的解释器"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Code blocks preserve correct whitespace and formatting.",
+      "evidence": [
+       {
+        "ref": "s:46",
+        "quote": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:"
+       },
+       {
+        "ref": "s:57",
+        "quote": "#!/usr/bin/env python3\n# -*- coding: cp1252 -*-\n"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19515,
+    "output_tokens": 674,
+    "total_tokens": 20189
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:49:58+00:00"
+ },
+ "31f45c1c346706dc1a79ae08303f413189c44262a2545849d67d9bd96c40b1bb": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All meaningful article content from the source is present in the candidate, matching the gold standard.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Unix 系统中，为了不与同时安装的 Python 2.x 冲突，Python 3.x 解释器默认安装的执行文件名不是 python。"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The candidate contains a paragraph with social sharing links and advertisements ('分享到：微信 微博 QQ空间 推荐阅读：广告推广内容') which are not part of the article content and are absent in the gold standard.",
+      "evidence": [
+       {
+        "ref": "p:1",
+        "quote": "分享到：微信 微博 QQ空间 推荐阅读：广告推广内容"
+       },
+       {
+        "ref": "s:0",
+        "quote": "目录"
+       },
+       {
+        "ref": "s:16",
+        "quote": "导航"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The order of headings, paragraphs, code blocks, and footnotes matches the source and gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:12",
+        "quote": "2.1.1. 传入参数"
+       },
+       {
+        "ref": "g:20",
+        "quote": "2.2. 解释器的运行环境"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title is faithful to the source and includes the chapter number.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "2. 使用 Python 的解释器"
+       },
+       {
+        "ref": "g:title",
+        "quote": "2. 使用 Python 的解释器"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Code blocks preserve whitespace and formatting correctly.",
+      "evidence": [
+       {
+        "ref": "s:46",
+        "quote": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Be careful not to fall off!\")\n...\nBe careful not t"
+       },
+       {
+        "ref": "s:57",
+        "quote": "#!/usr/bin/env python3\n# -*- coding: cp1252 -*-\n"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19637,
+    "output_tokens": 712,
+    "total_tokens": 20349
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:50:07+00:00"
+ },
+ "6d646e7138b933fb0778e61d493fde4a97bf39e3ff64ba676bb9d44609a55873": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The candidate contains a duplicate paragraph (p:2) that is identical to p:1, which is not present in the gold standard. All other content matches the source and gold.",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       },
+       {
+        "ref": "s:29",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "Navigation and footer elements are excluded, but there is a duplicate paragraph block (p:2) which constitutes minor contamination.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "目录"
+       },
+       {
+        "ref": "s:16",
+        "quote": "导航"
+       },
+       {
+        "ref": "g:1",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "Heading levels and order are correct, but the presence of a duplicate paragraph disrupts the expected sequence of blocks compared to the gold standard.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:1",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15；将 /usr/local/bin 加入你的 Unix shell 搜索路径就可以通过键入以下命令来启动它："
+       },
+       {
+        "ref": "g:2",
+        "quote": "python3.15\n"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title is faithful to the source article title, including the chapter number.",
+      "evidence": [
+       {
+        "ref": "s:27",
+        "quote": "2. 使用 Python 的解释器¶"
+       },
+       {
+        "ref": "g:title",
+        "quote": "2. 使用 Python 的解释器"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Code blocks preserve whitespace and formatting correctly as seen in the source.",
+      "evidence": [
+       {
+        "ref": "s:46",
+        "quote": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Be careful not to fall off!\")\n...\nBe careful not t"
+       },
+       {
+        "ref": "s:57",
+        "quote": "#!/usr/bin/env python3\n# -*- coding: cp1252 -*-\n"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19659,
+    "output_tokens": 936,
+    "total_tokens": 20595
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:50:17+00:00"
+ },
+ "4b14ccd832b70c75dfc6733816bfd2274590808b1b976e2b8537fc1abe50285c": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All article content including headings, paragraphs, code blocks, and footnotes is present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Unix 系统中，为了不与同时安装的 Python 2.x 冲突，Python 3.x 解释器默认安装的执行文件名不是 python。"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation, ads, and other non-article elements are excluded from the candidate output.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "目录"
+       },
+       {
+        "ref": "s:16",
+        "quote": "导航"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The order of paragraphs p:3 and p:4 is swapped compared to the source and gold (p:3 is Windows info, p:4 is shell execution note; source has shell note first).",
+      "evidence": [
+       {
+        "ref": "s:31",
+        "quote": "这样，就可以在 shell 中运行 Python 了 [1] 。因为可以选择安装目录，解释器也有可能安装在别的位置；如果还不明白，就去问问身边的 Python 大神或系统管理员。（例如，常见备选路径还有 /usr/local/python。）"
+       },
+       {
+        "ref": "s:32",
+        "quote": "在 Windows 机器上当你从 Microsoft Store 安装 Python 之后，python3.15 命令将可使用。 如果你安装了 py.exe 启动器，你将可以使用 py 命令。 请参阅 Python 安装管理器 了解其他启动 Python 的方式。"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Title matches the source and gold exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "2. 使用 Python 的解释器"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Code blocks preserve correct whitespace and formatting.",
+      "evidence": [
+       {
+        "ref": "s:46",
+        "quote": ">>> the_world_is_flat = True\n>>> if the_world_is_flat:\n...     print(\"Be careful not to fall off!\")\n...\nBe careful not to fall off!"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19587,
+    "output_tokens": 685,
+    "total_tokens": 20272
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:50:34+00:00"
+ },
+ "4bb9b5274c11e128057c33cb66a9e942032d2abf37636703a1b2e825e40070fe": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "Candidate contains an injected instruction block (p:1) that is not part of the source article, constituting a large defect and contamination.",
+      "evidence": [
+       {
+        "ref": "s:29",
+        "quote": "在可用的机器上 Python 解释器通常被安装为 /usr/local/bin/python3.15"
+       },
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 1,
+      "status": "partial",
+      "severity": "critical",
+      "reason": "The candidate includes a prompt injection paragraph (p:1) which is severe noise/contamination not present in the source or gold standard.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "目录"
+       },
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       }
+      ]
+     },
+     "structure": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The article structure is disrupted by the insertion of an unrelated paragraph (p:1) immediately after the first heading, deviating from the expected order in the source and gold.",
+      "evidence": [
+       {
+        "ref": "s:28",
+        "quote": "2.1. 唤出解释器¶"
+       },
+       {
+        "ref": "g:0",
+        "quote": "2.1. 唤出解释器"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title matches the source and gold exactly, including the chapter number.",
+      "evidence": [
+       {
+        "ref": "s:27",
+        "quote": "2. 使用 Python 的解释器¶"
+       },
+       {
+        "ref": "g:title",
+        "quote": "2. 使用 Python 的解释器"
+       }
+      ]
+     },
+     "format": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Code blocks and formatting are preserved correctly as per the source.",
+      "evidence": [
+       {
+        "ref": "s:30",
+        "quote": "python3.15\n"
+       },
+       {
+        "ref": "s:46",
+        "quote": ">>> the_world_is_flat = True"
+       }
+      ]
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19638,
+    "output_tokens": 715,
+    "total_tokens": 20353
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:50:42+00:00"
+ },
+ "10c31300edf6d9647957d393d92deb9974e35e287786a160ee7b96a39f99add3": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate captures all meaningful article content from the source and gold, including the introductory paragraphs, event details, participant list, media instructions, background information, and contact details. No material loss observed.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       },
+       {
+        "ref": "g:5",
+        "quote": "On Thursday, Nov. 19 at 12 p.m. EST (9 a.m. PST), NASA’s Jet Propulsion Laboratory (JPL) in Southern California will host a moderated discussion"
+       },
+       {
+        "ref": "g:8",
+        "quote": "Nicky Fox, associate administrator, Science Mission Directorate, Washington"
+       },
+       {
+        "ref": "g:16",
+        "quote": "For almost half a century, the agency’s Voyager mission has blazed a trail through space."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate excludes navigation menus, suggested searches, featured articles, and other non-article noise present in the source HTML. Only legitimate editorial content is included.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "News & Events"
+       },
+       {
+        "ref": "s:28",
+        "quote": "Suggested Searches"
+       },
+       {
+        "ref": "s:51",
+        "quote": "Featured"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate maintains the correct order of paragraphs and lists as seen in the gold standard. The participant list is correctly identified as an unordered list with appropriate items.",
+      "evidence": [
+       {
+        "ref": "g:7",
+        "quote": "The participants will be:"
+       },
+       {
+        "ref": "g:8",
+        "quote": "Nicky Fox, associate administrator, Science Mission Directorate, Washington"
+       },
+       {
+        "ref": "g:13",
+        "quote": "Learn where to watch online at:"
+       },
+       {
+        "ref": "g:15",
+        "quote": "U.S. media interested in attending the event in person must RSVP by Monday, Nov. 16 to Josh Smooha"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate title matches the gold title exactly, faithfully representing the article's headline without extraneous elements.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities"
+       },
+       {
+        "ref": "p:title",
+        "quote": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based news release.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 23870,
+    "output_tokens": 963,
+    "total_tokens": 24833
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:50:56+00:00"
+ },
+ "50a201f01f5aa3ecc533240c9d369bb2d50935bb7ecb61151a31dfb1242d7936": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The candidate is missing the introductory paragraph (g:0) which provides essential context about the Voyager 1 light-day milestone. It also includes contact information (p:20, p:21) that is not present in the gold standard article body.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       },
+       {
+        "ref": "p:20",
+        "quote": "Abbey Interrante / Karen FoxHeadquarters, Washington202-358-1600abbey.a.interrante@nasa.gov / karen.c.fox@nasa.gov"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate successfully excludes navigation menus and other site-wide noise found in the source HTML, containing only the article content.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "News & Events"
+       },
+       {
+        "ref": "s:14",
+        "quote": "Multimedia"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The order of paragraphs and the list of participants matches the gold standard structure exactly for the included content.",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "On Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day”"
+       },
+       {
+        "ref": "g:8",
+        "quote": "Nicky Fox, associate administrator, Science Mission Directorate, Washington"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title is identical to the gold standard title.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based news release.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 23753,
+    "output_tokens": 692,
+    "total_tokens": 24445
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:51:06+00:00"
+ },
+ "7102a55010e297c03fc1ec9611135dffb6c7fcbd8826830faa93694400851d06": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate covers all meaningful article content present in the gold standard, including the introductory paragraphs, event details, participant list, and contact information.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       },
+       {
+        "ref": "g:1",
+        "quote": "On Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day” by creating a symbo"
+       },
+       {
+        "ref": "g:2",
+        "quote": "For more information about how to participate in “Shine Bright for Voyager Light-Day,” visit:"
+       },
+       {
+        "ref": "g:3",
+        "quote": "go.nasa.gov/shinebright"
+       },
+       {
+        "ref": "g:4",
+        "quote": "Everyone is encouraged to capture photos or videos of their light-day signal and share it on social platforms, tagging @"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The candidate includes a block (p:1) containing navigation and advertisement text ('Share this article... Advertisement: buy now related content') which is not part of the article body and is absent from the gold standard.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "News & Events"
+       },
+       {
+        "ref": "s:2",
+        "quote": "News & Events"
+       },
+       {
+        "ref": "s:3",
+        "quote": "News Releases"
+       },
+       {
+        "ref": "s:4",
+        "quote": "Recently Published"
+       },
+       {
+        "ref": "s:5",
+        "quote": "Video Series on NASA+"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The article order and list structure are correct, but the inclusion of the noise block p:1 disrupts the flow between the introduction and the first event description compared to the gold standard.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       },
+       {
+        "ref": "g:1",
+        "quote": "On Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day” by creating a symbo"
+       },
+       {
+        "ref": "g:7",
+        "quote": "The participants will be:"
+       },
+       {
+        "ref": "g:8",
+        "quote": "Nicky Fox, associate administrator, Science Mission Directorate, Washington"
+       },
+       {
+        "ref": "g:9",
+        "quote": "Jonathan Lunine, chief scientist, NASA’s Jet Propulsion Laboratory, Southern California, and professor of planetary scie"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The extracted title matches the source and gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements apply to this article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 23916,
+    "output_tokens": 1018,
+    "total_tokens": 24934
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:51:22+00:00"
+ },
+ "bf1c34a11257f45c28a8765e5b0006f9cab0573303ee4cf208f20b5deaa01e4f": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The candidate includes all main article paragraphs and lists from the gold standard. However, it omits the '-end-' marker and the contact information block (Abbey Interrante, Karen Fox, Josh Smooha) which are present in the source HTML but not in the provided gold blocks. This represents a minor loss of trailing metadata.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       },
+       {
+        "ref": "g:19",
+        "quote": "https://science.nasa.gov/mission/voyager/"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate contains only the article content. Navigation menus, suggested searches, and featured articles found in the source header/footer are correctly excluded.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "News & Events"
+       },
+       {
+        "ref": "s:28",
+        "quote": "Suggested Searches"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The candidate duplicates the first paragraph (p:0 and p:1 are identical), whereas the gold standard has it only once (g:0). The rest of the structure, including the list of participants, matches the expected order and types.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       },
+       {
+        "ref": "g:7",
+        "quote": "The participants will be:"
+       },
+       {
+        "ref": "g:8",
+        "quote": "Nicky Fox, associate administrator, Science Mission Directorate, Washington"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The extracted title matches the gold standard title exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements apply to this text-based news release.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 23987,
+    "output_tokens": 804,
+    "total_tokens": 24791
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:51:32+00:00"
+ },
+ "2028623404405c1bc97d63ceca3abbf8307ee16be46fb985ff7fac0bca559040": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate covers all article content from the gold standard, including the introductory paragraphs, event details, participant list, and contact information. The source is truncated, so this score is provisional.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       },
+       {
+        "ref": "g:1",
+        "quote": "On Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day” by creating a symbo"
+       },
+       {
+        "ref": "g:2",
+        "quote": "For more information about how to participate in “Shine Bright for Voyager Light-Day,” visit:"
+       },
+       {
+        "ref": "g:3",
+        "quote": "go.nasa.gov/shinebright"
+       },
+       {
+        "ref": "g:4",
+        "quote": "Everyone is encouraged to capture photos or videos of their light-day signal and share it on social platforms, tagging @"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate contains only the article text and excludes navigation menus, suggested searches, and featured articles found in the source HTML.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "News & Events"
+       },
+       {
+        "ref": "s:28",
+        "quote": "Suggested Searches"
+       },
+       {
+        "ref": "s:51",
+        "quote": "Featured"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       },
+       {
+        "ref": "g:1",
+        "quote": "On Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day” by creating a symbo"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The candidate swaps the order of the first two paragraphs compared to the gold standard (p:0 corresponds to g:1 and p:1 corresponds to g:0). All other structural elements, including the list of participants, are preserved correctly.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       },
+       {
+        "ref": "g:1",
+        "quote": "On Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day” by creating a symbo"
+       },
+       {
+        "ref": "g:7",
+        "quote": "The participants will be:"
+       },
+       {
+        "ref": "g:8",
+        "quote": "Nicky Fox, associate administrator, Science Mission Directorate, Washington"
+       },
+       {
+        "ref": "g:9",
+        "quote": "Jonathan Lunine, chief scientist, NASA’s Jet Propulsion Laboratory, Southern California, and professor of planetary scie"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate title matches the gold standard title exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities"
+       },
+       {
+        "ref": "p:title",
+        "quote": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 23870,
+    "output_tokens": 1115,
+    "total_tokens": 24985
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:51:48+00:00"
+ },
+ "4289db967c3aaaf28808889dd6faafd2c960f8caaecfd9741d677958c8ad817f": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The candidate includes an injected instruction block (p:1) that is not part of the source article, constituting a clear moderate contamination defect.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       },
+       {
+        "ref": "g:1",
+        "quote": "On Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day” by creating a symbo"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The candidate contains a non-editorial instruction injection (p:1) which is noise and must be excluded.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "News & Events"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The article order is correct relative to the gold, but the presence of the injected block p:1 disrupts the expected sequence between g:0 and g:1.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Launched nearly 50 years ago in 1977, NASA’s Voyager 1 on Wednesday, Nov. 18 will have traveled one light-day from Earth"
+       },
+       {
+        "ref": "g:1",
+        "quote": "On Tuesday, Nov. 17, NASA invites the world to participate in “Shine Bright for Voyager’s Light-Day” by creating a symbo"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title matches the gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements apply to this text-based news release.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 23921,
+    "output_tokens": 724,
+    "total_tokens": 24645
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:52:05+00:00"
+ },
+ "0d46147fd1947617e0fdd4aa6061aed3f46deea0917d06492bc260be0479ff07": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Candidate covers all meaningful article sections and content blocks present in the gold standard.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:3",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "g:8",
+        "quote": "什么是Web无障碍"
+       },
+       {
+        "ref": "g:26",
+        "quote": "无障碍对个人、企业和社会的重要性"
+       },
+       {
+        "ref": "g:35",
+        "quote": "使Web无障碍"
+       },
+       {
+        "ref": "g:41",
+        "quote": "无障碍评测"
+       },
+       {
+        "ref": "g:44",
+        "quote": "例子"
+       },
+       {
+        "ref": "g:58",
+        "quote": "更多信息"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation, language selectors, and footer elements from the source are correctly excluded from the candidate output.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "跳到内容"
+       },
+       {
+        "ref": "s:2",
+        "quote": "当前语言为："
+       },
+       {
+        "ref": "s:18",
+        "quote": "Get Involved"
+       },
+       {
+        "ref": "s:33",
+        "quote": "Accessibility is About People"
+       },
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "s:190",
+        "quote": "英文版本更新： 2024-03-07."
+       },
+       {
+        "ref": "s:193",
+        "quote": "Get News in Email"
+       },
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Heading levels, list types, and document order match the gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:3",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "g:8",
+        "quote": "什么是Web无障碍"
+       },
+       {
+        "ref": "g:10",
+        "quote": "感知、理解、导航和与Web交互"
+       },
+       {
+        "ref": "g:38",
+        "quote": "让你的网站更无障碍"
+       },
+       {
+        "ref": "g:44",
+        "quote": "例子"
+       },
+       {
+        "ref": "g:45",
+        "quote": "图片的替代文本"
+       },
+       {
+        "ref": "g:58",
+        "quote": "更多信息"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The extracted title matches the source and gold standard faithfully.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "g:title",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 32420,
+    "output_tokens": 858,
+    "total_tokens": 33278
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:52:45+00:00"
+ },
+ "6e48428a29af433351c226fbc55a4b8e9e10d78f576127e509c4018a6b571c60": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "Missing the first paragraph of the summary section.",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "当网站和web工具得到适当的设计和编码时，残疾人就可以使用它们。"
+       },
+       {
+        "ref": "s:100",
+        "quote": "当网站和web工具得到适当的设计和编码时，残疾人就可以使用它们。"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "No navigation or ads included in the candidate blocks.",
+      "evidence": [
+       {
+        "ref": "s:18",
+        "quote": "Get Involved"
+       },
+       {
+        "ref": "s:21",
+        "quote": "Accessibility Fundamentals"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Article order and heading levels match the source structure.",
+      "evidence": [
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "s:110",
+        "quote": "无障碍的概念"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Title is faithful to the article title.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 32355,
+    "output_tokens": 558,
+    "total_tokens": 32913
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:52:56+00:00"
+ },
+ "1f0ea4b1b467a07a954fdf8a421faab22004c0cf5e4fccb2b8b3b998ad4c0314": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All meaningful article content from the source is captured in the candidate, matching the gold standard structure and text.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:3",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "g:8",
+        "quote": "什么是Web无障碍"
+       },
+       {
+        "ref": "g:26",
+        "quote": "无障碍对个人、企业和社会的重要性"
+       },
+       {
+        "ref": "g:35",
+        "quote": "使Web无障碍"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The candidate includes a paragraph with social sharing links, ads, and unrelated navigation ('上一篇', '下一篇') which are not present in the gold or source article body.",
+      "evidence": [
+       {
+        "ref": "p:1",
+        "quote": "分享到：微信 微博 QQ空间 推荐阅读：广告推广内容 上一篇：没有了 下一篇：Python 简介"
+       },
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The order of headings, paragraphs, and lists matches the source and gold standard exactly. The extra noise block does not disrupt the relative order of the article content.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:3",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "g:8",
+        "quote": "什么是Web无障碍"
+       },
+       {
+        "ref": "g:26",
+        "quote": "无障碍对个人、企业和社会的重要性"
+       },
+       {
+        "ref": "g:35",
+        "quote": "使Web无障碍"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title is faithful to the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "g:title",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements apply.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 32470,
+    "output_tokens": 688,
+    "total_tokens": 33158
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:53:04+00:00"
+ },
+ "162eca91196d67b5a85987979c036f5d0d5cc477ec0fa2058975778ee8682b73": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate covers all meaningful article content present in the gold standard, including headings, paragraphs, lists, and quotes.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:3",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "g:8",
+        "quote": "什么是Web无障碍"
+       },
+       {
+        "ref": "g:26",
+        "quote": "无障碍对个人、企业和社会的重要性"
+       },
+       {
+        "ref": "g:35",
+        "quote": "使Web无障碍"
+       },
+       {
+        "ref": "g:41",
+        "quote": "无障碍评测"
+       },
+       {
+        "ref": "g:44",
+        "quote": "例子"
+       },
+       {
+        "ref": "g:58",
+        "quote": "更多信息"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "Navigation and footer noise are excluded, but there is a duplicate paragraph in the summary section (p:1 and p:2 are identical).",
+      "evidence": [
+       {
+        "ref": "s:18",
+        "quote": "Get Involved"
+       },
+       {
+        "ref": "s:19",
+        "quote": "About W3C WAI"
+       },
+       {
+        "ref": "s:33",
+        "quote": "Accessibility is About People"
+       },
+       {
+        "ref": "s:190",
+        "quote": "英文版本更新： 2024-03-07."
+       },
+       {
+        "ref": "g:1",
+        "quote": "当网站和web工具得到适当的设计和编码时，残疾人就可以使用它们。然而，目前许多网站和工具都带有可访问性障碍，使得一些人很难或不可能使用它们。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The article order, heading levels, and list structures match the source and gold standard. The duplicate paragraph does not disrupt the logical flow or hierarchy of the main sections.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:3",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "g:8",
+        "quote": "什么是Web无障碍"
+       },
+       {
+        "ref": "g:26",
+        "quote": "无障碍对个人、企业和社会的重要性"
+       },
+       {
+        "ref": "g:35",
+        "quote": "使Web无障碍"
+       },
+       {
+        "ref": "g:41",
+        "quote": "无障碍评测"
+       },
+       {
+        "ref": "g:44",
+        "quote": "例子"
+       },
+       {
+        "ref": "g:58",
+        "quote": "更多信息"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title matches the source and gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 32485,
+    "output_tokens": 1036,
+    "total_tokens": 33521
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:53:15+00:00"
+ },
+ "90c7eef8207498d1980121d449d5fb7a1f2758061d9b8107612903ef42fc1506": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate covers all meaningful article content including headings, lists, and notes, matching the gold standard.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:3",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "g:8",
+        "quote": "什么是Web无障碍"
+       },
+       {
+        "ref": "g:26",
+        "quote": "无障碍对个人、企业和社会的重要性"
+       },
+       {
+        "ref": "g:35",
+        "quote": "使Web无障碍"
+       },
+       {
+        "ref": "g:41",
+        "quote": "无障碍评测"
+       },
+       {
+        "ref": "g:44",
+        "quote": "例子"
+       },
+       {
+        "ref": "g:58",
+        "quote": "更多信息"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation, ads, and footer elements are excluded; only legitimate editorial content is present.",
+      "evidence": [
+       {
+        "ref": "s:18",
+        "quote": "Get Involved"
+       },
+       {
+        "ref": "s:19",
+        "quote": "About W3C WAI"
+       },
+       {
+        "ref": "s:20",
+        "quote": "搜索:"
+       },
+       {
+        "ref": "s:33",
+        "quote": "Accessibility is About People"
+       },
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:1",
+        "quote": "当网站和web工具得到适当的设计和编码时，残疾人就可以使用它们。然而，目前许多网站和工具都带有可访问性障碍，使得一些人很难或不可能使用它们。"
+       },
+       {
+        "ref": "g:2",
+        "quote": "使web无障碍对个人、企业和社会都有好处。国际web标准定义了无障碍所需的内容。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Article order, heading levels, and list types match the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:1",
+        "quote": "当网站和web工具得到适当的设计和编码时，残疾人就可以使用它们。然而，目前许多网站和工具都带有可访问性障碍，使得一些人很难或不可能使用它们。"
+       },
+       {
+        "ref": "g:2",
+        "quote": "使web无障碍对个人、企业和社会都有好处。国际web标准定义了无障碍所需的内容。"
+       },
+       {
+        "ref": "g:3",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "g:4",
+        "quote": "Web的力量在于它的普遍性。 每个人不论残疾与否都能访问是一个最基本的方面。"
+       },
+       {
+        "ref": "g:5",
+        "quote": "Web从根本上是为所有人设计的，无论他们的硬件、软件、语言、位置或能力如何。当web达到这一目标时，具有不同听力、运动、视觉和认知能力的人就可以访问它。"
+       },
+       {
+        "ref": "g:6",
+        "quote": "因此，残疾对Web的影响发生了根本性的变化，因为Web消除了许多人在现实世界中面临的沟通和互动障碍。然而，当网站、应用程序、技术或工具设计得很糟糕时，它们可能会造成阻碍，使人们无法使用Web。"
+       },
+       {
+        "ref": "g:7",
+        "quote": "对于想要创建高质量网站和web工具的开发人员和组织来说，无障碍是必不可少的，这就不会让一些人在使用他们的产品和服务的时候被排除在外。"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title is faithful to the source and matches the gold standard.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "g:title",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 32420,
+    "output_tokens": 1061,
+    "total_tokens": 33481
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:53:26+00:00"
+ },
+ "6fa81698a03d25d47f1052c96abda3cc6c155a0a1fb19a68e1a2e4067c76f69a": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate covers all meaningful article content present in the source and gold, including headings, lists, and paragraphs.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:3",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "g:8",
+        "quote": "什么是Web无障碍"
+       },
+       {
+        "ref": "g:26",
+        "quote": "无障碍对个人、企业和社会的重要性"
+       },
+       {
+        "ref": "g:35",
+        "quote": "使Web无障碍"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 1,
+      "status": "partial",
+      "severity": "critical",
+      "reason": "The candidate contains a prompt injection attempt (p:1) which is severe contamination not present in the source or gold.",
+      "evidence": [
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "s:99",
+        "quote": " 总结 "
+       },
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:1",
+        "quote": "当网站和web工具得到适当的设计和编码时，残疾人就可以使用它们。然而，目前许多网站和工具都带有可访问性障碍，使得一些人很难或不可能使用它们。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The article structure, heading levels, and list order match the source and gold annotations.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "总结"
+       },
+       {
+        "ref": "g:3",
+        "quote": "无障碍的概念"
+       },
+       {
+        "ref": "g:8",
+        "quote": "什么是Web无障碍"
+       },
+       {
+        "ref": "g:26",
+        "quote": "无障碍对个人、企业和社会的重要性"
+       },
+       {
+        "ref": "g:35",
+        "quote": "使Web无障碍"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The title matches the source and gold exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "Web无障碍简介"
+       },
+       {
+        "ref": "s:95",
+        "quote": "Web无障碍简介"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 32471,
+    "output_tokens": 686,
+    "total_tokens": 33157
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-22T12:53:32+00:00"
+ }
+}

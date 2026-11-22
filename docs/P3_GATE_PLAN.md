@@ -72,3 +72,4 @@ tools/build_p3_review_kit.py（已建，10 测试）；p3_findings 汇总工具�
 - **gate FAIL 已定**（dev 侧两协议均失败；PASS 须全部硬检查通过）。v3 已构建封存（freeze v7，12/12 不截断），前 4 案属失败修订排除；是否补消耗待用户 A/B/C 决定。
 - 预算：22 次 / 379,457 tokens（上限 460k 内）；v3 估算偏差触发护栏暂停，600k 请求作废。
 - 交付：docs/P3_GATE_REPORT.md（命令+哈希+测试日志+局限）。479 tests OK。
+- **收尾决定：2026-11-22 hqli631 选 A**（原话 `A，节点5计划也一并给出`）：gate FAIL 最终判定，v3 不补消耗，P3 完成。

@@ -110,3 +110,13 @@ P0 交付后启动 P1 judge 元评估。预注册方案 docs/P1_META_EVAL_PLAN.m
 - **tools/run_p2_cross_judge.py**：复用 run_batch（缓存/签名绑定 model，跨家族条目与 Qwen 分离），--split development 默认，--dry-run 免密钥。
 - 测试 4 项（mock opener：judge 系统消息、run_judge 接受 judge JSON 非 rule、需密钥、dry-run）；全量回归 **388 项 OK，23.8s**。
 - **P2 全部零调用工程就绪**（WP1 统计/WP2 扩样/WP3 封存/WP4 IAA+盲评包/WP5 跨家族接线）。剩余依赖用户：WP4 人类 gold 盲评 18 例 + 第二标注者 IAA ≥12 例；WP5/WP6 模型调用需预算批准 + ccswitch 可用确认。
+
+
+## P3 收尾（2026-11-22）
+
+- 校准复审 10 案 verdict 封存（judge_correct×5 / human_correct×4 / both_partially×1）。
+- 预注册修订 judge v1.3.0 实施后 **dev 回归护栏 FAIL**（severe_miss 3>1）→ 按预注册后果**回滚 v1.2.0**（freeze v8，字节级恢复 sha edd841ef==v4）。
+- v1.2 dev 预览 false_alarm 0.1667>0.15 亦 FAIL（2/3 为已裁决 gold 漏检 C01/C02）→ **gate FAIL 最终判定**；judge 分数禁止奖励化。
+- v3 已构建封存（freeze v7，12/12 不截断）；前 4 案属失败修订排除；剩余不消耗（用户选 A）。
+- 预算：22 次调用 / 379,457 tokens（≤460k）；479 tests OK；交付 docs/P3_GATE_REPORT.md（复现命令已验证）。
+- 下一步：节点 5 修复闭环（docs/NODE5_REPAIR_LOOP_PLAN.md，DRAFT 待单独批准+预算）。

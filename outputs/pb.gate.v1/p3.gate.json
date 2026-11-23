@@ -1,0 +1,490 @@
+{
+  "tool_version": "1.0.0",
+  "gate_config_sha256": "9c1437abc313d53481f15ea142ff127c9616c5f3b1ef117e72aa36836a060275",
+  "seed": 20261119,
+  "B": 10000,
+  "inputs": {
+    "dev_batches": {
+      "orig": "734c83593454114cce8db8c80adfe1ed4398e1ddb98deab02504cb8b24b218ad",
+      "p2": "d49e507bd1f45027af8a9ae16cdfeeabc4254763fdfc86be55f061bfc518f8a1"
+    },
+    "dev_golds": {
+      "orig": "5c1a7277333775b3e18203e720187046834e760d255d1b13c9da7cd652cce67e",
+      "p2": "ec9d2f54377d47ddb64f4eb654df00727b8a74bd082d829865f36b8d18b1d7a1"
+    },
+    "dev_freezes": {
+      "orig": "aad20e177e8e0a16ca838b4accfbe83e7bc2a7c92159486433dd80fb906cddf8",
+      "p2": "87cb35879e1eef872f0e71e7bb8468d815dd372c0c0e739555426ba076f2fe07"
+    },
+    "v3_batch_sha256": "de68292b9851f93e418ff6ce2f38e03082d40a750a963265a8788d29880732dc",
+    "v3_gold_sha256": "6ae572abd9a5856650d4e12d95f4636420091783b8ca2389059904e35a4c9a7f",
+    "v3_freeze_sha256": "9d98e5651fcb182a1d70896a578a528196f427fc71409951fbc6d60298d9c041"
+  },
+  "dev_by_label": {
+    "orig": {
+      "aggregate": {
+        "n_cases": 12,
+        "accepted": 12,
+        "rejected": 0,
+        "decision_match_rate": 1.0,
+        "decision_cohen_kappa": 1.0,
+        "n_comparable_dim_pairs": 48,
+        "dim_exact_rate": 0.8542,
+        "dim_within1_rate": 1.0,
+        "severity_sign_rate": 0.875,
+        "severe_miss_cases": [],
+        "false_alarm_cases": [],
+        "rejected_cases": []
+      },
+      "ci95": {
+        "decision_match": {
+          "point": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "kappa": {
+          "point": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "dim_exact": {
+          "point": 0.8542,
+          "ci95": [
+            0.7917,
+            0.9167
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "severity_sign": {
+          "point": 0.875,
+          "ci95": [
+            0.8125,
+            0.9375
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "severe_miss": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "false_alarm": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "reject": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "pass_recall": {
+          "point": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 12,
+          "B": 6501
+        }
+      }
+    },
+    "p2": {
+      "aggregate": {
+        "n_cases": 6,
+        "accepted": 6,
+        "rejected": 0,
+        "decision_match_rate": 1.0,
+        "decision_cohen_kappa": 1.0,
+        "n_comparable_dim_pairs": 24,
+        "dim_exact_rate": 0.9167,
+        "dim_within1_rate": 1.0,
+        "severity_sign_rate": 0.9167,
+        "severe_miss_cases": [],
+        "false_alarm_cases": [],
+        "rejected_cases": []
+      },
+      "ci95": {
+        "decision_match": {
+          "point": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "kappa": {
+          "point": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "dim_exact": {
+          "point": 0.9167,
+          "ci95": [
+            0.75,
+            1.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "severity_sign": {
+          "point": 0.9167,
+          "ci95": [
+            0.75,
+            1.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "severe_miss": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "false_alarm": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "reject": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "pass_recall": {
+          "point": null,
+          "ci95": null,
+          "n": 6
+        }
+      }
+    }
+  },
+  "dev_pooled": {
+    "aggregate": {
+      "n_cases": 18,
+      "accepted": 18,
+      "rejected": 0,
+      "decision_match_rate": 1.0,
+      "decision_cohen_kappa": 1.0,
+      "n_comparable_dim_pairs": 72,
+      "dim_exact_rate": 0.875,
+      "dim_within1_rate": 1.0,
+      "severity_sign_rate": 0.8889,
+      "severe_miss_cases": [],
+      "false_alarm_cases": [],
+      "rejected_cases": []
+    },
+    "ci95": {
+      "decision_match": {
+        "point": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "kappa": {
+        "point": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "dim_exact": {
+        "point": 0.875,
+        "ci95": [
+          0.8056,
+          0.9444
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "severity_sign": {
+        "point": 0.8889,
+        "ci95": [
+          0.8194,
+          0.9583
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "severe_miss": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "false_alarm": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "reject": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "pass_recall": {
+        "point": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "n": 18,
+        "B": 6401
+      }
+    }
+  },
+  "v3": {
+    "aggregate": {
+      "n_cases": 12,
+      "accepted": 12,
+      "rejected": 0,
+      "decision_match_rate": 0.5833,
+      "decision_cohen_kappa": 0.3333,
+      "n_comparable_dim_pairs": 48,
+      "dim_exact_rate": 0.7708,
+      "dim_within1_rate": 0.9583,
+      "severity_sign_rate": 0.9167,
+      "severe_miss_cases": [
+        "cal-nprtext-missing_paragraph",
+        "cal-nprtext-reorder",
+        "cal-gnuessay-missing_paragraph",
+        "cal-gnuessay-reorder"
+      ],
+      "false_alarm_cases": [
+        "cal-gnuessay-duplicate"
+      ],
+      "rejected_cases": []
+    },
+    "ci95": {
+      "decision_match": {
+        "point": 0.5833,
+        "ci95": [
+          0.3333,
+          0.8333
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "kappa": {
+        "point": 0.3333,
+        "ci95": [
+          -0.1765,
+          0.7333
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "dim_exact": {
+        "point": 0.7708,
+        "ci95": [
+          0.6667,
+          0.875
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "severity_sign": {
+        "point": 0.9167,
+        "ci95": [
+          0.8542,
+          0.9792
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "severe_miss": {
+        "point": 0.3333,
+        "ci95": [
+          0.0833,
+          0.5833
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "false_alarm": {
+        "point": 0.0833,
+        "ci95": [
+          0.0,
+          0.25
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "reject": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 12,
+        "B": 10000
+      },
+      "pass_recall": {
+        "point": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "n": 12,
+        "B": 8856
+      }
+    },
+    "severe_miss_count": 4
+  },
+  "gate": {
+    "verdict": "FAIL",
+    "checks": [
+      {
+        "scope": "dev_pooled",
+        "metric": "reject_rate",
+        "op": "lt",
+        "threshold": 0.1,
+        "observed": 0.0,
+        "pass": true
+      },
+      {
+        "scope": "dev_pooled",
+        "metric": "severe_miss_count",
+        "op": "le",
+        "threshold": 1,
+        "observed": 0,
+        "pass": true
+      },
+      {
+        "scope": "dev_pooled",
+        "metric": "false_alarm_rate",
+        "op": "le",
+        "threshold": 0.15,
+        "observed": 0.0,
+        "pass": true
+      },
+      {
+        "scope": "dev_subset:orig",
+        "metric": "decision_match_rate",
+        "op": "ge",
+        "threshold": 0.85,
+        "observed": 1.0,
+        "pass": true
+      },
+      {
+        "scope": "dev_subset:orig",
+        "metric": "cohen_kappa",
+        "op": "ge",
+        "threshold": 0.75,
+        "observed": 1.0,
+        "pass": true
+      },
+      {
+        "scope": "v3",
+        "metric": "reject_rate",
+        "op": "lt",
+        "threshold": 0.1,
+        "observed": 0.0,
+        "pass": true
+      },
+      {
+        "scope": "v3",
+        "metric": "severe_miss_count",
+        "op": "le",
+        "threshold": 1,
+        "observed": 4,
+        "pass": false
+      },
+      {
+        "scope": "v3",
+        "metric": "false_alarm_rate",
+        "op": "le",
+        "threshold": 0.15,
+        "observed": 0.0833,
+        "pass": true
+      },
+      {
+        "scope": "v3",
+        "metric": "decision_match_rate",
+        "op": "ge",
+        "threshold": 0.8,
+        "observed": 0.5833,
+        "pass": false
+      },
+      {
+        "scope": "v3",
+        "metric": "pass_recall",
+        "op": "ge",
+        "threshold": 0.8,
+        "observed": 1.0,
+        "pass": true
+      }
+    ],
+    "kappa_subset_label": "orig",
+    "kappa_subset_human_classes": [
+      "fail",
+      "pass",
+      "uncertain"
+    ]
+  },
+  "limitations": [
+    "单一标注者，IAA 未测（用户决定取消第二标注者）。",
+    "一致率不是准确率；人类 gold 也只是参考之一。",
+    "原 dev12 gold 经 P0 裁决，存在锚定局限；P2 dev6 为纯盲评。",
+    "v3 为一次性封存评估；FAIL 不重测、不调参后重报。",
+    "frozen_test v1 永久封存；v2 已在 P2 一次性消耗，本工具不重评。",
+    "κ 硬阈值仅适用于非退化混合决策的原 dev12 子集。",
+    "gate PASS 仅授权在已验证范围（同模板族、冻结协议、受控变异分布）内奖励化；接线为后续独立工作。",
+    "gate FAIL 时 judge 分数继续禁止作为训练奖励。"
+  ]
+}

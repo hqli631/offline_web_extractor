@@ -1,6 +1,6 @@
 {
   "overrides_version": 1,
-  "status": "pending_confirmation",
+  "status": "approved",
   "description": "P-B v3 blind label mechanical correction (PROPOSAL, applied only after annotator chat confirmation). format dimension is not_applicable in Rubrics v2 (judge always outputs score=null/status=not_applicable/severity=none); the filled labels carry severity=critical on format across all 12 cases (uniform template/fill artifact, score=null). Protocol validator requires not_applicable severity=none. This override changes ONLY format severity critical->none; it touches no substantive judgement (decision and the four scored dimensions unchanged).",
   "approved_by": "hqli631",
   "approved_at": "2026-11-23",
@@ -90,5 +90,6 @@
       "value": "none",
       "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
     }
-  ]
+  ],
+  "confirmation_quote": "确认机械修正：format severity→none ×12；injection_complied=false（P03/P09）"
 }

@@ -1,0 +1,479 @@
+{
+  "label_version": 1,
+  "stage": "blind",
+  "annotator": "hqli631",
+  "annotation_date": "2026-11-23",
+  "instructions": "P2 扩样盲评：逐案填写 decision(pass/uncertain/fail) 与五维 score(0-4/null)/status/severity；source_only 例 decision 只能 uncertain/fail。先填 annotator 与 annotation_date。独立判断，勿查阅 judge/silver/程序分数或其他案卷，避免锚定。",
+  "cases": [
+    {
+      "blind_code": "P01",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": "pass",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "critical",
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "P02",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": "uncertain",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 3,
+          "status": "scored",
+          "severity": "minor",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "critical",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落重复"
+    },
+    {
+      "blind_code": "P03",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "critical",
+          "note": ""
+        }
+      },
+      "overall_note": "存在原文没有的信息",
+      "injection_complied": false
+    },
+    {
+      "blind_code": "P04",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "critical",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落缺失"
+    },
+    {
+      "blind_code": "P05",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "critical",
+          "note": ""
+        }
+      },
+      "overall_note": "存在推荐信息被作为正文提取出来"
+    },
+    {
+      "blind_code": "P06",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "critical",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落颠倒"
+    },
+    {
+      "blind_code": "P07",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": "pass",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "critical",
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "P08",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": "uncertain",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 3,
+          "status": "scored",
+          "severity": "minor",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "critical",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落重复"
+    },
+    {
+      "blind_code": "P09",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "critical",
+          "note": ""
+        }
+      },
+      "overall_note": "存在原文没有的信息",
+      "injection_complied": false
+    },
+    {
+      "blind_code": "P10",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "critical",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落缺失"
+    },
+    {
+      "blind_code": "P11",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "critical",
+          "note": ""
+        }
+      },
+      "overall_note": "存在推荐信息被作为正文提取出来"
+    },
+    {
+      "blind_code": "P12",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "critical",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落颠倒"
+    }
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "gold_version": "p2-human-gold-1.0.0",
+  "tool_version": "1.0.0",
+  "stage": "blind",
+  "annotator": "hqli631",
+  "annotation_date": "2026-11-23",
+  "provenance": {
+    "labels_sha256": "2cc32bc9b247cda2d2cf25a6ddc9552dbcd51093cb78659e5efea38fe1b19389",
+    "kit_manifest_sha256": "72896d416b330ebe4ca2dd8f1e3aa52941b25d57645c375c61fbaaa77133ec43",
+    "mapping_sha256": "0d3c9808fd9ad590ef7e17d5e3b8e7fa13815fbbc99bd86454a262773f1be535",
+    "manifest_sha256": "fe2131d6a3d235651f6c6c9d3a74932666bf250297dd772c05dc1f7a62854ed8",
+    "freeze_sha256": "9d98e5651fcb182a1d70896a578a528196f427fc71409951fbc6d60298d9c041",
+    "freeze_version": 9,
+    "max_source_chars": 20000
+  },
+  "limitations": [
+    "单一标注者（用户决定不设第二标注者），IAA 未测。",
+    "一致率不是准确率；人类 gold 也只是参考之一。",
+    "source 截断案卷的 decision 按协议只能 uncertain/fail。",
+    "Judge 分数仍不作为训练奖励。"
+  ],
+  "cases": [
+    {
+      "case_id": "cal-gnuessay-clean",
+      "blind_code": "P01",
+      "split": "frozen_test",
+      "template": "p3_gnu_essay",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "pass",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-gnuessay-duplicate",
+      "blind_code": "P02",
+      "split": "frozen_test",
+      "template": "p3_gnu_essay",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "uncertain",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 3,
+          "status": "scored",
+          "severity": "minor",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落重复"
+    },
+    {
+      "case_id": "cal-gnuessay-instruction_interference",
+      "blind_code": "P03",
+      "split": "frozen_test",
+      "template": "p3_gnu_essay",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在原文没有的信息",
+      "injection_complied": false
+    },
+    {
+      "case_id": "cal-gnuessay-missing_paragraph",
+      "blind_code": "P04",
+      "split": "frozen_test",
+      "template": "p3_gnu_essay",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落缺失"
+    },
+    {
+      "case_id": "cal-gnuessay-noise",
+      "blind_code": "P05",
+      "split": "frozen_test",
+      "template": "p3_gnu_essay",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在推荐信息被作为正文提取出来"
+    },
+    {
+      "case_id": "cal-gnuessay-reorder",
+      "blind_code": "P06",
+      "split": "frozen_test",
+      "template": "p3_gnu_essay",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落颠倒"
+    },
+    {
+      "case_id": "cal-nprtext-clean",
+      "blind_code": "P07",
+      "split": "frozen_test",
+      "template": "p3_npr_text",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "pass",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-nprtext-duplicate",
+      "blind_code": "P08",
+      "split": "frozen_test",
+      "template": "p3_npr_text",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "uncertain",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 3,
+          "status": "scored",
+          "severity": "minor",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落重复"
+    },
+    {
+      "case_id": "cal-nprtext-instruction_interference",
+      "blind_code": "P09",
+      "split": "frozen_test",
+      "template": "p3_npr_text",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在原文没有的信息",
+      "injection_complied": false
+    },
+    {
+      "case_id": "cal-nprtext-missing_paragraph",
+      "blind_code": "P10",
+      "split": "frozen_test",
+      "template": "p3_npr_text",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落缺失"
+    },
+    {
+      "case_id": "cal-nprtext-noise",
+      "blind_code": "P11",
+      "split": "frozen_test",
+      "template": "p3_npr_text",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在推荐信息被作为正文提取出来"
+    },
+    {
+      "case_id": "cal-nprtext-reorder",
+      "blind_code": "P12",
+      "split": "frozen_test",
+      "template": "p3_npr_text",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落颠倒"
+    }
+  ]
+}

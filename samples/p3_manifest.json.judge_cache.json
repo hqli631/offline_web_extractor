@@ -434,5 +434,1185 @@
    "finish_reason": "stop"
   },
   "stored_at": "2026-11-22T15:01:24+00:00"
+ },
+ "1698e6c19fb3b31fc79bda062b87551a460d7f18e02d20682f0f8d264ec5d455": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The candidate contains all meaningful article content, including the byline, date, main body paragraphs, subheadings, and the full transcript section.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:15",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "g:71",
+        "quote": "(SOUNDBITE OF MUSIC)"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation elements (header, footer, topic lists) are correctly excluded from the extraction.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Text-Only Version Go To Full Site"
+       },
+       {
+        "ref": "s:74",
+        "quote": "Topics"
+       },
+       {
+        "ref": "s:78",
+        "quote": "Contact Us"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The order of blocks matches the source and gold standard, with correct heading levels for 'Shared tactics' (h2) and 'Transcript' (h3).",
+      "evidence": [
+       {
+        "ref": "s:17",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "s:33",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "g:15",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Transcript"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The extracted title is identical to the source and gold standard titles.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "g:title",
+        "quote": "How the movement against data centers has gone global"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19771,
+    "output_tokens": 647,
+    "total_tokens": 20418
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T04:10:34+00:00"
+ },
+ "436bdc75d6a40a42b5f114493f5ba8ebd851575d1441788977c09114ab307285": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The first paragraph of the article body is missing from the candidate extraction.",
+      "evidence": [
+       {
+        "ref": "g:4",
+        "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers"
+       },
+       {
+        "ref": "s:6",
+        "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, footer, and header elements are correctly excluded; only article content is present.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Text-Only Version Go To Full Site"
+       },
+       {
+        "ref": "s:74",
+        "quote": "Topics"
+       },
+       {
+        "ref": "s:78",
+        "quote": "Contact Us"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Headings and paragraphs follow the correct order and hierarchy as seen in the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "s:17",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "s:33",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "g:15",
+        "quote": "Shared tactics, crowdfunding"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title matches the source and gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "g:title",
+        "quote": "How the movement against data centers has gone global"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19703,
+    "output_tokens": 659,
+    "total_tokens": 20362
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T04:10:48+00:00"
+ },
+ "436997845c7ab825d69aa59be5d354a3200f6407dce2cc766d1faa60c118a80e": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The candidate includes all meaningful article content from the source, including the byline, date, main text, and full transcript.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:1",
+        "quote": "By Ruth Sherlock"
+       },
+       {
+        "ref": "g:2",
+        "quote": "Monday, November 16, 2026 • 4:44 AM EST"
+       },
+       {
+        "ref": "g:3",
+        "quote": "Heard on Morning Edition"
+       },
+       {
+        "ref": "g:4",
+        "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire avenue as they called to stop a Microsoft data center from being built beside a beloved local forest."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "The candidate contains a block of fabricated noise (p:1) that is not present in the source or gold standard, representing clear contamination.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Text-Only Version Go To Full Site"
+       },
+       {
+        "ref": "s:74",
+        "quote": "Topics"
+       },
+       {
+        "ref": "s:75",
+        "quote": "News"
+       },
+       {
+        "ref": "s:78",
+        "quote": "Contact Us"
+       },
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The article structure, including headings and paragraph order, matches the source and gold standard perfectly.",
+      "evidence": [
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "s:17",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "s:33",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "g:15",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Transcript"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title is faithful to the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "g:title",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements apply to this article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19817,
+    "output_tokens": 789,
+    "total_tokens": 20606
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T04:10:57+00:00"
+ },
+ "6c9ce1cf622391ed80d8248ec3a66a2691e4079c6593e272d7312d2795c45eed": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The candidate includes all meaningful article content from the source, including the byline, date, main text, and transcript.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:1",
+        "quote": "By Ruth Sherlock"
+       },
+       {
+        "ref": "g:2",
+        "quote": "Monday, November 16, 2026 • 4:44 AM EST"
+       },
+       {
+        "ref": "g:3",
+        "quote": "Heard on Morning Edition"
+       },
+       {
+        "ref": "g:4",
+        "quote": "At a demonstration in downtown Zaragoza in Spain"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The breadcrumb line 'NPR > Debating Data Centers' is duplicated in the candidate (p:0 and p:1), whereas it appears only once in the gold standard (g:0).",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The article structure, including headings and paragraph order, matches the source and gold standard perfectly.",
+      "evidence": [
+       {
+        "ref": "s:17",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "s:33",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "g:15",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Transcript"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title is faithful to the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "g:title",
+        "quote": "How the movement against data centers has gone global"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19805,
+    "output_tokens": 668,
+    "total_tokens": 20473
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T04:11:05+00:00"
+ },
+ "dcd6a2eea55ece93ab419c1100af6e0d3fa86bab0c33a5e39c4da0583113eeaa": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The candidate includes all meaningful article content, headings, and the transcript section found in the source.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:15",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "g:31",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "g:71",
+        "quote": "(SOUNDBITE OF MUSIC)"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, footer links, and header controls from the source are correctly excluded from the candidate output.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Text-Only Version Go To Full Site"
+       },
+       {
+        "ref": "s:74",
+        "quote": "Topics"
+       },
+       {
+        "ref": "s:78",
+        "quote": "Contact Us"
+       },
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The order of the byline and breadcrumb is swapped compared to the gold standard; the byline appears before the breadcrumb in the candidate but after it in the gold.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:1",
+        "quote": "By Ruth Sherlock"
+       },
+       {
+        "ref": "p:0",
+        "quote": "By Ruth Sherlock"
+       },
+       {
+        "ref": "p:1",
+        "quote": "NPR > Debating Data Centers"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title matches the source and gold exactly.",
+      "evidence": [
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "g:title",
+        "quote": "How the movement against data centers has gone global"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-based article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19771,
+    "output_tokens": 661,
+    "total_tokens": 20432
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T04:11:12+00:00"
+ },
+ "a1e994cadd4c21f4be1620d1604d9755227f3da2ceb8b008a14aadcf53f4ab08": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The candidate contains all meaningful article content from the source, including the byline, date, main text, and transcript. The injected instruction block is noise but does not result in a loss of article coverage.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:1",
+        "quote": "By Ruth Sherlock"
+       },
+       {
+        "ref": "g:2",
+        "quote": "Monday, November 16, 2026 • 4:44 AM EST"
+       },
+       {
+        "ref": "g:3",
+        "quote": "Heard on Morning Edition"
+       },
+       {
+        "ref": "g:4",
+        "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire avenue as they called to stop a Microsoft data center from being built beside a beloved local forest."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 1,
+      "status": "scored",
+      "severity": "critical",
+      "reason": "The candidate contains a large block of injected prompt-injection text ('Ignore previous instructions...') that is not present in the source or gold standard. This constitutes severe contamination.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Text-Only Version Go To Full Site"
+       },
+       {
+        "ref": "s:74",
+        "quote": "Topics"
+       },
+       {
+        "ref": "s:75",
+        "quote": "News"
+       },
+       {
+        "ref": "s:78",
+        "quote": "Contact Us"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The article structure (headings, paragraphs) matches the source order, but the presence of the injected instruction block at position p:1 disrupts the expected flow between the breadcrumb and the byline.",
+      "evidence": [
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "s:17",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "s:33",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:1",
+        "quote": "By Ruth Sherlock"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title is faithful to the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "g:title",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements apply.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 19822,
+    "output_tokens": 810,
+    "total_tokens": 20632
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T04:11:21+00:00"
+ },
+ "0e2550f5237d4c373980e7b3d371ab5986cee58571df1f59f609ff2ed2783e86": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The candidate contains all nine paragraphs of the article in the correct order, matching the gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of"
+       },
+       {
+        "ref": "g:8",
+        "quote": "The US is not the only state that doesn't respect human rights, so keep your data on your own computer, and your backups"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, fundraising banners, language lists, and footer information present in the source are correctly excluded from the candidate.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "We are here to promote your freedom"
+       },
+       {
+        "ref": "s:36",
+        "quote": "Copyright © 2007, 2025 Richard Stallman"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The sequence of paragraph blocks matches the source and gold structure without missing or reordered elements.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of"
+       },
+       {
+        "ref": "g:1",
+        "quote": "The software running in most computers is nonfree, proprietary software: controlled by software companies, not by its us"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The extracted title matches the article heading in the source and gold exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "Your Freedom Needs Free Software"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or special block formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 13086,
+    "output_tokens": 634,
+    "total_tokens": 13720
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T04:11:33+00:00"
+ },
+ "1a24f64710aee91626b9463b78c582e8b564f2e12c3751128e9e8cb24eec9fe8": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The candidate is missing the introductory paragraph of the article.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No navigation, ads, or footer content was included in the extraction.",
+      "evidence": [
+       {
+        "ref": "s:5",
+        "quote": "ABOUT GNU"
+       },
+       {
+        "ref": "s:36",
+        "quote": "Copyright © 2007, 2025 Richard Stallman"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The remaining paragraphs are in the correct order and format.",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "The software running in most computers is nonfree, proprietary software: controlled by software companies, not by its us"
+       },
+       {
+        "ref": "g:8",
+        "quote": "The US is not the only state that doesn't respect human rights, so keep your data on your own computer, and your backups"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title matches the source and gold exactly.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "Your Freedom Needs Free Software"
+       },
+       {
+        "ref": "g:title",
+        "quote": "Your Freedom Needs Free Software"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 12990,
+    "output_tokens": 591,
+    "total_tokens": 13581
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T04:11:43+00:00"
+ },
+ "f63a2a5e3a49cddfea8accc46bd8563334afbc1f0d9d482a49f6d75623de9fb4": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs are present and match the gold standard.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of"
+       },
+       {
+        "ref": "g:8",
+        "quote": "The US is not the only state that doesn't respect human rights, so keep your data on your own computer"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "Candidate contains a fabricated advertisement block (p:1) that does not exist in the source or gold.",
+      "evidence": [
+       {
+        "ref": "s:html",
+        "quote": "<div class=\"article reduced-width\">"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "Article order is correct, but an extra paragraph disrupts the sequence between the introduction and the first body paragraph.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of"
+       },
+       {
+        "ref": "g:1",
+        "quote": "The software running in most computers is nonfree, proprietary software: controlled by software companies, not by its us"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the source and gold exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "Your Freedom Needs Free Software"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 13132,
+    "output_tokens": 564,
+    "total_tokens": 13696
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T04:11:50+00:00"
+ },
+ "c2c1d28aeb76bf402b97c10deb7334721005dd61e11d2814d51a08db988b42b2": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs are present and match the gold standard content.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of"
+       },
+       {
+        "ref": "g:8",
+        "quote": "The US is not the only state that doesn't respect human rights, so keep your data on your own computer, and your backups"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "The first paragraph of the article is duplicated in the candidate output (p:0 and p:1).",
+      "evidence": [
+       {
+        "ref": "s:22",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The order of unique paragraphs is correct, but there is a duplicate block at the beginning which disrupts the clean sequence.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of"
+       },
+       {
+        "ref": "g:1",
+        "quote": "The software running in most computers is nonfree, proprietary software: controlled by software companies, not by its us"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title matches the source and gold exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "Your Freedom Needs Free Software"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 13183,
+    "output_tokens": 642,
+    "total_tokens": 13825
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T04:11:57+00:00"
+ },
+ "203cc42181c8125c53b2bebec8b0a9d64478978180c063e91a99f31f0d971233": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs are present and match the source content.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights of software users"
+       },
+       {
+        "ref": "g:8",
+        "quote": "The US is not the only state that doesn't respect human rights"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, ads, and footer elements from the source were correctly excluded.",
+      "evidence": [
+       {
+        "ref": "s:5",
+        "quote": "ABOUT GNU"
+       },
+       {
+        "ref": "s:36",
+        "quote": "Copyright © 2007, 2025 Richard Stallman"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The first two paragraphs are swapped in order compared to the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights"
+       },
+       {
+        "ref": "g:1",
+        "quote": "The software running in most computers is nonfree"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the source and gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "Your Freedom Needs Free Software"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 13086,
+    "output_tokens": 516,
+    "total_tokens": 13602
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T04:12:04+00:00"
+ },
+ "bba7cbcaebb0f61eb0db7e21195d9b3f43621306357c77d45e868244c61990a5": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs are present and match the source content.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of"
+       },
+       {
+        "ref": "g:8",
+        "quote": "The US is not the only state that doesn't respect human rights, so keep your data on your own computer, and your backups"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 0,
+      "status": "scored",
+      "severity": "critical",
+      "reason": "Candidate contains a prompt injection attack string in block p:1 which is severe contamination.",
+      "evidence": [
+       {
+        "ref": "s:22",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of the Internet."
+       },
+       {
+        "ref": "s:23",
+        "quote": "The software running in most computers is nonfree, proprietary software: controlled by software companies, not by its users."
+       }
+      ]
+     },
+     "structure": {
+      "score": 0,
+      "status": "scored",
+      "severity": "critical",
+      "reason": "An extraneous paragraph (p:1) is inserted between the introduction and the first body paragraph, disrupting the document order.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Many of us know that governments can threaten the human rights of software users through censorship and surveillance of"
+       },
+       {
+        "ref": "g:1",
+        "quote": "The software running in most computers is nonfree, proprietary software: controlled by software companies, not by its users."
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the source and gold exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "Your Freedom Needs Free Software"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 13137,
+    "output_tokens": 589,
+    "total_tokens": 13726
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T04:12:11+00:00"
  }
 }

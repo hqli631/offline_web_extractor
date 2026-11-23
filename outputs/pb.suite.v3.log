@@ -1,0 +1,942 @@
+test_network_provider_rejects_replay_and_replay_rejects_model (test_agent_cli.AgentCliTests.test_network_provider_rejects_replay_and_replay_rejects_model) ... ok
+test_qwen_and_ccswitch_accept_explicit_model (test_agent_cli.AgentCliTests.test_qwen_and_ccswitch_accept_explicit_model) ... ok
+test_qwen_uses_requested_default_and_preserves_model_trace (test_agent_cli.AgentCliTests.test_qwen_uses_requested_default_and_preserves_model_trace) ... ok
+test_fixed_rule_scores_independent_test_pages (test_agent_evaluation.AgentEvaluationTests.test_fixed_rule_scores_independent_test_pages) ... ok
+test_manifest_has_disjoint_reference_and_test_splits (test_agent_evaluation.AgentEvaluationTests.test_manifest_has_disjoint_reference_and_test_splits) ... ok
+test_manifest_rejects_cross_split_duplicate_paths_or_hashes (test_agent_evaluation.AgentEvaluationTests.test_manifest_rejects_cross_split_duplicate_paths_or_hashes) ... ok
+test_no_repair_is_explicitly_distinct (test_agent_evaluation.AgentEvaluationTests.test_no_repair_is_explicitly_distinct) ... ok
+test_repair_agent_never_receives_test_pages_and_scores_after_trace (test_agent_evaluation.AgentEvaluationTests.test_repair_agent_never_receives_test_pages_and_scores_after_trace) ... ok
+test_structure_comparison_preserves_heading_and_footnote_fields (test_agent_evaluation.AgentEvaluationTests.test_structure_comparison_preserves_heading_and_footnote_fields) ... ok
+test_test_html_and_gold_are_read_only_after_generation_returns (test_agent_evaluation.AgentEvaluationTests.test_test_html_and_gold_are_read_only_after_generation_returns) ... ok
+test_exclusions_are_validated_by_node_identity (test_agent_rules.AgentRuleTests.test_exclusions_are_validated_by_node_identity) ... ok
+test_strict_schema_and_duplicate_keys (test_agent_rules.AgentRuleTests.test_strict_schema_and_duplicate_keys) ... ok
+test_timeout_kills_worker_and_invalid_limits_fail_early (test_agent_rules.AgentRuleTests.test_timeout_kills_worker_and_invalid_limits_fail_early) ... ok
+test_unicode_survives_reparse_without_charset_declaration (test_agent_rules.AgentRuleTests.test_unicode_survives_reparse_without_charset_declaration) ... ok
+test_unique_match_exclusions_preserve_tail_and_identity (test_agent_rules.AgentRuleTests.test_unique_match_exclusions_preserve_tail_and_identity) ... ok
+test_zero_multiple_invalid_and_scalar_matches (test_agent_rules.AgentRuleTests.test_zero_multiple_invalid_and_scalar_matches) ... ok
+test_annotator_mismatch_fails (test_apply_adjudication.CoverageTest.test_annotator_mismatch_fails) ... ok
+test_duplicate_fails (test_apply_adjudication.CoverageTest.test_duplicate_fails) ... ok
+test_duplicate_spec_keys_fail (test_apply_adjudication.CoverageTest.test_duplicate_spec_keys_fail) ... ok
+test_empty_default_note_fails (test_apply_adjudication.CoverageTest.test_empty_default_note_fails) ... ok
+test_missing_case_fails (test_apply_adjudication.CoverageTest.test_missing_case_fails) ... ok
+test_output_exists_fails (test_apply_adjudication.CoverageTest.test_output_exists_fails) ... Output exists; choose a new directory.
+ok
+test_unknown_blind_code_fails (test_apply_adjudication.CoverageTest.test_unknown_blind_code_fails) ... ok
+test_flag_on_non_injection_fails (test_apply_adjudication.InjectionTest.test_flag_on_non_injection_fails) ... ok
+test_missing_flag_fails (test_apply_adjudication.InjectionTest.test_missing_flag_fails) ... ok
+test_non_bool_flag_fails (test_apply_adjudication.InjectionTest.test_non_bool_flag_fails) ... ok
+test_true_flag_ok (test_apply_adjudication.InjectionTest.test_true_flag_ok) ... ok
+test_case_id_identifier_ok (test_apply_adjudication.KeepAllTest.test_case_id_identifier_ok) ... ok
+test_keep_all_confirms_and_preserves (test_apply_adjudication.KeepAllTest.test_keep_all_confirms_and_preserves) ... ok
+test_bad_score_status_combo_fails (test_apply_adjudication.ReviseTest.test_bad_score_status_combo_fails) ... ok
+test_keep_with_changes_fails (test_apply_adjudication.ReviseTest.test_keep_with_changes_fails) ... ok
+test_protected_field_fails (test_apply_adjudication.ReviseTest.test_protected_field_fails) ... ok
+test_revise_applies_named_fields_only (test_apply_adjudication.ReviseTest.test_revise_applies_named_fields_only) ... ok
+test_revise_without_changes_fails (test_apply_adjudication.ReviseTest.test_revise_without_changes_fails) ... ok
+test_revise_without_note_fails (test_apply_adjudication.ReviseTest.test_revise_without_note_fails) ... ok
+test_source_only_pass_fails (test_apply_adjudication.ReviseTest.test_source_only_pass_fails) ... ok
+test_unknown_dimension_fails (test_apply_adjudication.ReviseTest.test_unknown_dimension_fails) ... ok
+test_absent_structure_annotation_is_not_scored_as_success (test_batch_evaluation.BatchEvaluationTests.test_absent_structure_annotation_is_not_scored_as_success) ... ok
+test_batch_resolves_manifest_paths_and_isolates_missing_and_changed_snapshots (test_batch_evaluation.BatchEvaluationTests.test_batch_resolves_manifest_paths_and_isolates_missing_and_changed_snapshots) ... ok
+test_extra_list_text_is_noise_even_when_legacy_paragraphs_match (test_batch_evaluation.BatchEvaluationTests.test_extra_list_text_is_noise_even_when_legacy_paragraphs_match) ... ok
+test_repeated_predicted_blocks_cannot_inflate_recall (test_batch_evaluation.BatchEvaluationTests.test_repeated_predicted_blocks_cannot_inflate_recall) ... ok
+test_bootstrap_all_match_boundary (test_bootstrap_stats.BootstrapTests.test_bootstrap_all_match_boundary) ... ok
+test_bootstrap_deterministic (test_bootstrap_stats.BootstrapTests.test_bootstrap_deterministic) ... ok
+test_decision_match_rate (test_bootstrap_stats.BootstrapTests.test_decision_match_rate) ... ok
+test_dev_only_filter (test_bootstrap_stats.BootstrapTests.test_dev_only_filter) ... ok
+test_kappa_perfect (test_bootstrap_stats.BootstrapTests.test_kappa_perfect) ... ok
+test_mcnemar_known (test_bootstrap_stats.BootstrapTests.test_mcnemar_known) ... ok
+test_paired_mcnemar (test_bootstrap_stats.BootstrapTests.test_paired_mcnemar) ... ok
+test_reject_rate (test_bootstrap_stats.BootstrapTests.test_reject_rate) ... ok
+test_ad_substring_is_not_noise_token (test_boundaries.BoundaryTests.test_ad_substring_is_not_noise_token) ... ok
+test_character_counts_respect_multiplicity (test_boundaries.BoundaryTests.test_character_counts_respect_multiplicity) ... ok
+test_empty_input (test_boundaries.BoundaryTests.test_empty_input) ... ok
+test_manual_xpath_can_select_unrecognized_layout (test_boundaries.BoundaryTests.test_manual_xpath_can_select_unrecognized_layout) ... ok
+test_non_paragraph_article_has_explicit_status (test_boundaries.BoundaryTests.test_non_paragraph_article_has_explicit_status) ... ok
+test_removed_ad_keeps_following_text (test_boundaries.BoundaryTests.test_removed_ad_keeps_following_text) ... ok
+test_xpath_must_select_elements (test_boundaries.BoundaryTests.test_xpath_must_select_elements) ... ok
+test_breadcrumb_token_removal_keeps_ordinary_lists_and_similar_names (test_breadcrumb_heading.BreadcrumbHeadingTests.test_breadcrumb_token_removal_keeps_ordinary_lists_and_similar_names) ... ok
+test_h2_keeps_inline_title_text_and_order_but_drops_permalink (test_breadcrumb_heading.BreadcrumbHeadingTests.test_h2_keeps_inline_title_text_and_order_but_drops_permalink) ... ok
+test_iana_snapshot_matches_independently_annotated_structure (test_breadcrumb_heading.BreadcrumbHeadingTests.test_iana_snapshot_matches_independently_annotated_structure) ... ok
+test_removed_breadcrumb_keeps_following_tail_text (test_breadcrumb_heading.BreadcrumbHeadingTests.test_removed_breadcrumb_keeps_following_tail_text) ... ok
+test_all_with_gold (test_build_p2_calibration.BuildP2Tests.test_all_with_gold) ... ok
+test_builds_18_cases_dry_run (test_build_p2_calibration.BuildP2Tests.test_builds_18_cases_dry_run) ... ok
+test_case_ids_unique_no_collision (test_build_p2_calibration.BuildP2Tests.test_case_ids_unique_no_collision) ... ok
+test_freeze_entries_deterministic (test_build_p2_calibration.BuildP2Tests.test_freeze_entries_deterministic) ... ok
+test_frozen_test_v2_templates (test_build_p2_calibration.BuildP2Tests.test_frozen_test_v2_templates) ... ok
+test_isolation (test_build_p2_calibration.BuildP2Tests.test_isolation) ... ok
+test_splits (test_build_p2_calibration.BuildP2Tests.test_splits) ... ok
+test_build_kit_no_leak (test_build_p2_review_kit.KitTests.test_build_kit_no_leak) ... ok
+test_case_row_with_gold (test_build_p2_review_kit.KitTests.test_case_row_with_gold) ... ok
+test_refuse_overwrite (test_build_p2_review_kit.KitTests.test_refuse_overwrite) ... Output exists; choose a new directory.
+ok
+test_batch_config_frozen (test_build_p3_calibration.FreezeV7Tests.test_batch_config_frozen) ... ok
+test_blind_kit_exists (test_build_p3_calibration.FreezeV7Tests.test_blind_kit_exists) ... ok
+test_case_hashes (test_build_p3_calibration.FreezeV7Tests.test_case_hashes) ... ok
+test_file_hashes (test_build_p3_calibration.FreezeV7Tests.test_file_hashes) ... ok
+test_isolation_from_prior_manifests (test_build_p3_calibration.FreezeV7Tests.test_isolation_from_prior_manifests) ... ok
+test_manifest_matches_freeze (test_build_p3_calibration.FreezeV7Tests.test_manifest_matches_freeze) ... ok
+test_no_truncation (test_build_p3_calibration.FreezeV7Tests.test_no_truncation) ... ok
+test_source_provenance (test_build_p3_calibration.FreezeV7Tests.test_source_provenance) ... ok
+test_two_templates_six_variants (test_build_p3_calibration.FreezeV7Tests.test_two_templates_six_variants) ... ok
+test_version_and_counts (test_build_p3_calibration.FreezeV7Tests.test_version_and_counts) ... ok
+test_injection_absent_noted (test_build_p3_review_kit.EvidenceTests.test_injection_absent_noted) ... ok
+test_injection_evidence_verbatim (test_build_p3_review_kit.EvidenceTests.test_injection_evidence_verbatim) ... ok
+test_missing_and_duplicate_and_reorder (test_build_p3_review_kit.EvidenceTests.test_missing_and_duplicate_and_reorder) ... ok
+test_packet_contains_key_sections (test_build_p3_review_kit.EvidenceTests.test_packet_contains_key_sections) ... ok
+test_resolve_ref (test_build_p3_review_kit.EvidenceTests.test_resolve_ref) ... ok
+test_decision_mismatch (test_build_p3_review_kit.SelectionTests.test_decision_mismatch) ... ok
+test_dim_gap_ge2 (test_build_p3_review_kit.SelectionTests.test_dim_gap_ge2) ... ok
+test_judge_missed_defect (test_build_p3_review_kit.SelectionTests.test_judge_missed_defect) ... ok
+test_no_divergence (test_build_p3_review_kit.SelectionTests.test_no_divergence) ... ok
+test_rejected_case_selected (test_build_p3_review_kit.SelectionTests.test_rejected_case_selected) ... ok
+test_a02_title_evidence (test_build_pa_adjudication_kit.BuildPaKitTests.test_a02_title_evidence) ... ok
+test_a05_severity_conflict (test_build_pa_adjudication_kit.BuildPaKitTests.test_a05_severity_conflict) ... ok
+test_build_structure (test_build_pa_adjudication_kit.BuildPaKitTests.test_build_structure) ... ok
+test_case_ids_and_codes (test_build_pa_adjudication_kit.BuildPaKitTests.test_case_ids_and_codes) ... ok
+test_manifest_source_hashes (test_build_pa_adjudication_kit.BuildPaKitTests.test_manifest_source_hashes) ... ok
+test_overwrite_refused (test_build_pa_adjudication_kit.BuildPaKitTests.test_overwrite_refused) ... Output exists; choose a new directory.
+ok
+test_sealed_findings_integrity (test_build_pa_adjudication_kit.BuildPaKitTests.test_sealed_findings_integrity) ... ok
+test_a02_not_in_dev_pool (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_a02_not_in_dev_pool) ... ok
+test_determinism (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_determinism) ... ok
+test_findings_byte_drift_fails_closed (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_findings_byte_drift_fails_closed) ... ok
+test_gate_integrity_compat (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_gate_integrity_compat) ... ok
+test_happy_path_corrections (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_happy_path_corrections) ... ok
+test_human_correct_cases_unchanged (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_human_correct_cases_unchanged) ... ok
+test_human_status_note_preserved (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_human_status_note_preserved) ... ok
+test_main_cli_success (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_main_cli_success) ... ok
+test_missing_gold_case_fails_closed (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_missing_gold_case_fails_closed) ... ok
+test_non_dev_excluded (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_non_dev_excluded) ... ok
+test_overwrite_refusal (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_overwrite_refusal) ... output exists; choose a new directory
+ok
+test_signature_and_meta_preserved (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_signature_and_meta_preserved) ... ok
+test_unexpected_judge_correct_fails_closed (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_unexpected_judge_correct_fails_closed) ... ok
+test_upstream_chain_verified (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_upstream_chain_verified) ... ok
+test_verdict_drift_fails_closed (test_build_pb_gate_inputs.BuildPBGateInputsTest.test_verdict_drift_fails_closed) ... ok
+test_build_all_schema_counts_and_manifest_valid (test_calibration_set.CalibrationTests.test_build_all_schema_counts_and_manifest_valid) ... ok
+test_clean_is_identity_and_deterministic (test_calibration_set.CalibrationTests.test_clean_is_identity_and_deterministic) ... ok
+test_code_indent_changes_whitespace_only (test_calibration_set.CalibrationTests.test_code_indent_changes_whitespace_only) ... ok
+test_duplicate_and_reorder (test_calibration_set.CalibrationTests.test_duplicate_and_reorder) ... ok
+test_freeze_file_entries_hash_serialized_bytes (test_calibration_set.CalibrationTests.test_freeze_file_entries_hash_serialized_bytes) ... ok
+test_missing_paragraph_removes_first_long_paragraph (test_calibration_set.CalibrationTests.test_missing_paragraph_removes_first_long_paragraph) ... ok
+test_noise_and_injection_insert_untrusted_block (test_calibration_set.CalibrationTests.test_noise_and_injection_insert_untrusted_block) ... ok
+test_silver_source_only_provisional_and_defect (test_calibration_set.CalibrationTests.test_silver_source_only_provisional_and_defect) ... ok
+test_silver_with_gold_clean_pass_and_defect_fail (test_calibration_set.CalibrationTests.test_silver_with_gold_clean_pass_and_defect_fail) ... ok
+test_split_isolation_rejects_leakage (test_calibration_set.CalibrationTests.test_split_isolation_rejects_leakage) ... ok
+test_title_number_strips_prefix (test_calibration_set.CalibrationTests.test_title_number_strips_prefix) ... ok
+test_empty_pool_fails (test_check_p3_dev_guard.GuardTests.test_empty_pool_fails) ... ok
+test_fail_false_alarm_boundary (test_check_p3_dev_guard.GuardTests.test_fail_false_alarm_boundary) ... ok
+test_fail_reject (test_check_p3_dev_guard.GuardTests.test_fail_reject) ... ok
+test_fail_severe_miss (test_check_p3_dev_guard.GuardTests.test_fail_severe_miss) ... ok
+test_pass_clean (test_check_p3_dev_guard.GuardTests.test_pass_clean) ... ok
+test_code_is_text_and_is_never_executed (test_code_blocks.CodeBlockTests.test_code_is_text_and_is_never_executed) ... ok
+test_code_without_final_newline_is_not_modified_in_block (test_code_blocks.CodeBlockTests.test_code_without_final_newline_is_not_modified_in_block) ... ok
+test_empty_or_whitespace_only_pre_does_not_create_a_code_block (test_code_blocks.CodeBlockTests.test_empty_or_whitespace_only_pre_does_not_create_a_code_block) ... ok
+test_fence_is_longer_than_any_run_of_backticks_in_code (test_code_blocks.CodeBlockTests.test_fence_is_longer_than_any_run_of_backticks_in_code) ... ok
+test_highlighted_code_retains_whitespace_and_does_not_capture_tail (test_code_blocks.CodeBlockTests.test_highlighted_code_retains_whitespace_and_does_not_capture_tail) ... ok
+test_saved_interpreter_page_keeps_all_six_pre_blocks (test_code_blocks.CodeBlockTests.test_saved_interpreter_page_keeps_all_six_pre_blocks) ... ok
+test_bootstrap_deterministic (test_compute_iaa.IaaTests.test_bootstrap_deterministic) ... ok
+test_disagreement (test_compute_iaa.IaaTests.test_disagreement) ... ok
+test_pairs_align_by_blind_code (test_compute_iaa.IaaTests.test_pairs_align_by_blind_code) ... ok
+test_pairs_align_by_case_id (test_compute_iaa.IaaTests.test_pairs_align_by_case_id) ... ok
+test_perfect_agreement (test_compute_iaa.IaaTests.test_perfect_agreement) ... ok
+test_ancestor_article_title_wins_over_first_body_section (test_container_semantics.ContainerSemanticsTests.test_ancestor_article_title_wins_over_first_body_section) ... ok
+test_body_inside_header_does_not_duplicate_itself_as_lead (test_container_semantics.ContainerSemanticsTests.test_body_inside_header_does_not_duplicate_itself_as_lead) ... ok
+test_explicit_body_retains_header_lead_and_discards_outer_metadata (test_container_semantics.ContainerSemanticsTests.test_explicit_body_retains_header_lead_and_discards_outer_metadata) ... ok
+test_later_h2_is_not_promoted_to_title (test_container_semantics.ContainerSemanticsTests.test_later_h2_is_not_promoted_to_title) ... ok
+test_legacy_main_uses_local_h2_and_does_not_repeat_it (test_container_semantics.ContainerSemanticsTests.test_legacy_main_uses_local_h2_and_does_not_repeat_it) ... ok
+test_orphan_list_aside_is_content_but_complementary_and_toc_are_noise (test_container_semantics.ContainerSemanticsTests.test_orphan_list_aside_is_content_but_complementary_and_toc_are_noise) ... ok
+test_removed_ad_heading_cannot_shift_title_deletion (test_container_semantics.ContainerSemanticsTests.test_removed_ad_heading_cannot_shift_title_deletion) ... ok
+test_json_preserves_block_metadata (test_content_blocks.ContentBlockTests.test_json_preserves_block_metadata) ... ok
+test_list_with_no_p_is_still_nonempty_content (test_content_blocks.ContentBlockTests.test_list_with_no_p_is_still_nonempty_content) ... ok
+test_nested_list_does_not_duplicate_descendant_text_or_reorder_tail (test_content_blocks.ContentBlockTests.test_nested_list_does_not_duplicate_descendant_text_or_reorder_tail) ... ok
+test_ordered_list_honors_start_and_item_value (test_content_blocks.ContentBlockTests.test_ordered_list_honors_start_and_item_value) ... ok
+test_p_after_nested_list_stays_in_its_parent_item (test_content_blocks.ContentBlockTests.test_p_after_nested_list_stays_in_its_parent_item) ... ok
+test_paragraphs_and_list_items_keep_document_order_without_duplication (test_content_blocks.ContentBlockTests.test_paragraphs_and_list_items_keep_document_order_without_duplication) ... ok
+test_saved_chinese_document_has_three_list_items_in_original_order (test_content_blocks.ContentBlockTests.test_saved_chinese_document_has_three_list_items_in_original_order) ... ok
+test_invalid_actions (test_dom_rl.DOMRLTests.test_invalid_actions) ... ok
+test_reward_hacking_and_correction (test_dom_rl.DOMRLTests.test_reward_hacking_and_correction) ... ok
+test_seeded_experiment (test_dom_rl.DOMRLTests.test_seeded_experiment) ... ok
+test_two_step_actual_execution (test_dom_rl.DOMRLTests.test_two_step_actual_execution) ... ok
+test_connected_components_flag_transitive_false_similarity (test_dom_similarity.DomSimilarityTests.test_connected_components_flag_transitive_false_similarity) ... ok
+test_manifest_rejects_validation_and_invalid_threshold (test_dom_similarity.DomSimilarityTests.test_manifest_rejects_validation_and_invalid_threshold) ... ok
+test_manifest_reports_false_merges_and_input_errors (test_dom_similarity.DomSimilarityTests.test_manifest_reports_false_merges_and_input_errors) ... ok
+test_manual_same_template_can_be_split_by_wrapper_change (test_dom_similarity.DomSimilarityTests.test_manual_same_template_can_be_split_by_wrapper_change) ... ok
+test_modes_validate_on_empty_source_and_expose_fixed_settings (test_dom_similarity.DomSimilarityTests.test_modes_validate_on_empty_source_and_expose_fixed_settings) ... ok
+test_presence_and_cap_remove_different_amounts_of_length_variation (test_dom_similarity.DomSimilarityTests.test_presence_and_cap_remove_different_amounts_of_length_variation) ... ok
+test_repeated_path_multiplicity_changes_score (test_dom_similarity.DomSimilarityTests.test_repeated_path_multiplicity_changes_score) ... ok
+test_same_prose_in_different_wrappers_has_lower_similarity (test_dom_similarity.DomSimilarityTests.test_same_prose_in_different_wrappers_has_lower_similarity) ... ok
+test_semantic_mode_reads_only_bounded_roles_and_keeps_tag_features (test_dom_similarity.DomSimilarityTests.test_semantic_mode_reads_only_bounded_roles_and_keeps_tag_features) ... ok
+test_suffix_mode_preserves_local_paths_beyond_outer_wrappers (test_dom_similarity.DomSimilarityTests.test_suffix_mode_preserves_local_paths_beyond_outer_wrappers) ... ok
+test_text_attributes_urls_and_hidden_script_do_not_define_structure (test_dom_similarity.DomSimilarityTests.test_text_attributes_urls_and_hidden_script_do_not_define_structure) ... ok
+test_extracts_nested_text_and_removes_noise (test_extractor.ExtractorTests.test_extracts_nested_text_and_removes_noise) ... ok
+test_reports_no_candidate (test_extractor.ExtractorTests.test_reports_no_candidate) ... ok
+test_heading_levels_and_inline_text_keep_document_order (test_heading_footnotes.HeadingFootnoteTests.test_heading_levels_and_inline_text_keep_document_order) ... ok
+test_role_and_class_token_are_semantic_signals_not_substrings (test_heading_footnotes.HeadingFootnoteTests.test_role_and_class_token_are_semantic_signals_not_substrings) ... ok
+test_saved_interpreter_page_preserves_heading_hierarchy_and_footnote (test_heading_footnotes.HeadingFootnoteTests.test_saved_interpreter_page_preserves_heading_hierarchy_and_footnote) ... ok
+test_semantic_footnote_wrapper_is_kept_without_duplicate_paragraph (test_heading_footnotes.HeadingFootnoteTests.test_semantic_footnote_wrapper_is_kept_without_duplicate_paragraph) ... ok
+test_blind_packets_do_not_leak (test_human_review_kit.BuildHumanReviewKitTest.test_blind_packets_do_not_leak) ... ok
+test_deterministic_bytes (test_human_review_kit.BuildHumanReviewKitTest.test_deterministic_bytes) ... ok
+test_freeze_tamper_rejected (test_human_review_kit.BuildHumanReviewKitTest.test_freeze_tamper_rejected) ... ok
+test_overwrite_refused (test_human_review_kit.BuildHumanReviewKitTest.test_overwrite_refused) ... Output exists; choose a new directory.
+ok
+test_template_coverage (test_human_review_kit.BuildHumanReviewKitTest.test_template_coverage) ... ok
+test_blind_flow (test_ingest_human_labels.BlindFinalFlowTest.test_blind_flow) ... ok
+test_blind_validation_failure_creates_nothing (test_ingest_human_labels.BlindFinalFlowTest.test_blind_validation_failure_creates_nothing) ... ok
+test_final_flow (test_ingest_human_labels.BlindFinalFlowTest.test_final_flow) ... ok
+test_final_unconfirmed_rejected (test_ingest_human_labels.BlindFinalFlowTest.test_final_unconfirmed_rejected) ... ok
+test_empty (test_ingest_human_labels.CohenKappaTest.test_empty) ... ok
+test_known_value (test_ingest_human_labels.CohenKappaTest.test_known_value) ... ok
+test_perfect (test_ingest_human_labels.CohenKappaTest.test_perfect) ... ok
+test_single_category (test_ingest_human_labels.CohenKappaTest.test_single_category) ... ok
+test_bad_decision (test_ingest_human_labels.ValidationTest.test_bad_decision) ... ok
+test_final_requires_confirmed (test_ingest_human_labels.ValidationTest.test_final_requires_confirmed) ... ok
+test_injection_field_required (test_ingest_human_labels.ValidationTest.test_injection_field_required) ... ok
+test_missing_case (test_ingest_human_labels.ValidationTest.test_missing_case) ... ok
+test_score_range_and_type (test_ingest_human_labels.ValidationTest.test_score_range_and_type) ... ok
+test_score_status_consistency (test_ingest_human_labels.ValidationTest.test_score_status_consistency) ... ok
+test_source_only_pass_forbidden (test_ingest_human_labels.ValidationTest.test_source_only_pass_forbidden) ... ok
+test_valid_blind_doc (test_ingest_human_labels.ValidationTest.test_valid_blind_doc) ... ok
+test_bad_annotator_and_date (test_ingest_p2_human_labels.ValidateLabelsTests.test_bad_annotator_and_date) ... ok
+test_decision_inconsistent_with_severe (test_ingest_p2_human_labels.ValidateLabelsTests.test_decision_inconsistent_with_severe) ... ok
+test_format_na_severity_critical_rejected (test_ingest_p2_human_labels.ValidateLabelsTests.test_format_na_severity_critical_rejected) ... ok
+test_injection_complied_required (test_ingest_p2_human_labels.ValidateLabelsTests.test_injection_complied_required) ... ok
+test_missing_and_unknown_entries (test_ingest_p2_human_labels.ValidateLabelsTests.test_missing_and_unknown_entries) ... ok
+test_null_severity_rejected (test_ingest_p2_human_labels.ValidateLabelsTests.test_null_severity_rejected) ... ok
+test_score3_severity_none_rejected (test_ingest_p2_human_labels.ValidateLabelsTests.test_score3_severity_none_rejected) ... ok
+test_score4_severity_minor_rejected (test_ingest_p2_human_labels.ValidateLabelsTests.test_score4_severity_minor_rejected) ... ok
+test_source_only_pass_rejected (test_ingest_p2_human_labels.ValidateLabelsTests.test_source_only_pass_rejected) ... ok
+test_truncated_all_scored_none_expects_uncertain (test_ingest_p2_human_labels.ValidateLabelsTests.test_truncated_all_scored_none_expects_uncertain) ... ok
+test_truncated_pass_rejected (test_ingest_p2_human_labels.ValidateLabelsTests.test_truncated_pass_rejected) ... ok
+test_valid_truncated_uncertain (test_ingest_p2_human_labels.ValidateLabelsTests.test_valid_truncated_uncertain) ... ok
+test_valid_untruncated_pass (test_ingest_p2_human_labels.ValidateLabelsTests.test_valid_untruncated_pass) ... ok
+test_category_of (test_ingest_p3_findings.SummaryTests.test_category_of) ... ok
+test_no_signal_when_all_clear (test_ingest_p3_findings.SummaryTests.test_no_signal_when_all_clear) ... ok
+test_summary_and_amendment_signal (test_ingest_p3_findings.SummaryTests.test_summary_and_amendment_signal) ... ok
+test_bad_verdict_rejected (test_ingest_p3_findings.ValidateTests.test_bad_verdict_rejected) ... ok
+test_coverage_and_altered_categories (test_ingest_p3_findings.ValidateTests.test_coverage_and_altered_categories) ... ok
+test_discipline_ack_required (test_ingest_p3_findings.ValidateTests.test_discipline_ack_required) ... ok
+test_null_verdict_rejected (test_ingest_p3_findings.ValidateTests.test_null_verdict_rejected) ... ok
+test_reviewer_date_required (test_ingest_p3_findings.ValidateTests.test_reviewer_date_required) ... ok
+test_valid (test_ingest_p3_findings.ValidateTests.test_valid) ... ok
+test_adjacent_paragraphs_have_a_blank_line (test_markdown_output.MarkdownOutputTests.test_adjacent_paragraphs_have_a_blank_line) ... ok
+test_list_is_separated_from_surrounding_paragraphs (test_markdown_output.MarkdownOutputTests.test_list_is_separated_from_surrounding_paragraphs) ... ok
+test_markdown_title_is_a_heading_and_text_title_stays_plain (test_markdown_output.MarkdownOutputTests.test_markdown_title_is_a_heading_and_text_title_stays_plain) ... ok
+test_missing_input_reports_usage_error_without_traceback (test_markdown_output.MarkdownOutputTests.test_missing_input_reports_usage_error_without_traceback) ... ok
+test_feedback_clean_has_no_defects (test_node5_loop.AdapterTests.test_feedback_clean_has_no_defects) ... ok
+test_feedback_extracts_defects_and_caps_evidence (test_node5_loop.AdapterTests.test_feedback_extracts_defects_and_caps_evidence) ... ok
+test_feedback_refuses_rejected (test_node5_loop.AdapterTests.test_feedback_refuses_rejected) ... ok
+test_feedback_refuses_with_gold (test_node5_loop.AdapterTests.test_feedback_refuses_with_gold) ... ok
+test_audit_clean_passes (test_node5_loop.AuditTests.test_audit_clean_passes) ... ok
+test_audit_forbidden_nested_key_fails (test_node5_loop.AuditTests.test_audit_forbidden_nested_key_fails) ... ok
+test_audit_gold_mention_in_feedback_fails (test_node5_loop.AuditTests.test_audit_gold_mention_in_feedback_fails) ... ok
+test_audit_non_source_only_critic_fails (test_node5_loop.AuditTests.test_audit_non_source_only_critic_fails) ... ok
+test_audit_unexpected_key_fails (test_node5_loop.AuditTests.test_audit_unexpected_key_fails) ... ok
+test_guard_ignores_bad_usage (test_node5_loop.BudgetTests.test_guard_ignores_bad_usage) ... ok
+test_guard_reserve_and_skip (test_node5_loop.BudgetTests.test_guard_reserve_and_skip) ... ok
+test_freeze_overwrite_refused (test_node5_loop.CliTests.test_freeze_overwrite_refused) ... Refusing to overwrite existing freeze.
+ok
+test_model_drift_refused (test_node5_loop.CliTests.test_model_drift_refused) ... Model drift: freeze pins qwen3.8-27b
+ok
+test_run_missing_freeze_clean_error (test_node5_loop.CliTests.test_run_missing_freeze_clean_error) ... Freeze not found; run --freeze first.
+ok
+test_run_output_overwrite_refused (test_node5_loop.CliTests.test_run_output_overwrite_refused) ... Output exists; choose a new filename.
+ok
+test_token_cap_bounds_refused (test_node5_loop.CliTests.test_token_cap_bounds_refused) ... Invalid --token-cap (must be positive and <= freeze cap).
+Invalid --token-cap (must be positive and <= freeze cap).
+ok
+test_freeze_drift_detected (test_node5_loop.FreezeTests.test_freeze_drift_detected) ... ok
+test_freeze_structure_and_clean_check (test_node5_loop.FreezeTests.test_freeze_structure_and_clean_check) ... ok
+test_critic_guided_rule_runs_on_real_executor (test_node5_loop.RealExecutorSmokeTests.test_critic_guided_rule_runs_on_real_executor) ... ok
+test_budget_skip_before_critic (test_node5_loop.RunCaseTests.test_budget_skip_before_critic) ... ok
+test_budget_skip_before_rule (test_node5_loop.RunCaseTests.test_budget_skip_before_rule) ... ok
+test_critic_rejected (test_node5_loop.RunCaseTests.test_critic_rejected) ... ok
+test_no_repair_on_zero_defect_uncertain (test_node5_loop.RunCaseTests.test_no_repair_on_zero_defect_uncertain) ... ok
+test_rejudge_rejected (test_node5_loop.RunCaseTests.test_rejudge_rejected) ... ok
+test_repair_failed (test_node5_loop.RunCaseTests.test_repair_failed) ... ok
+test_repair_path_full (test_node5_loop.RunCaseTests.test_repair_path_full) ... ok
+test_wrapper_injects_and_logs (test_node5_loop.WrapperTests.test_wrapper_injects_and_logs) ... ok
+test_endpoint_and_redirect (test_openai_provider.Tests.test_endpoint_and_redirect) ... ok
+test_invalid_json_not_retried (test_openai_provider.Tests.test_invalid_json_not_retried) ... ok
+test_mapping (test_openai_provider.Tests.test_mapping) ... ok
+test_citation_appendix_constraint (test_p1_5_judge_v12.JudgeV12Tests.test_citation_appendix_constraint) ... ok
+test_default_prompt_deterministic (test_p1_5_judge_v12.JudgeV12Tests.test_default_prompt_deterministic) ... ok
+test_generality_no_case_specific_content (test_p1_5_judge_v12.JudgeV12Tests.test_generality_no_case_specific_content) ... ok
+test_menus_are_appendix_last_key (test_p1_5_judge_v12.JudgeV12Tests.test_menus_are_appendix_last_key) ... ok
+test_menus_preserved_and_validate (test_p1_5_judge_v12.JudgeV12Tests.test_menus_preserved_and_validate) ... ok
+test_run_judge_accepted_v12 (test_p1_5_judge_v12.JudgeV12Tests.test_run_judge_accepted_v12) ... ok
+test_scoring_independence_constraint (test_p1_5_judge_v12.JudgeV12Tests.test_scoring_independence_constraint) ... ok
+test_severity_anchor_reinforcement (test_p1_5_judge_v12.JudgeV12Tests.test_severity_anchor_reinforcement) ... ok
+test_validation_rules_unchanged (test_p1_5_judge_v12.JudgeV12Tests.test_validation_rules_unchanged) ... ok
+test_version_1_2_0 (test_p1_5_judge_v12.JudgeV12Tests.test_version_1_2_0) ... ok
+test_compute_amendment_real (test_p1_judge_v11.AmendmentP1Tests.test_compute_amendment_real) ... ok
+test_dry_run_exit0 (test_p1_judge_v11.AmendmentP1Tests.test_dry_run_exit0) ... ok
+test_label_without_diagnostic (test_p1_judge_v11.AmendmentP1Tests.test_label_without_diagnostic) ... ok
+test_overwrite_refusal (test_p1_judge_v11.AmendmentP1Tests.test_overwrite_refusal) ... Refusing to overwrite existing freeze v3.
+ok
+test_parent_version_guard (test_p1_judge_v11.AmendmentP1Tests.test_parent_version_guard) ... ok
+test_budget_aware_trimming (test_p1_judge_v11.JudgeV11Tests.test_budget_aware_trimming) ... ok
+test_cleanliness_menu_has_source_or_gold (test_p1_judge_v11.JudgeV11Tests.test_cleanliness_menu_has_source_or_gold) ... ok
+test_invalid_perturbation_rejected (test_p1_judge_v11.JudgeV11Tests.test_invalid_perturbation_rejected) ... ok
+test_menu_caps (test_p1_judge_v11.JudgeV11Tests.test_menu_caps) ... ok
+test_menu_item_usable_as_evidence (test_p1_judge_v11.JudgeV11Tests.test_menu_item_usable_as_evidence) ... ok
+test_menu_refs_in_registry_and_items_validate (test_p1_judge_v11.JudgeV11Tests.test_menu_refs_in_registry_and_items_validate) ... ok
+test_menus_present_and_deterministic (test_p1_judge_v11.JudgeV11Tests.test_menus_present_and_deterministic) ... ok
+test_paraphrase_rejected (test_p1_judge_v11.JudgeV11Tests.test_paraphrase_rejected) ... ok
+test_perturbation_default_identical (test_p1_judge_v11.JudgeV11Tests.test_perturbation_default_identical) ... ok
+test_phrasing_variant_keeps_rules (test_p1_judge_v11.JudgeV11Tests.test_phrasing_variant_keeps_rules) ... ok
+test_run_judge_production_accepted (test_p1_judge_v11.JudgeV11Tests.test_run_judge_production_accepted) ... ok
+test_run_judge_records_probe_settings (test_p1_judge_v11.JudgeV11Tests.test_run_judge_records_probe_settings) ... ok
+test_seed_shuffle_registry_intact (test_p1_judge_v11.JudgeV11Tests.test_seed_shuffle_registry_intact) ... ok
+test_suffix_extra_rejected (test_p1_judge_v11.JudgeV11Tests.test_suffix_extra_rejected) ... ok
+test_version_bumped (test_p1_judge_v11.JudgeV11Tests.test_version_bumped) ... ok
+test_whitespace_only_rejected (test_p1_judge_v11.JudgeV11Tests.test_whitespace_only_rejected) ... ok
+test_ws_fold_double_space_accepted (test_p1_judge_v11.JudgeV11Tests.test_ws_fold_double_space_accepted) ... ok
+test_ws_fold_nbsp_accepted (test_p1_judge_v11.JudgeV11Tests.test_ws_fold_nbsp_accepted) ... ok
+test_ws_fold_newline_accepted (test_p1_judge_v11.JudgeV11Tests.test_ws_fold_newline_accepted) ... ok
+test_dry_run_no_calls (test_p1_judge_v11.ProbesP1Tests.test_dry_run_no_calls) ... ok
+test_probe_subset_dev_only (test_p1_judge_v11.ProbesP1Tests.test_probe_subset_dev_only) ... ok
+test_probe_subset_missing_raises (test_p1_judge_v11.ProbesP1Tests.test_probe_subset_missing_raises) ... ok
+test_stability_config_ignore_cache (test_p1_judge_v11.ProbesP1Tests.test_stability_config_ignore_cache) ... ok
+test_probe_cache_separation (test_p1_judge_v11.RunnerP1Tests.test_probe_cache_separation) ... ok
+test_signature_keys_unchanged (test_p1_judge_v11.RunnerP1Tests.test_signature_keys_unchanged) ... ok
+test_split_filter_dev_only (test_p1_judge_v11.RunnerP1Tests.test_split_filter_dev_only) ... ok
+test_split_filter_empty_raises (test_p1_judge_v11.RunnerP1Tests.test_split_filter_empty_raises) ... ok
+test_split_filter_invalid_raises (test_p1_judge_v11.RunnerP1Tests.test_split_filter_invalid_raises) ... ok
+{
+ "error": "validation",
+ "problems": [
+  "spec annotator 'someone-else' differs from labels annotator 'tester'"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B01: duplicate decision"
+ ]
+}
+{"error": "spec_parse", "problems": ["duplicate key 'spec_version'"]}
+{
+ "error": "validation",
+ "problems": [
+  "B01: adjudication note required (keep may fall back to default_keep_note)",
+  "B02: adjudication note required (keep may fall back to default_keep_note)",
+  "B03: adjudication note required (keep may fall back to default_keep_note)",
+  "B04: adjudication note required (keep may fall back to default_keep_note)"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B04: missing decision (every case must be adjudicated)"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "decisions[4]: unknown blind_code 'B99'"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B01: injection_complied only allowed on injection cases"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B04: injection case requires injection_complied true/false"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B04: injection_complied must be true/false"
+ ]
+}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp5e5aqcn7\\out", "confirmed": 4, "kept": 4, "revised": 0, "changed_cases": ["B04"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpre54go7g\\out", "confirmed": 4, "kept": 4, "revised": 0, "changed_cases": ["B04"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp_d03q8uf\\out", "confirmed": 4, "kept": 4, "revised": 0, "changed_cases": ["B04"]}
+{
+ "error": "validation",
+ "problems": [
+  "B02/cleanliness: integer score requires status scored/partial"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B01: keep must not carry changes"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B01: changes field 'overall_note' not allowed (only decision/dimensions)"
+ ]
+}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpkli4_b6o\\out", "confirmed": 4, "kept": 3, "revised": 1, "changed_cases": ["B02", "B04"]}
+{
+ "error": "validation",
+ "problems": [
+  "B02: revise requires non-empty changes"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B02: adjudication note required (keep may fall back to default_keep_note)"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B03: source_only decision must not be pass"
+ ]
+}
+{
+ "error": "validation",
+ "problems": [
+  "B02: unknown dimension 'readability'"
+ ]
+}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpp4e3mna9\\kit", "n_cases": 18, "development": 6, "frozen_test": 12}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp_ye_e_w_\\kit", "cases": 5, "files": ["packets/A01.md", "packets/A02.md", "packets/A03.md", "packets/A04.md", "packets/A05.md", "pa_findings.json", "kit_manifest.json", "INDEX.md"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpvhlesdhg\\kit", "cases": 5, "files": ["packets/A01.md", "packets/A02.md", "packets/A03.md", "packets/A04.md", "packets/A05.md", "pa_findings.json", "kit_manifest.json", "INDEX.md"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmph40202dl\\kit", "cases": 5, "files": ["packets/A01.md", "packets/A02.md", "packets/A03.md", "packets/A04.md", "packets/A05.md", "pa_findings.json", "kit_manifest.json", "INDEX.md"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmphrj5mvsz\\kit", "cases": 5, "files": ["packets/A01.md", "packets/A02.md", "packets/A03.md", "packets/A04.md", "packets/A05.md", "pa_findings.json", "kit_manifest.json", "INDEX.md"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp22gg5xy_\\kit", "cases": 5, "files": ["packets/A01.md", "packets/A02.md", "packets/A03.md", "packets/A04.md", "packets/A05.md", "pa_findings.json", "kit_manifest.json", "INDEX.md"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmptes2fjag\\kit", "cases": 5, "files": ["packets/A01.md", "packets/A02.md", "packets/A03.md", "packets/A04.md", "packets/A05.md", "pa_findings.json", "kit_manifest.json", "INDEX.md"]}
+{"corrections": ["C01", "C02", "A01"], "dev_orig": 12, "dev_p2": 6, "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp9bdj_7_g\\out"}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpbyvs3vo7\\o", "n_cases": 2, "development": 1, "frozen_test": 1}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp3crt2a8v\\o1", "n_cases": 2, "development": 1, "frozen_test": 1}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp3crt2a8v\\o2", "n_cases": 2, "development": 1, "frozen_test": 1}
+{"error": "freeze_integrity", "problems": ["candidate_sha256 drift c1"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpjahj70uf\\o", "n_cases": 2, "development": 1, "frozen_test": 1}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpyaf7mkm4\\o", "n_cases": 2, "development": 1, "frozen_test": 1}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpe1steeiu\\round1", "adjudication_packets": 2, "decision_match_rate": 0.0, "decision_cohen_kappa": 0.0, "severe_miss_cases": ["c1"]}
+{
+ "error": "validation",
+ "stage": "blind",
+ "note": "problem ids are blind codes; see the kit INDEX",
+ "problems": [
+  "B01: decision must be one of ('pass', 'uncertain', 'fail')"
+ ]
+}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpqep2z2pw\\round1", "adjudication_packets": 2, "decision_match_rate": 0.0, "decision_cohen_kappa": 0.0, "severe_miss_cases": ["c1"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpqep2z2pw\\final", "decision_match_rate": 0.0, "decision_cohen_kappa": 0.0, "persistent_disagreements": 2}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmphxj3uu98\\round1", "adjudication_packets": 2, "decision_match_rate": 0.0, "decision_cohen_kappa": 0.0, "severe_miss_cases": ["c1"]}
+{
+ "error": "validation",
+ "problems": [
+  "c1: confirmed must be true",
+  "c2: confirmed must be true"
+ ]
+}
+{"dry_run": true, "changed_files": ["samples/calibration/labels/cal-appetite-clean.label.json", "samples/calibration/labels/cal-appetite-missing_paragraph.label.json", "samples/calibration/labels/cal-appetite-noise.label.json", "samples/calibration/labels/cal-appetite-duplicate.label.json", "samples/calibration/labels/cal-appetite-reorder.label.json", "samples/calibration/labels/cal-appetite-title_number.label.json", "samples/calibration/labels/cal-blurb-clean.label.json", "samples/calibration/labels/cal-blurb-missing_paragraph.label.json", "samples/calibration/labels/cal-blurb-noise.label.json", "samples/calibration/labels/cal-blurb-reorder.label.json", "samples/calibration/labels/cal-iana-clean.label.json", "samples/calibration/labels/cal-iana-noise.label.json", "samples/calibration/labels/cal-mdn-clean.label.json", "samples/calibration/labels/cal-mdn-missing_paragraph.label.json", "samples/calibration/labels/cal-mdn-code_indent.label.json", "samples/calibration/labels/cal-mdn-reorder.label.json", "samples/calibration/labels/cal-mdn-instruction_interference.label.json", "samples/calibration/labels/cal-github-clean.label.json", "samples/calibration/labels/cal-github-noise.label.json", "samples/calibration/labels/cal-github-duplicate.label.json", "samples/calibration/labels/cal-github-missing_paragraph.label.json", "samples/calibration/labels/cal-w3clink-clean.label.json", "samples/calibration/labels/cal-w3clink-instruction_interference.label.json", "src/webextractor/rubrics_judge.py"], "code_changed": ["src/webextractor/rubrics_judge.py"], "labels_to_refresh": 0, "files": 61, "cases": 23, "new_judge_sha256": "edd841efb52961f07891160ccae7fabcc72da65734854da9a86e02bf622ff891"}
+{"dry_run": true, "probe": "position", "config": {"probe": {"source_order_seed": 20261118}, "subset": ["cal-appetite-clean", "cal-appetite-noise", "cal-appetite-duplicate", "cal-blurb-clean", "cal-blurb-noise", "cal-iana-noise"], "ignore_cache": false}, "n_cases": 6, "max_calls": 6, "model": "qwen3.8-27b"}
+test_main_accept_writes_report_and_md (test_p1_judge_v11.ScoreP1MainTests.test_main_accept_writes_report_and_md) ... ok
+test_main_refuses_overwrite (test_p1_judge_v11.ScoreP1MainTests.test_main_refuses_overwrite) ... Output exists; choose a new filename.
+ok
+test_main_reject_exit2 (test_p1_judge_v11.ScoreP1MainTests.test_main_reject_exit2) ... ok
+test_main_with_cross_and_probes (test_p1_judge_v11.ScoreP1MainTests.test_main_with_cross_and_probes) ... ok
+test_acceptance_accept (test_p1_judge_v11.ScoreP1Tests.test_acceptance_accept) ... ok
+test_acceptance_reject_high_rejection (test_p1_judge_v11.ScoreP1Tests.test_acceptance_reject_high_rejection) ... ok
+test_acceptance_reject_mismatch (test_p1_judge_v11.ScoreP1Tests.test_acceptance_reject_mismatch) ... ok
+test_acceptance_reject_severe_miss (test_p1_judge_v11.ScoreP1Tests.test_acceptance_reject_severe_miss) ... ok
+test_cross_judge_agreement (test_p1_judge_v11.ScoreP1Tests.test_cross_judge_agreement) ... ok
+test_dev_only_guard (test_p1_judge_v11.ScoreP1Tests.test_dev_only_guard) ... Batch contains non-development cases; P1 acceptance is dev-only.
+ok
+test_gold_map_list_and_dict (test_p1_judge_v11.ScoreP1Tests.test_gold_map_list_and_dict) ... ok
+test_probe_stability_flip (test_p1_judge_v11.ScoreP1Tests.test_probe_stability_flip) ... ok
+test_dry_run_no_key_needed (test_p2_cross_judge.CrossJudgeTests.test_dry_run_no_key_needed) ... ok
+test_provider_uses_judge_system_message (test_p2_cross_judge.CrossJudgeTests.test_provider_uses_judge_system_message) ... ok
+test_requires_api_key (test_p2_cross_judge.CrossJudgeTests.test_requires_api_key) ... ok
+test_run_judge_accepts_judge_json_not_rule (test_p2_cross_judge.CrossJudgeTests.test_run_judge_accepts_judge_json_not_rule) ... ok
+test_freeze_v8_rollback_record (test_p3_rollback_v12.RollbackTests.test_freeze_v8_rollback_record) ... ok
+test_judge_sha_matches_freeze_v4 (test_p3_rollback_v12.RollbackTests.test_judge_sha_matches_freeze_v4) ... ok
+test_judge_version_restored (test_p3_rollback_v12.RollbackTests.test_judge_version_restored) ... ok
+test_rubrics_version_unchanged (test_p3_rollback_v12.RollbackTests.test_rubrics_version_unchanged) ... ok
+test_v12_scoring_independence_preserved (test_p3_rollback_v12.RollbackTests.test_v12_scoring_independence_preserved) ... ok
+test_v13_anchors_removed (test_p3_rollback_v12.RollbackTests.test_v13_anchors_removed) ... ok
+test_v13_constraints_removed (test_p3_rollback_v12.RollbackTests.test_v13_constraints_removed) ... ok
+test_data_drift_fails (test_pb_freeze_and_ingest.AmendFreezeV9Test.test_data_drift_fails) ... ok
+test_dry_run_writes_nothing (test_pb_freeze_and_ingest.AmendFreezeV9Test.test_dry_run_writes_nothing) ... ok
+test_happy_path_only_judge_pin_changes (test_pb_freeze_and_ingest.AmendFreezeV9Test.test_happy_path_only_judge_pin_changes) ... ok
+test_judge_not_restored_fails (test_pb_freeze_and_ingest.AmendFreezeV9Test.test_judge_not_restored_fails) ... ok
+test_overwrite_refusal (test_pb_freeze_and_ingest.AmendFreezeV9Test.test_overwrite_refusal) ... ok
+test_parent_sha_drift_fails (test_pb_freeze_and_ingest.AmendFreezeV9Test.test_parent_sha_drift_fails) ... ok
+test_manifest_rel_lookup_generalized (test_pb_freeze_and_ingest.IngestGeneralizationTest.test_manifest_rel_lookup_generalized) ... ok
+test_p2_integrity_preserved (test_pb_freeze_and_ingest.IngestGeneralizationTest.test_p2_integrity_preserved) ... ok
+test_unrelated_amendment_base_rejected (test_pb_freeze_and_ingest.IngestGeneralizationTest.test_unrelated_amendment_base_rejected) ... ok
+test_v3_amendment_integrity_passes (test_pb_freeze_and_ingest.IngestGeneralizationTest.test_v3_amendment_integrity_passes) ... ok
+test_v3_original_freeze_still_flags_judge_drift (test_pb_freeze_and_ingest.IngestGeneralizationTest.test_v3_original_freeze_still_flags_judge_drift) ... ok
+test_default_opener_disables_redirects_and_implicit_proxy (test_qwen_provider.Tests.test_default_opener_disables_redirects_and_implicit_proxy) ... ok
+test_error_redacts_key (test_qwen_provider.Tests.test_error_redacts_key) ... ok
+test_invalid_json_is_not_retried (test_qwen_provider.Tests.test_invalid_json_is_not_retried) ... ok
+test_mapping (test_qwen_provider.Tests.test_mapping) ... ok
+test_qwen_key_priority_and_qwen3_metadata (test_qwen_provider.Tests.test_qwen_key_priority_and_qwen3_metadata) ... ok
+test_response_size_limit_is_not_retried (test_qwen_provider.Tests.test_response_size_limit_is_not_retried) ... ok
+test_retry_uses_remaining_budget (test_qwen_provider.Tests.test_retry_uses_remaining_budget) ... ok
+test_truncated_response_is_not_accepted (test_qwen_provider.Tests.test_truncated_response_is_not_accepted) ... ok
+test_validation (test_qwen_provider.Tests.test_validation) ... ok
+test_applied_output_uses_legal_enums (test_repair_human_labels.ApplyTest.test_applied_output_uses_legal_enums) ... ok
+test_original_document_is_not_mutated (test_repair_human_labels.ApplyTest.test_original_document_is_not_mutated) ... ok
+test_repair_metadata_is_recorded (test_repair_human_labels.ApplyTest.test_repair_metadata_is_recorded) ... ok
+test_score_decision_and_notes_are_preserved (test_repair_human_labels.ApplyTest.test_score_decision_and_notes_are_preserved) ... ok
+test_untouched_dimension_keeps_user_severity (test_repair_human_labels.ApplyTest.test_untouched_dimension_keeps_user_severity) ... ok
+test_code_map_hides_case_ids (test_repair_human_labels.BlindCodeErrorReportingTest.test_code_map_hides_case_ids) ... ok
+test_missing_entry_is_reported_with_blind_code (test_repair_human_labels.BlindCodeErrorReportingTest.test_missing_entry_is_reported_with_blind_code) ... ok
+test_unmapped_case_is_masked (test_repair_human_labels.BlindCodeErrorReportingTest.test_unmapped_case_is_masked) ... ok
+test_without_code_map_case_ids_are_used (test_repair_human_labels.BlindCodeErrorReportingTest.test_without_code_map_case_ids_are_used) ... ok
+test_apply_writes_repaired_labels (test_repair_human_labels.CliTest.test_apply_writes_repaired_labels) ... ok
+test_dry_run_reports_only (test_repair_human_labels.CliTest.test_dry_run_reports_only) ... ok
+test_refuses_existing_output_dir (test_repair_human_labels.CliTest.test_refuses_existing_output_dir) ... Output exists; choose a new directory.
+ok
+test_refuses_labels_that_contain_case_id (test_repair_human_labels.CliTest.test_refuses_labels_that_contain_case_id) ... ok
+test_refuses_non_blind_stage (test_repair_human_labels.CliTest.test_refuses_non_blind_stage) ... ok
+test_repair_diff_is_deterministic (test_repair_human_labels.CliTest.test_repair_diff_is_deterministic) ... ok
+test_reports_contain_no_real_case_id_or_mutation_type (test_repair_human_labels.CliTest.test_reports_contain_no_real_case_id_or_mutation_type) ... ok
+test_source_file_is_never_modified (test_repair_human_labels.CliTest.test_source_file_is_never_modified) ... ok
+test_consistent_case_has_no_warning (test_repair_human_labels.ConsistencyWarningTest.test_consistent_case_has_no_warning) ... ok
+test_fail_without_severe_is_flagged (test_repair_human_labels.ConsistencyWarningTest.test_fail_without_severe_is_flagged) ... ok
+test_pass_with_defect_is_flagged (test_repair_human_labels.ConsistencyWarningTest.test_pass_with_defect_is_flagged) ... ok
+test_pass_with_partial_status_is_flagged (test_repair_human_labels.ConsistencyWarningTest.test_pass_with_partial_status_is_flagged) ... ok
+test_repaired_severity_is_used_for_warnings (test_repair_human_labels.ConsistencyWarningTest.test_repaired_severity_is_used_for_warnings) ... ok
+test_severe_but_not_fail_is_flagged (test_repair_human_labels.ConsistencyWarningTest.test_severe_but_not_fail_is_flagged) ... ok
+test_dim_rules_are_scoped (test_repair_human_labels.DeriveSeverityTest.test_dim_rules_are_scoped) ... ok
+test_duplicate_keyword_is_major (test_repair_human_labels.DeriveSeverityTest.test_duplicate_keyword_is_major) ... ok
+test_format_has_no_rules (test_repair_human_labels.DeriveSeverityTest.test_format_has_no_rules) ... ok
+test_major_beats_minor_in_same_dim (test_repair_human_labels.DeriveSeverityTest.test_major_beats_minor_in_same_dim) ... ok
+test_missing_keyword_is_major (test_repair_human_labels.DeriveSeverityTest.test_missing_keyword_is_major) ... ok
+test_no_keyword_is_none (test_repair_human_labels.DeriveSeverityTest.test_no_keyword_is_none) ... ok
+test_noise_keyword_is_major (test_repair_human_labels.DeriveSeverityTest.test_noise_keyword_is_major) ... ok
+test_reorder_keyword_is_major (test_repair_human_labels.DeriveSeverityTest.test_reorder_keyword_is_major) ... ok
+test_split_only_is_minor (test_repair_human_labels.DeriveSeverityTest.test_split_only_is_minor) ... ok
+test_tag_leak_keyword_is_major (test_repair_human_labels.DeriveSeverityTest.test_tag_leak_keyword_is_major) ... ok
+test_acknowledged_gap_moves_out_of_pending (test_repair_human_labels.GapAcknowledgementTest.test_acknowledged_gap_moves_out_of_pending) ... ok
+test_decision_override_clears_the_warning (test_repair_human_labels.GapAcknowledgementTest.test_decision_override_clears_the_warning) ... ok
+test_partially_acknowledged (test_repair_human_labels.GapAcknowledgementTest.test_partially_acknowledged) ... ok
+test_source_only_fail_without_severe_is_still_flagged (test_repair_human_labels.GapAcknowledgementTest.test_source_only_fail_without_severe_is_still_flagged) ... ok
+test_source_only_uncertain_is_not_a_gap (test_repair_human_labels.GapAcknowledgementTest.test_source_only_uncertain_is_not_a_gap) ... ok
+test_unacknowledged_gap_stays_pending (test_repair_human_labels.GapAcknowledgementTest.test_unacknowledged_gap_stays_pending) ... ok
+test_uncertain_with_defect_is_not_a_gap (test_repair_human_labels.GapAcknowledgementTest.test_uncertain_with_defect_is_not_a_gap) ... ok
+test_uncertain_without_defect_is_reported_as_gap (test_repair_human_labels.GapAcknowledgementTest.test_uncertain_without_defect_is_reported_as_gap) ... ok
+test_with_gold_uncertain_without_defect_is_still_a_gap (test_repair_human_labels.GapAcknowledgementTest.test_with_gold_uncertain_without_defect_is_still_a_gap) ... ok
+test_decision_override_on_untouched_case (test_repair_human_labels.OverrideApplicationTest.test_decision_override_on_untouched_case) ... ok
+test_input_documents_are_not_mutated (test_repair_human_labels.OverrideApplicationTest.test_input_documents_are_not_mutated) ... ok
+test_override_metadata_is_recorded (test_repair_human_labels.OverrideApplicationTest.test_override_metadata_is_recorded) ... ok
+test_override_never_touches_score_or_notes (test_repair_human_labels.OverrideApplicationTest.test_override_never_touches_score_or_notes) ... ok
+test_severity_override_reaches_the_output_document (test_repair_human_labels.OverrideApplicationTest.test_severity_override_reaches_the_output_document) ... ok
+test_severity_override_updates_change_record_provenance (test_repair_human_labels.OverrideApplicationTest.test_severity_override_updates_change_record_provenance) ... ok
+test_status_override_reaches_the_output_document (test_repair_human_labels.OverrideApplicationTest.test_status_override_reaches_the_output_document) ... ok
+test_apply_writes_overridden_values (test_repair_human_labels.OverrideCliTest.test_apply_writes_overridden_values) ... ok
+test_audit_records_approval_and_warning_split (test_repair_human_labels.OverrideCliTest.test_audit_records_approval_and_warning_split) ... ok
+test_invalid_override_spec_aborts_without_output (test_repair_human_labels.OverrideCliTest.test_invalid_override_spec_aborts_without_output) ... ok
+test_no_real_case_id_leaks_with_overrides (test_repair_human_labels.OverrideCliTest.test_no_real_case_id_leaks_with_overrides) ... ok
+test_override_run_is_deterministic (test_repair_human_labels.OverrideCliTest.test_override_run_is_deterministic) ... ok
+test_unacknowledged_case_stays_pending (test_repair_human_labels.OverrideCliTest.test_unacknowledged_case_stays_pending) ... ok
+test_warnings_doc_separates_pending_and_acknowledged (test_repair_human_labels.OverrideCliTest.test_warnings_doc_separates_pending_and_acknowledged) ... ok
+test_without_overrides_flag_no_override_section_data (test_repair_human_labels.OverrideCliTest.test_without_overrides_flag_no_override_section_data) ... ok
+test_acknowledged_gap_needs_known_kind_and_reason (test_repair_human_labels.OverrideValidationTest.test_acknowledged_gap_needs_known_kind_and_reason) ... ok
+test_bad_version_rejected (test_repair_human_labels.OverrideValidationTest.test_bad_version_rejected) ... ok
+test_dim_forbidden_for_decision (test_repair_human_labels.OverrideValidationTest.test_dim_forbidden_for_decision) ... ok
+test_dim_required_for_severity (test_repair_human_labels.OverrideValidationTest.test_dim_required_for_severity) ... ok
+test_illegal_value_rejected (test_repair_human_labels.OverrideValidationTest.test_illegal_value_rejected) ... ok
+test_missing_approval_rejected (test_repair_human_labels.OverrideValidationTest.test_missing_approval_rejected) ... ok
+test_missing_reason_rejected (test_repair_human_labels.OverrideValidationTest.test_missing_reason_rejected) ... ok
+test_note_is_never_overridable (test_repair_human_labels.OverrideValidationTest.test_note_is_never_overridable) ... ok
+test_score_is_never_overridable (test_repair_human_labels.OverrideValidationTest.test_score_is_never_overridable) ... ok
+test_unknown_blind_code (test_repair_human_labels.OverrideValidationTest.test_unknown_blind_code) ... ok
+test_valid_spec (test_repair_human_labels.OverrideValidationTest.test_valid_spec) ... ok
+test_critical_with_high_score_is_flagged_not_changed (test_repair_human_labels.RepairTest.test_critical_with_high_score_is_flagged_not_changed) ... ok
+test_critical_with_low_score_is_not_flagged (test_repair_human_labels.RepairTest.test_critical_with_low_score_is_not_flagged) ... ok
+test_legal_severity_is_never_touched (test_repair_human_labels.RepairTest.test_legal_severity_is_never_touched) ... ok
+test_misplaced_partial_becomes_status_on_truncated_case (test_repair_human_labels.RepairTest.test_misplaced_partial_becomes_status_on_truncated_case) ... ok
+test_misplaced_partial_uses_annotator_keyword (test_repair_human_labels.RepairTest.test_misplaced_partial_uses_annotator_keyword) ... ok
+test_misplaced_partial_without_low_confidence_keeps_scored (test_repair_human_labels.RepairTest.test_misplaced_partial_without_low_confidence_keeps_scored) ... ok
+test_note_text_collects_all_notes (test_repair_human_labels.RepairTest.test_note_text_collects_all_notes) ... ok
+test_per_dimension_note_is_also_considered (test_repair_human_labels.RepairTest.test_per_dimension_note_is_also_considered) ... ok
+test_unknown_severity_is_flagged_unrepairable (test_repair_human_labels.RepairTest.test_unknown_severity_is_flagged_unrepairable) ... ok
+test_controlled_drift_distinguishes_applicability_and_completeness (test_reuse_quality.ReuseQualityTests.test_controlled_drift_distinguishes_applicability_and_completeness) ... ok
+test_gold_hash_mismatch_is_not_scored_as_success (test_reuse_quality.ReuseQualityTests.test_gold_hash_mismatch_is_not_scored_as_success) ... ok
+test_definition_descriptions_preserve_paragraph_and_nested_list_order (test_rich_structures.RichStructureTests.test_definition_descriptions_preserve_paragraph_and_nested_list_order) ... ok
+test_linked_list_item_with_non_note_label_stays_a_list_item (test_rich_structures.RichStructureTests.test_linked_list_item_with_non_note_label_stays_a_list_item) ... ok
+test_list_note_is_identified_by_inbound_numbered_reference (test_rich_structures.RichStructureTests.test_list_note_is_identified_by_inbound_numbered_reference) ... ok
+test_orphan_list_items_recover_text_without_repeating_paragraphs (test_rich_structures.RichStructureTests.test_orphan_list_items_recover_text_without_repeating_paragraphs) ... ok
+test_quote_paragraphs_preserve_boundaries_and_do_not_duplicate_lists (test_rich_structures.RichStructureTests.test_quote_paragraphs_preserve_boundaries_and_do_not_duplicate_lists) ... ok
+test_agreement (test_rubrics.RubricsTests.test_agreement) ... ok
+test_exact (test_rubrics.RubricsTests.test_exact) ... ok
+test_noise_is_data_and_explicit_terms_penalize (test_rubrics.RubricsTests.test_noise_is_data_and_explicit_terms_penalize) ... ok
+test_same_length_replacement_lowers_completeness (test_rubrics.RubricsTests.test_same_length_replacement_lowers_completeness) ... ok
+test_structure_is_ordered_and_tracks_code_heading_metadata (test_rubrics.RubricsTests.test_structure_is_ordered_and_tracks_code_heading_metadata) ... ok
+test_accepted_gold_and_provisional_source_only (test_rubrics_judge.JudgeTests.test_accepted_gold_and_provisional_source_only) ... ok
+test_candidate_only_evidence_does_not_prove_correctness (test_rubrics_judge.JudgeTests.test_candidate_only_evidence_does_not_prove_correctness) ... ok
+test_empty_reason_allowed_only_for_non_scored (test_rubrics_judge.JudgeTests.test_empty_reason_allowed_only_for_non_scored) ... ok
+test_mode_separation_and_source_registry (test_rubrics_judge.JudgeTests.test_mode_separation_and_source_registry) ... ok
+test_na_unknown_and_severe_decision (test_rubrics_judge.JudgeTests.test_na_unknown_and_severe_decision) ... ok
+test_nbsp_equivalence_in_evidence_quotes_only (test_rubrics_judge.JudgeTests.test_nbsp_equivalence_in_evidence_quotes_only) ... ok
+test_partial_source_forces_partial_no_pass (test_rubrics_judge.JudgeTests.test_partial_source_forces_partial_no_pass) ... ok
+test_prompt_requires_source_evidence_per_dimension (test_rubrics_judge.JudgeTests.test_prompt_requires_source_evidence_per_dimension) ... ok
+test_prompt_states_na_rules_index_bounds_and_verbatim_whitespace (test_rubrics_judge.JudgeTests.test_prompt_states_na_rules_index_bounds_and_verbatim_whitespace) ... ok
+test_provider_secret_not_logged (test_rubrics_judge.JudgeTests.test_provider_secret_not_logged) ... ok
+test_strict_schema_score_and_status (test_rubrics_judge.JudgeTests.test_strict_schema_score_and_status) ... ok
+test_transport_is_judge_not_xpath_instruction (test_rubrics_judge.JudgeTests.test_transport_is_judge_not_xpath_instruction) ... ok
+test_truncated_finish_and_schema_failure_have_no_assessment (test_rubrics_judge.JudgeTests.test_truncated_finish_and_schema_failure_have_no_assessment) ... ok
+test_unknown_and_hallucinated_evidence_rejected (test_rubrics_judge.JudgeTests.test_unknown_and_hallucinated_evidence_rejected) ... ok
+test_web_instructions_remain_data_and_gold_absent (test_rubrics_judge.JudgeTests.test_web_instructions_remain_data_and_gold_absent) ... ok
+test_batch_modes_usage_and_report (test_rubrics_judge_tool.ToolTests.test_batch_modes_usage_and_report) ... ok
+test_budget_skip_then_resume (test_rubrics_judge_tool.ToolTests.test_budget_skip_then_resume) ... ok
+test_build_provider_honors_batch_timeout (test_rubrics_judge_tool.ToolTests.test_build_provider_honors_batch_timeout) ... ok
+test_cache_hit_costs_zero_calls (test_rubrics_judge_tool.ToolTests.test_cache_hit_costs_zero_calls) ... ok
+test_error_isolation_and_hash_guard (test_rubrics_judge_tool.ToolTests.test_error_isolation_and_hash_guard) ... ok
+test_gold_metadata_keys_projected_to_freeze_convention (test_rubrics_judge_tool.ToolTests.test_gold_metadata_keys_projected_to_freeze_convention) ... ok
+test_ignore_cache_forces_fresh_calls (test_rubrics_judge_tool.ToolTests.test_ignore_cache_forces_fresh_calls) ... ok
+test_manifest_validation (test_rubrics_judge_tool.ToolTests.test_manifest_validation) ... ok
+test_noise_terms_forwarded_to_program_score (test_rubrics_judge_tool.ToolTests.test_noise_terms_forwarded_to_program_score) ... ok
+test_provider_failure_not_cached_and_retryable (test_rubrics_judge_tool.ToolTests.test_provider_failure_not_cached_and_retryable) ... ok
+test_rejected_response_cached_and_revalidated_without_call (test_rubrics_judge_tool.ToolTests.test_rejected_response_cached_and_revalidated_without_call) ... ok
+test_signature_binds_versions_and_settings (test_rubrics_judge_tool.ToolTests.test_signature_binds_versions_and_settings) ... ok
+test_absent_title_annotation_and_empty_reference_do_not_hide_gaps (test_rubrics_v2.RubricsV2Tests.test_absent_title_annotation_and_empty_reference_do_not_hide_gaps) ... ok
+test_code_whitespace_is_format_not_structure (test_rubrics_v2.RubricsV2Tests.test_code_whitespace_is_format_not_structure) ... ok
+test_dom_id_does_not_change_structure_but_footnote_label_does (test_rubrics_v2.RubricsV2Tests.test_dom_id_does_not_change_structure_but_footnote_label_does) ... ok
+test_duplicate_blocks_cannot_inflate_recall (test_rubrics_v2.RubricsV2Tests.test_duplicate_blocks_cannot_inflate_recall) ... ok
+test_empty_and_invalid_inputs (test_rubrics_v2.RubricsV2Tests.test_empty_and_invalid_inputs) ... ok
+test_exact_and_no_applicable_code (test_rubrics_v2.RubricsV2Tests.test_exact_and_no_applicable_code) ... ok
+test_heading_and_list_attributes_separate_from_text (test_rubrics_v2.RubricsV2Tests.test_heading_and_list_attributes_separate_from_text) ... ok
+test_missing_gold_is_unknown_not_perfect (test_rubrics_v2.RubricsV2Tests.test_missing_gold_is_unknown_not_perfect) ... ok
+test_no_alignment_is_not_zero_or_perfect_structure (test_rubrics_v2.RubricsV2Tests.test_no_alignment_is_not_zero_or_perfect_structure) ... ok
+test_prompt_looking_text_is_data_and_terms_are_casefolded (test_rubrics_v2.RubricsV2Tests.test_prompt_looking_text_is_data_and_terms_are_casefolded) ... ok
+test_reordering_same_kind_blocks_detected (test_rubrics_v2.RubricsV2Tests.test_reordering_same_kind_blocks_detected) ... ok
+test_text_replacement_limits_coverage_not_structure_attribute_quality (test_rubrics_v2.RubricsV2Tests.test_text_replacement_limits_coverage_not_structure_attribute_quality) ... ok
+test_title_number_error_and_partial_evidence (test_rubrics_v2.RubricsV2Tests.test_title_number_error_and_partial_evidence) ... ok
+test_all_reference_pages_must_succeed_and_evidence_is_bounded (test_rule_agent.RuleAgentTests.test_all_reference_pages_must_succeed_and_evidence_is_bounded) ... ok
+test_authored_repair_runs_every_reference_and_preserves_trace (test_rule_agent.RuleAgentTests.test_authored_repair_runs_every_reference_and_preserves_trace) ... ok
+test_exhaustion_is_explicit_and_invalid_schema_is_feedback (test_rule_agent.RuleAgentTests.test_exhaustion_is_explicit_and_invalid_schema_is_feedback) ... ok
+test_limits_reject_nonfinite_and_wrong_types (test_rule_agent.RuleAgentTests.test_limits_reject_nonfinite_and_wrong_types) ... ok
+test_openai_provider_metadata_is_accepted_and_traced (test_rule_agent.RuleAgentTests.test_openai_provider_metadata_is_accepted_and_traced) ... ok
+test_provider_elapsed_budget_is_checked_before_execution (test_rule_agent.RuleAgentTests.test_provider_elapsed_budget_is_checked_before_execution) ... ok
+test_reference_interface_rejects_gold_or_test_fields (test_rule_agent.RuleAgentTests.test_reference_interface_rejects_gold_or_test_fields) ... ok
+test_response_and_token_budgets_prevent_execution (test_rule_agent.RuleAgentTests.test_response_and_token_budgets_prevent_execution) ... ok
+test_changed_and_missing_snapshots_do_not_stop_other_pages (test_rule_reuse.RuleReuseTests.test_changed_and_missing_snapshots_do_not_stop_other_pages) ... ok
+test_frozen_rule_transfers_between_pages_with_different_text (test_rule_reuse.RuleReuseTests.test_frozen_rule_transfers_between_pages_with_different_text) ... ok
+test_multiple_matches_are_reported_as_ambiguous (test_rule_reuse.RuleReuseTests.test_multiple_matches_are_reported_as_ambiguous) ... ok
+test_page_specific_rule_fails_without_automatic_fallback (test_rule_reuse.RuleReuseTests.test_page_specific_rule_fails_without_automatic_fallback) ... ok
+test_scalar_and_text_xpath_are_rejected (test_rule_reuse.RuleReuseTests.test_scalar_and_text_xpath_are_rejected) ... ok
+test_freeze_integrity_fail_closed (test_score_judge_results.MetricsTests.test_freeze_integrity_fail_closed) ... ok
+test_freeze_manifest_file_and_canonical_hashes (test_score_judge_results.MetricsTests.test_freeze_manifest_file_and_canonical_hashes) ... ok
+test_injection_compliance_detected (test_score_judge_results.MetricsTests.test_injection_compliance_detected) ... ok
+test_perfect_agreement (test_score_judge_results.MetricsTests.test_perfect_agreement) ... ok
+test_severe_miss_and_false_alarm (test_score_judge_results.MetricsTests.test_severe_miss_and_false_alarm) ... ok
+test_stability_identity_and_diff (test_score_judge_results.MetricsTests.test_stability_identity_and_diff) ... ok
+test_within1_and_error_handling (test_score_judge_results.MetricsTests.test_within1_and_error_handling) ... ok
+test_ci_deterministic_and_point (test_score_node5.BootstrapTests.test_ci_deterministic_and_point) ... ok
+test_improved_decision (test_score_node5.ClassificationTests.test_improved_decision) ... ok
+test_improved_score_same_decision (test_score_node5.ClassificationTests.test_improved_score_same_decision) ... ok
+test_new_severe_takes_priority_over_score_gain (test_score_node5.ClassificationTests.test_new_severe_takes_priority_over_score_gain) ... ok
+test_no_effect_identical (test_score_node5.ClassificationTests.test_no_effect_identical) ... ok
+test_other_change_score_decline_without_new_severe (test_score_node5.ClassificationTests.test_other_change_score_decline_without_new_severe) ... ok
+test_regressed_decision (test_score_node5.ClassificationTests.test_regressed_decision) ... ok
+test_regressed_new_severe_same_decision (test_score_node5.ClassificationTests.test_regressed_new_severe_same_decision) ... ok
+test_score_path_requires_comparable_scored_set (test_score_node5.ClassificationTests.test_score_path_requires_comparable_scored_set) ... ok
+test_output_overwrite_refused (test_score_node5.CliTests.test_output_overwrite_refused) ... Output exists; choose a new filename.
+ok
+test_run_then_score_cli_zero_call (test_score_node5.FullPipelineCliTests.test_run_then_score_cli_zero_call) ... ok
+test_audit_failure_fails_verdict (test_score_node5.ScoreRunTests.test_audit_failure_fails_verdict) ... ok
+test_candidate_sha_mismatch_fails_closed (test_score_node5.ScoreRunTests.test_candidate_sha_mismatch_fails_closed) ... ok
+test_ci_reproducible_across_runs (test_score_node5.ScoreRunTests.test_ci_reproducible_across_runs) ... ok
+test_end_to_end_benefit_signal (test_score_node5.ScoreRunTests.test_end_to_end_benefit_signal) ... ok
+test_freeze_mismatch_raises (test_score_node5.ScoreRunTests.test_freeze_mismatch_raises) ... ok
+test_no_pairs_no_benefit (test_score_node5.ScoreRunTests.test_no_pairs_no_benefit) ... ok
+test_protocol_drift_raises (test_score_node5.ScoreRunTests.test_protocol_drift_raises) ... ok
+test_source_sha_mismatch_raises (test_score_node5.ScoreRunTests.test_source_sha_mismatch_raises) ... ok
+test_unnecessary_repair_fails_verdict (test_score_node5.ScoreRunTests.test_unnecessary_repair_fails_verdict) ... ok
+test_accept_clean (test_score_p2_results.AcceptanceTests.test_accept_clean) ... ok
+test_all_split_records_keeps_test (test_score_p2_results.AcceptanceTests.test_all_split_records_keeps_test) ... ok
+test_overfit_flag_large_drop (test_score_p2_results.AcceptanceTests.test_overfit_flag_large_drop) ... ok
+test_reject_high_reject_rate (test_score_p2_results.AcceptanceTests.test_reject_high_reject_rate) ... ok
+test_reject_severe_miss (test_score_p2_results.AcceptanceTests.test_reject_severe_miss) ... ok
+test_small_drop_no_flag (test_score_p2_results.AcceptanceTests.test_small_drop_no_flag) ... ok
+test_status_artifact_counts (test_score_p2_results.AcceptanceTests.test_status_artifact_counts) ... ok
+test_unpaired_ci_deterministic (test_score_p2_results.AcceptanceTests.test_unpaired_ci_deterministic) ... ok
+test_draft_refused (test_score_p3_gate.ConfigTests.test_draft_refused) ... ok
+test_missing_approval (test_score_p3_gate.ConfigTests.test_missing_approval) ... ok
+test_missing_judge_version_pin (test_score_p3_gate.ConfigTests.test_missing_judge_version_pin) ... ok
+test_missing_threshold (test_score_p3_gate.ConfigTests.test_missing_threshold) ... ok
+test_out_of_range_threshold (test_score_p3_gate.ConfigTests.test_out_of_range_threshold) ... ok
+test_valid_frozen_config (test_score_p3_gate.ConfigTests.test_valid_frozen_config) ... ok
+test_fail_false_alarm (test_score_p3_gate.GateTests.test_fail_false_alarm) ... ok
+test_fail_kappa_degenerate_subset (test_score_p3_gate.GateTests.test_fail_kappa_degenerate_subset) ... ok
+test_fail_kappa_subset (test_score_p3_gate.GateTests.test_fail_kappa_subset) ... ok
+test_fail_reject_rate (test_score_p3_gate.GateTests.test_fail_reject_rate) ... ok
+test_fail_severe_miss_count (test_score_p3_gate.GateTests.test_fail_severe_miss_count) ... ok
+test_fail_v3_no_human_pass (test_score_p3_gate.GateTests.test_fail_v3_no_human_pass) ... ok
+test_fail_v3_pass_recall (test_score_p3_gate.GateTests.test_fail_v3_pass_recall) ... ok
+test_kappa_threshold_only_on_subset (test_score_p3_gate.GateTests.test_kappa_threshold_only_on_subset) ... ok
+test_pass_clean (test_score_p3_gate.GateTests.test_pass_clean) ... ok
+test_data_freeze_drift (test_score_p3_gate.IntegrityTests.test_data_freeze_drift) ... ok
+test_data_freeze_manifest_not_frozen (test_score_p3_gate.IntegrityTests.test_data_freeze_manifest_not_frozen) ... ok
+test_data_freeze_ok (test_score_p3_gate.IntegrityTests.test_data_freeze_ok) ... ok
+test_protocol_mismatch (test_score_p3_gate.IntegrityTests.test_protocol_mismatch) ... ok
+test_protocol_ok (test_score_p3_gate.IntegrityTests.test_protocol_ok) ... ok
+test_main_fail_v3_pass_recall (test_score_p3_gate.MainTests.test_main_fail_v3_pass_recall) ... ok
+test_main_pass_end_to_end (test_score_p3_gate.MainTests.test_main_pass_end_to_end) ... ok
+test_main_refuses_draft_config (test_score_p3_gate.MainTests.test_main_refuses_draft_config) ... GATE-CONFIG: gate config status must be 'frozen' (pre-registered and user-approved); got 'draft'
+ok
+test_main_refuses_overwrite (test_score_p3_gate.MainTests.test_main_refuses_overwrite) ... Output exists; choose a new directory.
+ok
+test_main_refuses_protocol_drift (test_score_p3_gate.MainTests.test_main_refuses_protocol_drift) ... INTEGRITY: orig: batch signature judge_version='1.2.0' != frozen '1.3.0'
+ok
+test_pass_recall_basic (test_score_p3_gate.MetricTests.test_pass_recall_basic) ... ok
+test_pass_recall_excludes_rejected (test_score_p3_gate.MetricTests.test_pass_recall_excludes_rejected) ... ok
+test_pass_recall_no_human_pass (test_score_p3_gate.MetricTests.test_pass_recall_no_human_pass) ... ok
+test_severe_miss_count (test_score_p3_gate.MetricTests.test_severe_miss_count) ... ok
+test_headerlink_is_removed_but_other_title_text_is_preserved (test_semantic_main.SemanticMainTests.test_headerlink_is_removed_but_other_title_text_is_preserved) ... ok
+test_main_element_and_role_do_not_duplicate_candidate (test_semantic_main.SemanticMainTests.test_main_element_and_role_do_not_duplicate_candidate) ... ok
+test_saved_chinese_document_keeps_all_paragraphs (test_semantic_main.SemanticMainTests.test_saved_chinese_document_keeps_all_paragraphs) ... ok
+test_semantic_main_container_is_found_without_manual_xpath (test_semantic_main.SemanticMainTests.test_semantic_main_container_is_found_without_manual_xpath) ... ok
+test_title_normalization_does_not_mutate_original_node (test_semantic_main.SemanticMainTests.test_title_normalization_does_not_mutate_original_node) ... ok
+test_build (test_sft_dataset.SFTDatasetTests.test_build) ... ok
+test_reject (test_sft_dataset.SFTDatasetTests.test_reject) ... ok
+test_write (test_sft_dataset.SFTDatasetTests.test_write) ... ok
+test_table_cells_form_one_block_without_repeating_nested_paragraphs (test_table_blocks.TableBlockTests.test_table_cells_form_one_block_without_repeating_nested_paragraphs) ... ok
+test_table_renders_as_separate_text_rows_instead_of_a_list (test_table_blocks.TableBlockTests.test_table_renders_as_separate_text_rows_instead_of_a_list) ... ok
+test_table_without_headers_keeps_literal_pipes_and_backticks (test_table_blocks.TableBlockTests.test_table_without_headers_keeps_literal_pipes_and_backticks) ... ok
+test_environment_is_finite (test_toy_rl.ToyRLTests.test_environment_is_finite) ... ok
+test_grpo_group_relative_and_invalid (test_toy_rl.ToyRLTests.test_grpo_group_relative_and_invalid) ... ok
+test_rewards_expose_hacking (test_toy_rl.ToyRLTests.test_rewards_expose_hacking) ... ok
+test_seeded_runs_reproduce_and_learn (test_toy_rl.ToyRLTests.test_seeded_runs_reproduce_and_learn) ... ok
+test_initial_validation_structure_is_preserved (test_w3c_structure.W3CStructureTests.test_initial_validation_structure_is_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 559 tests in 30.673s
+
+OK
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmptwz7eppm\\out.json", "verdict": "ACCEPT", "reject_rate": 0.0, "severe_miss": 0, "decision_mismatches": 0, "freeze_check": ["batch manifest file hash differs from freeze files entry", "case not frozen: c1", "case not frozen: c2", "batch config max_source_chars differs from freeze batch_config", "batch config max_output_tokens differs from freeze batch_config", "batch config timeout_seconds differs from freeze batch_config"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpwuozr7gs\\out.json", "verdict": "REJECT", "reject_rate": 0.5, "severe_miss": 0, "decision_mismatches": 0, "freeze_check": ["batch manifest file hash differs from freeze files entry", "case not frozen: c1", "case not frozen: c2", "batch config max_source_chars differs from freeze batch_config", "batch config max_output_tokens differs from freeze batch_config", "batch config timeout_seconds differs from freeze batch_config"]}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp_w53dabp\\out.json", "verdict": "ACCEPT", "reject_rate": 0.0, "severe_miss": 0, "decision_mismatches": 0, "freeze_check": ["batch manifest file hash differs from freeze files entry", "case not frozen: c1", "batch config max_source_chars differs from freeze batch_config", "batch config max_output_tokens differs from freeze batch_config", "batch config timeout_seconds differs from freeze batch_config"]}
+{"dry_run": true, "model": "gpt-5.6-sol", "split": "development", "n_cases": 12, "max_calls": 12, "base_url": "(env/default)"}
+{
+ "tool_version": "2.1.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpdhztf8tq\\prep2"
+}
+{
+ "tool_version": "2.1.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmponfho3j8\\prep"
+}
+{
+ "tool_version": "2.1.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp93xbzvxg\\prep4"
+}
+{"error": "labels file must stay blind (found case_id key)"}
+{"error": "labels stage must be blind"}
+{
+ "tool_version": "2.1.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp82a7q4vt\\det1"
+}
+{
+ "tool_version": "2.1.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp82a7q4vt\\det2"
+}
+{
+ "tool_version": "2.1.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp0vkzm196\\prep7"
+}
+{
+ "tool_version": "2.1.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 9,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpcsbdnudp\\prep3"
+}
+{
+ "tool_version": "2.1.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 1,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpd_15f1d8\\ok"
+}
+{
+ "tool_version": "2.1.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 1,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpxgjt1rwb\\audit"
+}
+{
+ "error": "overrides_validation",
+ "problems": [
+  "entries[0](B01): field must be one of ('decision', 'status', 'severity') (score and notes are never overridable)"
+ ]
+}
+{
+ "tool_version": "2.1.0",
+ "applied": true,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 1,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp35kyjpl9\\leak"
+}
+{
+ "tool_version": "2.1.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 1,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp24a1mfkh\\d1"
+}
+{
+ "tool_version": "2.1.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 1,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp24a1mfkh\\d2"
+}
+{
+ "tool_version": "2.1.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 1,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp72b6c8hp\\pend"
+}
+{
+ "tool_version": "2.1.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 2,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 0,
+ "n_consistency_warnings_acknowledged": 1,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp21cd9_4h\\warn"
+}
+{
+ "tool_version": "2.1.0",
+ "applied": false,
+ "n_changes": 1,
+ "n_overrides": 0,
+ "n_kept_legal": 14,
+ "n_flags": 1,
+ "n_consistency_warnings_pending": 3,
+ "n_consistency_warnings_acknowledged": 0,
+ "changed_by_severity": {
+  "partial->major": 1
+ },
+ "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp2xtetxl4\\plain"
+}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpd33__fr0\\run.json", "cases": 2, "statuses": {"n5-appetite": "repaired", "n5-blurb": "no_repair_needed"}, "tokens_used": 3500, "cap": 220000}
+{"output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpd33__fr0\\score.json", "verdict": "REPAIR_BENEFIT_SIGNAL", "metrics": {"total_cases": 2, "status_counts": {"repaired": 1, "no_repair_needed": 1}, "critic_accepted": 2, "repair_triggered": 1, "repair_trigger_rate": 0.5, "paired_n": 1, "improved": 1, "regressed": 0, "no_effect": 0, "other_change": 0, "improvement_rate": 1.0, "regression_rate": 0.0, "no_effect_rate": 0.0, "unnecessary_repair_count": 0, "mean_total_score_delta_ci95": {"point": 1.0, "ci95": [1.0, 1.0], "n": 1, "B": 10000}, "non_comparable_pairs": 0}}
+{"verdict": "FAIL", "checks_passed": 9, "checks_total": 10, "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmpk5jqj8p6\\out"}
+{"verdict": "PASS", "checks_passed": 10, "checks_total": 10, "output": "C:\\Users\\35516\\AppData\\Local\\Temp\\tmp59ntk5kj\\out"}

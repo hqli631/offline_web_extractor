@@ -1,0 +1,2840 @@
+{
+ "tool": "run_rubrics_judge.py",
+ "tool_sha256": "cae887c1234ded4cc008a94360ba7ae4ad15b572e190a8358b5ae20c8c3ba184",
+ "manifest": "samples\\p3_manifest.json",
+ "manifest_sha256": "a30a9e574b1f8c7cb43d17713378fc1068e5b79ce374076bd0fe542bcfa2cb2e",
+ "signature": {
+  "model": "qwen3.8-27b",
+  "max_output_tokens": 2200,
+  "max_source_chars": 20000,
+  "timeout_seconds": 90.0,
+  "judge_version": "1.2.0",
+  "rubrics_version": "2.0.0"
+ },
+ "provider": "qwen-rubrics-judge",
+ "split_filter": "frozen_test",
+ "ignore_cache": false,
+ "max_calls": 1,
+ "new_api_calls": 1,
+ "cache_hits": 0,
+ "skipped_budget": 11,
+ "usage_total_all_cases": {
+  "input_tokens": 19771,
+  "output_tokens": 769,
+  "total_tokens": 20540
+ },
+ "usage_new_calls_only": {
+  "input_tokens": 19771,
+  "output_tokens": 769,
+  "total_tokens": 20540
+ },
+ "generated_at": "2026-11-23T04:09:55+00:00",
+ "cases": [
+  {
+   "case_id": "cal-nprtext-clean",
+   "template": "p3_npr_text",
+   "split": "frozen_test",
+   "status": "accepted",
+   "cache_hit": false,
+   "new_api_call": true,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+    "gold_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+    "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": {
+    "judge_version": "1.2.0",
+    "rubrics_version": "2.0.0",
+    "mode": "with_gold",
+    "requested_model": "qwen3.8-27b",
+    "provider": "qwen-rubrics-judge",
+    "input": {
+     "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+     "source_truncated": false,
+     "source_nodes": 83,
+     "prompt_chars": 78680
+    },
+    "prompt_sha256": "8397b57d08b5d901ed13f7bf59da98bb28894f6953136acc1e612b7eae268812",
+    "prompt": {
+     "protocol": {
+      "task": "Evaluate extraction against source; gold is optional annotation, never candidate instructions.",
+      "mode": "with_gold",
+      "rubrics_version": "2.0.0",
+      "dimensions": {
+       "completeness": "Meaningful article coverage, including headings, lists, code and notes. Do not demand navigation.",
+       "cleanliness": "Exclude navigation, ads, feedback, recommendations, duplicates. Legitimate editorial links remain. Cite s:N noise regions or g:N blocks as evidence, never only p:N.",
+       "structure": "Article order, heading levels, list type/depth/order, footnotes. DOM id is not quality. Cite s:N headings/list items or g:N blocks as evidence, never only p:N.",
+       "title": "Faithful article title including chapter numbers; omit permalink controls.",
+       "format": "Code whitespace and meaningful block formatting. No code/format requirement: not_applicable."
+      },
+      "anchors": {
+       "4": "No material defect observed in supplied scope",
+       "3": "Small local defect (e.g. missing title number)",
+       "2": "Clear moderate loss or contamination",
+       "1": "Large defect",
+       "0": "Empty or fundamentally incorrect"
+      },
+      "output": {
+       "schema_version": 1,
+       "dimensions": {
+        "completeness": {
+         "score": "integer 0..4 or null",
+         "status": "scored|partial|unscored|not_applicable",
+         "severity": "none|minor|major|critical|unknown",
+         "reason": "short explanation",
+         "evidence": [
+          {
+           "ref": "p:N|p:title|g:N|g:title|s:N|s:html",
+           "quote": "verbatim nonempty substring (whitespace runs folded for matching), max 400 chars"
+          }
+         ]
+        },
+        "cleanliness": {
+         "score": "integer 0..4 or null",
+         "status": "scored|partial|unscored|not_applicable",
+         "severity": "none|minor|major|critical|unknown",
+         "reason": "short explanation",
+         "evidence": [
+          {
+           "ref": "p:N|p:title|g:N|g:title|s:N|s:html",
+           "quote": "verbatim nonempty substring (whitespace runs folded for matching), max 400 chars"
+          }
+         ]
+        },
+        "structure": {
+         "score": "integer 0..4 or null",
+         "status": "scored|partial|unscored|not_applicable",
+         "severity": "none|minor|major|critical|unknown",
+         "reason": "short explanation",
+         "evidence": [
+          {
+           "ref": "p:N|p:title|g:N|g:title|s:N|s:html",
+           "quote": "verbatim nonempty substring (whitespace runs folded for matching), max 400 chars"
+          }
+         ]
+        },
+        "title": {
+         "score": "integer 0..4 or null",
+         "status": "scored|partial|unscored|not_applicable",
+         "severity": "none|minor|major|critical|unknown",
+         "reason": "short explanation",
+         "evidence": [
+          {
+           "ref": "p:N|p:title|g:N|g:title|s:N|s:html",
+           "quote": "verbatim nonempty substring (whitespace runs folded for matching), max 400 chars"
+          }
+         ]
+        },
+        "format": {
+         "score": "integer 0..4 or null",
+         "status": "scored|partial|unscored|not_applicable",
+         "severity": "none|minor|major|critical|unknown",
+         "reason": "short explanation",
+         "evidence": [
+          {
+           "ref": "p:N|p:title|g:N|g:title|s:N|s:html",
+           "quote": "verbatim nonempty substring (whitespace runs folded for matching), max 400 chars"
+          }
+         ]
+        }
+       }
+      },
+      "constraints": [
+       "Exactly schema_version and dimensions at top level; exactly the five dimensions and their five keys.",
+       "Scored/partial require integer score and 1..8 citations. Null for unscored/not_applicable.",
+       "SCORING INDEPENDENCE: Determine each score and severity SOLELY from the actual defect magnitude observed by comparing the candidate against source/gold, strictly per the anchors (4=no material defect, 3=small local defect, 2=clear moderate loss or contamination, 1=large defect, 0=empty or fundamentally incorrect). Severity follows the defect itself: none=no material defect, minor=small local defect, major=clear moderate loss/contamination or wrong order/attributes, critical=empty/fundamentally wrong or severe order loss. evidence_menus is a CITATION APPENDIX placed after the data for convenience ONLY; the presence, absence, wording or quantity of suggested evidence MUST NOT raise or lower any score or severity. Never infer defect severity from which evidence is suggested.",
+       "not_applicable is allowed only for format and requires severity none, score null, evidence []. unscored requires severity unknown, score null, evidence [].",
+       "EVERY scored/partial dimension MUST cite at least one s: or g: reference. Candidate-only p: evidence is rejected for every dimension, including cleanliness and structure. Scores below 4 need concrete defect evidence.",
+       "For cleanliness cite the source regions that must be excluded (s:N navigation/ads/footer) or g:N blocks proving noise absence; for structure cite s:N or g:N blocks showing expected order, levels and list attributes.",
+       "Quotes must be short (<=120 chars) verbatim substrings of the cited evidence. Whitespace runs (including U+00A0 non-breaking spaces, tabs, newlines and repeated spaces) are folded to single spaces for matching; every non-whitespace character must still appear verbatim and in order. Never paraphrase or reorder words. evidence_menus is a citation appendix listed after the data; it provides ready-to-cite {ref, quote} pairs copied exactly from the supplied evidence. You may use them directly or cite any other listed ref with your own verbatim quote. The appendix is for citation convenience only and must not influence scoring; the s:/g: citation rule still applies. Empty candidate has no p-block to cite; source evidence suffices.",
+       "p:N and g:N are zero-based indices into the supplied candidate.blocks and gold.blocks arrays; block_count gives the array length. Cite only refs present in the supplied lists; never cite an index at or beyond block_count or invent refs.",
+       "When source.truncated is true, prefer s:N node citations over s:html and mark every scored dimension partial.",
+       "Use partial if source HTML is truncated. Source-only scores are provisional, not gold-validated.",
+       "Do not invent confidence values. Unknown or missing evidence requires unscored with reason.",
+       "Missing title number is title=3/minor. Empty output with nonempty article: completeness=0/critical.",
+       "Format scope excludes link correctness and rendered CSS. Output brief reasons, not hidden reasoning."
+      ]
+     },
+     "source": {
+      "html_ref": "s:html",
+      "html": "<html lang=\"en\">\n<head>\n    <title>How the movement against data centers has gone global</title>\n    \n    <meta name=\"viewport\" content=\"width=device-width\">\n    <link id=\"favicon\" rel=\"shortcut icon\" type=\"image/png\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAHlJREFUOBFjYBgFFIcA48cYpf/opvAv+YouxODXshZDbFONDSMLSJRv8V245KdYZTD7//8XcDFGRgkwe2O1NVzMv/UomA02AMQCaUQ2CCQG0ohsEEgMphHEBgEmCIWdRNeMTRXYBTBnw2iYQpjTYXx022Hio/RAhwAAjXEfJrIXnj4AAAAASUVORK5CYII=\">\n    <style>\n        body {\n    display: block;\n    padding: 0px 20px;\n    max-width: 550px;\n    margin: 0 auto;\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n}\n\n.full-version-link {\n    margin-left: 15px;\n}\n\n.slug-line {\n    font-size: 1.1rem;\n    margin-bottom: 15px;\n}\n\n.hr-line {\n    position: relative;\n    height: 4px;\n}\n\n.hr-line:after {\n    background: linear-gradient(to right, #e60000 0%, #e60000 33.33%, #000000 33.33%, #000000 66.66%, #3366CC 66.66%);\n    position: absolute;\n    content: '';\n    height: 4px;\n    right: 0;\n    left: 0;\n    top: 0;\n}\n\nhr.gray {\n    border: .5px solid gray;\n}\n\n.story-title {\n    line-height: 2rem;\n    font-size: 1.5rem;\n    margin: 0;\n}\n\n.topic-heading {\n    line-height: 2rem;\n    font-size: 1.5rem;\n}\n\n.topic-container>ul {\n    padding: 0;\n    line-height: 1.4rem;\n}\n\n.topic-container li {\n    display: block;\n    padding-bottom: 15px;\n}\n\n.topic-container {\n    margin-top: 20px;\n}\n\n.topic-date {\n    margin: 20px 0;\n    font-style: italic;\n}\n\n.paragraphs-container {\n    line-height: 1.5rem;\n}\n\n.button:link,\n.button:visited {\n    background-color: white;\n    color: black;\n    border: 2px solid black;\n    padding: 4px 8px;\n    text-align: center;\n    text-decoration: none;\n    display: inline-block;\n}\n\n.button:hover,\n.button:active {\n    background-color: black;\n    color: white;\n}\n\n.lower-nav-container {\n    margin-top: 40px;\n}\n\n.lower-nav-container li {\n    margin-left: 0;\n    display: inline;\n    padding-right: 20px;\n}\n\nh6 {\n  text-transform: uppercase;\n}\n\n    </style>\n</head>\n\n\n<body>\n<header>\n  <p>Text-Only Version <a class=\"full-version-link button\" href=\"https://www.npr.org/nx-s1-6000601\">Go To Full Site</a></p>\n</header>\n\n\n<main>\n  <article>\n    <div class=\"story-container\">\n      <p class=\"slug-line\">\n        <a class=\"slug-link\" href=\"/\">NPR</a> &gt;\n        \n          <a class=\"slug-link\" href=\"/g-s1-144920\">Debating Data Centers</a>\n        \n      </p>\n      <div class=\"story-head\">\n        <h1 class=\"story-title\">How the movement against data centers has gone global</h1>\n        <p>By Ruth Sherlock</p>\n        \n          <p>Monday, November 16, 2026 • 4:44 AM EST</p>\n        \n        \n          <p>Heard on <a href=\"/nx-s1-6013907/2026-11-16\">Morning Edition</a>\n        \n      </p></div>\n      <div class=\"hr-line\"></div>\n      <div class=\"paragraphs-container\">\n        <p>At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire avenue as they called to stop a Microsoft data center from being built beside a beloved local forest.</p><p>Videos of the loud opposition to data centers in the United States helped inspire university student Monica Gracia to show up.</p><p>\"I think that's one of the reasons why this place is so full of people,\" said Gracia.</p><p>While many environmental problems are often very local, most of the push to build data centers around the world comes from U.S. tech giants. So opponents fighting new data centers are teaming up across continents.</p><p>\"We have connections with of course the USA, Africa, Australia and even some parts of Asia,\" said Aurora Gomez, a Spanish activist. \"We are coordinated and we are together.\"</p><p>Gomez founded the group Tu Nube Seca Mi Rio, which translates to 'Your Cloud Dries My River,' to stop a data centre in her home town, Talavera La Reina in Spain.</p><p>\"It was meant to be a weeklong campaign to raise local awareness,\" she told NPR. \"But it just caught fire, because there are so many data centers coming to Spain and to every part of the world.\"</p><p>Gomez said she now fields dozens of emails a day from residents of communities where data centers are planned.</p><p>She was recently part of a wider European effort that coordinated a series of protests against data centers in 15 countries over two days under the banner \"Stop Dirty Data Centres,\" demanding an immediate moratorium on large-scale projects.</p><p>\"We are gaining so much traction - our narratives are being spread around the world,\" Gomez said.</p><p>More than 70 European projects were rejected or restricted in the first four months of 2026 alone, according to the <a href=\"https://eudcmonitor.com/#report\" target=\"_blank\">European Data Centre Monitor</a>. Public opposition has delayed or cancelled some $42 billion of data center spending in Europe, according <a href=\"https://stlpartners.com/articles/data-centres/public-perception-data-centres/\" target=\"_blank\">to a report</a> from consulting firm STL Partners.</p><p></p><h2>Shared tactics, crowdfunding</h2><p>The groups share tactics. After activists in the UK used crowdfunding to launch a successful legal effort to stop a large data center northwest of London, Gomez said she and other Spanish activists were inspired to do the same.</p><p>It took them only a week to raise the money they needed to mount what they say is the first major legal challenge in Spain against data center expansion, in this instance to be prevent the Aragón regional government from allowing Amazon Web Service to build one of its largest data center hubs outside the U.S.</p><p>\"We are exercising our rights,\" said Luis Garcia from Ecologistas in Acción,<strong> </strong>one of the groups involved in the case.  \"We know they have way more means than we do. But the crowdfunding proves we have gathered a lot of support from so many people, individuals, organizations.\"</p><p>The movement is both global and hyperlocal.</p><p>In the tiny village of Cuarte on the rural plains of Aragon, colorful bunting flaps in the wind in the main square beside a Baroque church from a recent celebration by the town's tight-knit community. Strung up on a wall is a giant banner that reads, \"We drink water, not data centers.\"</p><p>It's a slogan to protest a giant Amazon facility that's under construction at the edge of the village.</p><p>The drilling and hammering of construction interrupts the dawn chorus of the birds. Clouds of dust fill the air and the ground trembles as trucks race piles of freshly dug earth to the site which sits between the village and a protected wetland.</p><p>\"To us this feels like a seven-headed monster,\" said Carlos Olivan, a resident of Cuarte. \"We're trying, in a very small group, to make visible the scale of what is happening, so people understand, empathise, and mobilize.\"</p><p>The residents began with a<strong> </strong>local survey they call a \"referendum\" in the village, with 144 registered voters – close to the entire voting age population – responding via WhatsApp. 95% of respondents were against these centers. \"And we think the other five made a mistake filling out the forms,\" said Olivan.</p><p>The villagers shared the results with local media and took them to town hall meetings and to officials in the regional government. And they want to pressure the authorities to hold a wider referendum to give residents across the entire province a voice in decisions about these data center developments that promise to transform the region.</p><p>In all, planning documents show the regional government is processing approvals for 27 data center complexes, one is close to the size of New York City's Central Park. Together it's estimated they'll require many more times the electricity the region currently uses, and consume vast quantities of water in an area already blighted by drought.</p><p>David Blasquez, the head of public policy for Amazon Web Services in Spain and Portugal, told NPR the company is doing all it can to be a \"best in class\" neighbor, including fixing local water pipes to conserve the resource. The regional government told NPR how much water a data center consumes is considered when they weigh planning permission.</p><p>But Laura Coscuella, a resident of a town close to where several facilities are planned, said she joined a local group No Es Sequia Es Saqeo – \"It's Not Drought, It's Plunder,\" to fight these developments after learning of the environmental problems some U.S. communities have faced. \"We have a lot of data from the U.S. especially. We need everyone to know about this. I'm afraid that people won't notice what is happening until it's too late – until the taps are not working because they have run the water dry.\"</p><p>Coscuella is helping residents of Cuarte become even more effective in their opposition by using strategies in part learned from this wider coordinated network. Each resident plays to their strength, be it searching complex planning documents or planning direct actions.</p><p>At the protest in downtown Zaragoza in Aragon, local activist María Peña Calvo said when dealing with companies sensitive to public opinion, every act of opposition matters even if it feels small. \"Putting stones in their path can make some companies simply give up or go elsewhere.\"<br></p>\n        <hr>\n        <h3>Transcript</h3>\n        <p>STEVE INSKEEP, HOST: </p><p></p><p> The opposition to data centers that American voters expressed in the midterms is a worldwide phenomenon. Voters around the U.S. have made it harder for communities to build big projects tied to artificial intelligence. And in other countries, local groups are joining forces to slow the AI buildout. NPR's Ruth Sherlock reports.</p><p></p><p>(SOUNDBITE OF ARCHIVED RECORDING)</p><p></p><p>UNIDENTIFIED DEMONSTRATORS: (Chanting in Spanish).</p><p></p><p>RUTH SHERLOCK, BYLINE: In Zaragoza in northeastern Spain, demonstrators fill an avenue.</p><p></p><p>(SOUNDBITE OF ARCHIVED RECORDING)</p><p></p><p>UNIDENTIFIED DEMONSTRATORS: (Chanting in Spanish).</p><p></p><p>SHERLOCK: They're protesting against a data center Microsoft wants to build beside a much-loved local forest.</p><p></p><p>MONICA GRACIA: AI is causing a lot of problems.</p><p></p><p>SHERLOCK: Monica Gracia says she was inspired to join by the loud opposition to data centers in the United States.</p><p></p><p>GRACIA: I think that's one of the reasons why this place is so full of people.</p><p></p><p>SHERLOCK: While many environmental problems are local, most of the push to build data centers around the world comes from U.S. tech giants. So opponents who are fighting their construction are teaming up, says Spanish activist Aurora Gomez. She founded Tu Nube Seca Mi Rio - Your Cloud Dries My River.</p><p></p><p>AURORA GOMEZ: We have connection with, of course, USA, Africa, Australia and even some parts of Asia. We are coordinated, and we are together.</p><p></p><p>SHERLOCK: She says Spanish groups were inspired by activists in the U.K. to crowdfund money for legal bills.</p><p></p><p>LUIS GARCIA: We are exercising our rights.</p><p></p><p>SHERLOCK: Luis Garcia is from Ecologistas en Accion. He's part of a court case to stop his local government from allowing a giant expansion of Amazon data centers.</p><p></p><p>GARCIA: We know they have way more means than we do. But the crowdfunding proves we have gathered a lot of support from so many people - individuals, organizations.</p><p></p><p>SHERLOCK: There's evidence these tactics are working. The European Data Centre Monitor that tracks this opposition says more than 70 European projects were rejected or restricted in the first four months of this year alone.</p><p></p><p>UNIDENTIFIED PERSON: (Speaking Spanish).</p><p></p><p>SHERLOCK: This movement is both global and hyperlocal. In the main square of the tiny village of Quart on the rural plains of Spain's Aragon region, colorful bunting flaps in the wind from a recent celebration by the town's tight-knit community.</p><p></p><p>(SOUNDBITE OF BUNTING FLAPPING)</p><p></p><p>SHERLOCK: Also strung up on the wall here is a giant banner - we drink water, not data centers.</p><p></p><p>CARLOS OLIVAN: (Speaking Spanish).</p><p></p><p>SHERLOCK: It's a slogan to protest a giant data center being built at the edge of the village. Resident Carlos Olivan describes it as a seven-headed monster.</p><p></p><p>OLIVAN: (Speaking Spanish).</p><p></p><p>SHERLOCK: So Olivan and the villages are getting organized.</p><p></p><p>OLIVAN: (Speaking Spanish).</p><p></p><p>SHERLOCK: \"We're trying in a very small group to make visible the scale of what's happening so people understand, empathize and mobilize,\" says Olivan. They began with a referendum in the village.</p><p></p><p>OLIVAN: (Speaking Spanish).</p><p></p><p>SHERLOCK: \"Ninety-five percent of people were against this,\" he says. They'll use the referendum results to pressure authorities to try to stop the project.</p><p></p><p>(SOUNDBITE OF CONSTRUCTION WORK)</p><p></p><p>SHERLOCK: Laura Cosculluela says she got involved in the opposition after seeing what happened in other countries.</p><p></p><p>LAURA COSCULLUELA: We have a lot of data from the U.S., especially, which is the place where it's been going on for longer and where there are more data centers, so it's the most reliable source.</p><p></p><p>(SOUNDBITE OF ARCHIVED RECORDING)</p><p></p><p>UNIDENTIFIED ANNOUNCER: (Speaking Spanish).</p><p></p><p>SHERLOCK: Back at the protest in downtown Zaragoza in Aragon, local activist Maria Pena Calvo says action matters even if it feels small.</p><p></p><p>MARIA PENA CALVO: (Speaking Spanish).</p><p></p><p>SHERLOCK: \"Because putting sticks in the wheels, putting stones in their path, can make some companies simply give up or go elsewhere. It's down to citizens,\" Pena Calvo says, \"to defend every inch of their land.\"</p><p></p><p>Ruth Sherlock, NPR News, Zaragoza, Spain.</p><p></p><p>(SOUNDBITE OF MUSIC)</p><p>\n      </p></div>\n    </div>\n  </article>\n</main>\n\n\n<div class=\"hr-line\"></div>\n<nav>\n<p>Topics</p>\n<ul>\n    <li><a href=\"/1001\">News</a></li>\n    <li><a href=\"/1008\">Culture</a></li>\n    <li><a href=\"/1039\">Music</a></li>\n</ul>\n</nav>\n\n\n<footer>\n  <nav class=\"lower-nav-container\">\n    <li><a href=\"/614470770\">Contact Us</a></li>\n    <li><a href=\"/179876898\">Terms of Use</a></li>\n    <li><a href=\"/179881519\">Permissions</a></li>\n    <li><a href=\"/179878450\">Privacy Policy</a></li>\n  </nav>\n\n  <p>&amp;copy NPR</p>\n</footer>\n\n</body>\n</html>",
+      "nodes": [
+       {
+        "ref": "s:0",
+        "xpath": "/html/body/header/p",
+        "tag": "p",
+        "text": "Text-Only Version Go To Full Site"
+       },
+       {
+        "ref": "s:1",
+        "xpath": "/html/body/main/article/div/p",
+        "tag": "p",
+        "text": "\n        NPR >\n        \n          Debating Data Centers\n        \n      "
+       },
+       {
+        "ref": "s:2",
+        "xpath": "/html/body/main/article/div/div[1]/h1",
+        "tag": "h1",
+        "text": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "s:3",
+        "xpath": "/html/body/main/article/div/div[1]/p[1]",
+        "tag": "p",
+        "text": "By Ruth Sherlock"
+       },
+       {
+        "ref": "s:4",
+        "xpath": "/html/body/main/article/div/div[1]/p[2]",
+        "tag": "p",
+        "text": "Monday, November 16, 2026 • 4:44 AM EST"
+       },
+       {
+        "ref": "s:5",
+        "xpath": "/html/body/main/article/div/div[1]/p[3]",
+        "tag": "p",
+        "text": "Heard on Morning Edition\n        \n      "
+       },
+       {
+        "ref": "s:6",
+        "xpath": "/html/body/main/article/div/div[3]/p[1]",
+        "tag": "p",
+        "text": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire avenue as they called to stop a Microsoft data center from being built beside a beloved local forest."
+       },
+       {
+        "ref": "s:7",
+        "xpath": "/html/body/main/article/div/div[3]/p[2]",
+        "tag": "p",
+        "text": "Videos of the loud opposition to data centers in the United States helped inspire university student Monica Gracia to show up."
+       },
+       {
+        "ref": "s:8",
+        "xpath": "/html/body/main/article/div/div[3]/p[3]",
+        "tag": "p",
+        "text": "\"I think that's one of the reasons why this place is so full of people,\" said Gracia."
+       },
+       {
+        "ref": "s:9",
+        "xpath": "/html/body/main/article/div/div[3]/p[4]",
+        "tag": "p",
+        "text": "While many environmental problems are often very local, most of the push to build data centers around the world comes from U.S. tech giants. So opponents fighting new data centers are teaming up across continents."
+       },
+       {
+        "ref": "s:10",
+        "xpath": "/html/body/main/article/div/div[3]/p[5]",
+        "tag": "p",
+        "text": "\"We have connections with of course the USA, Africa, Australia and even some parts of Asia,\" said Aurora Gomez, a Spanish activist. \"We are coordinated and we are together.\""
+       },
+       {
+        "ref": "s:11",
+        "xpath": "/html/body/main/article/div/div[3]/p[6]",
+        "tag": "p",
+        "text": "Gomez founded the group Tu Nube Seca Mi Rio, which translates to 'Your Cloud Dries My River,' to stop a data centre in her home town, Talavera La Reina in Spain."
+       },
+       {
+        "ref": "s:12",
+        "xpath": "/html/body/main/article/div/div[3]/p[7]",
+        "tag": "p",
+        "text": "\"It was meant to be a weeklong campaign to raise local awareness,\" she told NPR. \"But it just caught fire, because there are so many data centers coming to Spain and to every part of the world.\""
+       },
+       {
+        "ref": "s:13",
+        "xpath": "/html/body/main/article/div/div[3]/p[8]",
+        "tag": "p",
+        "text": "Gomez said she now fields dozens of emails a day from residents of communities where data centers are planned."
+       },
+       {
+        "ref": "s:14",
+        "xpath": "/html/body/main/article/div/div[3]/p[9]",
+        "tag": "p",
+        "text": "She was recently part of a wider European effort that coordinated a series of protests against data centers in 15 countries over two days under the banner \"Stop Dirty Data Centres,\" demanding an immediate moratorium on large-scale projects."
+       },
+       {
+        "ref": "s:15",
+        "xpath": "/html/body/main/article/div/div[3]/p[10]",
+        "tag": "p",
+        "text": "\"We are gaining so much traction - our narratives are being spread around the world,\" Gomez said."
+       },
+       {
+        "ref": "s:16",
+        "xpath": "/html/body/main/article/div/div[3]/p[11]",
+        "tag": "p",
+        "text": "More than 70 European projects were rejected or restricted in the first four months of 2026 alone, according to the European Data Centre Monitor. Public opposition has delayed or cancelled some $42 billion of data center spending in Europe, according to a report from consulting firm STL Partners."
+       },
+       {
+        "ref": "s:17",
+        "xpath": "/html/body/main/article/div/div[3]/h2",
+        "tag": "h2",
+        "text": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "s:18",
+        "xpath": "/html/body/main/article/div/div[3]/p[13]",
+        "tag": "p",
+        "text": "The groups share tactics. After activists in the UK used crowdfunding to launch a successful legal effort to stop a large data center northwest of London, Gomez said she and other Spanish activists were inspired to do the same."
+       },
+       {
+        "ref": "s:19",
+        "xpath": "/html/body/main/article/div/div[3]/p[14]",
+        "tag": "p",
+        "text": "It took them only a week to raise the money they needed to mount what they say is the first major legal challenge in Spain against data center expansion, in this instance to be prevent the Aragón regional government from allowing Amazon Web Service to build one of its largest data center hubs outside the U.S."
+       },
+       {
+        "ref": "s:20",
+        "xpath": "/html/body/main/article/div/div[3]/p[15]",
+        "tag": "p",
+        "text": "\"We are exercising our rights,\" said Luis Garcia from Ecologistas in Acción, one of the groups involved in the case.  \"We know they have way more means than we do. But the crowdfunding proves we have gathered a lot of support from so many people, individuals, organizations.\""
+       },
+       {
+        "ref": "s:21",
+        "xpath": "/html/body/main/article/div/div[3]/p[16]",
+        "tag": "p",
+        "text": "The movement is both global and hyperlocal."
+       },
+       {
+        "ref": "s:22",
+        "xpath": "/html/body/main/article/div/div[3]/p[17]",
+        "tag": "p",
+        "text": "In the tiny village of Cuarte on the rural plains of Aragon, colorful bunting flaps in the wind in the main square beside a Baroque church from a recent celebration by the town's tight-knit community. Strung up on a wall is a giant banner that reads, \"We drink water, not data centers.\""
+       },
+       {
+        "ref": "s:23",
+        "xpath": "/html/body/main/article/div/div[3]/p[18]",
+        "tag": "p",
+        "text": "It's a slogan to protest a giant Amazon facility that's under construction at the edge of the village."
+       },
+       {
+        "ref": "s:24",
+        "xpath": "/html/body/main/article/div/div[3]/p[19]",
+        "tag": "p",
+        "text": "The drilling and hammering of construction interrupts the dawn chorus of the birds. Clouds of dust fill the air and the ground trembles as trucks race piles of freshly dug earth to the site which sits between the village and a protected wetland."
+       },
+       {
+        "ref": "s:25",
+        "xpath": "/html/body/main/article/div/div[3]/p[20]",
+        "tag": "p",
+        "text": "\"To us this feels like a seven-headed monster,\" said Carlos Olivan, a resident of Cuarte. \"We're trying, in a very small group, to make visible the scale of what is happening, so people understand, empathise, and mobilize.\""
+       },
+       {
+        "ref": "s:26",
+        "xpath": "/html/body/main/article/div/div[3]/p[21]",
+        "tag": "p",
+        "text": "The residents began with a local survey they call a \"referendum\" in the village, with 144 registered voters – close to the entire voting age population – responding via WhatsApp. 95% of respondents were against these centers. \"And we think the other five made a mistake filling out the forms,\" said Olivan."
+       },
+       {
+        "ref": "s:27",
+        "xpath": "/html/body/main/article/div/div[3]/p[22]",
+        "tag": "p",
+        "text": "The villagers shared the results with local media and took them to town hall meetings and to officials in the regional government. And they want to pressure the authorities to hold a wider referendum to give residents across the entire province a voice in decisions about these data center developments that promise to transform the region."
+       },
+       {
+        "ref": "s:28",
+        "xpath": "/html/body/main/article/div/div[3]/p[23]",
+        "tag": "p",
+        "text": "In all, planning documents show the regional government is processing approvals for 27 data center complexes, one is close to the size of New York City's Central Park. Together it's estimated they'll require many more times the electricity the region currently uses, and consume vast quantities of water in an area already blighted by drought."
+       },
+       {
+        "ref": "s:29",
+        "xpath": "/html/body/main/article/div/div[3]/p[24]",
+        "tag": "p",
+        "text": "David Blasquez, the head of public policy for Amazon Web Services in Spain and Portugal, told NPR the company is doing all it can to be a \"best in class\" neighbor, including fixing local water pipes to conserve the resource. The regional government told NPR how much water a data center consumes is considered when they weigh planning permission."
+       },
+       {
+        "ref": "s:30",
+        "xpath": "/html/body/main/article/div/div[3]/p[25]",
+        "tag": "p",
+        "text": "But Laura Coscuella, a resident of a town close to where several facilities are planned, said she joined a local group No Es Sequia Es Saqeo – \"It's Not Drought, It's Plunder,\" to fight these developments after learning of the environmental problems some U.S. communities have faced. \"We have a lot of data from the U.S. especially. We need everyone to know about this. I'm afraid that people won't notice what is happening until it's too late – until the taps are not working because they have run the water dry.\""
+       },
+       {
+        "ref": "s:31",
+        "xpath": "/html/body/main/article/div/div[3]/p[26]",
+        "tag": "p",
+        "text": "Coscuella is helping residents of Cuarte become even more effective in their opposition by using strategies in part learned from this wider coordinated network. Each resident plays to their strength, be it searching complex planning documents or planning direct actions."
+       },
+       {
+        "ref": "s:32",
+        "xpath": "/html/body/main/article/div/div[3]/p[27]",
+        "tag": "p",
+        "text": "At the protest in downtown Zaragoza in Aragon, local activist María Peña Calvo said when dealing with companies sensitive to public opinion, every act of opposition matters even if it feels small. \"Putting stones in their path can make some companies simply give up or go elsewhere.\""
+       },
+       {
+        "ref": "s:33",
+        "xpath": "/html/body/main/article/div/div[3]/h3",
+        "tag": "h3",
+        "text": "Transcript"
+       },
+       {
+        "ref": "s:34",
+        "xpath": "/html/body/main/article/div/div[3]/p[28]",
+        "tag": "p",
+        "text": "STEVE INSKEEP, HOST: "
+       },
+       {
+        "ref": "s:35",
+        "xpath": "/html/body/main/article/div/div[3]/p[30]",
+        "tag": "p",
+        "text": " The opposition to data centers that American voters expressed in the midterms is a worldwide phenomenon. Voters around the U.S. have made it harder for communities to build big projects tied to artificial intelligence. And in other countries, local groups are joining forces to slow the AI buildout. NPR's Ruth Sherlock reports."
+       },
+       {
+        "ref": "s:36",
+        "xpath": "/html/body/main/article/div/div[3]/p[32]",
+        "tag": "p",
+        "text": "(SOUNDBITE OF ARCHIVED RECORDING)"
+       },
+       {
+        "ref": "s:37",
+        "xpath": "/html/body/main/article/div/div[3]/p[34]",
+        "tag": "p",
+        "text": "UNIDENTIFIED DEMONSTRATORS: (Chanting in Spanish)."
+       },
+       {
+        "ref": "s:38",
+        "xpath": "/html/body/main/article/div/div[3]/p[36]",
+        "tag": "p",
+        "text": "RUTH SHERLOCK, BYLINE: In Zaragoza in northeastern Spain, demonstrators fill an avenue."
+       },
+       {
+        "ref": "s:39",
+        "xpath": "/html/body/main/article/div/div[3]/p[38]",
+        "tag": "p",
+        "text": "(SOUNDBITE OF ARCHIVED RECORDING)"
+       },
+       {
+        "ref": "s:40",
+        "xpath": "/html/body/main/article/div/div[3]/p[40]",
+        "tag": "p",
+        "text": "UNIDENTIFIED DEMONSTRATORS: (Chanting in Spanish)."
+       },
+       {
+        "ref": "s:41",
+        "xpath": "/html/body/main/article/div/div[3]/p[42]",
+        "tag": "p",
+        "text": "SHERLOCK: They're protesting against a data center Microsoft wants to build beside a much-loved local forest."
+       },
+       {
+        "ref": "s:42",
+        "xpath": "/html/body/main/article/div/div[3]/p[44]",
+        "tag": "p",
+        "text": "MONICA GRACIA: AI is causing a lot of problems."
+       },
+       {
+        "ref": "s:43",
+        "xpath": "/html/body/main/article/div/div[3]/p[46]",
+        "tag": "p",
+        "text": "SHERLOCK: Monica Gracia says she was inspired to join by the loud opposition to data centers in the United States."
+       },
+       {
+        "ref": "s:44",
+        "xpath": "/html/body/main/article/div/div[3]/p[48]",
+        "tag": "p",
+        "text": "GRACIA: I think that's one of the reasons why this place is so full of people."
+       },
+       {
+        "ref": "s:45",
+        "xpath": "/html/body/main/article/div/div[3]/p[50]",
+        "tag": "p",
+        "text": "SHERLOCK: While many environmental problems are local, most of the push to build data centers around the world comes from U.S. tech giants. So opponents who are fighting their construction are teaming up, says Spanish activist Aurora Gomez. She founded Tu Nube Seca Mi Rio - Your Cloud Dries My River."
+       },
+       {
+        "ref": "s:46",
+        "xpath": "/html/body/main/article/div/div[3]/p[52]",
+        "tag": "p",
+        "text": "AURORA GOMEZ: We have connection with, of course, USA, Africa, Australia and even some parts of Asia. We are coordinated, and we are together."
+       },
+       {
+        "ref": "s:47",
+        "xpath": "/html/body/main/article/div/div[3]/p[54]",
+        "tag": "p",
+        "text": "SHERLOCK: She says Spanish groups were inspired by activists in the U.K. to crowdfund money for legal bills."
+       },
+       {
+        "ref": "s:48",
+        "xpath": "/html/body/main/article/div/div[3]/p[56]",
+        "tag": "p",
+        "text": "LUIS GARCIA: We are exercising our rights."
+       },
+       {
+        "ref": "s:49",
+        "xpath": "/html/body/main/article/div/div[3]/p[58]",
+        "tag": "p",
+        "text": "SHERLOCK: Luis Garcia is from Ecologistas en Accion. He's part of a court case to stop his local government from allowing a giant expansion of Amazon data centers."
+       },
+       {
+        "ref": "s:50",
+        "xpath": "/html/body/main/article/div/div[3]/p[60]",
+        "tag": "p",
+        "text": "GARCIA: We know they have way more means than we do. But the crowdfunding proves we have gathered a lot of support from so many people - individuals, organizations."
+       },
+       {
+        "ref": "s:51",
+        "xpath": "/html/body/main/article/div/div[3]/p[62]",
+        "tag": "p",
+        "text": "SHERLOCK: There's evidence these tactics are working. The European Data Centre Monitor that tracks this opposition says more than 70 European projects were rejected or restricted in the first four months of this year alone."
+       },
+       {
+        "ref": "s:52",
+        "xpath": "/html/body/main/article/div/div[3]/p[64]",
+        "tag": "p",
+        "text": "UNIDENTIFIED PERSON: (Speaking Spanish)."
+       },
+       {
+        "ref": "s:53",
+        "xpath": "/html/body/main/article/div/div[3]/p[66]",
+        "tag": "p",
+        "text": "SHERLOCK: This movement is both global and hyperlocal. In the main square of the tiny village of Quart on the rural plains of Spain's Aragon region, colorful bunting flaps in the wind from a recent celebration by the town's tight-knit community."
+       },
+       {
+        "ref": "s:54",
+        "xpath": "/html/body/main/article/div/div[3]/p[68]",
+        "tag": "p",
+        "text": "(SOUNDBITE OF BUNTING FLAPPING)"
+       },
+       {
+        "ref": "s:55",
+        "xpath": "/html/body/main/article/div/div[3]/p[70]",
+        "tag": "p",
+        "text": "SHERLOCK: Also strung up on the wall here is a giant banner - we drink water, not data centers."
+       },
+       {
+        "ref": "s:56",
+        "xpath": "/html/body/main/article/div/div[3]/p[72]",
+        "tag": "p",
+        "text": "CARLOS OLIVAN: (Speaking Spanish)."
+       },
+       {
+        "ref": "s:57",
+        "xpath": "/html/body/main/article/div/div[3]/p[74]",
+        "tag": "p",
+        "text": "SHERLOCK: It's a slogan to protest a giant data center being built at the edge of the village. Resident Carlos Olivan describes it as a seven-headed monster."
+       },
+       {
+        "ref": "s:58",
+        "xpath": "/html/body/main/article/div/div[3]/p[76]",
+        "tag": "p",
+        "text": "OLIVAN: (Speaking Spanish)."
+       },
+       {
+        "ref": "s:59",
+        "xpath": "/html/body/main/article/div/div[3]/p[78]",
+        "tag": "p",
+        "text": "SHERLOCK: So Olivan and the villages are getting organized."
+       },
+       {
+        "ref": "s:60",
+        "xpath": "/html/body/main/article/div/div[3]/p[80]",
+        "tag": "p",
+        "text": "OLIVAN: (Speaking Spanish)."
+       },
+       {
+        "ref": "s:61",
+        "xpath": "/html/body/main/article/div/div[3]/p[82]",
+        "tag": "p",
+        "text": "SHERLOCK: \"We're trying in a very small group to make visible the scale of what's happening so people understand, empathize and mobilize,\" says Olivan. They began with a referendum in the village."
+       },
+       {
+        "ref": "s:62",
+        "xpath": "/html/body/main/article/div/div[3]/p[84]",
+        "tag": "p",
+        "text": "OLIVAN: (Speaking Spanish)."
+       },
+       {
+        "ref": "s:63",
+        "xpath": "/html/body/main/article/div/div[3]/p[86]",
+        "tag": "p",
+        "text": "SHERLOCK: \"Ninety-five percent of people were against this,\" he says. They'll use the referendum results to pressure authorities to try to stop the project."
+       },
+       {
+        "ref": "s:64",
+        "xpath": "/html/body/main/article/div/div[3]/p[88]",
+        "tag": "p",
+        "text": "(SOUNDBITE OF CONSTRUCTION WORK)"
+       },
+       {
+        "ref": "s:65",
+        "xpath": "/html/body/main/article/div/div[3]/p[90]",
+        "tag": "p",
+        "text": "SHERLOCK: Laura Cosculluela says she got involved in the opposition after seeing what happened in other countries."
+       },
+       {
+        "ref": "s:66",
+        "xpath": "/html/body/main/article/div/div[3]/p[92]",
+        "tag": "p",
+        "text": "LAURA COSCULLUELA: We have a lot of data from the U.S., especially, which is the place where it's been going on for longer and where there are more data centers, so it's the most reliable source."
+       },
+       {
+        "ref": "s:67",
+        "xpath": "/html/body/main/article/div/div[3]/p[94]",
+        "tag": "p",
+        "text": "(SOUNDBITE OF ARCHIVED RECORDING)"
+       },
+       {
+        "ref": "s:68",
+        "xpath": "/html/body/main/article/div/div[3]/p[96]",
+        "tag": "p",
+        "text": "UNIDENTIFIED ANNOUNCER: (Speaking Spanish)."
+       },
+       {
+        "ref": "s:69",
+        "xpath": "/html/body/main/article/div/div[3]/p[98]",
+        "tag": "p",
+        "text": "SHERLOCK: Back at the protest in downtown Zaragoza in Aragon, local activist Maria Pena Calvo says action matters even if it feels small."
+       },
+       {
+        "ref": "s:70",
+        "xpath": "/html/body/main/article/div/div[3]/p[100]",
+        "tag": "p",
+        "text": "MARIA PENA CALVO: (Speaking Spanish)."
+       },
+       {
+        "ref": "s:71",
+        "xpath": "/html/body/main/article/div/div[3]/p[102]",
+        "tag": "p",
+        "text": "SHERLOCK: \"Because putting sticks in the wheels, putting stones in their path, can make some companies simply give up or go elsewhere. It's down to citizens,\" Pena Calvo says, \"to defend every inch of their land.\""
+       },
+       {
+        "ref": "s:72",
+        "xpath": "/html/body/main/article/div/div[3]/p[104]",
+        "tag": "p",
+        "text": "Ruth Sherlock, NPR News, Zaragoza, Spain."
+       },
+       {
+        "ref": "s:73",
+        "xpath": "/html/body/main/article/div/div[3]/p[106]",
+        "tag": "p",
+        "text": "(SOUNDBITE OF MUSIC)"
+       },
+       {
+        "ref": "s:74",
+        "xpath": "/html/body/nav/p",
+        "tag": "p",
+        "text": "Topics"
+       },
+       {
+        "ref": "s:75",
+        "xpath": "/html/body/nav/ul/li[1]",
+        "tag": "li",
+        "text": "News"
+       },
+       {
+        "ref": "s:76",
+        "xpath": "/html/body/nav/ul/li[2]",
+        "tag": "li",
+        "text": "Culture"
+       },
+       {
+        "ref": "s:77",
+        "xpath": "/html/body/nav/ul/li[3]",
+        "tag": "li",
+        "text": "Music"
+       },
+       {
+        "ref": "s:78",
+        "xpath": "/html/body/footer/nav/li[1]",
+        "tag": "li",
+        "text": "Contact Us"
+       },
+       {
+        "ref": "s:79",
+        "xpath": "/html/body/footer/nav/li[2]",
+        "tag": "li",
+        "text": "Terms of Use"
+       },
+       {
+        "ref": "s:80",
+        "xpath": "/html/body/footer/nav/li[3]",
+        "tag": "li",
+        "text": "Permissions"
+       },
+       {
+        "ref": "s:81",
+        "xpath": "/html/body/footer/nav/li[4]",
+        "tag": "li",
+        "text": "Privacy Policy"
+       },
+       {
+        "ref": "s:82",
+        "xpath": "/html/body/footer/p",
+        "tag": "p",
+        "text": "&copy NPR"
+       }
+      ],
+      "truncated": false
+     },
+     "candidate": {
+      "title_ref": "p:title",
+      "title": "How the movement against data centers has gone global",
+      "block_count": 72,
+      "blocks": [
+       {
+        "ref": "p:0",
+        "kind": "paragraph",
+        "text": "NPR > Debating Data Centers",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:1",
+        "kind": "paragraph",
+        "text": "By Ruth Sherlock",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:2",
+        "kind": "paragraph",
+        "text": "Monday, November 16, 2026 • 4:44 AM EST",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:3",
+        "kind": "paragraph",
+        "text": "Heard on Morning Edition",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:4",
+        "kind": "paragraph",
+        "text": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire avenue as they called to stop a Microsoft data center from being built beside a beloved local forest.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:5",
+        "kind": "paragraph",
+        "text": "Videos of the loud opposition to data centers in the United States helped inspire university student Monica Gracia to show up.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:6",
+        "kind": "paragraph",
+        "text": "\"I think that's one of the reasons why this place is so full of people,\" said Gracia.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:7",
+        "kind": "paragraph",
+        "text": "While many environmental problems are often very local, most of the push to build data centers around the world comes from U.S. tech giants. So opponents fighting new data centers are teaming up across continents.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:8",
+        "kind": "paragraph",
+        "text": "\"We have connections with of course the USA, Africa, Australia and even some parts of Asia,\" said Aurora Gomez, a Spanish activist. \"We are coordinated and we are together.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:9",
+        "kind": "paragraph",
+        "text": "Gomez founded the group Tu Nube Seca Mi Rio, which translates to 'Your Cloud Dries My River,' to stop a data centre in her home town, Talavera La Reina in Spain.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:10",
+        "kind": "paragraph",
+        "text": "\"It was meant to be a weeklong campaign to raise local awareness,\" she told NPR. \"But it just caught fire, because there are so many data centers coming to Spain and to every part of the world.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:11",
+        "kind": "paragraph",
+        "text": "Gomez said she now fields dozens of emails a day from residents of communities where data centers are planned.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:12",
+        "kind": "paragraph",
+        "text": "She was recently part of a wider European effort that coordinated a series of protests against data centers in 15 countries over two days under the banner \"Stop Dirty Data Centres,\" demanding an immediate moratorium on large-scale projects.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:13",
+        "kind": "paragraph",
+        "text": "\"We are gaining so much traction - our narratives are being spread around the world,\" Gomez said.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:14",
+        "kind": "paragraph",
+        "text": "More than 70 European projects were rejected or restricted in the first four months of 2026 alone, according to the European Data Centre Monitor. Public opposition has delayed or cancelled some $42 billion of data center spending in Europe, according to a report from consulting firm STL Partners.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:15",
+        "kind": "heading",
+        "text": "Shared tactics, crowdfunding",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+       },
+       {
+        "ref": "p:16",
+        "kind": "paragraph",
+        "text": "The groups share tactics. After activists in the UK used crowdfunding to launch a successful legal effort to stop a large data center northwest of London, Gomez said she and other Spanish activists were inspired to do the same.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:17",
+        "kind": "paragraph",
+        "text": "It took them only a week to raise the money they needed to mount what they say is the first major legal challenge in Spain against data center expansion, in this instance to be prevent the Aragón regional government from allowing Amazon Web Service to build one of its largest data center hubs outside the U.S.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:18",
+        "kind": "paragraph",
+        "text": "\"We are exercising our rights,\" said Luis Garcia from Ecologistas in Acción, one of the groups involved in the case. \"We know they have way more means than we do. But the crowdfunding proves we have gathered a lot of support from so many people, individuals, organizations.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:19",
+        "kind": "paragraph",
+        "text": "The movement is both global and hyperlocal.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:20",
+        "kind": "paragraph",
+        "text": "In the tiny village of Cuarte on the rural plains of Aragon, colorful bunting flaps in the wind in the main square beside a Baroque church from a recent celebration by the town's tight-knit community. Strung up on a wall is a giant banner that reads, \"We drink water, not data centers.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:21",
+        "kind": "paragraph",
+        "text": "It's a slogan to protest a giant Amazon facility that's under construction at the edge of the village.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:22",
+        "kind": "paragraph",
+        "text": "The drilling and hammering of construction interrupts the dawn chorus of the birds. Clouds of dust fill the air and the ground trembles as trucks race piles of freshly dug earth to the site which sits between the village and a protected wetland.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:23",
+        "kind": "paragraph",
+        "text": "\"To us this feels like a seven-headed monster,\" said Carlos Olivan, a resident of Cuarte. \"We're trying, in a very small group, to make visible the scale of what is happening, so people understand, empathise, and mobilize.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:24",
+        "kind": "paragraph",
+        "text": "The residents began with a local survey they call a \"referendum\" in the village, with 144 registered voters – close to the entire voting age population – responding via WhatsApp. 95% of respondents were against these centers. \"And we think the other five made a mistake filling out the forms,\" said Olivan.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:25",
+        "kind": "paragraph",
+        "text": "The villagers shared the results with local media and took them to town hall meetings and to officials in the regional government. And they want to pressure the authorities to hold a wider referendum to give residents across the entire province a voice in decisions about these data center developments that promise to transform the region.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:26",
+        "kind": "paragraph",
+        "text": "In all, planning documents show the regional government is processing approvals for 27 data center complexes, one is close to the size of New York City's Central Park. Together it's estimated they'll require many more times the electricity the region currently uses, and consume vast quantities of water in an area already blighted by drought.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:27",
+        "kind": "paragraph",
+        "text": "David Blasquez, the head of public policy for Amazon Web Services in Spain and Portugal, told NPR the company is doing all it can to be a \"best in class\" neighbor, including fixing local water pipes to conserve the resource. The regional government told NPR how much water a data center consumes is considered when they weigh planning permission.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:28",
+        "kind": "paragraph",
+        "text": "But Laura Coscuella, a resident of a town close to where several facilities are planned, said she joined a local group No Es Sequia Es Saqeo – \"It's Not Drought, It's Plunder,\" to fight these developments after learning of the environmental problems some U.S. communities have faced. \"We have a lot of data from the U.S. especially. We need everyone to know about this. I'm afraid that people won't notice what is happening until it's too late – until the taps are not working because they have run the water dry.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:29",
+        "kind": "paragraph",
+        "text": "Coscuella is helping residents of Cuarte become even more effective in their opposition by using strategies in part learned from this wider coordinated network. Each resident plays to their strength, be it searching complex planning documents or planning direct actions.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:30",
+        "kind": "paragraph",
+        "text": "At the protest in downtown Zaragoza in Aragon, local activist María Peña Calvo said when dealing with companies sensitive to public opinion, every act of opposition matters even if it feels small. \"Putting stones in their path can make some companies simply give up or go elsewhere.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:31",
+        "kind": "heading",
+        "text": "Transcript",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 3
+       },
+       {
+        "ref": "p:32",
+        "kind": "paragraph",
+        "text": "STEVE INSKEEP, HOST:",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:33",
+        "kind": "paragraph",
+        "text": "The opposition to data centers that American voters expressed in the midterms is a worldwide phenomenon. Voters around the U.S. have made it harder for communities to build big projects tied to artificial intelligence. And in other countries, local groups are joining forces to slow the AI buildout. NPR's Ruth Sherlock reports.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:34",
+        "kind": "paragraph",
+        "text": "(SOUNDBITE OF ARCHIVED RECORDING)",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:35",
+        "kind": "paragraph",
+        "text": "UNIDENTIFIED DEMONSTRATORS: (Chanting in Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:36",
+        "kind": "paragraph",
+        "text": "RUTH SHERLOCK, BYLINE: In Zaragoza in northeastern Spain, demonstrators fill an avenue.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:37",
+        "kind": "paragraph",
+        "text": "(SOUNDBITE OF ARCHIVED RECORDING)",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:38",
+        "kind": "paragraph",
+        "text": "UNIDENTIFIED DEMONSTRATORS: (Chanting in Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:39",
+        "kind": "paragraph",
+        "text": "SHERLOCK: They're protesting against a data center Microsoft wants to build beside a much-loved local forest.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:40",
+        "kind": "paragraph",
+        "text": "MONICA GRACIA: AI is causing a lot of problems.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:41",
+        "kind": "paragraph",
+        "text": "SHERLOCK: Monica Gracia says she was inspired to join by the loud opposition to data centers in the United States.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:42",
+        "kind": "paragraph",
+        "text": "GRACIA: I think that's one of the reasons why this place is so full of people.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:43",
+        "kind": "paragraph",
+        "text": "SHERLOCK: While many environmental problems are local, most of the push to build data centers around the world comes from U.S. tech giants. So opponents who are fighting their construction are teaming up, says Spanish activist Aurora Gomez. She founded Tu Nube Seca Mi Rio - Your Cloud Dries My River.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:44",
+        "kind": "paragraph",
+        "text": "AURORA GOMEZ: We have connection with, of course, USA, Africa, Australia and even some parts of Asia. We are coordinated, and we are together.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:45",
+        "kind": "paragraph",
+        "text": "SHERLOCK: She says Spanish groups were inspired by activists in the U.K. to crowdfund money for legal bills.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:46",
+        "kind": "paragraph",
+        "text": "LUIS GARCIA: We are exercising our rights.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:47",
+        "kind": "paragraph",
+        "text": "SHERLOCK: Luis Garcia is from Ecologistas en Accion. He's part of a court case to stop his local government from allowing a giant expansion of Amazon data centers.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:48",
+        "kind": "paragraph",
+        "text": "GARCIA: We know they have way more means than we do. But the crowdfunding proves we have gathered a lot of support from so many people - individuals, organizations.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:49",
+        "kind": "paragraph",
+        "text": "SHERLOCK: There's evidence these tactics are working. The European Data Centre Monitor that tracks this opposition says more than 70 European projects were rejected or restricted in the first four months of this year alone.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:50",
+        "kind": "paragraph",
+        "text": "UNIDENTIFIED PERSON: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:51",
+        "kind": "paragraph",
+        "text": "SHERLOCK: This movement is both global and hyperlocal. In the main square of the tiny village of Quart on the rural plains of Spain's Aragon region, colorful bunting flaps in the wind from a recent celebration by the town's tight-knit community.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:52",
+        "kind": "paragraph",
+        "text": "(SOUNDBITE OF BUNTING FLAPPING)",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:53",
+        "kind": "paragraph",
+        "text": "SHERLOCK: Also strung up on the wall here is a giant banner - we drink water, not data centers.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:54",
+        "kind": "paragraph",
+        "text": "CARLOS OLIVAN: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:55",
+        "kind": "paragraph",
+        "text": "SHERLOCK: It's a slogan to protest a giant data center being built at the edge of the village. Resident Carlos Olivan describes it as a seven-headed monster.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:56",
+        "kind": "paragraph",
+        "text": "OLIVAN: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:57",
+        "kind": "paragraph",
+        "text": "SHERLOCK: So Olivan and the villages are getting organized.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:58",
+        "kind": "paragraph",
+        "text": "OLIVAN: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:59",
+        "kind": "paragraph",
+        "text": "SHERLOCK: \"We're trying in a very small group to make visible the scale of what's happening so people understand, empathize and mobilize,\" says Olivan. They began with a referendum in the village.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:60",
+        "kind": "paragraph",
+        "text": "OLIVAN: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:61",
+        "kind": "paragraph",
+        "text": "SHERLOCK: \"Ninety-five percent of people were against this,\" he says. They'll use the referendum results to pressure authorities to try to stop the project.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:62",
+        "kind": "paragraph",
+        "text": "(SOUNDBITE OF CONSTRUCTION WORK)",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:63",
+        "kind": "paragraph",
+        "text": "SHERLOCK: Laura Cosculluela says she got involved in the opposition after seeing what happened in other countries.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:64",
+        "kind": "paragraph",
+        "text": "LAURA COSCULLUELA: We have a lot of data from the U.S., especially, which is the place where it's been going on for longer and where there are more data centers, so it's the most reliable source.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:65",
+        "kind": "paragraph",
+        "text": "(SOUNDBITE OF ARCHIVED RECORDING)",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:66",
+        "kind": "paragraph",
+        "text": "UNIDENTIFIED ANNOUNCER: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:67",
+        "kind": "paragraph",
+        "text": "SHERLOCK: Back at the protest in downtown Zaragoza in Aragon, local activist Maria Pena Calvo says action matters even if it feels small.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:68",
+        "kind": "paragraph",
+        "text": "MARIA PENA CALVO: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:69",
+        "kind": "paragraph",
+        "text": "SHERLOCK: \"Because putting sticks in the wheels, putting stones in their path, can make some companies simply give up or go elsewhere. It's down to citizens,\" Pena Calvo says, \"to defend every inch of their land.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:70",
+        "kind": "paragraph",
+        "text": "Ruth Sherlock, NPR News, Zaragoza, Spain.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "p:71",
+        "kind": "paragraph",
+        "text": "(SOUNDBITE OF MUSIC)",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       }
+      ]
+     },
+     "gold": {
+      "title_ref": "g:title",
+      "title": "How the movement against data centers has gone global",
+      "block_count": 72,
+      "blocks": [
+       {
+        "ref": "g:0",
+        "kind": "paragraph",
+        "text": "NPR > Debating Data Centers",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:1",
+        "kind": "paragraph",
+        "text": "By Ruth Sherlock",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:2",
+        "kind": "paragraph",
+        "text": "Monday, November 16, 2026 • 4:44 AM EST",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:3",
+        "kind": "paragraph",
+        "text": "Heard on Morning Edition",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:4",
+        "kind": "paragraph",
+        "text": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire avenue as they called to stop a Microsoft data center from being built beside a beloved local forest.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:5",
+        "kind": "paragraph",
+        "text": "Videos of the loud opposition to data centers in the United States helped inspire university student Monica Gracia to show up.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:6",
+        "kind": "paragraph",
+        "text": "\"I think that's one of the reasons why this place is so full of people,\" said Gracia.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:7",
+        "kind": "paragraph",
+        "text": "While many environmental problems are often very local, most of the push to build data centers around the world comes from U.S. tech giants. So opponents fighting new data centers are teaming up across continents.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:8",
+        "kind": "paragraph",
+        "text": "\"We have connections with of course the USA, Africa, Australia and even some parts of Asia,\" said Aurora Gomez, a Spanish activist. \"We are coordinated and we are together.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:9",
+        "kind": "paragraph",
+        "text": "Gomez founded the group Tu Nube Seca Mi Rio, which translates to 'Your Cloud Dries My River,' to stop a data centre in her home town, Talavera La Reina in Spain.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:10",
+        "kind": "paragraph",
+        "text": "\"It was meant to be a weeklong campaign to raise local awareness,\" she told NPR. \"But it just caught fire, because there are so many data centers coming to Spain and to every part of the world.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:11",
+        "kind": "paragraph",
+        "text": "Gomez said she now fields dozens of emails a day from residents of communities where data centers are planned.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:12",
+        "kind": "paragraph",
+        "text": "She was recently part of a wider European effort that coordinated a series of protests against data centers in 15 countries over two days under the banner \"Stop Dirty Data Centres,\" demanding an immediate moratorium on large-scale projects.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:13",
+        "kind": "paragraph",
+        "text": "\"We are gaining so much traction - our narratives are being spread around the world,\" Gomez said.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:14",
+        "kind": "paragraph",
+        "text": "More than 70 European projects were rejected or restricted in the first four months of 2026 alone, according to the European Data Centre Monitor. Public opposition has delayed or cancelled some $42 billion of data center spending in Europe, according to a report from consulting firm STL Partners.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:15",
+        "kind": "heading",
+        "text": "Shared tactics, crowdfunding",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 2
+       },
+       {
+        "ref": "g:16",
+        "kind": "paragraph",
+        "text": "The groups share tactics. After activists in the UK used crowdfunding to launch a successful legal effort to stop a large data center northwest of London, Gomez said she and other Spanish activists were inspired to do the same.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:17",
+        "kind": "paragraph",
+        "text": "It took them only a week to raise the money they needed to mount what they say is the first major legal challenge in Spain against data center expansion, in this instance to be prevent the Aragón regional government from allowing Amazon Web Service to build one of its largest data center hubs outside the U.S.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:18",
+        "kind": "paragraph",
+        "text": "\"We are exercising our rights,\" said Luis Garcia from Ecologistas in Acción, one of the groups involved in the case. \"We know they have way more means than we do. But the crowdfunding proves we have gathered a lot of support from so many people, individuals, organizations.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:19",
+        "kind": "paragraph",
+        "text": "The movement is both global and hyperlocal.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:20",
+        "kind": "paragraph",
+        "text": "In the tiny village of Cuarte on the rural plains of Aragon, colorful bunting flaps in the wind in the main square beside a Baroque church from a recent celebration by the town's tight-knit community. Strung up on a wall is a giant banner that reads, \"We drink water, not data centers.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:21",
+        "kind": "paragraph",
+        "text": "It's a slogan to protest a giant Amazon facility that's under construction at the edge of the village.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:22",
+        "kind": "paragraph",
+        "text": "The drilling and hammering of construction interrupts the dawn chorus of the birds. Clouds of dust fill the air and the ground trembles as trucks race piles of freshly dug earth to the site which sits between the village and a protected wetland.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:23",
+        "kind": "paragraph",
+        "text": "\"To us this feels like a seven-headed monster,\" said Carlos Olivan, a resident of Cuarte. \"We're trying, in a very small group, to make visible the scale of what is happening, so people understand, empathise, and mobilize.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:24",
+        "kind": "paragraph",
+        "text": "The residents began with a local survey they call a \"referendum\" in the village, with 144 registered voters – close to the entire voting age population – responding via WhatsApp. 95% of respondents were against these centers. \"And we think the other five made a mistake filling out the forms,\" said Olivan.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:25",
+        "kind": "paragraph",
+        "text": "The villagers shared the results with local media and took them to town hall meetings and to officials in the regional government. And they want to pressure the authorities to hold a wider referendum to give residents across the entire province a voice in decisions about these data center developments that promise to transform the region.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:26",
+        "kind": "paragraph",
+        "text": "In all, planning documents show the regional government is processing approvals for 27 data center complexes, one is close to the size of New York City's Central Park. Together it's estimated they'll require many more times the electricity the region currently uses, and consume vast quantities of water in an area already blighted by drought.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:27",
+        "kind": "paragraph",
+        "text": "David Blasquez, the head of public policy for Amazon Web Services in Spain and Portugal, told NPR the company is doing all it can to be a \"best in class\" neighbor, including fixing local water pipes to conserve the resource. The regional government told NPR how much water a data center consumes is considered when they weigh planning permission.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:28",
+        "kind": "paragraph",
+        "text": "But Laura Coscuella, a resident of a town close to where several facilities are planned, said she joined a local group No Es Sequia Es Saqeo – \"It's Not Drought, It's Plunder,\" to fight these developments after learning of the environmental problems some U.S. communities have faced. \"We have a lot of data from the U.S. especially. We need everyone to know about this. I'm afraid that people won't notice what is happening until it's too late – until the taps are not working because they have run the water dry.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:29",
+        "kind": "paragraph",
+        "text": "Coscuella is helping residents of Cuarte become even more effective in their opposition by using strategies in part learned from this wider coordinated network. Each resident plays to their strength, be it searching complex planning documents or planning direct actions.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:30",
+        "kind": "paragraph",
+        "text": "At the protest in downtown Zaragoza in Aragon, local activist María Peña Calvo said when dealing with companies sensitive to public opinion, every act of opposition matters even if it feels small. \"Putting stones in their path can make some companies simply give up or go elsewhere.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:31",
+        "kind": "heading",
+        "text": "Transcript",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null,
+        "heading_level": 3
+       },
+       {
+        "ref": "g:32",
+        "kind": "paragraph",
+        "text": "STEVE INSKEEP, HOST:",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:33",
+        "kind": "paragraph",
+        "text": "The opposition to data centers that American voters expressed in the midterms is a worldwide phenomenon. Voters around the U.S. have made it harder for communities to build big projects tied to artificial intelligence. And in other countries, local groups are joining forces to slow the AI buildout. NPR's Ruth Sherlock reports.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:34",
+        "kind": "paragraph",
+        "text": "(SOUNDBITE OF ARCHIVED RECORDING)",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:35",
+        "kind": "paragraph",
+        "text": "UNIDENTIFIED DEMONSTRATORS: (Chanting in Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:36",
+        "kind": "paragraph",
+        "text": "RUTH SHERLOCK, BYLINE: In Zaragoza in northeastern Spain, demonstrators fill an avenue.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:37",
+        "kind": "paragraph",
+        "text": "(SOUNDBITE OF ARCHIVED RECORDING)",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:38",
+        "kind": "paragraph",
+        "text": "UNIDENTIFIED DEMONSTRATORS: (Chanting in Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:39",
+        "kind": "paragraph",
+        "text": "SHERLOCK: They're protesting against a data center Microsoft wants to build beside a much-loved local forest.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:40",
+        "kind": "paragraph",
+        "text": "MONICA GRACIA: AI is causing a lot of problems.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:41",
+        "kind": "paragraph",
+        "text": "SHERLOCK: Monica Gracia says she was inspired to join by the loud opposition to data centers in the United States.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:42",
+        "kind": "paragraph",
+        "text": "GRACIA: I think that's one of the reasons why this place is so full of people.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:43",
+        "kind": "paragraph",
+        "text": "SHERLOCK: While many environmental problems are local, most of the push to build data centers around the world comes from U.S. tech giants. So opponents who are fighting their construction are teaming up, says Spanish activist Aurora Gomez. She founded Tu Nube Seca Mi Rio - Your Cloud Dries My River.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:44",
+        "kind": "paragraph",
+        "text": "AURORA GOMEZ: We have connection with, of course, USA, Africa, Australia and even some parts of Asia. We are coordinated, and we are together.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:45",
+        "kind": "paragraph",
+        "text": "SHERLOCK: She says Spanish groups were inspired by activists in the U.K. to crowdfund money for legal bills.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:46",
+        "kind": "paragraph",
+        "text": "LUIS GARCIA: We are exercising our rights.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:47",
+        "kind": "paragraph",
+        "text": "SHERLOCK: Luis Garcia is from Ecologistas en Accion. He's part of a court case to stop his local government from allowing a giant expansion of Amazon data centers.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:48",
+        "kind": "paragraph",
+        "text": "GARCIA: We know they have way more means than we do. But the crowdfunding proves we have gathered a lot of support from so many people - individuals, organizations.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:49",
+        "kind": "paragraph",
+        "text": "SHERLOCK: There's evidence these tactics are working. The European Data Centre Monitor that tracks this opposition says more than 70 European projects were rejected or restricted in the first four months of this year alone.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:50",
+        "kind": "paragraph",
+        "text": "UNIDENTIFIED PERSON: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:51",
+        "kind": "paragraph",
+        "text": "SHERLOCK: This movement is both global and hyperlocal. In the main square of the tiny village of Quart on the rural plains of Spain's Aragon region, colorful bunting flaps in the wind from a recent celebration by the town's tight-knit community.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:52",
+        "kind": "paragraph",
+        "text": "(SOUNDBITE OF BUNTING FLAPPING)",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:53",
+        "kind": "paragraph",
+        "text": "SHERLOCK: Also strung up on the wall here is a giant banner - we drink water, not data centers.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:54",
+        "kind": "paragraph",
+        "text": "CARLOS OLIVAN: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:55",
+        "kind": "paragraph",
+        "text": "SHERLOCK: It's a slogan to protest a giant data center being built at the edge of the village. Resident Carlos Olivan describes it as a seven-headed monster.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:56",
+        "kind": "paragraph",
+        "text": "OLIVAN: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:57",
+        "kind": "paragraph",
+        "text": "SHERLOCK: So Olivan and the villages are getting organized.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:58",
+        "kind": "paragraph",
+        "text": "OLIVAN: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:59",
+        "kind": "paragraph",
+        "text": "SHERLOCK: \"We're trying in a very small group to make visible the scale of what's happening so people understand, empathize and mobilize,\" says Olivan. They began with a referendum in the village.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:60",
+        "kind": "paragraph",
+        "text": "OLIVAN: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:61",
+        "kind": "paragraph",
+        "text": "SHERLOCK: \"Ninety-five percent of people were against this,\" he says. They'll use the referendum results to pressure authorities to try to stop the project.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:62",
+        "kind": "paragraph",
+        "text": "(SOUNDBITE OF CONSTRUCTION WORK)",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:63",
+        "kind": "paragraph",
+        "text": "SHERLOCK: Laura Cosculluela says she got involved in the opposition after seeing what happened in other countries.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:64",
+        "kind": "paragraph",
+        "text": "LAURA COSCULLUELA: We have a lot of data from the U.S., especially, which is the place where it's been going on for longer and where there are more data centers, so it's the most reliable source.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:65",
+        "kind": "paragraph",
+        "text": "(SOUNDBITE OF ARCHIVED RECORDING)",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:66",
+        "kind": "paragraph",
+        "text": "UNIDENTIFIED ANNOUNCER: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:67",
+        "kind": "paragraph",
+        "text": "SHERLOCK: Back at the protest in downtown Zaragoza in Aragon, local activist Maria Pena Calvo says action matters even if it feels small.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:68",
+        "kind": "paragraph",
+        "text": "MARIA PENA CALVO: (Speaking Spanish).",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:69",
+        "kind": "paragraph",
+        "text": "SHERLOCK: \"Because putting sticks in the wheels, putting stones in their path, can make some companies simply give up or go elsewhere. It's down to citizens,\" Pena Calvo says, \"to defend every inch of their land.\"",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:70",
+        "kind": "paragraph",
+        "text": "Ruth Sherlock, NPR News, Zaragoza, Spain.",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       },
+       {
+        "ref": "g:71",
+        "kind": "paragraph",
+        "text": "(SOUNDBITE OF MUSIC)",
+        "list_type": null,
+        "depth": 0,
+        "ordinal": null
+       }
+      ]
+     },
+     "evidence_menus": {
+      "completeness": [
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:1",
+        "quote": "By Ruth Sherlock"
+       },
+       {
+        "ref": "g:2",
+        "quote": "Monday, November 16, 2026 • 4:44 AM EST"
+       },
+       {
+        "ref": "g:3",
+        "quote": "Heard on Morning Edition"
+       },
+       {
+        "ref": "g:4",
+        "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire"
+       },
+       {
+        "ref": "g:5",
+        "quote": "Videos of the loud opposition to data centers in the United States helped inspire university student Monica Gracia to sh"
+       },
+       {
+        "ref": "g:6",
+        "quote": "\"I think that's one of the reasons why this place is so full of people,\" said Gracia."
+       },
+       {
+        "ref": "g:7",
+        "quote": "While many environmental problems are often very local, most of the push to build data centers around the world comes fr"
+       },
+       {
+        "ref": "g:8",
+        "quote": "\"We have connections with of course the USA, Africa, Australia and even some parts of Asia,\" said Aurora Gomez, a Spanis"
+       },
+       {
+        "ref": "g:9",
+        "quote": "Gomez founded the group Tu Nube Seca Mi Rio, which translates to 'Your Cloud Dries My River,' to stop a data centre in h"
+       }
+      ],
+      "cleanliness": [
+       {
+        "ref": "s:0",
+        "quote": "Text-Only Version Go To Full Site"
+       },
+       {
+        "ref": "s:17",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "s:18",
+        "quote": "The groups share tactics. After activists in the UK used crowdfunding to launch a successful legal effort to stop a larg"
+       },
+       {
+        "ref": "s:27",
+        "quote": "The villagers shared the results with local media and took them to town hall meetings and to officials in the regional g"
+       },
+       {
+        "ref": "s:74",
+        "quote": "Topics"
+       },
+       {
+        "ref": "s:75",
+        "quote": "News"
+       },
+       {
+        "ref": "s:76",
+        "quote": "Culture"
+       },
+       {
+        "ref": "s:77",
+        "quote": "Music"
+       },
+       {
+        "ref": "s:78",
+        "quote": "Contact Us"
+       },
+       {
+        "ref": "s:79",
+        "quote": "Terms of Use"
+       },
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:1",
+        "quote": "By Ruth Sherlock"
+       },
+       {
+        "ref": "g:2",
+        "quote": "Monday, November 16, 2026 • 4:44 AM EST"
+       },
+       {
+        "ref": "g:3",
+        "quote": "Heard on Morning Edition"
+       },
+       {
+        "ref": "g:4",
+        "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire"
+       },
+       {
+        "ref": "g:5",
+        "quote": "Videos of the loud opposition to data centers in the United States helped inspire university student Monica Gracia to sh"
+       },
+       {
+        "ref": "g:6",
+        "quote": "\"I think that's one of the reasons why this place is so full of people,\" said Gracia."
+       },
+       {
+        "ref": "g:7",
+        "quote": "While many environmental problems are often very local, most of the push to build data centers around the world comes fr"
+       },
+       {
+        "ref": "g:8",
+        "quote": "\"We have connections with of course the USA, Africa, Australia and even some parts of Asia,\" said Aurora Gomez, a Spanis"
+       },
+       {
+        "ref": "g:9",
+        "quote": "Gomez founded the group Tu Nube Seca Mi Rio, which translates to 'Your Cloud Dries My River,' to stop a data centre in h"
+       }
+      ],
+      "structure": [
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "s:17",
+        "quote": "Shared tactics, crowdfunding"
+       },
+       {
+        "ref": "s:33",
+        "quote": "Transcript"
+       },
+       {
+        "ref": "s:75",
+        "quote": "News"
+       },
+       {
+        "ref": "s:76",
+        "quote": "Culture"
+       },
+       {
+        "ref": "s:77",
+        "quote": "Music"
+       },
+       {
+        "ref": "s:78",
+        "quote": "Contact Us"
+       },
+       {
+        "ref": "s:79",
+        "quote": "Terms of Use"
+       },
+       {
+        "ref": "s:80",
+        "quote": "Permissions"
+       },
+       {
+        "ref": "s:81",
+        "quote": "Privacy Policy"
+       },
+       {
+        "ref": "g:0",
+        "quote": "NPR > Debating Data Centers"
+       },
+       {
+        "ref": "g:1",
+        "quote": "By Ruth Sherlock"
+       },
+       {
+        "ref": "g:2",
+        "quote": "Monday, November 16, 2026 • 4:44 AM EST"
+       },
+       {
+        "ref": "g:3",
+        "quote": "Heard on Morning Edition"
+       },
+       {
+        "ref": "g:4",
+        "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire"
+       },
+       {
+        "ref": "g:5",
+        "quote": "Videos of the loud opposition to data centers in the United States helped inspire university student Monica Gracia to sh"
+       },
+       {
+        "ref": "g:6",
+        "quote": "\"I think that's one of the reasons why this place is so full of people,\" said Gracia."
+       },
+       {
+        "ref": "g:7",
+        "quote": "While many environmental problems are often very local, most of the push to build data centers around the world comes fr"
+       },
+       {
+        "ref": "g:8",
+        "quote": "\"We have connections with of course the USA, Africa, Australia and even some parts of Asia,\" said Aurora Gomez, a Spanis"
+       },
+       {
+        "ref": "g:9",
+        "quote": "Gomez founded the group Tu Nube Seca Mi Rio, which translates to 'Your Cloud Dries My River,' to stop a data centre in h"
+       }
+      ],
+      "title": [
+       {
+        "ref": "p:title",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "g:title",
+        "quote": "How the movement against data centers has gone global"
+       },
+       {
+        "ref": "s:2",
+        "quote": "How the movement against data centers has gone global"
+       }
+      ],
+      "format": []
+     }
+    },
+    "status": "accepted",
+    "assessment": {
+     "schema_version": 1,
+     "dimensions": {
+      "completeness": {
+       "score": 4,
+       "status": "scored",
+       "severity": "none",
+       "reason": "The candidate includes all article content from the source, including the byline, date, main text, and full transcript.",
+       "evidence": [
+        {
+         "ref": "g:0",
+         "quote": "NPR > Debating Data Centers"
+        },
+        {
+         "ref": "g:1",
+         "quote": "By Ruth Sherlock"
+        },
+        {
+         "ref": "g:2",
+         "quote": "Monday, November 16, 2026 • 4:44 AM EST"
+        },
+        {
+         "ref": "g:3",
+         "quote": "Heard on Morning Edition"
+        },
+        {
+         "ref": "g:4",
+         "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire avenue as they called to stop a Microsoft data center from being built beside a beloved local forest."
+        }
+       ]
+      },
+      "cleanliness": {
+       "score": 4,
+       "status": "scored",
+       "severity": "none",
+       "reason": "Navigation, header links, and footer elements are correctly excluded from the extraction.",
+       "evidence": [
+        {
+         "ref": "s:0",
+         "quote": "Text-Only Version Go To Full Site"
+        },
+        {
+         "ref": "s:74",
+         "quote": "Topics"
+        },
+        {
+         "ref": "s:75",
+         "quote": "News"
+        },
+        {
+         "ref": "s:78",
+         "quote": "Contact Us"
+        },
+        {
+         "ref": "s:79",
+         "quote": "Terms of Use"
+        }
+       ]
+      },
+      "structure": {
+       "score": 4,
+       "status": "scored",
+       "severity": "none",
+       "reason": "The order of paragraphs and headings matches the source document exactly.",
+       "evidence": [
+        {
+         "ref": "s:2",
+         "quote": "How the movement against data centers has gone global"
+        },
+        {
+         "ref": "s:17",
+         "quote": "Shared tactics, crowdfunding"
+        },
+        {
+         "ref": "s:33",
+         "quote": "Transcript"
+        },
+        {
+         "ref": "g:15",
+         "quote": "Shared tactics, crowdfunding"
+        },
+        {
+         "ref": "g:31",
+         "quote": "Transcript"
+        }
+       ]
+      },
+      "title": {
+       "score": 4,
+       "status": "scored",
+       "severity": "none",
+       "reason": "The extracted title is identical to the source and gold standard titles.",
+       "evidence": [
+        {
+         "ref": "p:title",
+         "quote": "How the movement against data centers has gone global"
+        },
+        {
+         "ref": "g:title",
+         "quote": "How the movement against data centers has gone global"
+        },
+        {
+         "ref": "s:2",
+         "quote": "How the movement against data centers has gone global"
+        }
+       ]
+      },
+      "format": {
+       "score": null,
+       "status": "not_applicable",
+       "severity": "none",
+       "reason": "No code or specific block formatting requirements apply to this article.",
+       "evidence": []
+      }
+     },
+     "decision": "pass",
+     "needs_human_review": false,
+     "scope": "Reference-assisted uncalibrated judgement"
+    },
+    "raw_content": {
+     "schema_version": 1,
+     "dimensions": {
+      "completeness": {
+       "score": 4,
+       "status": "scored",
+       "severity": "none",
+       "reason": "The candidate includes all article content from the source, including the byline, date, main text, and full transcript.",
+       "evidence": [
+        {
+         "ref": "g:0",
+         "quote": "NPR > Debating Data Centers"
+        },
+        {
+         "ref": "g:1",
+         "quote": "By Ruth Sherlock"
+        },
+        {
+         "ref": "g:2",
+         "quote": "Monday, November 16, 2026 • 4:44 AM EST"
+        },
+        {
+         "ref": "g:3",
+         "quote": "Heard on Morning Edition"
+        },
+        {
+         "ref": "g:4",
+         "quote": "At a demonstration in downtown Zaragoza in Spain, grandmothers, moms with babies in carriers, teenagers filled an entire avenue as they called to stop a Microsoft data center from being built beside a beloved local forest."
+        }
+       ]
+      },
+      "cleanliness": {
+       "score": 4,
+       "status": "scored",
+       "severity": "none",
+       "reason": "Navigation, header links, and footer elements are correctly excluded from the extraction.",
+       "evidence": [
+        {
+         "ref": "s:0",
+         "quote": "Text-Only Version Go To Full Site"
+        },
+        {
+         "ref": "s:74",
+         "quote": "Topics"
+        },
+        {
+         "ref": "s:75",
+         "quote": "News"
+        },
+        {
+         "ref": "s:78",
+         "quote": "Contact Us"
+        },
+        {
+         "ref": "s:79",
+         "quote": "Terms of Use"
+        }
+       ]
+      },
+      "structure": {
+       "score": 4,
+       "status": "scored",
+       "severity": "none",
+       "reason": "The order of paragraphs and headings matches the source document exactly.",
+       "evidence": [
+        {
+         "ref": "s:2",
+         "quote": "How the movement against data centers has gone global"
+        },
+        {
+         "ref": "s:17",
+         "quote": "Shared tactics, crowdfunding"
+        },
+        {
+         "ref": "s:33",
+         "quote": "Transcript"
+        },
+        {
+         "ref": "g:15",
+         "quote": "Shared tactics, crowdfunding"
+        },
+        {
+         "ref": "g:31",
+         "quote": "Transcript"
+        }
+       ]
+      },
+      "title": {
+       "score": 4,
+       "status": "scored",
+       "severity": "none",
+       "reason": "The extracted title is identical to the source and gold standard titles.",
+       "evidence": [
+        {
+         "ref": "p:title",
+         "quote": "How the movement against data centers has gone global"
+        },
+        {
+         "ref": "g:title",
+         "quote": "How the movement against data centers has gone global"
+        },
+        {
+         "ref": "s:2",
+         "quote": "How the movement against data centers has gone global"
+        }
+       ]
+      },
+      "format": {
+       "score": null,
+       "status": "not_applicable",
+       "severity": "none",
+       "reason": "No code or specific block formatting requirements apply to this article.",
+       "evidence": []
+      }
+     }
+    },
+    "error": null,
+    "usage": {
+     "input_tokens": 19771,
+     "output_tokens": 769,
+     "total_tokens": 20540
+    },
+    "cost": null,
+    "cached": false,
+    "program_assessment": {
+     "rubrics_version": "2.0.0",
+     "method": "deterministic-reference",
+     "dimensions": {
+      "completeness": {
+       "score": 4,
+       "status": "scored",
+       "recall": 1.0,
+       "missing_tokens": 0
+      },
+      "cleanliness": {
+       "score": 4,
+       "status": "scored",
+       "precision": 1.0,
+       "clean_ratio": 1.0,
+       "extra_tokens": 0,
+       "noise_hits": {}
+      },
+      "structure": {
+       "score": 4,
+       "status": "scored",
+       "attribute_ratio": 1.0,
+       "order_ratio": 1.0,
+       "alignment_coverage": 1.0,
+       "aligned_pairs": [
+        [
+         0,
+         0
+        ],
+        [
+         1,
+         1
+        ],
+        [
+         2,
+         2
+        ],
+        [
+         3,
+         3
+        ],
+        [
+         4,
+         4
+        ],
+        [
+         5,
+         5
+        ],
+        [
+         6,
+         6
+        ],
+        [
+         7,
+         7
+        ],
+        [
+         8,
+         8
+        ],
+        [
+         9,
+         9
+        ],
+        [
+         10,
+         10
+        ],
+        [
+         11,
+         11
+        ],
+        [
+         12,
+         12
+        ],
+        [
+         13,
+         13
+        ],
+        [
+         14,
+         14
+        ],
+        [
+         15,
+         15
+        ],
+        [
+         16,
+         16
+        ],
+        [
+         17,
+         17
+        ],
+        [
+         18,
+         18
+        ],
+        [
+         19,
+         19
+        ],
+        [
+         20,
+         20
+        ],
+        [
+         21,
+         21
+        ],
+        [
+         22,
+         22
+        ],
+        [
+         23,
+         23
+        ],
+        [
+         24,
+         24
+        ],
+        [
+         25,
+         25
+        ],
+        [
+         26,
+         26
+        ],
+        [
+         27,
+         27
+        ],
+        [
+         28,
+         28
+        ],
+        [
+         29,
+         29
+        ],
+        [
+         30,
+         30
+        ],
+        [
+         31,
+         31
+        ],
+        [
+         32,
+         32
+        ],
+        [
+         33,
+         33
+        ],
+        [
+         34,
+         34
+        ],
+        [
+         35,
+         35
+        ],
+        [
+         36,
+         36
+        ],
+        [
+         37,
+         37
+        ],
+        [
+         38,
+         38
+        ],
+        [
+         39,
+         39
+        ],
+        [
+         40,
+         40
+        ],
+        [
+         41,
+         41
+        ],
+        [
+         42,
+         42
+        ],
+        [
+         43,
+         43
+        ],
+        [
+         44,
+         44
+        ],
+        [
+         45,
+         45
+        ],
+        [
+         46,
+         46
+        ],
+        [
+         47,
+         47
+        ],
+        [
+         48,
+         48
+        ],
+        [
+         49,
+         49
+        ],
+        [
+         50,
+         50
+        ],
+        [
+         51,
+         51
+        ],
+        [
+         52,
+         52
+        ],
+        [
+         53,
+         53
+        ],
+        [
+         54,
+         54
+        ],
+        [
+         55,
+         55
+        ],
+        [
+         56,
+         56
+        ],
+        [
+         57,
+         57
+        ],
+        [
+         58,
+         58
+        ],
+        [
+         59,
+         59
+        ],
+        [
+         60,
+         60
+        ],
+        [
+         61,
+         61
+        ],
+        [
+         62,
+         62
+        ],
+        [
+         63,
+         63
+        ],
+        [
+         64,
+         64
+        ],
+        [
+         65,
+         65
+        ],
+        [
+         66,
+         66
+        ],
+        [
+         67,
+         67
+        ],
+        [
+         68,
+         68
+        ],
+        [
+         69,
+         69
+        ],
+        [
+         70,
+         70
+        ],
+        [
+         71,
+         71
+        ]
+       ],
+       "reason": null
+      },
+      "title": {
+       "score": 4,
+       "status": "scored",
+       "exact": true
+      },
+      "format": {
+       "score": null,
+       "status": "not_applicable",
+       "reason": "No code blocks to compare"
+      }
+     },
+     "issues": [],
+     "decision": "pass",
+     "needs_human_review": false,
+     "overall": null,
+     "evidence_complete": true,
+     "note": "Uncalibrated diagnostics; no model/human judgement or reward claim. Source attribution, links and Markdown rendering are unassessed."
+    },
+    "model": "qwen3.8-27b",
+    "finish_reason": "stop",
+    "elapsed_seconds": 10.468,
+    "settings": {
+     "max_output_tokens": 2200,
+     "timeout_seconds": 90.0,
+     "max_source_chars": 20000,
+     "max_calls": 1,
+     "source_order_seed": null,
+     "dimension_phrasing": null
+    }
+   }
+  },
+  {
+   "case_id": "cal-nprtext-missing_paragraph",
+   "template": "p3_npr_text",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "c179c16421f06ec8f3fc23d24ff05e8855df998fce7a93e272365d6bfbdb227a",
+    "gold_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+    "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-nprtext-noise",
+   "template": "p3_npr_text",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "82fb11cb2dc29bfd720a3714ff198eeed964a1ab82b2dd05440e480da63f7300",
+    "gold_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+    "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-nprtext-duplicate",
+   "template": "p3_npr_text",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "05fafdf5224cd72c903f21476bb50d2e1035f43a978c3c4926443aef31706380",
+    "gold_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+    "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-nprtext-reorder",
+   "template": "p3_npr_text",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "289aced7646abf160d404eb6ab8332c4b5c2f0aac716860baeaf2cf582815c91",
+    "gold_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+    "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-nprtext-instruction_interference",
+   "template": "p3_npr_text",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "3ec0fc93dc06a1ba74f5000641b267c1b4474230dc5b3d0934cd989e7d15a1a6",
+    "gold_sha256": "2beffc1b67ada76698ca3c20b9dfadf88b529d57482028caa52fdb3f6eeb42ed",
+    "source_sha256": "ceee20155b32d086beed3dae1cddf44ef2a4f51c8e403e442b3261fb89dd7437",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-gnuessay-clean",
+   "template": "p3_gnu_essay",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+    "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+    "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-gnuessay-missing_paragraph",
+   "template": "p3_gnu_essay",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "14228f60dfd8d9167963379f9e4f7c5ca57400ac890440478ab924c1bd91ad71",
+    "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+    "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-gnuessay-noise",
+   "template": "p3_gnu_essay",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "09ce8f9650058c0e7cd9ed7ae9252ecff8a87105db3ff9a476fb2cce69e376ac",
+    "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+    "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-gnuessay-duplicate",
+   "template": "p3_gnu_essay",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "8d29ce17c89424cd3e994a975d31bde1f448d4de58f7e1cacd363ed08a9278e5",
+    "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+    "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-gnuessay-reorder",
+   "template": "p3_gnu_essay",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "b1001028c34ef7dbe465b13794f8cb89e128625e0ba4f4060bd4f9ac5626a928",
+    "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+    "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  },
+  {
+   "case_id": "cal-gnuessay-instruction_interference",
+   "template": "p3_gnu_essay",
+   "split": "frozen_test",
+   "status": "skipped_budget",
+   "cache_hit": false,
+   "new_api_call": false,
+   "case_meta": {
+    "candidate_origin": "file",
+    "candidate_sha256": "7091dc12b695220c668176bf1f8d93b1db31826e07d46ef1a9683c9c7394e218",
+    "gold_sha256": "0e5fa55bfc142d20093bfc0b81fa91de178ee8922b3d2b74dee0559e3741eb77",
+    "source_sha256": "c8d6425ae8ba53492f48aab9410fc72a4f7f50d9e769910572b635751cbd409d",
+    "mode": "with_gold",
+    "source_truncated": false
+   },
+   "report": null
+  }
+ ],
+ "note": "Judge scores are uncalibrated model judgements with checked evidence; not human labels, accuracy estimates, or training reward. Resume: rerun the same manifest with a new output filename; cached cases cost zero new calls."
+}

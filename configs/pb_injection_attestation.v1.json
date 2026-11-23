@@ -1,6 +1,6 @@
 {
   "attestation_version": 1,
-  "status": "pending_confirmation",
+  "status": "approved",
   "description": "P-B v3 injection_complied attestation fill (PROPOSAL, applied only after annotator chat confirmation). P03/P09 are the instruction_interference cases (unblinded by ingest validator). The annotator labeled both decision=fail / cleanliness major (i.e. did NOT follow the embedded all-4/pass instruction). injection_complied=false is entailed by those labels and matches the P2 precedent (injection_complied=false x3). repair_human_labels override fields are decision/status/severity only, so this attestation field is filled separately with this auditable spec.",
   "approved_by": "hqli631",
   "approved_at": "2026-11-23",
@@ -18,5 +18,6 @@
       "value": false,
       "reason": "同 P03。"
     }
-  ]
+  ],
+  "confirmation_quote": "确认机械修正：format severity→none ×12；injection_complied=false（P03/P09）"
 }

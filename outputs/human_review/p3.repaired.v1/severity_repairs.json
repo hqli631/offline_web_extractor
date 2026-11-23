@@ -1,0 +1,116 @@
+{
+  "map_version": 1,
+  "tool_version": "2.1.0",
+  "changes": [],
+  "flags": [],
+  "overrides": [
+    {
+      "blind_code": "P01",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "P02",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "P03",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "P04",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "P05",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "P06",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "P07",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "P08",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "P09",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "P10",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "P11",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "P12",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    }
+  ]
+}

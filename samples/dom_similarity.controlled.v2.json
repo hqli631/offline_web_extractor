@@ -1,0 +1,68 @@
+{
+  "protocol": "Controlled structural family labels, not rule compatibility labels. role-drift shares tag layout with reference although frozen XPath fails. Two altered layouts labelled separately to inspect over-merging. Threshold fixed at 0.7 before run. P-D2 extension: id-drift and section-drift add two unseen container layouts to the reference-layout family; layout labels are authored, not rule-compatibility labels. Original five fixtures are byte-identical.",
+  "pages": [
+    {
+      "id": "reference",
+      "html": "drift_lab/reference.html",
+      "sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428",
+      "manual_group": "reference-layout",
+      "source_kind": "synthetic",
+      "split": "development",
+      "layout": "role-main-div"
+    },
+    {
+      "id": "class-drift",
+      "html": "drift_lab/class-drift.html",
+      "sha256": "ef76358f0a4ac9bb4c5999df8a09df191e6882f41236af760b590ad17a89b76f",
+      "manual_group": "reference-layout",
+      "source_kind": "synthetic",
+      "split": "development",
+      "layout": "role-main-div"
+    },
+    {
+      "id": "role-drift",
+      "html": "drift_lab/role-drift.html",
+      "sha256": "e2f7ffd72f087a12361e7ecba2c8293c86433070ddbe6b0b951e55558aac1269",
+      "manual_group": "reference-layout",
+      "source_kind": "synthetic",
+      "split": "development",
+      "layout": "role-article-div"
+    },
+    {
+      "id": "duplicate-main",
+      "html": "drift_lab/duplicate-main.html",
+      "sha256": "661b8dd40eeaafc65a9b29582e5f6790b07a8bb6580e2e2401a3741d314476e6",
+      "manual_group": "duplicate-main",
+      "source_kind": "synthetic",
+      "split": "development",
+      "layout": "dup-main"
+    },
+    {
+      "id": "content-moved",
+      "html": "drift_lab/content-moved.html",
+      "sha256": "8e60aa8f73b032b204d731f7d4e959f6d2383fd2656190af03c1217bbdbfdcda",
+      "manual_group": "content-moved",
+      "source_kind": "synthetic",
+      "split": "development",
+      "layout": "body-scatter"
+    },
+    {
+      "id": "id-drift",
+      "html": "drift_lab/id-drift.html",
+      "sha256": "4c4df1ac573ec3ac2bee4862250504347ed0be6af60135718ea2a2c13b2c3355",
+      "manual_group": "reference-layout",
+      "source_kind": "synthetic",
+      "split": "development",
+      "layout": "id-article-body-div"
+    },
+    {
+      "id": "section-drift",
+      "html": "drift_lab/section-drift.html",
+      "sha256": "ed89ba9d1f663b36da156901c404a7ca0e0461d728d8b3ac60463758cc4dcb96",
+      "manual_group": "reference-layout",
+      "source_kind": "synthetic",
+      "split": "development",
+      "layout": "section-v4"
+    }
+  ]
+}

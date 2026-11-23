@@ -1,0 +1,32 @@
+{
+  "title": "Template drift laboratory",
+  "paragraphs": [
+    "The reference article begins here.",
+    "The second paragraph explains why a reusable rule needs stable structure.",
+    "The closing paragraph is required even when its container changes."
+  ],
+  "blocks": [
+    {
+      "kind": "paragraph",
+      "text": "The reference article begins here.",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "paragraph",
+      "text": "The second paragraph explains why a reusable rule needs stable structure.",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "paragraph",
+      "text": "The closing paragraph is required even when its container changes.",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    }
+  ],
+  "annotation_note": "Synthetic controlled mutation. Preserve all three article sentences once. Exclude navigation/footer and duplicate responsive rendering. No real-site validation claim."
+}

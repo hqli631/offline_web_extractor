@@ -1,0 +1,17 @@
+{
+  "id": "section-drift",
+  "source_kind": "synthetic",
+  "split": "controlled_drift",
+  "generator": "build_fixtures_v2.py",
+  "html": "section-drift.html",
+  "sha256": "ed89ba9d1f663b36da156901c404a7ca0e0461d728d8b3ac60463758cc4dcb96",
+  "expected": "section-drift.expected.json",
+  "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+  "layout": "section-v4",
+  "reference_html": "reference.html",
+  "reference_sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428",
+  "mutation": "The container tag changes from div to section with a new class; no role or id. Tag-path fingerprint changes. Prose is unchanged.",
+  "expected_status": "rule_no_match",
+  "expected_blocks_exact": null,
+  "annotation_method": "Authored three-sentence gold before extraction; no production imports or predictions used."
+}

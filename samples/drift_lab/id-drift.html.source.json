@@ -1,0 +1,17 @@
+{
+  "id": "id-drift",
+  "source_kind": "synthetic",
+  "split": "controlled_drift",
+  "generator": "build_fixtures_v2.py",
+  "html": "id-drift.html",
+  "sha256": "4c4df1ac573ec3ac2bee4862250504347ed0be6af60135718ea2a2c13b2c3355",
+  "expected": "id-drift.expected.json",
+  "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc",
+  "layout": "id-article-body-div",
+  "reference_html": "reference.html",
+  "reference_sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428",
+  "mutation": "The container loses the role attribute and is identified only by id=\"article-body\"; tag layout is unchanged from reference. Prose is unchanged.",
+  "expected_status": "rule_no_match",
+  "expected_blocks_exact": null,
+  "annotation_method": "Authored three-sentence gold before extraction; no production imports or predictions used."
+}

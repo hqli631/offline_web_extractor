@@ -1,0 +1,1 @@
+{"output": "outputs\\pd2.run.v1.json", "clusters": 3, "statuses": {"class-drift": "no_repair_needed", "id-drift": "repaired", "reference": "no_repair_needed", "role-drift": "no_repair_needed", "section-drift": "no_repair_needed", "duplicate-main": "repaired", "content-moved": "repaired"}, "tokens_used": 35916, "calls": 14, "cap": 190294}

@@ -1,0 +1,636 @@
+{
+  "tool_version": "1.0.0",
+  "run_sha256": "a24f5de409ac57756a77d6fe5128397b3b16a7cb8c071107ccf9adfdf7d2d701",
+  "freeze_sha256": "9536b5137b78bdb9d85e4a6918897fecae8825a64982a48e72682da0936ba644",
+  "generated_at": "2026-11-23T14:17:24+00:00",
+  "freeze_problems": [],
+  "per_case": [
+    {
+      "cluster_id": "reference-layout",
+      "case_id": "class-drift",
+      "status": "no_repair_needed",
+      "reuse": {
+        "reuse": true,
+        "fallback": false,
+        "drift": false,
+        "drift_reasons": [],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "ok",
+        "final_status": "ok",
+        "block_count": 3,
+        "generalized_override": false
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": null,
+      "repair_reference_ids": null,
+      "baseline_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "reference-layout",
+      "case_id": "id-drift",
+      "status": "repaired",
+      "reuse": {
+        "reuse": false,
+        "fallback": true,
+        "drift": true,
+        "drift_reasons": [
+          "rule_failure"
+        ],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "rule_no_match",
+        "final_status": "no_candidate",
+        "block_count": 0,
+        "generalized_override": false
+      },
+      "baseline_decision": "fail",
+      "baseline_defect_count": 3,
+      "trigger_reason": "drift=['rule_failure'];critic=fail;defects=3",
+      "repair_reference_ids": [
+        "class-drift",
+        "id-drift",
+        "reference",
+        "role-drift",
+        "section-drift"
+      ],
+      "pair": {
+        "category": "improved",
+        "decision_before": "fail",
+        "decision_after": "uncertain",
+        "total_before": 4,
+        "total_after": 16,
+        "delta": 12,
+        "score_comparable": true,
+        "new_severe_dimensions": [],
+        "severe_before": [
+          "completeness",
+          "structure",
+          "title"
+        ],
+        "severe_after": []
+      },
+      "baseline_quality": {
+        "title_exact": false,
+        "blocks_exact": false,
+        "block_text_precision": 0.0,
+        "block_text_recall": 0.0
+      },
+      "repaired_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "recall_delta": 1.0
+    },
+    {
+      "cluster_id": "reference-layout",
+      "case_id": "reference",
+      "status": "no_repair_needed",
+      "reuse": {
+        "reuse": true,
+        "fallback": false,
+        "drift": false,
+        "drift_reasons": [],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "ok",
+        "final_status": "ok",
+        "block_count": 3,
+        "generalized_override": false
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": null,
+      "repair_reference_ids": null,
+      "baseline_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "reference-layout",
+      "case_id": "role-drift",
+      "status": "no_repair_needed",
+      "reuse": {
+        "reuse": true,
+        "fallback": false,
+        "drift": false,
+        "drift_reasons": [],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "ok",
+        "final_status": "ok",
+        "block_count": 3,
+        "generalized_override": false
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": null,
+      "repair_reference_ids": null,
+      "baseline_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "reference-layout",
+      "case_id": "section-drift",
+      "status": "no_repair_needed",
+      "reuse": {
+        "reuse": true,
+        "fallback": false,
+        "drift": false,
+        "drift_reasons": [],
+        "fingerprint_similarity": 0.285714,
+        "rule_status": "ok",
+        "final_status": "ok",
+        "block_count": 3,
+        "generalized_override": true
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": null,
+      "repair_reference_ids": null,
+      "baseline_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "duplicate-main",
+      "case_id": "duplicate-main",
+      "status": "repaired",
+      "reuse": {
+        "reuse": false,
+        "fallback": true,
+        "drift": true,
+        "drift_reasons": [
+          "no_shared_rule"
+        ],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "no_rule",
+        "final_status": "ok",
+        "block_count": 3,
+        "generalized_override": false
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": "drift=['no_shared_rule'];critic=uncertain;defects=0",
+      "repair_reference_ids": [
+        "duplicate-main"
+      ],
+      "pair": {
+        "category": "no_effect",
+        "decision_before": "uncertain",
+        "decision_after": "uncertain",
+        "total_before": 16,
+        "total_after": 16,
+        "delta": 0,
+        "score_comparable": true,
+        "new_severe_dimensions": [],
+        "severe_before": [],
+        "severe_after": []
+      },
+      "baseline_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "repaired_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "recall_delta": 0.0
+    },
+    {
+      "cluster_id": "content-moved",
+      "case_id": "content-moved",
+      "status": "repaired",
+      "reuse": {
+        "reuse": true,
+        "fallback": false,
+        "drift": false,
+        "drift_reasons": [],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "ok",
+        "final_status": "ok",
+        "block_count": 2,
+        "generalized_override": false
+      },
+      "baseline_decision": "fail",
+      "baseline_defect_count": 1,
+      "trigger_reason": "drift=[];critic=fail;defects=1",
+      "repair_reference_ids": [
+        "content-moved"
+      ],
+      "pair": {
+        "category": "improved",
+        "decision_before": "fail",
+        "decision_after": "uncertain",
+        "total_before": 14,
+        "total_after": 16,
+        "delta": 2,
+        "score_comparable": true,
+        "new_severe_dimensions": [],
+        "severe_before": [
+          "completeness"
+        ],
+        "severe_after": []
+      },
+      "baseline_quality": {
+        "title_exact": true,
+        "blocks_exact": false,
+        "block_text_precision": 1.0,
+        "block_text_recall": 0.666667
+      },
+      "repaired_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "recall_delta": 0.333333
+    }
+  ],
+  "feedback": [
+    {
+      "cluster_id": "reference-layout",
+      "rep_id": "reference",
+      "multi_layout": true,
+      "layouts": [
+        "id-article-body-div",
+        "role-article-div",
+        "role-main-div",
+        "section-v4"
+      ],
+      "shared_rule": {
+        "version": 1,
+        "container_xpath": "//div[contains(@class, 'article-shell')] | //section[contains(@class, 'article-shell')]",
+        "exclude_xpaths": []
+      },
+      "attempted": true,
+      "accepted": true,
+      "events": [
+        {
+          "member_id": "id-drift",
+          "rule": {
+            "version": 1,
+            "container_xpath": "//div[contains(@class, 'article-shell')] | //section[contains(@class, 'article-shell')]",
+            "exclude_xpaths": []
+          },
+          "programmatic_improved": true,
+          "generalizes": true,
+          "validation": [
+            {
+              "case_id": "class-drift",
+              "rule_status": "ok",
+              "match_count": 1,
+              "block_count": 3,
+              "recall": 1.0,
+              "pre_recall": 1.0,
+              "pass": true
+            },
+            {
+              "case_id": "id-drift",
+              "rule_status": "ok",
+              "match_count": 1,
+              "block_count": 3,
+              "recall": 1.0,
+              "pre_recall": 0.0,
+              "pass": true
+            },
+            {
+              "case_id": "reference",
+              "rule_status": "ok",
+              "match_count": 1,
+              "block_count": 3,
+              "recall": 1.0,
+              "pre_recall": 1.0,
+              "pass": true
+            },
+            {
+              "case_id": "role-drift",
+              "rule_status": "ok",
+              "match_count": 1,
+              "block_count": 3,
+              "recall": 1.0,
+              "pre_recall": 0.0,
+              "pass": true
+            },
+            {
+              "case_id": "section-drift",
+              "rule_status": "ok",
+              "match_count": 1,
+              "block_count": 3,
+              "recall": 1.0,
+              "pre_recall": 0.0,
+              "pass": true
+            }
+          ],
+          "accepted": true,
+          "rereuse": {
+            "class-drift": {
+              "reuse": true,
+              "drift": false,
+              "drift_reasons": [],
+              "rule_status": "ok",
+              "final_status": "ok",
+              "block_count": 3,
+              "generalized_override": false,
+              "quality": {
+                "title_exact": true,
+                "blocks_exact": true,
+                "block_text_precision": 1.0,
+                "block_text_recall": 1.0
+              }
+            },
+            "id-drift": {
+              "reuse": true,
+              "drift": false,
+              "drift_reasons": [],
+              "rule_status": "ok",
+              "final_status": "ok",
+              "block_count": 3,
+              "generalized_override": false,
+              "quality": {
+                "title_exact": true,
+                "blocks_exact": true,
+                "block_text_precision": 1.0,
+                "block_text_recall": 1.0
+              }
+            },
+            "reference": {
+              "reuse": true,
+              "drift": false,
+              "drift_reasons": [],
+              "rule_status": "ok",
+              "final_status": "ok",
+              "block_count": 3,
+              "generalized_override": false,
+              "quality": {
+                "title_exact": true,
+                "blocks_exact": true,
+                "block_text_precision": 1.0,
+                "block_text_recall": 1.0
+              }
+            },
+            "role-drift": {
+              "reuse": true,
+              "drift": false,
+              "drift_reasons": [],
+              "rule_status": "ok",
+              "final_status": "ok",
+              "block_count": 3,
+              "generalized_override": false,
+              "quality": {
+                "title_exact": true,
+                "blocks_exact": true,
+                "block_text_precision": 1.0,
+                "block_text_recall": 1.0
+              }
+            },
+            "section-drift": {
+              "reuse": true,
+              "drift": false,
+              "drift_reasons": [],
+              "rule_status": "ok",
+              "final_status": "ok",
+              "block_count": 3,
+              "generalized_override": true,
+              "quality": {
+                "title_exact": true,
+                "blocks_exact": true,
+                "block_text_precision": 1.0,
+                "block_text_recall": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "reuse_recovery": [
+        "id-drift",
+        "role-drift",
+        "section-drift"
+      ],
+      "amortization": {
+        "rule_generation_calls": 2,
+        "recovered_members": 3,
+        "calls_per_recovered": 0.6667
+      },
+      "member_rule_cache": {
+        "id-drift": {
+          "version": 1,
+          "container_xpath": "//div[contains(@class, 'article-shell')] | //section[contains(@class, 'article-shell')]",
+          "exclude_xpaths": []
+        }
+      }
+    },
+    {
+      "cluster_id": "duplicate-main",
+      "rep_id": "duplicate-main",
+      "multi_layout": false,
+      "layouts": [
+        "dup-main"
+      ],
+      "shared_rule": null,
+      "attempted": true,
+      "accepted": false,
+      "events": [
+        {
+          "member_id": "duplicate-main",
+          "rule": {
+            "version": 1,
+            "container_xpath": "//div[@role='main'][contains(@class,'desktop-layout')]",
+            "exclude_xpaths": []
+          },
+          "programmatic_improved": false,
+          "generalizes": true,
+          "validation": [
+            {
+              "case_id": "duplicate-main",
+              "rule_status": "ok",
+              "match_count": 1,
+              "block_count": 3,
+              "recall": 1.0,
+              "pre_recall": 1.0,
+              "pass": true
+            }
+          ],
+          "accepted": false,
+          "blocked_reason": "not_improved"
+        }
+      ],
+      "reuse_recovery": [],
+      "amortization": {
+        "rule_generation_calls": 1,
+        "recovered_members": 0,
+        "calls_per_recovered": null
+      },
+      "member_rule_cache": {
+        "duplicate-main": {
+          "version": 1,
+          "container_xpath": "//div[@role='main'][contains(@class,'desktop-layout')]",
+          "exclude_xpaths": []
+        }
+      }
+    },
+    {
+      "cluster_id": "content-moved",
+      "rep_id": "content-moved",
+      "multi_layout": false,
+      "layouts": [
+        "body-scatter"
+      ],
+      "shared_rule": {
+        "version": 1,
+        "container_xpath": "//body",
+        "exclude_xpaths": [
+          "//nav",
+          "//footer"
+        ]
+      },
+      "attempted": true,
+      "accepted": true,
+      "events": [
+        {
+          "member_id": "content-moved",
+          "rule": {
+            "version": 1,
+            "container_xpath": "//body",
+            "exclude_xpaths": [
+              "//nav",
+              "//footer"
+            ]
+          },
+          "programmatic_improved": true,
+          "generalizes": true,
+          "validation": [
+            {
+              "case_id": "content-moved",
+              "rule_status": "ok",
+              "match_count": 1,
+              "block_count": 3,
+              "recall": 1.0,
+              "pre_recall": 0.666667,
+              "pass": true
+            }
+          ],
+          "accepted": true,
+          "rereuse": {
+            "content-moved": {
+              "reuse": true,
+              "drift": false,
+              "drift_reasons": [],
+              "rule_status": "ok",
+              "final_status": "ok",
+              "block_count": 3,
+              "generalized_override": false,
+              "quality": {
+                "title_exact": true,
+                "blocks_exact": true,
+                "block_text_precision": 1.0,
+                "block_text_recall": 1.0
+              }
+            }
+          }
+        }
+      ],
+      "reuse_recovery": [],
+      "amortization": {
+        "rule_generation_calls": 1,
+        "recovered_members": 0,
+        "calls_per_recovered": null
+      },
+      "member_rule_cache": {
+        "content-moved": {
+          "version": 1,
+          "container_xpath": "//body",
+          "exclude_xpaths": [
+            "//nav",
+            "//footer"
+          ]
+        }
+      }
+    }
+  ],
+  "metrics": {
+    "total_members": 7,
+    "status_counts": {
+      "no_repair_needed": 4,
+      "repaired": 3
+    },
+    "repair_triggered": 3,
+    "paired_n": 3,
+    "improved": 2,
+    "regressed": 0,
+    "no_effect": 1,
+    "other_change": 0,
+    "improvement_rate": 0.6667,
+    "regression_rate": 0.0,
+    "no_effect_rate": 0.3333,
+    "unnecessary_repair_count": 0,
+    "mean_total_score_delta_ci95": {
+      "point": 4.6667,
+      "ci95": [
+        0.0,
+        12.0
+      ],
+      "n": 3,
+      "B": 10000
+    },
+    "feedback_attempted": 3,
+    "feedback_accepted": 2,
+    "multi_layout_feedback_accepted": 1,
+    "reuse_recovery_total": 3,
+    "rule_generation_calls": 4,
+    "calls_per_recovered": 1.3333,
+    "generalized_override_events": [
+      {
+        "cluster_id": "reference-layout",
+        "case_id": "section-drift"
+      }
+    ]
+  },
+  "audits": {
+    "checked": 7,
+    "failures": []
+  },
+  "candidate_integrity_problems": [],
+  "success_checks": {
+    "multi_layout_feedback_accepted_ge": true,
+    "reuse_recovery_after_feedback_ge": true,
+    "improvement_rate_ge": true,
+    "regression_rate_le": true,
+    "leakage_audit_all_passed": true,
+    "unnecessary_repair_zero": true,
+    "candidate_integrity": true,
+    "freeze_integrity": true
+  },
+  "verdict": "GENERALIZATION_SIGNAL",
+  "budget": {
+    "cap": 190294,
+    "freeze_cap": 200000,
+    "used": 35916,
+    "calls": 14,
+    "max_calls": 20,
+    "skipped": []
+  },
+  "note": "Descriptive signal only, NOT a reward gate; controlled synthetic drift_lab v2 (7 pages), small paired n, wide CI; cluster/layout labels authored (purity != accuracy); judge-judged improvement != verified real-quality improvement; union XPath noise risk on real complex pages unproven; feedback validation uses dev expected orchestrator-side only; judge scores remain NOT training rewards."
+}

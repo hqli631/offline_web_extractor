@@ -1,0 +1,17 @@
+{
+  "page_id": "pf_v4_freebsd",
+  "template": "freebsd-org",
+  "url": "https://www.freebsd.org/about/",
+  "final_url": "https://www.freebsd.org/about/",
+  "sha256": "e9898ecc311f924c2cca046fbf263f369d97ef2515f1da81d510e26ea6441497",
+  "raw_chars": 19110,
+  "fetched_at": "2026-11-23T08:45:27+00:00",
+  "acceptance": {
+    "n_blocks": 18,
+    "has_paragraph_pair": true,
+    "has_para_ge40": true,
+    "title_ok": true
+  },
+  "probe_ingest": true,
+  "log_entry_index": 9
+}

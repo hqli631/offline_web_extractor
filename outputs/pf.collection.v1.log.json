@@ -1,8 +1,8 @@
 {
   "tool_version": "1.0.0",
   "route": "A (approved 2026-11-23 hqli631)",
-  "status": "incomplete",
-  "total_fetches": 7,
+  "status": "complete",
+  "total_fetches": 10,
   "fetch_cap": 10,
   "min_chars": 5000,
   "max_chars": 20000,
@@ -26,7 +26,10 @@
     "www.rfc-editor.org",
     "www.w3.org"
   ],
-  "accepted_page_ids": [],
+  "accepted_page_ids": [
+    "pf_v4_debian",
+    "pf_v4_freebsd"
+  ],
   "fetches": [
     {
       "url": "https://www.sqlite.org/whentouse.html",
@@ -119,8 +122,76 @@
         "title": "",
         "n_blocks": 0,
         "kinds": []
-      }
+      },
+      "page_id": "pf_v4_debian",
+      "template": "debian-org",
+      "probe_file": "outputs/_pf_probe_debian.html",
+      "enriched_for_ingest": "metadata added 2026-11-23 (A2); fetch record/sha unchanged",
+      "accepted": true
+    },
+    {
+      "url": "https://www.lua.org/about.html",
+      "probe": true,
+      "page_id": "pf_v4_lua",
+      "template": "lua-org",
+      "fetched_at": "2026-11-23T08:45:23+00:00",
+      "final_url": "https://www.lua.org/about.html",
+      "sha256": "7d7c3c9fefda3a9eac0b91706c9cf1ac036d33f4aabac6cb2e72424605fcd940",
+      "raw_chars": 8919,
+      "n_blocks": 0,
+      "has_paragraph_pair": false,
+      "has_para_ge40": false,
+      "title_ok": false,
+      "reject_reason": "fewer than 3 blocks; no consecutive paragraph pair (reorder infeasible); no paragraph >=40 chars (missing_paragraph infeasible); empty title",
+      "accepted": false,
+      "probe_file": "outputs/_pf_probe_pf_v4_lua.html"
+    },
+    {
+      "url": "https://www.sqlite.org/whyc.html",
+      "probe": true,
+      "page_id": "pf_v4_sqlite",
+      "template": "sqlite-org",
+      "fetched_at": "2026-11-23T08:45:25+00:00",
+      "final_url": "https://www.sqlite.org/whyc.html",
+      "sha256": "b2534ce73dcd7210c2d2ed3cd2db2468ec15f7e358d7d00f50614e7ea4dfa744",
+      "raw_chars": 12640,
+      "n_blocks": 0,
+      "has_paragraph_pair": false,
+      "has_para_ge40": false,
+      "title_ok": false,
+      "reject_reason": "fewer than 3 blocks; no consecutive paragraph pair (reorder infeasible); no paragraph >=40 chars (missing_paragraph infeasible); empty title",
+      "accepted": false,
+      "probe_file": "outputs/_pf_probe_pf_v4_sqlite.html"
+    },
+    {
+      "url": "https://www.freebsd.org/about/",
+      "probe": true,
+      "page_id": "pf_v4_freebsd",
+      "template": "freebsd-org",
+      "fetched_at": "2026-11-23T08:45:27+00:00",
+      "final_url": "https://www.freebsd.org/about/",
+      "sha256": "e9898ecc311f924c2cca046fbf263f369d97ef2515f1da81d510e26ea6441497",
+      "raw_chars": 19110,
+      "n_blocks": 18,
+      "has_paragraph_pair": true,
+      "has_para_ge40": true,
+      "title_ok": true,
+      "reject_reason": null,
+      "accepted": true,
+      "probe_file": "outputs/_pf_probe_pf_v4_freebsd.html"
     }
   ],
-  "note": "Zero model calls. Samples written only when both slots accepted."
+  "note": "Zero model calls. Samples written only when both slots accepted.",
+  "ingestion": {
+    "tool_version": "1.0.0",
+    "note": "A2-minimal (approved hqli631 2026-11-23): id=content last-resort fallback; payloads from logged probes, zero new fetches; acceptance re-run post-patch.",
+    "page_ids": [
+      "pf_v4_debian",
+      "pf_v4_freebsd"
+    ],
+    "entry_indices": [
+      6,
+      9
+    ]
+  }
 }

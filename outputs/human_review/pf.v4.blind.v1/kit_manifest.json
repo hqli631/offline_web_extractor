@@ -1,0 +1,25 @@
+{
+  "kit_version": "pf-v4-draft-1.0.0",
+  "status": "FORMAL_ROUTE_A_OPEN_FOR_ANNOTATION",
+  "inputs": {
+    "slate": "948a4d50ee2ebd3534b364ebfee5fc45ee4afd9cca9aeeab941a6a9dd1601ae3"
+  },
+  "n_cases": 12,
+  "files": {
+    "INDEX.md": "490a7dd9ea2faa361e4896a8eec43aec0013a686958f98b952a09e68b9068755",
+    "human_labels.blind.json": "92ef9b335b6dd646b74a9e7416ea3aea1f0281f8d982724d2e28513b77f9b688",
+    "packets/F01.md": "2638324a1a7b20ae63f6d15e19de5e65b57095039b8db5881a742d1ee43485e9",
+    "packets/F02.md": "c6259606aaedb771e0f2cb528fd952a9de64263c1da4b2b8de189c005c7c4103",
+    "packets/F03.md": "cde757c01c38813296e0a2efa76b2e7334b617f82b6e7432a1fef78728586f37",
+    "packets/F04.md": "6d6330aeed2550a59c1c7c1b59d8f4d4b1a0c8fa736a00a8e9a97a6994c4f882",
+    "packets/F05.md": "1b7eb4d472ef2c20aa1262f8ccb6a899d7e41aa30d7b9e004aebbb400b4a7071",
+    "packets/F06.md": "53c9705337da09ca23dc28b623ce2c163b8e50712ac3026b86e6cd9e1e9e2801",
+    "packets/F07.md": "b12b638df57738f9c6d2b58716d449ca54571253d4d9b5f13b2bb7d2c016b576",
+    "packets/F08.md": "163dfa8ec16925494545120317d98b7fdce83587fdf01f93d6d4efde959bb7b9",
+    "packets/F09.md": "db5709a08338e68418e9af3575c21fd642c6e2d1485a3cdb7457ffb30cdcce84",
+    "packets/F10.md": "0da75a1e174e74fb79f273443842774447f9d4a108f7e67b3c6282aa3b9dc63a",
+    "packets/F11.md": "ef751d37595a9b5b75db7c192a1acc474d10b0a8cbf29ab1d1d030b3d603058b",
+    "packets/F12.md": "5cdef3ee224caaf7a250e01f328986450591057fbd2c3843a4dc9619ed1d2989",
+    "sealed_mapping.json": "3f47420a4f2946bb6d752e11c0bcfc7e4970311530a9033b7590e8b8d2b29733"
+  }
+}

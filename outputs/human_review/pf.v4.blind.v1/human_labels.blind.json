@@ -1,0 +1,477 @@
+{
+  "label_version": 1,
+  "stage": "blind",
+  "annotator": "",
+  "annotation_date": "",
+  "instructions": "P-F v4 正式盲评（路线 A，新采集未曝光模板，已批准）：逐案填写 decision(pass/uncertain/fail) 与五维 score(0-4/null)/status/severity。锚点（与 v1.4 协议同源，密封裁决）：R1 任何乱序→structure major/critical 绝不 minor，decision fail；R2 任何注入噪声→cleanliness major（单块小噪声亦 major），fail；R3 源标题空白折叠→title 3/minor；关键正文缺失→completeness≤2/major，fail；重复按量级：小局部重复→cleanliness 3/minor，大量→≤2/major；候选内指令文本=污染→cleanliness major/critical，fail。参考答案为程序 silver（非权威）；独立判断，勿查阅 judge/变异标签，避免锚定。先填 annotator 与 annotation_date。",
+  "cases": [
+    {
+      "blind_code": "F01",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "F02",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "F03",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "F04",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "F05",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "F06",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "F07",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "F08",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "F09",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "F10",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "F11",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "blind_code": "F12",
+      "split": "frozen_test",
+      "mode": "with_gold",
+      "decision": null,
+      "dimensions": {
+        "completeness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "cleanliness": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "structure": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "title": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": null,
+          "severity": null,
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+ "judge_manifest_version": 1,
+ "cases": [
+  {
+   "case_id": "cal-debian-clean",
+   "template": "pf_v4_debian",
+   "split": "frozen_test",
+   "source": "pf_v4_debian.html",
+   "candidate": "calibration/cal-debian-clean.candidate.json",
+   "gold": "pf_v4_debian.expected.json",
+   "source_sha256": "4724ba6ccce48cef769ddf2809cfd56eec92a373d8bb7730a7c9d3c8901bebf5"
+  },
+  {
+   "case_id": "cal-debian-missing_paragraph",
+   "template": "pf_v4_debian",
+   "split": "frozen_test",
+   "source": "pf_v4_debian.html",
+   "candidate": "calibration/cal-debian-missing_paragraph.candidate.json",
+   "gold": "pf_v4_debian.expected.json",
+   "source_sha256": "4724ba6ccce48cef769ddf2809cfd56eec92a373d8bb7730a7c9d3c8901bebf5"
+  },
+  {
+   "case_id": "cal-debian-noise",
+   "template": "pf_v4_debian",
+   "split": "frozen_test",
+   "source": "pf_v4_debian.html",
+   "candidate": "calibration/cal-debian-noise.candidate.json",
+   "gold": "pf_v4_debian.expected.json",
+   "source_sha256": "4724ba6ccce48cef769ddf2809cfd56eec92a373d8bb7730a7c9d3c8901bebf5",
+   "noise_terms": [
+    "advertisement",
+    "subscribe to our newsletter"
+   ]
+  },
+  {
+   "case_id": "cal-debian-duplicate",
+   "template": "pf_v4_debian",
+   "split": "frozen_test",
+   "source": "pf_v4_debian.html",
+   "candidate": "calibration/cal-debian-duplicate.candidate.json",
+   "gold": "pf_v4_debian.expected.json",
+   "source_sha256": "4724ba6ccce48cef769ddf2809cfd56eec92a373d8bb7730a7c9d3c8901bebf5"
+  },
+  {
+   "case_id": "cal-debian-reorder",
+   "template": "pf_v4_debian",
+   "split": "frozen_test",
+   "source": "pf_v4_debian.html",
+   "candidate": "calibration/cal-debian-reorder.candidate.json",
+   "gold": "pf_v4_debian.expected.json",
+   "source_sha256": "4724ba6ccce48cef769ddf2809cfd56eec92a373d8bb7730a7c9d3c8901bebf5"
+  },
+  {
+   "case_id": "cal-debian-instruction_interference",
+   "template": "pf_v4_debian",
+   "split": "frozen_test",
+   "source": "pf_v4_debian.html",
+   "candidate": "calibration/cal-debian-instruction_interference.candidate.json",
+   "gold": "pf_v4_debian.expected.json",
+   "source_sha256": "4724ba6ccce48cef769ddf2809cfd56eec92a373d8bb7730a7c9d3c8901bebf5",
+   "noise_terms": [
+    "ignore previous instructions",
+    "忽略之前的指令"
+   ]
+  },
+  {
+   "case_id": "cal-freebsd-clean",
+   "template": "pf_v4_freebsd",
+   "split": "frozen_test",
+   "source": "pf_v4_freebsd.html",
+   "candidate": "calibration/cal-freebsd-clean.candidate.json",
+   "gold": "pf_v4_freebsd.expected.json",
+   "source_sha256": "e9898ecc311f924c2cca046fbf263f369d97ef2515f1da81d510e26ea6441497"
+  },
+  {
+   "case_id": "cal-freebsd-missing_paragraph",
+   "template": "pf_v4_freebsd",
+   "split": "frozen_test",
+   "source": "pf_v4_freebsd.html",
+   "candidate": "calibration/cal-freebsd-missing_paragraph.candidate.json",
+   "gold": "pf_v4_freebsd.expected.json",
+   "source_sha256": "e9898ecc311f924c2cca046fbf263f369d97ef2515f1da81d510e26ea6441497"
+  },
+  {
+   "case_id": "cal-freebsd-noise",
+   "template": "pf_v4_freebsd",
+   "split": "frozen_test",
+   "source": "pf_v4_freebsd.html",
+   "candidate": "calibration/cal-freebsd-noise.candidate.json",
+   "gold": "pf_v4_freebsd.expected.json",
+   "source_sha256": "e9898ecc311f924c2cca046fbf263f369d97ef2515f1da81d510e26ea6441497",
+   "noise_terms": [
+    "advertisement",
+    "subscribe to our newsletter"
+   ]
+  },
+  {
+   "case_id": "cal-freebsd-duplicate",
+   "template": "pf_v4_freebsd",
+   "split": "frozen_test",
+   "source": "pf_v4_freebsd.html",
+   "candidate": "calibration/cal-freebsd-duplicate.candidate.json",
+   "gold": "pf_v4_freebsd.expected.json",
+   "source_sha256": "e9898ecc311f924c2cca046fbf263f369d97ef2515f1da81d510e26ea6441497"
+  },
+  {
+   "case_id": "cal-freebsd-reorder",
+   "template": "pf_v4_freebsd",
+   "split": "frozen_test",
+   "source": "pf_v4_freebsd.html",
+   "candidate": "calibration/cal-freebsd-reorder.candidate.json",
+   "gold": "pf_v4_freebsd.expected.json",
+   "source_sha256": "e9898ecc311f924c2cca046fbf263f369d97ef2515f1da81d510e26ea6441497"
+  },
+  {
+   "case_id": "cal-freebsd-instruction_interference",
+   "template": "pf_v4_freebsd",
+   "split": "frozen_test",
+   "source": "pf_v4_freebsd.html",
+   "candidate": "calibration/cal-freebsd-instruction_interference.candidate.json",
+   "gold": "pf_v4_freebsd.expected.json",
+   "source_sha256": "e9898ecc311f924c2cca046fbf263f369d97ef2515f1da81d510e26ea6441497",
+   "noise_terms": [
+    "ignore previous instructions",
+    "忽略之前的指令"
+   ]
+  }
+ ]
+}

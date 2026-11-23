@@ -1,0 +1,139 @@
+{
+ "title": "About FreeBSD",
+ "blocks": [
+  {
+   "kind": "heading",
+   "text": "What is FreeBSD?",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "FreeBSD is an operating system for a variety of platforms which focuses on features, speed, and stability. It is derived from BSD, the version of UNIX® developed at the University of California, Berkeley. It is developed and maintained by a large community.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "Cutting edge features",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "FreeBSD offers advanced networking, performance, security and compatibility features today which are still missing in other operating systems, even some of the best commercial ones.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "Powerful Internet solutions",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "FreeBSD makes an ideal Internet or Intranet server. It provides robust network services under the heaviest loads and uses memory efficiently to maintain good response times for thousands of simultaneous user processes.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "Advanced Embedded Platform",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "FreeBSD brings advanced network operating system features to appliance and embedded platforms, from higher-end Intel-based appliances to ARM, PowerPC, and MIPS hardware platforms. From mail and web appliances to routers, time servers, and wireless access points, vendors around the world rely on FreeBSD’s integrated build and cross-build environments and advanced features as the foundation for their embedded products. And the Berkeley open source license lets them decide how many of their local changes they want to contribute back.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "Run a huge number of applications",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "With over 37000 ported libraries and applications, FreeBSD supports applications for desktop, server, appliance, and embedded environments.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "Easy to install",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "FreeBSD can be installed from a variety of media including CD-ROM, DVD, or directly over the network using FTP or NFS. All you need are these directions.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "FreeBSD is free",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "While you might expect an operating system with these features to sell for a high price, FreeBSD is available free of charge and comes with the source code. If you would like to purchase or download a copy to try out, more information is available.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "heading",
+   "text": "Contributing to FreeBSD",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null,
+   "heading_level": 2
+  },
+  {
+   "kind": "paragraph",
+   "text": "Even if you are not a programmer, there are other ways to contribute to FreeBSD. The FreeBSD Foundation is a non-profit organization for which direct contributions are fully tax deductible. Please visit the Contact Us page for more information.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "It is easy to contribute to FreeBSD. All you need to do is find a part of FreeBSD which you think could be improved and make those changes (carefully and cleanly) and submit that back to the Project by means of a bug report or a committer, if you know one. This could be anything from documentation to artwork to source code. See the Contributing to FreeBSD article for more information.",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  },
+  {
+   "kind": "paragraph",
+   "text": "Last modified on: December 21, 2025 by Alexander Ziaee",
+   "list_type": null,
+   "depth": 0,
+   "ordinal": null
+  }
+ ]
+}

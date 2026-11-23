@@ -1,0 +1,14 @@
+{
+  "F01": "cal-debian-clean",
+  "F02": "cal-debian-duplicate",
+  "F03": "cal-debian-instruction_interference",
+  "F04": "cal-debian-missing_paragraph",
+  "F05": "cal-debian-noise",
+  "F06": "cal-debian-reorder",
+  "F07": "cal-freebsd-clean",
+  "F08": "cal-freebsd-duplicate",
+  "F09": "cal-freebsd-instruction_interference",
+  "F10": "cal-freebsd-missing_paragraph",
+  "F11": "cal-freebsd-noise",
+  "F12": "cal-freebsd-reorder"
+}

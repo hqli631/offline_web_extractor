@@ -1,0 +1,182 @@
+{
+ "label_version": 1,
+ "case_id": "cal-freebsd-missing_paragraph",
+ "split": "frozen_test",
+ "template": "pf_v4_freebsd",
+ "label_origin": "assistant_silver",
+ "human_reviewed": false,
+ "derivation": "frozen_rubrics_v2_program_on_controlled_mutation",
+ "mutation": {
+  "type": "missing_paragraph",
+  "index": 1,
+  "removed_excerpt": "FreeBSD is an operating system for a variety of platforms which focuses on features, speed, and stability. It is derived"
+ },
+ "noise_terms": [],
+ "source_sha256": "e9898ecc311f924c2cca046fbf263f369d97ef2515f1da81d510e26ea6441497",
+ "gold_sha256": "16553ef970dbd330fadab1975d63d0a51d8c79bc20b647c6ebb3a2f06b03c423",
+ "candidate_sha256": "42927c473a8dd851b93512d397fe1ba2955a5e5703c6cab9d3cbec9b76864289",
+ "batch_config": {
+  "max_source_chars": 20000
+ },
+ "source_truncated": false,
+ "prompt_chars": 57989,
+ "expected": {
+  "dimensions": {
+   "completeness": {
+    "score": 2,
+    "status": "scored",
+    "severity": "minor"
+   },
+   "cleanliness": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "severity": "none"
+   },
+   "title": {
+    "score": 4,
+    "status": "scored",
+    "severity": "none"
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "severity": "none"
+   }
+  },
+  "decision": "uncertain",
+  "needs_human_review": true
+ },
+ "program_reference": {
+  "rubrics_version": "2.0.0",
+  "method": "deterministic-reference",
+  "dimensions": {
+   "completeness": {
+    "score": 2,
+    "status": "scored",
+    "recall": 0.8945147679324894,
+    "missing_tokens": 50
+   },
+   "cleanliness": {
+    "score": 4,
+    "status": "scored",
+    "precision": 1.0,
+    "clean_ratio": 1.0,
+    "extra_tokens": 0,
+    "noise_hits": {}
+   },
+   "structure": {
+    "score": 4,
+    "status": "partial",
+    "attribute_ratio": 1.0,
+    "order_ratio": 1.0,
+    "alignment_coverage": 0.9714285714285714,
+    "aligned_pairs": [
+     [
+      0,
+      0
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      10,
+      11
+     ],
+     [
+      11,
+      12
+     ],
+     [
+      12,
+      13
+     ],
+     [
+      13,
+      14
+     ],
+     [
+      14,
+      15
+     ],
+     [
+      15,
+      16
+     ],
+     [
+      16,
+      17
+     ]
+    ],
+    "reason": "Only text-aligned blocks are scored"
+   },
+   "title": {
+    "score": 4,
+    "status": "scored",
+    "exact": true
+   },
+   "format": {
+    "score": null,
+    "status": "not_applicable",
+    "reason": "No code blocks to compare"
+   }
+  },
+  "issues": [
+   {
+    "dimension": "completeness",
+    "code": "unaligned_gold_block",
+    "severity": "minor",
+    "predicted_ref": null,
+    "gold_ref": "g:1",
+    "detail": "Exact normalized text not aligned; may be omission, edit or split/merge",
+    "gold_excerpt": "FreeBSD is an operating system for a variety of platforms which focuses on features, speed, and stability. It is derived from BSD, the version of UNIX® developed at the University of California, Berke"
+   }
+  ],
+  "decision": "uncertain",
+  "needs_human_review": true,
+  "overall": null,
+  "evidence_complete": true,
+  "note": "Uncalibrated diagnostics; no model/human judgement or reward claim. Source attribution, links and Markdown rendering are unassessed."
+ },
+ "notes": [
+  "Silver label (assistant-derived), not human gold; disagreement goes to the review queue.",
+  "clean means no injected mutation; the extractor output may still differ from gold."
+ ]
+}

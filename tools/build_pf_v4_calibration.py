@@ -144,8 +144,10 @@ def main(argv=None):
                            'candidate_sha256': lab['candidate_sha256'], 'source_sha256': lab['source_sha256'],
                            'gold_sha256': lab['gold_sha256'], 'label_sha256': sha256_json(lab),
                            'prompt_chars': item['prompt_chars'], 'source_truncated': lab['source_truncated']})
+    gate_cfg = json.loads((ROOT / 'outputs/pf.gate.config.v2.json').read_text(encoding='utf-8'))
     freeze = {'freeze_version': 'pf-1',
-              'batch_config': {'model': 'qwen3.8-27b', 'judge_version': '1.4.0', 'rubrics_version': '2.0.0',
+              'batch_config': {'model': 'qwen3.8-27b', 'judge_version': gate_cfg['batch_config']['judge_version'],
+                               'rubrics_version': '2.0.0',
                                'max_source_chars': BATCH_MAX_SOURCE_CHARS, 'max_output_tokens': 2200, 'timeout_seconds': 90},
               'label_policy': {'label_origin': LABEL_ORIGIN, 'human_reviewed': False,
                                'note': 'P-F v4 silver labels; not human gold. frozen_test v4 scored ONCE after user blind gold seal; no tuning. v1/v2/v3 never re-run.'},

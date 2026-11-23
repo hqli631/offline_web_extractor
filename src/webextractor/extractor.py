@@ -123,6 +123,13 @@ def _candidate_nodes(tree: HtmlElement) -> list[HtmlElement]:
         "//div[contains(concat(' ', normalize-space(@class), ' '), ' post-content ')]"
     )
     # XPath union already deduplicates nodes and preserves document order.
+    if not nodes:
+        # P-F A2-minimal (approved hqli631 2026-11-23): last-resort generic
+        # container fallback for classic layouts (e.g. debian div#content).
+        # Fires ONLY when the primary union finds nothing -> zero drift on
+        # every previously extractable page (27-snapshot regression pinned
+        # in tests/test_pf_extractor_fallback.py). No site-specific selectors.
+        nodes = tree.xpath("//*[@id='content']")
     return nodes
 
 

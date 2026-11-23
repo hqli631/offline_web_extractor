@@ -1,0 +1,207 @@
+{
+  "title": "The NetBSD Project",
+  "blocks": [
+    {
+      "kind": "paragraph",
+      "text": "NetBSD is a free, fast, secure, and highly portable Unix-like Open Source operating system. It is available for a wide range of platforms, from large-scale servers and powerful desktop systems to handheld and embedded devices.",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "paragraph",
+      "text": "» Learn more",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "heading",
+      "text": "11.1 available!",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null,
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "text": "The NetBSD project is pleased to announce » NetBSD 11.1 «, the first update to the nineteenth major release of NetBSD.",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "heading",
+      "text": "Get NetBSD",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null,
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "text": "NetBSD 11.1, released on November 2, 2026. » Release Notes «",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "table",
+      "text": "CPU | Machines | Install media\namd64 | 64-bit x86-family machines with AMD or Intel CPUs | USB image, DVD, CD\narm | ARM systems like Raspberry Pi, PINE64, ODROID, \"ServerReady\" machines more | Various boards, original RPi\ni386 | 32-bit x86-family generic machines | USB image, DVD, CD\nmips | MIPS systems like EdgeRouter, Loongson, Malta | octeon, mips64el, mipsel\npowerpc | PowerPC systems like Nintendo Wii, DHT Walnut, RouterBOARD | wii, others\nsparc64 | Sun UltraSPARC | DVD, CD\nothers | Amiga, Alpha, Apple PowerPC/68K, Dreamcast, SPARC32, VAX, more architectures | various",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "paragraph",
+      "text": "A signed list of hashes for the NetBSD 11.1 distribution. The NetBSD Security Officer's PGP key used to sign the list of hashes.",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "heading",
+      "text": "Donate",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null,
+      "heading_level": 2
+    },
+    {
+      "kind": "paragraph",
+      "text": "Donations to The NetBSD Foundation allow the project to purchase build hardware and fund development. Some recently funded projects are:",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "arm64 package build server",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "Wi-Fi renewal",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "LLDB and upstream LLVM support",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "ptrace and GDB improvements",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "Donate using Stripe",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "Donate or Subscribe with PayPal",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "Sponsor NetBSD on GitHub",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "heading",
+      "text": "Latest News (RSS)",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null,
+      "heading_level": 2
+    },
+    {
+      "kind": "list_item",
+      "text": "NetBSD 11.1 available2 November 2026",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "NetBSD 10.2 available15 September 2026",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "NetBSD 9.5 available and EOL for netbsd-931 August 2026",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "NetBSD 11.0 available30 July 2026",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "heading",
+      "text": "Upcoming Events",
+      "list_type": null,
+      "depth": 0,
+      "ordinal": null,
+      "heading_level": 3
+    },
+    {
+      "kind": "list_item",
+      "text": "FOSDEM '27, Brussels, BelgiumJan 2027",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "AsiaBSDCon 2027, Tokyo, JapanMar 2027",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "BSDCan 2027, Vancouver, CanadaJuly 2027",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "EuroBSDcon 2027, Bratislava, SlovakiaSep 2027",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    },
+    {
+      "kind": "list_item",
+      "text": "» Archive",
+      "list_type": "ul",
+      "depth": 0,
+      "ordinal": null
+    }
+  ],
+  "annotation_note": "PROGRAMMATIC silver expected = representative extract_html blocks. NOT human gold. Used only for orchestrator-side recall side-check and feedback validation; never enters any model prompt."
+}

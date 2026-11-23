@@ -1,0 +1,27 @@
+{
+  "id": "pg_netbsd_index-var",
+  "source_kind": "synthetic_variant",
+  "split": "development",
+  "generator": "build_pg_corpus.py",
+  "html": "pg_v1/pg_netbsd_index-var.html",
+  "sha256": "5e3894f8fb2a72b0e6eaef155862fae91aa37a3e0c032639bd5d2c7764896203",
+  "expected": "pg_v1/pg_netbsd_index-var.expected.json",
+  "expected_sha256": "84ab3232e2f932fd3ab8e83cc3bfdbde3270e53f0babf20370a7a8ec1bcb23c4",
+  "rep_html": "pg_v1/pg_netbsd_index.html",
+  "rep_sha256": "21e7112f080f2df8612b1e169ff1a4ddecadc425fdb75886caa65d50ab3052cb",
+  "mutation": {
+    "old_tag": "div",
+    "new_tag": "section",
+    "stripped_attrs": [
+      "role",
+      "id"
+    ],
+    "container_xpath": "/html/body/div/div[3]",
+    "prose_preserved": true
+  },
+  "rule_before": null,
+  "rule_status_after": "no_rule_before",
+  "rule_broken": true,
+  "silver_method": "representative extract_html blocks (programmatic silver, NOT human gold)",
+  "fetched_at": "2026-11-23T14:49:13+00:00"
+}

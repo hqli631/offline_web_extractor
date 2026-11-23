@@ -1,0 +1,256 @@
+{
+  "freeze_version": "pg-cluster-1",
+  "generated_at": "2026-11-23T14:50:06+00:00",
+  "approval": {
+    "by": "hqli631",
+    "quote": "目标预授权：完成 P-G 全周期+reward 接线，批准合理的预算 (hqli631, 2026-11-23)"
+  },
+  "preregistration": "docs/P_G_REAL_TEMPLATE_PLAN.md",
+  "plan_sha256": "d046767f761e3483f5adc8051ee22243cdc3ed71331d94816c8d0f8431e3b7c6",
+  "corpus": "samples\\pg_corpus.v1.json",
+  "corpus_sha256": "b6c1628fc5adc061cf2f24b1b59f5771f73fcf01f383472b77e2bc25b72989d3",
+  "strata": {
+    "new": [
+      "pg_apache_faq",
+      "pg_apache_howitworks",
+      "pg_apache_howitworks-var",
+      "pg_apache_license",
+      "pg_netbsd_about",
+      "pg_netbsd_changes",
+      "pg_netbsd_index",
+      "pg_netbsd_index-var",
+      "pg_netbsd_security"
+    ],
+    "existing": [
+      "github",
+      "gnu",
+      "iana",
+      "iana-abuse",
+      "iana-whois",
+      "mdn",
+      "nasa",
+      "python-appetite",
+      "python-controlflow",
+      "python-interpreter",
+      "python-introduction",
+      "python-library-index",
+      "python-search"
+    ],
+    "all": [
+      "github",
+      "gnu",
+      "iana",
+      "iana-abuse",
+      "iana-whois",
+      "mdn",
+      "nasa",
+      "pg_apache_faq",
+      "pg_apache_howitworks",
+      "pg_apache_howitworks-var",
+      "pg_apache_license",
+      "pg_netbsd_about",
+      "pg_netbsd_changes",
+      "pg_netbsd_index",
+      "pg_netbsd_index-var",
+      "pg_netbsd_security",
+      "python-appetite",
+      "python-controlflow",
+      "python-interpreter",
+      "python-introduction",
+      "python-library-index",
+      "python-search"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "pg_apache_howitworks-var",
+      "html": "pg_v1/pg_apache_howitworks-var.html",
+      "source_sha256": "bd70dc0b48df9d02cffef1bee58ebb4d9376be9660622aad30062984faaf3677",
+      "manual_group": "apache-org",
+      "source_kind": "synthetic_variant"
+    },
+    {
+      "case_id": "pg_netbsd_index-var",
+      "html": "pg_v1/pg_netbsd_index-var.html",
+      "source_sha256": "5e3894f8fb2a72b0e6eaef155862fae91aa37a3e0c032639bd5d2c7764896203",
+      "manual_group": "netbsd-org",
+      "source_kind": "synthetic_variant"
+    },
+    {
+      "case_id": "pg_apache_howitworks",
+      "html": "pg_v1/pg_apache_howitworks.html",
+      "source_sha256": "0f923cd6f0083ba33b9b82bc4544401543cb7e2230695d4d7094a5beebaae61f",
+      "manual_group": "apache-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "pg_apache_faq",
+      "html": "pg_v1/pg_apache_faq.html",
+      "source_sha256": "d0f24d8f12b29e3ebec47676164271d7dedcae3ded8aa5bd168fba46559274af",
+      "manual_group": "apache-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "pg_apache_license",
+      "html": "pg_v1/pg_apache_license.html",
+      "source_sha256": "a8b4961bdfd8ace10047a0217a6086df428df9928af1994c2c710c9cec480d06",
+      "manual_group": "apache-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "pg_netbsd_index",
+      "html": "pg_v1/pg_netbsd_index.html",
+      "source_sha256": "21e7112f080f2df8612b1e169ff1a4ddecadc425fdb75886caa65d50ab3052cb",
+      "manual_group": "netbsd-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "pg_netbsd_about",
+      "html": "pg_v1/pg_netbsd_about.html",
+      "source_sha256": "2b473a821c998fa34f015b6988f83f20e3761401ec9e9636cea171cd866079c9",
+      "manual_group": "netbsd-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "pg_netbsd_security",
+      "html": "pg_v1/pg_netbsd_security.html",
+      "source_sha256": "ce4e362d3be34e091c38bc3e79fd2bb319a1b9c08d6b5fcfef57071e5622e654",
+      "manual_group": "netbsd-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "pg_netbsd_changes",
+      "html": "pg_v1/pg_netbsd_changes.html",
+      "source_sha256": "b460c087efbed947b09def45346cf876bd677272731b2465e57d925b291cc137",
+      "manual_group": "netbsd-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "python-appetite",
+      "html": "python_appetite_zh.html",
+      "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "python-interpreter",
+      "html": "python_interpreter_zh.html",
+      "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "iana",
+      "html": "iana_example_domains.html",
+      "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+      "manual_group": "iana-help",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "gnu",
+      "html": "gnu.candidate.html",
+      "source_sha256": "b050aa1bcbf73c225c0bcabd377e1015a4c602556eb6d9f13f0eb2d5ba8973d6",
+      "manual_group": "gnu-essay",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "github",
+      "html": "github-copilot-blog.candidate.html",
+      "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+      "manual_group": "github-blog",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "nasa",
+      "html": "nasa-voyager-news.candidate.html",
+      "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+      "manual_group": "nasa-news",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "mdn",
+      "html": "mdn.candidate.html",
+      "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+      "manual_group": "mdn-doc",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "python-introduction",
+      "html": "clustering/python-introduction.html",
+      "source_sha256": "f59c9271286fda8e11785148a1d11d753c96bb622eb21a34768babefac5d53c7",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "python-controlflow",
+      "html": "clustering/python-controlflow.html",
+      "source_sha256": "d02eef35346d0344e101a66c2466ae9755a4bf45f6f6c1d94574f1ab8a43f8ce",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "python-library-index",
+      "html": "clustering/python-library-index.html",
+      "source_sha256": "9cb748bbfd547a80922467dbbbe58816d0d80500818b19ec18a72ae02fb9d152",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "python-search",
+      "html": "clustering/python-search.html",
+      "source_sha256": "23a461b1a695e86d4fbee39f59b00e2ccbfd581ee2a03370fe407058871b8793",
+      "manual_group": "sphinx-search",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "iana-abuse",
+      "html": "clustering/iana-abuse.html",
+      "source_sha256": "8b0b6c2b0a3d8d5d887b24b3da0fda754d399aa3ab51449e2b21a3e2a581084d",
+      "manual_group": "iana-help",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "iana-whois",
+      "html": "clustering/iana-whois.html",
+      "source_sha256": "7f42a1d6e553ee5d4ae1bdc6562f60a3bf826d7864065d4835185fea58b78ddd",
+      "manual_group": "iana-help",
+      "source_kind": "real_existing"
+    }
+  ],
+  "params": {
+    "feature_mode": "suffix-presence",
+    "threshold": 0.7,
+    "num_perm": 128,
+    "seed": 20261123,
+    "bands": 16,
+    "rows": 8,
+    "drift_threshold": 0.7
+  },
+  "protocol": {
+    "dom_similarity_sha256": "5302595ac2d71142be82dffb50121d5f713caa33168c1306b6e808a79e731e48",
+    "dom_lsh_sha256": "16bf7a0a18069f3121204df16446cd2a24de76a738e6825e4ea11afadeac1b70",
+    "dom_cluster_sha256": "78f0fca32eb75afe8263a8c55c2eb6f06693d7e87c0607d831b9be5b46e7aaa1",
+    "rule_cache_sha256": "1b1c37945452f7dd32e1fa5769306e2174690ab2df7df74ec5f8f0cbdd6341ba"
+  },
+  "hard_checks": {
+    "cl_anti_chaining_violations_zero": true,
+    "lsh_positive_recall_ge": 0.9
+  },
+  "descriptive_expectations": {
+    "new_stratum_pair_recall_ge": 0.5,
+    "note": "expectation motivated by P-C ablation; reported, NOT a gate"
+  },
+  "budget": {
+    "g1_fetch_cap": 20,
+    "g2_model_calls": 0,
+    "g2_network": 0
+  },
+  "discipline": [
+    "suffix-presence adoption validated on new corpus; no tuning",
+    "existing 13 snapshots byte-identical; clustering/reuse only",
+    "silver expected (variants) orchestrator-side only; never in prompts",
+    "cluster purity != extraction accuracy",
+    "judge scores NOT training rewards",
+    "negative results delivered honestly"
+  ]
+}

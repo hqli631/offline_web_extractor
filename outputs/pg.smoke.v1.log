@@ -1,0 +1,1 @@
+{"output": "outputs\\pg.smoke.v1.json", "clusters": 1, "statuses": {"pg_netbsd_index-var": "repaired"}, "tokens_used": 35648, "calls": 3, "cap": 400000}

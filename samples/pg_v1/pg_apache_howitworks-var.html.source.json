@@ -1,0 +1,31 @@
+{
+  "id": "pg_apache_howitworks-var",
+  "source_kind": "synthetic_variant",
+  "split": "development",
+  "generator": "build_pg_corpus.py",
+  "html": "pg_v1/pg_apache_howitworks-var.html",
+  "sha256": "bd70dc0b48df9d02cffef1bee58ebb4d9376be9660622aad30062984faaf3677",
+  "expected": "pg_v1/pg_apache_howitworks-var.expected.json",
+  "expected_sha256": "3c21558f3133531781bfd66f348d26633b7b3196bad7842741f5173fdf6f6bf4",
+  "rep_html": "pg_v1/pg_apache_howitworks.html",
+  "rep_sha256": "0f923cd6f0083ba33b9b82bc4544401543cb7e2230695d4d7094a5beebaae61f",
+  "mutation": {
+    "old_tag": "main",
+    "new_tag": "div",
+    "stripped_attrs": [
+      "role",
+      "id"
+    ],
+    "container_xpath": "/html/body/main",
+    "prose_preserved": true
+  },
+  "rule_before": {
+    "version": 1,
+    "container_xpath": "//main",
+    "exclude_xpaths": []
+  },
+  "rule_status_after": "rule_no_match",
+  "rule_broken": true,
+  "silver_method": "representative extract_html blocks (programmatic silver, NOT human gold)",
+  "fetched_at": "2026-11-23T14:49:13+00:00"
+}

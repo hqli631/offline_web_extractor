@@ -1,0 +1,360 @@
+{
+  "protocol": "P-G mixed real corpus: newly collected unexposed template families + one controlled tag-swap/role-strip drift variant per family (silver expected = rep extract_html blocks, NOT gold) + 13 existing development snapshots (byte-identical distractors, clustering/reuse only). suffix-presence protocol adoption validated here per docs/P_G_REAL_TEMPLATE_PLAN.md.",
+  "generated_at": "2026-11-23T14:49:53+00:00",
+  "collect_log_sha256": "7bff0c6704b824ce07d3e29c6c40dc9e5779315b5286fcfe31935ba67c0017d6",
+  "strata": {
+    "new": [
+      "pg_apache_faq",
+      "pg_apache_howitworks",
+      "pg_apache_howitworks-var",
+      "pg_apache_license",
+      "pg_netbsd_about",
+      "pg_netbsd_changes",
+      "pg_netbsd_index",
+      "pg_netbsd_index-var",
+      "pg_netbsd_security"
+    ],
+    "existing": [
+      "github",
+      "gnu",
+      "iana",
+      "iana-abuse",
+      "iana-whois",
+      "mdn",
+      "nasa",
+      "python-appetite",
+      "python-controlflow",
+      "python-interpreter",
+      "python-introduction",
+      "python-library-index",
+      "python-search"
+    ],
+    "all": [
+      "github",
+      "gnu",
+      "iana",
+      "iana-abuse",
+      "iana-whois",
+      "mdn",
+      "nasa",
+      "pg_apache_faq",
+      "pg_apache_howitworks",
+      "pg_apache_howitworks-var",
+      "pg_apache_license",
+      "pg_netbsd_about",
+      "pg_netbsd_changes",
+      "pg_netbsd_index",
+      "pg_netbsd_index-var",
+      "pg_netbsd_security",
+      "python-appetite",
+      "python-controlflow",
+      "python-interpreter",
+      "python-introduction",
+      "python-library-index",
+      "python-search"
+    ]
+  },
+  "families": {
+    "apache-org": {
+      "rep_id": "pg_apache_howitworks",
+      "members": [
+        "pg_apache_howitworks",
+        "pg_apache_faq",
+        "pg_apache_license"
+      ],
+      "variant_id": "pg_apache_howitworks-var",
+      "variant_feasible": true,
+      "variant_rule_broken": true
+    },
+    "netbsd-org": {
+      "rep_id": "pg_netbsd_index",
+      "members": [
+        "pg_netbsd_index",
+        "pg_netbsd_about",
+        "pg_netbsd_security",
+        "pg_netbsd_changes"
+      ],
+      "variant_id": "pg_netbsd_index-var",
+      "variant_feasible": true,
+      "variant_rule_broken": true
+    }
+  },
+  "variants": [
+    {
+      "id": "pg_apache_howitworks-var",
+      "source_kind": "synthetic_variant",
+      "split": "development",
+      "generator": "build_pg_corpus.py",
+      "html": "pg_v1/pg_apache_howitworks-var.html",
+      "sha256": "bd70dc0b48df9d02cffef1bee58ebb4d9376be9660622aad30062984faaf3677",
+      "expected": "pg_v1/pg_apache_howitworks-var.expected.json",
+      "expected_sha256": "3c21558f3133531781bfd66f348d26633b7b3196bad7842741f5173fdf6f6bf4",
+      "rep_html": "pg_v1/pg_apache_howitworks.html",
+      "rep_sha256": "0f923cd6f0083ba33b9b82bc4544401543cb7e2230695d4d7094a5beebaae61f",
+      "mutation": {
+        "old_tag": "main",
+        "new_tag": "div",
+        "stripped_attrs": [
+          "role",
+          "id"
+        ],
+        "container_xpath": "/html/body/main",
+        "prose_preserved": true
+      },
+      "rule_before": {
+        "version": 1,
+        "container_xpath": "//main",
+        "exclude_xpaths": []
+      },
+      "rule_status_after": "rule_no_match",
+      "rule_broken": true,
+      "silver_method": "representative extract_html blocks (programmatic silver, NOT human gold)",
+      "fetched_at": "2026-11-23T14:49:13+00:00"
+    },
+    {
+      "id": "pg_netbsd_index-var",
+      "source_kind": "synthetic_variant",
+      "split": "development",
+      "generator": "build_pg_corpus.py",
+      "html": "pg_v1/pg_netbsd_index-var.html",
+      "sha256": "5e3894f8fb2a72b0e6eaef155862fae91aa37a3e0c032639bd5d2c7764896203",
+      "expected": "pg_v1/pg_netbsd_index-var.expected.json",
+      "expected_sha256": "84ab3232e2f932fd3ab8e83cc3bfdbde3270e53f0babf20370a7a8ec1bcb23c4",
+      "rep_html": "pg_v1/pg_netbsd_index.html",
+      "rep_sha256": "21e7112f080f2df8612b1e169ff1a4ddecadc425fdb75886caa65d50ab3052cb",
+      "mutation": {
+        "old_tag": "div",
+        "new_tag": "section",
+        "stripped_attrs": [
+          "role",
+          "id"
+        ],
+        "container_xpath": "/html/body/div/div[3]",
+        "prose_preserved": true
+      },
+      "rule_before": null,
+      "rule_status_after": "no_rule_before",
+      "rule_broken": true,
+      "silver_method": "representative extract_html blocks (programmatic silver, NOT human gold)",
+      "fetched_at": "2026-11-23T14:49:13+00:00"
+    }
+  ],
+  "pages": [
+    {
+      "id": "pg_apache_howitworks-var",
+      "html": "pg_v1/pg_apache_howitworks-var.html",
+      "sha256": "bd70dc0b48df9d02cffef1bee58ebb4d9376be9660622aad30062984faaf3677",
+      "manual_group": "apache-org",
+      "source_kind": "synthetic_variant",
+      "split": "development",
+      "layout": "tag-swap-role-stripped",
+      "silver_expected": "pg_v1/pg_apache_howitworks-var.expected.json",
+      "rep_id": "pg_apache_howitworks"
+    },
+    {
+      "id": "pg_netbsd_index-var",
+      "html": "pg_v1/pg_netbsd_index-var.html",
+      "sha256": "5e3894f8fb2a72b0e6eaef155862fae91aa37a3e0c032639bd5d2c7764896203",
+      "manual_group": "netbsd-org",
+      "source_kind": "synthetic_variant",
+      "split": "development",
+      "layout": "tag-swap-role-stripped",
+      "silver_expected": "pg_v1/pg_netbsd_index-var.expected.json",
+      "rep_id": "pg_netbsd_index"
+    },
+    {
+      "id": "pg_apache_howitworks",
+      "html": "pg_v1/pg_apache_howitworks.html",
+      "sha256": "0f923cd6f0083ba33b9b82bc4544401543cb7e2230695d4d7094a5beebaae61f",
+      "manual_group": "apache-org",
+      "source_kind": "real_new",
+      "split": "development",
+      "layout": "natural",
+      "exposed": false,
+      "url": "https://www.apache.org/foundation/how-it-works.html"
+    },
+    {
+      "id": "pg_apache_faq",
+      "html": "pg_v1/pg_apache_faq.html",
+      "sha256": "d0f24d8f12b29e3ebec47676164271d7dedcae3ded8aa5bd168fba46559274af",
+      "manual_group": "apache-org",
+      "source_kind": "real_new",
+      "split": "development",
+      "layout": "natural",
+      "exposed": false,
+      "url": "https://www.apache.org/foundation/faq.html"
+    },
+    {
+      "id": "pg_apache_license",
+      "html": "pg_v1/pg_apache_license.html",
+      "sha256": "a8b4961bdfd8ace10047a0217a6086df428df9928af1994c2c710c9cec480d06",
+      "manual_group": "apache-org",
+      "source_kind": "real_new",
+      "split": "development",
+      "layout": "natural",
+      "exposed": false,
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    {
+      "id": "pg_netbsd_index",
+      "html": "pg_v1/pg_netbsd_index.html",
+      "sha256": "21e7112f080f2df8612b1e169ff1a4ddecadc425fdb75886caa65d50ab3052cb",
+      "manual_group": "netbsd-org",
+      "source_kind": "real_new",
+      "split": "development",
+      "layout": "natural",
+      "exposed": false,
+      "url": "https://www.netbsd.org/"
+    },
+    {
+      "id": "pg_netbsd_about",
+      "html": "pg_v1/pg_netbsd_about.html",
+      "sha256": "2b473a821c998fa34f015b6988f83f20e3761401ec9e9636cea171cd866079c9",
+      "manual_group": "netbsd-org",
+      "source_kind": "real_new",
+      "split": "development",
+      "layout": "natural",
+      "exposed": false,
+      "url": "https://www.netbsd.org/about/"
+    },
+    {
+      "id": "pg_netbsd_security",
+      "html": "pg_v1/pg_netbsd_security.html",
+      "sha256": "ce4e362d3be34e091c38bc3e79fd2bb319a1b9c08d6b5fcfef57071e5622e654",
+      "manual_group": "netbsd-org",
+      "source_kind": "real_new",
+      "split": "development",
+      "layout": "natural",
+      "exposed": false,
+      "url": "https://www.netbsd.org/security/"
+    },
+    {
+      "id": "pg_netbsd_changes",
+      "html": "pg_v1/pg_netbsd_changes.html",
+      "sha256": "b460c087efbed947b09def45346cf876bd677272731b2465e57d925b291cc137",
+      "manual_group": "netbsd-org",
+      "source_kind": "real_new",
+      "split": "development",
+      "layout": "natural",
+      "exposed": false,
+      "url": "https://www.netbsd.org/changes/"
+    },
+    {
+      "id": "python-appetite",
+      "html": "python_appetite_zh.html",
+      "sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    },
+    {
+      "id": "python-interpreter",
+      "html": "python_interpreter_zh.html",
+      "sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    },
+    {
+      "id": "iana",
+      "html": "iana_example_domains.html",
+      "sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+      "manual_group": "iana-help",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    },
+    {
+      "id": "gnu",
+      "html": "gnu.candidate.html",
+      "sha256": "b050aa1bcbf73c225c0bcabd377e1015a4c602556eb6d9f13f0eb2d5ba8973d6",
+      "manual_group": "gnu-essay",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    },
+    {
+      "id": "github",
+      "html": "github-copilot-blog.candidate.html",
+      "sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+      "manual_group": "github-blog",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    },
+    {
+      "id": "nasa",
+      "html": "nasa-voyager-news.candidate.html",
+      "sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+      "manual_group": "nasa-news",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    },
+    {
+      "id": "mdn",
+      "html": "mdn.candidate.html",
+      "sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+      "manual_group": "mdn-doc",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    },
+    {
+      "id": "python-introduction",
+      "html": "clustering/python-introduction.html",
+      "sha256": "f59c9271286fda8e11785148a1d11d753c96bb622eb21a34768babefac5d53c7",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    },
+    {
+      "id": "python-controlflow",
+      "html": "clustering/python-controlflow.html",
+      "sha256": "d02eef35346d0344e101a66c2466ae9755a4bf45f6f6c1d94574f1ab8a43f8ce",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    },
+    {
+      "id": "python-library-index",
+      "html": "clustering/python-library-index.html",
+      "sha256": "9cb748bbfd547a80922467dbbbe58816d0d80500818b19ec18a72ae02fb9d152",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    },
+    {
+      "id": "python-search",
+      "html": "clustering/python-search.html",
+      "sha256": "23a461b1a695e86d4fbee39f59b00e2ccbfd581ee2a03370fe407058871b8793",
+      "manual_group": "sphinx-search",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    },
+    {
+      "id": "iana-abuse",
+      "html": "clustering/iana-abuse.html",
+      "sha256": "8b0b6c2b0a3d8d5d887b24b3da0fda754d399aa3ab51449e2b21a3e2a581084d",
+      "manual_group": "iana-help",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    },
+    {
+      "id": "iana-whois",
+      "html": "clustering/iana-whois.html",
+      "sha256": "7f42a1d6e553ee5d4ae1bdc6562f60a3bf826d7864065d4835185fea58b78ddd",
+      "manual_group": "iana-help",
+      "source_kind": "real_existing",
+      "split": "development",
+      "layout": "existing"
+    }
+  ]
+}

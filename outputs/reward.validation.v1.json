@@ -1,0 +1,240 @@
+{
+  "tool_version": "1.0.0",
+  "mapping_version": "1.0.0",
+  "generated_at": "2026-11-23T15:10:59.616272+00:00",
+  "inputs": {
+    "pd2": {
+      "path": "D:\\codex project\\offline_web_extractor\\outputs\\pd2.run.v1.json",
+      "sha256": "44e7ef47e6991e9f5d4fe86197ba46bce0e80f59008ed979da7cc79ea06508b8"
+    },
+    "pg": {
+      "path": "D:\\codex project\\offline_web_extractor\\outputs\\pg.run.v1.json",
+      "sha256": "29214f0e90bd2a1f889a13ec02c0c02343b4c47117328e6337c5f9a997623d9d"
+    }
+  },
+  "pairs": [
+    {
+      "run": "pd2",
+      "cluster_id": "reference-layout",
+      "case_id": "id-drift",
+      "category": "improved",
+      "decision_before": "fail",
+      "decision_after": "uncertain",
+      "reward_before": -1.0,
+      "reward_after": 0.5,
+      "delta": 1.5,
+      "direction_consistent": true,
+      "components_before": {
+        "decision_weight": -0.5,
+        "dimension_weight": -0.5,
+        "severe_penalty": 0.5,
+        "injection_penalty": 0.0
+      },
+      "components_after": {
+        "decision_weight": 0.0,
+        "dimension_weight": 0.5,
+        "severe_penalty": 0.0,
+        "injection_penalty": 0.0
+      }
+    },
+    {
+      "run": "pd2",
+      "cluster_id": "duplicate-main",
+      "case_id": "duplicate-main",
+      "category": "no_effect",
+      "decision_before": "uncertain",
+      "decision_after": "uncertain",
+      "reward_before": 0.5,
+      "reward_after": 0.5,
+      "delta": 0.0,
+      "direction_consistent": true,
+      "components_before": {
+        "decision_weight": 0.0,
+        "dimension_weight": 0.5,
+        "severe_penalty": 0.0,
+        "injection_penalty": 0.0
+      },
+      "components_after": {
+        "decision_weight": 0.0,
+        "dimension_weight": 0.5,
+        "severe_penalty": 0.0,
+        "injection_penalty": 0.0
+      }
+    },
+    {
+      "run": "pd2",
+      "cluster_id": "content-moved",
+      "case_id": "content-moved",
+      "category": "improved",
+      "decision_before": "fail",
+      "decision_after": "uncertain",
+      "reward_before": -0.416667,
+      "reward_after": 0.5,
+      "delta": 0.916667,
+      "direction_consistent": true,
+      "components_before": {
+        "decision_weight": -0.5,
+        "dimension_weight": 0.333333,
+        "severe_penalty": 0.25,
+        "injection_penalty": 0.0
+      },
+      "components_after": {
+        "decision_weight": 0.0,
+        "dimension_weight": 0.5,
+        "severe_penalty": 0.0,
+        "injection_penalty": 0.0
+      }
+    },
+    {
+      "run": "pg",
+      "cluster_id": "pg-c0",
+      "case_id": "pg_apache_howitworks-var",
+      "category": "improved",
+      "decision_before": "fail",
+      "decision_after": "fail",
+      "reward_before": -1.0,
+      "reward_after": -0.5,
+      "delta": 0.5,
+      "direction_consistent": true,
+      "components_before": {
+        "decision_weight": -0.5,
+        "dimension_weight": -0.833333,
+        "severe_penalty": 0.5,
+        "injection_penalty": 0.0
+      },
+      "components_after": {
+        "decision_weight": -0.5,
+        "dimension_weight": 0.25,
+        "severe_penalty": 0.25,
+        "injection_penalty": 0.0
+      }
+    },
+    {
+      "run": "pg",
+      "cluster_id": "pg-c2",
+      "case_id": "pg_netbsd_about",
+      "category": "no_effect",
+      "decision_before": "uncertain",
+      "decision_after": "uncertain",
+      "reward_before": 0.5,
+      "reward_after": 0.5,
+      "delta": 0.0,
+      "direction_consistent": true,
+      "components_before": {
+        "decision_weight": 0.0,
+        "dimension_weight": 0.5,
+        "severe_penalty": 0.0,
+        "injection_penalty": 0.0
+      },
+      "components_after": {
+        "decision_weight": 0.0,
+        "dimension_weight": 0.5,
+        "severe_penalty": 0.0,
+        "injection_penalty": 0.0
+      }
+    },
+    {
+      "run": "pg",
+      "cluster_id": "pg-c2",
+      "case_id": "pg_netbsd_security",
+      "category": "no_effect",
+      "decision_before": "uncertain",
+      "decision_after": "uncertain",
+      "reward_before": 0.416667,
+      "reward_after": 0.416667,
+      "delta": 0.0,
+      "direction_consistent": true,
+      "components_before": {
+        "decision_weight": 0.0,
+        "dimension_weight": 0.416667,
+        "severe_penalty": 0.0,
+        "injection_penalty": 0.0
+      },
+      "components_after": {
+        "decision_weight": 0.0,
+        "dimension_weight": 0.416667,
+        "severe_penalty": 0.0,
+        "injection_penalty": 0.0
+      }
+    },
+    {
+      "run": "pg",
+      "cluster_id": "pg-c3",
+      "case_id": "pg_netbsd_changes",
+      "category": "regressed",
+      "decision_before": "uncertain",
+      "decision_after": "fail",
+      "reward_before": 0.5,
+      "reward_after": -1.0,
+      "delta": -1.5,
+      "direction_consistent": true,
+      "components_before": {
+        "decision_weight": 0.0,
+        "dimension_weight": 0.5,
+        "severe_penalty": 0.0,
+        "injection_penalty": 0.0
+      },
+      "components_after": {
+        "decision_weight": -0.5,
+        "dimension_weight": -0.0,
+        "severe_penalty": 0.5,
+        "injection_penalty": 0.0
+      }
+    },
+    {
+      "run": "pg",
+      "cluster_id": "pg-c4",
+      "case_id": "pg_netbsd_index",
+      "category": "regressed",
+      "decision_before": "uncertain",
+      "decision_after": "fail",
+      "reward_before": 0.5,
+      "reward_after": -0.5,
+      "delta": -1.0,
+      "direction_consistent": true,
+      "components_before": {
+        "decision_weight": 0.0,
+        "dimension_weight": 0.5,
+        "severe_penalty": 0.0,
+        "injection_penalty": 0.0
+      },
+      "components_after": {
+        "decision_weight": -0.5,
+        "dimension_weight": 0.25,
+        "severe_penalty": 0.25,
+        "injection_penalty": 0.0
+      }
+    }
+  ],
+  "metrics": {
+    "pairs": 8,
+    "directional_pairs": 8,
+    "direction_consistent": 8,
+    "by_category": {
+      "improved": 3,
+      "no_effect": 3,
+      "regressed": 2
+    },
+    "reward_min": -1.0,
+    "reward_max": 0.5,
+    "reward_mean": 0.026042
+  },
+  "hard_checks": {
+    "H1_bounds": true,
+    "H2_determinism": true,
+    "H3_direction_consistency": true
+  },
+  "problems": [],
+  "verdict": "REWARD_WIRING_CONSISTENT",
+  "scope_disclosure": [
+    "Mapping sanity check only; NOT evidence of real-page reward validity.",
+    "Judge reward eligibility remains P-F controlled-synthetic scope only.",
+    "Real-page reward UNVALIDATED: P-G G3 NO_REAL_TEMPLATE_SIGNAL (over-exclusion regressions).",
+    "No injection cases in these runs; injection path covered by unit fixtures only.",
+    "Frozen engineering weights, not a validated optimum; no RL training started (P-E gated)."
+  ],
+  "budget": {
+    "model_calls": 0,
+    "network_fetches": 0
+  }
+}

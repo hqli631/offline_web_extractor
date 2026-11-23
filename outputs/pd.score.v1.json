@@ -1,0 +1,414 @@
+{
+  "tool_version": "1.0.0",
+  "run_sha256": "ee8218181667cc256f3e7436d2e36725ee790eeb76d9c7da4ac2b534c6eef754",
+  "freeze_sha256": "ec311e8238a93e69ec453050984530efab3db177eda1189b3cfb646122f6a658",
+  "generated_at": "2026-11-23T13:18:58+00:00",
+  "freeze_problems": [],
+  "per_case": [
+    {
+      "cluster_id": "reference-layout",
+      "case_id": "class-drift",
+      "status": "no_repair_needed",
+      "reuse": {
+        "reuse": true,
+        "fallback": false,
+        "drift": false,
+        "drift_reasons": [],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "ok",
+        "final_status": "ok",
+        "block_count": 3
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": null,
+      "baseline_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "reference-layout",
+      "case_id": "reference",
+      "status": "no_repair_needed",
+      "reuse": {
+        "reuse": true,
+        "fallback": false,
+        "drift": false,
+        "drift_reasons": [],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "ok",
+        "final_status": "ok",
+        "block_count": 3
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": null,
+      "baseline_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "reference-layout",
+      "case_id": "role-drift",
+      "status": "repaired",
+      "reuse": {
+        "reuse": false,
+        "fallback": true,
+        "drift": true,
+        "drift_reasons": [
+          "rule_failure"
+        ],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "rule_no_match",
+        "final_status": "no_candidate",
+        "block_count": 0
+      },
+      "baseline_decision": "fail",
+      "baseline_defect_count": 3,
+      "trigger_reason": "drift=['rule_failure'];critic=fail;defects=3",
+      "pair": {
+        "category": "improved",
+        "decision_before": "fail",
+        "decision_after": "uncertain",
+        "total_before": 4,
+        "total_after": 16,
+        "delta": 12,
+        "score_comparable": true,
+        "new_severe_dimensions": [],
+        "severe_before": [
+          "completeness",
+          "structure",
+          "title"
+        ],
+        "severe_after": []
+      },
+      "baseline_quality": {
+        "title_exact": false,
+        "blocks_exact": false,
+        "block_text_precision": 0.0,
+        "block_text_recall": 0.0
+      },
+      "repaired_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "recall_delta": 1.0
+    },
+    {
+      "cluster_id": "duplicate-main",
+      "case_id": "duplicate-main",
+      "status": "repaired",
+      "reuse": {
+        "reuse": false,
+        "fallback": true,
+        "drift": true,
+        "drift_reasons": [
+          "no_shared_rule"
+        ],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "no_rule",
+        "final_status": "ok",
+        "block_count": 3
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": "drift=['no_shared_rule'];critic=uncertain;defects=0",
+      "pair": {
+        "category": "no_effect",
+        "decision_before": "uncertain",
+        "decision_after": "uncertain",
+        "total_before": 16,
+        "total_after": 16,
+        "delta": 0,
+        "score_comparable": true,
+        "new_severe_dimensions": [],
+        "severe_before": [],
+        "severe_after": []
+      },
+      "baseline_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "repaired_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "recall_delta": 0.0
+    },
+    {
+      "cluster_id": "content-moved",
+      "case_id": "content-moved",
+      "status": "repaired",
+      "reuse": {
+        "reuse": true,
+        "fallback": false,
+        "drift": false,
+        "drift_reasons": [],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "ok",
+        "final_status": "ok",
+        "block_count": 2
+      },
+      "baseline_decision": "fail",
+      "baseline_defect_count": 1,
+      "trigger_reason": "drift=[];critic=fail;defects=1",
+      "pair": {
+        "category": "improved",
+        "decision_before": "fail",
+        "decision_after": "uncertain",
+        "total_before": 14,
+        "total_after": 16,
+        "delta": 2,
+        "score_comparable": true,
+        "new_severe_dimensions": [],
+        "severe_before": [
+          "completeness"
+        ],
+        "severe_after": []
+      },
+      "baseline_quality": {
+        "title_exact": true,
+        "blocks_exact": false,
+        "block_text_precision": 1.0,
+        "block_text_recall": 0.666667
+      },
+      "repaired_quality": {
+        "title_exact": true,
+        "blocks_exact": true,
+        "block_text_precision": 1.0,
+        "block_text_recall": 1.0
+      },
+      "recall_delta": 0.333333
+    }
+  ],
+  "feedback": [
+    {
+      "cluster_id": "reference-layout",
+      "rep_id": "reference",
+      "shared_rule": {
+        "version": 1,
+        "container_xpath": "//*[@role='main']",
+        "exclude_xpaths": []
+      },
+      "attempted": true,
+      "accepted": false,
+      "detail": {
+        "member_id": "role-drift",
+        "rule": {
+          "version": 1,
+          "container_xpath": "//div[@role='article']",
+          "exclude_xpaths": []
+        },
+        "programmatic_improved": true,
+        "generalizes": false,
+        "validation": [
+          {
+            "case_id": "class-drift",
+            "rule_status": "rule_no_match",
+            "match_count": 0,
+            "block_count": 0,
+            "recall": null,
+            "pre_recall": 1.0,
+            "pass": false
+          },
+          {
+            "case_id": "reference",
+            "rule_status": "rule_no_match",
+            "match_count": 0,
+            "block_count": 0,
+            "recall": null,
+            "pre_recall": 1.0,
+            "pass": false
+          },
+          {
+            "case_id": "role-drift",
+            "rule_status": "ok",
+            "match_count": 1,
+            "block_count": 3,
+            "recall": 1.0,
+            "pre_recall": 0.0,
+            "pass": true
+          }
+        ],
+        "accepted": false,
+        "blocked_reason": "rule_does_not_generalize"
+      },
+      "member_rule_cache": {
+        "role-drift": {
+          "version": 1,
+          "container_xpath": "//div[@role='article']",
+          "exclude_xpaths": []
+        }
+      }
+    },
+    {
+      "cluster_id": "duplicate-main",
+      "rep_id": "duplicate-main",
+      "shared_rule": null,
+      "attempted": true,
+      "accepted": false,
+      "detail": {
+        "member_id": "duplicate-main",
+        "rule": {
+          "version": 1,
+          "container_xpath": "//div[@role='main' and @class='desktop-layout']",
+          "exclude_xpaths": []
+        },
+        "programmatic_improved": false,
+        "generalizes": true,
+        "validation": [
+          {
+            "case_id": "duplicate-main",
+            "rule_status": "ok",
+            "match_count": 1,
+            "block_count": 3,
+            "recall": 1.0,
+            "pre_recall": 1.0,
+            "pass": true
+          }
+        ],
+        "accepted": false,
+        "blocked_reason": "not_improved"
+      },
+      "member_rule_cache": {
+        "duplicate-main": {
+          "version": 1,
+          "container_xpath": "//div[@role='main' and @class='desktop-layout']",
+          "exclude_xpaths": []
+        }
+      }
+    },
+    {
+      "cluster_id": "content-moved",
+      "rep_id": "content-moved",
+      "shared_rule": {
+        "version": 1,
+        "container_xpath": "//*[@role='main']",
+        "exclude_xpaths": []
+      },
+      "attempted": true,
+      "accepted": true,
+      "detail": {
+        "member_id": "content-moved",
+        "rule": {
+          "version": 1,
+          "container_xpath": "//body",
+          "exclude_xpaths": [
+            "//nav",
+            "//footer"
+          ]
+        },
+        "programmatic_improved": true,
+        "generalizes": true,
+        "validation": [
+          {
+            "case_id": "content-moved",
+            "rule_status": "ok",
+            "match_count": 1,
+            "block_count": 3,
+            "recall": 1.0,
+            "pre_recall": 0.666667,
+            "pass": true
+          }
+        ],
+        "accepted": true,
+        "rereuse": [
+          {
+            "case_id": "content-moved",
+            "reuse": true,
+            "drift": false,
+            "final_status": "ok",
+            "block_count": 3,
+            "quality": {
+              "title_exact": true,
+              "blocks_exact": true,
+              "block_text_precision": 1.0,
+              "block_text_recall": 1.0
+            }
+          }
+        ]
+      },
+      "member_rule_cache": {
+        "content-moved": {
+          "version": 1,
+          "container_xpath": "//body",
+          "exclude_xpaths": [
+            "//nav",
+            "//footer"
+          ]
+        }
+      }
+    }
+  ],
+  "metrics": {
+    "total_members": 5,
+    "status_counts": {
+      "no_repair_needed": 2,
+      "repaired": 3
+    },
+    "repair_triggered": 3,
+    "paired_n": 3,
+    "improved": 2,
+    "regressed": 0,
+    "no_effect": 1,
+    "other_change": 0,
+    "improvement_rate": 0.6667,
+    "regression_rate": 0.0,
+    "no_effect_rate": 0.3333,
+    "unnecessary_repair_count": 0,
+    "mean_total_score_delta_ci95": {
+      "point": 4.6667,
+      "ci95": [
+        0.0,
+        12.0
+      ],
+      "n": 3,
+      "B": 10000
+    },
+    "feedback_attempted": 3,
+    "feedback_accepted": 1,
+    "drift_recovery": {
+      "case": "role-drift",
+      "present": true,
+      "recovered": true,
+      "baseline_recall": 0.0,
+      "repaired_recall": 1.0
+    }
+  },
+  "audits": {
+    "checked": 5,
+    "failures": []
+  },
+  "candidate_integrity_problems": [],
+  "success_checks": {
+    "improvement_rate_ge": true,
+    "regression_rate_le": true,
+    "leakage_audit_all_passed": true,
+    "unnecessary_repair_zero": true,
+    "candidate_integrity": true,
+    "freeze_integrity": true,
+    "drift_recovery": true
+  },
+  "verdict": "REPAIR_BENEFIT_SIGNAL",
+  "budget": {
+    "cap": 293375,
+    "freeze_cap": 300000,
+    "used": 26883,
+    "skipped": []
+  },
+  "note": "Descriptive signal only, NOT a reward gate; controlled synthetic drift_lab (5 pages), small paired n, wide CI; cluster purity != accuracy; judge-judged improvement != verified real-quality improvement; feedback limited by layout heterogeneity; judge scores remain NOT training rewards."
+}

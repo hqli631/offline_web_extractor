@@ -1,0 +1,1 @@
+{"output": "outputs\\pd.smoke.v1.json", "clusters": 1, "statuses": {"role-drift": "repaired"}, "tokens_used": 6625, "cap": 300000}

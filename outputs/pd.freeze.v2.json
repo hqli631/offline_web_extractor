@@ -1,0 +1,129 @@
+{
+  "freeze_version": "pd-1",
+  "generated_at": "2026-11-23T13:17:32+00:00",
+  "approval": {
+    "by": "hqli631",
+    "at": "2026-11-23",
+    "quote": "开始P-D：漂移→修复→回灌簇规则闭环，批准合理的计划+预算，直至P-D基本完成"
+  },
+  "preregistration": "docs/P_D_REPAIR_LOOP_PLAN.md",
+  "plan_sha256": "f3c524956ee87cf7f0ec3fd7fdae8e740bb43fde8fa702f15b2fc412a068f60d",
+  "corpus": "samples/dom_similarity.controlled.json",
+  "corpus_sha256": "efe7a25465ecc068f2e75b3b2c9e573acd828ab3bd0db8df338181315bea4b10",
+  "clusters": {
+    "reference-layout": {
+      "rep": "reference",
+      "members": [
+        "class-drift",
+        "reference",
+        "role-drift"
+      ]
+    },
+    "duplicate-main": {
+      "rep": "duplicate-main",
+      "members": [
+        "duplicate-main"
+      ]
+    },
+    "content-moved": {
+      "rep": "content-moved",
+      "members": [
+        "content-moved"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "reference",
+      "manual_group": "reference-layout",
+      "html": "drift_lab/reference.html",
+      "source_sha256": "f2421698cb2611dcd1ad6c9f3ede14b46af0dac9c1882d8d248cc9468874f428",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc"
+    },
+    {
+      "case_id": "class-drift",
+      "manual_group": "reference-layout",
+      "html": "drift_lab/class-drift.html",
+      "source_sha256": "ef76358f0a4ac9bb4c5999df8a09df191e6882f41236af760b590ad17a89b76f",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc"
+    },
+    {
+      "case_id": "role-drift",
+      "manual_group": "reference-layout",
+      "html": "drift_lab/role-drift.html",
+      "source_sha256": "e2f7ffd72f087a12361e7ecba2c8293c86433070ddbe6b0b951e55558aac1269",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc"
+    },
+    {
+      "case_id": "duplicate-main",
+      "manual_group": "duplicate-main",
+      "html": "drift_lab/duplicate-main.html",
+      "source_sha256": "661b8dd40eeaafc65a9b29582e5f6790b07a8bb6580e2e2401a3741d314476e6",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc"
+    },
+    {
+      "case_id": "content-moved",
+      "manual_group": "content-moved",
+      "html": "drift_lab/content-moved.html",
+      "source_sha256": "8e60aa8f73b032b204d731f7d4e959f6d2383fd2656190af03c1217bbdbfdcda",
+      "expected_sha256": "8ab63a3cbe67229eb0c62667cc38055fdacb09b3877182150da6085193f2b2dc"
+    }
+  ],
+  "params": {
+    "feature_mode": "full-counts",
+    "drift_threshold": 0.7
+  },
+  "protocol": {
+    "model": "qwen3.8-27b",
+    "judge_version": "1.4.1",
+    "base_judge_version": "1.2.0",
+    "rubrics_version": "2.0.0",
+    "judge_module_sha256": "25c154b99c96ca8431f8bc5e687421c02a65fe7a614f36e822851dddc18edf20",
+    "v14_module_sha256": "1d87cfb5e83ceb65545fe87a07c68d99ea683a7fd025f4dfe185942c30c2c37c",
+    "base_source_sha256": "edd841efb52961f07891160ccae7fabcc72da65734854da9a86e02bf622ff891",
+    "rubrics_sha256": "4fa60e024758e67d8c831b7a34e267bf2ce9a143dd6ae70cdbc94da036560364",
+    "rule_agent_sha256": "e60ec3094f442f9a20de89f46a93e2d163ae60a84361001c77bd475d9bf64a20",
+    "rule_cache_sha256": "1b1c37945452f7dd32e1fa5769306e2174690ab2df7df74ec5f8f0cbdd6341ba",
+    "max_source_chars": 20000,
+    "max_output_tokens": 2200,
+    "timeout_seconds": 90,
+    "rule_max_attempts": 2,
+    "evidence_chars": 16000,
+    "rule_max_output_tokens": 1024,
+    "execution_timeout": 5.0,
+    "total_timeout": 120.0,
+    "critic_mode": "source_only"
+  },
+  "trigger_rule": "repair iff drift_reasons non-empty OR critic decision==fail OR defects non-empty (severity minor/major/critical or scored score<4); source_only never pass; zero-defect uncertain without drift -> no_repair_needed",
+  "classification": "reuses node5 frozen classify_pair (improved/regressed/no_effect/other_change; regressed priority; paired n = repaired with accepted rejudge)",
+  "feedback_rule": "feedback_accepted iff improved AND repaired rule apply_rule unique match + ok + block_count>0 on rep AND every member AND programmatic block_text_recall not worse than member pre-repair; else feedback_blocked with reason; per-page repaired rule retained in member cache",
+  "success_criteria": {
+    "improvement_rate_ge": 0.3333333333333333,
+    "regression_rate_le": 0.1,
+    "leakage_audit_all_passed": true,
+    "unnecessary_repair_zero": true,
+    "drift_recovery_case": "role-drift",
+    "verdict_labels": [
+      "REPAIR_BENEFIT_SIGNAL",
+      "NO_BENEFIT_SIGNAL"
+    ],
+    "note": "descriptive signal, NOT a reward gate; small synthetic n, CI wide"
+  },
+  "budget": {
+    "token_cap": 300000,
+    "max_calls": 25,
+    "reserve_judge": 16000,
+    "reserve_rule": 8000
+  },
+  "seed": 20261119,
+  "B": 10000,
+  "discipline": [
+    "controlled synthetic drift_lab only; no real-site generalization claim",
+    "protocol frozen during experiment; no tuning",
+    "test/gold never fed back; critic source_only; structural leakage audit",
+    "repair <=1 intervention (rule_agent max_attempts=2)",
+    "judge scores NOT training rewards",
+    "agreement != accuracy",
+    "negative results delivered honestly; no re-test chasing"
+  ]
+}

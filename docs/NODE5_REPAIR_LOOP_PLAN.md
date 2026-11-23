@@ -74,7 +74,8 @@
 - 计划批准：**2026-11-22 hqli631**（原话：`批准节点5计划与预算`）
 - 预算批准（~14 次 / ~220k 上限）：**2026-11-22 hqli631**（同上原话）
 - 冻结时间：**2026-11-22T15:55:10+00:00**（node5.freeze.v1，sha256 `f38ff536427ca3647e93368dd042c71adba263dbd8ebd53a81416f8d5ae3cd97`；judge v1.2.0 sha `edd841ef…` 与 freeze v4/v8 一致；6 dev 案例；token 硬顶 220000；细化最坏 25 次调用）
-- 调用数上限确认：________（§9 口径细化后待用户确认；token 硬顶不变）
+- 调用数上限确认：**2026-11-23 hqli631 选项 A**（原话：`A`）——220k token 硬顶不变，允许最多 25 次调用；最坏情形守卫自动停在顶内、如实交付部分结果
+- 执行记录（2026-11-23）：冒烟 1 案（appetite，no_repair_needed，12,478 tokens）→ 正式 6 案（--token-cap 207522）：3 no_repair_needed / 1 repaired（blurb，no_effect）/ 2 critic_rejected（mdn/github，证据校验）；9 次调用 / 124,399 tokens ≤ 220k；判据 **NO_BENEFIT_SIGNAL**（改善率 0/1 < 1/3）；交付 docs/NODE5_REPAIR_REPORT.md 后停止，不追加调参。
 
 ## 9. 工程细化记录（2026-11-22 · 冻结前 · 零调用）
 

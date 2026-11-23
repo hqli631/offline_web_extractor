@@ -1,0 +1,185 @@
+{
+  "tool_version": "1.0.0",
+  "run_sha256": "ffa7eb5318535d3b31657cddc1a9937d9ced76efd07b7f9441caf675e90445a0",
+  "freeze_sha256": "f38ff536427ca3647e93368dd042c71adba263dbd8ebd53a81416f8d5ae3cd97",
+  "generated_at": "2026-11-23T01:24:23+00:00",
+  "per_case": [
+    {
+      "case_id": "n5-appetite",
+      "template": "appetite",
+      "status": "no_repair_needed",
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "side_check": {
+        "before": {
+          "decision": "pass",
+          "issue_count": 0,
+          "severe_issue_count": 0,
+          "completeness_score": 4,
+          "recall": 1.0,
+          "cleanliness_score": 4,
+          "precision": 1.0,
+          "structure_score": 4,
+          "order_ratio": 1.0,
+          "attribute_ratio": 1.0,
+          "title_score": 4
+        },
+        "note": "deterministic reference diagnostic; post-hoc only; uncalibrated; never fed back"
+      }
+    },
+    {
+      "case_id": "n5-blurb",
+      "template": "blurb",
+      "status": "repaired",
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 1,
+      "pair": {
+        "category": "no_effect",
+        "decision_before": "uncertain",
+        "decision_after": "uncertain",
+        "total_before": 15,
+        "total_after": 15,
+        "delta": 0,
+        "score_comparable": true,
+        "new_severe_dimensions": [],
+        "severe_before": [],
+        "severe_after": []
+      },
+      "side_check": {
+        "before": {
+          "decision": "pass",
+          "issue_count": 0,
+          "severe_issue_count": 0,
+          "completeness_score": 4,
+          "recall": 1.0,
+          "cleanliness_score": 4,
+          "precision": 1.0,
+          "structure_score": 4,
+          "order_ratio": 1.0,
+          "attribute_ratio": 1.0,
+          "title_score": 4
+        },
+        "note": "deterministic reference diagnostic; post-hoc only; uncalibrated; never fed back",
+        "after": {
+          "decision": "pass",
+          "issue_count": 0,
+          "severe_issue_count": 0,
+          "completeness_score": 4,
+          "recall": 1.0,
+          "cleanliness_score": 4,
+          "precision": 1.0,
+          "structure_score": 4,
+          "order_ratio": 1.0,
+          "attribute_ratio": 1.0,
+          "title_score": 4
+        }
+      }
+    },
+    {
+      "case_id": "n5-iana",
+      "template": "iana",
+      "status": "no_repair_needed",
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0
+    },
+    {
+      "case_id": "n5-mdn",
+      "template": "mdn",
+      "status": "critic_rejected",
+      "side_check": {
+        "before": {
+          "decision": "uncertain",
+          "issue_count": 8,
+          "severe_issue_count": 0,
+          "completeness_score": 4,
+          "recall": 1.0,
+          "cleanliness_score": 4,
+          "precision": 1.0,
+          "structure_score": 4,
+          "order_ratio": 1.0,
+          "attribute_ratio": 1.0,
+          "title_score": 4
+        },
+        "note": "deterministic reference diagnostic; post-hoc only; uncalibrated; never fed back"
+      }
+    },
+    {
+      "case_id": "n5-github",
+      "template": "github",
+      "status": "critic_rejected",
+      "side_check": {
+        "before": {
+          "decision": "uncertain",
+          "issue_count": 5,
+          "severe_issue_count": 0,
+          "completeness_score": 4,
+          "recall": 1.0,
+          "cleanliness_score": 4,
+          "precision": 0.9890909090909091,
+          "structure_score": 4,
+          "order_ratio": 1.0,
+          "attribute_ratio": 1.0,
+          "title_score": 4
+        },
+        "note": "deterministic reference diagnostic; post-hoc only; uncalibrated; never fed back"
+      }
+    },
+    {
+      "case_id": "n5-w3clink",
+      "template": "w3clink",
+      "status": "no_repair_needed",
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0
+    }
+  ],
+  "metrics": {
+    "total_cases": 6,
+    "status_counts": {
+      "no_repair_needed": 3,
+      "repaired": 1,
+      "critic_rejected": 2
+    },
+    "critic_accepted": 4,
+    "repair_triggered": 1,
+    "repair_trigger_rate": 0.25,
+    "paired_n": 1,
+    "improved": 0,
+    "regressed": 0,
+    "no_effect": 1,
+    "other_change": 0,
+    "improvement_rate": 0.0,
+    "regression_rate": 0.0,
+    "no_effect_rate": 1.0,
+    "unnecessary_repair_count": 0,
+    "mean_total_score_delta_ci95": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n": 1,
+      "B": 10000
+    },
+    "non_comparable_pairs": 0
+  },
+  "audits": {
+    "prompts_audited": 1,
+    "failures": []
+  },
+  "candidate_integrity_problems": [],
+  "success_checks": {
+    "improvement_rate_ge": false,
+    "regression_rate_le": true,
+    "leakage_audit_all_passed": true,
+    "unnecessary_repair_zero": true,
+    "candidate_integrity": true
+  },
+  "verdict": "NO_BENEFIT_SIGNAL",
+  "budget": {
+    "cap": 207522,
+    "freeze_cap": 220000,
+    "used": 111921,
+    "skipped": []
+  },
+  "note": "Descriptive signal only, NOT a reward gate; judge scores remain reward-ineligible (P3 gate FAIL). n=6 dev templates, same family: no generalization claim. Agreement != accuracy; judge-judged improvement is not verified real-quality improvement. Side-check is post-hoc only."
+}

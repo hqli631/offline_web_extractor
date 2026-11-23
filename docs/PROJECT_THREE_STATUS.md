@@ -120,3 +120,12 @@ P0 交付后启动 P1 judge 元评估。预注册方案 docs/P1_META_EVAL_PLAN.m
 - v3 已构建封存（freeze v7，12/12 不截断）；前 4 案属失败修订排除；剩余不消耗（用户选 A）。
 - 预算：22 次调用 / 379,457 tokens（≤460k）；479 tests OK；交付 docs/P3_GATE_REPORT.md（复现命令已验证）。
 - 下一步：节点 5 修复闭环（docs/NODE5_REPAIR_LOOP_PLAN.md，DRAFT 待单独批准+预算）。
+
+## 节点 5 修复闭环（2026-11-23，已交付停止）
+
+- 预注册实验：Critic（source_only）反馈 → rule_agent ≤1 次修复 → 同协议再评估；无修复对照臂；test/gold 不回传；泄漏审计 + 配对 bootstrap CI（B=10000 seed=20261119）+ 程序化侧核（post-hoc）。
+- 冻结 node5.freeze.v1（sha f38ff536…）先于调用；judge v1.2.0 sha edd841ef… 全程未改；模型 qwen3.8-27b；6 dev 模板真实提取输出；封存集 v1/v2/v3 未碰。
+- 批准：2026-11-22 "批准节点5计划与预算"；2026-11-23 选项 A（220k 硬顶 / ≤25 次）。实际 **9 次调用 / 124,399 tokens**，无跳过。
+- 结果：3 案零缺陷不修复；blurb 修复 → no_effect（title 3/minor 修复前后不变，程序侧 title=4 不佐证该缺陷）；mdn/github Critic 证据校验拒绝（47,441 tokens 无产出）。paired_n=1，改善率 0.0 → **NO_BENEFIT_SIGNAL**（如实负结果）。
+- 解读边界：dev 基线质量已高（recall 全 1.0），可修复空间极小；负结果不等于修复机制普遍无效；n=6/ paired n=1 无推断力；judge 分数仍 reward-INELIGIBLE（P3 gate FAIL）。
+- 交付：docs/NODE5_REPAIR_REPORT.md（命令+哈希+526 tests OK 日志+双臂统计+如实局限）；tools/node5_loop.py、tools/score_node5.py、47 项新测试；GitHub main 同步后停止，不追加调参刷分。

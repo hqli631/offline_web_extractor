@@ -1,0 +1,61 @@
+{
+  "findings_version": 1,
+  "kit_version": "pa-1",
+  "reviewer": "",
+  "review_date": "",
+  "discipline_ack": false,
+  "discipline": "不回改 P0/P2 封存 gold；不重评 frozen_test v1/v2/v3；裁决仅产生 findings；协议修订须 P-B 预注册；单标注者（IAA 缺失已声明）。",
+  "verdicts": [
+    "judge_correct",
+    "human_correct",
+    "anchor_ambiguous",
+    "both_partially_correct"
+  ],
+  "cases": [
+    {
+      "code": "A01",
+      "case_id": "cal-appetite-reorder",
+      "divergence_type": "v12_false_alarm",
+      "adjudication_question": "块乱序（reorder）在 structure 维应记 major（judge v1.2）还是 minor（人类 gold）？严重度是否应按乱序量级区分？",
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "A02",
+      "case_id": "n5-blurb-title",
+      "divergence_type": "judge_vs_program_title",
+      "adjudication_question": "标题中连续双空格被折叠为单空格，应记 title minor 缺陷（judge，源保真）还是可接受归一化（程序+人类=4）？",
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "A03",
+      "case_id": "cal-appetite-noise",
+      "divergence_type": "v13_severe_miss_anchor",
+      "adjudication_question": "单个噪声块/相邻段落乱序在 cleanliness 维：人类 gold 记 major，v1.3 记 minor（severe_miss）。哪个符合缺陷量级？v1.2 曾与人类一致——v1.3 粒度原则是否过宽？",
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "A04",
+      "case_id": "cal-blurb-noise",
+      "divergence_type": "v13_severe_miss_anchor",
+      "adjudication_question": "单个噪声块/相邻段落乱序在 cleanliness 维：人类 gold 记 major，v1.3 记 minor（severe_miss）。哪个符合缺陷量级？v1.2 曾与人类一致——v1.3 粒度原则是否过宽？",
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    },
+    {
+      "code": "A05",
+      "case_id": "cal-blurb-reorder",
+      "divergence_type": "v13_severe_miss_anchor",
+      "adjudication_question": "单个噪声块/相邻段落乱序在 structure 维：人类 gold 记 critical，v1.3 记 minor（severe_miss）。哪个符合缺陷量级？v1.2 曾与人类一致——v1.3 粒度原则是否过宽？",
+      "verdict": null,
+      "anchor_revision_suggestion": "",
+      "note": ""
+    }
+  ]
+}

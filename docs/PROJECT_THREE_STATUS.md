@@ -129,3 +129,12 @@ P0 交付后启动 P1 judge 元评估。预注册方案 docs/P1_META_EVAL_PLAN.m
 - 结果：3 案零缺陷不修复；blurb 修复 → no_effect（title 3/minor 修复前后不变，程序侧 title=4 不佐证该缺陷）；mdn/github Critic 证据校验拒绝（47,441 tokens 无产出）。paired_n=1，改善率 0.0 → **NO_BENEFIT_SIGNAL**（如实负结果）。
 - 解读边界：dev 基线质量已高（recall 全 1.0），可修复空间极小；负结果不等于修复机制普遍无效；n=6/ paired n=1 无推断力；judge 分数仍 reward-INELIGIBLE（P3 gate FAIL）。
 - 交付：docs/NODE5_REPAIR_REPORT.md（命令+哈希+526 tests OK 日志+双臂统计+如实局限）；tools/node5_loop.py、tools/score_node5.py、47 项新测试；GitHub main 同步后停止，不追加调参刷分。
+
+## P-A 分歧裁决准备（2026-11-23，零调用，待用户裁决）
+
+- 路线图 P-A→P-E 获批（用户："就从A开始，逐次到E"）。P-A 自主部分完成：
+  - 分歧清单 docs/P_A_DIVERGENCE_INVENTORY.md：已裁决（P0 23 / P3 C01–C10 / P2 R3）vs 开放（A01–A05）；gate FAIL 精确分解（v1.2 false_alarm 3 中 2 例为已裁决 gold 漏检 C01/C02；v1.3 severe_miss 3 = A03–A05）。
+  - 根因：**gold 代际校准不一致**（reorder 人类 minor↔critical；noise 人类 major vs v1.3 minor 粒度）；不可回改 gold/放宽阈值，需量级化锚点修订（P-B）。
+  - 裁决 kit：tools/build_pa_adjudication_kit.py + outputs/human_review/pa.adjudication.v1（A01 appetite-reorder / A02 blurb-title 双空格 / A03 appetite-noise / A04 blurb-noise / A05 blurb-reorder）；5 案卷 + pa_findings.json 模板 + manifest + INDEX；6 项新测试，全量 532 OK。
+  - 单标注者声明 docs/P_A_SINGLE_ANNOTATOR_DECLARATION.md：IAA 缺失为用户豁免的已知局限；judge–人类 κ ≠ human–human IAA。
+- **待用户**：A01–A05 verdict（judge_correct/human_correct/anchor_ambiguous/both_partially_correct）+ anchor_revision_suggestion + note。完成后封存 findings → 启动 P-B 预注册修订（需预算批准）。

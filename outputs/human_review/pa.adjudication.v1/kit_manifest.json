@@ -1,0 +1,33 @@
+{
+  "kit_version": "pa-1",
+  "generated_at": "2026-11-23T02:23:21+00:00",
+  "source_artifacts_sha256": {
+    "outputs/p1_5.dev.v1.json": "9b4c2c01f5737920c230a89637b521fc071d7513f5dc1b9789b2c38a1a1830bc",
+    "outputs/p3.dev.orig.v1.json": "aab91514b9c493571a809617a038a43f04712e72fbf88d4134b9225e19784b06",
+    "outputs/human_review/final.v1/human_gold.final.json": "23f5f491cdfecd4d2a14d1454dcd8e897a2f0f02c092552326baaa908968f70c",
+    "outputs/node5.run.v1.json": "58d4f76e798c7008ca3297b19e809a3133c87e2f812fbe63e6fd6508794e52a8"
+  },
+  "cases": [
+    {
+      "code": "A01",
+      "case_id": "cal-appetite-reorder"
+    },
+    {
+      "code": "A02",
+      "case_id": "n5-blurb-title"
+    },
+    {
+      "code": "A03",
+      "case_id": "cal-appetite-noise"
+    },
+    {
+      "code": "A04",
+      "case_id": "cal-blurb-noise"
+    },
+    {
+      "code": "A05",
+      "case_id": "cal-blurb-reorder"
+    }
+  ],
+  "discipline": "不回改 P0/P2 封存 gold；不重评 frozen_test v1/v2/v3；裁决仅产生 findings；协议修订须 P-B 预注册；单标注者（IAA 缺失已声明）。"
+}

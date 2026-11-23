@@ -27,11 +27,11 @@ KIT_VERSION = 'pf-v4-draft-1.0.0'
 CLUSTERING = ROOT / 'samples/clustering'
 
 
-def _rows(slate):
+def _rows(slate, samples_root):
     rows = []
     for c in slate['cases']:
         mc = c['manifest_case']
-        sb = (CLUSTERING / mc['source']).read_bytes()
+        sb = (samples_root / mc['source']).read_bytes()
         predicted = c['candidate']
         r = extract_html(sb)
         gold = {'title': r.title, 'blocks': r.to_dict()['blocks']}
@@ -46,16 +46,20 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description='P-F v4 DRAFT blind kit (option B, zero calls).')
     ap.add_argument('--slate', type=Path, default=ROOT / 'outputs/pf.v4.slate.v1/pf_v4_slate.draft.json')
     ap.add_argument('--output', type=Path, required=True)
+    ap.add_argument('--samples-root', type=Path, default=None,
+                    help='source root override (default: samples/ for formal, samples/clustering for draft)')
     args = ap.parse_args(argv)
     out = Path(args.output)
     if out.exists():
         print('Output exists; choose a new directory.', file=sys.stderr)
         return 3
     slate = json.loads(args.slate.read_text(encoding='utf-8'))
-    if slate.get('status') != 'DRAFT_UNSEALED_PENDING_APPROVAL':
-        print('Slate is not the expected draft; refusing.', file=sys.stderr)
+    formal = slate.get('status') == 'FORMAL_ROUTE_A_APPROVED'
+    if not formal and slate.get('status') != 'DRAFT_UNSEALED_PENDING_APPROVAL':
+        print('Slate status not recognized (draft or formal route A); refusing.', file=sys.stderr)
         return 2
-    rows = ordered_cases({'cases': _rows(slate)})
+    sroot = args.samples_root or (ROOT / 'samples' if formal else CLUSTERING)
+    rows = ordered_cases({'cases': _rows(slate, sroot)})
     if len(rows) != 12:
         print('Expected 12 cases; got %d' % len(rows), file=sys.stderr)
         return 2
@@ -69,7 +73,9 @@ def main(argv=None):
         write_text(out / rel, render_blind_packet(row, i, len(rows), code))
         rels.append(rel)
     template = build_template({'cases': rows}, codes)
-    template['instructions'] = ('P-F v4 草案盲评（选项 B，slate 批准后方可正式标注）：逐案填写 decision(pass/uncertain/fail) '
+    prefix = ('P-F v4 正式盲评（路线 A，新采集未曝光模板，已批准）：' if formal else
+              'P-F v4 草案盲评（选项 B，slate 批准后方可正式标注）：')
+    template['instructions'] = (prefix + '逐案填写 decision(pass/uncertain/fail) '
                                 '与五维 score(0-4/null)/status/severity。锚点（与 v1.4 协议同源，密封裁决）：'
                                 'R1 任何乱序→structure major/critical 绝不 minor，decision fail；'
                                 'R2 任何注入噪声→cleanliness major（单块小噪声亦 major），fail；'
@@ -83,9 +89,15 @@ def main(argv=None):
             ('sealed_mapping.json', json.dumps({codes[r['case_id']]: r['case_id'] for r in rows}, ensure_ascii=False, indent=2) + '\n')):
         write_text(out / rel, text)
         rels.append(rel)
-    index = ['# P-F v4 草案 · 盲评索引（选项 B · 未批准）', '',
-             '**DRAFT**：slate（iana-abuse/iana-whois ×6 变异）尚待用户批准；批准选项 B 后本 kit 方可正式标注，',
-             '批准选项 A（新采集）则本 kit 作废重建。同族同站转移，独立性弱于 v3（已披露）。', '',
+    if formal:
+        head = ['# P-F v4 正式 · 盲评索引（路线 A · 已批准 · 可标注）', '',
+                '**FORMAL**：2 个新采集未曝光模板 ×6 变异（采集溯源见 samples/pf_v4_*.html.source.json）。',
+                '独立性与 v3 同构（新模板新站）；选项 B iana 草案已作废保留。', '']
+    else:
+        head = ['# P-F v4 草案 · 盲评索引（选项 B · 未批准）', '',
+                '**DRAFT**：slate（iana-abuse/iana-whois ×6 变异）尚待用户批准；批准选项 B 后本 kit 方可正式标注，',
+                '批准选项 A（新采集）则本 kit 作废重建。同族同站转移，独立性弱于 v3（已披露）。', '']
+    index = head + [
              '共 12 例，中性编号 F01–F12，密封映射见 sealed_mapping.json（标注完成前勿查阅）。', '',
              '## 工作流',
              '1. 按顺序读 packets/F##.md（候选+程序参考+源证据，不含 judge/变异分数）。',
@@ -95,13 +107,14 @@ def main(argv=None):
              '单标注者（IAA 缺失沿用声明）；一致率≠准确率。']
     write_text(out / 'INDEX.md', '\n'.join(index) + '\n')
     rels.append('INDEX.md')
-    kit_manifest = {'kit_version': KIT_VERSION, 'status': 'DRAFT_UNSEALED_PENDING_APPROVAL',
+    kit_status = 'FORMAL_ROUTE_A_OPEN_FOR_ANNOTATION' if formal else 'DRAFT_UNSEALED_PENDING_APPROVAL'
+    kit_manifest = {'kit_version': KIT_VERSION, 'status': kit_status,
                     'inputs': {'slate': sha256_bytes(args.slate.read_bytes())},
                     'n_cases': len(rows),
                     'files': {rel: sha256_bytes((out / rel).read_bytes()) for rel in sorted(rels)}}
     write_text(out / 'kit_manifest.json', json.dumps(kit_manifest, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps({'output': str(out), 'n_cases': len(rows), 'codes': 'F01-F12',
-                      'status': 'DRAFT_UNSEALED_PENDING_APPROVAL'}, ensure_ascii=False))
+                      'status': kit_status}, ensure_ascii=False))
     return 0
 
 

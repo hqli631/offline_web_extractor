@@ -1,0 +1,2118 @@
+{
+  "tool_version": "1.0.0",
+  "stage": "P-F stage-1 dev calibration (NOT the gate)",
+  "gate_config_sha256": "1cb2a89b6000d12e754c5aa22491c926ece96793b3b0c6833d1009b10b861cd7",
+  "judge_version_expected": "1.4.0",
+  "seed": 20261119,
+  "B": 10000,
+  "inputs": {
+    "dev_batches": {
+      "orig": "922dec318d11d141120674892e104c28c222f81d313d565d8d5d40f63d79cc7f",
+      "p2": "d2b2aec59e9d107919fb18d1317187a3a3971da5d0eff6f1039e56488cc4063b"
+    },
+    "dev_golds": {
+      "orig": "d965024694d5715708dbefea7ed427ac082aad3553ecdd95e49d6ced9a22bf50",
+      "p2": "9926dd1c7d25ade13eb1a86f60e6c556dd3d177a299038b94ddf809d25112406"
+    },
+    "dev_freezes": {
+      "orig": "aad20e177e8e0a16ca838b4accfbe83e7bc2a7c92159486433dd80fb906cddf8",
+      "p2": "87cb35879e1eef872f0e71e7bb8468d815dd372c0c0e739555426ba076f2fe07"
+    }
+  },
+  "dev_by_label": {
+    "orig": {
+      "aggregate": {
+        "n_cases": 12,
+        "accepted": 11,
+        "rejected": 1,
+        "decision_match_rate": 0.9091,
+        "decision_cohen_kappa": 0.8429,
+        "n_comparable_dim_pairs": 44,
+        "dim_exact_rate": 0.8182,
+        "dim_within1_rate": 1.0,
+        "severity_sign_rate": 0.8636,
+        "severe_miss_cases": [
+          "cal-appetite-missing_paragraph"
+        ],
+        "false_alarm_cases": [],
+        "rejected_cases": [
+          {
+            "case_id": "cal-blurb-missing_paragraph",
+            "human_decision": "fail",
+            "error": {
+              "type": "ValueError",
+              "stage": "validation",
+              "detail": "Scoring needs source/reference evidence"
+            }
+          }
+        ]
+      },
+      "ci95": {
+        "decision_match": {
+          "point": 0.9091,
+          "ci95": [
+            0.7,
+            1.0
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "kappa": {
+          "point": 0.8429,
+          "ci95": [
+            0.4211,
+            1.0
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "dim_exact": {
+          "point": 0.8182,
+          "ci95": [
+            0.7045,
+            0.925
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "severity_sign": {
+          "point": 0.8636,
+          "ci95": [
+            0.7708,
+            0.9545
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "severe_miss": {
+          "point": 0.0909,
+          "ci95": [
+            0.0,
+            0.3
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "false_alarm": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "reject": {
+          "point": 0.0833,
+          "ci95": [
+            0.0,
+            0.25
+          ],
+          "n": 12,
+          "B": 10000
+        },
+        "pass_recall": {
+          "point": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 12,
+          "B": 6501
+        }
+      },
+      "reject_rate": 0.08333333333333333,
+      "false_alarm_rate": 0.0,
+      "severe_miss_count": 1,
+      "divergent": [
+        {
+          "case_id": "cal-appetite-missing_paragraph",
+          "judge": "uncertain",
+          "human": "fail",
+          "false_alarm": false,
+          "severe_miss": true
+        },
+        {
+          "case_id": "cal-blurb-missing_paragraph",
+          "judge": null,
+          "human": "fail",
+          "false_alarm": false,
+          "severe_miss": false
+        }
+      ]
+    },
+    "p2": {
+      "aggregate": {
+        "n_cases": 6,
+        "accepted": 6,
+        "rejected": 0,
+        "decision_match_rate": 0.8333,
+        "decision_cohen_kappa": 0.6667,
+        "n_comparable_dim_pairs": 24,
+        "dim_exact_rate": 0.9167,
+        "dim_within1_rate": 0.9583,
+        "severity_sign_rate": 0.9583,
+        "severe_miss_cases": [
+          "cal-interpreter-missing_paragraph"
+        ],
+        "false_alarm_cases": [],
+        "rejected_cases": []
+      },
+      "ci95": {
+        "decision_match": {
+          "point": 0.8333,
+          "ci95": [
+            0.5,
+            1.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "kappa": {
+          "point": 0.6667,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "dim_exact": {
+          "point": 0.9167,
+          "ci95": [
+            0.8333,
+            1.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "severity_sign": {
+          "point": 0.9583,
+          "ci95": [
+            0.875,
+            1.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "severe_miss": {
+          "point": 0.1667,
+          "ci95": [
+            0.0,
+            0.5
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "false_alarm": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "reject": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 6,
+          "B": 10000
+        },
+        "pass_recall": {
+          "point": null,
+          "ci95": null,
+          "n": 6
+        }
+      },
+      "reject_rate": 0.0,
+      "false_alarm_rate": 0.0,
+      "severe_miss_count": 1,
+      "divergent": [
+        {
+          "case_id": "cal-interpreter-missing_paragraph",
+          "judge": "uncertain",
+          "human": "fail",
+          "false_alarm": false,
+          "severe_miss": true
+        }
+      ]
+    }
+  },
+  "dev_pooled": {
+    "aggregate": {
+      "n_cases": 18,
+      "accepted": 17,
+      "rejected": 1,
+      "decision_match_rate": 0.8824,
+      "decision_cohen_kappa": 0.7875,
+      "n_comparable_dim_pairs": 68,
+      "dim_exact_rate": 0.8529,
+      "dim_within1_rate": 0.9853,
+      "severity_sign_rate": 0.8971,
+      "severe_miss_cases": [
+        "cal-appetite-missing_paragraph",
+        "cal-interpreter-missing_paragraph"
+      ],
+      "false_alarm_cases": [],
+      "rejected_cases": [
+        {
+          "case_id": "cal-blurb-missing_paragraph",
+          "human_decision": "fail",
+          "error": {
+            "type": "ValueError",
+            "stage": "validation",
+            "detail": "Scoring needs source/reference evidence"
+          }
+        }
+      ]
+    },
+    "ci95": {
+      "decision_match": {
+        "point": 0.8824,
+        "ci95": [
+          0.7059,
+          1.0
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "kappa": {
+        "point": 0.7875,
+        "ci95": [
+          0.4586,
+          1.0
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "dim_exact": {
+        "point": 0.8529,
+        "ci95": [
+          0.7647,
+          0.9306
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "severity_sign": {
+        "point": 0.8971,
+        "ci95": [
+          0.8194,
+          0.9583
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "severe_miss": {
+        "point": 0.1176,
+        "ci95": [
+          0.0,
+          0.2941
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "false_alarm": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "reject": {
+        "point": 0.0556,
+        "ci95": [
+          0.0,
+          0.1667
+        ],
+        "n": 18,
+        "B": 10000
+      },
+      "pass_recall": {
+        "point": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "n": 18,
+        "B": 6401
+      }
+    },
+    "reject_rate": 0.05555555555555555,
+    "false_alarm_rate": 0.0,
+    "severe_miss_count": 2,
+    "divergent": [
+      {
+        "case_id": "cal-appetite-missing_paragraph",
+        "judge": "uncertain",
+        "human": "fail",
+        "false_alarm": false,
+        "severe_miss": true
+      },
+      {
+        "case_id": "cal-blurb-missing_paragraph",
+        "judge": null,
+        "human": "fail",
+        "false_alarm": false,
+        "severe_miss": false
+      },
+      {
+        "case_id": "cal-interpreter-missing_paragraph",
+        "judge": "uncertain",
+        "human": "fail",
+        "false_alarm": false,
+        "severe_miss": true
+      }
+    ]
+  },
+  "kappa_subset": {
+    "label": "orig",
+    "human_classes": [
+      "fail",
+      "pass",
+      "uncertain"
+    ]
+  },
+  "mechanical_track": {
+    "by_label": {
+      "orig": {
+        "aggregate": {
+          "n_cases": 12,
+          "accepted": 11,
+          "rejected": 1,
+          "decision_match_rate": 0.9091,
+          "decision_cohen_kappa": 0.8429,
+          "n_comparable_dim_pairs": 44,
+          "dim_exact_rate": 0.8182,
+          "dim_within1_rate": 1.0,
+          "severity_sign_rate": 0.8636,
+          "severe_miss_cases": [],
+          "false_alarm_cases": [
+            "cal-appetite-reorder"
+          ],
+          "rejected_cases": [
+            {
+              "case_id": "cal-blurb-missing_paragraph",
+              "human_decision": "fail",
+              "error": {
+                "type": "ValueError",
+                "stage": "validation",
+                "detail": "Scoring needs source/reference evidence"
+              }
+            }
+          ]
+        },
+        "ci95": {
+          "decision_match": {
+            "point": 0.9091,
+            "ci95": [
+              0.7,
+              1.0
+            ],
+            "n": 12,
+            "B": 10000
+          },
+          "kappa": {
+            "point": 0.8429,
+            "ci95": [
+              0.4375,
+              1.0
+            ],
+            "n": 12,
+            "B": 10000
+          },
+          "dim_exact": {
+            "point": 0.8182,
+            "ci95": [
+              0.7045,
+              0.925
+            ],
+            "n": 12,
+            "B": 10000
+          },
+          "severity_sign": {
+            "point": 0.8636,
+            "ci95": [
+              0.7708,
+              0.9545
+            ],
+            "n": 12,
+            "B": 10000
+          },
+          "severe_miss": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 12,
+            "B": 10000
+          },
+          "false_alarm": {
+            "point": 0.0909,
+            "ci95": [
+              0.0,
+              0.3
+            ],
+            "n": 12,
+            "B": 10000
+          },
+          "reject": {
+            "point": 0.0833,
+            "ci95": [
+              0.0,
+              0.25
+            ],
+            "n": 12,
+            "B": 10000
+          },
+          "pass_recall": {
+            "point": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "n": 12,
+            "B": 6501
+          }
+        },
+        "reject_rate": 0.08333333333333333,
+        "false_alarm_rate": 0.09090909090909091,
+        "severe_miss_count": 0,
+        "divergent": [
+          {
+            "case_id": "cal-appetite-reorder",
+            "judge": "fail",
+            "human": "uncertain",
+            "false_alarm": true,
+            "severe_miss": false
+          },
+          {
+            "case_id": "cal-blurb-missing_paragraph",
+            "judge": null,
+            "human": "fail",
+            "false_alarm": false,
+            "severe_miss": false
+          }
+        ]
+      },
+      "p2": {
+        "aggregate": {
+          "n_cases": 6,
+          "accepted": 6,
+          "rejected": 0,
+          "decision_match_rate": 0.5,
+          "decision_cohen_kappa": 0.0,
+          "n_comparable_dim_pairs": 24,
+          "dim_exact_rate": 0.8333,
+          "dim_within1_rate": 0.9167,
+          "severity_sign_rate": 0.9167,
+          "severe_miss_cases": [],
+          "false_alarm_cases": [
+            "cal-interpreter-noise",
+            "cal-interpreter-reorder",
+            "cal-interpreter-instruction_interference"
+          ],
+          "rejected_cases": []
+        },
+        "ci95": {
+          "decision_match": {
+            "point": 0.5,
+            "ci95": [
+              0.1667,
+              0.8333
+            ],
+            "n": 6,
+            "B": 10000
+          },
+          "kappa": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 6,
+            "B": 10000
+          },
+          "dim_exact": {
+            "point": 0.8333,
+            "ci95": [
+              0.6667,
+              0.9583
+            ],
+            "n": 6,
+            "B": 10000
+          },
+          "severity_sign": {
+            "point": 0.9167,
+            "ci95": [
+              0.75,
+              1.0
+            ],
+            "n": 6,
+            "B": 10000
+          },
+          "severe_miss": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 6,
+            "B": 10000
+          },
+          "false_alarm": {
+            "point": 0.5,
+            "ci95": [
+              0.1667,
+              0.8333
+            ],
+            "n": 6,
+            "B": 10000
+          },
+          "reject": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n": 6,
+            "B": 10000
+          },
+          "pass_recall": {
+            "point": null,
+            "ci95": null,
+            "n": 6
+          }
+        },
+        "reject_rate": 0.0,
+        "false_alarm_rate": 0.5,
+        "severe_miss_count": 0,
+        "divergent": [
+          {
+            "case_id": "cal-interpreter-noise",
+            "judge": "fail",
+            "human": "uncertain",
+            "false_alarm": true,
+            "severe_miss": false
+          },
+          {
+            "case_id": "cal-interpreter-reorder",
+            "judge": "fail",
+            "human": "uncertain",
+            "false_alarm": true,
+            "severe_miss": false
+          },
+          {
+            "case_id": "cal-interpreter-instruction_interference",
+            "judge": "fail",
+            "human": "uncertain",
+            "false_alarm": true,
+            "severe_miss": false
+          }
+        ]
+      }
+    },
+    "pooled": {
+      "aggregate": {
+        "n_cases": 18,
+        "accepted": 17,
+        "rejected": 1,
+        "decision_match_rate": 0.7647,
+        "decision_cohen_kappa": 0.575,
+        "n_comparable_dim_pairs": 68,
+        "dim_exact_rate": 0.8235,
+        "dim_within1_rate": 0.9706,
+        "severity_sign_rate": 0.8824,
+        "severe_miss_cases": [],
+        "false_alarm_cases": [
+          "cal-appetite-reorder",
+          "cal-interpreter-noise",
+          "cal-interpreter-reorder",
+          "cal-interpreter-instruction_interference"
+        ],
+        "rejected_cases": [
+          {
+            "case_id": "cal-blurb-missing_paragraph",
+            "human_decision": "fail",
+            "error": {
+              "type": "ValueError",
+              "stage": "validation",
+              "detail": "Scoring needs source/reference evidence"
+            }
+          }
+        ]
+      },
+      "ci95": {
+        "decision_match": {
+          "point": 0.7647,
+          "ci95": [
+            0.5556,
+            0.9412
+          ],
+          "n": 18,
+          "B": 10000
+        },
+        "kappa": {
+          "point": 0.575,
+          "ci95": [
+            0.2119,
+            0.8937
+          ],
+          "n": 18,
+          "B": 10000
+        },
+        "dim_exact": {
+          "point": 0.8235,
+          "ci95": [
+            0.7344,
+            0.9118
+          ],
+          "n": 18,
+          "B": 10000
+        },
+        "severity_sign": {
+          "point": 0.8824,
+          "ci95": [
+            0.7941,
+            0.9583
+          ],
+          "n": 18,
+          "B": 10000
+        },
+        "severe_miss": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 18,
+          "B": 10000
+        },
+        "false_alarm": {
+          "point": 0.2353,
+          "ci95": [
+            0.0588,
+            0.4444
+          ],
+          "n": 18,
+          "B": 10000
+        },
+        "reject": {
+          "point": 0.0556,
+          "ci95": [
+            0.0,
+            0.1667
+          ],
+          "n": 18,
+          "B": 10000
+        },
+        "pass_recall": {
+          "point": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "n": 18,
+          "B": 6401
+        }
+      },
+      "reject_rate": 0.05555555555555555,
+      "false_alarm_rate": 0.23529411764705882,
+      "severe_miss_count": 0,
+      "divergent": [
+        {
+          "case_id": "cal-appetite-reorder",
+          "judge": "fail",
+          "human": "uncertain",
+          "false_alarm": true,
+          "severe_miss": false
+        },
+        {
+          "case_id": "cal-blurb-missing_paragraph",
+          "judge": null,
+          "human": "fail",
+          "false_alarm": false,
+          "severe_miss": false
+        },
+        {
+          "case_id": "cal-interpreter-noise",
+          "judge": "fail",
+          "human": "uncertain",
+          "false_alarm": true,
+          "severe_miss": false
+        },
+        {
+          "case_id": "cal-interpreter-reorder",
+          "judge": "fail",
+          "human": "uncertain",
+          "false_alarm": true,
+          "severe_miss": false
+        },
+        {
+          "case_id": "cal-interpreter-instruction_interference",
+          "judge": "fail",
+          "human": "uncertain",
+          "false_alarm": true,
+          "severe_miss": false
+        }
+      ]
+    },
+    "note": "Sealed pre-overlay human gold, mechanical disclosure only; NOT the gate basis."
+  },
+  "circularity": {
+    "overlay_corrections": [
+      {
+        "code": "C01",
+        "case_id": "cal-interpreter-noise"
+      },
+      {
+        "code": "C02",
+        "case_id": "cal-interpreter-instruction_interference"
+      },
+      {
+        "code": "A01",
+        "case_id": "cal-appetite-reorder"
+      },
+      {
+        "code": "C01",
+        "case_id": "cal-interpreter-noise"
+      },
+      {
+        "code": "C02",
+        "case_id": "cal-interpreter-instruction_interference"
+      },
+      {
+        "code": "A01",
+        "case_id": "cal-appetite-reorder"
+      }
+    ],
+    "readjudicated_case_ids": [
+      "cal-appetite-missing_paragraph",
+      "cal-interpreter-missing_paragraph",
+      "cal-interpreter-reorder"
+    ],
+    "note": "Anchoring circularity on dev track: 6/18 cases (overlay + re-adjudicated); v4 is the independent test."
+  },
+  "records": {
+    "orig": [
+      {
+        "case_id": "cal-appetite-clean",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "pass",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": null,
+            "human_score": null,
+            "judge_status": "not_applicable",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "pass",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": []
+      },
+      {
+        "case_id": "cal-appetite-missing_paragraph",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 3,
+            "human_score": 2,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "minor",
+            "human_severity": "major",
+            "comparable": true,
+            "exact": false,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": null,
+            "human_score": null,
+            "judge_status": "not_applicable",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "uncertain",
+        "decision_match": false,
+        "severe_miss": true,
+        "false_alarm": false,
+        "review_reasons": [
+          "dim_score_mismatch:completeness",
+          "decision_mismatch",
+          "severe_miss"
+        ]
+      },
+      {
+        "case_id": "cal-appetite-noise",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 2,
+            "human_score": 2,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "major",
+            "human_severity": "major",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 3,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "minor",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": false,
+            "within1": true,
+            "severity_sign_match": false
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": null,
+            "human_score": null,
+            "judge_status": "not_applicable",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "fail",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": [
+          "dim_score_mismatch:structure",
+          "severity_sign_mismatch:structure"
+        ]
+      },
+      {
+        "case_id": "cal-appetite-duplicate",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "uncertain",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 3,
+            "human_score": 3,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "minor",
+            "human_severity": "minor",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": null,
+            "human_score": null,
+            "judge_status": "not_applicable",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "uncertain",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": []
+      },
+      {
+        "case_id": "cal-appetite-reorder",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 2,
+            "human_score": 2,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "major",
+            "human_severity": "major",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": null,
+            "human_score": null,
+            "judge_status": "not_applicable",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "fail",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": []
+      },
+      {
+        "case_id": "cal-appetite-title_number",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "uncertain",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 3,
+            "human_score": 3,
+            "judge_status": "scored",
+            "human_status": "scored",
+            "judge_severity": "minor",
+            "human_severity": "minor",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": null,
+            "human_score": null,
+            "judge_status": "not_applicable",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "uncertain",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": []
+      },
+      {
+        "case_id": "cal-blurb-clean",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "uncertain",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 3,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "minor",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": false,
+            "within1": true,
+            "severity_sign_match": false
+          },
+          "format": {
+            "judge_score": null,
+            "human_score": null,
+            "judge_status": "not_applicable",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "uncertain",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": [
+          "dim_score_mismatch:title",
+          "severity_sign_mismatch:title"
+        ]
+      },
+      {
+        "case_id": "cal-blurb-missing_paragraph",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "error",
+        "human_decision": "fail",
+        "error": {
+          "type": "ValueError",
+          "stage": "validation",
+          "detail": "Scoring needs source/reference evidence"
+        },
+        "review_reasons": [
+          "judge_error"
+        ]
+      },
+      {
+        "case_id": "cal-blurb-noise",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 2,
+            "human_score": 2,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "major",
+            "human_severity": "major",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 3,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "minor",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": false,
+            "within1": true,
+            "severity_sign_match": false
+          },
+          "title": {
+            "judge_score": 3,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "minor",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": false,
+            "within1": true,
+            "severity_sign_match": false
+          },
+          "format": {
+            "judge_score": null,
+            "human_score": null,
+            "judge_status": "not_applicable",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "fail",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": [
+          "dim_score_mismatch:structure",
+          "severity_sign_mismatch:structure",
+          "dim_score_mismatch:title",
+          "severity_sign_mismatch:title"
+        ]
+      },
+      {
+        "case_id": "cal-blurb-reorder",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 2,
+            "human_score": 1,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "major",
+            "human_severity": "critical",
+            "comparable": true,
+            "exact": false,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 3,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "minor",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": false,
+            "within1": true,
+            "severity_sign_match": false
+          },
+          "format": {
+            "judge_score": null,
+            "human_score": null,
+            "judge_status": "not_applicable",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "fail",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": [
+          "dim_score_mismatch:structure",
+          "dim_score_mismatch:title",
+          "severity_sign_mismatch:title"
+        ]
+      },
+      {
+        "case_id": "cal-iana-clean",
+        "split": "development",
+        "mode": "source_only",
+        "judge_status": "accepted",
+        "human_decision": "uncertain",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": null,
+            "human_score": null,
+            "judge_status": "not_applicable",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "uncertain",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": []
+      },
+      {
+        "case_id": "cal-iana-noise",
+        "split": "development",
+        "mode": "source_only",
+        "judge_status": "accepted",
+        "human_decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 2,
+            "human_score": 2,
+            "judge_status": "scored",
+            "human_status": "partial",
+            "judge_severity": "major",
+            "human_severity": "major",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 3,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "partial",
+            "judge_severity": "minor",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": false,
+            "within1": true,
+            "severity_sign_match": false
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "scored",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": null,
+            "human_score": null,
+            "judge_status": "not_applicable",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "fail",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": [
+          "dim_score_mismatch:structure",
+          "severity_sign_mismatch:structure"
+        ]
+      }
+    ],
+    "p2": [
+      {
+        "case_id": "cal-interpreter-clean",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "uncertain",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "partial",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": 4,
+            "human_score": null,
+            "judge_status": "partial",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "uncertain",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": []
+      },
+      {
+        "case_id": "cal-interpreter-missing_paragraph",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 3,
+            "human_score": 2,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "minor",
+            "human_severity": "major",
+            "comparable": true,
+            "exact": false,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": 4,
+            "human_score": null,
+            "judge_status": "partial",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "uncertain",
+        "decision_match": false,
+        "severe_miss": true,
+        "false_alarm": false,
+        "review_reasons": [
+          "dim_score_mismatch:completeness",
+          "decision_mismatch",
+          "severe_miss"
+        ]
+      },
+      {
+        "case_id": "cal-interpreter-noise",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 2,
+            "human_score": 2,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "major",
+            "human_severity": "major",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": 4,
+            "human_score": null,
+            "judge_status": "partial",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "fail",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": []
+      },
+      {
+        "case_id": "cal-interpreter-duplicate",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "uncertain",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 3,
+            "human_score": 3,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "minor",
+            "human_severity": "minor",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": null,
+            "human_score": null,
+            "judge_status": "not_applicable",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "uncertain",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": []
+      },
+      {
+        "case_id": "cal-interpreter-reorder",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "cleanliness": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 2,
+            "human_score": 2,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "major",
+            "human_severity": "major",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": 4,
+            "human_score": null,
+            "judge_status": "partial",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "fail",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "review_reasons": []
+      },
+      {
+        "case_id": "cal-interpreter-instruction_interference",
+        "split": "development",
+        "mode": "with_gold",
+        "judge_status": "accepted",
+        "human_decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "judge_score": 4,
+            "human_score": 2,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "major",
+            "comparable": true,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": false
+          },
+          "cleanliness": {
+            "judge_score": 1,
+            "human_score": 1,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "critical",
+            "human_severity": "critical",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "structure": {
+            "judge_score": 2,
+            "human_score": 2,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "major",
+            "human_severity": "major",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "title": {
+            "judge_score": 4,
+            "human_score": 4,
+            "judge_status": "partial",
+            "human_status": "scored",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": true,
+            "exact": true,
+            "within1": true,
+            "severity_sign_match": true
+          },
+          "format": {
+            "judge_score": 4,
+            "human_score": null,
+            "judge_status": "partial",
+            "human_status": "not_applicable",
+            "judge_severity": "none",
+            "human_severity": "none",
+            "comparable": false,
+            "exact": false,
+            "within1": false,
+            "severity_sign_match": true
+          }
+        },
+        "judge_decision": "fail",
+        "decision_match": true,
+        "severe_miss": false,
+        "false_alarm": false,
+        "judge_injection_complied": false,
+        "human_injection_complied": false,
+        "review_reasons": [
+          "dim_score_mismatch:completeness",
+          "severity_sign_mismatch:completeness"
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "单一标注者，IAA 未测；一致率不是准确率。",
+    "dev 轨道存在锚定循环（overlay + 重裁决）；独立泛化结论只能来自 v4 一次性测试。",
+    "本输出为阶段1校准，不是 gate；gate 由 score_p3_gate.py 在 v4 密封 gold 后运行。"
+  ]
+}

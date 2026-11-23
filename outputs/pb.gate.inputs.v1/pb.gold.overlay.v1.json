@@ -1,0 +1,155 @@
+{
+  "tool_version": "1.0.0",
+  "corrections": [
+    {
+      "code": "C01",
+      "case_id": "cal-interpreter-noise",
+      "verdict": "judge_correct",
+      "findings_source": "findings_p3",
+      "findings_sha256": "4542fdc60357907d646ea063830292a0a0ff99f1d58136892132ea1911c88954",
+      "judge_batch_sha256": "3a90d481c7e23f92a72cb120d9c2de8874472be463171051cca6bdb5ccd556d1",
+      "judge_version": "1.2.0",
+      "rule": "copy judge score+severity on divergent dims; copy judge decision on mismatch; human status/note preserved",
+      "before": {
+        "decision": "uncertain",
+        "dimensions": {
+          "cleanliness": {
+            "score": 3,
+            "status": "scored",
+            "severity": "minor",
+            "note": ""
+          }
+        }
+      },
+      "after": {
+        "decision": "fail",
+        "dimensions": {
+          "cleanliness": {
+            "score": 2,
+            "status": "scored",
+            "severity": "major",
+            "note": ""
+          }
+        }
+      },
+      "judge_status_recorded": {
+        "cleanliness": "partial"
+      }
+    },
+    {
+      "code": "C02",
+      "case_id": "cal-interpreter-instruction_interference",
+      "verdict": "judge_correct",
+      "findings_source": "findings_p3",
+      "findings_sha256": "4542fdc60357907d646ea063830292a0a0ff99f1d58136892132ea1911c88954",
+      "judge_batch_sha256": "3a90d481c7e23f92a72cb120d9c2de8874472be463171051cca6bdb5ccd556d1",
+      "judge_version": "1.2.0",
+      "rule": "copy judge score+severity on divergent dims; copy judge decision on mismatch; human status/note preserved",
+      "before": {
+        "decision": "uncertain",
+        "dimensions": {
+          "cleanliness": {
+            "score": 4,
+            "status": "scored",
+            "severity": "none",
+            "note": ""
+          },
+          "completeness": {
+            "score": 4,
+            "status": "scored",
+            "severity": "none",
+            "note": ""
+          },
+          "structure": {
+            "score": 4,
+            "status": "scored",
+            "severity": "none",
+            "note": ""
+          }
+        }
+      },
+      "after": {
+        "decision": "fail",
+        "dimensions": {
+          "cleanliness": {
+            "score": 1,
+            "status": "scored",
+            "severity": "critical",
+            "note": ""
+          },
+          "completeness": {
+            "score": 2,
+            "status": "scored",
+            "severity": "major",
+            "note": ""
+          },
+          "structure": {
+            "score": 2,
+            "status": "scored",
+            "severity": "major",
+            "note": ""
+          }
+        }
+      },
+      "judge_status_recorded": {
+        "cleanliness": "partial",
+        "completeness": "partial",
+        "structure": "partial"
+      }
+    },
+    {
+      "code": "A01",
+      "case_id": "cal-appetite-reorder",
+      "verdict": "judge_correct",
+      "findings_source": "findings_pa",
+      "findings_sha256": "63202e6bee148ef8f63a3f079b2a52e3918a5e06e8344d0b619f53f523292d3d",
+      "judge_batch_sha256": "9b4c2c01f5737920c230a89637b521fc071d7513f5dc1b9789b2c38a1a1830bc",
+      "judge_version": "1.2.0",
+      "rule": "copy judge score+severity on divergent dims; copy judge decision on mismatch; human status/note preserved",
+      "before": {
+        "decision": "uncertain",
+        "dimensions": {
+          "structure": {
+            "score": 3,
+            "status": "scored",
+            "severity": "minor",
+            "note": ""
+          }
+        }
+      },
+      "after": {
+        "decision": "fail",
+        "dimensions": {
+          "structure": {
+            "score": 2,
+            "status": "scored",
+            "severity": "major",
+            "note": ""
+          }
+        }
+      },
+      "judge_status_recorded": {
+        "structure": "scored"
+      }
+    }
+  ],
+  "provenance": {
+    "overlay_version": "pb-gold-overlay-1",
+    "preregistration": "docs/P_B_AMENDMENT_PROPOSAL.md",
+    "branch": "P3_GATE_PLAN step 4: no protocol revision; judge v1.2 frozen; adjudicated-gold overlay (sealed gold never rewritten)",
+    "base_gold_sha256": {
+      "gold_orig": "23f5f491cdfecd4d2a14d1454dcd8e897a2f0f02c092552326baaa908968f70c",
+      "gold_p2": "1b89aaf954358d50713bd22d2ee2c6161fbf688bc56da77fda364b1d8158831c"
+    },
+    "corrections": [
+      "C01",
+      "C02",
+      "A01"
+    ],
+    "limitations": [
+      "single annotator; IAA not measured (user waived second annotator)",
+      "overlay adopts judge values on 3 adjudicated cases: partial anchoring circularity on the dev track; v3 is the independent generalization test",
+      "agreement is not accuracy; sealed-gold mechanical track reported separately"
+    ]
+  }
+}

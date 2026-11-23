@@ -1,0 +1,64 @@
+{
+  "tool_version": "1.0.0",
+  "inputs": {
+    "dev_orig_batch": "9b4c2c01f5737920c230a89637b521fc071d7513f5dc1b9789b2c38a1a1830bc",
+    "dev_p2_batch": "3a90d481c7e23f92a72cb120d9c2de8874472be463171051cca6bdb5ccd556d1",
+    "gold_orig": "23f5f491cdfecd4d2a14d1454dcd8e897a2f0f02c092552326baaa908968f70c",
+    "gold_p2": "1b89aaf954358d50713bd22d2ee2c6161fbf688bc56da77fda364b1d8158831c",
+    "findings_p3": "4542fdc60357907d646ea063830292a0a0ff99f1d58136892132ea1911c88954",
+    "findings_pa": "63202e6bee148ef8f63a3f079b2a52e3918a5e06e8344d0b619f53f523292d3d",
+    "freeze_orig": "aad20e177e8e0a16ca838b4accfbe83e7bc2a7c92159486433dd80fb906cddf8",
+    "freeze_p2": "87cb35879e1eef872f0e71e7bb8468d815dd372c0c0e739555426ba076f2fe07"
+  },
+  "outputs": {
+    "dev.orig.batch.json": "734c83593454114cce8db8c80adfe1ed4398e1ddb98deab02504cb8b24b218ad",
+    "dev.orig.gold.json": "5c1a7277333775b3e18203e720187046834e760d255d1b13c9da7cd652cce67e",
+    "dev.p2.batch.json": "d49e507bd1f45027af8a9ae16cdfeeabc4254763fdfc86be55f061bfc518f8a1",
+    "dev.p2.gold.json": "ec9d2f54377d47ddb64f4eb654df00727b8a74bd082d829865f36b8d18b1d7a1",
+    "pb.gold.overlay.v1.json": "a8689487d8234525a6d63ce76ab558f7fbd55518b4d2f8a745f888dc35d45e56"
+  },
+  "dev_cases": {
+    "orig": [
+      "cal-appetite-clean",
+      "cal-appetite-duplicate",
+      "cal-appetite-missing_paragraph",
+      "cal-appetite-noise",
+      "cal-appetite-reorder",
+      "cal-appetite-title_number",
+      "cal-blurb-clean",
+      "cal-blurb-missing_paragraph",
+      "cal-blurb-noise",
+      "cal-blurb-reorder",
+      "cal-iana-clean",
+      "cal-iana-noise"
+    ],
+    "p2": [
+      "cal-interpreter-clean",
+      "cal-interpreter-duplicate",
+      "cal-interpreter-instruction_interference",
+      "cal-interpreter-missing_paragraph",
+      "cal-interpreter-noise",
+      "cal-interpreter-reorder"
+    ]
+  },
+  "excluded_frozen_v2": [
+    "cal-nasa-clean",
+    "cal-nasa-duplicate",
+    "cal-nasa-instruction_interference",
+    "cal-nasa-missing_paragraph",
+    "cal-nasa-noise",
+    "cal-nasa-reorder",
+    "cal-w3ca11y-clean",
+    "cal-w3ca11y-duplicate",
+    "cal-w3ca11y-instruction_interference",
+    "cal-w3ca11y-missing_paragraph",
+    "cal-w3ca11y-noise",
+    "cal-w3ca11y-reorder"
+  ],
+  "corrections": [
+    "C01",
+    "C02",
+    "A01"
+  ],
+  "discipline": "zero model calls; sealed inputs read-only; fail-closed hash verification; deterministic"
+}

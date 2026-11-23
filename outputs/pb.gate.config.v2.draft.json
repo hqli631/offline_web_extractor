@@ -1,0 +1,54 @@
+{
+  "config_version": "2.0.0-draft",
+  "status": "draft",
+  "approved_by": "",
+  "approved_at": "",
+  "approval_quote": "",
+  "preregistration": "docs/P_B_AMENDMENT_PROPOSAL.md",
+  "supersedes": "outputs/p3.gate.config.v1.json sha256 d70e0d3c38a553540d689ea49273f55450f8f303bd25ef07bd7a7a9e2a47c806",
+  "seed": 20261119,
+  "B": 10000,
+  "batch_config": {
+    "model": "qwen3.8-27b",
+    "judge_version": "1.2.0",
+    "rubrics_version": "2.0.0",
+    "max_source_chars": 20000,
+    "max_output_tokens": 2200,
+    "timeout_seconds": 90
+  },
+  "dev": {
+    "reject_rate_lt": 0.1,
+    "severe_miss_count_le": 1,
+    "false_alarm_rate_le": 0.15,
+    "decision_match_ge": 0.85,
+    "kappa_ge": 0.75,
+    "match_kappa_subset_label": "orig"
+  },
+  "v3": {
+    "reject_rate_lt": 0.1,
+    "severe_miss_count_le": 1,
+    "false_alarm_rate_le": 0.15,
+    "decision_match_ge": 0.8,
+    "pass_recall_ge": 0.8
+  },
+  "gold_basis": {
+    "dev": "adjudicated overlay outputs/pb.gate.inputs.v1 (C01/C02/A01 judge_correct, sealed findings); sealed gold never rewritten; sealed-gold mechanical track disclosed separately, NOT the gate basis",
+    "v3": "new blind human gold under docs/P_B_ANCHOR_GUIDE.md (12 cases, user task); no overlay",
+    "dev_mode_policy": "as-ran under frozen v1.2: 16 with_gold + 2 source_only (cal-iana-clean/noise); disclosed per case"
+  },
+  "budget": {
+    "max_calls": 14,
+    "token_cap": 300000,
+    "note": "v3 one-shot 12 + smoke/resume <=2; dev zero-call reuse of sealed v1.2 assessments; PENDING user approval"
+  },
+  "discipline": [
+    "frozen_test v1 permanently sealed",
+    "frozen_test v2 consumed one-shot in P2; never re-scored",
+    "P2 sealed gold never rewritten",
+    "FAIL is final; no re-test or post-hoc tuning",
+    "judge scores not training rewards until gate PASS, and only within validated scope",
+    "overlay gold basis pre-registered BEFORE gate run; no post-hoc basis switching",
+    "v3 judged under v1.2 which has zero prior exposure to v3; the 4 v1.3-consumed cases were excluded from v1.3 scoring only, no v3-derived tuning occurred",
+    "dev overlay adopts judge values on 3 adjudicated cases (partial anchoring circularity); v3 is the independent generalization test"
+  ]
+}

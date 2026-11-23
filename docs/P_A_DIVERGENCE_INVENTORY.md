@@ -49,8 +49,15 @@
 | 乱序严重度 | v1.2 major / v1.3 minor | 人类 minor↔critical 不一致 | 量级锚点缺失（A01/A05） |
 | 单噪声块严重度 | v1.2 major / v1.3 minor | 人类 major | 粒度锚点冲突（A03/A04） |
 
-## 6. P-A 交付与交接
+## 6. 裁决结果（2026-11-23 封存 · pa_findings.json sha 63202e6b…）
+
+- A01 judge_correct（reorder=major/fail）· A02 judge_correct（标题双空格折叠=minor，源保真）· A03/A04/A05 human_correct（噪声/reorder 零容忍=severe）。
+- 锚点规则 R1（reorder→severe/fail）/ R2（noise→major/fail）/ R3（title 空白折叠→minor）见 FINDINGS_SUMMARY.md。
+- **双轨结论**：v1.2 三例"误报"全部 vindicated（A01+C01+C02 judge_correct）→ 裁决后 gold 真实 false_alarm 0/18；v1.3 降级证伪（回滚正确）；v1.2 行为已大体符合锚点。
+- **P-A 完成**；P-B 修订重点=显式固化锚点+长页证据工程+gate 方法论预注册（非放宽严重度）。
+
+## 7. P-A 交付与交接
 
 - **自主完成（零调用）**：裁决 kit 构建器 tools/build_pa_adjudication_kit.py + 5 案卷 + findings 模板 + 本清单 + 单标注者声明（docs/P_A_SINGLE_ANNOTATOR_DECLARATION.md）。
-- **需用户裁决**：A01–A05 的 verdict + anchor_revision_suggestion + note（填 pa_findings.json）。这是 P-A 完成与 P-B 启动的前置。
-- **下游**：P-B 据 anchor_revision_suggestion 起草预注册修订（量级化严重度锚点 + 标题空白政策 + 长页分块证据）→ dev 护栏 → 一次性 v3 检验。
+- **用户裁决已完成**（2026-11-23）：A01–A05 verdict + 锚点建议已记录封存（pa_findings.json + FINDINGS_SUMMARY.md）。P-A 完成。
+- **下游**：P-B 据 R1/R2/R3 起草预注册修订（零容忍严重度锚点固化 + 标题空白保真 + 长页分块证据 + gate gold 基准预注册）→ dev 护栏 → 一次性 v3 检验。需预算批准。

@@ -67,5 +67,17 @@ class BuildPaKitTests(unittest.TestCase):
             self.assertIn('indices=[0, 1]', txt)
 
 
+    def test_sealed_findings_integrity(self):
+        sealed = pa.ROOT / 'outputs/human_review/pa.adjudication.v1/pa_findings.json'
+        f = json.loads(sealed.read_text(encoding='utf-8'))
+        self.assertEqual(f['reviewer'], 'hqli631')
+        self.assertTrue(f['discipline_ack'])
+        self.assertEqual(len(f['cases']), 5)
+        self.assertEqual({c['code']: c['verdict'] for c in f['cases']},
+                         {'A01': 'judge_correct', 'A02': 'judge_correct', 'A03': 'human_correct',
+                          'A04': 'human_correct', 'A05': 'human_correct'})
+        self.assertTrue(all(c['verdict'] in f['verdicts'] and c['anchor_revision_suggestion'] for c in f['cases']))
+
+
 if __name__ == '__main__':
     unittest.main()

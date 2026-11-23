@@ -1,9 +1,9 @@
 {
   "findings_version": 1,
   "kit_version": "pa-1",
-  "reviewer": "",
-  "review_date": "",
-  "discipline_ack": false,
+  "reviewer": "hqli631",
+  "review_date": "2026-11-23",
+  "discipline_ack": true,
   "discipline": "不回改 P0/P2 封存 gold；不重评 frozen_test v1/v2/v3；裁决仅产生 findings；协议修订须 P-B 预注册；单标注者（IAA 缺失已声明）。",
   "verdicts": [
     "judge_correct",
@@ -17,45 +17,46 @@
       "case_id": "cal-appetite-reorder",
       "divergence_type": "v12_false_alarm",
       "adjudication_question": "块乱序（reorder）在 structure 维应记 major（judge v1.2）还是 minor（人类 gold）？严重度是否应按乱序量级区分？",
-      "verdict": null,
-      "anchor_revision_suggestion": "",
-      "note": ""
+      "verdict": "judge_correct",
+      "anchor_revision_suggestion": "块乱序记 structure major/fail；出现 reorder 即记为重要严重事故，以此避免由 reorder 带来的正文歧义。",
+      "note": "judge v1.2 structure major 正确；人类 minor 偏宽。reorder 零容忍。"
     },
     {
       "code": "A02",
       "case_id": "n5-blurb-title",
       "divergence_type": "judge_vs_program_title",
       "adjudication_question": "标题中连续双空格被折叠为单空格，应记 title minor 缺陷（judge，源保真）还是可接受归一化（程序+人类=4）？",
-      "verdict": null,
-      "anchor_revision_suggestion": "",
-      "note": ""
+      "verdict": "judge_correct",
+      "anchor_revision_suggestion": "双空格折叠应记 minor 缺陷（源保真）。",
+      "note": "judge title minor 正确；程序/人类归一化给 4 不成立。标题须保真源空白。"
     },
     {
       "code": "A03",
       "case_id": "cal-appetite-noise",
       "divergence_type": "v13_severe_miss_anchor",
       "adjudication_question": "单个噪声块/相邻段落乱序在 cleanliness 维：人类 gold 记 major，v1.3 记 minor（severe_miss）。哪个符合缺陷量级？v1.2 曾与人类一致——v1.3 粒度原则是否过宽？",
-      "verdict": null,
-      "anchor_revision_suggestion": "",
-      "note": ""
+      "verdict": "human_correct",
+      "anchor_revision_suggestion": "对噪声的容忍度应当极低，出现任何噪声即判严重事故，以此提高对噪声的筛选程度。",
+      "note": "人类 cleanliness major 正确；v1.3 降 minor 错误。噪声零容忍。"
     },
     {
       "code": "A04",
       "case_id": "cal-blurb-noise",
       "divergence_type": "v13_severe_miss_anchor",
       "adjudication_question": "单个噪声块/相邻段落乱序在 cleanliness 维：人类 gold 记 major，v1.3 记 minor（severe_miss）。哪个符合缺陷量级？v1.2 曾与人类一致——v1.3 粒度原则是否过宽？",
-      "verdict": null,
-      "anchor_revision_suggestion": "",
-      "note": ""
+      "verdict": "human_correct",
+      "anchor_revision_suggestion": "对噪声的容忍度应当极低，出现任何噪声即判严重事故，以此提高对噪声的筛选程度。",
+      "note": "同 A03。"
     },
     {
       "code": "A05",
       "case_id": "cal-blurb-reorder",
       "divergence_type": "v13_severe_miss_anchor",
       "adjudication_question": "单个噪声块/相邻段落乱序在 structure 维：人类 gold 记 critical，v1.3 记 minor（severe_miss）。哪个符合缺陷量级？v1.2 曾与人类一致——v1.3 粒度原则是否过宽？",
-      "verdict": null,
-      "anchor_revision_suggestion": "",
-      "note": ""
+      "verdict": "human_correct",
+      "anchor_revision_suggestion": "和 A01 一样，出现 reorder 即记为重要严重事故，以此避免由 reorder 带来的正文歧义。",
+      "note": "人类 structure critical 正确（封存 gold upheld）；v1.3 minor 错误。与 A01 统一：reorder 一律严重（major/critical），绝不 minor。"
     }
-  ]
+  ],
+  "approval_quote": "A01: judge_correct; A02: judge_correct; A03/A04/A05: human_correct（2026-11-23 聊天裁决）"
 }

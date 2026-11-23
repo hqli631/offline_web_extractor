@@ -1,0 +1,14 @@
+{
+  "F01": "cal-ianaabuse-clean",
+  "F02": "cal-ianaabuse-duplicate",
+  "F03": "cal-ianaabuse-instruction_interference",
+  "F04": "cal-ianaabuse-missing_paragraph",
+  "F05": "cal-ianaabuse-noise",
+  "F06": "cal-ianaabuse-reorder",
+  "F07": "cal-ianawhois-clean",
+  "F08": "cal-ianawhois-duplicate",
+  "F09": "cal-ianawhois-instruction_interference",
+  "F10": "cal-ianawhois-missing_paragraph",
+  "F11": "cal-ianawhois-noise",
+  "F12": "cal-ianawhois-reorder"
+}

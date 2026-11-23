@@ -1,0 +1,25 @@
+{
+  "kit_version": "pf-v4-draft-1.0.0",
+  "status": "DRAFT_UNSEALED_PENDING_APPROVAL",
+  "inputs": {
+    "slate": "cbb7a64389e9e2aac0fe5a09e71216adb4d90a76f8f70c691027b118f84f8855"
+  },
+  "n_cases": 12,
+  "files": {
+    "INDEX.md": "1c7b1fc0600860b9ad19c6bde760d049f3a8e5439bea7c9653bae4737bfb7994",
+    "human_labels.blind.json": "ec353fdc84902378694fe131c25612350c3f1e9a9498d45880a06d7091ef8c95",
+    "packets/F01.md": "09484229e2bc9a5b22a75aae7332f59c44976a01cf52d5af8f12923e1e3776b5",
+    "packets/F02.md": "8089e6d8f7e4d9ef6acf37043d3d2ea175047c496b342c7457762f624fd266c2",
+    "packets/F03.md": "ef295b1196bd46cf58bf454affeabe734d2100d331647a245fa17f4c1abf5965",
+    "packets/F04.md": "2428586d4e86310c130d0e9a935bb14aef4058e76ff589c86947cc2e7bf404fe",
+    "packets/F05.md": "1268d13f4b7e8808918e4a89cb86a2546dda06d59d95b643dec4ae7e9c981304",
+    "packets/F06.md": "01391f4fcb1d7cc20979c71be01d52467fadbbfea6803822155bfb8a1e146771",
+    "packets/F07.md": "4374c7441022cedf0f766b1149f7fcff9d05ebd1e99c2831524e05450af9c5a7",
+    "packets/F08.md": "b7e68121d87277cbebcc88b7c1692200097a9f28de49b77197cf76a0a0c739e4",
+    "packets/F09.md": "834b0b90a45ac55697ef4e7296ce272b600be294055d5db8a513992ff5cb8340",
+    "packets/F10.md": "a2d5bf92e72ca23ea7e075fb6e88e0cd2a26be5072d8ff7ffe0009301bc35cc4",
+    "packets/F11.md": "adf936502ddb97c2ad69417beae18117851e5f8645a88294558966d6e55f8e60",
+    "packets/F12.md": "31ef4aa009cbc37797a331a6f107694525f73591cc26ba6ebd7ea5aba6282860",
+    "sealed_mapping.json": "4e341ebf234de817414cdfe1a62bbaeb9f5531dbc7ac37631d231515a131fb0f"
+  }
+}

@@ -9420,5 +9420,2285 @@
    "finish_reason": "stop"
   },
   "stored_at": "2026-11-22T14:54:43+00:00"
+ },
+ "d70c0fca734ea7eed7cf823c409e506cef389e7b3e266d7465714e0f080f15b6": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and list items are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation and sidebar content from source are correctly excluded.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "s:0",
+        "quote": "上一主题"
+       },
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Block order and list structure match the source article exactly.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title is faithful to the source, including the chapter number.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14845,
+    "output_tokens": 639,
+    "total_tokens": 15484
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T06:12:06+00:00"
+ },
+ "57cbda985d77bd4a361a495b9d0ead687790afc22c87713cde64157998ea9444": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "Missing the first paragraph of the article body.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No navigation, ads, or other noise detected in the candidate blocks.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "s:49",
+        "quote": "导航"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The order and structure of the extracted content match the source article flow.",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库"
+       },
+       {
+        "ref": "g:2",
+        "quote": "那么，Python 正好能满足您的需要。"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14757,
+    "output_tokens": 515,
+    "total_tokens": 15272
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T06:12:14+00:00"
+ },
+ "dbc245d06c848bbaac0d6e6b071e8446f0cc77ce1c741b6d26e6c127c1d805aa": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All meaningful article content from the source is present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "Candidate contains an injected noise block with social sharing and ad text not present in the source article.",
+      "evidence": [
+       {
+        "ref": "p:1",
+        "quote": "分享到：微信 微博 QQ空间 推荐阅读：广告推广内容"
+       },
+       {
+        "ref": "s:21",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The article body order matches the source, but a noise block is inserted between the first and second paragraphs.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:1",
+        "quote": "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the source article title exactly.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14895,
+    "output_tokens": 574,
+    "total_tokens": 15469
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T06:12:22+00:00"
+ },
+ "14216fdef23fdeb978ce3ca04147b68cae7b89ec9e8c8045b7a5b5bae4641183": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and list items from the source are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The first paragraph of the article is duplicated in the candidate output (p:0 and p:1).",
+      "evidence": [
+       {
+        "ref": "s:21",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The order of unique content blocks matches the source article structure, including the list items.",
+      "evidence": [
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title matches the source heading exactly, including the chapter number.",
+      "evidence": [
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       },
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14933,
+    "output_tokens": 655,
+    "total_tokens": 15588
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T06:12:34+00:00"
+ },
+ "e259c55dc5df48ecbb2876bbd3a88144de9f87d5cb6a138a04de73d375ab38cd": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All meaningful article content is present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No navigation, ads, or other noise blocks are included in the candidate.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "s:49",
+        "quote": "导航"
+       }
+      ]
+     },
+     "structure": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "The first two paragraphs of the article are swapped in order compared to the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:1",
+        "quote": "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title matches the source and gold standard exactly.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14845,
+    "output_tokens": 542,
+    "total_tokens": 15387
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T06:12:41+00:00"
+ },
+ "340f8e8ed185eeee20296e7ca772df9bd1ac9f3995fb70d5fe1505feb8b7e650": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and list items are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No navigation, ads, or footer content included in the candidate blocks.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "s:5",
+        "quote": "报告代码错误"
+       },
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Block order matches the source article flow, including the list position.",
+      "evidence": [
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "g:11",
+        "quote": "Python “可以扩展”：会开发 C 语言程序，就能快速上手为解释器增加新的内置函数或模块"
+       }
+      ]
+     },
+     "title": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "Missing chapter number '1.' in the title.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "课前甜点"
+       },
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14839,
+    "output_tokens": 669,
+    "total_tokens": 15508
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T06:12:50+00:00"
+ },
+ "3aa04d664d4a2cf8b1de6a22f90c3ca901429466a34417706c741d1ed328e6b4": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All three article paragraphs from the source are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation and footer content from the source were correctly excluded.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "Python"
+       },
+       {
+        "ref": "s:82",
+        "quote": "About"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The order of the extracted paragraphs matches the source article structure.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "title": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The double space in the source title was normalized to a single space in the candidate.",
+      "evidence": [
+       {
+        "ref": "s:75",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "p:title",
+        "quote": "What is Python? Executive Summary"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 16461,
+    "output_tokens": 697,
+    "total_tokens": 17158
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T06:13:04+00:00"
+ },
+ "70685456fc122a52230c38e980f3432bbb15180e1085276ae4314075832cd106": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All meaningful article paragraphs from the source are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "Candidate contains an injected noise block (p:1) with advertisement and subscription text not present in the source article.",
+      "evidence": [
+       {
+        "ref": "s:75",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "s:76",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "s:77",
+        "quote": "Python is an interpreted, object-oriented, high-level programming"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The legitimate article blocks follow the correct order, but a noise block is inserted between the first and second paragraphs.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "title": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The double space in the source title 'What is Python?  Executive Summary' was folded to a single space in the candidate.",
+      "evidence": [
+       {
+        "ref": "s:75",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "s:76",
+        "quote": "What is Python?  Executive Summary"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements apply to this article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 16506,
+    "output_tokens": 738,
+    "total_tokens": 17244
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T06:13:26+00:00"
+ },
+ "0b5045aa6efe8c55c4447c8b53e8a7edbcb3023a1f7940bd33a6b68cb16d9975": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All three article paragraphs from the source are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate contains only the article content; navigation and footer elements from the source were correctly excluded.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "Python"
+       },
+       {
+        "ref": "s:82",
+        "quote": "About"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       }
+      ]
+     },
+     "structure": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The order of the first two paragraphs is swapped relative to the source and gold standard.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "p:0",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "p:1",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       }
+      ]
+     },
+     "title": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The double space in the source title 'What is Python?  Executive Summary' was collapsed to a single space in the candidate.",
+      "evidence": [
+       {
+        "ref": "s:75",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "p:title",
+        "quote": "What is Python? Executive Summary"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 16461,
+    "output_tokens": 763,
+    "total_tokens": 17224
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T06:13:39+00:00"
+ },
+ "526f025da632469e84b3d12bded6a23a8771773911c1d0bbaa24315f78def107": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All meaningful article content including paragraphs and the 'Further Reading' list is captured.",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts to provide basic"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, footer, and other non-article elements from the source were correctly excluded.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Domains"
+       },
+       {
+        "ref": "s:12",
+        "quote": "Domain Names"
+       },
+       {
+        "ref": "s:34",
+        "quote": "The IANA functions coordinate the Internet’s globally unique identifiers"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Article order, heading levels, and list structure match the source exactly.",
+      "evidence": [
+       {
+        "ref": "s:8",
+        "quote": "Further Reading"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       },
+       {
+        "ref": "s:10",
+        "quote": "Special-Use Domain Names (RFC 6761)"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the source H1 exactly.",
+      "evidence": [
+       {
+        "ref": "s:5",
+        "quote": "Example Domains"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements observed in the source.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 6180,
+    "output_tokens": 644,
+    "total_tokens": 6824
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T06:13:47+00:00"
+ },
+ "e36d8cf87a4b2fcb138a924dad8fa80e51280873f6ecbc23cf150d4f69783ace": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All meaningful article content including paragraphs, headings, and lists is present.",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts to provide basic"
+       },
+       {
+        "ref": "s:8",
+        "quote": "Further Reading"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "Candidate contains an injected noise block with advertisement and subscription text not present in the source.",
+      "evidence": [
+       {
+        "ref": "p:1",
+        "quote": "Share this article on Facebook and Twitter. Subscribe to our newsletter!"
+       },
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts to provide basic"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The relative order of legitimate article blocks matches the source, but the title heading (h1) is missing from the candidate blocks.",
+      "evidence": [
+       {
+        "ref": "s:5",
+        "quote": "Example Domains"
+       },
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       },
+       {
+        "ref": "s:8",
+        "quote": "Further Reading"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The extracted title exactly matches the source article title.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "Example Domains"
+       },
+       {
+        "ref": "s:5",
+        "quote": "Example Domains"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements apply to this article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 6225,
+    "output_tokens": 726,
+    "total_tokens": 6951
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T06:13:57+00:00"
+ },
+ "890977ee76ea65785ac2887194a384a56edbfc20fe38d40928c1ec61e0972969": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "Missing the first paragraph of the article body.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "s:77",
+        "quote": "Python is an interpreted, object-oriented, high-level programming"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "No navigation or noise included in the candidate blocks.",
+      "evidence": [
+       {
+        "ref": "p:0",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "p:1",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The relative order of the extracted paragraphs matches the source.",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "title": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "Double space in the source title was folded to a single space.",
+      "evidence": [
+       {
+        "ref": "s:75",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "p:title",
+        "quote": "What is Python? Executive Summary"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 16316,
+    "output_tokens": 596,
+    "total_tokens": 16912
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T06:20:44+00:00"
+ },
+ "f50c7c6543978c2d324905b1a1c653f3b447c199f4d68abb6754b864ac360f70": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and list items are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation and sidebar content from source are correctly excluded.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "s:0",
+        "quote": "上一主题"
+       },
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Block order and list structure match the source article exactly.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title is faithful to the source, including chapter number.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14940,
+    "output_tokens": 637,
+    "total_tokens": 15577
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T08:31:34+00:00"
+ },
+ "0984549a58c5464228bca4b645fa38cfdaaca7f2aade888d8a1e4c546d0f03a0": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "The first paragraph of the article is missing from the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "s:21",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "No navigation, ads, or other noise blocks are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "s:49",
+        "quote": "导航"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The remaining content follows the correct order and structure as defined in the source and gold.",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库"
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The title matches the source and gold exactly.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14852,
+    "output_tokens": 599,
+    "total_tokens": 15451
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T08:31:46+00:00"
+ },
+ "68fabe4b260d44aaf2a4c48c838bcb4c414e7a6c1efab33485e81677872774ea": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and list items from the source are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "Candidate contains an injected noise block with social sharing links and ads (p:1) not present in the source or gold.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "The injected noise block disrupts the natural order of the article content, appearing between the first and second paragraphs.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:1",
+        "quote": "作为一名专业软件开发人员，您可能要处理 C/C++/Java 库"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the source and gold exactly, including the chapter number.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code blocks or specific formatting requirements to evaluate.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14990,
+    "output_tokens": 577,
+    "total_tokens": 15567
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T08:31:56+00:00"
+ },
+ "9ad24158380c8ff23539a713f3e3e552803aeb7338e105a2648e3b95c1ca1d10": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and list items from the source are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The first paragraph is duplicated (p:0 and p:1), which is a small local duplication defect.",
+      "evidence": [
+       {
+        "ref": "s:21",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "The order of unique blocks matches the source article structure perfectly.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the source and gold exactly, including the chapter number.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 15028,
+    "output_tokens": 576,
+    "total_tokens": 15604
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T08:32:10+00:00"
+ },
+ "4c46da2e3d9ec92a69242a785f3a714f31037ce60d0c26a914b913dad65f21d9": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and list items from the source are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:15",
+        "quote": "本教程的其他部分将利用各种示例，介绍 Python 语言、系统的功能"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Candidate contains only article content; navigation and sidebar elements from source are excluded.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "s:4",
+        "quote": "当前页"
+       }
+      ]
+     },
+     "structure": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "The first two paragraphs are swapped relative to the source order (p:0 is s:22/g:1, p:1 is s:21/g:0).",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的"
+       },
+       {
+        "ref": "g:1",
+        "quote": "作为一名专业软件开发人员"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the gold standard exactly, including the chapter number.",
+      "evidence": [
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code blocks or specific formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14940,
+    "output_tokens": 572,
+    "total_tokens": 15512
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T08:32:21+00:00"
+ },
+ "dab6274f6a76843e4600c17953ed897b70acfadc2ff7a37d92c8456e930024aa": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All article paragraphs and list items from the source are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       },
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, sidebar, and footer content were correctly excluded; only article body remains.",
+      "evidence": [
+       {
+        "ref": "s:9",
+        "quote": "导航"
+       },
+       {
+        "ref": "s:0",
+        "quote": "上一主题"
+       },
+       {
+        "ref": "g:0",
+        "quote": "如果您的工作主要是用电脑完成的，总有一天您会想能不能自动执行一些任务。"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Block order matches the source article flow, including the list of reasons for Python's conciseness.",
+      "evidence": [
+       {
+        "ref": "g:7",
+        "quote": "Python 程序简洁、易读，通常比实现同种功能的 C、C++、Java 代码短很多，原因如下："
+       },
+       {
+        "ref": "g:8",
+        "quote": "高级数据类型允许在单一语句中表述复杂操作；"
+       },
+       {
+        "ref": "g:9",
+        "quote": "使用缩进，而不是括号实现代码块分组；"
+       }
+      ]
+     },
+     "title": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The chapter number '1. ' is missing from the title compared to the source and gold.",
+      "evidence": [
+       {
+        "ref": "p:title",
+        "quote": "课前甜点"
+       },
+       {
+        "ref": "g:title",
+        "quote": "1. 课前甜点"
+       },
+       {
+        "ref": "s:20",
+        "quote": "1. 课前甜点¶"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code blocks or specific formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 14934,
+    "output_tokens": 674,
+    "total_tokens": 15608
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T08:32:33+00:00"
+ },
+ "243b6f262faf2da327ff9db5bfc60f32981638d122f542d7d77783e27c051afc": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All three article paragraphs from the source are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "Navigation and footer noise from the source were excluded; only article content remains.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "Python"
+       },
+       {
+        "ref": "s:82",
+        "quote": "About"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The paragraph order matches the source article structure.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "title": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The double space in the source title was collapsed to a single space in the candidate.",
+      "evidence": [
+       {
+        "ref": "s:75",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "p:title",
+        "quote": "What is Python? Executive Summary"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or special formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 16556,
+    "output_tokens": 697,
+    "total_tokens": 17253
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T08:32:49+00:00"
+ },
+ "4a25fdbafd484a5478902d90b10c70c29dd2319babcdc3f92e4800cbb839bc60": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The first paragraph of the article is missing from the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "s:77",
+        "quote": "Python is an interpreted, object-oriented, high-level programming"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "No navigation, ads, or other noise blocks are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The relative order of the extracted paragraphs matches the source article structure.",
+      "evidence": [
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "title": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The double space in the source title was folded to a single space in the candidate.",
+      "evidence": [
+       {
+        "ref": "s:75",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "p:title",
+        "quote": "What is Python? Executive Summary"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific block formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 16411,
+    "output_tokens": 654,
+    "total_tokens": 17065
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T08:32:58+00:00"
+ },
+ "5fc5be2eb8fb58fce00e2ec45010db4fb80faf8500fc23aa594f57cd7e00953f": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All meaningful article body paragraphs from the source and gold are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "Candidate contains an injected noise block (p:1) with advertisement and subscription text not present in the source or gold.",
+      "evidence": [
+       {
+        "ref": "s:75",
+        "quote": "What is Python? Executive Summary"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       }
+      ]
+     },
+     "structure": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The order of blocks deviates from the source/gold; the noise block p:1 is inserted between the first and second body paragraphs, disrupting the expected sequence.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "title": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The candidate title folds the double space in the source title 'What is Python?  Executive Summary' into a single space.",
+      "evidence": [
+       {
+        "ref": "s:75",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "s:76",
+        "quote": "What is Python?  Executive Summary"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements apply to this article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 16601,
+    "output_tokens": 686,
+    "total_tokens": 17287
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T08:33:12+00:00"
+ },
+ "faef26da5b154e04d3b6c1cbfbd4f0fd3aeb204f2d63de7eac2e58b063c06d4f": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "All three article paragraphs from the source are present in the candidate.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "g:2",
+        "quote": "See also some comparisons between Python and other languages."
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "partial",
+      "severity": "none",
+      "reason": "The candidate contains only the article content without navigation or footer noise found in the source.",
+      "evidence": [
+       {
+        "ref": "s:1",
+        "quote": "Python"
+       },
+       {
+        "ref": "s:82",
+        "quote": "About"
+       },
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       }
+      ]
+     },
+     "structure": {
+      "score": 2,
+      "status": "partial",
+      "severity": "major",
+      "reason": "The first two paragraphs are swapped relative to the source order; p:0 contains the second paragraph while p:1 contains the first.",
+      "evidence": [
+       {
+        "ref": "g:0",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       },
+       {
+        "ref": "g:1",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "p:0",
+        "quote": "Often, programmers fall in love with Python because of the increased productivity it provides."
+       },
+       {
+        "ref": "p:1",
+        "quote": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics."
+       }
+      ]
+     },
+     "title": {
+      "score": 3,
+      "status": "partial",
+      "severity": "minor",
+      "reason": "The double space in the source title 'What is Python?  Executive Summary' was folded to a single space in the candidate.",
+      "evidence": [
+       {
+        "ref": "s:75",
+        "quote": "What is Python?  Executive Summary"
+       },
+       {
+        "ref": "p:title",
+        "quote": "What is Python? Executive Summary"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code blocks or specific formatting requirements apply to this text-only article.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 16556,
+    "output_tokens": 771,
+    "total_tokens": 17327
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T08:33:24+00:00"
+ },
+ "2da71442cfa494535dc7a592e4307e533e95f6fa7256ef6617984936f79f4d6e": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All meaningful article content including paragraphs and lists is present.",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts to provide basic"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Navigation, footer, and other non-article elements are correctly excluded.",
+      "evidence": [
+       {
+        "ref": "s:0",
+        "quote": "Domains"
+       },
+       {
+        "ref": "s:12",
+        "quote": "Domain Names"
+       },
+       {
+        "ref": "s:34",
+        "quote": "The IANA functions coordinate the Internet’s globally unique identifiers"
+       }
+      ]
+     },
+     "structure": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Article order, heading levels, and list structure match the source.",
+      "evidence": [
+       {
+        "ref": "s:8",
+        "quote": "Further Reading"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       },
+       {
+        "ref": "s:10",
+        "quote": "Special-Use Domain Names (RFC 6761)"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the source h1 exactly.",
+      "evidence": [
+       {
+        "ref": "s:5",
+        "quote": "Example Domains"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 6275,
+    "output_tokens": 632,
+    "total_tokens": 6907
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T08:33:30+00:00"
+ },
+ "334df3be875d89fd02c19c1be51a2b3f5f4a6aba118366fde181d1e1240df735": {
+  "response": {
+   "content": {
+    "schema_version": 1,
+    "dimensions": {
+     "completeness": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "All meaningful article content including paragraphs, headings, and lists is present.",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts to provide basic"
+       },
+       {
+        "ref": "s:8",
+        "quote": "Further Reading"
+       },
+       {
+        "ref": "s:9",
+        "quote": "IANA-managed Reserved Domains"
+       }
+      ]
+     },
+     "cleanliness": {
+      "score": 2,
+      "status": "scored",
+      "severity": "major",
+      "reason": "Candidate contains an injected noise block with advertisement and subscription text not present in the source.",
+      "evidence": [
+       {
+        "ref": "p:1",
+        "quote": "Share this article on Facebook and Twitter. Subscribe to our newsletter!"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts to provide basic"
+       }
+      ]
+     },
+     "structure": {
+      "score": 3,
+      "status": "scored",
+      "severity": "minor",
+      "reason": "The order of legitimate content blocks matches the source, but a noise block is inserted between the first and second paragraphs.",
+      "evidence": [
+       {
+        "ref": "s:6",
+        "quote": "A number of domains such as example.com and example.org are maintained"
+       },
+       {
+        "ref": "s:7",
+        "quote": "We provide a web service on the example domain hosts to provide basic"
+       },
+       {
+        "ref": "s:8",
+        "quote": "Further Reading"
+       }
+      ]
+     },
+     "title": {
+      "score": 4,
+      "status": "scored",
+      "severity": "none",
+      "reason": "Title matches the source heading exactly.",
+      "evidence": [
+       {
+        "ref": "s:5",
+        "quote": "Example Domains"
+       }
+      ]
+     },
+     "format": {
+      "score": null,
+      "status": "not_applicable",
+      "severity": "none",
+      "reason": "No code or specific formatting requirements observed.",
+      "evidence": []
+     }
+    }
+   },
+   "usage": {
+    "input_tokens": 6320,
+    "output_tokens": 666,
+    "total_tokens": 6986
+   },
+   "model": "qwen3.8-27b",
+   "finish_reason": "stop"
+  },
+  "stored_at": "2026-11-23T08:33:37+00:00"
  }
 }

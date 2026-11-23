@@ -66,7 +66,7 @@ def case_meta(mc, samples_root):
             'source_truncated': meta['source_truncated']}
 
 
-def verify_integrity(manifest_path, freeze_path, kit_dir, manifest, freeze):
+def verify_integrity(manifest_path, freeze_path, kit_dir, manifest, freeze, slate_path=None):
     problems = []
     manifest_file_sha = sha256_bytes(manifest_path.read_bytes())
     manifest_rel = manifest_path.resolve().relative_to(ROOT.resolve()).as_posix()
@@ -83,12 +83,22 @@ def verify_integrity(manifest_path, freeze_path, kit_dir, manifest, freeze):
             problems.append('freeze file drift: ' + rel)
     kit_manifest = load_json(kit_dir / 'kit_manifest.json')
     inputs = kit_manifest.get('inputs') or {}
-    if inputs.get('manifest') != manifest_file_sha:
-        problems.append('kit manifest input sha does not match current manifest file')
     freeze_sha = sha256_bytes(freeze_path.read_bytes())
-    base_sha = (freeze.get('amendment') or {}).get('base_freeze_sha256')
-    if inputs.get('freeze') not in (freeze_sha, base_sha):
-        problems.append('kit freeze input sha does not match freeze file or its amendment base')
+    if slate_path is not None:
+        # P-F v4 kit layout: inputs.slate -> formal slate -> manifest/freeze shas.
+        slate = load_json(slate_path)
+        if inputs.get('slate') != sha256_bytes(slate_path.read_bytes()):
+            problems.append('kit slate input sha does not match slate file')
+        if slate.get('manifest_sha256') != manifest_file_sha:
+            problems.append('slate manifest sha does not match current manifest file')
+        if slate.get('freeze_sha256') != freeze_sha:
+            problems.append('slate freeze sha does not match freeze file')
+    else:
+        if inputs.get('manifest') != manifest_file_sha:
+            problems.append('kit manifest input sha does not match current manifest file')
+        base_sha = (freeze.get('amendment') or {}).get('base_freeze_sha256')
+        if inputs.get('freeze') not in (freeze_sha, base_sha):
+            problems.append('kit freeze input sha does not match freeze file or its amendment base')
     for rel, recorded in (kit_manifest.get('files') or {}).items():
         if rel == 'human_labels.blind.json':
             continue  # filled by the annotator; expected to differ from template
@@ -194,6 +204,8 @@ def main(argv=None):
     ap.add_argument('--kit-dir', type=Path, default=ROOT / 'outputs/human_review/p2.blind.v1')
     ap.add_argument('--manifest', type=Path, default=ROOT / 'samples/p2_manifest.json')
     ap.add_argument('--freeze', type=Path, default=ROOT / 'outputs/p2.freeze.v5.json')
+    ap.add_argument('--slate', type=Path, default=None,
+                    help='opt-in P-F v4 formal slate; verifies kit inputs.slate chain instead of inputs.manifest/freeze')
     ap.add_argument('--output', type=Path, required=True)
     args = ap.parse_args(argv)
     out = Path(args.output)
@@ -202,7 +214,7 @@ def main(argv=None):
         return 3
     manifest = load_json(args.manifest)
     freeze = load_json(args.freeze)
-    problems, kit_manifest = verify_integrity(args.manifest, args.freeze, args.kit_dir, manifest, freeze)
+    problems, kit_manifest = verify_integrity(args.manifest, args.freeze, args.kit_dir, manifest, freeze, slate_path=args.slate)
     if problems:
         for p in problems:
             print('INTEGRITY: ' + p, file=sys.stderr)
@@ -261,6 +273,9 @@ def main(argv=None):
                             'source 截断案卷的 decision 按协议只能 uncertain/fail。',
                             'Judge 分数仍不作为训练奖励。'],
             'cases': cases}
+    if args.slate is not None:
+        gold['provenance']['slate_sha256'] = sha256_bytes(args.slate.read_bytes())
+        gold['provenance']['slate_path'] = str(args.slate)
     write_json(out / 'human_gold.p2.blind.json', gold)
     report = {'ok': True, 'tool_version': TOOL_VERSION, 'n_cases': len(cases),
               'errors': [], 'warnings': warnings,
@@ -272,9 +287,9 @@ def main(argv=None):
     write_json(out / 'validation_report.json', report)
     lines = ['# P2 人类 gold 接收摘要', '',
              '- 标注者：%s（%s）' % (doc['annotator'], doc['annotation_date']),
-             '- 案例数：%d（dev %d / frozen_test v2 %d）' % (len(cases), report['splits']['development'], report['splits']['frozen_test']),
+             '- 案例数：%d（dev %d / %s %d）' % (len(cases), report['splits']['development'], ('frozen_test v4' if args.slate is not None else 'frozen_test v2'), report['splits']['frozen_test']),
              '- 决策分布：%s' % json.dumps(report['decisions'], ensure_ascii=False),
-             '- 完整性：freeze v5 全部文件哈希零漂移；案卷头部与重算元数据一致（max_source_chars=%d，与冻结批跑配置一致）。' % MAX_SOURCE_CHARS,
+             '- 完整性：%s 全部文件哈希零漂移；案卷头部与重算元数据一致（max_source_chars=%d，与冻结批跑配置一致）。' % (('freeze ' + str(freeze['freeze_version'])) if args.slate is not None else 'freeze v5', MAX_SOURCE_CHARS),
              '- 本阶段不做 judge 对照：judge 批跑在 gold 封存之后执行，杜绝锚定。', '',
              '## 局限', ''] + ['- ' + x for x in gold['limitations']]
     write_text(out / 'INGEST_SUMMARY.md', '\n'.join(lines) + '\n')

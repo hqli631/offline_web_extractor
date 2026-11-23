@@ -1,0 +1,38 @@
+{
+  "pin_version": "pf-protocol-2",
+  "approved_by": "hqli631",
+  "approved_at": "2026-11-23",
+  "judge_version": "1.4.1",
+  "judge_module": "src/webextractor/rubrics_judge_v141.py",
+  "judge_module_sha256": "25c154b99c96ca8431f8bc5e687421c02a65fe7a614f36e822851dddc18edf20",
+  "base_judge_version": "1.2.0",
+  "base_source_sha256": "edd841efb52961f07891160ccae7fabcc72da65734854da9a86e02bf622ff891",
+  "v14_module_sha256": "1d87cfb5e83ceb65545fe87a07c68d99ea683a7fd025f4dfe185942c30c2c37c",
+  "rubrics_version": "2.0.0",
+  "plan": "docs/P_F_V141_PLAN.md",
+  "plan_sha256": "83c06f4b8d2fbf2e1188af729abefa4136f47c5ff9f71abe2bed3960c8e3b2fe",
+  "gate_config": "outputs/pf.gate.config.v2.json",
+  "gate_config_sha256": "cc00ecc90774a076ff997e074bab9509d407d5af98daa7c001745eb5db17bb3f",
+  "dev_gold_view": {
+    "dir": "outputs/pf.dev.gold.v2",
+    "dev.orig.gold.json": "d965024694d5715708dbefea7ed427ac082aad3553ecdd95e49d6ced9a22bf50",
+    "dev.p2.gold.json": "9926dd1c7d25ade13eb1a86f60e6c556dd3d177a299038b94ddf809d25112406",
+    "override_audit.json": "bab50977daf16c2f682b1928e5361d3fcc9b83e47435de02ed8318d08a02fefd"
+  },
+  "override_spec_sha256": "25a22087596aad247e4fb2f05d7d4c0fa5eb858376dbb84a4d89071b31f8526b",
+  "runner": "tools/run_rubrics_judge.py",
+  "runner_sha256": "4a6419346ef3e43733b4e22fe390bb892fa569f12d620a33482f3835f590193f",
+  "batch_config": {
+    "model": "qwen3.8-27b",
+    "judge_version": "1.4.1",
+    "rubrics_version": "2.0.0",
+    "max_source_chars": 20000,
+    "max_output_tokens": 2200,
+    "timeout_seconds": 90
+  },
+  "base_chain": {
+    "pf_protocol_v1_sha256": "6c5fee26f8fd04d4b8e1730ef7b7bf7350990be29fc4faccca9474a559b20363",
+    "pb_freeze_v9_sha256": "9d98e5651fcb182a1d70896a578a528196f427fc71409951fbc6d60298d9c041"
+  },
+  "note": "v1.4.1 reward-INELIGIBLE until its own dev calibration + sealed v4 gate PASS."
+}

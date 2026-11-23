@@ -1,0 +1,67 @@
+{
+  "config_version": "pf-2.0.0",
+  "status": "frozen",
+  "approved_by": "hqli631",
+  "approved_at": "2026-11-23",
+  "approval_quote": "A（批准 v1.4.1 修订周期 + 约 19 调用/350k 新校准预算，hqli631 2026-11-23）",
+  "preregistration": "docs/P_F_V141_PLAN.md",
+  "supersedes": "outputs/pf.gate.config.v1.json sha256 1cb2a89b6000d12e754c5aa22491c926ece96793b3b0c6833d1009b10b861cd7",
+  "seed": 20261119,
+  "B": 10000,
+  "batch_config": {
+    "model": "qwen3.8-27b",
+    "judge_version": "1.4.1",
+    "rubrics_version": "2.0.0",
+    "max_source_chars": 20000,
+    "max_output_tokens": 2200,
+    "timeout_seconds": 90
+  },
+  "dev": {
+    "reject_rate_lt": 0.1,
+    "severe_miss_count_le": 1,
+    "false_alarm_rate_le": 0.15,
+    "decision_match_ge": 0.85,
+    "kappa_ge": 0.75,
+    "match_kappa_subset_label": "orig"
+  },
+  "v3": {
+    "reject_rate_lt": 0.1,
+    "severe_miss_count_le": 1,
+    "false_alarm_rate_le": 0.15,
+    "decision_match_ge": 0.8,
+    "pass_recall_ge": 0.8
+  },
+  "gold_basis": {
+    "dev": "outputs/pf.dev.gold.v2 (unchanged from stage-1); v1.4.1 missing-anchor wording shaped by 2 stage-1 dev missing failures -> deeper dev circularity disclosed; v4 independent",
+    "v3": "SLOT HOLDS v4: new blind human gold on 2 newly collected never-exposed template pages (route A), sealed BEFORE any v1.4 judge call on v4; no overlay",
+    "dev_mode_policy": "fresh v1.4 calls on frozen manifests: 16 with_gold + 2 source_only (cal-iana-clean/noise); disclosed per case",
+    "v4_slot_mapping": "score_p3_gate.py is reused byte-identical; its v3 slot/labels hold v4 data in P-F (thresholds unchanged)"
+  },
+  "budget": {
+    "stage1b": {
+      "max_calls": 20,
+      "token_cap": 350000,
+      "note": "v1.4.1 smoke 1 + dev 18 = 19 planned + <=1 retry; APPROVED option A 2026-11-23"
+    },
+    "stage2": {
+      "max_calls": 13,
+      "token_cap": 250000,
+      "note": "v4 one-shot 12 + smoke/resume <=1; PENDING separate approval after stage1 passes"
+    }
+  },
+  "discipline": [
+    "frozen_test v1 permanently sealed; v2 consumed one-shot in P2; v3 consumed one-shot in P-B; none ever re-run",
+    "v3 12 cases permanently EXPOSED to v1.4 anchor design -> v1.4-development only, never an independent test for v1.4",
+    "v4 is one-shot; FAIL is final; no re-test or post-hoc tuning",
+    "judge scores are NOT training rewards until v1.4 gate PASS, and only within the validated scope",
+    "dev gold re-adjudication via audited override view (configs/pf_dev_gold_overrides.v1.json); sealed history never rewritten",
+    "dev anchoring circularity up to 6/18 (3 overlay + 3 re-adjudicated); v4 is the independent generalization test",
+    "single annotator; IAA not measured (user waived second annotator)",
+    "gate thresholds byte-identical to frozen v1 d70e0d3c / v2 9c1437ab; only judge pin and gold basis differ",
+    "v4 route A collection: <=10 HTTP fetches, zero model calls, pre-registered candidates and acceptance criteria",
+    "v1.4.1 revises ONLY the missing-body anchor; other 5 anchors byte-identical to v1.4 (tested); v1.4 module byte-frozen",
+    "stage-1b proceed-to-F3 criteria pre-registered in docs/P_F_V141_PLAN.md section 4 (frozen dev thresholds + missing-anchor compliance on all accepted missing cases)"
+  ],
+  "protocol_pin": "outputs/pf.protocol.v2.json",
+  "v4_freeze": "outputs/pf.freeze.v1.json (built at F3 before stage2)"
+}

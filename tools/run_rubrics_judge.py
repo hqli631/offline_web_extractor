@@ -31,6 +31,9 @@ def _judge_module(judge_version: str):
     if judge_version == "1.4":
         from src.webextractor import rubrics_judge_v14 as m
         return m
+    if judge_version == "1.4.1":
+        from src.webextractor import rubrics_judge_v141 as m
+        return m
     raise ValueError("Unsupported judge version: " + judge_version)
 
 SPLITS = ("smoke", "development", "frozen_test")
@@ -250,8 +253,8 @@ def main() -> int:
                         help="Run only cases in this split (frozen manifest file is unchanged)")
     parser.add_argument("--ignore-cache", action="store_true",
                         help="Force fresh API calls (stability reruns); cache is still updated")
-    parser.add_argument("--judge-version", choices=("1.2", "1.4"), default="1.2",
-                        help="Judge protocol: 1.2 byte-frozen default; 1.4 adjudicated anchors (P-F)")
+    parser.add_argument("--judge-version", choices=("1.2", "1.4", "1.4.1"), default="1.2",
+                        help="Judge protocol: 1.2 byte-frozen default; 1.4 adjudicated anchors; 1.4.1 missing-anchor revision (P-F)")
     args = parser.parse_args()
     if args.output.exists():
         print("Output exists; choose a new filename. The manifest cache still resumes completed cases.", file=sys.stderr)

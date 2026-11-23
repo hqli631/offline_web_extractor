@@ -20,6 +20,18 @@ sys.path.insert(0, str(ROOT))
 from src.webextractor.extractor import extract_html
 from src.webextractor.rubrics_judge import JUDGE_VERSION, build_prompt, run_judge
 from src.webextractor.rubrics_v2 import VERSION as RUBRICS_VERSION
+from src.webextractor import rubrics_judge as _v12_module
+
+
+def _judge_module(judge_version: str):
+    """Opt-in judge protocol selector. Default 1.2 keeps byte-frozen behavior;
+    1.4 wraps v1.2 with adjudicated protocol anchors (rubrics_judge_v14)."""
+    if judge_version == "1.2":
+        return _v12_module
+    if judge_version == "1.4":
+        from src.webextractor import rubrics_judge_v14 as m
+        return m
+    raise ValueError("Unsupported judge version: " + judge_version)
 
 SPLITS = ("smoke", "development", "frozen_test")
 
@@ -86,10 +98,11 @@ def _candidate_for(case: dict, root: Path, source_bytes: bytes) -> tuple[dict, s
     return {"title": candidate["title"], "blocks": candidate["blocks"]}, "file"
 
 
-def config_signature(model: str, max_output_tokens: int, max_source_chars: int, timeout_seconds: float) -> dict:
+def config_signature(model: str, max_output_tokens: int, max_source_chars: int, timeout_seconds: float,
+                     judge_version: str = JUDGE_VERSION) -> dict:
     return {"model": model, "max_output_tokens": max_output_tokens,
             "max_source_chars": max_source_chars, "timeout_seconds": timeout_seconds,
-            "judge_version": JUDGE_VERSION, "rubrics_version": RUBRICS_VERSION}
+            "judge_version": judge_version, "rubrics_version": RUBRICS_VERSION}
 
 
 def cache_key(signature: dict, prompt_sha256: str) -> str:
@@ -97,8 +110,10 @@ def cache_key(signature: dict, prompt_sha256: str) -> str:
 
 
 def run_case(case: dict, root: Path, provider, signature: dict, cache: dict,
-             ignore_cache: bool, allow_call: bool, probe: dict | None = None):
+             ignore_cache: bool, allow_call: bool, probe: dict | None = None,
+             judge_module=None):
     """Return (key, report_or_None, case_meta, made_api_call). Cache is checked first."""
+    jm = judge_module if judge_module is not None else _v12_module
     source_bytes = (root / case["source"]).read_bytes()
     recorded = case.get("source_sha256")
     actual = sha256_bytes(source_bytes)
@@ -114,7 +129,7 @@ def run_case(case: dict, root: Path, provider, signature: dict, cache: dict,
         # so the prompt and cache key are unaffected by this projection.
         gold = {"title": gdoc["title"], "blocks": gdoc["blocks"]}
     noise_terms = case.get("noise_terms") or ()
-    prompt, _registry, metadata = build_prompt(source_bytes, predicted, gold,
+    prompt, _registry, metadata = jm.build_prompt(source_bytes, predicted, gold,
                                                max_source_chars=signature["max_source_chars"], **(probe or {}))
     prompt_sha = sha256_bytes(json.dumps(prompt, ensure_ascii=False, sort_keys=True).encode("utf-8"))
     key = cache_key(signature, prompt_sha)
@@ -128,12 +143,12 @@ def run_case(case: dict, root: Path, provider, signature: dict, cache: dict,
     kwargs.update(probe or {})
     entry = None if ignore_cache else cache.get(key)
     if entry is not None:
-        report = run_judge(source_bytes, predicted, provider, cached_response=entry["response"], **kwargs)
+        report = jm.run_judge(source_bytes, predicted, provider, cached_response=entry["response"], **kwargs)
         assert report["prompt_sha256"] == prompt_sha
         return key, report, meta, False
     if not allow_call:
         return key, None, meta, False
-    report = run_judge(source_bytes, predicted, provider, **kwargs)
+    report = jm.run_judge(source_bytes, predicted, provider, **kwargs)
     assert report["prompt_sha256"] == prompt_sha
     if report.get("raw_content") is not None:
         # Provider answered; cache the response even if validation rejected it,
@@ -165,14 +180,16 @@ def _assemble(manifest_path: Path, manifest_sha: str, signature: dict, provider_
 def run_batch(manifest_path: Path, provider, *, model="qwen3.8-27b", max_output_tokens=2200,
               max_source_chars=40000, timeout_seconds=90.0, max_calls=10, ignore_cache=False,
               cache_path: Path | None = None, report_path: Path | None = None,
-              split_filter: str | None = None) -> dict:
+              split_filter: str | None = None, judge_version: str = "1.2") -> dict:
     root = manifest_path.resolve().parent
     manifest = load_manifest(manifest_path)
     if split_filter is not None:
         if split_filter not in SPLITS: raise ValueError("Invalid split filter")
         manifest = dict(manifest, cases=[c for c in manifest["cases"] if c["split"] == split_filter])
         if not manifest["cases"]: raise ValueError("Split filter selected no cases")
-    signature = config_signature(model, max_output_tokens, max_source_chars, timeout_seconds)
+    jm = _judge_module(judge_version)
+    signature = config_signature(model, max_output_tokens, max_source_chars, timeout_seconds,
+                                 judge_version=jm.JUDGE_VERSION)
     manifest_sha = sha256_bytes(manifest_path.read_bytes())
     cache_file = cache_path or manifest_path.with_name(manifest_path.name + ".judge_cache.json")
     cache = {}
@@ -186,7 +203,8 @@ def run_batch(manifest_path: Path, provider, *, model="qwen3.8-27b", max_output_
                "status": "pending", "cache_hit": False, "new_api_call": False, "case_meta": None, "report": None}
         try:
             _key, report, meta, called = run_case(case, root, provider, signature, cache,
-                                                  ignore_cache, allow_call=made < max_calls)
+                                                  ignore_cache, allow_call=made < max_calls,
+                                                  judge_module=jm)
             if report is None:
                 row.update(status="skipped_budget", case_meta=meta)
             else:
@@ -232,6 +250,8 @@ def main() -> int:
                         help="Run only cases in this split (frozen manifest file is unchanged)")
     parser.add_argument("--ignore-cache", action="store_true",
                         help="Force fresh API calls (stability reruns); cache is still updated")
+    parser.add_argument("--judge-version", choices=("1.2", "1.4"), default="1.2",
+                        help="Judge protocol: 1.2 byte-frozen default; 1.4 adjudicated anchors (P-F)")
     args = parser.parse_args()
     if args.output.exists():
         print("Output exists; choose a new filename. The manifest cache still resumes completed cases.", file=sys.stderr)
@@ -240,7 +260,7 @@ def main() -> int:
                        max_output_tokens=args.max_output_tokens, max_source_chars=args.max_source_chars,
                        timeout_seconds=args.timeout, max_calls=args.max_calls,
                        ignore_cache=args.ignore_cache, report_path=args.output,
-                       split_filter=args.split)
+                       split_filter=args.split, judge_version=args.judge_version)
     rows = [{"id": r["case_id"], "status": r["status"], "cache": r["cache_hit"],
              "decision": (r["report"]["assessment"]["decision"] if r.get("report") and r["report"].get("assessment") else None)}
             for r in report["cases"]]

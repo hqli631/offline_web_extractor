@@ -1,0 +1,85 @@
+{
+  "override_version": "pf-dev-gold-overrides-1",
+  "approved_by": "hqli631",
+  "approved_at": "2026-11-23",
+  "approval_quote": "按锚点改判 (Recommended)：missing×2 → completeness 2/major/fail；reorder → structure 2/major/fail，与已密封的 v3 裁决一致，走 override 审计不改写历史。",
+  "preregistration": "docs/P_F_V14_PLAN.md",
+  "anchor_basis": [
+    "missing key body -> completeness <= 2 / major, never minor (v3 sealed gold P04/P10 precedent)",
+    "R1 reorder -> structure major/critical, NEVER minor (A01/A05 adjudications + v3 sealed gold P06/P12)"
+  ],
+  "entries": [
+    {
+      "case_id": "cal-appetite-missing_paragraph",
+      "source_file": "dev.orig.gold.json",
+      "before": {
+        "decision": "uncertain",
+        "dimensions": {
+          "completeness": {
+            "score": 3,
+            "severity": "minor"
+          }
+        }
+      },
+      "after": {
+        "decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "score": 2,
+            "severity": "major",
+            "note": "P-F re-adjudication 2026-11-23 (hqli631): missing key body paragraph is SEVERE per adjudicated anchor (P04/P10 precedent); supersedes blind 3/minor."
+          }
+        }
+      },
+      "reason": "Blind label 3/minor conflicts with the adjudicated missing-body anchor adopted into v1.4 (completeness <= 2/major for key body loss). User approved anchor-consistent re-adjudication; sealed v3 gold P04/P10 = 2/major/fail."
+    },
+    {
+      "case_id": "cal-interpreter-missing_paragraph",
+      "source_file": "dev.p2.gold.json",
+      "before": {
+        "decision": "uncertain",
+        "dimensions": {
+          "completeness": {
+            "score": 3,
+            "severity": "minor"
+          }
+        }
+      },
+      "after": {
+        "decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "score": 2,
+            "severity": "major",
+            "note": "P-F re-adjudication 2026-11-23 (hqli631): missing key body paragraph is SEVERE per adjudicated anchor (P04/P10 precedent); supersedes blind 3/minor. Source-truncation context retained in overall_note."
+          }
+        }
+      },
+      "reason": "Same missing-body anchor conflict as cal-appetite-missing_paragraph. source_truncated=true is preserved as context but does not downgrade key-body-loss severity under the adjudicated anchor."
+    },
+    {
+      "case_id": "cal-interpreter-reorder",
+      "source_file": "dev.p2.gold.json",
+      "before": {
+        "decision": "uncertain",
+        "dimensions": {
+          "structure": {
+            "score": 3,
+            "severity": "minor"
+          }
+        }
+      },
+      "after": {
+        "decision": "fail",
+        "dimensions": {
+          "structure": {
+            "score": 2,
+            "severity": "major",
+            "note": "P-F re-adjudication 2026-11-23 (hqli631): ANY block reorder is SEVERE per anchor R1 (A01/A05 + v3 P06/P12); supersedes blind 3/minor. Source-truncation context retained in overall_note."
+          }
+        }
+      },
+      "reason": "Blind label structure 3/minor violates R1 (reorder -> structure major/critical, never minor), the exact defect class behind P-B gate FAIL. User approved anchor-consistent re-adjudication."
+    }
+  ]
+}

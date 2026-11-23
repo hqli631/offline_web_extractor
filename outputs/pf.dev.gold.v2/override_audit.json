@@ -1,0 +1,90 @@
+{
+  "tool_version": "1.0.0",
+  "spec_sha256": "25a22087596aad247e4fb2f05d7d4c0fa5eb858376dbb84a4d89071b31f8526b",
+  "input_sha256": {
+    "dev.orig.gold.json": "5c1a7277333775b3e18203e720187046834e760d255d1b13c9da7cd652cce67e",
+    "dev.p2.gold.json": "ec9d2f54377d47ddb64f4eb654df00727b8a74bd082d829865f36b8d18b1d7a1"
+  },
+  "output_sha256": {
+    "dev.orig.gold.json": "d965024694d5715708dbefea7ed427ac082aad3553ecdd95e49d6ced9a22bf50",
+    "dev.p2.gold.json": "9926dd1c7d25ade13eb1a86f60e6c556dd3d177a299038b94ddf809d25112406"
+  },
+  "inputs_unchanged_verified": true,
+  "approved_by": "hqli631",
+  "approved_at": "2026-11-23",
+  "approval_quote": "按锚点改判 (Recommended)：missing×2 → completeness 2/major/fail；reorder → structure 2/major/fail，与已密封的 v3 裁决一致，走 override 审计不改写历史。",
+  "entries": [
+    {
+      "case_id": "cal-appetite-missing_paragraph",
+      "source_file": "dev.orig.gold.json",
+      "blind_code": "B03",
+      "before": {
+        "decision": "uncertain",
+        "dimensions": {
+          "completeness": {
+            "score": 3,
+            "severity": "minor"
+          }
+        }
+      },
+      "after": {
+        "decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "score": 2,
+            "severity": "major"
+          }
+        }
+      },
+      "reason": "Blind label 3/minor conflicts with the adjudicated missing-body anchor adopted into v1.4 (completeness <= 2/major for key body loss). User approved anchor-consistent re-adjudication; sealed v3 gold P04/P10 = 2/major/fail."
+    },
+    {
+      "case_id": "cal-interpreter-missing_paragraph",
+      "source_file": "dev.p2.gold.json",
+      "blind_code": "P04",
+      "before": {
+        "decision": "uncertain",
+        "dimensions": {
+          "completeness": {
+            "score": 3,
+            "severity": "minor"
+          }
+        }
+      },
+      "after": {
+        "decision": "fail",
+        "dimensions": {
+          "completeness": {
+            "score": 2,
+            "severity": "major"
+          }
+        }
+      },
+      "reason": "Same missing-body anchor conflict as cal-appetite-missing_paragraph. source_truncated=true is preserved as context but does not downgrade key-body-loss severity under the adjudicated anchor."
+    },
+    {
+      "case_id": "cal-interpreter-reorder",
+      "source_file": "dev.p2.gold.json",
+      "blind_code": "P06",
+      "before": {
+        "decision": "uncertain",
+        "dimensions": {
+          "structure": {
+            "score": 3,
+            "severity": "minor"
+          }
+        }
+      },
+      "after": {
+        "decision": "fail",
+        "dimensions": {
+          "structure": {
+            "score": 2,
+            "severity": "major"
+          }
+        }
+      },
+      "reason": "Blind label structure 3/minor violates R1 (reorder -> structure major/critical, never minor), the exact defect class behind P-B gate FAIL. User approved anchor-consistent re-adjudication."
+    }
+  ]
+}

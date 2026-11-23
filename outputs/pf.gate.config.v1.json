@@ -1,0 +1,65 @@
+{
+  "config_version": "pf-1.0.0",
+  "status": "frozen",
+  "approved_by": "hqli631",
+  "approved_at": "2026-11-23",
+  "approval_quote": "批准 20/350k (Recommended)；按锚点改判 (Recommended)；A：新采2页 (Recommended)；PLEASE IMPLEMENT THIS PLAN",
+  "preregistration": "docs/P_F_V14_PLAN.md",
+  "supersedes": "outputs/pb.gate.config.v2.json sha256 9c1437abc313d53481f15ea142ff127c9616c5f3b1ef117e72aa36836a060275",
+  "seed": 20261119,
+  "B": 10000,
+  "batch_config": {
+    "model": "qwen3.8-27b",
+    "judge_version": "1.4.0",
+    "rubrics_version": "2.0.0",
+    "max_source_chars": 20000,
+    "max_output_tokens": 2200,
+    "timeout_seconds": 90
+  },
+  "dev": {
+    "reject_rate_lt": 0.1,
+    "severe_miss_count_le": 1,
+    "false_alarm_rate_le": 0.15,
+    "decision_match_ge": 0.85,
+    "kappa_ge": 0.75,
+    "match_kappa_subset_label": "orig"
+  },
+  "v3": {
+    "reject_rate_lt": 0.1,
+    "severe_miss_count_le": 1,
+    "false_alarm_rate_le": 0.15,
+    "decision_match_ge": 0.8,
+    "pass_recall_ge": 0.8
+  },
+  "gold_basis": {
+    "dev": "outputs/pf.dev.gold.v2 audited re-adjudication view (3 anchor overrides: missing x2, reorder x1) over pb.gate.inputs.v1 overlay; sealed files never rewritten; sealed-gold mechanical track disclosed separately, NOT the gate basis",
+    "v3": "SLOT HOLDS v4: new blind human gold on 2 newly collected never-exposed template pages (route A), sealed BEFORE any v1.4 judge call on v4; no overlay",
+    "dev_mode_policy": "fresh v1.4 calls on frozen manifests: 16 with_gold + 2 source_only (cal-iana-clean/noise); disclosed per case",
+    "v4_slot_mapping": "score_p3_gate.py is reused byte-identical; its v3 slot/labels hold v4 data in P-F (thresholds unchanged)"
+  },
+  "budget": {
+    "stage1": {
+      "max_calls": 20,
+      "token_cap": 350000,
+      "note": "v1.4 smoke 1 + dev calibration 18 fresh calls; APPROVED by hqli631 2026-11-23"
+    },
+    "stage2": {
+      "max_calls": 13,
+      "token_cap": 250000,
+      "note": "v4 one-shot 12 + smoke/resume <=1; PENDING separate approval after stage1 passes"
+    }
+  },
+  "discipline": [
+    "frozen_test v1 permanently sealed; v2 consumed one-shot in P2; v3 consumed one-shot in P-B; none ever re-run",
+    "v3 12 cases permanently EXPOSED to v1.4 anchor design -> v1.4-development only, never an independent test for v1.4",
+    "v4 is one-shot; FAIL is final; no re-test or post-hoc tuning",
+    "judge scores are NOT training rewards until v1.4 gate PASS, and only within the validated scope",
+    "dev gold re-adjudication via audited override view (configs/pf_dev_gold_overrides.v1.json); sealed history never rewritten",
+    "dev anchoring circularity up to 6/18 (3 overlay + 3 re-adjudicated); v4 is the independent generalization test",
+    "single annotator; IAA not measured (user waived second annotator)",
+    "gate thresholds byte-identical to frozen v1 d70e0d3c / v2 9c1437ab; only judge pin and gold basis differ",
+    "v4 route A collection: <=10 HTTP fetches, zero model calls, pre-registered candidates and acceptance criteria"
+  ],
+  "protocol_pin": "outputs/pf.protocol.v1.json",
+  "v4_freeze": "outputs/pf.freeze.v1.json (built at F3 before stage2)"
+}

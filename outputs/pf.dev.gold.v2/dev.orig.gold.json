@@ -1,0 +1,543 @@
+{
+  "gold_version": "pf-dev-gold-v2-orig",
+  "stage": "development",
+  "annotator": "hqli631",
+  "provenance": {
+    "overlay_version": "pb-gold-overlay-1",
+    "preregistration": "docs/P_B_AMENDMENT_PROPOSAL.md",
+    "branch": "P3_GATE_PLAN step 4: no protocol revision; judge v1.2 frozen; adjudicated-gold overlay (sealed gold never rewritten)",
+    "base_gold_sha256": {
+      "gold_orig": "23f5f491cdfecd4d2a14d1454dcd8e897a2f0f02c092552326baaa908968f70c",
+      "gold_p2": "1b89aaf954358d50713bd22d2ee2c6161fbf688bc56da77fda364b1d8158831c"
+    },
+    "corrections": [
+      "C01",
+      "C02",
+      "A01"
+    ],
+    "limitations": [
+      "single annotator; IAA not measured (user waived second annotator)",
+      "overlay adopts judge values on 3 adjudicated cases: partial anchoring circularity on the dev track; v3 is the independent generalization test",
+      "agreement is not accuracy; sealed-gold mechanical track reported separately",
+      "P-F: 3 dev cases re-adjudicated to adjudicated anchors (missing x2, reorder x1); anchoring circularity on dev track now up to 6/18 (3 overlay + 3 re-adjudicated); v4 is the independent generalization test."
+    ],
+    "pf_override": {
+      "spec": "configs\\pf_dev_gold_overrides.v1.json",
+      "spec_sha256": "25a22087596aad247e4fb2f05d7d4c0fa5eb858376dbb84a4d89071b31f8526b",
+      "base_view_sha256": "5c1a7277333775b3e18203e720187046834e760d255d1b13c9da7cd652cce67e",
+      "applied_case_ids": [
+        "cal-appetite-missing_paragraph"
+      ],
+      "approved_by": "hqli631",
+      "approved_at": "2026-11-23",
+      "note": "Anchor re-adjudication view for v1.4 dev calibration; upstream sealed files never rewritten."
+    }
+  },
+  "cases": [
+    {
+      "blind_code": "B01",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": "pass",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "p 块和 g 块完全相同",
+      "case_id": "cal-appetite-clean",
+      "confirmed": true,
+      "adjudication_note": "无案卷案例，按指南默认维持盲评（已向标注者披露，无异议）。"
+    },
+    {
+      "blind_code": "B02",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": "uncertain",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 3,
+          "status": "scored",
+          "severity": "minor",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落重复",
+      "case_id": "cal-appetite-duplicate",
+      "confirmed": true,
+      "adjudication_note": "判决不变（标注者 2026-11-18 聊天回复）。"
+    },
+    {
+      "blind_code": "B03",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": "P-F re-adjudication 2026-11-23 (hqli631): missing key body paragraph is SEVERE per adjudicated anchor (P04/P10 precedent); supersedes blind 3/minor."
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落遗漏",
+      "case_id": "cal-appetite-missing_paragraph",
+      "confirmed": true,
+      "adjudication_note": "无案卷案例，按指南默认维持盲评（已向标注者披露，无异议）。"
+    },
+    {
+      "blind_code": "B04",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "将非正文的推荐内容提取出来",
+      "case_id": "cal-appetite-noise",
+      "confirmed": true,
+      "adjudication_note": "标注者裁决：cleanliness 3/minor→2/major，decision uncertain→fail（聊天回复逐字记录，未附逐条理由）。"
+    },
+    {
+      "blind_code": "B05",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落颠倒",
+      "case_id": "cal-appetite-reorder",
+      "confirmed": true,
+      "adjudication_note": "无案卷案例，按指南默认维持盲评（已向标注者披露，无异议）。",
+      "overlay_note": "P-B overlay A01 (cal-appetite-reorder, verdict=judge_correct, sealed findings_pa): dims structure <- judge v1.2 score+severity; decision <- judge. Original sealed gold unchanged."
+    },
+    {
+      "blind_code": "B06",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": "uncertain",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 3,
+          "status": "scored",
+          "severity": "minor",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "标题内容提取不完整",
+      "case_id": "cal-appetite-title_number",
+      "confirmed": true,
+      "adjudication_note": "无案卷案例，按指南默认维持盲评（已向标注者披露，无异议）。"
+    },
+    {
+      "blind_code": "B07",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": "uncertain",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "源截断：是",
+      "case_id": "cal-blurb-clean",
+      "confirmed": true,
+      "adjudication_note": "判决不变（标注者 2026-11-18 聊天回复）。"
+    },
+    {
+      "blind_code": "B08",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "正文内容提取少很多，且是源截断",
+      "case_id": "cal-blurb-missing_paragraph",
+      "confirmed": true,
+      "adjudication_note": "判决不变（标注者 2026-11-18 聊天回复）。"
+    },
+    {
+      "blind_code": "B09",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "将非正文的推荐内容提取出来，且是源截断",
+      "case_id": "cal-blurb-noise",
+      "confirmed": true,
+      "adjudication_note": "标注者裁决：cleanliness 3/major→2/major（severity 不变，分数下调；聊天回复逐字记录）。"
+    },
+    {
+      "blind_code": "B10",
+      "split": "development",
+      "mode": "with_gold",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 1,
+          "status": "scored",
+          "severity": "critical",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "关键段落颠倒了，且是源截断",
+      "case_id": "cal-blurb-reorder",
+      "confirmed": true,
+      "adjudication_note": "判决不变（标注者 2026-11-18 聊天回复）。"
+    },
+    {
+      "blind_code": "B11",
+      "split": "development",
+      "mode": "source_only",
+      "decision": "uncertain",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "无参考答案",
+      "case_id": "cal-iana-clean",
+      "confirmed": true,
+      "adjudication_note": "无案卷案例，按指南默认维持盲评（已向标注者披露，无异议）。"
+    },
+    {
+      "blind_code": "B12",
+      "split": "development",
+      "mode": "source_only",
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "partial",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "partial",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "将非正文的推荐内容提取出来，且无参考答案",
+      "case_id": "cal-iana-noise",
+      "confirmed": true,
+      "adjudication_note": "标注者裁决：cleanliness 3/major→2/major（聊天回复逐字记录）。"
+    }
+  ]
+}

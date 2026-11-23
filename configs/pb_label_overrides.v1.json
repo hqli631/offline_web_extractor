@@ -1,0 +1,94 @@
+{
+  "overrides_version": 1,
+  "status": "pending_confirmation",
+  "description": "P-B v3 blind label mechanical correction (PROPOSAL, applied only after annotator chat confirmation). format dimension is not_applicable in Rubrics v2 (judge always outputs score=null/status=not_applicable/severity=none); the filled labels carry severity=critical on format across all 12 cases (uniform template/fill artifact, score=null). Protocol validator requires not_applicable severity=none. This override changes ONLY format severity critical->none; it touches no substantive judgement (decision and the four scored dimensions unchanged).",
+  "approved_by": "hqli631",
+  "approved_at": "2026-11-23",
+  "keyword_map_version": 1,
+  "entries": [
+    {
+      "blind_code": "P01",
+      "dim": "format",
+      "field": "severity",
+      "value": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
+    },
+    {
+      "blind_code": "P02",
+      "dim": "format",
+      "field": "severity",
+      "value": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
+    },
+    {
+      "blind_code": "P03",
+      "dim": "format",
+      "field": "severity",
+      "value": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
+    },
+    {
+      "blind_code": "P04",
+      "dim": "format",
+      "field": "severity",
+      "value": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
+    },
+    {
+      "blind_code": "P05",
+      "dim": "format",
+      "field": "severity",
+      "value": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
+    },
+    {
+      "blind_code": "P06",
+      "dim": "format",
+      "field": "severity",
+      "value": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
+    },
+    {
+      "blind_code": "P07",
+      "dim": "format",
+      "field": "severity",
+      "value": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
+    },
+    {
+      "blind_code": "P08",
+      "dim": "format",
+      "field": "severity",
+      "value": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
+    },
+    {
+      "blind_code": "P09",
+      "dim": "format",
+      "field": "severity",
+      "value": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
+    },
+    {
+      "blind_code": "P10",
+      "dim": "format",
+      "field": "severity",
+      "value": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
+    },
+    {
+      "blind_code": "P11",
+      "dim": "format",
+      "field": "severity",
+      "value": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
+    },
+    {
+      "blind_code": "P12",
+      "dim": "format",
+      "field": "severity",
+      "value": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。标注者聊天确认后应用。"
+    }
+  ]
+}

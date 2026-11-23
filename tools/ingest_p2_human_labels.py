@@ -69,11 +69,12 @@ def case_meta(mc, samples_root):
 def verify_integrity(manifest_path, freeze_path, kit_dir, manifest, freeze):
     problems = []
     manifest_file_sha = sha256_bytes(manifest_path.read_bytes())
-    recorded_file_sha = (freeze.get('files') or {}).get('samples/p2_manifest.json')
+    manifest_rel = manifest_path.resolve().relative_to(ROOT.resolve()).as_posix()
+    recorded_file_sha = (freeze.get('files') or {}).get(manifest_rel)
     if manifest_file_sha != recorded_file_sha:
-        problems.append('manifest file sha256 does not match freeze v5 files entry')
+        problems.append('manifest file sha256 does not match freeze files entry for ' + manifest_rel)
     if sha256_json(manifest) != freeze.get('manifest_sha256'):
-        problems.append('manifest canonical JSON sha256 does not match freeze v5 manifest_sha256')
+        problems.append('manifest canonical JSON sha256 does not match freeze manifest_sha256')
     for rel, recorded in (freeze.get('files') or {}).items():
         p = ROOT / rel
         if not p.exists():
@@ -84,8 +85,10 @@ def verify_integrity(manifest_path, freeze_path, kit_dir, manifest, freeze):
     inputs = kit_manifest.get('inputs') or {}
     if inputs.get('manifest') != manifest_file_sha:
         problems.append('kit manifest input sha does not match current manifest file')
-    if inputs.get('freeze') != sha256_bytes(freeze_path.read_bytes()):
-        problems.append('kit freeze input sha does not match freeze v5 file')
+    freeze_sha = sha256_bytes(freeze_path.read_bytes())
+    base_sha = (freeze.get('amendment') or {}).get('base_freeze_sha256')
+    if inputs.get('freeze') not in (freeze_sha, base_sha):
+        problems.append('kit freeze input sha does not match freeze file or its amendment base')
     for rel, recorded in (kit_manifest.get('files') or {}).items():
         if rel == 'human_labels.blind.json':
             continue  # filled by the annotator; expected to differ from template

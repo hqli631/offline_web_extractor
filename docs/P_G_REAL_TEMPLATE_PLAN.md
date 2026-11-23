@@ -67,3 +67,18 @@ python -m tools.run_pg_repair --run --output outputs/pg.run.v1.json
 python -m tools.score_pg --run outputs/pg.run.v1.json --output outputs/pg.score.v1.json
 .\run.cmd test
 ```
+
+## 9. G1 探针细化声明（形式采集前；聚簇协议未改）
+
+**首轮探针诚实负面**（outputs/pg.collect.v1.json，20 抓取 / 0 接受，保留不删除）：
+- apache.org 自然页 37k–52k 字符，超出原 [3000, 30000] 窗口（该上界是 P-F critic 可达性遗留假设；聚簇/复用本身无需小页）。
+- openbsd.org index.html 抽取标题为空被拒（标题接受标准保留）。
+- apache marks-policy.html 返回 404。
+- **重试纪律缺陷**：对确定性拒绝（字符超限/404）重复抓同一 URL 至 4 次，浪费预算，致 netbsd 未触及即耗尽 20 次上限。
+
+**细化（仅接受标准与采集纪律，正式建集前冻结）**：
+1. 字符窗口上界 30000 → **60000**（下界 3000 不变）。G3 critic 仍 max_source_chars=20000 截断（披露）；聚簇/复用不受页长限制。
+2. 重试纪律：**确定性拒绝（接受标准不符 / 4xx）转下一候选 URL，不重试**；仅瞬态网络错误在槽位预算内重试。每槽 ≤4 次、总 ≤20 次上限不变。
+3. 标题接受标准保留（无标题页拒）。
+
+此细化**不改** suffix-presence / threshold 0.7 / complete-linkage / MinHash / LSH / drift_threshold / 判据。首轮探针为接受标准探针，非正式建集；正式采集另用 outputs/pg.collect.v2.json（**补充抓取预算待用户批准**，首轮 20 次已耗尽）。

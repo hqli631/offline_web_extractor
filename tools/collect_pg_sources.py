@@ -2,11 +2,12 @@
 """P-G G1 one-shot real-template source collection (plan docs/P_G_REAL_TEMPLATE_PLAN.md).
 
 Collects up to 3 UNEXPOSED classic-layout families x 4 natural pages (apache.org,
-openbsd.org, netbsd.org). Acceptance per page: raw chars in [3000, 30000];
+openbsd.org, netbsd.org). Acceptance per page: raw chars in [3000, 60000] (G1 probe refinement, disclosed);
 extract_html yields >=3 blocks and a nonempty title. Minimal-fetch discipline:
 direct URLs only, <=4 attempts per slot, <=20 total fetches; EVERY fetch recorded
 (url/final_url/sha256/raw_chars/acceptance checks/reject reason). No model calls.
-A family with <3 accepted pages is degraded (accepted pages kept as singletons/
+Deterministic rejections (acceptance/4xx) advance to the next candidate URL without
+retry; only transient fetch errors retry within the slot budget. A family with <3 accepted pages is degraded (accepted pages kept as singletons/
 controls, disclosed). Exposed fallback families (freebsd/debian, v4-exposed) are
 OFF by default and require --allow-exposed-fallback (disclosed). Refuses overwrite.
 Exit 0 if >=2 families accepted (>=3 pages each); exit 2 honest stop otherwise.
@@ -19,13 +20,14 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 import urllib.request
+import urllib.error
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from src.webextractor.extractor import extract_html
 
 TOOL_VERSION = '1.0.0'
-MIN_CHARS, MAX_CHARS = 3000, 30000
+MIN_CHARS, MAX_CHARS = 3000, 60000
 MAX_SLOT_ATTEMPTS = 4
 TOTAL_FETCH_CAP = 20
 EXCLUDED_HOSTS = {
@@ -91,7 +93,7 @@ def fetch(opener, url, log):
     host = urlparse(url).hostname or ''
     entry = {'url': url, 'fetched_at': datetime.now(timezone.utc).isoformat(timespec='seconds')}
     if host in EXCLUDED_HOSTS:
-        entry.update(accepted=False, reject_reason='excluded host')
+        entry.update(accepted=False, reject_reason='excluded host', deterministic=True)
         log.append(entry)
         return None, entry
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 offline-extractor-learning/1.0'})
@@ -99,8 +101,14 @@ def fetch(opener, url, log):
         with opener.open(req, timeout=25) as resp:
             payload = resp.read()
             entry['final_url'] = resp.url
+    except urllib.error.HTTPError as e:
+        entry.update(error='HTTPError', http_status=e.code, accepted=False,
+                     reject_reason='fetch failed', deterministic=(400 <= e.code < 500))
+        log.append(entry)
+        return None, entry
     except Exception as e:
-        entry.update(error=type(e).__name__, accepted=False, reject_reason='fetch failed')
+        entry.update(error=type(e).__name__, accepted=False, reject_reason='fetch failed',
+                     deterministic=False)
         log.append(entry)
         return None, entry
     text = payload.decode('utf-8', errors='replace')
@@ -108,6 +116,7 @@ def fetch(opener, url, log):
     checks = acceptance_checks(payload, text)
     entry.update(checks)
     entry['accepted'] = not checks['reject_reason']
+    entry['deterministic'] = not entry['accepted']
     log.append(entry)
     return (payload, entry) if entry['accepted'] else (None, entry)
 
@@ -126,31 +135,37 @@ def run_collection(output_path, allow_exposed_fallback=False, opener=None, sampl
         for slot in fam['pages']:
             if fetches >= TOTAL_FETCH_CAP:
                 break
-            for attempt in range(MAX_SLOT_ATTEMPTS):
-                if fetches >= TOTAL_FETCH_CAP:
+            attempts = 0
+            slot_done = False
+            for url in slot['urls']:
+                while attempts < MAX_SLOT_ATTEMPTS and fetches < TOTAL_FETCH_CAP and not slot_done:
+                    payload, entry = fetch(opener, url, log)
+                    fetches += 1
+                    attempts += 1
+                    entry['page_id'] = slot['page_id']
+                    entry['family'] = fam['family']
+                    entry['attempt'] = attempts
+                    if payload is None:
+                        if entry.get('deterministic'):
+                            break  # deterministic rejection / 4xx: next candidate URL, no wasted retry
+                        continue  # transient fetch error: retry same URL within slot budget
+                    samples_dir.mkdir(parents=True, exist_ok=True)
+                    sp = samples_dir / (slot['page_id'] + '.html')
+                    if sp.exists():
+                        entry['accepted'] = False
+                        entry['reject_reason'] = 'sample file exists (refuse overwrite)'
+                        entry['deterministic'] = True
+                        break
+                    sp.write_bytes(payload)
+                    fam_accepted += 1
+                    accepted.append({'page_id': slot['page_id'], 'family': fam['family'],
+                                     'exposed': fam['exposed'], 'html': 'pg_v1/' + sp.name,
+                                     'sha256': entry['sha256'], 'raw_chars': entry['raw_chars'],
+                                     'block_count': entry['block_count'], 'url': entry['url'],
+                                     'final_url': entry.get('final_url')})
+                    slot_done = True
+                if slot_done or fetches >= TOTAL_FETCH_CAP:
                     break
-                url = slot['urls'][attempt % len(slot['urls'])]
-                payload, entry = fetch(opener, url, log)
-                fetches += 1
-                entry['page_id'] = slot['page_id']
-                entry['family'] = fam['family']
-                entry['attempt'] = attempt + 1
-                if payload is None:
-                    continue
-                samples_dir.mkdir(parents=True, exist_ok=True)
-                sp = samples_dir / (slot['page_id'] + '.html')
-                if sp.exists():
-                    entry['accepted'] = False
-                    entry['reject_reason'] = 'sample file exists (refuse overwrite)'
-                    continue
-                sp.write_bytes(payload)
-                fam_accepted += 1
-                accepted.append({'page_id': slot['page_id'], 'family': fam['family'],
-                                 'exposed': fam['exposed'], 'html': 'pg_v1/' + sp.name,
-                                 'sha256': entry['sha256'], 'raw_chars': entry['raw_chars'],
-                                 'block_count': entry['block_count'], 'url': entry['url'],
-                                 'final_url': entry.get('final_url')})
-                break
         family_summary.append({'family': fam['family'], 'exposed': fam['exposed'],
                                'accepted': fam_accepted, 'degraded': fam_accepted < 3})
     ok = sum(1 for f in family_summary if f['accepted'] >= 3) >= 2

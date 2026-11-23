@@ -115,6 +115,23 @@ class CollectorTests(unittest.TestCase):
             self.assertTrue(apache['degraded'])
             self.assertLessEqual(report['total_fetches'], col.TOTAL_FETCH_CAP)
 
+    def test_deterministic_rejection_no_retry(self):
+        with tempfile.TemporaryDirectory() as td:
+            out = Path(td) / 'collect.json'
+            short = b'<html><head><title>t</title></head><body><div role="main"><p>a</p><p>b</p><p>c</p></div></body></html>'
+            url = 'https://www.apache.org/foundation/how-it-works.html'
+            opener = FakeOpener({url: short})
+            col.run_collection(out, opener=opener, samples_dir=Path(td) / 'pg_v1')
+            self.assertEqual(opener.calls.count(url), 1)
+
+    def test_transient_error_retries_within_slot(self):
+        with tempfile.TemporaryDirectory() as td:
+            out = Path(td) / 'collect.json'
+            url = 'https://www.apache.org/foundation/how-it-works.html'
+            opener = FakeOpener({url: _big_html(3)}, fail_urls={url})
+            col.run_collection(out, opener=opener, samples_dir=Path(td) / 'pg_v1')
+            self.assertEqual(opener.calls.count(url), col.MAX_SLOT_ATTEMPTS)
+
     def test_collection_refuses_overwrite(self):
         with tempfile.TemporaryDirectory() as td:
             out = Path(td) / 'collect.json'

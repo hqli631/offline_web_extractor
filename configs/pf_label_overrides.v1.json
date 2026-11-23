@@ -1,9 +1,9 @@
 {
   "overrides_version": 1,
-  "status": "proposed",
-  "description": "P-F v4 blind label mechanical correction (PROPOSAL - NOT applicable until annotator chat confirmation; approved_by intentionally empty). format dimension is not_applicable in Rubrics v2 (score=null); the filled labels carry severity=critical on format across all 12 cases (same uniform template/fill artifact as P-B v3). Protocol validator requires not_applicable severity=none. Changes ONLY format severity critical->none; no substantive judgement touched (decision and the four scored dimensions unchanged). Clears all 6 dry-run consistency warnings.",
-  "approved_by": "",
-  "approved_at": "",
+  "status": "approved",
+  "description": "P-F v4 blind label mechanical correction (APPROVED by annotator hqli631 in chat 2026-11-23 (confirmed mechanical fixes x12 + x2)). format dimension is not_applicable in Rubrics v2 (score=null); the filled labels carry severity=critical on format across all 12 cases (same uniform template/fill artifact as P-B v3). Protocol validator requires not_applicable severity=none. Changes ONLY format severity critical->none; no substantive judgement touched (decision and the four scored dimensions unchanged). Clears all 6 dry-run consistency warnings.",
+  "approved_by": "hqli631",
+  "approved_at": "2026-11-23",
   "keyword_map_version": 1,
   "entries": [
     {

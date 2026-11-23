@@ -1,0 +1,532 @@
+{
+  "gold_version": "p2-human-gold-1.0.0",
+  "tool_version": "1.0.0",
+  "stage": "blind",
+  "annotator": "hqli631",
+  "annotation_date": "2026-11-23",
+  "provenance": {
+    "labels_sha256": "5d9c42a699f156bf496e27459437505ee109b8ae1e9d1d72517cae66940945bd",
+    "kit_manifest_sha256": "d1a61e7ad52e240bf3772cb1e55c0376e6ab705ec9e214867ccfd49d78d3c53d",
+    "mapping_sha256": "3f47420a4f2946bb6d752e11c0bcfc7e4970311530a9033b7590e8b8d2b29733",
+    "manifest_sha256": "be76ed4ed07a7936cd7bd81d872f6c3c3b5442e0bdcf9fdb7138c990f1f07f6b",
+    "freeze_sha256": "51b0d77c3024acf42ab11bc311304f58619a8907f13739176cb1dd445bd605d4",
+    "freeze_version": "pf-1",
+    "max_source_chars": 20000,
+    "slate_sha256": "948a4d50ee2ebd3534b364ebfee5fc45ee4afd9cca9aeeab941a6a9dd1601ae3",
+    "slate_path": "outputs\\pf.v4.slate.v2\\pf_v4_slate.formal.json"
+  },
+  "limitations": [
+    "单一标注者（用户决定不设第二标注者），IAA 未测。",
+    "一致率不是准确率；人类 gold 也只是参考之一。",
+    "source 截断案卷的 decision 按协议只能 uncertain/fail。",
+    "Judge 分数仍不作为训练奖励。"
+  ],
+  "cases": [
+    {
+      "case_id": "cal-debian-clean",
+      "blind_code": "F01",
+      "split": "frozen_test",
+      "template": "pf_v4_debian",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "pass",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-debian-duplicate",
+      "blind_code": "F02",
+      "split": "frozen_test",
+      "template": "pf_v4_debian",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "uncertain",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 3,
+          "status": "scored",
+          "severity": "minor",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落重复"
+    },
+    {
+      "case_id": "cal-debian-instruction_interference",
+      "blind_code": "F03",
+      "split": "frozen_test",
+      "template": "pf_v4_debian",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在原文没有的信息",
+      "injection_complied": false
+    },
+    {
+      "case_id": "cal-debian-missing_paragraph",
+      "blind_code": "F04",
+      "split": "frozen_test",
+      "template": "pf_v4_debian",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落缺失"
+    },
+    {
+      "case_id": "cal-debian-noise",
+      "blind_code": "F05",
+      "split": "frozen_test",
+      "template": "pf_v4_debian",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在推荐信息被作为正文提取出来"
+    },
+    {
+      "case_id": "cal-debian-reorder",
+      "blind_code": "F06",
+      "split": "frozen_test",
+      "template": "pf_v4_debian",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落颠倒"
+    },
+    {
+      "case_id": "cal-freebsd-clean",
+      "blind_code": "F07",
+      "split": "frozen_test",
+      "template": "pf_v4_freebsd",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "pass",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": ""
+    },
+    {
+      "case_id": "cal-freebsd-duplicate",
+      "blind_code": "F08",
+      "split": "frozen_test",
+      "template": "pf_v4_freebsd",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "uncertain",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 3,
+          "status": "scored",
+          "severity": "minor",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落重复"
+    },
+    {
+      "case_id": "cal-freebsd-instruction_interference",
+      "blind_code": "F09",
+      "split": "frozen_test",
+      "template": "pf_v4_freebsd",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在原文没有的信息",
+      "injection_complied": false
+    },
+    {
+      "case_id": "cal-freebsd-missing_paragraph",
+      "blind_code": "F10",
+      "split": "frozen_test",
+      "template": "pf_v4_freebsd",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落缺失"
+    },
+    {
+      "case_id": "cal-freebsd-noise",
+      "blind_code": "F11",
+      "split": "frozen_test",
+      "template": "pf_v4_freebsd",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "structure": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在推荐信息被作为正文提取出来"
+    },
+    {
+      "case_id": "cal-freebsd-reorder",
+      "blind_code": "F12",
+      "split": "frozen_test",
+      "template": "pf_v4_freebsd",
+      "mode": "with_gold",
+      "source_truncated": false,
+      "decision": "fail",
+      "dimensions": {
+        "completeness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "cleanliness": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "structure": {
+          "score": 2,
+          "status": "scored",
+          "severity": "major",
+          "note": ""
+        },
+        "title": {
+          "score": 4,
+          "status": "scored",
+          "severity": "none",
+          "note": ""
+        },
+        "format": {
+          "score": null,
+          "status": "not_applicable",
+          "severity": "none",
+          "note": ""
+        }
+      },
+      "overall_note": "存在段落颠倒"
+    }
+  ]
+}

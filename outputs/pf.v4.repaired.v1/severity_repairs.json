@@ -1,0 +1,116 @@
+{
+  "map_version": 1,
+  "tool_version": "2.1.0",
+  "changes": [],
+  "flags": [],
+  "overrides": [
+    {
+      "blind_code": "F01",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。与 P-B v3 同类（pb_label_overrides.v1.json 先例）。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "F02",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。与 P-B v3 同类（pb_label_overrides.v1.json 先例）。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "F03",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。与 P-B v3 同类（pb_label_overrides.v1.json 先例）。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "F04",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。与 P-B v3 同类（pb_label_overrides.v1.json 先例）。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "F05",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。与 P-B v3 同类（pb_label_overrides.v1.json 先例）。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "F06",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。与 P-B v3 同类（pb_label_overrides.v1.json 先例）。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "F07",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。与 P-B v3 同类（pb_label_overrides.v1.json 先例）。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "F08",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。与 P-B v3 同类（pb_label_overrides.v1.json 先例）。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "F09",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。与 P-B v3 同类（pb_label_overrides.v1.json 先例）。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "F10",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。与 P-B v3 同类（pb_label_overrides.v1.json 先例）。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "F11",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。与 P-B v3 同类（pb_label_overrides.v1.json 先例）。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    },
+    {
+      "blind_code": "F12",
+      "dim": "format",
+      "field": "severity",
+      "before": "critical",
+      "after": "none",
+      "reason": "format 维 not_applicable（score=null），协议要求 severity=none；原 critical 为模板/填写机械缺陷，非实质评判。与 P-B v3 同类（pb_label_overrides.v1.json 先例）。标注者聊天确认后应用。",
+      "kind": "annotator_confirmed_override"
+    }
+  ]
+}

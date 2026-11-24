@@ -1,0 +1,474 @@
+{
+  "tool_version": "1.1.0",
+  "run_sha256": "e0d83944f142bca3bef490085a3da4c3242452fff286823c1a1f9f9619fed3dc",
+  "freeze_sha256": "06dbd1647a4e2ca604d729219a14000942071f3dbaa2cee2bd8b82f8662dc74f",
+  "generated_at": "2026-11-24T02:29:27+00:00",
+  "freeze_problems": [],
+  "per_case": [
+    {
+      "cluster_id": "ph-c0",
+      "case_id": "pg_apache_faq",
+      "status": "no_repair_needed",
+      "reuse": {
+        "reuse": true,
+        "fallback": false,
+        "drift": false,
+        "drift_reasons": [],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "ok",
+        "final_status": "ok",
+        "block_count": 62,
+        "generalized_override": false
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": null,
+      "repair_reference_ids": null,
+      "baseline_quality": null,
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "ph-c0",
+      "case_id": "pg_apache_howitworks",
+      "status": "repair_failed",
+      "reuse": {
+        "reuse": true,
+        "fallback": false,
+        "drift": false,
+        "drift_reasons": [],
+        "fingerprint_similarity": 0.86,
+        "rule_status": "ok",
+        "final_status": "ok",
+        "block_count": 143,
+        "generalized_override": false
+      },
+      "baseline_decision": "fail",
+      "baseline_defect_count": 2,
+      "trigger_reason": "drift=[];critic=fail;defects=2",
+      "repair_reference_ids": [
+        "pg_apache_faq",
+        "pg_apache_howitworks",
+        "pg_apache_howitworks-var"
+      ],
+      "baseline_quality": null,
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "ph-c0",
+      "case_id": "pg_apache_howitworks-var",
+      "status": "repair_failed",
+      "reuse": {
+        "reuse": false,
+        "fallback": true,
+        "drift": true,
+        "drift_reasons": [
+          "rule_failure"
+        ],
+        "fingerprint_similarity": 0.74,
+        "rule_status": "rule_no_match",
+        "final_status": "no_candidate",
+        "block_count": 0,
+        "generalized_override": false
+      },
+      "baseline_decision": "fail",
+      "baseline_defect_count": 4,
+      "trigger_reason": "drift=['rule_failure'];critic=fail;defects=4",
+      "repair_reference_ids": [
+        "pg_apache_faq",
+        "pg_apache_howitworks",
+        "pg_apache_howitworks-var"
+      ],
+      "baseline_quality": {
+        "title_exact": false,
+        "blocks_exact": false,
+        "block_text_precision": 0.0,
+        "block_text_recall": 0.0
+      },
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "ph-c1",
+      "case_id": "pg_apache_license",
+      "status": "no_repair_needed",
+      "reuse": {
+        "reuse": true,
+        "fallback": false,
+        "drift": false,
+        "drift_reasons": [],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "ok",
+        "final_status": "ok",
+        "block_count": 37,
+        "generalized_override": false
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": null,
+      "repair_reference_ids": null,
+      "baseline_quality": null,
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "ph-c2",
+      "case_id": "pg_netbsd_about",
+      "status": "no_repair_needed",
+      "reuse": {
+        "reuse": false,
+        "fallback": true,
+        "drift": true,
+        "drift_reasons": [
+          "no_shared_rule"
+        ],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "no_rule",
+        "final_status": "ok",
+        "block_count": 39,
+        "generalized_override": false
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": null,
+      "repair_reference_ids": null,
+      "baseline_quality": null,
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "ph-c2",
+      "case_id": "pg_netbsd_security",
+      "status": "repaired",
+      "reuse": {
+        "reuse": false,
+        "fallback": true,
+        "drift": true,
+        "drift_reasons": [
+          "no_shared_rule"
+        ],
+        "fingerprint_similarity": 0.717949,
+        "rule_status": "no_rule",
+        "final_status": "ok",
+        "block_count": 53,
+        "generalized_override": false
+      },
+      "baseline_decision": "fail",
+      "baseline_defect_count": 1,
+      "trigger_reason": "drift=['no_shared_rule'];critic=fail;defects=1",
+      "repair_reference_ids": [
+        "pg_netbsd_about",
+        "pg_netbsd_security"
+      ],
+      "pair": {
+        "category": "no_effect",
+        "decision_before": "fail",
+        "decision_after": "fail",
+        "total_before": 14,
+        "total_after": 14,
+        "delta": 0,
+        "score_comparable": true,
+        "new_severe_dimensions": [],
+        "severe_before": [
+          "completeness"
+        ],
+        "severe_after": [
+          "completeness"
+        ]
+      },
+      "baseline_quality": null,
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "ph-c3",
+      "case_id": "pg_netbsd_changes",
+      "status": "no_repair_needed",
+      "reuse": {
+        "reuse": false,
+        "fallback": true,
+        "drift": true,
+        "drift_reasons": [
+          "no_shared_rule"
+        ],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "no_rule",
+        "final_status": "ok",
+        "block_count": 99,
+        "generalized_override": false
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": null,
+      "repair_reference_ids": null,
+      "baseline_quality": null,
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "ph-c4",
+      "case_id": "pg_netbsd_index",
+      "status": "no_repair_needed",
+      "reuse": {
+        "reuse": false,
+        "fallback": true,
+        "drift": true,
+        "drift_reasons": [
+          "no_shared_rule"
+        ],
+        "fingerprint_similarity": 1.0,
+        "rule_status": "no_rule",
+        "final_status": "ok",
+        "block_count": 28,
+        "generalized_override": false
+      },
+      "baseline_decision": "uncertain",
+      "baseline_defect_count": 0,
+      "trigger_reason": null,
+      "repair_reference_ids": null,
+      "baseline_quality": null,
+      "repaired_quality": null
+    },
+    {
+      "cluster_id": "ph-c4",
+      "case_id": "pg_netbsd_index-var",
+      "status": "skipped_budget",
+      "reuse": {
+        "reuse": false,
+        "fallback": true,
+        "drift": true,
+        "drift_reasons": [
+          "no_shared_rule"
+        ],
+        "fingerprint_similarity": 0.84,
+        "rule_status": "no_rule",
+        "final_status": "no_candidate",
+        "block_count": 0,
+        "generalized_override": false
+      },
+      "baseline_decision": null,
+      "baseline_defect_count": null,
+      "trigger_reason": null,
+      "repair_reference_ids": null,
+      "baseline_quality": {
+        "title_exact": false,
+        "blocks_exact": false,
+        "block_text_precision": 0.0,
+        "block_text_recall": 0.0
+      },
+      "repaired_quality": null
+    }
+  ],
+  "feedback": [
+    {
+      "cluster_id": "ph-c0",
+      "rep_id": "pg_apache_faq",
+      "multi_layout": true,
+      "layouts": [
+        "natural",
+        "tag-swap-role-stripped"
+      ],
+      "shared_rule": {
+        "version": 1,
+        "container_xpath": "//main",
+        "exclude_xpaths": []
+      },
+      "attempted": false,
+      "accepted": false,
+      "events": [],
+      "reuse_recovery": [],
+      "amortization": {
+        "rule_generation_calls": 4,
+        "recovered_members": 0,
+        "calls_per_recovered": null
+      },
+      "member_rule_cache": {}
+    },
+    {
+      "cluster_id": "ph-c1",
+      "rep_id": "pg_apache_license",
+      "multi_layout": false,
+      "layouts": [
+        "natural"
+      ],
+      "shared_rule": {
+        "version": 1,
+        "container_xpath": "//main",
+        "exclude_xpaths": []
+      },
+      "attempted": false,
+      "accepted": false,
+      "events": [],
+      "reuse_recovery": [],
+      "amortization": {
+        "rule_generation_calls": 0,
+        "recovered_members": 0,
+        "calls_per_recovered": null
+      },
+      "member_rule_cache": {}
+    },
+    {
+      "cluster_id": "ph-c2",
+      "rep_id": "pg_netbsd_about",
+      "multi_layout": false,
+      "layouts": [
+        "natural"
+      ],
+      "shared_rule": null,
+      "attempted": true,
+      "accepted": false,
+      "events": [
+        {
+          "member_id": "pg_netbsd_security",
+          "rule": {
+            "version": 1,
+            "container_xpath": "//div[@id='mainContent']",
+            "exclude_xpaths": []
+          },
+          "programmatic_improved": false,
+          "generalizes": true,
+          "validation": [
+            {
+              "case_id": "pg_netbsd_about",
+              "rule_status": "ok",
+              "match_count": 1,
+              "block_count": 39,
+              "recall": null,
+              "pre_recall": null,
+              "pass": true
+            },
+            {
+              "case_id": "pg_netbsd_security",
+              "rule_status": "ok",
+              "match_count": 1,
+              "block_count": 53,
+              "recall": null,
+              "pre_recall": null,
+              "pass": true
+            }
+          ],
+          "accepted": false,
+          "blocked_reason": "not_improved"
+        }
+      ],
+      "reuse_recovery": [],
+      "amortization": {
+        "rule_generation_calls": 2,
+        "recovered_members": 0,
+        "calls_per_recovered": null
+      },
+      "member_rule_cache": {
+        "pg_netbsd_security": {
+          "version": 1,
+          "container_xpath": "//div[@id='mainContent']",
+          "exclude_xpaths": []
+        }
+      }
+    },
+    {
+      "cluster_id": "ph-c3",
+      "rep_id": "pg_netbsd_changes",
+      "multi_layout": false,
+      "layouts": [
+        "natural"
+      ],
+      "shared_rule": null,
+      "attempted": false,
+      "accepted": false,
+      "events": [],
+      "reuse_recovery": [],
+      "amortization": {
+        "rule_generation_calls": 0,
+        "recovered_members": 0,
+        "calls_per_recovered": null
+      },
+      "member_rule_cache": {}
+    },
+    {
+      "cluster_id": "ph-c4",
+      "rep_id": "pg_netbsd_index",
+      "multi_layout": true,
+      "layouts": [
+        "natural",
+        "tag-swap-role-stripped"
+      ],
+      "shared_rule": null,
+      "attempted": false,
+      "accepted": false,
+      "events": [],
+      "reuse_recovery": [],
+      "amortization": {
+        "rule_generation_calls": 0,
+        "recovered_members": 0,
+        "calls_per_recovered": null
+      },
+      "member_rule_cache": {}
+    }
+  ],
+  "metrics": {
+    "paired_n": 1,
+    "category_counts": {
+      "improved": 0,
+      "regressed": 0,
+      "no_effect": 1,
+      "other_change": 0
+    },
+    "improved_rate": 0.0,
+    "regressed_rate": 0.0,
+    "no_effect_rate": 1.0,
+    "other_change_rate": 0.0,
+    "mean_total_score_delta_ci95": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n": 1,
+      "B": 10000
+    },
+    "gate1_skipped": [
+      "pg_apache_faq",
+      "pg_apache_license",
+      "pg_netbsd_about",
+      "pg_netbsd_changes",
+      "pg_netbsd_index"
+    ],
+    "gate1_skipped_count": 5,
+    "retention_rejected": [],
+    "retention_violations_accepted": [],
+    "unnecessary_repair_count": 0,
+    "reward_pairs": [
+      {
+        "case_id": "pg_netbsd_security",
+        "reward_before": -0.416667,
+        "reward_after": -0.416667,
+        "reward_delta": 0.0
+      }
+    ],
+    "multi_layout_feedback_accepted": 0,
+    "reuse_recovery_total": 0
+  },
+  "audits": {
+    "checked": 9,
+    "failures": []
+  },
+  "candidate_integrity_problems": [],
+  "overrides": [],
+  "hard_checks": {
+    "regression_rate_le_0_10": true,
+    "retention_guard_violations_accepted_zero": true,
+    "leakage_audit_all_passed": true,
+    "integrity_clean": true,
+    "budget_respected": true
+  },
+  "verdict": "GUARDED_LOOP_SIGNAL",
+  "budget": {
+    "cap": 252739,
+    "freeze_cap": 252739,
+    "used": 243806,
+    "calls": 15,
+    "max_calls": 17,
+    "skipped": [
+      {
+        "case_id": "pg_netbsd_index-var",
+        "kind": "judge",
+        "used": 243806
+      }
+    ]
+  },
+  "note": "H1 guarded loop v1.1; dev circularity disclosed (gates motivated by G3 regressions on SAME corpus); NOT an independent holdout; natural pages no gold; judge reward eligibility remains P-F controlled-synthetic scope; reward deltas descriptive sanity, NOT real-page reward validation; negative results honest."
+}

@@ -1,0 +1,208 @@
+{
+  "tool_version": "1.0.0",
+  "seed": 20261124,
+  "steps": 6,
+  "group_size": 4,
+  "action_fixtures": [
+    "excellent",
+    "acceptable",
+    "noisy",
+    "empty"
+  ],
+  "action_rewards": [
+    1.0,
+    0.5,
+    -1.0,
+    -1.0
+  ],
+  "mapping_version": "1.0.0",
+  "step_rows": [
+    {
+      "step": 0,
+      "actions": [
+        3,
+        2,
+        0,
+        2
+      ],
+      "rewards": [
+        -1.0,
+        -1.0,
+        1.0,
+        -1.0
+      ],
+      "advantage_mean_abs": 2.7755575615628914e-17,
+      "advantage_std": 0.8660254037844386,
+      "degenerate": false,
+      "objective": -2.7755575615628914e-17,
+      "zero_mean_ok": true,
+      "unit_std_ok": true
+    },
+    {
+      "step": 1,
+      "actions": [
+        3,
+        0,
+        0,
+        0
+      ],
+      "rewards": [
+        -1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "advantage_mean_abs": 2.7755575615628914e-17,
+      "advantage_std": 0.8660254037844386,
+      "degenerate": false,
+      "objective": 5.551115123125783e-17,
+      "zero_mean_ok": true,
+      "unit_std_ok": true
+    },
+    {
+      "step": 2,
+      "actions": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "advantage_mean_abs": 0.0,
+      "advantage_std": 0.0,
+      "degenerate": true,
+      "objective": 0.0,
+      "zero_mean_ok": true,
+      "unit_std_ok": true
+    },
+    {
+      "step": 3,
+      "actions": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        0.5
+      ],
+      "advantage_mean_abs": 2.7755575615628914e-17,
+      "advantage_std": 0.21650635094610965,
+      "degenerate": false,
+      "objective": 5.551115123125783e-17,
+      "zero_mean_ok": true,
+      "unit_std_ok": true
+    },
+    {
+      "step": 4,
+      "actions": [
+        0,
+        0,
+        0,
+        3
+      ],
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        -1.0
+      ],
+      "advantage_mean_abs": 2.7755575615628914e-17,
+      "advantage_std": 0.8660254037844386,
+      "degenerate": false,
+      "objective": 5.551115123125783e-17,
+      "zero_mean_ok": true,
+      "unit_std_ok": true
+    },
+    {
+      "step": 5,
+      "actions": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "advantage_mean_abs": 0.0,
+      "advantage_std": 0.0,
+      "degenerate": true,
+      "objective": 0.0,
+      "zero_mean_ok": true,
+      "unit_std_ok": true
+    }
+  ],
+  "probability_trajectory": [
+    [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    [
+      0.5071247885640755,
+      0.21330684177850887,
+      0.11974702967770802,
+      0.15982133997970757
+    ],
+    [
+      0.7507513258528256,
+      0.13282383021454275,
+      0.07456516165160433,
+      0.04185968228102739
+    ],
+    [
+      0.7507513258528256,
+      0.13282383021454275,
+      0.07456516165160433,
+      0.04185968228102739
+    ],
+    [
+      0.9119678107882927,
+      0.028545607721217857,
+      0.03809862581826879,
+      0.021387955672220613
+    ],
+    [
+      0.9662890104973678,
+      0.012722040392375693,
+      0.01697957392561493,
+      0.00400937518464165
+    ],
+    [
+      0.9662890104973678,
+      0.012722040392375693,
+      0.01697957392561493,
+      0.00400937518464165
+    ]
+  ],
+  "checks": {
+    "mapping_version_frozen": true,
+    "reward_ordering": true,
+    "advantages_zero_mean_all_steps": true,
+    "advantages_unit_std_all_steps": true,
+    "policy_moves_to_best": true,
+    "best_action_reward_is_one": true,
+    "determinism": true
+  },
+  "verdict": "GRPO_PLUMBING_READY",
+  "disclosure": [
+    "SYNTHETIC mock judge fixtures, NOT model outputs",
+    "tabular REINFORCE-style update, NOT gradient backprop",
+    "per-sequence rewards; no real training started (P-E gated)",
+    "worst two fixtures both clip to -1.0 (frozen mapping behavior); ordering check allows the clip tie"
+  ],
+  "determinism_sha256": "9b46d5f708c22397043144d0ecb5adf16d3ad7e8b198e4860b768c9d14589f53"
+}

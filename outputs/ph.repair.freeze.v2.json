@@ -1,0 +1,296 @@
+{
+  "freeze_version": "ph-repair-1",
+  "generated_at": "2026-11-24T02:26:49+00:00",
+  "approval": {
+    "by": "hqli631",
+    "quote": "用户2026-11-24 goal授权H1<=20调用/300k; 冒烟已耗3调用/47261 tokens; 正式余额17调用/252739 (v1冻结零改写, 正式前预算修正披露)"
+  },
+  "preregistration": "docs/P_H_PRE_PE_PLAN.md",
+  "plan_sha256": "742745660ae270e0ef498e6b641a97b414596c5f116ff4de11d0ea98f9bbe63e",
+  "corpus": "samples/pg_corpus.v1.json",
+  "corpus_sha256": "b6c1628fc5adc061cf2f24b1b59f5771f73fcf01f383472b77e2bc25b72989d3",
+  "cluster_file": "outputs/ph.cluster.v1.json",
+  "cluster_sha256": "3e17888a2dca81e94b9c5e282d6795005dcfcee123cd733c558451e5098c05e1",
+  "clusters": {
+    "ph-c0": {
+      "rep": "pg_apache_faq",
+      "members": [
+        "pg_apache_faq",
+        "pg_apache_howitworks",
+        "pg_apache_howitworks-var"
+      ],
+      "ref_ids": [
+        "pg_apache_faq",
+        "pg_apache_howitworks",
+        "pg_apache_howitworks-var"
+      ]
+    },
+    "ph-c1": {
+      "rep": "pg_apache_license",
+      "members": [
+        "pg_apache_license"
+      ],
+      "ref_ids": [
+        "pg_apache_license"
+      ]
+    },
+    "ph-c2": {
+      "rep": "pg_netbsd_about",
+      "members": [
+        "pg_netbsd_about",
+        "pg_netbsd_security"
+      ],
+      "ref_ids": [
+        "pg_netbsd_about",
+        "pg_netbsd_security"
+      ]
+    },
+    "ph-c3": {
+      "rep": "pg_netbsd_changes",
+      "members": [
+        "pg_netbsd_changes"
+      ],
+      "ref_ids": [
+        "pg_netbsd_changes"
+      ]
+    },
+    "ph-c4": {
+      "rep": "pg_netbsd_index",
+      "members": [
+        "pg_netbsd_index",
+        "pg_netbsd_index-var"
+      ],
+      "ref_ids": [
+        "pg_netbsd_index",
+        "pg_netbsd_index-var"
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "pg_apache_howitworks-var",
+      "html": "pg_v1/pg_apache_howitworks-var.html",
+      "source_sha256": "bd70dc0b48df9d02cffef1bee58ebb4d9376be9660622aad30062984faaf3677",
+      "manual_group": "apache-org",
+      "source_kind": "synthetic_variant"
+    },
+    {
+      "case_id": "pg_netbsd_index-var",
+      "html": "pg_v1/pg_netbsd_index-var.html",
+      "source_sha256": "5e3894f8fb2a72b0e6eaef155862fae91aa37a3e0c032639bd5d2c7764896203",
+      "manual_group": "netbsd-org",
+      "source_kind": "synthetic_variant"
+    },
+    {
+      "case_id": "pg_apache_howitworks",
+      "html": "pg_v1/pg_apache_howitworks.html",
+      "source_sha256": "0f923cd6f0083ba33b9b82bc4544401543cb7e2230695d4d7094a5beebaae61f",
+      "manual_group": "apache-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "pg_apache_faq",
+      "html": "pg_v1/pg_apache_faq.html",
+      "source_sha256": "d0f24d8f12b29e3ebec47676164271d7dedcae3ded8aa5bd168fba46559274af",
+      "manual_group": "apache-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "pg_apache_license",
+      "html": "pg_v1/pg_apache_license.html",
+      "source_sha256": "a8b4961bdfd8ace10047a0217a6086df428df9928af1994c2c710c9cec480d06",
+      "manual_group": "apache-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "pg_netbsd_index",
+      "html": "pg_v1/pg_netbsd_index.html",
+      "source_sha256": "21e7112f080f2df8612b1e169ff1a4ddecadc425fdb75886caa65d50ab3052cb",
+      "manual_group": "netbsd-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "pg_netbsd_about",
+      "html": "pg_v1/pg_netbsd_about.html",
+      "source_sha256": "2b473a821c998fa34f015b6988f83f20e3761401ec9e9636cea171cd866079c9",
+      "manual_group": "netbsd-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "pg_netbsd_security",
+      "html": "pg_v1/pg_netbsd_security.html",
+      "source_sha256": "ce4e362d3be34e091c38bc3e79fd2bb319a1b9c08d6b5fcfef57071e5622e654",
+      "manual_group": "netbsd-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "pg_netbsd_changes",
+      "html": "pg_v1/pg_netbsd_changes.html",
+      "source_sha256": "b460c087efbed947b09def45346cf876bd677272731b2465e57d925b291cc137",
+      "manual_group": "netbsd-org",
+      "source_kind": "real_new"
+    },
+    {
+      "case_id": "python-appetite",
+      "html": "python_appetite_zh.html",
+      "source_sha256": "faa9db0798aeec25b68bf0703511ea6a73b6cff0c34895a3f9005f055b05eeea",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "python-interpreter",
+      "html": "python_interpreter_zh.html",
+      "source_sha256": "6b642cd0f2f0eb4d8d72b300434415fde357331d9ec5059e4b67c6b2580f56d5",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "iana",
+      "html": "iana_example_domains.html",
+      "source_sha256": "3b8669627aee51b99102e51348e1d9c0b17fe949a481f3272b8f350b2a075c5f",
+      "manual_group": "iana-help",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "gnu",
+      "html": "gnu.candidate.html",
+      "source_sha256": "b050aa1bcbf73c225c0bcabd377e1015a4c602556eb6d9f13f0eb2d5ba8973d6",
+      "manual_group": "gnu-essay",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "github",
+      "html": "github-copilot-blog.candidate.html",
+      "source_sha256": "c0cb2ed0cf8a6c40e9b87a10b13d07a0f9ee3cd02356159a1ebfd0a9a756ca8c",
+      "manual_group": "github-blog",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "nasa",
+      "html": "nasa-voyager-news.candidate.html",
+      "source_sha256": "e7f443d226454244fd9c4a6532a1de1697c7463d69aadac8751c1ab396510e22",
+      "manual_group": "nasa-news",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "mdn",
+      "html": "mdn.candidate.html",
+      "source_sha256": "a4d929c09eb50f44ae54169ac67f16ad4387c34b987f4649f632960798279293",
+      "manual_group": "mdn-doc",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "python-introduction",
+      "html": "clustering/python-introduction.html",
+      "source_sha256": "f59c9271286fda8e11785148a1d11d753c96bb622eb21a34768babefac5d53c7",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "python-controlflow",
+      "html": "clustering/python-controlflow.html",
+      "source_sha256": "d02eef35346d0344e101a66c2466ae9755a4bf45f6f6c1d94574f1ab8a43f8ce",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "python-library-index",
+      "html": "clustering/python-library-index.html",
+      "source_sha256": "9cb748bbfd547a80922467dbbbe58816d0d80500818b19ec18a72ae02fb9d152",
+      "manual_group": "sphinx-documentation",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "python-search",
+      "html": "clustering/python-search.html",
+      "source_sha256": "23a461b1a695e86d4fbee39f59b00e2ccbfd581ee2a03370fe407058871b8793",
+      "manual_group": "sphinx-search",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "iana-abuse",
+      "html": "clustering/iana-abuse.html",
+      "source_sha256": "8b0b6c2b0a3d8d5d887b24b3da0fda754d399aa3ab51449e2b21a3e2a581084d",
+      "manual_group": "iana-help",
+      "source_kind": "real_existing"
+    },
+    {
+      "case_id": "iana-whois",
+      "html": "clustering/iana-whois.html",
+      "source_sha256": "7f42a1d6e553ee5d4ae1bdc6562f60a3bf826d7864065d4835185fea58b78ddd",
+      "manual_group": "iana-help",
+      "source_kind": "real_existing"
+    }
+  ],
+  "params": {
+    "feature_mode": "suffix-presence",
+    "drift_threshold": 0.7
+  },
+  "protocol": {
+    "model": "qwen3.8-27b",
+    "judge_version": "1.4.1",
+    "base_judge_version": "1.2.0",
+    "rubrics_version": "2.0.0",
+    "base_source_sha256": "edd841efb52961f07891160ccae7fabcc72da65734854da9a86e02bf622ff891",
+    "judge_module_sha256": "25c154b99c96ca8431f8bc5e687421c02a65fe7a614f36e822851dddc18edf20",
+    "v14_module_sha256": "1d87cfb5e83ceb65545fe87a07c68d99ea683a7fd025f4dfe185942c30c2c37c",
+    "rubrics_sha256": "4fa60e024758e67d8c831b7a34e267bf2ce9a143dd6ae70cdbc94da036560364",
+    "rule_agent_sha256": "e60ec3094f442f9a20de89f46a93e2d163ae60a84361001c77bd475d9bf64a20",
+    "rule_cache_sha256": "1b1c37945452f7dd32e1fa5769306e2174690ab2df7df74ec5f8f0cbdd6341ba",
+    "pd2_tool_sha256": "c27c044ce214c7497487d2dd935466e0276c4a797b06451174ae6ec92987f084",
+    "pd_tool_sha256": "375ba52f77f8f02e6f8d2fba99d474b24f8298f0060af685af4e55d09b2d1512",
+    "node5_tool_sha256": "d7060361a0bd381ecf8f342ad3ca1353b7d72330cf7c4fe8f5825981c0f33111",
+    "max_source_chars": 20000,
+    "max_output_tokens": 2200,
+    "timeout_seconds": 90,
+    "rule_max_attempts": 2,
+    "evidence_chars": 16000,
+    "rule_max_output_tokens": 1024,
+    "execution_timeout": 5.0,
+    "total_timeout": 120.0,
+    "critic_mode": "source_only",
+    "generalized_repair": "reference_pages = all cluster sources (<=8); one shared rule executable nonempty on every reference",
+    "generalized_reuse_semantics": "feedback-validated generalized rule: fingerprint_drift alone does not invalidate; rule_failure still triggers",
+    "feedback_recall_gate": "recall-not-worse applies ONLY to members with silver expected (variants); natural pages structural-only (no gold)"
+  },
+  "trigger_rule": "v1.1 GATE-1: repair iff decision==fail OR any major/critical defect OR (silver expected exists AND baseline block_text_recall<1.0); drift alone never triggers",
+  "retention_gate": "v1.1 GATE-2: when baseline decision!=fail, repaired must retain baseline block text (Counter recall >=0.9) else repair rejected and baseline kept (no rejudge call)",
+  "classification": "node5 frozen classify_pair (improved/regressed/no_effect/other_change; regressed priority)",
+  "feedback_rule": "improved AND rule unique+ok+nonempty on rep+every member AND recall not worse where silver expected exists; INLINE update on accept",
+  "success_criteria": {
+    "regression_rate_le": 0.1,
+    "retention_guard_violations_accepted_zero": true,
+    "leakage_audit_all_passed": true,
+    "budget_respected": true,
+    "verdict_labels": [
+      "GUARDED_LOOP_SIGNAL",
+      "NO_GUARDED_LOOP_SIGNAL"
+    ],
+    "note": "H1 guarded loop v1.1; dev circularity disclosed (gates motivated by G3 regressions); improvement/trigger-reduction descriptive; NOT an independent holdout"
+  },
+  "budget": {
+    "token_cap": 252739,
+    "max_calls": 17,
+    "reserve_judge": 16000,
+    "reserve_rule": 8000,
+    "smoke_consumed": {
+      "calls": 3,
+      "tokens": 47261,
+      "artifact": "outputs/ph.smoke.v1.json"
+    },
+    "total_envelope": {
+      "max_calls": 20,
+      "token_cap": 300000
+    }
+  },
+  "seed": 20261119,
+  "B": 10000,
+  "discipline": [
+    "new stratum only; existing 13 snapshots clustering/reuse-only",
+    "G2 hard-check FAIL (LSH recall) disclosed; CL clusters valid (precision 1.0); no tuning",
+    "critic source_only; silver expected orchestrator-side only; never in prompts",
+    "repair <=1 intervention/member; no tuning; negative results honest",
+    "judge scores NOT training rewards",
+    "cluster purity != accuracy"
+  ]
+}

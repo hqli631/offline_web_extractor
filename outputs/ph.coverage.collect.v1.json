@@ -1,0 +1,136 @@
+{
+  "tool_version": "1.0.0",
+  "generated_at": "2026-11-24T02:17:52+00:00",
+  "fetch_cap": 8,
+  "total_fetches": 6,
+  "fetch_log": [
+    {
+      "url": "https://www.openbsd.org/index.html",
+      "fetched_at": "2026-11-24T02:17:41+00:00",
+      "error": "URLError",
+      "deterministic": false,
+      "slot": "index",
+      "attempt": 1
+    },
+    {
+      "url": "https://www.openbsd.org/index.html",
+      "fetched_at": "2026-11-24T02:17:44+00:00",
+      "final_url": "https://www.openbsd.org/index.html",
+      "http_status": 200,
+      "sha256": "55e1b9d199f87d9d457601045614a18857ddd0c9b0c50a110a5244f466b6f341",
+      "raw_chars": 3622,
+      "deterministic": false,
+      "slot": "index",
+      "attempt": 2
+    },
+    {
+      "url": "https://www.openbsd.org/innovations.html",
+      "fetched_at": "2026-11-24T02:17:45+00:00",
+      "error": "URLError",
+      "deterministic": false,
+      "slot": "innovations",
+      "attempt": 1
+    },
+    {
+      "url": "https://www.openbsd.org/innovations.html",
+      "fetched_at": "2026-11-24T02:17:46+00:00",
+      "final_url": "https://www.openbsd.org/innovations.html",
+      "http_status": 200,
+      "sha256": "0b2eece98e505fabed836488965009f8d55bab6d47f0b7818edf04784757ec4c",
+      "raw_chars": 39116,
+      "deterministic": false,
+      "slot": "innovations",
+      "attempt": 2
+    },
+    {
+      "url": "https://www.openbsd.org/security.html",
+      "fetched_at": "2026-11-24T02:17:49+00:00",
+      "final_url": "https://www.openbsd.org/security.html",
+      "http_status": 200,
+      "sha256": "5c499531873f75cfa964accccda96f0b09381f81a602ecc902d00246c1a52f12",
+      "raw_chars": 11750,
+      "deterministic": false,
+      "slot": "security",
+      "attempt": 1
+    },
+    {
+      "url": "https://www.openbsd.org/goals.html",
+      "fetched_at": "2026-11-24T02:17:50+00:00",
+      "final_url": "https://www.openbsd.org/goals.html",
+      "http_status": 200,
+      "sha256": "8c992647a478304219c46aab10600190f698674d0f88c0c67ac0963727711f63",
+      "raw_chars": 2987,
+      "deterministic": false,
+      "slot": "goals",
+      "attempt": 1
+    }
+  ],
+  "retained": [
+    {
+      "slot": "index",
+      "html": "samples\\ph_openbsd_index.html",
+      "sha256": "55e1b9d199f87d9d457601045614a18857ddd0c9b0c50a110a5244f466b6f341"
+    },
+    {
+      "slot": "innovations",
+      "html": "samples\\ph_openbsd_innovations.html",
+      "sha256": "0b2eece98e505fabed836488965009f8d55bab6d47f0b7818edf04784757ec4c"
+    },
+    {
+      "slot": "security",
+      "html": "samples\\ph_openbsd_security.html",
+      "sha256": "5c499531873f75cfa964accccda96f0b09381f81a602ecc902d00246c1a52f12"
+    },
+    {
+      "slot": "goals",
+      "html": "samples\\ph_openbsd_goals.html",
+      "sha256": "8c992647a478304219c46aab10600190f698674d0f88c0c67ac0963727711f63"
+    }
+  ],
+  "coverage": [
+    {
+      "slot": "index",
+      "baseline_status": "ok",
+      "baseline_blocks": 5,
+      "density_status": "ok",
+      "density_blocks": 5,
+      "density_title": "",
+      "coverage_gap_confirmed": false,
+      "criterion_met": false
+    },
+    {
+      "slot": "innovations",
+      "baseline_status": "no_candidate",
+      "baseline_blocks": 0,
+      "density_status": "no_candidate",
+      "density_blocks": 0,
+      "density_title": "",
+      "coverage_gap_confirmed": true,
+      "criterion_met": false
+    },
+    {
+      "slot": "security",
+      "baseline_status": "no_candidate",
+      "baseline_blocks": 0,
+      "density_status": "no_candidate",
+      "density_blocks": 0,
+      "density_title": "",
+      "coverage_gap_confirmed": true,
+      "criterion_met": false
+    },
+    {
+      "slot": "goals",
+      "baseline_status": "no_candidate",
+      "baseline_blocks": 0,
+      "density_status": "no_candidate",
+      "density_blocks": 0,
+      "density_title": "",
+      "coverage_gap_confirmed": true,
+      "criterion_met": false
+    }
+  ],
+  "criterion_met_count": 0,
+  "criterion": ">=2/4 pages: baseline 0-block/no_candidate AND density >=3 blocks",
+  "verdict": "H3_COVERAGE_FIX_NOT_CONFIRMED",
+  "note": "coverage probes only; NOT corpus pages; extract_html byte-frozen; density opt-in not wired into frozen rule_cache"
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://www.openbsd.org/index.html",
+  "final_url": "https://www.openbsd.org/index.html",
+  "sha256": "55e1b9d199f87d9d457601045614a18857ddd0c9b0c50a110a5244f466b6f341",
+  "raw_chars": 3622,
+  "fetched_at": "2026-11-24T02:17:44+00:00",
+  "purpose": "H3 coverage probe (raw retained regardless of G1 window)",
+  "plan": "docs/P_H_PRE_PE_PLAN.md"
+}

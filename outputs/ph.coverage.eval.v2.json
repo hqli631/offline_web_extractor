@@ -1,0 +1,51 @@
+{
+  "tool_version": "1.0.0",
+  "mode": "offline_reeval",
+  "generated_at": "2026-11-24T02:18:37+00:00",
+  "coverage": [
+    {
+      "slot": "index",
+      "baseline_status": "ok",
+      "baseline_blocks": 5,
+      "density_status": "ok",
+      "density_blocks": 5,
+      "density_title": "",
+      "coverage_gap_confirmed": false,
+      "criterion_met": false
+    },
+    {
+      "slot": "innovations",
+      "baseline_status": "no_candidate",
+      "baseline_blocks": 0,
+      "density_status": "ok",
+      "density_blocks": 160,
+      "density_title": "OpenBSD Innovations",
+      "coverage_gap_confirmed": true,
+      "criterion_met": true
+    },
+    {
+      "slot": "security",
+      "baseline_status": "no_candidate",
+      "baseline_blocks": 0,
+      "density_status": "ok",
+      "density_blocks": 53,
+      "density_title": "OpenBSD Security",
+      "coverage_gap_confirmed": true,
+      "criterion_met": true
+    },
+    {
+      "slot": "goals",
+      "baseline_status": "no_candidate",
+      "baseline_blocks": 0,
+      "density_status": "ok",
+      "density_blocks": 14,
+      "density_title": "OpenBSD Project Goals",
+      "coverage_gap_confirmed": true,
+      "criterion_met": true
+    }
+  ],
+  "criterion_met_count": 3,
+  "criterion": ">=2/4 pages: baseline 0-block/no_candidate AND density >=3 blocks",
+  "verdict": "H3_COVERAGE_FIX_CONFIRMED",
+  "note": "first pass ph.coverage.collect.v1.json NOT_CONFIRMED (density set lacked //body); extractor_density revised (dev iteration disclosed); zero new fetches"
+}
